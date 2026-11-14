@@ -57,86 +57,91 @@ TikTok ~98 Follower; Alltags-/Haushaltstipps liefen am besten (700–760 Views),
 
 ---
 
-## 3. Architektur
+## 3. Architektur – „Alles in Claude“ (Entscheidung vom 14.11.2026)
+
+Alles wird von Claude erstellt und gesteuert. Einzige externe Generatoren: **ElevenLabs** (Stimme + 1 Musiktrack pro Serie).
+Keine Gemini-, Pexels- oder sonstigen Fremd-Generatoren.
 
 ```
-                 GitHub Actions (Cron, kostenlos)                         Buffer (bestehend)
-┌──────────────────────────────────────────────────────────────┐         ┌──────────────┐
-│ 1 trends      YouTube Data API → data/trends.json            │         │ TikTok       │
-│ 2 plan        Themen wählen (Trends + eigene Performance)    │         │ YouTube      │
-│ 3 script      Gemini (Free-Tier) → Skript/JSON pro Video     │         └──────▲───────┘
-│ 4 voice       ElevenLabs (Budget-Wächter) → Fallback Piper   │                │
-│ 5 visuals     Pexels/Pixabay (+ opt. KI-Bilder)              │                │ createPost
-│ 6 subtitles   Wort-Timing (ElevenLabs-Alignment / Whisper)   │                │ (Video-URL)
-│ 7 render      ffmpeg: Ken-Burns, Übergänge, Untertitel, Musik│                │
-│ 8 qa          Länge, Ton, Lautheit, Schwarzbild, Sync, Datei │                │
-│ 9 publish     MP4 → öffentliche URL (GitHub Release)  ───────┼────────────────┘
-│10 analytics   +24 h / +7 Tage Zahlen (Buffer + YouTube API)  │
-│11 learn       Gewichte für Themen/Hooks/Zeiten anpassen      │
-│12 report      tägl. Kurzbericht + Fehler → Push aufs Handy   │
-└──────────────────────────────────────────────────────────────┘
-Daten (trends, Skripte, Posting-Log, Statistiken) liegen versioniert im Repo unter data/.
+Geplante Claude-Aufgaben (Cloud, Umgebung „Yt-tk“, Repo wird geklont)
+┌────────────────────────────────────────────────────────────────────┐
+│ PRODUKTION (täglich nachts, bei Vorrat < 3 Tage)                   │
+│  1 Trends     Claude-Websuche + eigene Zahlen → data/trends.json   │
+│  2 Skript     Claude schreibt Hook, Story, CTA (3 Format-Vorlagen) │
+│  3 Stimme     ElevenLabs-API mit Wort-Zeitstempeln (Budget-Wächter)│
+│  4 Visuals    von Claude programmierte Grafiken/Animationen (SVG → │
+│               Chromium → Frames), pro Serie feste Optik            │
+│  5 Untertitel Wort für Wort aus den ElevenLabs-Zeitstempeln        │
+│  6 Schnitt    ffmpeg: Kamerafahrten, Übergänge, Musik, 1080x1920   │
+│  7 QA         Länge, Ton, Lautheit, Schwarzbild, Sync, Datei-Check │
+│  8 Ablage     MP4 → öffentlicher Repo-Branch „media“ (Direkt-URL)  │
+├────────────────────────────────────────────────────────────────────┤
+│ PLANUNG (täglich früh): nächste 6 Posts in Buffer (Connector)      │
+│  Titel/Beschreibung/Hashtags pro Plattform, KI-Kennzeichnung = Ja  │
+├────────────────────────────────────────────────────────────────────┤
+│ ANALYSE (täglich): Zahlen nach 24 h / 7 Tagen (Buffer, Metricool)  │
+│  → data/performance.json → Gewichte für Themen, Hooks, Zeiten      │
+│  Tagesbericht + Fehler als Push-Benachrichtigung aufs Handy        │
+└────────────────────────────────────────────────────────────────────┘
 ```
 
-### 3.1 Tool-Auswahl (alles 0 €)
-| Aufgabe | Werkzeug | Kosten | Fallback |
-|---|---|---|---|
-| Zeitplan / Rechner | GitHub Actions | 0 € (öffentliches Repo: unbegrenzt; privat: 2000 Min./Monat, reicht knapp) | – |
-| Trend-Recherche | YouTube Data API v3 (10 000 Einheiten/Tag) | 0 € | – |
-| TikTok-Trends | TikTok Creative Center hat **keine offizielle API**, automatisches Auslesen verstösst gegen die TikTok-Nutzungsbedingungen → wir nutzen YouTube-Trends als Format-Signal + **deine eigenen TikTok-Zahlen** (Buffer). | 0 € | – |
-| Skripte & Texte | Google Gemini API (Free-Tier) | 0 € | Groq (Free-Tier) |
-| Stimme | ElevenLabs (dein Creator-Plan) mit Budget-Wächter | bereits bezahlt | **Piper TTS** (Open Source, Stimme „thorsten“, lizenzfrei), danach edge-tts |
-| Musik | ElevenLabs Music: **1 Track pro Serie**, wiederverwendet; bestehende Musik-Betten übernehmen | einmalig wenige Credits | – |
-| Bilder/Clips | Pexels + Pixabay API | 0 € | KI-Bilder optional über Cloudflare Workers AI (Free-Tier) |
-| Untertitel-Timing | ElevenLabs „with timestamps“ (exakt) / faster-whisper (Piper) | 0 € | – |
-| Schnitt | ffmpeg + Python | 0 € | – |
-| Video-Hosting für Buffer | GitHub Release-Assets (öffentliche Direkt-URL) | 0 € | Google Drive Direktlink |
-| Posting | Buffer API (bestehendes Konto) | 0 € | – |
-| Statistik | Buffer-Post-Metriken + YouTube Data API (öffentliche Zahlen) | 0 € | YouTube Analytics (Watchtime) später optional |
-| Benachrichtigung | ntfy (Push-App, ohne Konto) | 0 € | Telegram-Bot |
+### 3.1 Werkzeuge
+| Aufgabe | Werkzeug | Kosten |
+|---|---|---|
+| Zeitplan / Rechner | Geplante Claude-Aufgaben (dein Claude-Abo) | 0 € extra |
+| Trends | Claude-Websuche (YouTube/TikTok-Trendberichte), eigene Zahlen | 0 € |
+| Skripte, Texte, Hashtags | Claude | 0 € extra |
+| Stimme | ElevenLabs-API (Schlüssel sicher in der Umgebung hinterlegt) | bestehendes Abo |
+| Musik | ElevenLabs, 1 Track pro Serie, wiederverwendet | wenige Credits einmalig |
+| Visuals | Von Claude erzeugte Vektor-Grafiken/Animationen | 0 € |
+| Schnitt, QA | ffmpeg, Python | 0 € |
+| Video-Hosting für Buffer | öffentlicher Branch `media` dieses Repos | 0 € |
+| Posting | Buffer-Connector (keine Schlüssel nötig) | 0 € |
+| Statistik | Buffer- und Metricool-Connector (nur lesen) | 0 € |
+| Benachrichtigung | Push der geplanten Claude-Aufgaben (Claude-App) | 0 € |
+
+**ElevenLabs-Budget-Wächter:** ~3 Videos/Tag × ~900 Zeichen ≈ 2 700 Credits/Tag. Fällt das Restbudget unter die Menge für
+die verbleibenden Tage bis zum Reset, wird automatisch auf kürzere Skripte umgestellt und du bekommst eine Warnung.
 
 ### 3.2 Die 3 Formate (je eigene, feste Optik/Stimme/Musik)
 | Slot (Start) | Format | Länge | Look | CTA |
 |---|---|---|---|---|
-| 10:00 | **Wissen / Fun Fact** | 30–45 s | hell, gelbe Untertitel, Stock-Clips | „Folgen für mehr“ + Ja/Nein-Frage |
-| 15:00 | **Was wäre wenn** | 40–60 s | blau/neutral, Ken-Burns auf Bildern | Kommentar-Frage |
-| 18:00 | **Horror „Du wachst auf …“ (Serie)** | 61–75 s | dunkel, Rot-Akzent, Rauschen, Vignette | „A oder B?“ → nächste Folge setzt die Mehrheitsantwort fort |
+| 10:00 | **Wissen / Fun Fact** | 30–45 s | hell, grosse Infografiken, gelbe Untertitel | Folgen + Ja/Nein-Frage |
+| 15:00 | **Was wäre wenn** | 40–60 s | dunkelblau, Szenen-Illustrationen | Kommentar-Frage |
+| 18:00 | **Horror „Du wachst auf …“ (Serie)** | 61–75 s | schwarz/rot, Rauschen, Vignette, Glitch | „A oder B?“ → nächste Folge folgt der Mehrheit |
 
-Die Zeiten werden ab Woche 2 jeden Montag aus deinen eigenen Zahlen neu berechnet (Wochentag × Stunde, geglättet, mind. 2 h Abstand).
+Ab Woche 2 werden die Zeiten jeden Montag aus deinen eigenen Zahlen neu berechnet.
 
 ### 3.3 Horror-Fortsetzung „A oder B“
-Nach 20 h liest das System die Kommentare des letzten Teils (YouTube Data API, öffentlich; TikTok-Kommentare via Buffer, soweit verfügbar),
-zählt A/B und schreibt den nächsten Teil mit der Mehrheitswahl. Gleichstand/keine Stimmen → vorab geschriebener Standard-Zweig.
+Vor der Produktion der nächsten Folge werden die Kommentare des letzten Teils ausgewertet (soweit über die Connectoren lesbar).
+Mehrheit gewinnt; ohne Stimmen gilt der vorab geschriebene Standard-Zweig.
 
 ### 3.4 Lernen
-Für jedes Video speichern wir Thema, Hook-Typ, Länge, Schnitttempo, Uhrzeit. Nach 24 h und 7 Tagen kommen Views, Likes, Kommentare, Shares
-(und Watchtime, sobald YouTube-Analytics verbunden ist) dazu. Ein einfacher Bandit-Ansatz (80 % Bewährtes, 20 % Neues testen) steuert
-Themen- und Hook-Auswahl – so kippt der Kanal nicht in Wiederholung.
+Pro Video: Thema, Hook-Typ, Länge, Schnitttempo, Uhrzeit. Nach 24 h / 7 Tagen: Views, Likes, Kommentare, Shares, Follower.
+80 % Bewährtes, 20 % Neues testen.
 
 ### 3.5 Sicherheit & Regeln
-- Alle Schlüssel nur als **GitHub Secrets**; lokal `.env` (in `.gitignore`).
-- Keine Fremd-Clips/-Musik/-Texte; Stock nur mit Pexels/Pixabay-Lizenz, Quellen pro Video protokolliert.
-- Duplikat-Schutz: Posting-Log im Repo + Abgleich mit Buffer vor jedem Post → nie doppelt.
-- Max. 3 Videos/Tag pro Plattform, keine Reuploads, keine Fake-Interaktionen.
-- **Not-Aus**: Datei `PAUSE` im Repo anlegen (geht in der GitHub-App) → alle Jobs stoppen sofort, nichts wird gepostet.
+- Keine Schlüssel im Code oder Repo. ElevenLabs-Schlüssel liegt als Netzwerk-Geheimnis in der Claude-Umgebung.
+- Nur eigene Inhalte, keine Fremd-Clips/-Musik/-Texte. Fakten bei Wissensvideos werden per Websuche gegengeprüft.
+- Duplikat-Schutz: Posting-Log im Repo + Abgleich mit Buffer vor jedem Post.
+- Max. 3 Videos/Tag pro Plattform, keine Reuploads, keine Fake-Interaktionen, KI-Kennzeichnung immer an.
+- **Not-Aus**: Datei `PAUSE` im Repo anlegen → alle Aufgaben brechen sofort ab.
 
----
-
-## 4. Übergang ohne Doppel-Posts
-Das neue System übernimmt **formatweise**, sobald es für ein Format den 3-Tage-Vorrat hat. Erst dann wird die alte Aufgabe für genau dieses
-Format deaktiviert (nicht gelöscht). Bis dahin läuft alles wie jetzt weiter. Die 79 fertigen Wissensvideos in Drive werden **zuerst
-aufgebraucht** (nach QA-Check), danach produziert das System neue Wissensvideos.
+## 4. Übergang (erledigt am 14.11.2026, auf deinen Wunsch „alles sofort stoppen“)
+- Deaktiviert (nicht gelöscht): Wissen 10:00, Was-wäre-wenn 15:00, Horror 18:00, Wochenreport, Babyfon-Upload (15.11.), Erinnerung 22.11.
+- Metricool: die 6 Posts vom 15.–20.11. auf **Entwurf** gesetzt (werden nicht veröffentlicht), KI-Kennzeichnung auf Ja korrigiert.
+- Die alten Drive-Videos werden **nicht** verwendet. Es wird nur noch gepostet, was das neue System produziert.
 
 ---
 
 ## 5. Umsetzungs-Reihenfolge (Phase 2)
-1. Grundgerüst, Konfiguration, Secrets-Check, Not-Aus, Benachrichtigung
-2. Trend-Modul → `data/trends.json`
-3. Skript-Modul (3 Format-Vorlagen, Duplikat-/Fakten-Prüfung)
-4. Stimme (ElevenLabs + Budget-Wächter + Piper-Fallback)
+1. Grundgerüst, Konfiguration, Not-Aus
+2. Trend-Notizen → `data/trends.json`
+3. Skript-Vorlagen (3 Formate, Duplikat-/Fakten-Prüfung)
+4. Stimme (ElevenLabs + Budget-Wächter)
 5. Visuals + Untertitel + Render
 6. QA
 7. Texte & Hashtags pro Plattform
-8. Publish (Release-URL) + Buffer-Planung
-9. Analytics + Lernen + Tagesbericht
+8. Ablage (`media`-Branch) + Buffer-Planung
+9. Analyse + Lernen + Tagesbericht
 10. Testlauf (Phase 3): 1 Video pro Format, auf YouTube **privat**, auf TikTok als **Buffer-Entwurf** → du schaust es dir an.
