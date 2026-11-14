@@ -26,7 +26,7 @@ Ab der 2. Woche passt das System die Zeiten jeden Montag an deine Zahlen an.
 
 **Wieder starten:** Die Datei `PAUSE` im Branch `media` löschen.
 
-**Weg 2 – Aufgaben ausschalten:** Claude-App → Code → geplante Aufgaben → die 3 „Yt-tk“-Aufgaben deaktivieren.
+**Weg 2 – Aufgaben ausschalten:** Claude-App → Code → Sitzung „Autonomer Content-Agent für Faceless-Videos“ → geplante Aufgaben → die 3 „Yt-tk“-Aufgaben deaktivieren. Oder einfach in diese Sitzung schreiben: „Pausiere alles“.
 
 ### Wo sehe ich was?
 - **Fertige Videos & Daten:** Branch `media` → `videos/`, `content/<ID>/`, `reports/` (Tagesberichte)
