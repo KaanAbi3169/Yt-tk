@@ -79,7 +79,9 @@ def status() -> dict:
         out["formats"][fmt] = {
             "ready": ready,
             "days_covered": len(ready),
-            "needs_production": max(0, config.INVENTORY_DAYS + 1 - len(ready)),
+            # Horror: immer nur die naechste Folge (A/B-Abstimmung muss vorher laufen)
+            "needs_production": (1 if not ready else 0) if fmt == "horror"
+            else max(0, config.INVENTORY_DAYS + 1 - len(ready)),
             "next_id": f"{f['prefix']}{(max(nums) if nums else 0) + 1:03d}",
             "recent_topics": [v.get("topic") for v in vids][-30:],
         }

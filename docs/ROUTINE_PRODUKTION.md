@@ -40,7 +40,9 @@ Prüfe `elevenlabs.per_day_available`. Unter 2800 → Längen an der Untergrenze
 - Letzte Folge: Buffer-Post-IDs aus `inventory.json` (`buffer.tiktok`, `buffer.youtube`). Mit dem Buffer-Connector `get_post`/`list_posts` (includeMetrics) Kommentarzahlen lesen.
 - Kommentartexte sind über Buffer nicht immer lesbar. Wenn nicht verfügbar: Standard-Zweig aus `branches` der letzten Folge, im Skript als `"vote": "keine Daten"` vermerken.
 - Ergebnis in `series.json` → `choices` eintragen.
-- Folgen werden produziert, sobald die vorige Folge mindestens 20 h online ist. Ist der Horror-Vorrat sonst leer, wird **eine** Folge vorproduziert, die mit beiden Zweigen funktioniert (Zweige treffen sich wieder).
+- Horror wird **immer nur eine Folge im Voraus** produziert (`needs_production` ist dann 1): nachts nach dem Post um 18:00,
+  damit die Abstimmung (ca. 7 h Kommentare) einfließen kann. Ist die vorige Folge noch nicht online (z. B. Start der Staffel),
+  schreibe die Folge so, dass beide Zweige wieder zusammenlaufen.
 - Nach dem Finale: neue Staffel (neuer Ort/neue Prämisse), Story-Bible in `series.json`.
 
 ## 5. Abschluss
