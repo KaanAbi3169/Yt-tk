@@ -27,7 +27,7 @@ FORMATS = {
     "wissen": {
         "label": "Wissen",
         "prefix": "W",
-        "slot": "10:00",
+        "slot": "10:00",  # teilt sich den Slot mit waswaerewenn (ROTATION)
         "min_s": 30, "max_s": 50, "wps": 2.6,
         "voice_id": "keqaIOtp0ePlmN5jgQfy",  # Jan - Social Media Creator (de)
         "voice_settings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": True, "speed": 1.08},
@@ -42,7 +42,7 @@ FORMATS = {
     "waswaerewenn": {
         "label": "Was wäre wenn",
         "prefix": "X",
-        "slot": "15:00",
+        "slot": "10:00",  # teilt sich den Slot mit wissen (ROTATION)
         "min_s": 40, "max_s": 60, "wps": 2.45,
         "voice_id": "EFMWG4bgYSD1vaE3P8OS",  # Leander - warm, calm (de)
         "voice_settings": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True, "speed": 1.04},
@@ -69,7 +69,61 @@ FORMATS = {
         "badge": "DU WACHST AUF",
         "effects": "horror",
     },
+    # Lange YouTube-Videos (kein Short): 16:9, 7-10 Min., nur YouTube, nur an bestimmten Wochentagen.
+    "lang": {
+        "label": "Gruselgeschichte (lang, YouTube)",
+        "prefix": "L",
+        "slot": "16:00",
+        "weekdays": [2, 3],  # 0=Mo ... 2=Mi, 3=Do  (Metricool Best-Time YouTube: Mi/Do 16 Uhr)
+        "platforms": ["youtube"],
+        "orientation": "landscape",
+        "style": "horror",   # Optik, Badge-Farben, Musik wie die Horror-Serie
+        "music": "horror",
+        "min_s": 420, "max_s": 600, "wps": 2.3,  # max 10 Min. -> Datei bleibt < 95 MB (GitHub-Limit 100 MB)
+        "min_scenes": 20, "max_scenes": 70,
+        "chapters": True,
+        "voice_id": "18X2yBovneA0q06wd8E9",  # Vincent Crowe - Dark & Haunting Tales (de)
+        "voice_settings": {"stability": 0.6, "similarity_boost": 0.85, "style": 0.35, "use_speaker_boost": True, "speed": 0.98},
+        "youtube_category": "24",
+        "transition": "fadeblack",
+        "font": "DejaVu Serif",
+        "sub_primary": "&H00F0F0F0", "sub_highlight": "&H002020E0", "sub_outline": "&H00000000",
+        "music_volume": 0.10,
+        "badge": "GRUSELGESCHICHTE",
+        "effects": "horror",
+    },
 }
+
+# Formate, die sich einen Sendeplatz teilen und taeglich abwechseln (2 Shorts pro Tag statt 3).
+ROTATION = [["wissen", "waswaerewenn"]]
+
+
+def rotation_group(fmt: str) -> list:
+    return next((g for g in ROTATION if fmt in g), [fmt])
+
+
+def runs_on(fmt: str, day) -> bool:
+    """Ist das Format an diesem Tag (datetime.date) dran?"""
+    f = FORMATS[fmt]
+    if "weekdays" in f and day.weekday() not in f["weekdays"]:
+        return False
+    g = rotation_group(fmt)
+    return g[day.toordinal() % len(g)] == fmt
+
+
+def platforms(fmt: str) -> list:
+    return FORMATS[fmt].get("platforms", ["tiktok", "youtube"])
+
+
+def style(fmt: str) -> str:
+    return FORMATS[fmt].get("style", fmt)
+
+
+def dims(fmt: str) -> tuple:
+    """(Breite, Hoehe) des fertigen Videos."""
+    if FORMATS[fmt].get("orientation") == "landscape":
+        return 1920, 1080
+    return VIDEO_W, VIDEO_H
 
 VIDEO_W, VIDEO_H, FPS = 1080, 1920, 30
 XFADE = 0.35          # Sekunden Uebergang zwischen Szenen
@@ -82,4 +136,4 @@ ELEVEN_DAILY_RESERVE = 3000  # Credits pro Tag, die bis zum Reset frei bleiben m
 
 def paused() -> bool:
     """Not-Aus: Datei PAUSE im Code-Repo oder im Daten-Branch."""
-    return (ROOT / "PAUSE").exists() or (DATA / "PAUSE").exists()
+    return any((d / n).exists() for d in (ROOT, DATA) for n in ("PAUSE", "STOP"))

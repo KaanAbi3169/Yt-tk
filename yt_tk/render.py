@@ -13,7 +13,8 @@ def _run(cmd: list) -> None:
         raise RuntimeError("ffmpeg-Fehler:\n" + r.stderr[-3000:])
 
 
-def _zoompan(motion: str, frames: int) -> str:
+def _zoompan(motion: str, frames: int, fmt: str) -> str:
+    W, H = config.dims(fmt)
     D = max(frames - 1, 1)
     e = f"(3*pow(on/{D},2)-2*pow(on/{D},3))"  # weiches Ein-/Ausblenden der Bewegung
     cx, cy = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
@@ -37,12 +38,12 @@ def _zoompan(motion: str, frames: int) -> str:
     else:
         raise ValueError(f"Unbekannte Bewegung {motion}")
     return (f"zoompan=z='{z}':x='{x}':y='{y}':d={frames}:"
-            f"s={config.VIDEO_W}x{config.VIDEO_H}:fps={config.FPS}")
+            f"s={W}x{H}:fps={config.FPS}")
 
 
-def scene_clip(png: Path, motion: str, seconds: float, out: Path) -> None:
+def scene_clip(png: Path, motion: str, seconds: float, out: Path, fmt: str) -> None:
     frames = max(int(round(seconds * config.FPS)), 2)
-    vf = _zoompan(motion, frames) + ",format=yuv420p"
+    vf = _zoompan(motion, frames, fmt) + ",format=yuv420p"
     _run(["ffmpeg", "-y", "-v", "error", "-i", str(png), "-vf", vf, "-frames:v", str(frames),
           "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-r", str(config.FPS), str(out)])
 
@@ -68,7 +69,7 @@ def assemble(script: dict, assets: dict, timing: dict, voice: Path, ass: Path, o
         end = starts[i + 1] if i + 1 < n else total
         dur = end - starts[i] + (T if i + 1 < n else 0)
         clip = workdir / f"clip_{i:02d}.mp4"
-        scene_clip(assets["scenes"][i], script["scenes"][i].get("motion", "zoom_in"), dur, clip)
+        scene_clip(assets["scenes"][i], script["scenes"][i].get("motion", "zoom_in"), dur, clip, fmt)
         clips.append(clip)
 
     inputs = []
@@ -78,7 +79,7 @@ def assemble(script: dict, assets: dict, timing: dict, voice: Path, ass: Path, o
     inputs += ["-loop", "1", "-t", f"{total:.3f}", "-i", str(assets["badge"])]
     inputs += ["-loop", "1", "-t", "2.6", "-i", str(assets["hook"])]
     inputs += ["-i", str(voice)]
-    inputs += ["-stream_loop", "-1", "-i", str(config.ROOT / "assets" / "music" / f"{fmt}.mp3")]
+    inputs += ["-stream_loop", "-1", "-i", str(config.ROOT / "assets" / "music" / f"{f.get('music', fmt)}.mp3")]
 
     fc = []
     prev = "[0:v]"
@@ -100,8 +101,14 @@ def assemble(script: dict, assets: dict, timing: dict, voice: Path, ass: Path, o
     fc.append(f"[v1][mduck]amix=inputs=2:duration=first:normalize=0,"
               f"loudnorm=I={config.TARGET_LUFS}:TP=-1.5:LRA=11,aresample=48000[aout]")
 
+    if f.get("orientation") == "landscape":
+        # Lange Videos: Bitrate deckeln, damit die Datei < 95 MB bleibt (GitHub-Limit 100 MB)
+        venc = ["-crf", "23", "-maxrate", "1000k", "-bufsize", "2000k"]
+        abr = "128k"
+    else:
+        venc, abr = ["-crf", "20"], "192k"
     _run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(fc),
           "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.3f}",
-          "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-profile:v", "high", "-pix_fmt", "yuv420p",
-          "-r", str(config.FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+          "-c:v", "libx264", "-preset", "medium", *venc, "-profile:v", "high", "-pix_fmt", "yuv420p",
+          "-r", str(config.FPS), "-c:a", "aac", "-b:a", abr, "-ar", "48000",
           "-movflags", "+faststart", str(out)])

@@ -100,14 +100,18 @@ def status() -> dict:
         nums = [int(v["id"][1:]) for v in vids if v["id"].startswith(f["prefix"])] + _content_ids(f["prefix"])
         if fmt == "horror":  # immer nur die naechste Folge (A/B-Abstimmung muss vorher laufen)
             need = 1 if not ready else 0
-        else:
-            need = max(0, config.INVENTORY_DAYS + 1 - len(ready))
+        elif "weekdays" in f:  # z. B. lange Videos: Vorrat fuer die naechsten Sendetage
+            need = max(0, len(f["weekdays"]) - len(ready))
+        else:  # Formate im Wechsel brauchen anteilig weniger Vorrat
+            share = len(config.rotation_group(fmt))
+            need = max(0, -(-(config.INVENTORY_DAYS + 1) // share) - len(ready))
         if mode == "pause" or (mode == "spar" and fmt == "wissen" and backup):
             need = 0
         out["formats"][fmt] = {
             "ready": ready,
             "backup_drive": len(backup),
-            "days_covered": len(ready) + len(backup),
+            "days_covered": (len(ready) + len(backup)) * len(config.rotation_group(fmt)),
+            "runs_today": config.runs_on(fmt, now().date()),
             "needs_production": need,
             "next_id": f"{f['prefix']}{(max(nums) if nums else 0) + 1:03d}",
             "recent_topics": [v.get("topic") for v in vids if v["status"] != "backup"][-30:],
@@ -154,6 +158,13 @@ def _content_ids(prefix: str) -> list:
     return [int(p.name[1:]) for p in c.glob(f"{prefix}[0-9][0-9][0-9]")] if c.exists() else []
 
 
+def _with_chapters(text: str, build: dict) -> str:
+    if "{KAPITEL}" not in text:
+        return text
+    lines = "\n".join(f"{t} {name}" for t, name in build.get("chapters", []))
+    return text.replace("{KAPITEL}", "Kapitel:\n" + lines if lines else "")
+
+
 def register(vid: str) -> dict:
     cdir = config.DATA / "content" / vid
     s = json.loads((cdir / "script.json").read_text(encoding="utf-8"))
@@ -170,8 +181,8 @@ def register(vid: str) -> dict:
         "topic": s["topic"], "hook_type": s["hook_type"], "series": s.get("series"),
         "episode": s.get("episode"), "duration": b["duration"],
         "video_url": f"{config.RAW_BASE}/videos/{vid}.mp4",
-        "title_tiktok": s["title_tiktok"], "title_youtube": s["title_youtube"],
-        "text_tiktok": s["text_tiktok"], "text_youtube": s["text_youtube"],
+        "title_tiktok": s.get("title_tiktok", ""), "title_youtube": s.get("title_youtube", ""),
+        "text_tiktok": s.get("text_tiktok", ""), "text_youtube": _with_chapters(s.get("text_youtube", ""), b),
         "scenes": len(s["scenes"]), "buffer": {},
     }
     data["videos"].append(entry)
@@ -185,17 +196,31 @@ def plan(day: str) -> list:
     data = _load("inventory.json", {"videos": []})
     sch = schedule()
     posts = []
+    done_groups = set()
     for fmt, f in config.FORMATS.items():
-        if any(v["format"] == fmt and (v.get("due") or "").startswith(day) for v in data["videos"]):
-            continue  # heute schon geplant -> nie doppelt
-        ready = sorted((v for v in data["videos"] if v["format"] == fmt and v["status"] == "ready"),
-                       key=lambda v: v["id"])
-        if not ready:  # Reserve aus Google Drive (nur wenn kein neues Video bereitliegt)
-            ready = sorted((v for v in data["videos"] if v["format"] == fmt and v["status"] == "backup"),
-                           key=lambda v: v["id"])
-        if not ready:
+        group = tuple(config.rotation_group(fmt))
+        if group in done_groups:
             continue
-        v = ready[0]
+        if not any(config.runs_on(g, d) for g in group):
+            continue  # Format heute nicht dran (Wochentag)
+        if any(v["format"] in group and (v.get("due") or "").startswith(day) for v in data["videos"]):
+            done_groups.add(group)
+            continue  # Sendeplatz heute schon belegt -> nie doppelt
+        # Format des Tages zuerst; ist dafuer nichts da, springt das andere Format der Gruppe ein.
+        order = sorted(group, key=lambda g: not config.runs_on(g, d))
+        v = None
+        for g in order:
+            ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "ready"),
+                           key=lambda x: x["id"])
+            if not ready:  # Reserve aus Google Drive (nur wenn kein neues Video bereitliegt)
+                ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "backup"),
+                               key=lambda x: x["id"])
+            if ready:
+                v, fmt, f = ready[0], g, config.FORMATS[g]
+                break
+        done_groups.add(group)
+        if v is None:
+            continue
         if v.get("source") == "drive" and not v.get("title_tiktok"):
             posts.append({"id": v["id"], "format": fmt, "needs_texts": True, "topic": v["topic"],
                           "drive_id": v["drive_id"], "drive_title": v["drive_title"],
@@ -207,15 +232,18 @@ def plan(day: str) -> list:
         due = datetime(d.year, d.month, d.day, hh, mm, tzinfo=TZ)
         if due <= now() + timedelta(minutes=20):
             continue
-        posts.append({
-            "id": v["id"], "format": fmt, "dueAt": due.isoformat(), "video_url": v["video_url"],
-            "tiktok": {"channelId": config.BUFFER["tiktok_channel_id"], "text": v["text_tiktok"],
-                       "metadata": {"tiktok": {"title": v["title_tiktok"], "isAiGenerated": True}}},
-            "youtube": {"channelId": config.BUFFER["youtube_channel_id"], "text": v["text_youtube"],
-                        "metadata": {"youtube": {"title": v["title_youtube"], "categoryId": f["youtube_category"],
-                                                 "madeForKids": False, "privacy": "public",
-                                                 "isAiGenerated": True, "notifySubscribers": True}}},
-        })
+        entry = {"id": v["id"], "format": fmt, "dueAt": due.isoformat(), "video_url": v["video_url"],
+                 "platforms": config.platforms(fmt), "long_video": f.get("orientation") == "landscape"}
+        if "tiktok" in config.platforms(fmt):
+            entry["tiktok"] = {"channelId": config.BUFFER["tiktok_channel_id"], "text": v["text_tiktok"],
+                               "metadata": {"tiktok": {"title": v["title_tiktok"], "isAiGenerated": True}}}
+        if "youtube" in config.platforms(fmt):
+            entry["youtube"] = {"channelId": config.BUFFER["youtube_channel_id"], "text": v["text_youtube"],
+                                "metadata": {"youtube": {"title": v["title_youtube"],
+                                                         "categoryId": f["youtube_category"],
+                                                         "madeForKids": False, "privacy": "public",
+                                                         "isAiGenerated": True, "notifySubscribers": True}}}
+        posts.append(entry)
     return posts
 
 
@@ -301,10 +329,15 @@ def learn() -> dict:
     # Montags: Zeitplan anhand der Slot-Werte anpassen (nur mit genug Daten, max. +-2 h pro Woche)
     if now().weekday() == 0:
         sch = schedule()
+        groups_seen = set()
         for fmt in config.FORMATS:
+            group = tuple(config.rotation_group(fmt))
+            if group in groups_seen or "weekdays" in config.FORMATS[fmt]:
+                continue  # lange Videos: Sendetage fest (zu wenig Daten fuer Automatik)
+            groups_seen.add(group)
             cands = {}
             for p in posts:
-                if p["format"] != fmt or not p.get("due") or score(p) is None:
+                if p["format"] not in group or not p.get("due") or score(p) is None:
                     continue
                 h = datetime.fromisoformat(p["due"]).astimezone(TZ).hour
                 cands.setdefault(h, []).append(score(p))
@@ -313,8 +346,9 @@ def learn() -> dict:
                 best = max(good, key=good.get)
                 cur = int(sch[fmt].split(":")[0])
                 new = cur + max(-2, min(2, best - cur))
-                sch[fmt] = f"{new:02d}:00"
-        hours = sorted(int(v.split(":")[0]) for v in sch.values())
+                for g in group:  # Formate im Wechsel behalten denselben Sendeplatz
+                    sch[g] = f"{new:02d}:00"
+        hours = sorted({int(sch[g].split(":")[0]) for g in config.FORMATS if "weekdays" not in config.FORMATS[g]})
         if all(b - a >= 2 for a, b in zip(hours, hours[1:])):  # mind. 2 h Abstand
             _save("schedule.json", sch)
             result["schedule"] = sch

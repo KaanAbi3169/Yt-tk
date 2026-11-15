@@ -15,6 +15,7 @@
 | wissen | 30–50 | 85–120 |
 | waswaerewenn | 40–60 | 100–140 |
 | horror | 61–80 | 150–175 |
+| lang (YouTube, 16:9) | 420–600 | 1 000–1 350 |
 
 Ist das ElevenLabs-Tagesbudget (`per_day_available` im Status) unter 2800: jeweils an der Untergrenze bleiben.
 
@@ -45,3 +46,10 @@ Ist das ElevenLabs-Tagesbudget (`per_day_available` im Status) unter 2800: jewei
 - Jede Folge endet mit „A: … / B: …“ (Szene mit A/B-Karten) – außer dem Finale (dort: Wahl der nächsten Staffel).
 - Nächste Folge setzt die **Mehrheit** der Kommentare fort (siehe ROUTINE_PRODUKTION.md). Ohne Stimmen: vorher notierter Standard-Zweig.
 - `part_label`: „TEIL 2“, …, „FINALE“.
+
+## Lange Gruselgeschichte (`lang`, YouTube 16:9)
+- Eine abgeschlossene Geschichte, Ich-Erzähler, ruhiges Tempo, steigende Spannung, offenes oder überraschendes Ende. Gleiche Regeln wie Horror (nicht brutal, 13+, keine echten Personen/Orte/Verbrechen).
+- Aufbau: Hook (1–2 Sätze) → 4–7 Kapitel → kurzer Abschluss mit Kommentar-Frage („Was hättest du getan?“) und Abo-Hinweis.
+- SVGs: `viewBox="0 0 1920 1080"`. **Sicherheitszonen:** Badge oben links (x 0–720, y 0–130), Untertitel unten (y 900–1080) → dort keine Details. Wichtiges zwischen y 140 und 880.
+- Optik wie Horror (Farben, DejaVu Serif), Motive breiter angelegt (Räume, Flure, Fenster, Landschaft bei Nacht).
+- `title_youtube` ≤ 100 Zeichen, Muster „<Hook> | Gruselgeschichte (Deutsch)“, kein #shorts. `text_youtube`: 2–3 Sätze Teaser, `{KAPITEL}`, Kommentar-Frage, „Diese Geschichte ist frei erfunden. Stimme und Grafiken wurden mit KI erstellt.“, 4–8 Hashtags.

@@ -1,6 +1,11 @@
 # Routine: Planung (täglich früh)
 
-Ziel: Die 3 Videos des Tages (je TikTok + YouTube) in Buffer zu festen Zeiten einplanen. Nie doppelt.
+Ziel: Die Videos des Tages in Buffer zu festen Zeiten einplanen. Nie doppelt.
+
+Sendeplan (vom Nutzer festgelegt, 15.11.2026):
+- **2 Shorts pro Tag** auf TikTok **und** YouTube: 10:00 Wissen/Was wäre wenn (täglich im Wechsel), 18:00 Horror.
+- **2 lange YouTube-Videos pro Woche** (Format `lang`, 16:9, kein Short): Mittwoch + Donnerstag 16:00, nur YouTube.
+`plan` liefert genau diese Einträge; Einträge mit `"long_video": true` haben nur `youtube`.
 
 ## Ablauf
 ```bash
@@ -10,10 +15,12 @@ test -f PAUSE -o -f "$YTTK_DATA/PAUSE" && echo PAUSE   # -> nichts planen, nur m
 python3 -m yt_tk.inventory plan "$(TZ=Europe/Zurich date +%F)"
 ```
 Die Ausgabe ist eine Liste. Für **jeden** Eintrag:
-1. **Doppel-Schutz:** Buffer `list_posts` (organizationId 6af6f247f5147bf43b663522, status scheduled/sending/sent, dueAt heute). Gibt es auf einem Kanal schon einen Post mit gleichem Titel/Text-Anfang → diesen Kanal überspringen.
+1. **Doppel-Schutz (pro Kanal, über die ganze Historie – nicht nur heute):** Buffer `list_posts` (organizationId 6af6f247f5147bf43b663522, channelIds [Kanal], status scheduled/sending/sent, **ohne Datumsfilter**, first 100, ggf. weiterblättern).
+   Gibt es auf dem Kanal schon einen Post, dessen Video-Asset `/videos/<ID>.mp4` enthält **oder** dessen Text-Anfang/Titel gleich ist → diesen Kanal überspringen und `inventory mark` trotzdem mit der vorhandenen Post-ID ausführen.
+   (Grund: Am 14./15.11. wurden W001, X001, H001 doppelt auf YouTube hochgeladen, weil nur „heute“ geprüft wurde.)
 2. Prüfen, dass die Video-URL erreichbar ist: `curl -sfI <video_url> >/dev/null`.
 3. Buffer `create_post` für TikTok: `channelId`, `schedulingType "automatic"`, `mode "customScheduled"`, `dueAt` aus dem Eintrag, `text`, `assets [{"video":{"url": video_url}}]`, `metadata` aus dem Eintrag.
-4. Dasselbe für YouTube.
+4. Dasselbe für YouTube (nur für Plattformen, die im Eintrag stehen; `lang` = nur YouTube, normales Video, Titel ohne #shorts).
 5. `python3 -m yt_tk.inventory mark <ID> --tiktok <postId> --youtube <postId> --due <dueAt>`
 6. Fehler bei einem Post: einmal nach 60 s wiederholen. Danach `python3 -m yt_tk.inventory fail <ID> "<Fehlertext>"` und melden.
 

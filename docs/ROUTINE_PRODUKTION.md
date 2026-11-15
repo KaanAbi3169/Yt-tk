@@ -23,6 +23,15 @@ Aus `status`: `needs_production` pro Format. Maximal **6 neue Videos pro Lauf** 
   Nach dem monatlichen Reset (`elevenlabs.reset`) läuft die Produktion automatisch wieder an. Nicht nachfragen.
 ElevenLabs 401/403/429 mitten im Lauf: aufhören, Rest beim nächsten Lauf (keine Wiederholung heute).
 
+### Lange Videos (Format `lang`, 2 pro Woche, Mi + Do 16:00)
+- Höchstens **1 langes Video pro Lauf**, und erst nachdem die Shorts des nächsten Tages fertig sind.
+- Gruselgeschichte zum Zuhören, 7–10 Min. (ca. 1 000–1 350 Wörter), eigene Handlung (eine abgeschlossene Geschichte, nicht die Shorts-Staffel nacherzählen).
+- 20–70 Szenen, aber nur 12–25 verschiedene SVGs (`svg_file` darf mehrfach verwendet werden, Bewegung variieren), `viewBox="0 0 1920 1080"`.
+- Kapitel: `"chapter": "Name"` an der ersten Szene jedes Kapitels (mind. 3, Szene 1 immer). `text_youtube` enthält `{KAPITEL}` – wird beim `register` durch die echten Zeitmarken ersetzt.
+- Nur `title_youtube`/`text_youtube` (kein TikTok), kein `#shorts`.
+- Vertonung läuft automatisch in Abschnitten (ca. 7–9 Tsd. Credits pro Video). Im Budget-Modus `spar`: Länge an der Untergrenze (7 Min.). Bei `pause`: nicht produzieren.
+- Bauen dauert ca. 10–20 Min. Kontaktbogen: `ffmpeg -v error -y -i work/<ID>/<ID>.mp4 -vf "fps=1/30,scale=480:270,tile=5x4" -frames:v 1 work/<ID>-sheet.jpg`.
+
 ## 2. Trends (höchstens 1× pro Tag, wenn `trends.json` älter als 24 h)
 - 2–3 Websuchen (deutschsprachige Shorts/TikTok-Trends, aktuelle Anlässe/Jahreszeit, Fragen die Leute gerade stellen).
 - Notiere **Formate und Muster** (Hook-Typen, Länge, Tempo, Textstil, Themenfelder, Hashtags) in `trends.json` (`notes`: Liste mit Datum, Quelle, Beobachtung). Nie fremde Videos/Texte übernehmen.

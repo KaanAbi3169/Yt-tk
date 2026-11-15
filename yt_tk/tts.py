@@ -69,22 +69,88 @@ def check_budget(chars_needed: int) -> None:
             f"Benoetigt {chars_needed}. Skripte kuerzen oder Produktion drosseln.")
 
 
-def synthesize(text: str, fmt: str, out_mp3) -> dict:
-    """Erzeugt MP3 und gibt Wort-Timings zurueck: [{word,start,end,char_start,char_end}]."""
-    f = config.FORMATS[fmt]
-    check_budget(len(text))
+MAX_CHUNK = 3000  # Zeichen pro API-Aufruf (lange Videos werden in Abschnitten vertont)
+
+
+def split_text(text: str, max_chars: int = MAX_CHUNK) -> list:
+    """Teilt an Satzenden (Leerzeichen nach . ! ? …), sodass " ".join(teile) == text bleibt."""
+    parts, start = [], 0
+    while len(text) - start > max_chars:
+        window = text[start:start + max_chars]
+        cut = max(window.rfind(e) for e in (". ", "! ", "? ", "… ", "\" "))
+        if cut <= 0:
+            cut = window.rfind(" ")
+        else:
+            cut += len(". ") - 1  # Position des Leerzeichens
+        if cut <= 0:
+            raise ValueError("Text laesst sich nicht teilen")
+        parts.append(text[start:start + cut])
+        start += cut + 1
+    parts.append(text[start:])
+    return parts
+
+
+def _duration(path) -> float:
+    import subprocess
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                       capture_output=True, text=True, check=True)
+    return float(r.stdout.strip())
+
+
+def _tts(text: str, f: dict, prev: str = "", nxt: str = "") -> dict:
     body = {
         "text": text,
         "model_id": config.ELEVEN_MODEL,
         "language_code": "de",
         "voice_settings": f["voice_settings"],
     }
-    res = _request("POST", f"/text-to-speech/{f['voice_id']}/with-timestamps?output_format=mp3_44100_128", body)
-    with open(out_mp3, "wb") as fh:
-        fh.write(base64.b64decode(res["audio_base64"]))
-    # "alignment" bezieht sich auf den Originaltext -> Szenengrenzen per Zeichenindex
-    al = res.get("alignment") or res["normalized_alignment"]
-    return {"words": words_from_alignment(al), "chars": al}
+    if prev:
+        body["previous_text"] = prev[-500:]
+    if nxt:
+        body["next_text"] = nxt[:500]
+    return _request("POST", f"/text-to-speech/{f['voice_id']}/with-timestamps?output_format=mp3_44100_128", body)
+
+
+def synthesize(text: str, fmt: str, out_mp3) -> dict:
+    """Erzeugt MP3 und gibt Wort-Timings zurueck: [{word,start,end,char_start,char_end}]."""
+    import subprocess
+    import tempfile
+    from pathlib import Path
+    f = config.FORMATS[fmt]
+    check_budget(len(text))
+    parts = split_text(text)
+    if len(parts) == 1:
+        res = _tts(text, f)
+        with open(out_mp3, "wb") as fh:
+            fh.write(base64.b64decode(res["audio_base64"]))
+        # "alignment" bezieht sich auf den Originaltext -> Szenengrenzen per Zeichenindex
+        al = res.get("alignment") or res["normalized_alignment"]
+        return {"words": words_from_alignment(al), "chars": al}
+
+    # Lange Texte: Abschnitte einzeln vertonen (mit Kontext fuer gleichmaessige Betonung),
+    # Ton zusammenfuegen und Zeitstempel verschieben.
+    tmp = Path(tempfile.mkdtemp(prefix="tts_"))
+    al = {"characters": [], "character_start_times_seconds": [], "character_end_times_seconds": []}
+    offset, files = 0.0, []
+    for i, part in enumerate(parts):
+        res = _tts(part, f, prev=" ".join(parts[:i]), nxt=" ".join(parts[i + 1:]))
+        mp3 = tmp / f"part_{i:02d}.mp3"
+        mp3.write_bytes(base64.b64decode(res["audio_base64"]))
+        files.append(mp3)
+        a = res.get("alignment") or res["normalized_alignment"]
+        if i:
+            al["characters"].append(" ")
+            al["character_start_times_seconds"].append(offset)
+            al["character_end_times_seconds"].append(offset)
+        al["characters"] += a["characters"]
+        al["character_start_times_seconds"] += [t + offset for t in a["character_start_times_seconds"]]
+        al["character_end_times_seconds"] += [t + offset for t in a["character_end_times_seconds"]]
+        offset += _duration(mp3)
+    lst = tmp / "list.txt"
+    lst.write_text("".join(f"file '{p}'\n" for p in files))
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
+                    "-c:a", "libmp3lame", "-b:a", "128k", "-ar", "44100", str(out_mp3)], check=True)
+    return {"words": words_from_alignment(al), "chars": al, "parts": len(parts)}
 
 
 def words_from_alignment(al: dict) -> list:

@@ -15,7 +15,8 @@ Einziger externer Generator: **ElevenLabs** (Stimme + 1 Musiktrack pro Serie). G
 | täglich 06:37 | **Planung** | Die 3 Videos des Tages in Buffer einplanen (TikTok + YouTube) |
 | täglich 21:43 | **Analyse & Bericht** | Zahlen holen, lernen, Tagesbericht als Push-Nachricht |
 
-Sendezeiten (Start): **10:00 Wissen · 15:00 Was wäre wenn · 18:00 Horror „Du wachst auf“**.
+Sendezeiten (seit 16.11.2026): **10:00 Wissen / Was wäre wenn (täglich im Wechsel) · 18:00 Horror „Du wachst auf“** – je TikTok + YouTube Shorts.
+Dazu **Mi + Do 16:00 ein langes YouTube-Video** (Gruselgeschichte, 16:9, 7–10 Min.).
 Ab der 2. Woche passt das System die Zeiten jeden Montag an deine Zahlen an.
 
 ### ⏸️ Alles pausieren
@@ -24,7 +25,7 @@ Ab der 2. Woche passt das System die Zeiten jeden Montag an deine Zahlen an.
 2. „+“ / „Add file“ → **Create new file** → Name: `PAUSE` → Inhalt egal → **Commit**.
 3. Ab sofort wird nichts mehr produziert oder geplant. Schon in Buffer geplante Posts löschst du in der Buffer-App.
 
-**Wieder starten:** Die Datei `PAUSE` im Branch `media` löschen.
+**Wieder starten:** Die Datei `PAUSE` (oder `STOP`) im Branch `media` löschen.
 
 **Weg 2 – Aufgaben ausschalten:** Claude-App → Code → Sitzung „Autonomer Content-Agent für Faceless-Videos“ → geplante Aufgaben → die 3 „Yt-tk“-Aufgaben deaktivieren. Oder einfach in diese Sitzung schreiben: „Pausiere alles“.
 

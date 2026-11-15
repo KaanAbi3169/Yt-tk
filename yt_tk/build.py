@@ -18,20 +18,36 @@ def load(vid: str) -> dict:
     return json.loads((config.DATA / "content" / vid / "script.json").read_text(encoding="utf-8"))
 
 
-REQUIRED = ["id", "format", "topic", "hook_type", "hook_overlay", "scenes",
-            "title_tiktok", "title_youtube", "text_tiktok", "text_youtube"]
+REQUIRED = ["id", "format", "topic", "hook_type", "hook_overlay", "scenes"]
+
+
+def required(fmt: str) -> list:
+    req = list(REQUIRED)
+    for pf in config.platforms(fmt):
+        req += [f"title_{pf}", f"text_{pf}"]
+    return req
 
 
 def check_script(s: dict) -> list:
-    p = [f"Feld fehlt: {k}" for k in REQUIRED if k not in s]
+    if s.get("format") not in config.FORMATS:
+        return [f"Unbekanntes Format {s.get('format')}"]
+    p = [f"Feld fehlt: {k}" for k in required(s["format"]) if k not in s]
     if p:
         return p
-    if s["format"] not in config.FORMATS:
-        p.append(f"Unbekanntes Format {s['format']}")
-        return p
     f = config.FORMATS[s["format"]]
-    if not 3 <= len(s["scenes"]) <= 14:
-        p.append("3-14 Szenen erforderlich")
+    lo, hi = f.get("min_scenes", 3), f.get("max_scenes", 14)
+    if not lo <= len(s["scenes"]) <= hi:
+        p.append(f"{lo}-{hi} Szenen erforderlich")
+    if f.get("chapters"):
+        names = [sc["chapter"] for sc in s["scenes"] if sc.get("chapter")]
+        if not s["scenes"][0].get("chapter"):
+            p.append("Szene 1 braucht ein \"chapter\" (YouTube-Kapitel beginnen bei 0:00)")
+        if len(names) < 3:
+            p.append("Mindestens 3 Kapitel (\"chapter\" an der ersten Szene jedes Kapitels)")
+        if "{KAPITEL}" not in s.get("text_youtube", ""):
+            p.append("text_youtube braucht den Platzhalter {KAPITEL}")
+        if "#shorts" in (s.get("title_youtube", "") + s.get("text_youtube", "")).lower():
+            p.append("Langes Video: kein #shorts in Titel/Text")
     for i, sc in enumerate(s["scenes"]):
         if not sc.get("text", "").strip():
             p.append(f"Szene {i + 1}: kein Text")
@@ -42,16 +58,16 @@ def check_script(s: dict) -> list:
         except FileNotFoundError as e:
             p.append(f"Szene {i + 1}: SVG-Datei fehlt ({e.filename})")
             continue
-        p += [f"Szene {i + 1}: {x}" for x in visuals.validate_svg(svg)]
+        p += [f"Szene {i + 1}: {x}" for x in visuals.validate_svg(svg, s["format"])]
     words = len(full_text(s).split())
     est = words / f.get("wps", WORDS_PER_SEC) + config.TAIL
     if not (f["min_s"] - 3 <= est <= f["max_s"] + 2):
         p.append(f"Geschaetzte Laenge {est:.0f}s ({words} Woerter) - Ziel {f['min_s']}-{f['max_s']}s")
-    if len(s["title_tiktok"]) > 90:
+    if len(s.get("title_tiktok", "")) > 90:
         p.append("TikTok-Titel zu lang (max 90)")
-    if len(s["title_youtube"]) > 100:
+    if len(s.get("title_youtube", "")) > 100:
         p.append("YouTube-Titel zu lang (max 100)")
-    tags = [w for w in (s["text_tiktok"] + " " + s["text_youtube"]).split() if w.startswith("#")]
+    tags = [w for w in (s.get("text_tiktok", "") + " " + s.get("text_youtube", "")).split() if w.startswith("#")]
     if not tags:
         p.append("Keine Hashtags")
     return p
@@ -85,6 +101,20 @@ def scene_timing(s: dict, tts_res: dict) -> dict:
     return {"scene_starts": starts, "total": total}
 
 
+def _mmss(t: float) -> str:
+    t = int(t)
+    return f"{t // 3600}:{t % 3600 // 60:02d}:{t % 60:02d}" if t >= 3600 else f"{t // 60}:{t % 60:02d}"
+
+
+def chapters(s: dict, timing: dict) -> list:
+    """YouTube-Kapitel aus den Szenen mit "chapter" (erste Marke immer 0:00)."""
+    out = []
+    for sc, st in zip(s["scenes"], timing["scene_starts"]):
+        if sc.get("chapter"):
+            out.append([_mmss(0 if not out else st), sc["chapter"]])
+    return out
+
+
 def build(vid: str) -> dict:
     s = load(vid)
     probs = check_script(s)
@@ -113,6 +143,8 @@ def build(vid: str) -> dict:
     render.assemble(s, assets, timing, voice, ass, out, work)
     report = qa.check(out, fmt, res["words"], ass)
     report["timing"] = timing
+    if config.FORMATS[fmt].get("chapters"):
+        report["chapters"] = chapters(s, timing)
     (cdir / "build.json").write_text(json.dumps(report, indent=2, ensure_ascii=False))
     if report["ok"]:
         vdir = config.DATA / "videos"
@@ -122,6 +154,8 @@ def build(vid: str) -> dict:
         import subprocess
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "3", "-i", str(out), "-frames:v", "1",
                         "-vf", "scale=360:-1", str(cdir / "preview.jpg")])
+    else:
+        report["hint"] = "QA nicht bestanden - Video wurde nicht in videos/ kopiert."
     return report
 
 

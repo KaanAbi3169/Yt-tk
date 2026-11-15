@@ -34,15 +34,16 @@ def check(video: Path, fmt: str, words: list, ass: Path) -> dict:
     if not v:
         issues.append("Keine Videospur")
     else:
-        if (int(v["width"]), int(v["height"])) != (config.VIDEO_W, config.VIDEO_H):
-            issues.append(f"Aufloesung {v['width']}x{v['height']} statt 1080x1920")
+        W, H = config.dims(fmt)
+        if (int(v["width"]), int(v["height"])) != (W, H):
+            issues.append(f"Aufloesung {v['width']}x{v['height']} statt {W}x{H}")
         if v.get("codec_name") != "h264" or v.get("pix_fmt") != "yuv420p":
             issues.append("Video nicht h264/yuv420p")
     if not a:
         issues.append("Keine Tonspur")
     if not (f["min_s"] <= dur <= f["max_s"]):
         issues.append(f"Laenge {dur:.1f}s ausserhalb {f['min_s']}-{f['max_s']}s")
-    if size > 250e6 or size < 300e3:
+    if size > 95e6 or size < 300e3:  # GitHub lehnt Dateien > 100 MB ab
         issues.append(f"Dateigroesse auffaellig: {size / 1e6:.1f} MB")
 
     # Datei komplett dekodierbar?
