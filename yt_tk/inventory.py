@@ -6,6 +6,8 @@
     python -m yt_tk.inventory plan <YYYY-MM-DD>     # Buffer-Posts fuer den Tag (JSON)
     python -m yt_tk.inventory mark <ID> --tiktok <postId> --youtube <postId> --due <ISO>
     python -m yt_tk.inventory fail <ID> "<Grund>"
+    python -m yt_tk.inventory import-drive <liste.json>   # Drive-Videos als Reserve (Status backup)
+    python -m yt_tk.inventory texts <ID> <texte.json>     # Titel/Texte fuer ein Reserve-Video setzen
     python -m yt_tk.inventory perf <ID> <tiktok|youtube> <24h|7d> views=.. likes=.. comments=.. shares=.. [followers=..]
     python -m yt_tk.inventory due-metrics           # welche Posts brauchen jetzt 24h/7d-Zahlen
     python -m yt_tk.inventory learn                 # Auswertung -> data/insights.json (+ montags Zeitplan)
@@ -69,29 +71,82 @@ def setup() -> str:
     return f"angelegt: {d}"
 
 
+def budget_mode(b: dict) -> str:
+    """normal: alles produzieren | spar: Wissen kommt aus der Drive-Reserve |
+    pause: ElevenLabs-Kontingent aufgebraucht -> keine Produktion bis zum Reset (laeuft danach automatisch weiter)."""
+    if "remaining" not in b:
+        return "normal"
+    if b["remaining"] < 1500:
+        return "pause"
+    if b["per_day_available"] < 2600:
+        return "spar"
+    return "normal"
+
+
 def status() -> dict:
     inv = _load("inventory.json", {"videos": []})["videos"]
     out = {"now": now().isoformat(), "paused": config.paused(), "formats": {}, "schedule": schedule()}
-    for fmt, f in config.FORMATS.items():
-        vids = [v for v in inv if v["format"] == fmt]
-        ready = [v["id"] for v in vids if v["status"] == "ready"]
-        nums = [int(v["id"][1:]) for v in vids] + _content_ids(f["prefix"])
-        out["formats"][fmt] = {
-            "ready": ready,
-            "days_covered": len(ready),
-            # Horror: immer nur die naechste Folge (A/B-Abstimmung muss vorher laufen)
-            "needs_production": (1 if not ready else 0) if fmt == "horror"
-            else max(0, config.INVENTORY_DAYS + 1 - len(ready)),
-            "next_id": f"{f['prefix']}{(max(nums) if nums else 0) + 1:03d}",
-            "recent_topics": [v.get("topic") for v in vids][-30:],
-        }
-    out["series"] = _load("series.json", {})
     try:
         from . import tts
         out["elevenlabs"] = tts.budget_status()
     except Exception as e:  # Budget-Abfrage darf den Status nicht verhindern
         out["elevenlabs"] = {"error": str(e)}
+    mode = budget_mode(out["elevenlabs"])
+    out["budget_mode"] = mode
+    for fmt, f in config.FORMATS.items():
+        vids = [v for v in inv if v["format"] == fmt]
+        ready = [v["id"] for v in vids if v["status"] == "ready"]
+        backup = [v["id"] for v in vids if v["status"] == "backup"]
+        nums = [int(v["id"][1:]) for v in vids if v["id"].startswith(f["prefix"])] + _content_ids(f["prefix"])
+        if fmt == "horror":  # immer nur die naechste Folge (A/B-Abstimmung muss vorher laufen)
+            need = 1 if not ready else 0
+        else:
+            need = max(0, config.INVENTORY_DAYS + 1 - len(ready))
+        if mode == "pause" or (mode == "spar" and fmt == "wissen" and backup):
+            need = 0
+        out["formats"][fmt] = {
+            "ready": ready,
+            "backup_drive": len(backup),
+            "days_covered": len(ready) + len(backup),
+            "needs_production": need,
+            "next_id": f"{f['prefix']}{(max(nums) if nums else 0) + 1:03d}",
+            "recent_topics": [v.get("topic") for v in vids if v["status"] != "backup"][-30:],
+        }
+    out["series"] = _load("series.json", {})
     return out
+
+
+def import_drive(path: str) -> int:
+    """Fertige Videos aus dem Drive-Ordner 'Auto-Posting' als Reserve (Status backup) aufnehmen.
+    Datei: JSON-Liste [{"drive_id": "...", "title": "V033_Brot_lagern.mp4", "fmt": "wissen"}]."""
+    data = _load("inventory.json", {"videos": []})
+    known = {v.get("drive_id") for v in data["videos"]}
+    n = 0
+    for f in json.loads(Path(path).read_text(encoding="utf-8")):
+        if f["drive_id"] in known:
+            continue
+        stem = Path(f["title"]).stem
+        num, _, rest = stem.partition("_")
+        data["videos"].append({
+            "id": f"D{num[1:]}", "format": f.get("fmt", "wissen"), "status": "backup", "source": "drive",
+            "drive_id": f["drive_id"], "drive_title": f["title"], "topic": rest.replace("_", " "),
+            "hook_type": "drive-reserve", "created": now().isoformat(),
+            "video_url": f"https://drive.google.com/uc?export=download&id={f['drive_id']}", "buffer": {},
+        })
+        n += 1
+    _save("inventory.json", data)
+    return n
+
+
+def set_texts(vid: str, path: str) -> None:
+    t = json.loads(Path(path).read_text(encoding="utf-8"))
+    data = _load("inventory.json", {"videos": []})
+    for v in data["videos"]:
+        if v["id"] == vid:
+            for k in ("title_tiktok", "title_youtube", "text_tiktok", "text_youtube", "topic"):
+                if k in t:
+                    v[k] = t[k]
+    _save("inventory.json", data)
 
 
 def _content_ids(prefix: str) -> list:
@@ -135,9 +190,19 @@ def plan(day: str) -> list:
             continue  # heute schon geplant -> nie doppelt
         ready = sorted((v for v in data["videos"] if v["format"] == fmt and v["status"] == "ready"),
                        key=lambda v: v["id"])
+        if not ready:  # Reserve aus Google Drive (nur wenn kein neues Video bereitliegt)
+            ready = sorted((v for v in data["videos"] if v["format"] == fmt and v["status"] == "backup"),
+                           key=lambda v: v["id"])
         if not ready:
             continue
         v = ready[0]
+        if v.get("source") == "drive" and not v.get("title_tiktok"):
+            posts.append({"id": v["id"], "format": fmt, "needs_texts": True, "topic": v["topic"],
+                          "drive_id": v["drive_id"], "drive_title": v["drive_title"],
+                          "dueAt": datetime(d.year, d.month, d.day, *map(int, sch[fmt].split(":")), tzinfo=TZ).isoformat(),
+                          "hint": "Erst Drive-Datei freigeben (anyoneWithLink) und Texte schreiben: "
+                                  "inventory texts <ID> <json>, dann plan erneut ausfuehren."})
+            continue
         hh, mm = map(int, sch[fmt].split(":"))
         due = datetime(d.year, d.month, d.day, hh, mm, tzinfo=TZ)
         if due <= now() + timedelta(minutes=20):
@@ -314,6 +379,11 @@ def main(a):
         opts = dict(zip(a[3::2], a[4::2]))
         mark(a[2], opts.get("--tiktok", ""), opts.get("--youtube", ""), opts["--due"],
              opts.get("--status", "scheduled"))
+        print("ok")
+    elif cmd == "import-drive":
+        print(f"{import_drive(a[2])} Reserve-Videos aufgenommen")
+    elif cmd == "texts":
+        set_texts(a[2], a[3])
         print("ok")
     elif cmd == "fail":
         fail(a[2], a[3])
