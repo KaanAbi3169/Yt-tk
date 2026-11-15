@@ -16,7 +16,12 @@ Lies `docs/STIL.md` vollständig. Lies `$YTTK_DATA/data/insights.json` und `tren
 
 ## 1. Was ist zu tun?
 Aus `status`: `needs_production` pro Format. Maximal **6 neue Videos pro Lauf** (Rechenzeit/Budget). Reihenfolge: Format mit dem kleinsten Vorrat zuerst.
-Prüfe `elevenlabs.per_day_available`. Unter 2800 → Längen an der Untergrenze. Ist `remaining` < 5000 → nichts produzieren, Warnung melden.
+`budget_mode` im Status:
+- `normal`: alles produzieren (Längen eher Untergrenze, wenn `per_day_available` < 2800).
+- `spar`: Wissen wird nicht neu produziert, die Planung nimmt Reserve-Videos aus Google Drive. Nur Horror + Was wäre wenn produzieren.
+- `pause`: ElevenLabs-Kontingent aufgebraucht → **nichts produzieren, keine ⚠️-Push**. Die Planung postet weiter aus Vorrat/Reserve.
+  Nach dem monatlichen Reset (`elevenlabs.reset`) läuft die Produktion automatisch wieder an. Nicht nachfragen.
+ElevenLabs 401/403/429 mitten im Lauf: aufhören, Rest beim nächsten Lauf (keine Wiederholung heute).
 
 ## 2. Trends (höchstens 1× pro Tag, wenn `trends.json` älter als 24 h)
 - 2–3 Websuchen (deutschsprachige Shorts/TikTok-Trends, aktuelle Anlässe/Jahreszeit, Fragen die Leute gerade stellen).

@@ -17,6 +17,19 @@ Die Ausgabe ist eine Liste. Für **jeden** Eintrag:
 5. `python3 -m yt_tk.inventory mark <ID> --tiktok <postId> --youtube <postId> --due <dueAt>`
 6. Fehler bei einem Post: einmal nach 60 s wiederholen. Danach `python3 -m yt_tk.inventory fail <ID> "<Fehlertext>"` und melden.
 
+**Reserve-Videos aus Google Drive** (Eintrag mit `"needs_texts": true`, ID `D###`):
+1. Google-Drive-Connector `share_file` (fileId = `drive_id`, anyoneWithLink, reader).
+2. Titel/Texte nach `docs/STIL.md` schreiben (Thema = `topic`; im Zweifel kurz per Websuche prüfen) als JSON
+   `{"title_tiktok","title_youtube","text_tiktok","text_youtube"}` → `python3 -m yt_tk.inventory texts <ID> <datei.json>`.
+3. Doppel-Check: Steht das Thema schon in einem gesendeten Buffer-Post (TikTok oder YouTube)? → `inventory fail <ID> "Thema schon online"`,
+   im Inventar Status bleibt backup; dann `plan` erneut ausführen (nimmt die nächste Reserve).
+4. `plan` erneut ausführen → normaler Eintrag → wie oben posten.
+
+**Limits (automatisch weitermachen, nicht nachfragen):**
+- Buffer-Limit (max. 10 geplante Posts) oder YouTube-Fehler „daily upload limit“: betroffenen Post nicht erzwingen.
+  Video bleibt `ready` (kein `mark`), es wird beim nächsten Lauf automatisch neu eingeplant. Nur im Bericht erwähnen, keine ⚠️-Push.
+- Buffer-API-Rate-Limit: `resetSeconds` abwarten (falls < 15 Min.), dann fortfahren.
+
 Danach: `python3 -m yt_tk.inventory sync "Planung <Datum>"`.
 
 Leere Liste, obwohl kein PAUSE: Vorrat leer → erste Zeile „⚠️ VORRAT LEER: <Format>“.
