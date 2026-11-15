@@ -239,6 +239,8 @@ def fail(vid: str, reason: str) -> None:
     for v in data["videos"]:
         if v["id"] == vid:
             v.setdefault("errors", []).append({"at": now().isoformat(), "reason": reason})
+            if v["status"] == "backup":  # Reserve-Video nicht nutzbar (z. B. Thema schon online)
+                v["status"] = "skipped"
     _save("inventory.json", data)
 
 
