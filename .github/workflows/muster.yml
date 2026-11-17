@@ -1,0 +1,52 @@
+name: muster
+
+# V-016 P1c: Wochentliche Musteranalyse fuer YouTube Shorts (YouTube Data API v3, ohne Claude, 0 EUR).
+# Bericht: Branch media -> data/reports/muster-<Datum>.md und data/patterns.json.
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # montags 05:17 MEZ
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry oder --queries 3"
+        required: false
+        default: "--dry --queries 3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: muster
+  cancel-in-progress: false
+
+jobs:
+  muster:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      HAS_KEY: ${{ secrets.YOUTUBE_API_KEY != '' }}
+    steps:
+      - name: Ohne Key nichts tun
+        if: env.HAS_KEY != 'true'
+        run: echo "::notice::YOUTUBE_API_KEY fehlt - Musteranalyse macht nichts."
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        if: env.HAS_KEY == 'true'
+        run: |
+          git -C media config user.name "muster"
+          git -C media config user.email "muster@users.noreply.github.com"
+      - name: Musteranalyse
+        if: env.HAS_KEY == 'true'
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
+        run: python3 -m yt_tk.patterns $ARGS
