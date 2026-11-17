@@ -96,8 +96,10 @@ def stamp(sec: float) -> str:
 
 
 def description(cfg: dict, names: list, starts: list) -> str:
-    lines = [f"{len(names)} {cfg['lead']}", "", "KAPITEL", f"{stamp(0)} Start"]
-    lines += [f"{stamp(t)} {i}. {name}" for i, (name, t) in enumerate(zip(names, starts), 1)]
+    # Kapitel 1 beginnt bei 0:00 (Titelkarte inklusive), YouTube verlangt mindestens 10 s je Kapitel
+    chap = [0.0] + list(starts[1:])
+    lines = [f"{len(names)} {cfg['lead']}", "", "KAPITEL"]
+    lines += [f"{stamp(t)} {i}. {name}" for i, (name, t) in enumerate(zip(names, chap), 1)]
     lines += ["", "Welches Thema kanntest du noch nicht? Schreib es in die Kommentare.", "",
               "Stimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.", "", cfg["tags"]]
     return "\n".join(lines)
@@ -143,7 +145,7 @@ def make_one(vid: str, dry: bool, local: str) -> bool:
     if any(v["id"] == vid for v in inv["videos"]):
         log(f"{vid} ist schon im Inventar.")
         return True
-    for crf in (27, 31, 35):
+    for crf in (23, 27, 31, 35):
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
             out, starts, names, dur = build(cfg, crf, tmp, local)
@@ -160,7 +162,8 @@ def make_one(vid: str, dry: bool, local: str) -> bool:
         errs.append(f"Dauer {dur} s ausserhalb {MIN_S} bis {MAX_S} s")
     if len(title) > 100:
         errs.append("Titel zu lang")
-    if any(b - a < 10 for a, b in zip([0] + starts, starts)):
+    chap = [0.0] + list(starts[1:]) + [dur]
+    if any(b - a < 10 for a, b in zip(chap, chap[1:])):
         errs.append("Kapitel kuerzer als 10 s")
     if errs:
         print(f"FEHLER {vid}:", "; ".join(errs))
