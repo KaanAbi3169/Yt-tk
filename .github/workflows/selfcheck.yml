@@ -1,0 +1,42 @@
+name: selfcheck
+
+# Taegliche Selbstpruefung ohne Claude: Module, Inventar, Plan der naechsten 4 Tage, Vorrat. Laeuft vor dem Uploader.
+# Bei FEHLER schlaegt der Lauf fehl (GitHub meldet es). Bericht: Branch media -> data/reports/selfcheck-<Datum>.md
+on:
+  schedule:
+    - cron: "40 4 * * *"   # 05:40 MEZ, vor dem Uploader (06:37)
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry"
+        required: false
+        default: "--dry"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: selfcheck
+  cancel-in-progress: false
+
+jobs:
+  selfcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "selfcheck"
+          git -C media config user.email "selfcheck@users.noreply.github.com"
+      - name: Selbstpruefung
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
+        run: python3 -m yt_tk.selfcheck $ARGS

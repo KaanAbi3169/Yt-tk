@@ -20,7 +20,8 @@ def check(t: dict) -> list:
         return errs
     if len(t["title_tiktok"]) > 90:
         errs.append(f"title_tiktok {len(t['title_tiktok'])} Zeichen (max 90)")
-    if len(EMOJI.findall(t["title_tiktok"])) != 1:
+    joined = re.sub("\u200d[\U0001F300-\U0001FAFF\u2600-\u27BF]", "", t["title_tiktok"])  # Zusammengesetzte Emojis (ZWJ) zaehlen einmal
+    if len(EMOJI.findall(joined)) != 1:
         errs.append("title_tiktok braucht genau 1 Emoji")
     if len(t["title_youtube"]) > 100:
         errs.append(f"title_youtube {len(t['title_youtube'])} Zeichen (max 100)")
