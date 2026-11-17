@@ -1255,6 +1255,37 @@
       "text_youtube": "Eine Stunde Handy pro Tag – für alle. Was würde sich ändern, und wofür nutzt du deine Stunde? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #handy",
       "scenes": 6,
       "buffer": {}
+    },
+    {
+      "id": "L001",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T00:16:28.471844+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Haushaltstricks",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 622.6,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L001.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Haushaltstricks, die wirklich funktionieren: Kennst du alle?",
+      "text_tiktok": "",
+      "text_youtube": "10 Haushaltstricks vom Abfluss bis zum Wasserkocher, kurz erklärt. Mit den Kapiteln springst du direkt zu deinem Problem.\n\nKAPITEL\n0:00 1. Mikrowelle ohne Schrubben\n1:05 2. Abfluss frei bekommen\n2:09 3. Backofen mit Natron reinigen\n3:10 4. Fenster ohne Streifen\n4:12 5. Schimmel in der Dusche vorbeugen\n5:14 6. Küchenschwamm frisch halten\n6:15 7. Sportshirt ohne Geruch\n7:17 8. Flecken richtig behandeln\n8:19 9. Staub wirklich loswerden\n9:21 10. Wasserkocher entkalken\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#haushalt #tricks #putzen #wissen",
+      "scenes": 10,
+      "parts": [
+        "D082",
+        "D081",
+        "D065",
+        "D061",
+        "D073",
+        "D074",
+        "D084",
+        "D062",
+        "D083",
+        "D025"
+      ],
+      "buffer": {}
     }
   ]
 }
