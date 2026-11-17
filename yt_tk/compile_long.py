@@ -180,6 +180,8 @@ def make_one(vid: str, dry: bool, local: str) -> bool:
             tmp = Path(td)
             out, starts, names, dur = build(cfg, crf, tmp, local)
             mb = out.stat().st_size / 1e6
+            keep = Path(tempfile.gettempdir()) / f"{vid}-fertig.mp4"
+            keep.write_bytes(out.read_bytes())
             log(f"{vid} CRF {crf}: {dur} s, {mb:.1f} MB, {len(names)} Teile")
             if mb <= MAX_MB:
                 break
@@ -204,7 +206,8 @@ def make_one(vid: str, dry: bool, local: str) -> bool:
         return True
     dest = config.DATA / "videos" / f"{vid}.mp4"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(out.read_bytes())
+    dest.write_bytes(keep.read_bytes())
+    keep.unlink(missing_ok=True)
     parts = [p for p, _ in cfg["parts"]][:len(names)] + [p for p, _ in cfg["extra"]][:max(0, len(names) - len(cfg["parts"]))]
     inv["videos"].append({
         "id": vid, "format": "lang", "status": "ready", "created": inventory.now().isoformat(), "source": "zusammenschnitt",
