@@ -62,6 +62,15 @@ def analytics(token: str, start: str, end: str) -> list:
     return [dict(zip(cols, r)) for r in d.get("rows", [])]
 
 
+def channel_total(token: str, start: str, end: str) -> dict:
+    """Gesamtzahlen des Kanals ohne Aufteilung nach Video. Zeigt, ob der Zugang den richtigen Kanal sieht."""
+    q = urllib.parse.urlencode({"ids": "channel==MINE", "startDate": start, "endDate": end,
+                                "metrics": "views,estimatedMinutesWatched,subscribersGained"})
+    d = _open(urllib.request.Request(REPORTS + "?" + q, headers={"Authorization": f"Bearer {token}"}))
+    cols = [c["name"] for c in d.get("columnHeaders", [])]
+    return dict(zip(cols, (d.get("rows") or [[0] * len(cols)])[0])) if cols else {}
+
+
 def titles(ids: list) -> dict:
     out, key = {}, _env("YOUTUBE_API_KEY")
     for i in range(0, len(ids), 50):
@@ -103,7 +112,11 @@ def main(argv: list) -> int:
         tok = access_token()
         rows = analytics(tok, (day - timedelta(days=28)).isoformat(), (day - timedelta(days=1)).isoformat())
         if not rows:
-            print("Keine Daten (Analytics liefert Werte mit Verzoegerung von 1 bis 2 Tagen).")
+            tot = channel_total(tok, (day - timedelta(days=28)).isoformat(), (day - timedelta(days=1)).isoformat())
+            print(f"Keine Videodaten. Kanal gesamt (28 Tage): {tot or 'keine Antwort'}.")
+            if not tot or not any(float(v or 0) for v in tot.values()):
+                print("Der Zugang sieht keine Kanaldaten: Entweder liefert Analytics noch nicht (1 bis 2 Tage Verzoegerung) "
+                      "oder bei der Anmeldung wurde nicht der Kanal 'Ai' gewaehlt (Marken-Konto).")
             return 0
         inv = inventory._load("inventory.json", {"videos": []})["videos"]
         joined = join(rows, titles([r["video"] for r in rows]), inv)
