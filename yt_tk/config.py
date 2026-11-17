@@ -131,6 +131,8 @@ TAIL = 0.8            # Sekunden Nachlauf nach letztem Wort
 TARGET_LUFS = -14.0
 
 INVENTORY_DAYS = 3    # Mindestvorrat in Tagen pro Format
+WISSEN_SKIP_RESERVE = 14   # Wissen wird nicht neu produziert, solange so viele Drive-Reserve-Videos (mit Texten) da sind
+MAX_PRODUCE_PER_RUN = 3    # Claude-Limit schonen (V-007)
 ELEVEN_DAILY_RESERVE = 3000  # Credits pro Tag, die bis zum Reset frei bleiben muessen
 
 

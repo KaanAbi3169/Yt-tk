@@ -7,6 +7,11 @@ on:
     - cron: "37 5 * * *"   # 06:37 MEZ (Winter) / 07:37 MESZ (Sommer)
     - cron: "37 7 * * *"   # zweiter Versuch, harmlos wegen Doppelschutz
   workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --introspect oder --day 2026-11-18"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -45,4 +50,5 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           YTTK_DATA: ${{ github.workspace }}/media
           UPLOADER_LIVE: ${{ vars.UPLOADER_LIVE }}
-        run: python3 -m yt_tk.uploader
+          ARGS: ${{ inputs.args }}
+        run: python3 -m yt_tk.uploader $ARGS

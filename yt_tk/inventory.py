@@ -107,6 +107,8 @@ def status() -> dict:
             need = max(0, -(-(config.INVENTORY_DAYS + 1) // share) - len(ready))
         if mode == "pause" or (mode == "spar" and fmt == "wissen" and backup):
             need = 0
+        if fmt == "wissen" and len(backup) >= config.WISSEN_SKIP_RESERVE:
+            need = 0  # genug Drive-Reserve: Wissen nicht neu produzieren (spart Claude-Limit und ElevenLabs)
         out["formats"][fmt] = {
             "ready": ready,
             "backup_drive": len(backup),

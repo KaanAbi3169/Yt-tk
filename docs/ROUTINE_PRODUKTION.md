@@ -15,7 +15,9 @@ python3 -m yt_tk.inventory status
 Lies `docs/STIL.md` vollständig. Lies `$YTTK_DATA/data/insights.json` und `trends.json`.
 
 ## 1. Was ist zu tun?
-Aus `status`: `needs_production` pro Format. Maximal **6 neue Videos pro Lauf** (Rechenzeit/Budget). Reihenfolge: Format mit dem kleinsten Vorrat zuerst.
+Aus `status`: `needs_production` pro Format. Maximal **3 neue Videos pro Lauf** (Claude-Wochenlimit schonen, V-007). Reihenfolge: **Horror-Folge zuerst**, dann das Format mit dem kleinsten Vorrat. Wissen wird nicht produziert, solange mindestens 14 Drive-Reservevideos vorhanden sind (`needs_production` zeigt dann 0). Lange Videos (`lang`): höchstens 1 pro Lauf, bevorzugt montags und dienstags, damit sie Mi/Do bereitstehen.
+
+**Limit-Schonung:** Zeigt `get_session` (eigene Sitzung) `rate_limit_info.status = allowed_warning`, wird nur die Horror-Folge produziert. Bei `rejected`: nichts tun und nicht erneut versuchen. Reihenfolge: Format mit dem kleinsten Vorrat zuerst.
 `budget_mode` im Status:
 - `normal`: alles produzieren (Längen eher Untergrenze, wenn `per_day_available` < 2800).
 - `spar`: Wissen wird nicht neu produziert, die Planung nimmt Reserve-Videos aus Google Drive. Nur Horror + Was wäre wenn produzieren.
