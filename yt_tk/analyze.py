@@ -55,7 +55,10 @@ def kv_from_metrics(m: dict) -> list:
     """views/likes/comments/shares fuer inventory.perf. Fehlende Werte bleiben weg (nie schaetzen)."""
     likes = m.get("likes", m.get("reactions"))
     vals = {"views": m.get("views"), "likes": likes, "comments": m.get("comments"), "shares": m.get("shares")}
-    return [f"{k}={int(v)}" for k, v in vals.items() if v is not None]
+    kv = [f"{k}={int(v)}" for k, v in vals.items() if v is not None]
+    if m.get("averageTimeWatched") is not None:
+        kv.append(f"watch_ms={int(m['averageTimeWatched'] * 1000)}")  # Sekunden -> Millisekunden
+    return kv
 
 
 def run(day: str, dry: bool) -> int:
@@ -155,6 +158,23 @@ def build_report(day, today_posted, notes, problems, inv) -> str:
               f"- Schwächstes: {w['id']} {w['platform']} {views(w)} Views ({w.get('topic', '')[:50]})"]
     else:
         L.append("- n/a (noch zu wenige Zahlen)")
+    L += ["", "## Formate im Vergleich (Ø je Video, Quelle: gesammelte Zahlen)"]
+    fm = {}
+    for pr in perf:
+        m = pr.get("7d") or pr.get("24h")
+        if m and m.get("views") is not None:
+            e = fm.setdefault(pr.get("format") or "?", {"n": 0, "views": 0, "watch": [], "likes": 0})
+            e["n"] += 1; e["views"] += m["views"]; e["likes"] += m.get("likes", 0)
+            if m.get("watch_ms"):
+                e["watch"].append(m["watch_ms"])
+    if fm:
+        L.append("| Format | Videos | Ø Views | Ø Likes | Ø Watch-Zeit |")
+        L.append("|---|---|---|---|---|")
+        for k, e in sorted(fm.items(), key=lambda kv: -kv[1]["views"] / kv[1]["n"]):
+            w = f"{sum(e['watch']) / len(e['watch']) / 1000:.1f} s" if e["watch"] else "n/a"
+            L.append(f"| {k} | {e['n']} | {e['views'] / e['n']:.0f} | {e['likes'] / e['n']:.1f} | {w} |")
+    else:
+        L.append("- n/a (noch keine Zahlen)")
     L += ["", "## Vorrat (Inventar)"]
     for fmt, st in sorted(counts.items()):
         L.append(f"- {fmt}: " + ", ".join(f"{k} {n}" for k, n in sorted(st.items())))

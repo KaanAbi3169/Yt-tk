@@ -53,3 +53,11 @@ Ist das ElevenLabs-Tagesbudget (`per_day_available` im Status) unter 2800: jewei
 - SVGs: `viewBox="0 0 1920 1080"`. **Sicherheitszonen:** Badge oben links (x 0–720, y 0–130), Untertitel unten (y 900–1080) → dort keine Details. Wichtiges zwischen y 140 und 880.
 - Optik wie Horror (Farben, DejaVu Serif), Motive breiter angelegt (Räume, Flure, Fenster, Landschaft bei Nacht).
 - `title_youtube` ≤ 100 Zeichen, Muster „<Hook> | Gruselgeschichte (Deutsch)“, kein #shorts. `text_youtube`: 2–3 Sätze Teaser, `{KAPITEL}`, Kommentar-Frage, „Diese Geschichte ist frei erfunden. Stimme und Grafiken wurden mit KI erstellt.“, 4–8 Hashtags.
+
+## Hook-Regel (V-011, seit 17.11.2026)
+Messwert bisher: Ø Watch-Zeit auf TikTok 3,95 s bei Videos von 40-78 s, d. h. fast alle springen in den ersten Sekunden ab.
+- **Erster Satz höchstens 10 Wörter** (harte Grenze im Prüfer: 12). Er nennt das Ergebnis, die Gefahr oder die Frage. Keine Einleitung, kein „Heute“, kein „In diesem Video“.
+- `hook_overlay` ist derselbe Kern in höchstens 5 Wörtern.
+- Die erste Szene beginnt mit dem stärksten Bild, nicht mit einer Erklärung.
+- Bei Serien (Horror): Die Folge beginnt mit dem Moment, in dem etwas schiefgeht, nicht mit der Vorgeschichte.
+- Ziel (Messwert): Ø Watch-Zeit TikTok über 6 s bis 14.12.2026. Auswertung im Tagesbericht (`data/reports/`).

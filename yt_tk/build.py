@@ -5,6 +5,7 @@
 """
 import hashlib
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -63,6 +64,9 @@ def check_script(s: dict) -> list:
     est = words / f.get("wps", WORDS_PER_SEC) + config.TAIL
     if not (f["min_s"] - 3 <= est <= f["max_s"] + 2):
         p.append(f"Geschaetzte Laenge {est:.0f}s ({words} Woerter) - Ziel {f['min_s']}-{f['max_s']}s")
+    first = re.split(r"(?<=[.!?\u2026])\s", full_text(s).strip(), maxsplit=1)[0]
+    if len(first.split()) > 12:  # V-011: Hook in den ersten Sekunden
+        p.append(f"Hook zu lang: {len(first.split())} Woerter im ersten Satz (max. 12). Kern der Aussage nach vorn.")
     if len(s.get("title_tiktok", "")) > 90:
         p.append("TikTok-Titel zu lang (max 90)")
     if len(s.get("title_youtube", "")) > 100:
