@@ -1,0 +1,42 @@
+name: compile
+
+# V-023: Baut das Zusammenschnitt-Langvideo L001 (10 Haushaltstricks) aus Vorrats-Shorts, ohne Claude, 0 EUR.
+# Nur von Hand startbar. Ergebnis: Branch media -> videos/L001.mp4 und Eintrag im Inventar (Status ready).
+on:
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry (nur bauen und pruefen)"
+        required: false
+        default: "--dry"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compile
+  cancel-in-progress: false
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "compile"
+          git -C media config user.email "compile@users.noreply.github.com"
+      - name: ffmpeg und Schriften installieren
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Zusammenschnitt bauen
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ inputs.args }}
+        run: python3 -m yt_tk.compile_long $ARGS

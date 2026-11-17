@@ -74,7 +74,7 @@ FORMATS = {
         "label": "Gruselgeschichte (lang, YouTube)",
         "prefix": "L",
         "slot": "16:00",
-        "weekdays": [2, 3],  # 0=Mo ... 2=Mi, 3=Do  (Metricool Best-Time YouTube: Mi/Do 16 Uhr)
+        "weekdays": [2, 3, 4],  # 0=Mo ... 2=Mi, 3=Do, 4=Fr (Metricool Best-Time Mi/Do 16 Uhr; Fr seit V-023, Muster: Fr 18 Uhr bei Langvideo-Ausreissern)
         "platforms": ["youtube"],
         "orientation": "landscape",
         "style": "horror",   # Optik, Badge-Farben, Musik wie die Horror-Serie
