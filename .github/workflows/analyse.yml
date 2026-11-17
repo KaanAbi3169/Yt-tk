@@ -1,0 +1,52 @@
+name: analyse
+
+# Taegliche Auswertung ohne Claude: Status, Zahlen (24 h / 7 Tage), Lernen, Tagesbericht.
+# Bericht: Branch media -> data/reports/<Datum>.md und GitHub-Zusammenfassung dieses Laufs.
+on:
+  schedule:
+    - cron: "43 20 * * *"   # 21:43 MEZ (Winter) / 22:43 MESZ (Sommer)
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry oder --day 2026-11-17"
+        required: false
+        default: "--dry"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analyse
+  cancel-in-progress: false
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      HAS_KEY: ${{ secrets.BUFFER_API_KEY != '' }}
+    steps:
+      - name: Ohne Key nichts tun
+        if: env.HAS_KEY != 'true'
+        run: echo "::notice::BUFFER_API_KEY fehlt - Auswertung macht nichts."
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        if: env.HAS_KEY == 'true'
+        run: |
+          git -C media config user.name "analyse"
+          git -C media config user.email "analyse@users.noreply.github.com"
+      - name: Auswertung
+        if: env.HAS_KEY == 'true'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
+        run: python3 -m yt_tk.analyze $ARGS
