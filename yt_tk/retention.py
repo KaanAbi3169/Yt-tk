@@ -55,8 +55,8 @@ def access_token() -> str:
     return _open(urllib.request.Request(TOKEN, data=data))["access_token"]
 
 
-def analytics(token: str, start: str, end: str) -> list:
-    q = urllib.parse.urlencode({"ids": f"channel=={CHANNEL}", "startDate": start, "endDate": end, "dimensions": "video",
+def analytics(token: str, start: str, end: str, channel: str = "") -> list:
+    q = urllib.parse.urlencode({"ids": f"channel=={channel or CHANNEL}", "startDate": start, "endDate": end, "dimensions": "video",
                                 "metrics": "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
                                 "sort": "-views", "maxResults": 200})
     d = _open(urllib.request.Request(REPORTS + "?" + q, headers={"Authorization": f"Bearer {token}"}))
@@ -64,9 +64,9 @@ def analytics(token: str, start: str, end: str) -> list:
     return [dict(zip(cols, r)) for r in d.get("rows", [])]
 
 
-def channel_total(token: str, start: str, end: str) -> dict:
+def channel_total(token: str, start: str, end: str, channel: str = "") -> dict:
     """Gesamtzahlen des Kanals ohne Aufteilung nach Video. Zeigt, ob der Zugang den richtigen Kanal sieht."""
-    q = urllib.parse.urlencode({"ids": f"channel=={CHANNEL}", "startDate": start, "endDate": end,
+    q = urllib.parse.urlencode({"ids": f"channel=={channel or CHANNEL}", "startDate": start, "endDate": end,
                                 "metrics": "views,estimatedMinutesWatched,subscribersGained"})
     d = _open(urllib.request.Request(REPORTS + "?" + q, headers={"Authorization": f"Bearer {token}"}))
     cols = [c["name"] for c in d.get("columnHeaders", [])]
@@ -124,6 +124,13 @@ def main(argv: list) -> int:
         joined = join(rows, titles([r["video"] for r in rows]), inv)
     except RetentionError as e:
         print("FEHLER:", e)
+        if "HTTP 403" in str(e) and "has not been used" not in str(e):
+            try:  # Diagnose: Was sieht der Zugang unter seinem eigenen Konto (MINE)?
+                t = channel_total(tok, (day - timedelta(days=28)).isoformat(), (day - timedelta(days=1)).isoformat(), "MINE")
+                print(f"DIAGNOSE: Der Zugang gehoert zu einem Konto, das unseren Kanal nicht verwaltet. Dessen eigener Kanal (28 Tage): {t}.")
+                print("Bei der Anmeldung im OAuth-Playground muss das Konto/der Kanal gewaehlt werden, dem 'Ai' gehoert.")
+            except RetentionError as e2:
+                print("DIAGNOSE fehlgeschlagen:", str(e2)[:120])
         return 1
     rep = report(day.isoformat(), joined)
     print(rep)
