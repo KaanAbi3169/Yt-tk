@@ -14,6 +14,7 @@ import re
 import statistics
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
@@ -25,6 +26,10 @@ UA = "brudi-radar/1.0 (https://github.com/KaanAbi3169/Yt-tk; Themenrecherche fue
 DAYS = 8                  # 1 aktueller Tag + 7 Vergleichstage
 MIN_VIEWS = 5000          # darunter kein Treffer
 MIN_RATIO = 2.0           # mindestens doppelt so viele Aufrufe wie der Schnitt der Vortage
+WIKI_API = "https://de.wikipedia.org/w/api.php"
+WD_API = "https://www.wikidata.org/w/api.php"
+NOISE = re.compile(r"(\((Film|Fernsehserie|Fernsehreihe|Album|Band|Lied|Spiel|Roman|Sendung|Musiker|Schauspieler)[^)]*\)|^Liste |^Nekrolog|"
+                   r"^\d+\. (Januar|Februar|M\u00e4rz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)$|^Tag |Volkstrauertag|Bu\u00df)", re.I)
 SKIP_PREFIX = ("Spezial:", "Wikipedia:", "Datei:", "Kategorie:", "Portal:", "Hilfe:", "Vorlage:", "Benutzer:", "Hauptseite")
 BLOCK = re.compile(r"(mord|anschlag|massaker|amok|vergewaltig|selbstmord|suizid|hinrichtung|terror|pornograf|sexual|nazi|hitler|"
                    r"holocaust|konzentrationslager|todesfall|leiche|missbrauch|krieg gegen|geiselnahme)", re.I)
@@ -69,9 +74,58 @@ def analyse(days: list) -> dict:
             if not BLOCK.search(t):
                 evergreen.setdefault(t, []).append(v)
     ever = sorted(({"title": t, "avg": int(statistics.mean(v))} for t, v in evergreen.items() if len(v) >= len(days) - 1),
-                  key=lambda x: -x["avg"])[:25]
-    return {"rising": sorted(rising, key=lambda x: -x["ratio"])[:25], "new": sorted(new, key=lambda x: -x["views"])[:25],
+                  key=lambda x: -x["avg"])[:150]
+    return {"rising": sorted(rising, key=lambda x: -x["ratio"]), "new": sorted(new, key=lambda x: -x["views"]),
             "evergreen": ever, "blocked": blocked, "days": len(days)}
+
+
+def _json(url: str) -> dict:
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=60) as r:
+        return json.load(r)
+
+
+def persons(titles: list) -> set:
+    """Titel, die laut Wikidata Menschen sind (P31 = Q5). Bei Fehlern leere Menge (dann bleibt die Liste ungefiltert)."""
+    qid = {}
+    try:
+        for i in range(0, len(titles), 50):
+            q = urllib.parse.urlencode({"action": "query", "prop": "pageprops", "ppprop": "wikibase_item", "redirects": 1,
+                                        "titles": "|".join(titles[i:i + 50]), "format": "json"})
+            d = _json(WIKI_API + "?" + q)["query"]
+            back = {}
+            for k in ("normalized", "redirects"):
+                for m in d.get(k, []):
+                    back[m["to"]] = m["from"]
+            for pg in d.get("pages", {}).values():
+                item = pg.get("pageprops", {}).get("wikibase_item")
+                if item:
+                    t = pg["title"]
+                    qid[back.get(t, t)] = item
+                    qid[t] = item
+        ids = sorted(set(qid.values()))
+        human = set()
+        for i in range(0, len(ids), 50):
+            q = urllib.parse.urlencode({"action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "claims",
+                                        "format": "json"})
+            for eid, e in _json(WD_API + "?" + q).get("entities", {}).items():
+                for c in e.get("claims", {}).get("P31", []):
+                    if c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") == "Q5":
+                        human.add(eid)
+        return {t for t, item in qid.items() if item in human}
+    except Exception as e:  # Filter ist Zugabe, darf den Radar nicht verhindern
+        log(f"Personenfilter fehlgeschlagen: {type(e).__name__}")
+        return set()
+
+
+def clean(a: dict, limit: int = 25) -> dict:
+    pool = sorted({r["title"] for k in ("rising", "new", "evergreen") for r in a[k] if not NOISE.search(r["title"])})
+    people = persons(pool)
+    out = dict(a, people_removed=0)
+    for k in ("rising", "new", "evergreen"):
+        keep = [r for r in a[k] if r["title"] not in people and not NOISE.search(r["title"])]
+        out["people_removed"] += len(a[k]) - len(keep)
+        out[k] = keep[:limit]
+    return out
 
 
 def yt_trending(key: str) -> list:
@@ -88,7 +142,7 @@ def report(day: str, a: dict, yt: list) -> str:
     L = [f"# Themenradar {day}", "",
          f"Quellen: Wikipedia-Aufrufzahlen (de, {a['days']} Tage) und YouTube-Trendliste Schweiz. {a['blocked']} Treffer wegen "
          "Gewalt, Verbrechen, Tod oder Sex herausgefiltert. Das sind Themenvorschlaege, keine Fakten: Jedes Thema braucht "
-         "den Faktencheck, Personen und Nachrufe bleiben draussen.", "",
+         "den Faktencheck, Nachrufe und lebende Personen bleiben draussen.", "",
          "## Steigende Themen (Aufrufe gestern gegen Schnitt der Vortage)", "| Thema | Aufrufe | Schnitt davor | Faktor |", "|---|---|---|---|"]
     L += [f"| {r['title']} | {r['views']} | {r['avg_before']} | {r['ratio']} |" for r in a["rising"]] or ["| – | | | |"]
     L += ["", "## Neu in den Top 1000", "| Thema | Aufrufe |", "|---|---|"]
@@ -112,7 +166,7 @@ def main(argv: list) -> int:
         print("FEHLER: zu wenige Tage von Wikipedia erhalten:", len(days))
         return 1
     log(f"{len(days)} Tage Wikipedia-Daten")
-    a = analyse(days)
+    a = clean(analyse(days))
     yt = []
     k = os.environ.get("YOUTUBE_API_KEY", "").strip()
     if k:
