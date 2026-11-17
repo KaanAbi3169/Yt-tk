@@ -12,6 +12,11 @@ on:
         description: "Optionale Argumente, z. B. --introspect oder --day 2026-11-18"
         required: false
         default: ""
+      live:
+        description: "Live planen (nur fuer diesen manuellen Lauf)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -49,6 +54,6 @@ jobs:
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           YTTK_DATA: ${{ github.workspace }}/media
-          UPLOADER_LIVE: ${{ vars.UPLOADER_LIVE }}
+          UPLOADER_LIVE: ${{ inputs.live && 'true' || vars.UPLOADER_LIVE }}
           ARGS: ${{ inputs.args }}
         run: python3 -m yt_tk.uploader $ARGS
