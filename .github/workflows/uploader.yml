@@ -1,0 +1,48 @@
+name: uploader
+
+# Plant die Videos des Tages in Buffer, ohne Claude (laeuft auch bei verbrauchtem Claude-Limit).
+# Standard ist Trockenlauf. Live erst, wenn die Repository-Variable UPLOADER_LIVE auf "true" steht.
+on:
+  schedule:
+    - cron: "37 5 * * *"   # 06:37 MEZ (Winter) / 07:37 MESZ (Sommer)
+    - cron: "37 7 * * *"   # zweiter Versuch, harmlos wegen Doppelschutz
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uploader
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      HAS_KEY: ${{ secrets.BUFFER_API_KEY != '' }}
+    steps:
+      - name: Ohne Key nichts tun (kein Fehlalarm)
+        if: env.HAS_KEY != 'true'
+        run: echo "::notice::BUFFER_API_KEY ist noch nicht gesetzt - Uploader macht nichts."
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        if: env.HAS_KEY == 'true'
+        run: |
+          git -C media config user.name "uploader"
+          git -C media config user.email "uploader@users.noreply.github.com"
+      - name: Uploader
+        if: env.HAS_KEY == 'true'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          YTTK_DATA: ${{ github.workspace }}/media
+          UPLOADER_LIVE: ${{ vars.UPLOADER_LIVE }}
+        run: python3 -m yt_tk.uploader

@@ -1,5 +1,7 @@
 # Routine: Planung (täglich früh)
 
+> **Hinweis:** Sobald der Uploader live ist (`docs/UPLOADER.md`, Variable `UPLOADER_LIVE=true`), übernimmt er das Einplanen und diese Claude-Routine wird deaktiviert. Nie beide gleichzeitig.
+
 Ziel: Die Videos des Tages in Buffer zu festen Zeiten einplanen. Nie doppelt.
 
 Sendeplan (vom Nutzer festgelegt, 15.11.2026):
