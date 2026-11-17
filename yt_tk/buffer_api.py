@@ -2,9 +2,8 @@
 
 Der Key steht NUR in der Umgebungsvariable BUFFER_API_KEY (GitHub-Secret), nie in Dateien oder Logs.
 
-ACHTUNG: Die GraphQL-Texte unten sind bis zur Pruefung mit `python -m yt_tk.uploader --introspect`
-NICHT verifiziert (Buffer-API ist Beta, die Feldnamen wurden aus Dokumentationsauszuegen abgeleitet).
-Gepostet wird erst, wenn UPLOADER_LIVE=true gesetzt ist.
+Schema: per Introspektion geprueft (17.11.2026, `python -m yt_tk.uploader --introspect`). Noch NICHT geprueft:
+die erste echte, angemeldete Abfrage (braucht einen gueltigen Key). Gepostet wird erst, wenn UPLOADER_LIVE=true gesetzt ist.
 """
 import json
 import os
@@ -72,10 +71,11 @@ def gql(query: str, variables: dict | None = None, retries: int = 2) -> dict:
     raise last
 
 
-# --- UNVERIFIZIERT: nach Introspektion anpassen -------------------------------------------------
+# Schema geprueft am 17.11.2026 per Introspektion (Actions-Lauf 3): posts(first, after, input: PostsInput!),
+# createPost(input: CreatePostInput!) mit Pflichtfeldern channelId, mode, schedulingType, needsApproval, assets.
 Q_POSTS = """
-query Posts($org: OrganizationId!, $channels: [ChannelId!], $after: String) {
-  posts(first: 100, after: $after, input: {organizationId: $org, filter: {channelIds: $channels, status: [scheduled, sending, sent, draft]}}) {
+query Posts($input: PostsInput!, $after: String) {
+  posts(first: 100, after: $after, input: $input) {
     edges { node { id status text dueAt assets { source } } }
     pageInfo { hasNextPage endCursor }
   }
@@ -84,29 +84,37 @@ query Posts($org: OrganizationId!, $channels: [ChannelId!], $after: String) {
 M_CREATE = """
 mutation Create($input: CreatePostInput!) {
   createPost(input: $input) {
+    __typename
     ... on PostActionSuccess { post { id dueAt status } }
     ... on MutationError { message }
   }
 }"""
+HISTORY_STATUS = ["scheduled", "sending", "sent", "draft"]
 # ------------------------------------------------------------------------------------------------
 
 
 def list_posts(org: str, channel: str, max_pages: int = 5) -> list:
     out, after = [], None
     for _ in range(max_pages):
-        d = gql(Q_POSTS, {"org": org, "channels": [channel], "after": after})["posts"]
-        out += [e["node"] for e in d["edges"]]
+        inp = {"organizationId": org, "filter": {"channelIds": [channel], "status": HISTORY_STATUS}}
+        d = gql(Q_POSTS, {"input": inp, "after": after})["posts"]
+        out += [e["node"] for e in (d["edges"] or [])]
         if not d["pageInfo"]["hasNextPage"]:
             break
         after = d["pageInfo"]["endCursor"]
     return out
 
 
+def create_post_input(channel: str, text: str, due_iso: str, video_url: str, metadata: dict) -> dict:
+    return {"channelId": channel, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
+            "dueAt": due_iso, "needsApproval": False, "assets": [{"video": {"url": video_url}}],
+            "metadata": metadata}
+
+
 def create_post(channel: str, text: str, due_iso: str, video_url: str, metadata: dict) -> str:
     """Plant ein Video als automatischen Post. Gibt die Post-ID zurueck."""
-    inp = {"channelId": channel, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
-           "dueAt": due_iso, "assets": {"videos": [{"url": video_url}]}, "metadata": metadata}
+    inp = create_post_input(channel, text, due_iso, video_url, metadata)
     d = gql(M_CREATE, {"input": inp}, retries=0)["createPost"]  # nie blind wiederholen: Doppelpost-Gefahr
-    if "post" not in d or not d["post"]:
-        raise BufferError("createPost: " + (d.get("message") or "keine Post-ID zurueckgegeben"))
+    if d.get("__typename") != "PostActionSuccess" or not d.get("post"):
+        raise BufferError(f"createPost {d.get('__typename')}: {d.get('message') or 'keine Post-ID zurueckgegeben'}")
     return d["post"]["id"]
