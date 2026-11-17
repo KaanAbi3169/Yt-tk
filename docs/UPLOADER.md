@@ -6,7 +6,7 @@ Plant die Videos des Tages in Buffer, **ohne Claude**. Läuft als GitHub Action 
 1. Buffer: publish.buffer.com/settings/api → „Personal“ → „+ New Key“. Key kopieren (wird nur einmal gezeigt).
 2. GitHub: Repo Yt-tk → Settings → Secrets and variables → Actions → **Secrets** → New repository secret: Name `BUFFER_API_KEY`.
 3. Trockenlauf prüfen: Actions → uploader → Run workflow. Im Log steht „TROCKENLAUF …“ pro geplantem Post.
-4. Live schalten: Settings → Secrets and variables → Actions → **Variables** → `UPLOADER_LIVE` = `true`. Erst danach wird wirklich geplant.
+4. **Seit 17.11.2026 live:** Geplante Läufe (06:37 und 08:37 MEZ) planen wirklich. **Not-Aus:** Settings → Secrets and variables → Actions → **Variables** → `UPLOADER_LIVE` = `false`, oder eine Datei `PAUSE` bzw. `STOP` im Branch `media`. Manuelle Starts sind Trockenlauf, außer die Eingabe „live“ ist gesetzt.
 5. Danach die Claude-Aufgabe „Yt-tk Planung (Posten)“ deaktivieren (nie beide gleichzeitig live).
 
 ## Verhalten
