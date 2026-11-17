@@ -1,0 +1,35 @@
+name: compact
+
+# Haelt den Daten-Branch (media) klein: entfernt veroeffentlichte Videos aelter als 3 Tage und fasst die History zusammen.
+# Frueher Teil der Claude-Analyse (sonntags). Jetzt eigene Action, ohne Claude.
+on:
+  schedule:
+    - cron: "30 21 * * 0"   # sonntags 22:30 MEZ (nach der Auswertung)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compact
+  cancel-in-progress: false
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "compact"
+          git -C media config user.email "compact@users.noreply.github.com"
+      - name: Aufraeumen
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+        run: python3 -c "from yt_tk import inventory; print(inventory.compact())"

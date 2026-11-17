@@ -12,8 +12,8 @@ Einziger externer Generator: **ElevenLabs** (Stimme + 1 Musiktrack pro Serie). G
 | Wann (Zürich) | Aufgabe | Was passiert |
 |---|---|---|
 | täglich 01:23 | **Produktion** | Vorrat prüfen, fehlende Videos recherchieren, schreiben, vertonen, schneiden, prüfen |
-| täglich 06:37 | **Planung** | Die 3 Videos des Tages in Buffer einplanen (TikTok + YouTube) |
-| täglich 21:43 | **Analyse & Bericht** | Zahlen holen, lernen, Tagesbericht als Push-Nachricht |
+| täglich 06:37 | **Planung (ohne Claude)** | GitHub Action `uploader.yml` plant die Videos des Tages in Buffer (TikTok + YouTube). Not-Aus: Variable `UPLOADER_LIVE=false` |
+| täglich 21:43 | **Analyse & Bericht (ohne Claude)** | GitHub Action `analyse.yml`: Zahlen holen, lernen, Bericht nach `data/reports/` (Branch media). Sonntags 22:30 räumt `compact.yml` auf |
 
 Sendezeiten (seit 16.11.2026): **10:00 Wissen / Was wäre wenn (täglich im Wechsel) · 18:00 Horror „Du wachst auf“** – je TikTok + YouTube Shorts.
 Dazu **Mi + Do 16:00 ein langes YouTube-Video** (Gruselgeschichte, 16:9, 7–10 Min.).

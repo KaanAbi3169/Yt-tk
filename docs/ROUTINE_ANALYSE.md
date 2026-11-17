@@ -1,5 +1,7 @@
 # Routine: Analyse & Tagesbericht (täglich abends)
 
+> **Seit 17.11.2026 ohne Claude:** Die GitHub Action `analyse.yml` (täglich 21:43 MEZ, `yt_tk/analyze.py`) übernimmt Status, Zahlen (24 h / 7 Tage), `learn` und den Tagesbericht (`data/reports/<Datum>.md` im Branch `media`, dazu die Zusammenfassung des Laufs). `compact.yml` räumt sonntags auf. Diese Claude-Routine ist deaktiviert. Follower/Abos und Hinweise für die Produktion liefern „Betrieb & Dashboard“ und der Lernzyklus.
+
 ```bash
 cd <Repo Yt-tk>; git fetch origin claude/faceless-video-automation-pc59ot && git checkout -q FETCH_HEAD
 export YTTK_DATA="$(cd .. && pwd)/yt-media"; python3 -m yt_tk.inventory setup
