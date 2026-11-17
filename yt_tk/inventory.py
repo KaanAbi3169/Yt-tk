@@ -370,7 +370,7 @@ def learn() -> dict:
 
 
 def sync(msg: str) -> str:
-    _git("add", "-A")
+    _git("add", "--sparse", "-A")
     if not _git("status", "--porcelain"):
         return "nichts zu committen"
     _git("commit", "-q", "-m", msg)
@@ -401,7 +401,7 @@ def compact(keep_days: int = 3) -> str:
                     e = config.DATA / "content" / v["id"] / extra
                     if e.exists():
                         e.unlink()
-    _git("add", "-A")
+    _git("add", "--sparse", "-A")
     tree = _git("write-tree")
     commit = _git("commit-tree", tree, "-m", f"media kompakt {now():%Y-%m-%d}")
     _git("reset", "-q", "--soft", commit)
