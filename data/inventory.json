@@ -1379,6 +1379,37 @@
         "D037"
       ],
       "buffer": {}
+    },
+    {
+      "id": "L005",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T00:36:29.401249+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Geld und Konsum",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 624.5,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L005.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Geld- und Alltagsfallen: Tappst du in die Preisfalle?",
+      "text_tiktok": "",
+      "text_youtube": "10 Preise, Abos, Zinsen und Stromfresser: Alltagsfallen rund ums Geld. Mit den Kapiteln springst du direkt zu deinem Thema.\n\nKAPITEL\n0:00 1. Warum alles 9.99 kostet\n1:05 2. Supermarkt-Tricks\n2:06 3. Karte oder Bargeld?\n3:08 4. Die Abo-Falle\n4:09 5. Zinseszins\n5:11 6. Standby-Strom\n6:14 7. Was das Haltbarkeitsdatum bedeutet\n7:20 8. Wohin verschwinden Socken?\n8:21 9. Warum der Wasserkocher leiser wird\n9:23 10. Warum es Schaltjahre gibt\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#geld #sparen #konsum #alltag",
+      "scenes": 10,
+      "parts": [
+        "D044",
+        "D048",
+        "D052",
+        "D056",
+        "D060",
+        "D077",
+        "D029",
+        "D058",
+        "D078",
+        "D079"
+      ],
+      "buffer": {}
     }
   ]
 }
