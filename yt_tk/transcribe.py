@@ -59,9 +59,12 @@ def probe_duration(path: Path) -> float:
     return round(float(out), 1)
 
 
-def extract_audio(video: Path, wav: Path) -> None:
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vn", "-ac", "1", "-ar", "16000", str(wav)],
-                   check=True)
+def extract_audio(video: Path):
+    """Ton als float32-Reihe (16 kHz, mono). Wir dekodieren selbst mit ffmpeg, damit Whisper kein PyAV braucht."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(video), "-vn", "-ac", "1", "-ar", "16000",
+                          "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.float32)
 
 
 def load_model():
@@ -69,8 +72,8 @@ def load_model():
     return WhisperModel("small", device="cpu", compute_type="int8")
 
 
-def transcribe(model, wav: Path) -> str:
-    segs, _ = model.transcribe(str(wav), language="de", beam_size=1)
+def transcribe(model, audio) -> str:
+    segs, _ = model.transcribe(audio, language="de", beam_size=1)
     return " ".join(s.text.strip() for s in segs).strip()
 
 
@@ -95,11 +98,10 @@ def main(argv: list) -> int:
     for v in todo:
         try:
             with tempfile.TemporaryDirectory() as td:
-                mp4, wav = Path(td) / "v.mp4", Path(td) / "v.wav"
+                mp4 = Path(td) / "v.mp4"
                 download(v["video_url"], mp4)
                 dur = probe_duration(mp4)
-                extract_audio(mp4, wav)
-                text = transcribe(model, wav)
+                text = transcribe(model, extract_audio(mp4))
             (outdir / f"{v['id']}.json").write_text(json.dumps(
                 {"id": v["id"], "topic": v["topic"], "duration": dur, "text": text}, ensure_ascii=False, indent=2),
                 encoding="utf-8")
