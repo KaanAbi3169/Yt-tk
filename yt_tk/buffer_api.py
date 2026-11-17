@@ -26,9 +26,26 @@ def _key() -> str:
     k = "".join(ch for ch in raw if "!" <= ch <= "~").strip("\"'")
     if not k:
         raise BufferError("BUFFER_API_KEY fehlt oder ist leer (GitHub-Secret neu anlegen)")
-    if k != raw:
-        print(f"Hinweis: {len(raw) - len(k)} Sonderzeichen im Secret wurden ignoriert (Laenge {len(raw)} -> {len(k)}).", flush=True)
+    removed = len(raw) - len(k)
+    if removed > 6 or len(k) < 20:
+        # Ein echter Key ist ASCII und lang. Viele Sonderzeichen = falscher Inhalt im Secret.
+        raise BufferError(f"BUFFER_API_KEY ist kein gueltiger Key (Laenge {len(raw)}, davon {removed} Sonderzeichen, "
+                          f"{len(k)} brauchbar). Secret loeschen und den Key neu einfuegen.")
+    if removed:
+        print(f"Hinweis: {removed} Sonderzeichen im Secret wurden ignoriert.", flush=True)
     return k
+
+
+def gql_public(query: str, variables: dict | None = None) -> dict:
+    """Wie gql, aber ohne gueltigen Key (Schema-Abfrage ist bei Buffer ohne Anmeldung moeglich)."""
+    body = json.dumps({"query": query, "variables": variables or {}}).encode()
+    req = urllib.request.Request(ENDPOINT, data=body, method="POST")
+    req.add_header("Content-Type", "application/json")
+    with urllib.request.urlopen(req, timeout=60) as r:
+        res = json.loads(r.read())
+    if res.get("errors"):
+        raise BufferError("GraphQL: " + "; ".join(e.get("message", "?") for e in res["errors"])[:500])
+    return res["data"]
 
 
 def gql(query: str, variables: dict | None = None, retries: int = 2) -> dict:

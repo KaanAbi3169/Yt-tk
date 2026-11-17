@@ -82,22 +82,57 @@ def run(day: str, live: bool) -> int:
     return 1 if errors else 0
 
 
-def introspect() -> int:
-    q = "{ __schema { queryType { name } mutationType { name } types { name kind } } }"
-    d = buffer_api.gql(q)["__schema"]
-    print("Query:", d["queryType"]["name"], "| Mutation:", (d["mutationType"] or {}).get("name"))
-    print(", ".join(sorted(t["name"] for t in d["types"] if not t["name"].startswith("__"))))
-    for tname in ("CreatePostInput", "PostsInput", "PostFilter", "PostsFilter"):
-        r = buffer_api.gql('query($n:String!){ __type(name:$n){ name inputFields { name type { kind name ofType { kind name ofType { name } } } } } }',
-                           {"n": tname})["__type"]
-        if r:
-            print(tname, json.dumps([(f["name"], f["type"]) for f in r["inputFields"]], ensure_ascii=False)[:1500])
+def _t(t: dict) -> str:
+    if not t:
+        return "?"
+    if t["kind"] == "NON_NULL":
+        return _t(t["ofType"]) + "!"
+    if t["kind"] == "LIST":
+        return "[" + _t(t["ofType"]) + "]"
+    return t["name"]
+
+
+TREF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } }"
+DEFAULT_TYPES = ["Query", "Mutation", "PostsFiltersInput", "PostSortInput", "PostsResults", "PostsEdge", "Post", "Asset",
+                 "VideoAsset", "AssetInput", "VideoAssetInput", "PostInputMetaData", "YoutubePostMetadataInput",
+                 "TikTokPostMetadataInput", "ShareMode", "SchedulingType", "PostStatus", "PostActionPayload",
+                 "PostActionSuccess", "MutationError", "PaginationPageInfo", "PostSortableKey"]
+
+
+def describe(name: str) -> None:
+    q = ("query($n:String!){ __type(name:$n){ name kind "
+         f"fields {{ name args {{ name type {{ {TREF} }} }} type {{ {TREF} }} }} "
+         f"inputFields {{ name type {{ {TREF} }} }} enumValues {{ name }} possibleTypes {{ name }} }} }}")
+    r = buffer_api.gql_public(q, {"n": name})["__type"]
+    if not r:
+        print(f"## {name}: nicht vorhanden")
+        return
+    out = []
+    for f in r.get("fields") or []:
+        if name == "Mutation" and "ost" not in f["name"]:
+            continue
+        args = ", ".join(f"{a['name']}: {_t(a['type'])}" for a in f["args"])
+        out.append(f"{f['name']}({args}): {_t(f['type'])}" if args else f"{f['name']}: {_t(f['type'])}")
+    out += [f"{f['name']}: {_t(f['type'])}" for f in r.get("inputFields") or []]
+    if r.get("enumValues"):
+        out.append("ENUM " + ", ".join(v["name"] for v in r["enumValues"]))
+    if r.get("possibleTypes"):
+        out.append("UNION " + ", ".join(v["name"] for v in r["possibleTypes"]))
+    print(f"## {name} ({r['kind']}): " + " | ".join(out), flush=True)
+
+
+def introspect(argv: list) -> int:
+    names = DEFAULT_TYPES
+    if "--types" in argv:
+        names = argv[argv.index("--types") + 1].split(",")
+    for n in names:
+        describe(n)
     return 0
 
 
 def main(argv: list) -> int:
     if "--introspect" in argv:
-        return introspect()
+        return introspect(argv)
     day = argv[argv.index("--day") + 1] if "--day" in argv else datetime.now(inventory.TZ).date().isoformat()
     live = os.environ.get("UPLOADER_LIVE", "").lower() in ("1", "true", "yes")
     log(f"Uploader {day} · {'LIVE' if live else 'TROCKENLAUF'}")
