@@ -20,9 +20,14 @@ class BufferError(RuntimeError):
 
 
 def _key() -> str:
-    k = os.environ.get("BUFFER_API_KEY", "")
+    """Key aus dem Secret. Entfernt beim Einfuegen mitkopierte Sonderzeichen (typografische Anfuehrungszeichen,
+    unsichtbare Zeichen, Leerzeichen, Zeilenumbrueche). Gibt nie den Wert aus, nur ob etwas entfernt wurde."""
+    raw = os.environ.get("BUFFER_API_KEY", "")
+    k = "".join(ch for ch in raw if "!" <= ch <= "~").strip("\"'")
     if not k:
-        raise BufferError("BUFFER_API_KEY fehlt (GitHub-Secret setzen)")
+        raise BufferError("BUFFER_API_KEY fehlt oder ist leer (GitHub-Secret neu anlegen)")
+    if k != raw:
+        print(f"Hinweis: {len(raw) - len(k)} Sonderzeichen im Secret wurden ignoriert (Laenge {len(raw)} -> {len(k)}).", flush=True)
     return k
 
 
