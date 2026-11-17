@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: uploader
@@ -58,3 +59,14 @@ jobs:
           UPLOADER_LIVE: ${{ github.event_name == 'schedule' && (vars.UPLOADER_LIVE != 'false') || inputs.live }}
           ARGS: ${{ inputs.args }}
         run: python3 -m yt_tk.uploader $ARGS
+      - name: Fehler melden (GitHub-Ticket, ohne Claude)
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `⚠️ ${context.workflow} fehlgeschlagen`;
+            const body = `Lauf: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const {data: open} = await github.rest.issues.listForRepo({...context.repo, state: 'open', per_page: 50});
+            const hit = open.find(i => i.title === title);
+            if (hit) await github.rest.issues.createComment({...context.repo, issue_number: hit.number, body});
+            else await github.rest.issues.create({...context.repo, title, body});

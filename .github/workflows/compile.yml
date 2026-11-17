@@ -1,8 +1,10 @@
 name: compile
 
 # V-023: Baut das Zusammenschnitt-Langvideo L001 (10 Haushaltstricks) aus Vorrats-Shorts, ohne Claude, 0 EUR.
-# Nur von Hand startbar. Ergebnis: Branch media -> videos/L001.mp4 und Eintrag im Inventar (Status ready).
+# Zeitplan: --auto (siehe unten). Von Hand: --all, --id L00x oder --dry. Ergebnis: Branch media -> videos/L001.mp4 und Eintrag im Inventar (Status ready).
 on:
+  schedule:
+    - cron: "30 3 * * *"   # 04:30 MEZ: ist der Vorrat an Langvideos unter 3, wird das naechste Zusammenschnitt-Video gebaut (ohne Claude)
   workflow_dispatch:
     inputs:
       args:
@@ -12,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: compile
@@ -38,5 +41,16 @@ jobs:
       - name: Zusammenschnitt bauen
         env:
           YTTK_DATA: ${{ github.workspace }}/media
-          ARGS: ${{ inputs.args }}
+          ARGS: ${{ github.event_name == 'schedule' && '--auto' || inputs.args }}
         run: python3 -m yt_tk.compile_long $ARGS
+      - name: Fehler melden (GitHub-Ticket, ohne Claude)
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `⚠️ ${context.workflow} fehlgeschlagen`;
+            const body = `Lauf: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const {data: open} = await github.rest.issues.listForRepo({...context.repo, state: 'open', per_page: 50});
+            const hit = open.find(i => i.title === title);
+            if (hit) await github.rest.issues.createComment({...context.repo, issue_number: hit.number, body});
+            else await github.rest.issues.create({...context.repo, title, body});

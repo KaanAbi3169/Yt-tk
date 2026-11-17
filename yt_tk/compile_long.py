@@ -51,6 +51,36 @@ LONGS = {
                   ("D047", "Warum du dich nicht selbst kitzeln kannst"), ("D051", "Hirnfrost"), ("D055", "Schrumpelfinger im Bad"),
                   ("D064", "Schlafparalyse"), ("D068", "Gesichter in Dingen sehen"), ("D072", "Déjà-vu"), ("D016", "Der Spotlight-Effekt")],
         "extra": [("D030", "Warum der Spiegel beschlägt"), ("D019", "Warum Katzen auf den Pfoten landen")]},
+    "L004": {
+        "title": "{n} Küchen-Tricks und Alltagsrätsel: Wie viele kennst du?", "topic": "Küche und Alltag", "label": "Thema",
+        "intro": "{n} Küchen-Tricks\nund Alltagsrätsel",
+        "lead": "Küchen-Tricks und kleine Alltagsrätsel vom Brot bis zur Waschmaschine. Mit den Kapiteln springst du direkt zu deinem Thema.",
+        "tags": "#küche #haushalt #alltag #wissen",
+        "parts": [("D033", "Brot richtig lagern"), ("D034", "Wäsche bei Frost trocknen"), ("D045", "Eier-Frischetest"),
+                  ("D049", "Nudelwasser aufheben"), ("D050", "Warum Eier platzen"), ("D041", "Warum Zwiebeln zum Weinen bringen"),
+                  ("D057", "Gefrierbrand vermeiden"), ("D054", "Warum Kleidung einläuft"), ("D070", "Alufolie: welche Seite?"),
+                  ("D037", "Bananen und Reifegas")],
+        "extra": [("D078", "Warum der Wasserkocher leiser wird"), ("D058", "Wohin verschwinden Socken?")]},
+    "L005": {
+        "title": "{n} Geld- und Alltagsfallen: Tappst du in die Preisfalle?", "topic": "Geld und Konsum", "label": "Thema",
+        "intro": "{n} Geld- und Alltagsfallen\nkennst du alle?",
+        "lead": "Preise, Abos, Zinsen und Stromfresser: Alltagsfallen rund ums Geld. Mit den Kapiteln springst du direkt zu deinem Thema.",
+        "tags": "#geld #sparen #konsum #alltag",
+        "parts": [("D044", "Warum alles 9.99 kostet"), ("D048", "Supermarkt-Tricks"), ("D052", "Karte oder Bargeld?"),
+                  ("D056", "Die Abo-Falle"), ("D060", "Zinseszins"), ("D077", "Standby-Strom"),
+                  ("D029", "Was das Haltbarkeitsdatum bedeutet"), ("D058", "Wohin verschwinden Socken?"),
+                  ("D078", "Warum der Wasserkocher leiser wird"), ("D079", "Warum es Schaltjahre gibt")],
+        "extra": [("D030", "Warum der Spiegel beschlägt"), ("D019", "Warum Katzen auf den Pfoten landen")]},
+    "L006": {
+        "title": "{n} Rätsel der Natur und Physik: Weisst du die Antworten?", "topic": "Natur und Physik", "label": "Thema",
+        "intro": "{n} Rätsel der Natur\nund Physik",
+        "lead": "Rätsel aus Natur und Physik: vom blauen Himmel bis zum Glühwürmchen. Mit den Kapiteln springst du direkt zu deinem Thema.",
+        "tags": "#natur #physik #wissen #rätsel",
+        "parts": [("D038", "Wie Salz Eis schmelzen lässt"), ("D059", "Warum der Himmel blau ist"), ("D063", "Ein Tag auf der Venus"),
+                  ("D071", "Wie schwer ist eine Wolke?"), ("D027", "Warum Eisbären schwarze Haut haben"),
+                  ("D031", "Wie Glühwürmchen leuchten"), ("D019", "Warum Katzen auf den Pfoten landen"),
+                  ("D030", "Warum der Spiegel beschlägt"), ("D017", "Geschirrspüler richtig einräumen"), ("D021", "Stosslüften statt Kippen")],
+        "extra": [("D025", "Wasserkocher entkalken"), ("D082", "Mikrowelle ohne Schrubben")]},
 }
 
 
@@ -187,8 +217,26 @@ def make_one(vid: str, dry: bool, local: str) -> bool:
     return True
 
 
+def next_auto() -> list:
+    """Ohne Claude: Ist der Vorrat an fertigen Langvideos kleiner als 3, wird das naechste definierte gebaut (hoechstens eins pro Lauf)."""
+    inv = inventory._load("inventory.json", {"videos": []})["videos"]
+    ready = sum(1 for v in inv if v["format"] == "lang" and v["status"] == "ready")
+    have = {v["id"] for v in inv}
+    todo = [i for i in LONGS if i not in have]
+    if ready >= 3:
+        log(f"{ready} Langvideos bereit, nichts zu bauen.")
+        return []
+    if not todo:
+        print("WARN: Alle definierten Zusammenschnitte sind gebaut, neue Langvideos brauchen neue Inhalte (Claude).")
+        return []
+    return todo[:1]
+
+
 def main(argv: list) -> int:
-    ids = list(LONGS) if "--all" in argv else [argv[argv.index("--id") + 1]] if "--id" in argv else ["L001"]
+    if "--auto" in argv:
+        ids = next_auto()
+    else:
+        ids = list(LONGS) if "--all" in argv else [argv[argv.index("--id") + 1]] if "--id" in argv else ["L001"]
     ok = [make_one(i, "--dry" in argv, os.environ.get("COMPILE_LOCAL", "")) for i in ids]
     return 0 if all(ok) else 1
 
