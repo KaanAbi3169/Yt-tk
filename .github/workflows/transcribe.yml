@@ -1,0 +1,45 @@
+name: transcribe
+
+# V-018: Transkribiert Vorrats-Videos ohne Text (Whisper, ohne Claude, ohne Kosten) und legt die Transkripte
+# auf dem Daten-Branch ab (data/transcripts/<ID>.json). Nur von Hand startbar.
+on:
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --list, --limit 3 oder --id D033"
+        required: false
+        default: "--limit 3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcribe
+  cancel-in-progress: false
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "transcribe"
+          git -C media config user.email "transcribe@users.noreply.github.com"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: faster-whisper installieren
+        run: pip install --quiet faster-whisper
+      - name: Transkribieren
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ inputs.args }}
+        run: python3 -m yt_tk.transcribe $ARGS
