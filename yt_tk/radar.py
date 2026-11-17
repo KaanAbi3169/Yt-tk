@@ -32,7 +32,10 @@ NOISE = re.compile(r"(\((Film|Fernsehserie|Fernsehreihe|Album|Band|Lied|Spiel|Ro
                    r"^\d+\. (Januar|Februar|M\u00e4rz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)$|^Tag |Volkstrauertag|Bu\u00df)", re.I)
 SKIP_PREFIX = ("Spezial:", "Wikipedia:", "Datei:", "Kategorie:", "Portal:", "Hilfe:", "Vorlage:", "Benutzer:", "Hauptseite")
 BLOCK = re.compile(r"(mord|anschlag|massaker|amok|vergewaltig|selbstmord|suizid|hinrichtung|terror|pornograf|sexual|nazi|hitler|"
-                   r"holocaust|konzentrationslager|todesfall|leiche|missbrauch|krieg gegen|geiselnahme)", re.I)
+                   r"holocaust|konzentrationslager|todesfall|leiche|missbrauch|krieg gegen|geiselnahme|porn|^sex$)", re.I)
+# Wikidata-Klassen, die keine Sachthemen fuer Wissensvideos sind: Mensch, Film, Fernsehserie, Videospiel, Album, Single, Buch
+NONTOPIC = {"Q5", "Q11424", "Q5398426", "Q7889", "Q482994", "Q134556", "Q7725634", "Q202866", "Q24862", "Q21191270",
+            "Q15416", "Q386724", "Q1107", "Q2431196", "Q1259759", "Q1002697"}
 
 
 def log(msg: str) -> None:
@@ -85,7 +88,7 @@ def _json(url: str) -> dict:
 
 
 def persons(titles: list) -> set:
-    """Titel, die laut Wikidata Menschen sind (P31 = Q5). Bei Fehlern leere Menge (dann bleibt die Liste ungefiltert)."""
+    """Titel, die laut Wikidata Menschen, Filme, Serien, Spiele oder Alben sind (P31 in NONTOPIC). Bei Fehlern leere Menge (dann bleibt die Liste ungefiltert)."""
     qid = {}
     try:
         for i in range(0, len(titles), 50):
@@ -109,7 +112,7 @@ def persons(titles: list) -> set:
                                         "format": "json"})
             for eid, e in _json(WD_API + "?" + q).get("entities", {}).items():
                 for c in e.get("claims", {}).get("P31", []):
-                    if c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") == "Q5":
+                    if c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") in NONTOPIC:
                         human.add(eid)
         return {t for t, item in qid.items() if item in human}
     except Exception as e:  # Filter ist Zugabe, darf den Radar nicht verhindern
