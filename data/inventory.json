@@ -1286,6 +1286,37 @@
         "D025"
       ],
       "buffer": {}
+    },
+    {
+      "id": "L002",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T00:21:26.906117+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Mythen und Rätsel",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 619.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L002.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Mythen und Rätsel: Wie viele davon hast du falsch gewusst?",
+      "text_tiktok": "",
+      "text_youtube": "10 Mythen und Rätsel aus Geschichte, Natur und Weltraum: Was stimmt, was nicht? Mit den Kapiteln springst du direkt zu deinem Lieblingsthema.\n\nKAPITEL\n0:00 1. Napoleon: wirklich klein?\n1:05 2. Wikinger mit Hörnerhelm?\n2:06 3. Hai älter als Bäume?\n3:08 4. Kleopatra und die Mondlandung\n4:09 5. Fällt Toast auf die Butterseite?\n5:11 6. Der Emu-Krieg\n6:13 7. Die Tanzwut von 1518\n7:14 8. Das Geisterschiff Mary Celeste\n8:16 9. Wächst der Eiffelturm?\n9:17 10. Der Mond entfernt sich\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#mythen #wissen #geschichte #faktencheck",
+      "scenes": 10,
+      "parts": [
+        "D024",
+        "D032",
+        "D023",
+        "D028",
+        "D022",
+        "D040",
+        "D036",
+        "D076",
+        "D075",
+        "D067"
+      ],
+      "buffer": {}
     }
   ]
 }
