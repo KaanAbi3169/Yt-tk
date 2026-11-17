@@ -1,22 +1,23 @@
 {
   "date": "2026-11-17",
   "videos": 212,
-  "outliers": 31,
+  "outliers": 27,
+  "outlier_channels": 20,
   "outlier_summary": {
-    "n": 31,
-    "title_len": 65,
-    "duration": 44,
+    "n": 27,
+    "title_len": 60,
+    "duration": 45,
     "hashtags": 2,
-    "question": 68,
-    "digit": 16,
-    "emoji": 58
+    "question": 70,
+    "digit": 15,
+    "emoji": 63
   },
   "rest_summary": {
-    "n": 181,
-    "title_len": 65,
+    "n": 185,
+    "title_len": 66,
     "duration": 41,
     "hashtags": 2,
-    "question": 38,
+    "question": 37,
     "digit": 35,
     "emoji": 34
   },
@@ -27,12 +28,12 @@
       "median_views": null
     },
     "waswaerewenn": {
-      "outliers": 8,
+      "outliers": 6,
       "videos": 8,
-      "median_views": 450780
+      "median_views": 456485
     },
     "wissen": {
-      "outliers": 23,
+      "outliers": 21,
       "videos": 177,
       "median_views": 31260
     }
@@ -40,63 +41,63 @@
   "hours": [
     [
       12,
-      7
+      5
     ],
     [
-      18,
-      5
+      19,
+      4
     ],
     [
       16,
       3
     ],
     [
-      19,
-      3
+      13,
+      2
     ],
     [
-      11,
+      22,
       2
     ]
   ],
   "weekdays": [
     [
       "Samstag",
-      7
-    ],
-    [
-      "Mittwoch",
-      5
+      6
     ],
     [
       "Donnerstag",
       5
+    ],
+    [
+      "Freitag",
+      4
     ]
   ],
   "hashtags": [
     [
       "#wusstestduschon",
-      8
-    ],
-    [
-      "#viral",
-      6
-    ],
-    [
-      "#satire",
-      5
-    ],
-    [
-      "#fürdich",
-      5
-    ],
-    [
-      "#physik",
-      5
+      7
     ],
     [
       "#shorts",
+      5
+    ],
+    [
+      "#viral",
       4
+    ],
+    [
+      "#physik",
+      3
+    ],
+    [
+      "#satire",
+      3
+    ],
+    [
+      "#fürdich",
+      3
     ],
     [
       "#fyp",
@@ -119,9 +120,9 @@
       "format": "waswaerewenn",
       "title": "Was wäre, wenn alle Rentner zur Bundeswehr müssten? 👵 #deutschland #waswärewenn #bundeswehr",
       "channel": "Die Welt in 60Sekunden!?",
-      "views": 423711,
+      "views": 423747,
       "subs": 1210,
-      "ratio": 350.17,
+      "ratio": 350.2,
       "duration": 39
     },
     {
@@ -129,9 +130,9 @@
       "format": "waswaerewenn",
       "title": "Was wäre wenn Spongebob russe wäre? 🇷🇺 #russland #russisch #fürdich #viral#satire",
       "channel": "TakeTo_clip",
-      "views": 1388246,
+      "views": 1388293,
       "subs": 7230,
-      "ratio": 192.01,
+      "ratio": 192.02,
       "duration": 45
     },
     {
@@ -139,9 +140,9 @@
       "format": "waswaerewenn",
       "title": "Was wäre, wenn bei dir in der Schule Amokalarm ist? 😳 „Frau Koma kommt zu Besuch“",
       "channel": "Kurz Serien 🎞️🍿",
-      "views": 438858,
+      "views": 438901,
       "subs": 2620,
-      "ratio": 167.5,
+      "ratio": 167.52,
       "duration": 72
     },
     {
@@ -159,7 +160,7 @@
       "format": "waswaerewenn",
       "title": "Was wäre wenn spongbob Deutscher wäre?🇩🇪was noch? #deutschland #deutscher #viral #satire #fürdich",
       "channel": "TakeTo_clip",
-      "views": 563808,
+      "views": 563825,
       "subs": 7230,
       "ratio": 77.98,
       "duration": 49
@@ -169,30 +170,10 @@
       "format": "waswaerewenn",
       "title": "Was wäre wenn spongbob Türke wäre🇹🇷? Was noch👇🏼 #Türkei #Türke #viral #satire #fürdich",
       "channel": "TakeTo_clip",
-      "views": 474057,
+      "views": 474069,
       "subs": 7230,
       "ratio": 65.57,
       "duration": 45
-    },
-    {
-      "id": "Eth6Ly9vj04",
-      "format": "waswaerewenn",
-      "title": "Was wäre wenn spongbob Österreicher wäre?🇦🇹 #österreich #österreicher #satire #fürdich #viral",
-      "channel": "TakeTo_clip",
-      "views": 462702,
-      "subs": 7230,
-      "ratio": 64.0,
-      "duration": 49
-    },
-    {
-      "id": "9WJjGjTAUzQ",
-      "format": "waswaerewenn",
-      "title": "Was wäre wenn Spongebob ALBANER wäre?🇦🇱 #viral#albanien #fürdich #albanisch #satire",
-      "channel": "TakeTo_clip",
-      "views": 426258,
-      "subs": 7230,
-      "ratio": 58.96,
-      "duration": 50
     },
     {
       "id": "9H-C_Rehlr4",
@@ -219,30 +200,10 @@
       "format": "wissen",
       "title": "Dieser Hund wurde 29 Jahre alt 🐕🇦🇺 #wusstestduschon",
       "channel": "BLITZFAKT",
-      "views": 62173,
+      "views": 62167,
       "subs": 1790,
       "ratio": 34.73,
       "duration": 7
-    },
-    {
-      "id": "k_3zdfhKIPI",
-      "format": "wissen",
-      "title": "Rückwärtsgang bei 100 km/h: Was wirklich passiert #auto #physik",
-      "channel": "Herbert",
-      "views": 33657,
-      "subs": 573,
-      "ratio": 33.66,
-      "duration": 44
-    },
-    {
-      "id": "32eKSUBOTk8",
-      "format": "wissen",
-      "title": "Münze vom Empire State Building: Tödlich oder harmlos? #physik #mythos",
-      "channel": "Herbert",
-      "views": 28727,
-      "subs": 573,
-      "ratio": 28.73,
-      "duration": 33
     },
     {
       "id": "IvxZ5GC_VS8",
@@ -253,6 +214,46 @@
       "subs": 231,
       "ratio": 28.4,
       "duration": 81
+    },
+    {
+      "id": "oTJPAhQCwbk",
+      "format": "wissen",
+      "title": "Julius Cäsar wurde nicht per Kaiserschnitt geboren 🏛️ #wusstestduschon",
+      "channel": "BLITZFAKT",
+      "views": 49317,
+      "subs": 1790,
+      "ratio": 27.55,
+      "duration": 7
+    },
+    {
+      "id": "Yguxhc0GF1E",
+      "format": "wissen",
+      "title": "wie deine heizung funktioniert – ganz einfach erklärt",
+      "channel": "Kapitel Null",
+      "views": 30445,
+      "subs": 1290,
+      "ratio": 23.6,
+      "duration": 88
+    },
+    {
+      "id": "2oEC9Eui1j0",
+      "format": "wissen",
+      "title": "Warum man ein Baumhaus nicht festnageln darf 🌳 (3D erklärt)",
+      "channel": "Super! Du hast Gebaut",
+      "views": 23019,
+      "subs": 231,
+      "ratio": 23.02,
+      "duration": 75
+    },
+    {
+      "id": "NyOenN_yapU",
+      "format": "wissen",
+      "title": "#zombieameise #fyp #animation #fakten #wusstestduschon",
+      "channel": "Rudi Real",
+      "views": 21456,
+      "subs": 415,
+      "ratio": 21.46,
+      "duration": 60
     }
   ]
 }
