@@ -951,7 +951,8 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830440+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1fTPGKJ3uNU6EPpDdrRCIDmQDRk4QPOpC",
-      "buffer": {}
+      "buffer": {},
+      "duration": 61.6
     },
     {
       "id": "D083",
@@ -964,7 +965,8 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830445+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=18u7p5Hwz0TNblCtQgE5TF3rvoqsMinxx",
-      "buffer": {}
+      "buffer": {},
+      "duration": 62.4
     },
     {
       "id": "D084",
@@ -977,7 +979,8 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830450+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=16eR4QRvvmWuYEUMUzcoHQedgJ3xdtdsP",
-      "buffer": {}
+      "buffer": {},
+      "duration": 61.6
     },
     {
       "id": "W002",
