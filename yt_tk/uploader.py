@@ -28,12 +28,14 @@ def log(msg: str) -> None:
 
 def find_existing(posts: list, entry: dict, platform: str):
     """Doppelschutz: gleiche Video-Datei oder gleicher Text-Anfang irgendwo in der Kanal-Historie."""
-    vid_file = entry["video_url"].rsplit("/", 1)[-1].split("?")[0]
-    drive_id = entry["video_url"].split("id=")[-1] if "drive.google.com" in entry["video_url"] else None
+    is_drive = "drive.google.com" in entry["video_url"]
+    # Drive-Links enden auf "uc?...": der Dateiname waere dann "uc" und wuerde jeden Drive-Post treffen
+    vid_file = None if is_drive else entry["video_url"].rsplit("/", 1)[-1].split("?")[0]
+    drive_id = entry["video_url"].split("id=")[-1].split("&")[0] if is_drive else None
     head = (entry[platform]["text"] or "")[:60]
     for p in posts:
         srcs = " ".join((a.get("source") or "") for a in (p.get("assets") or []))
-        if vid_file in srcs or (drive_id and drive_id in srcs) or (head and (p.get("text") or "").startswith(head)):
+        if (vid_file and vid_file in srcs) or (drive_id and drive_id in srcs) or (head and (p.get("text") or "").startswith(head)):
             return p
     return None
 
