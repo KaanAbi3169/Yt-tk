@@ -20,4 +20,11 @@ Plant die Videos des Tages in Buffer, **ohne Claude**. Läuft als GitHub Action 
 14 Drive-Reservevideos (D016–D032) haben Titel und Texte und sind per Link freigegeben. Das reicht für 14 Tage Notbetrieb ohne Claude (Wissens-Slot). Horror (A/B-Abstimmung) und lange Videos brauchen Claude und pausieren.
 
 ## Status der Buffer-Abfragen
-Die GraphQL-Texte in `yt_tk/buffer_api.py` sind **noch nicht gegen die echte Schnittstelle geprüft**. Prüfen mit `BUFFER_API_KEY=… python3 -m yt_tk.uploader --introspect`. Vor dem Live-Schalten muss ein Trockenlauf ohne Fehler durchlaufen.
+- **Schema geprüft** (17.11.2026, Introspektion über `uploader.yml` mit Argument `--introspect`). Der Client nutzt `posts(input: PostsInput!)` und `createPost(input: CreatePostInput!)` mit den Pflichtfeldern `channelId`, `mode`, `schedulingType`, `needsApproval`, `assets: [{video: {url}}]`.
+- **Noch nicht geprüft:** die erste echte, angemeldete Abfrage. Sie braucht einen gültigen Key im Secret.
+- Der Client erkennt ein falsch eingefügtes Secret (viele Sonderzeichen) und bricht mit einer klaren Meldung ab. Es wird nie ein Wert ausgegeben.
+
+## Testen
+- Schema: Actions → uploader → Run workflow, Argumente `--introspect` (optional `--types Name1,Name2`).
+- Trockenlauf für einen Tag: Argumente `--day 2026-11-18`. Fragt Buffer lesend ab und zeigt, was gepostet würde.
+- Live: Variable `UPLOADER_LIVE=true`.
