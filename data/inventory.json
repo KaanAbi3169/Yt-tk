@@ -1317,6 +1317,37 @@
         "D067"
       ],
       "buffer": {}
+    },
+    {
+      "id": "L003",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T00:26:27.333937+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Körper und Gehirn",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 619.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L003.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Dinge, die dein Körper und dein Gehirn tun, ohne dass du es merkst",
+      "text_tiktok": "",
+      "text_youtube": "10 Dinge, die dein Körper und dein Gehirn ständig tun, vom Gähnen bis zum Déjà-vu. Mit den Kapiteln springst du direkt zu deinem Thema.\n\nKAPITEL\n0:00 1. Warum Gähnen ansteckt\n1:05 2. Gänsehaut\n2:06 3. Schluckauf\n3:08 4. Warum du dich nicht selbst kitzeln kannst\n4:09 5. Hirnfrost\n5:11 6. Schrumpelfinger im Bad\n6:13 7. Schlafparalyse\n7:14 8. Gesichter in Dingen sehen\n8:16 9. Déjà-vu\n9:17 10. Der Spotlight-Effekt\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#körper #gehirn #wissen #psychologie",
+      "scenes": 10,
+      "parts": [
+        "D035",
+        "D039",
+        "D043",
+        "D047",
+        "D051",
+        "D055",
+        "D064",
+        "D068",
+        "D072",
+        "D016"
+      ],
+      "buffer": {}
     }
   ]
 }
