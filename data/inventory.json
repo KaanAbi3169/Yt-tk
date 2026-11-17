@@ -1348,6 +1348,37 @@
         "D016"
       ],
       "buffer": {}
+    },
+    {
+      "id": "L004",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T00:31:26.428663+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Küche und Alltag",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 619.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L004.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Küchen-Tricks und Alltagsrätsel: Wie viele kennst du?",
+      "text_tiktok": "",
+      "text_youtube": "10 Küchen-Tricks und kleine Alltagsrätsel vom Brot bis zur Waschmaschine. Mit den Kapiteln springst du direkt zu deinem Thema.\n\nKAPITEL\n0:00 1. Brot richtig lagern\n1:05 2. Wäsche bei Frost trocknen\n2:06 3. Eier-Frischetest\n3:08 4. Nudelwasser aufheben\n4:09 5. Warum Eier platzen\n5:11 6. Warum Zwiebeln zum Weinen bringen\n6:13 7. Gefrierbrand vermeiden\n7:14 8. Warum Kleidung einläuft\n8:16 9. Alufolie: welche Seite?\n9:17 10. Bananen und Reifegas\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#küche #haushalt #alltag #wissen",
+      "scenes": 10,
+      "parts": [
+        "D033",
+        "D034",
+        "D045",
+        "D049",
+        "D050",
+        "D041",
+        "D057",
+        "D054",
+        "D070",
+        "D037"
+      ],
+      "buffer": {}
     }
   ]
 }
