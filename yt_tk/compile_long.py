@@ -112,11 +112,16 @@ def encode_clip(src: Path, dst: Path, label: str, crf: int, tmp: Path) -> None:
 
 
 def intro_card(text: str, dst: Path, crf: int, tmp: Path) -> None:
-    txt = tmp / "intro.txt"
-    txt.write_text(text, encoding="utf-8")
+    # Jede Zeile einzeln zeichnen: ein Zeilenumbruch in der Textdatei erscheint sonst als Kaestchen
+    lines = text.split("\n")
+    filters = []
+    for k, line in enumerate(lines):
+        f = tmp / f"intro{k}.txt"
+        f.write_text(line, encoding="utf-8")
+        dy = int((k - (len(lines) - 1) / 2) * 90)
+        filters.append(f"drawtext=fontfile={font()}:textfile={f}:x=(w-text_w)/2:y=(h-text_h)/2+({dy}):fontsize=64:fontcolor=white")
     run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=0x101820:s={W}x{H}:d={INTRO_S}", "-f", "lavfi",
-         "-i", "anullsrc=r=44100:cl=stereo", "-t", str(INTRO_S),
-         "-vf", f"drawtext=fontfile={font()}:textfile={txt}:x=(w-text_w)/2:y=(h-text_h)/2:fontsize=64:fontcolor=white:line_spacing=18",
+         "-i", "anullsrc=r=44100:cl=stereo", "-t", str(INTRO_S), "-vf", ",".join(filters),
          "-crf", str(crf), *ENC, str(dst)])
 
 
@@ -169,12 +174,18 @@ def build(cfg: dict, crf: int, tmp: Path, local: str = "") -> tuple:
     return out, starts, names, transcribe.probe_duration(out)
 
 
-def make_one(vid: str, dry: bool, local: str) -> bool:
+def make_one(vid: str, dry: bool, local: str, rebuild: bool = False) -> bool:
     cfg = LONGS[vid]
     inv = inventory._load("inventory.json", {"videos": []})
     if any(v["id"] == vid for v in inv["videos"]):
-        log(f"{vid} ist schon im Inventar.")
-        return True
+        if not rebuild:
+            log(f"{vid} ist schon im Inventar.")
+            return True
+        cur = next(v for v in inv["videos"] if v["id"] == vid)
+        if cur["status"] != "ready":
+            log(f"{vid} hat Status {cur['status']}, wird nicht neu gebaut.")
+            return True
+        inv["videos"] = [v for v in inv["videos"] if v["id"] != vid]  # noch nicht hochgeladen: neu bauen
     for crf in (23, 27, 31, 35):
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -240,7 +251,7 @@ def main(argv: list) -> int:
         ids = next_auto()
     else:
         ids = list(LONGS) if "--all" in argv else [argv[argv.index("--id") + 1]] if "--id" in argv else ["L001"]
-    ok = [make_one(i, "--dry" in argv, os.environ.get("COMPILE_LOCAL", "")) for i in ids]
+    ok = [make_one(i, "--dry" in argv, os.environ.get("COMPILE_LOCAL", ""), "--rebuild" in argv) for i in ids]
     return 0 if all(ok) else 1
 
 
