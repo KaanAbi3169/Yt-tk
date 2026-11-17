@@ -4,6 +4,7 @@
     UPLOADER_LIVE=true python -m yt_tk.uploader   # plant wirklich in Buffer
     python -m yt_tk.uploader --day 2026-11-18     # anderes Datum
     python -m yt_tk.uploader --introspect         # GraphQL-Schema von Buffer anzeigen (zum Pruefen)
+    python -m yt_tk.uploader --selftest-draft --day 2026-11-18   # legt nur ENTWUERFE an (zum Testen von createPost)
 
 Logik wie docs/ROUTINE_PLANUNG.md: Plan aus dem Inventar, Doppelschutz ueber die ganze Kanal-Historie,
 Buffer-Limit (max. 10 geplante Posts), Wiederholung nie blind, Status zurueck ins Inventar (media-Branch).
@@ -130,11 +131,31 @@ def introspect(argv: list) -> int:
     return 0
 
 
+def selftest_draft(day: str) -> int:
+    """Legt je Plattform einen ENTWURF an (nie veroeffentlicht), um createPost mit echtem Key zu pruefen."""
+    plan = [e for e in inventory.plan(day) if not e.get("needs_texts")]
+    if not plan:
+        log("Kein Eintrag fuer den Selbsttest.")
+        return 1
+    e, rc = plan[0], 0
+    for pf in e["platforms"]:
+        pl = e[pf]
+        try:
+            pid = buffer_api.create_post(pl["channelId"], pl["text"], e["dueAt"], e["video_url"], pl["metadata"], draft=True)
+            log(f"SELFTEST-ENTWURF {e['id']} {pf}: Post {pid} (bitte loeschen)")
+        except Exception as ex:
+            rc = 1
+            log(f"SELFTEST-FEHLER {e['id']} {pf}: {ex}")
+    return rc
+
+
 def main(argv: list) -> int:
     if "--introspect" in argv:
         return introspect(argv)
     day = argv[argv.index("--day") + 1] if "--day" in argv else datetime.now(inventory.TZ).date().isoformat()
     live = os.environ.get("UPLOADER_LIVE", "").lower() in ("1", "true", "yes")
+    if "--selftest-draft" in argv:
+        return selftest_draft(day)
     log(f"Uploader {day} · {'LIVE' if live else 'TROCKENLAUF'}")
     return run(day, live)
 

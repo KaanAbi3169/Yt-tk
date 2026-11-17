@@ -105,15 +105,19 @@ def list_posts(org: str, channel: str, max_pages: int = 5) -> list:
     return out
 
 
-def create_post_input(channel: str, text: str, due_iso: str, video_url: str, metadata: dict) -> dict:
-    return {"channelId": channel, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
-            "dueAt": due_iso, "needsApproval": False, "assets": [{"video": {"url": video_url}}],
-            "metadata": metadata}
+def create_post_input(channel: str, text: str, due_iso: str, video_url: str, metadata: dict, draft: bool = False) -> dict:
+    inp = {"channelId": channel, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
+           "dueAt": due_iso, "needsApproval": False, "assets": [{"video": {"url": video_url}}],
+           "metadata": metadata}
+    if draft:  # Selbsttest: nur Entwurf, wird nie veroeffentlicht
+        inp.pop("dueAt")
+        inp.update({"mode": "addToQueue", "saveToDraft": True})
+    return inp
 
 
-def create_post(channel: str, text: str, due_iso: str, video_url: str, metadata: dict) -> str:
-    """Plant ein Video als automatischen Post. Gibt die Post-ID zurueck."""
-    inp = create_post_input(channel, text, due_iso, video_url, metadata)
+def create_post(channel: str, text: str, due_iso: str, video_url: str, metadata: dict, draft: bool = False) -> str:
+    """Plant ein Video als automatischen Post (oder legt es als Entwurf an). Gibt die Post-ID zurueck."""
+    inp = create_post_input(channel, text, due_iso, video_url, metadata, draft)
     d = gql(M_CREATE, {"input": inp}, retries=0)["createPost"]  # nie blind wiederholen: Doppelpost-Gefahr
     if d.get("__typename") != "PostActionSuccess" or not d.get("post"):
         raise BufferError(f"createPost {d.get('__typename')}: {d.get('message') or 'keine Post-ID zurueckgegeben'}")
