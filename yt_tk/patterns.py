@@ -131,10 +131,19 @@ def features(v: dict) -> dict:
             "duration": v["duration"], "hour": pub.hour, "weekday": pub.weekday()}
 
 
+MAX_PER_CHANNEL = 3  # ein Kanal darf das Bild nicht allein bestimmen
+
+
 def split_outliers(vids: list) -> tuple:
     out = [v for v in vids if v["views"] >= MIN_VIEWS and v["ratio"] >= OUTLIER_RATIO]
     if len(out) < 8 and vids:  # zu wenige: oberstes Fuenftel nach Verhaeltnis
         out = sorted(vids, key=lambda v: -v["ratio"])[:max(1, len(vids) // 5)]
+    seen, capped = Counter(), []
+    for v in sorted(out, key=lambda v: -v["ratio"]):
+        if seen[v["channel_id"]] < MAX_PER_CHANNEL:
+            seen[v["channel_id"]] += 1
+            capped.append(v)
+    out = capped
     ids = {v["id"] for v in out}
     return out, [v for v in vids if v["id"] not in ids]
 
@@ -160,7 +169,7 @@ def analyze(vids: list) -> dict:
         g = [v for v in out if v["format"] == fmt]
         by_fmt[fmt] = {"outliers": len(g), "videos": sum(1 for v in vids if v["format"] == fmt),
                        "median_views": int(statistics.median(v["views"] for v in g)) if g else None}
-    return {"date": datetime.now(inventory.TZ).date().isoformat(), "videos": len(vids), "outliers": len(out),
+    return {"date": datetime.now(inventory.TZ).date().isoformat(), "videos": len(vids), "outliers": len(out), "outlier_channels": len({v["channel_id"] for v in out}),
             "outlier_summary": summarize(out), "rest_summary": summarize(rest), "by_format": by_fmt,
             "hours": Counter(x["hour"] for x in of).most_common(5),
             "weekdays": [(WEEKDAYS[d], n) for d, n in Counter(x["weekday"] for x in of).most_common(3)],
@@ -173,7 +182,7 @@ def report(a: dict, quota: int) -> str:
     o, r = a["outlier_summary"], a["rest_summary"]
     L = [f"# Musterbericht YouTube Shorts {a['date']}", "",
          f"Quelle: YouTube Data API v3, deutschsprachige Shorts bis {MAX_SHORT_S} s der letzten 30 Tage. "
-         f"{a['videos']} Videos geprueft, davon {a['outliers']} Ausreisser (Aufrufe mindestens {OUTLIER_RATIO:g}x Abos "
+         f"{a['videos']} Videos geprueft, davon {a['outliers']} Ausreisser von {a['outlier_channels']} Kanaelen, je Kanal hoechstens {MAX_PER_CHANNEL} (Aufrufe mindestens {OUTLIER_RATIO:g}x Abos "
          f"und mindestens {MIN_VIEWS} Aufrufe; sonst oberstes Fuenftel). Kontingent verbraucht: {quota} Einheiten.", ""]
     if not o:
         return "\n".join(L + ["Keine Daten."]) + "\n"
