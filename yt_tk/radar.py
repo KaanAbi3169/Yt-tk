@@ -32,7 +32,7 @@ NOISE = re.compile(r"(\((Film|Fernsehserie|Fernsehreihe|Album|Band|Lied|Spiel|Ro
                    r"^\d+\. (Januar|Februar|M\u00e4rz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)$|^Tag |Volkstrauertag|Bu\u00df)", re.I)
 SKIP_PREFIX = ("Spezial:", "Wikipedia:", "Datei:", "Kategorie:", "Portal:", "Hilfe:", "Vorlage:", "Benutzer:", "Hauptseite")
 BLOCK = re.compile(r"(mord|anschlag|massaker|amok|vergewaltig|selbstmord|suizid|hinrichtung|terror|pornograf|sexual|nazi|hitler|"
-                   r"holocaust|konzentrationslager|todesfall|leiche|missbrauch|krieg gegen|geiselnahme|porn|^sex$)", re.I)
+                   r"holocaust|konzentrationslager|todesfall|leiche|missbrauch|krieg gegen|geiselnahme|porn|^sex$|geschlechtsverkehr|prostitu|erotik)", re.I)
 # Wikidata-Klassen, die keine Sachthemen fuer Wissensvideos sind: Mensch, Film, Fernsehserie, Videospiel, Album, Single, Buch
 NONTOPIC = {"Q5", "Q11424", "Q5398426", "Q7889", "Q482994", "Q134556", "Q7725634", "Q202866", "Q24862", "Q21191270",
             "Q15416", "Q386724", "Q1107", "Q2431196", "Q1259759", "Q1002697"}
