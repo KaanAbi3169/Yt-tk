@@ -1,0 +1,55 @@
+name: retention
+
+# V-019: Retention-Zahlen unserer YouTube-Videos (YouTube Analytics API), ohne Claude, 0 EUR.
+# Laeuft nur, wenn der Inhaber die Secrets YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN angelegt hat.
+on:
+  schedule:
+    - cron: "5 21 * * *"   # 22:05 MEZ, nach der Auswertung
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry"
+        required: false
+        default: "--dry"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retention
+  cancel-in-progress: false
+
+jobs:
+  retention:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HAS_KEY: ${{ secrets.YOUTUBE_REFRESH_TOKEN != '' }}
+    steps:
+      - name: Ohne Zugang nichts tun
+        if: env.HAS_KEY != 'true'
+        run: echo "::notice::YOUTUBE_REFRESH_TOKEN fehlt - Retention macht nichts."
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+      - uses: actions/checkout@v4
+        if: env.HAS_KEY == 'true'
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        if: env.HAS_KEY == 'true'
+        run: |
+          git -C media config user.name "retention"
+          git -C media config user.email "retention@users.noreply.github.com"
+      - name: Retention
+        if: env.HAS_KEY == 'true'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
+        run: python3 -m yt_tk.retention $ARGS

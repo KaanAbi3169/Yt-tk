@@ -1,0 +1,43 @@
+name: radar
+
+# V-020: Taeglicher Themenradar (Wikipedia-Aufrufzahlen + YouTube-Trendliste Schweiz), ohne Claude, 0 EUR.
+# Bericht: Branch media -> data/reports/themen-<Datum>.md und data/themen.json.
+on:
+  schedule:
+    - cron: "20 4 * * *"   # 05:20 MEZ
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Optionale Argumente, z. B. --dry"
+        required: false
+        default: "--dry"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: data
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "radar"
+          git -C media config user.email "radar@users.noreply.github.com"
+      - name: Themenradar
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YTTK_DATA: ${{ github.workspace }}/media
+          ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
+        run: python3 -m yt_tk.radar $ARGS
