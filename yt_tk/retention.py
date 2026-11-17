@@ -19,6 +19,8 @@ from . import inventory
 TOKEN = "https://oauth2.googleapis.com/token"
 REPORTS = "https://youtubeanalytics.googleapis.com/v2/reports"
 VIDEOS = "https://www.googleapis.com/youtube/v3/videos"
+# Kanal-ID unseres Kanals (oeffentlich, aus Metricool). Ueberschreibbar per YOUTUBE_CHANNEL_ID. "MINE" waere das Konto der Anmeldung.
+CHANNEL = os.environ.get("YOUTUBE_CHANNEL_ID", "").strip() or "UCQkNK8RA001zW5cjp5EZUuA"
 
 
 class RetentionError(Exception):
@@ -54,7 +56,7 @@ def access_token() -> str:
 
 
 def analytics(token: str, start: str, end: str) -> list:
-    q = urllib.parse.urlencode({"ids": "channel==MINE", "startDate": start, "endDate": end, "dimensions": "video",
+    q = urllib.parse.urlencode({"ids": f"channel=={CHANNEL}", "startDate": start, "endDate": end, "dimensions": "video",
                                 "metrics": "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
                                 "sort": "-views", "maxResults": 200})
     d = _open(urllib.request.Request(REPORTS + "?" + q, headers={"Authorization": f"Bearer {token}"}))
@@ -64,7 +66,7 @@ def analytics(token: str, start: str, end: str) -> list:
 
 def channel_total(token: str, start: str, end: str) -> dict:
     """Gesamtzahlen des Kanals ohne Aufteilung nach Video. Zeigt, ob der Zugang den richtigen Kanal sieht."""
-    q = urllib.parse.urlencode({"ids": "channel==MINE", "startDate": start, "endDate": end,
+    q = urllib.parse.urlencode({"ids": f"channel=={CHANNEL}", "startDate": start, "endDate": end,
                                 "metrics": "views,estimatedMinutesWatched,subscribersGained"})
     d = _open(urllib.request.Request(REPORTS + "?" + q, headers={"Authorization": f"Bearer {token}"}))
     cols = [c["name"] for c in d.get("columnHeaders", [])]
