@@ -57,7 +57,8 @@ FORMATS = {
     "horror": {
         "label": "Horror – Du wachst auf",
         "prefix": "H",
-        "slot": "18:00",
+        "slot": "16:00",     # zweiter Kurzvideo-Slot: YouTube-Spitze laut Metricool (V-023, 17.11.); TikTok ebenfalls stark
+        "fallback": "wissen",  # ist keine Horror-Folge fertig, laeuft hier ein Wissens-Short (Vorrat)
         "min_s": 61, "max_s": 80, "wps": 2.3,  # >60 s: Voraussetzung TikTok Creator Rewards
         "voice_id": "18X2yBovneA0q06wd8E9",  # Vincent Crowe - Dark & Haunting Tales (de)
         "voice_settings": {"stability": 0.55, "similarity_boost": 0.85, "style": 0.4, "use_speaker_boost": True, "speed": 1.0},
@@ -73,8 +74,8 @@ FORMATS = {
     "lang": {
         "label": "Gruselgeschichte (lang, YouTube)",
         "prefix": "L",
-        "slot": "16:00",
-        "weekdays": [2, 3, 4],  # 0=Mo ... 2=Mi, 3=Do, 4=Fr (Metricool Best-Time Mi/Do 16 Uhr; Fr seit V-023, Muster: Fr 18 Uhr bei Langvideo-Ausreissern)
+        "slot": "18:00",
+        "weekdays": [6, 2, 4],  # 0=Mo ... 2=Mi, 4=Fr, 6=So: Anweisung des Inhabers 17.11.2026 (Langvideo So, Mi, Fr 18:00)
         "platforms": ["youtube"],
         "orientation": "landscape",
         "style": "horror",   # Optik, Badge-Farben, Musik wie die Horror-Serie

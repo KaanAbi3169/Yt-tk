@@ -199,30 +199,42 @@ def plan(day: str) -> list:
     sch = schedule()
     posts = []
     done_groups = set()
+    used = set()  # Videos, die dieser Plan schon vergeben hat (nie zweimal am selben Tag)
     for fmt, f in config.FORMATS.items():
         group = tuple(config.rotation_group(fmt))
         if group in done_groups:
             continue
         if not any(config.runs_on(g, d) for g in group):
             continue  # Format heute nicht dran (Wochentag)
-        if any(v["format"] in group and (v.get("due") or "").startswith(day) for v in data["videos"]):
+        slot_prefix = f"{day}T{sch[fmt]}"
+        if any((v["format"] in group and (v.get("due") or "").startswith(day)) or (v.get("due") or "").startswith(slot_prefix)
+               for v in data["videos"]):
             done_groups.add(group)
             continue  # Sendeplatz heute schon belegt -> nie doppelt
         # Format des Tages zuerst; ist dafuer nichts da, springt das andere Format der Gruppe ein.
         order = sorted(group, key=lambda g: not config.runs_on(g, d))
         v = None
         for g in order:
-            ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "ready"),
+            ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "ready" and x["id"] not in used),
                            key=lambda x: x["id"])
             if not ready:  # Reserve aus Google Drive (nur wenn kein neues Video bereitliegt)
-                ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "backup"),
+                ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "backup" and x["id"] not in used),
                                key=lambda x: x["id"])
             if ready:
                 v, fmt, f = ready[0], g, config.FORMATS[g]
                 break
+        if v is None and f.get("fallback"):  # kein eigenes Video fertig: Vorrat eines anderen Formats nehmen
+            fb = f["fallback"]
+            cand = sorted((x for x in data["videos"] if x["format"] == fb and x["status"] == "ready" and x["id"] not in used),
+                          key=lambda x: x["id"]) or \
+                sorted((x for x in data["videos"] if x["format"] == fb and x["status"] == "backup" and x.get("title_tiktok")
+                        and x["id"] not in used), key=lambda x: x["id"])
+            if cand:
+                v = cand[0]
         done_groups.add(group)
         if v is None:
             continue
+        used.add(v["id"])
         if v.get("source") == "drive" and not v.get("title_tiktok"):
             posts.append({"id": v["id"], "format": fmt, "needs_texts": True, "topic": v["topic"],
                           "drive_id": v["drive_id"], "drive_title": v["drive_title"],
