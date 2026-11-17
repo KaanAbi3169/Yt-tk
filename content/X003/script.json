@@ -1,0 +1,18 @@
+{
+  "id": "X003", "format": "waswaerewenn", "series": "Was wäre wenn",
+  "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
+  "hook_type": "Alltags-Gedankenexperiment",
+  "hook_overlay": "Dein Handy: nur 1 Stunde.",
+  "scenes": [
+    {"text": "Was wäre, wenn ab morgen jedes Handy auf der Welt nur noch eine Stunde am Tag funktioniert?", "svg_file": "s01.svg", "motion": "zoom_in"},
+    {"text": "Du suchst dir die Stunde selbst aus. Sieben bis acht Uhr? Dann ist danach den ganzen Tag schwarz.", "svg_file": "s02.svg", "motion": "pan_up"},
+    {"text": "Im Bus schaut plötzlich jeder aus dem Fenster. Manche zum ersten Mal seit Jahren.", "svg_file": "s03.svg", "motion": "pan_right"},
+    {"text": "Wer sich verabredet, muss pünktlich sein. Wege fragt man wieder Fremde, oder man nimmt einen Stadtplan aus Papier.", "svg_file": "s04.svg", "motion": "zoom_out"},
+    {"text": "Und abends sitzen Freunde zusammen und reden einfach. Ohne dass jemand nebenbei scrollt.", "svg_file": "s05.svg", "motion": "zoom_in"},
+    {"text": "Wofür würdest du deine eine Stunde nutzen? Chats, Musik oder scrollen? Schreib's in die Kommentare.", "svg_file": "s06.svg", "motion": "zoom_out"}
+  ],
+  "title_tiktok": "Was wäre, wenn dein Handy nur 1 Stunde am Tag geht? 📱",
+  "title_youtube": "Was wäre, wenn Handys nur noch 1 Stunde am Tag funktionieren? 📱 #shorts",
+  "text_tiktok": "Wofür nutzt du deine eine Stunde? 👇 #waswärewenn #gedankenexperiment #handy #fürdich",
+  "text_youtube": "Eine Stunde Handy pro Tag – für alle. Was würde sich ändern, und wofür nutzt du deine Stunde? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #handy"
+}

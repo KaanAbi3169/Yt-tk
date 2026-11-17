@@ -1,0 +1,19 @@
+{
+  "id": "W003", "format": "wissen", "series": "Alltagswissen",
+  "topic": "Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)",
+  "hook_type": "Alltagsfrage Warum",
+  "hook_overlay": "Warum sind die rund?",
+  "sources": ["Mental Floss: Why are airplane windows round?", "Popular Mechanics/Comet-Untersuchung 1954 (sekundär)"],
+  "scenes": [
+    {"text": "Hast du dich schon mal gefragt, warum Flugzeugfenster nie eckig sind?", "svg_file": "s01.svg", "motion": "zoom_in"},
+    {"text": "In der Kabine herrscht oben in der Luft viel mehr Druck als draußen. Bei jedem Flug wird der Rumpf aufgepumpt und wieder entlastet.", "svg_file": "s02.svg", "motion": "pan_right"},
+    {"text": "An einer scharfen Ecke sammelt sich diese Spannung wie an einem Punkt. Genau dort entstehen mit der Zeit Risse.", "svg_file": "s03.svg", "motion": "zoom_in"},
+    {"text": "Das hat man auf die harte Tour gelernt. Nach zwei Abstürzen von Comet-Jets im Jahr 1954 fanden Ermittler Risse, die an eckigen Ausschnitten im Rumpf begannen.", "svg_file": "s04.svg", "motion": "pan_up"},
+    {"text": "Runde Fenster verteilen den Druck gleichmäßig. Darum sind sie heute Standard.", "svg_file": "s05.svg", "motion": "zoom_out"},
+    {"text": "Fensterplatz oder Gang, was nimmst du? Schreib's in die Kommentare und folg für mehr.", "svg_file": "s06.svg", "motion": "zoom_out"}
+  ],
+  "title_tiktok": "Darum sind Flugzeugfenster immer rund ✈️",
+  "title_youtube": "Warum sind Flugzeugfenster nie eckig? ✈️ #shorts",
+  "text_tiktok": "Fensterplatz oder Gang? 👇 #flugzeug #wusstestdu #physik #reisen #lernenmittiktok",
+  "text_youtube": "Eckige Fenster bündeln die Spannung der Druckkabine – runde verteilen sie. Fensterplatz oder Gang? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #flugzeug #wusstestdu #physik #reisen"
+}

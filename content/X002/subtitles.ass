@@ -1,0 +1,127 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,80,&H00FFFFFF,&H00FFD24A,&H00301A0A,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,2,70,70,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.28,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Was{\c&H00FFFFFF&\fscx100\fscy100} wäre,
+Dialogue: 0,0:00:00.28,0:00:00.90,Sub,,0,0,0,,Was {\c&H00FFD24A&\fscx112\fscy112}wäre,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:00.91,0:00:01.09,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}wenn{\c&H00FFFFFF&\fscx100\fscy100} du für
+Dialogue: 0,0:00:01.09,0:00:01.21,Sub,,0,0,0,,wenn {\c&H00FFD24A&\fscx112\fscy112}du{\c&H00FFFFFF&\fscx100\fscy100} für
+Dialogue: 0,0:00:01.21,0:00:01.36,Sub,,0,0,0,,wenn du {\c&H00FFD24A&\fscx112\fscy112}für{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.36,0:00:01.54,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}einen{\c&H00FFFFFF&\fscx100\fscy100} Tag dein
+Dialogue: 0,0:00:01.54,0:00:01.82,Sub,,0,0,0,,einen {\c&H00FFD24A&\fscx112\fscy112}Tag{\c&H00FFFFFF&\fscx100\fscy100} dein
+Dialogue: 0,0:00:01.82,0:00:02.01,Sub,,0,0,0,,einen Tag {\c&H00FFD24A&\fscx112\fscy112}dein{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.01,0:00:02.72,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}zehnjähriges{\c&H00FFFFFF&\fscx100\fscy100} Ich treffen
+Dialogue: 0,0:00:02.72,0:00:02.87,Sub,,0,0,0,,zehnjähriges {\c&H00FFD24A&\fscx112\fscy112}Ich{\c&H00FFFFFF&\fscx100\fscy100} treffen
+Dialogue: 0,0:00:02.87,0:00:03.19,Sub,,0,0,0,,zehnjähriges Ich {\c&H00FFD24A&\fscx112\fscy112}treffen{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:03.19,0:00:03.95,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}könntest?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.61,0:00:04.78,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Du{\c&H00FFFFFF&\fscx100\fscy100} klopfst an
+Dialogue: 0,0:00:04.78,0:00:05.16,Sub,,0,0,0,,Du {\c&H00FFD24A&\fscx112\fscy112}klopfst{\c&H00FFFFFF&\fscx100\fscy100} an
+Dialogue: 0,0:00:05.16,0:00:05.26,Sub,,0,0,0,,Du klopfst {\c&H00FFD24A&\fscx112\fscy112}an{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:05.26,0:00:05.38,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100} Tür von
+Dialogue: 0,0:00:05.38,0:00:05.65,Sub,,0,0,0,,die {\c&H00FFD24A&\fscx112\fscy112}Tür{\c&H00FFFFFF&\fscx100\fscy100} von
+Dialogue: 0,0:00:05.65,0:00:05.80,Sub,,0,0,0,,die Tür {\c&H00FFD24A&\fscx112\fscy112}von{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:05.80,0:00:06.07,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}deinem{\c&H00FFFFFF&\fscx100\fscy100} alten Kinderzimmer.
+Dialogue: 0,0:00:06.07,0:00:06.35,Sub,,0,0,0,,deinem {\c&H00FFD24A&\fscx112\fscy112}alten{\c&H00FFFFFF&\fscx100\fscy100} Kinderzimmer.
+Dialogue: 0,0:00:06.35,0:00:07.23,Sub,,0,0,0,,deinem alten {\c&H00FFD24A&\fscx112\fscy112}Kinderzimmer.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.69,0:00:07.85,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Die{\c&H00FFFFFF&\fscx100\fscy100} Poster an
+Dialogue: 0,0:00:07.85,0:00:08.23,Sub,,0,0,0,,Die {\c&H00FFD24A&\fscx112\fscy112}Poster{\c&H00FFFFFF&\fscx100\fscy100} an
+Dialogue: 0,0:00:08.23,0:00:08.32,Sub,,0,0,0,,Die Poster {\c&H00FFD24A&\fscx112\fscy112}an{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:08.32,0:00:08.45,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}der{\c&H00FFFFFF&\fscx100\fscy100} Wand,
+Dialogue: 0,0:00:08.45,0:00:09.07,Sub,,0,0,0,,der {\c&H00FFD24A&\fscx112\fscy112}Wand,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.11,0:00:09.27,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}der{\c&H00FFFFFF&\fscx100\fscy100} Geruch von
+Dialogue: 0,0:00:09.27,0:00:09.62,Sub,,0,0,0,,der {\c&H00FFD24A&\fscx112\fscy112}Geruch{\c&H00FFFFFF&\fscx100\fscy100} von
+Dialogue: 0,0:00:09.62,0:00:09.81,Sub,,0,0,0,,der Geruch {\c&H00FFD24A&\fscx112\fscy112}von{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.81,0:00:10.45,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}früher,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.70,0:00:11.04,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}alles{\c&H00FFFFFF&\fscx100\fscy100} ist wie
+Dialogue: 0,0:00:11.04,0:00:11.20,Sub,,0,0,0,,alles {\c&H00FFD24A&\fscx112\fscy112}ist{\c&H00FFFFFF&\fscx100\fscy100} wie
+Dialogue: 0,0:00:11.20,0:00:11.32,Sub,,0,0,0,,alles ist {\c&H00FFD24A&\fscx112\fscy112}wie{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:11.32,0:00:12.14,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}damals.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:12.50,0:00:12.69,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Ein{\c&H00FFFFFF&\fscx100\fscy100} Kind schaut
+Dialogue: 0,0:00:12.69,0:00:13.12,Sub,,0,0,0,,Ein {\c&H00FFD24A&\fscx112\fscy112}Kind{\c&H00FFFFFF&\fscx100\fscy100} schaut
+Dialogue: 0,0:00:13.12,0:00:13.40,Sub,,0,0,0,,Ein Kind {\c&H00FFD24A&\fscx112\fscy112}schaut{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.40,0:00:13.60,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}dich{\c&H00FFFFFF&\fscx100\fscy100} an und
+Dialogue: 0,0:00:13.60,0:00:13.79,Sub,,0,0,0,,dich {\c&H00FFD24A&\fscx112\fscy112}an{\c&H00FFFFFF&\fscx100\fscy100} und
+Dialogue: 0,0:00:13.79,0:00:13.90,Sub,,0,0,0,,dich an {\c&H00FFD24A&\fscx112\fscy112}und{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.90,0:00:14.56,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}fragt:{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.93,0:00:15.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Wer{\c&H00FFFFFF&\fscx100\fscy100} bist du?
+Dialogue: 0,0:00:15.12,0:00:15.32,Sub,,0,0,0,,Wer {\c&H00FFD24A&\fscx112\fscy112}bist{\c&H00FFFFFF&\fscx100\fscy100} du?
+Dialogue: 0,0:00:15.32,0:00:15.82,Sub,,0,0,0,,Wer bist {\c&H00FFD24A&\fscx112\fscy112}du?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.28,0:00:16.61,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Dann{\c&H00FFFFFF&\fscx100\fscy100} kommen die
+Dialogue: 0,0:00:16.61,0:00:16.85,Sub,,0,0,0,,Dann {\c&H00FFD24A&\fscx112\fscy112}kommen{\c&H00FFFFFF&\fscx100\fscy100} die
+Dialogue: 0,0:00:16.85,0:00:16.95,Sub,,0,0,0,,Dann kommen {\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.95,0:00:17.57,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Fragen.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.94,0:00:18.15,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Bin{\c&H00FFFFFF&\fscx100\fscy100} ich berühmt?
+Dialogue: 0,0:00:18.15,0:00:18.25,Sub,,0,0,0,,Bin {\c&H00FFD24A&\fscx112\fscy112}ich{\c&H00FFFFFF&\fscx100\fscy100} berühmt?
+Dialogue: 0,0:00:18.25,0:00:18.98,Sub,,0,0,0,,Bin ich {\c&H00FFD24A&\fscx112\fscy112}berühmt?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.28,0:00:19.52,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Hab{\c&H00FFFFFF&\fscx100\fscy100} ich ein
+Dialogue: 0,0:00:19.52,0:00:19.62,Sub,,0,0,0,,Hab {\c&H00FFD24A&\fscx112\fscy112}ich{\c&H00FFFFFF&\fscx100\fscy100} ein
+Dialogue: 0,0:00:19.62,0:00:19.75,Sub,,0,0,0,,Hab ich {\c&H00FFD24A&\fscx112\fscy112}ein{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.75,0:00:20.48,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Haustier?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:20.95,0:00:21.22,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Gibt{\c&H00FFFFFF&\fscx100\fscy100} es schon
+Dialogue: 0,0:00:21.22,0:00:21.32,Sub,,0,0,0,,Gibt {\c&H00FFD24A&\fscx112\fscy112}es{\c&H00FFFFFF&\fscx100\fscy100} schon
+Dialogue: 0,0:00:21.32,0:00:21.58,Sub,,0,0,0,,Gibt es {\c&H00FFD24A&\fscx112\fscy112}schon{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.58,0:00:21.95,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}fliegende{\c&H00FFFFFF&\fscx100\fscy100} Autos?
+Dialogue: 0,0:00:21.95,0:00:22.70,Sub,,0,0,0,,fliegende {\c&H00FFD24A&\fscx112\fscy112}Autos?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.16,0:00:23.39,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Es{\c&H00FFFFFF&\fscx100\fscy100} erzählt dir
+Dialogue: 0,0:00:23.39,0:00:23.77,Sub,,0,0,0,,Es {\c&H00FFD24A&\fscx112\fscy112}erzählt{\c&H00FFFFFF&\fscx100\fscy100} dir
+Dialogue: 0,0:00:23.77,0:00:24.00,Sub,,0,0,0,,Es erzählt {\c&H00FFD24A&\fscx112\fscy112}dir{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:24.00,0:00:24.16,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}von{\c&H00FFFFFF&\fscx100\fscy100} seinen Träumen.
+Dialogue: 0,0:00:24.16,0:00:24.45,Sub,,0,0,0,,von {\c&H00FFD24A&\fscx112\fscy112}seinen{\c&H00FFFFFF&\fscx100\fscy100} Träumen.
+Dialogue: 0,0:00:24.45,0:00:25.11,Sub,,0,0,0,,von seinen {\c&H00FFD24A&\fscx112\fscy112}Träumen.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:25.57,0:00:25.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Und{\c&H00FFFFFF&\fscx100\fscy100} du weißt
+Dialogue: 0,0:00:25.74,0:00:25.84,Sub,,0,0,0,,Und {\c&H00FFD24A&\fscx112\fscy112}du{\c&H00FFFFFF&\fscx100\fscy100} weißt
+Dialogue: 0,0:00:25.84,0:00:26.05,Sub,,0,0,0,,Und du {\c&H00FFD24A&\fscx112\fscy112}weißt{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.05,0:00:26.57,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}genau,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.57,0:00:26.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}welche{\c&H00FFFFFF&\fscx100\fscy100} davon wahr
+Dialogue: 0,0:00:26.88,0:00:27.18,Sub,,0,0,0,,welche {\c&H00FFD24A&\fscx112\fscy112}davon{\c&H00FFFFFF&\fscx100\fscy100} wahr
+Dialogue: 0,0:00:27.18,0:00:27.35,Sub,,0,0,0,,welche davon {\c&H00FFD24A&\fscx112\fscy112}wahr{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.35,0:00:27.73,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}geworden{\c&H00FFFFFF&\fscx100\fscy100} sind
+Dialogue: 0,0:00:27.73,0:00:28.08,Sub,,0,0,0,,geworden {\c&H00FFD24A&\fscx112\fscy112}sind{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.54,0:00:28.72,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}und{\c&H00FFFFFF&\fscx100\fscy100} welche nicht.
+Dialogue: 0,0:00:28.72,0:00:28.98,Sub,,0,0,0,,und {\c&H00FFD24A&\fscx112\fscy112}welche{\c&H00FFFFFF&\fscx100\fscy100} nicht.
+Dialogue: 0,0:00:28.98,0:00:29.55,Sub,,0,0,0,,und welche {\c&H00FFD24A&\fscx112\fscy112}nicht.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.11,0:00:30.71,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Dann,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.71,0:00:31.01,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}ganz{\c&H00FFFFFF&\fscx100\fscy100} leise,
+Dialogue: 0,0:00:31.01,0:00:31.65,Sub,,0,0,0,,ganz {\c&H00FFD24A&\fscx112\fscy112}leise,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:31.85,0:00:32.01,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100} schwierigste Frage:
+Dialogue: 0,0:00:32.01,0:00:32.55,Sub,,0,0,0,,die {\c&H00FFD24A&\fscx112\fscy112}schwierigste{\c&H00FFFFFF&\fscx100\fscy100} Frage:
+Dialogue: 0,0:00:32.55,0:00:33.23,Sub,,0,0,0,,die schwierigste {\c&H00FFD24A&\fscx112\fscy112}Frage:{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:33.78,0:00:34.01,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Bist{\c&H00FFFFFF&\fscx100\fscy100} du stolz
+Dialogue: 0,0:00:34.01,0:00:34.11,Sub,,0,0,0,,Bist {\c&H00FFD24A&\fscx112\fscy112}du{\c&H00FFFFFF&\fscx100\fscy100} stolz
+Dialogue: 0,0:00:34.11,0:00:34.40,Sub,,0,0,0,,Bist du {\c&H00FFD24A&\fscx112\fscy112}stolz{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:34.40,0:00:34.58,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}auf{\c&H00FFFFFF&\fscx100\fscy100} uns?
+Dialogue: 0,0:00:34.58,0:00:35.09,Sub,,0,0,0,,auf {\c&H00FFD24A&\fscx112\fscy112}uns?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:35.75,0:00:35.92,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Du{\c&H00FFFFFF&\fscx100\fscy100} darfst ihm
+Dialogue: 0,0:00:35.92,0:00:36.21,Sub,,0,0,0,,Du {\c&H00FFD24A&\fscx112\fscy112}darfst{\c&H00FFFFFF&\fscx100\fscy100} ihm
+Dialogue: 0,0:00:36.21,0:00:36.34,Sub,,0,0,0,,Du darfst {\c&H00FFD24A&\fscx112\fscy112}ihm{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:36.34,0:00:36.76,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}genau{\c&H00FFFFFF&\fscx100\fscy100} einen Satz
+Dialogue: 0,0:00:36.76,0:00:36.97,Sub,,0,0,0,,genau {\c&H00FFD24A&\fscx112\fscy112}einen{\c&H00FFFFFF&\fscx100\fscy100} Satz
+Dialogue: 0,0:00:36.97,0:00:37.23,Sub,,0,0,0,,genau einen {\c&H00FFD24A&\fscx112\fscy112}Satz{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:37.23,0:00:37.93,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}mitgeben.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:38.30,0:00:38.65,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Keine{\c&H00FFFFFF&\fscx100\fscy100} Lottozahlen,
+Dialogue: 0,0:00:38.65,0:00:39.46,Sub,,0,0,0,,Keine {\c&H00FFD24A&\fscx112\fscy112}Lottozahlen,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:39.46,0:00:39.78,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}keine{\c&H00FFFFFF&\fscx100\fscy100} Zukunft.
+Dialogue: 0,0:00:39.78,0:00:40.51,Sub,,0,0,0,,keine {\c&H00FFD24A&\fscx112\fscy112}Zukunft.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:40.76,0:00:41.09,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Nur{\c&H00FFFFFF&\fscx100\fscy100} einen Rat.
+Dialogue: 0,0:00:41.09,0:00:41.37,Sub,,0,0,0,,Nur {\c&H00FFD24A&\fscx112\fscy112}einen{\c&H00FFFFFF&\fscx100\fscy100} Rat.
+Dialogue: 0,0:00:41.37,0:00:41.93,Sub,,0,0,0,,Nur einen {\c&H00FFD24A&\fscx112\fscy112}Rat.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:42.39,0:00:42.62,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Was{\c&H00FFFFFF&\fscx100\fscy100} würdest du
+Dialogue: 0,0:00:42.62,0:00:42.89,Sub,,0,0,0,,Was {\c&H00FFD24A&\fscx112\fscy112}würdest{\c&H00FFFFFF&\fscx100\fscy100} du
+Dialogue: 0,0:00:42.89,0:00:43.00,Sub,,0,0,0,,Was würdest {\c&H00FFD24A&\fscx112\fscy112}du{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:43.00,0:00:43.27,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}deinem{\c&H00FFFFFF&\fscx100\fscy100} zehnjährigen
+Dialogue: 0,0:00:43.27,0:00:43.91,Sub,,0,0,0,,deinem {\c&H00FFD24A&\fscx112\fscy112}zehnjährigen{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:43.91,0:00:44.05,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Ich{\c&H00FFFFFF&\fscx100\fscy100} sagen?
+Dialogue: 0,0:00:44.05,0:00:44.66,Sub,,0,0,0,,Ich {\c&H00FFD24A&\fscx112\fscy112}sagen?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:45.21,0:00:45.55,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Schreib's{\c&H00FFFFFF&\fscx100\fscy100} in die
+Dialogue: 0,0:00:45.55,0:00:45.63,Sub,,0,0,0,,Schreib's {\c&H00FFD24A&\fscx112\fscy112}in{\c&H00FFFFFF&\fscx100\fscy100} die
+Dialogue: 0,0:00:45.63,0:00:45.73,Sub,,0,0,0,,Schreib's in {\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:45.73,0:00:46.70,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Kommentare.{\c&H00FFFFFF&\fscx100\fscy100}

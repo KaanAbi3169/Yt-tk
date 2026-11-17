@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <radialGradient id="g1" cx="0.72" cy="0.58" r="0.55"><stop offset="0" stop-color="#5a1616"/><stop offset="0.5" stop-color="#1f0c0e"/><stop offset="1" stop-color="#030304"/></radialGradient>
+    <linearGradient id="bl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c3040"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#g1)"/>
+  <path d="M0 260 L1080 200 L1080 230 L0 300 Z" fill="#0d0e13"/>
+  <rect x="640" y="900" width="360" height="260" rx="10" fill="#0b0b0e"/>
+  <rect x="640" y="880" width="380" height="34" rx="8" fill="#15151a"/>
+  <rect x="690" y="760" width="250" height="110" rx="14" fill="#0a0a0a" stroke="#2a0a0a" stroke-width="4"/>
+  <text x="815" y="842" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="84" fill="#ff2a2a" filter="url(#glow)">03:17</text>
+  <path d="M-40 1180 C 200 1040, 520 1080, 700 1140 C 860 1190, 1000 1160, 1120 1120 L1120 1960 L-40 1960 Z" fill="url(#bl)"/>
+  <path d="M-40 1260 C 260 1150, 560 1210, 1120 1210" stroke="#23252f" stroke-width="10" fill="none" opacity="0.7"/>
+  <ellipse cx="250" cy="1150" rx="230" ry="80" fill="#1e2029"/>
+  <path d="M60 1140 C 140 1090, 360 1090, 440 1150" stroke="#2c2f3a" stroke-width="6" fill="none"/>
+</svg>

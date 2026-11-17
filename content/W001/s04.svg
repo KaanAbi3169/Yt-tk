@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#2B2D42"/>
+  <g transform="translate(140,320)">
+    <rect width="800" height="860" rx="36" fill="#fff"/>
+    <rect width="800" height="150" rx="36" fill="#EF233C"/><rect y="110" width="800" height="40" fill="#EF233C"/>
+    <text x="400" y="100" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="66" fill="#fff">STUDIE 2016</text>
+    <text x="80" y="260" font-family="Inter" font-weight="700" font-size="46" fill="#2B2D42">Aroma der Tomate</text>
+    <g font-family="Inter" font-weight="700" font-size="34" fill="#555">
+      <text x="80" y="370">frisch</text><text x="80" y="510">3 Tage kalt</text><text x="80" y="650">7 Tage kalt</text>
+    </g>
+    <rect x="330" y="335" width="400" height="50" rx="25" fill="#2EC4B6"/>
+    <rect x="330" y="475" width="270" height="50" rx="25" fill="#FFB627"/>
+    <rect x="330" y="615" width="110" height="50" rx="25" fill="#EF233C"/>
+    <text x="400" y="790" text-anchor="middle" font-family="Inter" font-weight="800" font-size="40" fill="#EF233C">kommt nicht ganz zurück</text>
+  </g>
+</svg>

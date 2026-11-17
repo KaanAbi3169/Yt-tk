@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#B8E1FF"/>
+  <g transform="translate(130,560)" stroke="#1E2A3A" stroke-width="12"><circle cx="150" cy="150" r="150" fill="#E8352B"/><path d="M100 10 q50 35 100 0 q-18 40 -50 40 q-32 0 -50 -40z" fill="#2E9E3F"/></g>
+  <g fill="none" stroke="#7D5BA6" stroke-width="14" stroke-linecap="round" opacity="0.85">
+    <path d="M470 640 q40 70 0 140"/><path d="M530 600 q60 110 0 220"/><path d="M590 560 q80 150 0 300"/>
+  </g>
+  <text x="530" y="520" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="64" fill="#7D5BA6">ETHYLEN</text>
+  <g transform="translate(700,470) rotate(18)" stroke="#1E2A3A" stroke-width="12">
+    <rect width="150" height="460" rx="75" fill="#4CAF50"/>
+    <g fill="#A5D6A7" stroke="none"><circle cx="50" cy="90" r="10"/><circle cx="100" cy="190" r="10"/><circle cx="55" cy="300" r="10"/><circle cx="95" cy="390" r="10"/></g>
+    <path d="M45 200 q30 -20 60 0" fill="none"/><circle cx="50" cy="160" r="9" fill="#1E2A3A"/><circle cx="100" cy="160" r="9" fill="#1E2A3A"/>
+    <path d="M50 240 q25 -22 50 0" fill="none" stroke-width="10"/>
+  </g>
+  <g transform="translate(270,960)"><rect width="540" height="110" rx="55" fill="#1E2A3A"/><text x="270" y="76" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="56" fill="#fff">NICHT NEBENEINANDER</text></g>
+</svg>

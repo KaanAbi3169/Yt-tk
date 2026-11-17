@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "issues": [],
+  "duration": 47.4,
+  "size_mb": 13.73,
+  "lufs": -15.2,
+  "subtitle_events": 114,
+  "timing": {
+    "scene_starts": [
+      0.0,
+      4.529,
+      16.197000000000003,
+      23.082,
+      35.667,
+      42.308
+    ],
+    "total": 47.379
+  }
+}

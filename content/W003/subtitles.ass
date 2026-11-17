@@ -1,0 +1,117 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter Black,74,&H00FFFFFF,&H0000E5FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,2,70,70,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.26,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}HAST{\c&H00FFFFFF&\fscx100\fscy100} DU DICH
+Dialogue: 0,0:00:00.26,0:00:00.36,Sub,,0,0,0,,HAST {\c&H0000E5FF&\fscx112\fscy112}DU{\c&H00FFFFFF&\fscx100\fscy100} DICH
+Dialogue: 0,0:00:00.36,0:00:00.51,Sub,,0,0,0,,HAST DU {\c&H0000E5FF&\fscx112\fscy112}DICH{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:00.51,0:00:00.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SCHON{\c&H00FFFFFF&\fscx100\fscy100} MAL GEFRAGT,
+Dialogue: 0,0:00:00.74,0:00:00.88,Sub,,0,0,0,,SCHON {\c&H0000E5FF&\fscx112\fscy112}MAL{\c&H00FFFFFF&\fscx100\fscy100} GEFRAGT,
+Dialogue: 0,0:00:00.88,0:00:01.39,Sub,,0,0,0,,SCHON MAL {\c&H0000E5FF&\fscx112\fscy112}GEFRAGT,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.39,0:00:01.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WARUM{\c&H00FFFFFF&\fscx100\fscy100} FLUGZEUGFENSTER
+Dialogue: 0,0:00:01.88,0:00:02.87,Sub,,0,0,0,,WARUM {\c&H0000E5FF&\fscx112\fscy112}FLUGZEUGFENSTER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.87,0:00:03.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NIE{\c&H00FFFFFF&\fscx100\fscy100} ECKIG SIND?
+Dialogue: 0,0:00:03.12,0:00:03.47,Sub,,0,0,0,,NIE {\c&H0000E5FF&\fscx112\fscy112}ECKIG{\c&H00FFFFFF&\fscx100\fscy100} SIND?
+Dialogue: 0,0:00:03.47,0:00:03.96,Sub,,0,0,0,,NIE ECKIG {\c&H0000E5FF&\fscx112\fscy112}SIND?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.04,0:00:04.19,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100} DER KABINE
+Dialogue: 0,0:00:04.19,0:00:04.32,Sub,,0,0,0,,IN {\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100} KABINE
+Dialogue: 0,0:00:04.32,0:00:04.79,Sub,,0,0,0,,IN DER {\c&H0000E5FF&\fscx112\fscy112}KABINE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.79,0:00:05.16,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}HERRSCHT{\c&H00FFFFFF&\fscx100\fscy100} OBEN IN
+Dialogue: 0,0:00:05.16,0:00:05.46,Sub,,0,0,0,,HERRSCHT {\c&H0000E5FF&\fscx112\fscy112}OBEN{\c&H00FFFFFF&\fscx100\fscy100} IN
+Dialogue: 0,0:00:05.46,0:00:05.56,Sub,,0,0,0,,HERRSCHT OBEN {\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:05.56,0:00:05.69,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100} LUFT VIEL
+Dialogue: 0,0:00:05.69,0:00:06.18,Sub,,0,0,0,,DER {\c&H0000E5FF&\fscx112\fscy112}LUFT{\c&H00FFFFFF&\fscx100\fscy100} VIEL
+Dialogue: 0,0:00:06.18,0:00:06.53,Sub,,0,0,0,,DER LUFT {\c&H0000E5FF&\fscx112\fscy112}VIEL{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.53,0:00:06.77,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}MEHR{\c&H00FFFFFF&\fscx100\fscy100} DRUCK ALS
+Dialogue: 0,0:00:06.77,0:00:07.12,Sub,,0,0,0,,MEHR {\c&H0000E5FF&\fscx112\fscy112}DRUCK{\c&H00FFFFFF&\fscx100\fscy100} ALS
+Dialogue: 0,0:00:07.12,0:00:07.37,Sub,,0,0,0,,MEHR DRUCK {\c&H0000E5FF&\fscx112\fscy112}ALS{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.37,0:00:07.99,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DRAUSSEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.99,0:00:08.20,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}BEI{\c&H00FFFFFF&\fscx100\fscy100} JEDEM FLUG
+Dialogue: 0,0:00:08.20,0:00:08.52,Sub,,0,0,0,,BEI {\c&H0000E5FF&\fscx112\fscy112}JEDEM{\c&H00FFFFFF&\fscx100\fscy100} FLUG
+Dialogue: 0,0:00:08.52,0:00:08.88,Sub,,0,0,0,,BEI JEDEM {\c&H0000E5FF&\fscx112\fscy112}FLUG{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:08.88,0:00:09.07,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WIRD{\c&H00FFFFFF&\fscx100\fscy100} DER RUMPF
+Dialogue: 0,0:00:09.07,0:00:09.21,Sub,,0,0,0,,WIRD {\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100} RUMPF
+Dialogue: 0,0:00:09.21,0:00:09.54,Sub,,0,0,0,,WIRD DER {\c&H0000E5FF&\fscx112\fscy112}RUMPF{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.54,0:00:10.25,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUFGEPUMPT{\c&H00FFFFFF&\fscx100\fscy100} UND
+Dialogue: 0,0:00:10.25,0:00:10.44,Sub,,0,0,0,,AUFGEPUMPT {\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.44,0:00:10.73,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WIEDER{\c&H00FFFFFF&\fscx100\fscy100} ENTLASTET.
+Dialogue: 0,0:00:10.73,0:00:11.49,Sub,,0,0,0,,WIEDER {\c&H0000E5FF&\fscx112\fscy112}ENTLASTET.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:11.49,0:00:11.68,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AN{\c&H00FFFFFF&\fscx100\fscy100} EINER SCHARFEN
+Dialogue: 0,0:00:11.68,0:00:11.94,Sub,,0,0,0,,AN {\c&H0000E5FF&\fscx112\fscy112}EINER{\c&H00FFFFFF&\fscx100\fscy100} SCHARFEN
+Dialogue: 0,0:00:11.94,0:00:12.40,Sub,,0,0,0,,AN EINER {\c&H0000E5FF&\fscx112\fscy112}SCHARFEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:12.40,0:00:12.90,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ECKE{\c&H00FFFFFF&\fscx100\fscy100} SAMMELT SICH
+Dialogue: 0,0:00:12.90,0:00:13.30,Sub,,0,0,0,,ECKE {\c&H0000E5FF&\fscx112\fscy112}SAMMELT{\c&H00FFFFFF&\fscx100\fscy100} SICH
+Dialogue: 0,0:00:13.30,0:00:13.54,Sub,,0,0,0,,ECKE SAMMELT {\c&H0000E5FF&\fscx112\fscy112}SICH{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.54,0:00:13.83,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIESE{\c&H00FFFFFF&\fscx100\fscy100} SPANNUNG
+Dialogue: 0,0:00:13.83,0:00:14.39,Sub,,0,0,0,,DIESE {\c&H0000E5FF&\fscx112\fscy112}SPANNUNG{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.47,0:00:14.76,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WIE{\c&H00FFFFFF&\fscx100\fscy100} AN EINEM
+Dialogue: 0,0:00:14.76,0:00:14.92,Sub,,0,0,0,,WIE {\c&H0000E5FF&\fscx112\fscy112}AN{\c&H00FFFFFF&\fscx100\fscy100} EINEM
+Dialogue: 0,0:00:14.92,0:00:15.19,Sub,,0,0,0,,WIE AN {\c&H0000E5FF&\fscx112\fscy112}EINEM{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.19,0:00:15.76,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}PUNKT.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.76,0:00:16.17,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GENAU{\c&H00FFFFFF&\fscx100\fscy100} DORT ENTSTEHEN
+Dialogue: 0,0:00:16.17,0:00:16.57,Sub,,0,0,0,,GENAU {\c&H0000E5FF&\fscx112\fscy112}DORT{\c&H00FFFFFF&\fscx100\fscy100} ENTSTEHEN
+Dialogue: 0,0:00:16.57,0:00:17.04,Sub,,0,0,0,,GENAU DORT {\c&H0000E5FF&\fscx112\fscy112}ENTSTEHEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.04,0:00:17.19,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}MIT{\c&H00FFFFFF&\fscx100\fscy100} DER ZEIT
+Dialogue: 0,0:00:17.19,0:00:17.37,Sub,,0,0,0,,MIT {\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100} ZEIT
+Dialogue: 0,0:00:17.37,0:00:17.85,Sub,,0,0,0,,MIT DER {\c&H0000E5FF&\fscx112\fscy112}ZEIT{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.98,0:00:18.59,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}RISSE.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:18.59,0:00:18.89,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DAS{\c&H00FFFFFF&\fscx100\fscy100} HAT MAN
+Dialogue: 0,0:00:18.89,0:00:19.06,Sub,,0,0,0,,DAS {\c&H0000E5FF&\fscx112\fscy112}HAT{\c&H00FFFFFF&\fscx100\fscy100} MAN
+Dialogue: 0,0:00:19.06,0:00:19.23,Sub,,0,0,0,,DAS HAT {\c&H0000E5FF&\fscx112\fscy112}MAN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.23,0:00:19.40,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUF{\c&H00FFFFFF&\fscx100\fscy100} DIE HARTE
+Dialogue: 0,0:00:19.40,0:00:19.54,Sub,,0,0,0,,AUF {\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} HARTE
+Dialogue: 0,0:00:19.54,0:00:19.88,Sub,,0,0,0,,AUF DIE {\c&H0000E5FF&\fscx112\fscy112}HARTE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.88,0:00:20.10,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}TOUR{\c&H00FFFFFF&\fscx100\fscy100} GELERNT.
+Dialogue: 0,0:00:20.10,0:00:20.71,Sub,,0,0,0,,TOUR {\c&H0000E5FF&\fscx112\fscy112}GELERNT.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:20.71,0:00:20.97,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NACH{\c&H00FFFFFF&\fscx100\fscy100} ZWEI ABSTÜRZEN
+Dialogue: 0,0:00:20.97,0:00:21.30,Sub,,0,0,0,,NACH {\c&H0000E5FF&\fscx112\fscy112}ZWEI{\c&H00FFFFFF&\fscx100\fscy100} ABSTÜRZEN
+Dialogue: 0,0:00:21.30,0:00:21.94,Sub,,0,0,0,,NACH ZWEI {\c&H0000E5FF&\fscx112\fscy112}ABSTÜRZEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.94,0:00:22.20,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}VON{\c&H00FFFFFF&\fscx100\fscy100} COMET-JETS
+Dialogue: 0,0:00:22.20,0:00:23.02,Sub,,0,0,0,,VON {\c&H0000E5FF&\fscx112\fscy112}COMET-JETS{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.09,0:00:23.30,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}IM{\c&H00FFFFFF&\fscx100\fscy100} JAHR 1954
+Dialogue: 0,0:00:23.30,0:00:23.50,Sub,,0,0,0,,IM {\c&H0000E5FF&\fscx112\fscy112}JAHR{\c&H00FFFFFF&\fscx100\fscy100} 1954
+Dialogue: 0,0:00:23.50,0:00:24.91,Sub,,0,0,0,,IM JAHR {\c&H0000E5FF&\fscx112\fscy112}1954{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:25.19,0:00:25.60,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FANDEN{\c&H00FFFFFF&\fscx100\fscy100} ERMITTLER
+Dialogue: 0,0:00:25.60,0:00:26.10,Sub,,0,0,0,,FANDEN {\c&H0000E5FF&\fscx112\fscy112}ERMITTLER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.10,0:00:26.71,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}RISSE,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.75,0:00:26.93,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} AN ECKIGEN
+Dialogue: 0,0:00:26.93,0:00:27.14,Sub,,0,0,0,,DIE {\c&H0000E5FF&\fscx112\fscy112}AN{\c&H00FFFFFF&\fscx100\fscy100} ECKIGEN
+Dialogue: 0,0:00:27.14,0:00:27.59,Sub,,0,0,0,,DIE AN {\c&H0000E5FF&\fscx112\fscy112}ECKIGEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.59,0:00:28.19,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUSSCHNITTEN{\c&H00FFFFFF&\fscx100\fscy100} IM
+Dialogue: 0,0:00:28.19,0:00:28.34,Sub,,0,0,0,,AUSSCHNITTEN {\c&H0000E5FF&\fscx112\fscy112}IM{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.34,0:00:28.68,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}RUMPF{\c&H00FFFFFF&\fscx100\fscy100} BEGANNEN.
+Dialogue: 0,0:00:28.68,0:00:29.24,Sub,,0,0,0,,RUMPF {\c&H0000E5FF&\fscx112\fscy112}BEGANNEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:29.28,0:00:29.64,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}RUNDE{\c&H00FFFFFF&\fscx100\fscy100} FENSTER VERTEILEN
+Dialogue: 0,0:00:29.64,0:00:30.09,Sub,,0,0,0,,RUNDE {\c&H0000E5FF&\fscx112\fscy112}FENSTER{\c&H00FFFFFF&\fscx100\fscy100} VERTEILEN
+Dialogue: 0,0:00:30.09,0:00:30.56,Sub,,0,0,0,,RUNDE FENSTER {\c&H0000E5FF&\fscx112\fscy112}VERTEILEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.56,0:00:30.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DEN{\c&H00FFFFFF&\fscx100\fscy100} DRUCK GLEICHMÄSSIG.
+Dialogue: 0,0:00:30.74,0:00:31.11,Sub,,0,0,0,,DEN {\c&H0000E5FF&\fscx112\fscy112}DRUCK{\c&H00FFFFFF&\fscx100\fscy100} GLEICHMÄSSIG.
+Dialogue: 0,0:00:31.11,0:00:32.08,Sub,,0,0,0,,DEN DRUCK {\c&H0000E5FF&\fscx112\fscy112}GLEICHMÄSSIG.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.08,0:00:32.52,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DARUM{\c&H00FFFFFF&\fscx100\fscy100} SIND SIE
+Dialogue: 0,0:00:32.52,0:00:32.70,Sub,,0,0,0,,DARUM {\c&H0000E5FF&\fscx112\fscy112}SIND{\c&H00FFFFFF&\fscx100\fscy100} SIE
+Dialogue: 0,0:00:32.70,0:00:32.88,Sub,,0,0,0,,DARUM SIND {\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.88,0:00:33.23,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}HEUTE{\c&H00FFFFFF&\fscx100\fscy100} STANDARD.
+Dialogue: 0,0:00:33.23,0:00:33.96,Sub,,0,0,0,,HEUTE {\c&H0000E5FF&\fscx112\fscy112}STANDARD.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:34.01,0:00:34.85,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FENSTERPLATZ{\c&H00FFFFFF&\fscx100\fscy100} ODER
+Dialogue: 0,0:00:34.85,0:00:35.12,Sub,,0,0,0,,FENSTERPLATZ {\c&H0000E5FF&\fscx112\fscy112}ODER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:35.12,0:00:35.60,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GANG,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:35.60,0:00:35.90,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WAS{\c&H00FFFFFF&\fscx100\fscy100} NIMMST DU?
+Dialogue: 0,0:00:35.90,0:00:36.16,Sub,,0,0,0,,WAS {\c&H0000E5FF&\fscx112\fscy112}NIMMST{\c&H00FFFFFF&\fscx100\fscy100} DU?
+Dialogue: 0,0:00:36.16,0:00:36.52,Sub,,0,0,0,,WAS NIMMST {\c&H0000E5FF&\fscx112\fscy112}DU?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:36.52,0:00:36.95,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SCHREIB'S{\c&H00FFFFFF&\fscx100\fscy100} IN DIE
+Dialogue: 0,0:00:36.95,0:00:37.05,Sub,,0,0,0,,SCHREIB'S {\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100} DIE
+Dialogue: 0,0:00:37.05,0:00:37.15,Sub,,0,0,0,,SCHREIB'S IN {\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:37.15,0:00:37.94,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KOMMENTARE{\c&H00FFFFFF&\fscx100\fscy100} UND
+Dialogue: 0,0:00:37.94,0:00:38.16,Sub,,0,0,0,,KOMMENTARE {\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:38.16,0:00:38.44,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FOLG{\c&H00FFFFFF&\fscx100\fscy100} FÜR MEHR.
+Dialogue: 0,0:00:38.44,0:00:38.60,Sub,,0,0,0,,FOLG {\c&H0000E5FF&\fscx112\fscy112}FÜR{\c&H00FFFFFF&\fscx100\fscy100} MEHR.
+Dialogue: 0,0:00:38.60,0:00:39.22,Sub,,0,0,0,,FOLG FÜR {\c&H0000E5FF&\fscx112\fscy112}MEHR.{\c&H00FFFFFF&\fscx100\fscy100}

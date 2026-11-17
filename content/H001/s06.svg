@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <radialGradient id="r" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#2a0a0a"/><stop offset="1" stop-color="#030303"/></radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#r)"/>
+  <g fill="none" stroke="#b31b1b" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <path d="M140 700 v120"/><path d="M200 640 v240"/><path d="M260 580 v360"/><path d="M320 660 v200"/>
+    <path d="M380 540 v440"/><path d="M440 610 v300"/><path d="M500 500 v520"/><path d="M560 600 v320"/>
+    <path d="M620 520 v480"/><path d="M680 640 v240"/><path d="M740 560 v400"/><path d="M800 680 v160"/>
+    <path d="M860 620 v280"/><path d="M920 700 v120"/>
+  </g>
+  <text x="540" y="1110" text-anchor="middle" font-family="DejaVu Serif" font-style="italic" font-size="64" fill="#e6dede">„Schatz, machst du auf?</text>
+  <text x="540" y="1190" text-anchor="middle" font-family="DejaVu Serif" font-style="italic" font-size="64" fill="#e6dede">Ich bin's. Mama.“</text>
+</svg>

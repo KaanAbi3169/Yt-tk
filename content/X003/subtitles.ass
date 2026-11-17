@@ -1,0 +1,108 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,80,&H00FFFFFF,&H00FFD24A,&H00301A0A,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,2,70,70,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.29,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Was{\c&H00FFFFFF&\fscx100\fscy100} wäre,
+Dialogue: 0,0:00:00.29,0:00:00.76,Sub,,0,0,0,,Was {\c&H00FFD24A&\fscx112\fscy112}wäre,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:00.76,0:00:00.96,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}wenn{\c&H00FFFFFF&\fscx100\fscy100} ab morgen
+Dialogue: 0,0:00:00.96,0:00:01.11,Sub,,0,0,0,,wenn {\c&H00FFD24A&\fscx112\fscy112}ab{\c&H00FFFFFF&\fscx100\fscy100} morgen
+Dialogue: 0,0:00:01.11,0:00:01.50,Sub,,0,0,0,,wenn ab {\c&H00FFD24A&\fscx112\fscy112}morgen{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.50,0:00:01.80,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}jedes{\c&H00FFFFFF&\fscx100\fscy100} Handy auf
+Dialogue: 0,0:00:01.80,0:00:02.10,Sub,,0,0,0,,jedes {\c&H00FFD24A&\fscx112\fscy112}Handy{\c&H00FFFFFF&\fscx100\fscy100} auf
+Dialogue: 0,0:00:02.10,0:00:02.24,Sub,,0,0,0,,jedes Handy {\c&H00FFD24A&\fscx112\fscy112}auf{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.24,0:00:02.36,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}der{\c&H00FFFFFF&\fscx100\fscy100} Welt nur
+Dialogue: 0,0:00:02.36,0:00:02.82,Sub,,0,0,0,,der {\c&H00FFD24A&\fscx112\fscy112}Welt{\c&H00FFFFFF&\fscx100\fscy100} nur
+Dialogue: 0,0:00:02.82,0:00:03.04,Sub,,0,0,0,,der Welt {\c&H00FFD24A&\fscx112\fscy112}nur{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:03.04,0:00:03.24,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}noch{\c&H00FFFFFF&\fscx100\fscy100} eine Stunde
+Dialogue: 0,0:00:03.24,0:00:03.41,Sub,,0,0,0,,noch {\c&H00FFD24A&\fscx112\fscy112}eine{\c&H00FFFFFF&\fscx100\fscy100} Stunde
+Dialogue: 0,0:00:03.41,0:00:03.74,Sub,,0,0,0,,noch eine {\c&H00FFD24A&\fscx112\fscy112}Stunde{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:03.74,0:00:03.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}am{\c&H00FFFFFF&\fscx100\fscy100} Tag funktioniert?
+Dialogue: 0,0:00:03.88,0:00:04.12,Sub,,0,0,0,,am {\c&H00FFD24A&\fscx112\fscy112}Tag{\c&H00FFFFFF&\fscx100\fscy100} funktioniert?
+Dialogue: 0,0:00:04.12,0:00:04.99,Sub,,0,0,0,,am Tag {\c&H00FFD24A&\fscx112\fscy112}funktioniert?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:05.54,0:00:05.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Du{\c&H00FFFFFF&\fscx100\fscy100} suchst dir
+Dialogue: 0,0:00:05.74,0:00:06.03,Sub,,0,0,0,,Du {\c&H00FFD24A&\fscx112\fscy112}suchst{\c&H00FFFFFF&\fscx100\fscy100} dir
+Dialogue: 0,0:00:06.03,0:00:06.14,Sub,,0,0,0,,Du suchst {\c&H00FFD24A&\fscx112\fscy112}dir{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.14,0:00:06.26,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100} Stunde selbst
+Dialogue: 0,0:00:06.26,0:00:06.59,Sub,,0,0,0,,die {\c&H00FFD24A&\fscx112\fscy112}Stunde{\c&H00FFFFFF&\fscx100\fscy100} selbst
+Dialogue: 0,0:00:06.59,0:00:06.92,Sub,,0,0,0,,die Stunde {\c&H00FFD24A&\fscx112\fscy112}selbst{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.92,0:00:07.45,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}aus.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.81,0:00:08.42,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Sieben{\c&H00FFFFFF&\fscx100\fscy100} bis acht
+Dialogue: 0,0:00:08.42,0:00:08.66,Sub,,0,0,0,,Sieben {\c&H00FFD24A&\fscx112\fscy112}bis{\c&H00FFFFFF&\fscx100\fscy100} acht
+Dialogue: 0,0:00:08.66,0:00:08.90,Sub,,0,0,0,,Sieben bis {\c&H00FFD24A&\fscx112\fscy112}acht{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:08.90,0:00:09.41,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Uhr?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.87,0:00:10.10,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Dann{\c&H00FFFFFF&\fscx100\fscy100} ist danach
+Dialogue: 0,0:00:10.10,0:00:10.22,Sub,,0,0,0,,Dann {\c&H00FFD24A&\fscx112\fscy112}ist{\c&H00FFFFFF&\fscx100\fscy100} danach
+Dialogue: 0,0:00:10.22,0:00:10.52,Sub,,0,0,0,,Dann ist {\c&H00FFD24A&\fscx112\fscy112}danach{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.52,0:00:10.63,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}den{\c&H00FFFFFF&\fscx100\fscy100} ganzen Tag
+Dialogue: 0,0:00:10.63,0:00:10.95,Sub,,0,0,0,,den {\c&H00FFD24A&\fscx112\fscy112}ganzen{\c&H00FFFFFF&\fscx100\fscy100} Tag
+Dialogue: 0,0:00:10.95,0:00:11.13,Sub,,0,0,0,,den ganzen {\c&H00FFD24A&\fscx112\fscy112}Tag{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:11.13,0:00:11.87,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}schwarz.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:12.42,0:00:12.59,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Im{\c&H00FFFFFF&\fscx100\fscy100} Bus schaut
+Dialogue: 0,0:00:12.59,0:00:13.03,Sub,,0,0,0,,Im {\c&H00FFD24A&\fscx112\fscy112}Bus{\c&H00FFFFFF&\fscx100\fscy100} schaut
+Dialogue: 0,0:00:13.03,0:00:13.28,Sub,,0,0,0,,Im Bus {\c&H00FFD24A&\fscx112\fscy112}schaut{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.28,0:00:13.70,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}plötzlich{\c&H00FFFFFF&\fscx100\fscy100} jeder aus
+Dialogue: 0,0:00:13.70,0:00:13.92,Sub,,0,0,0,,plötzlich {\c&H00FFD24A&\fscx112\fscy112}jeder{\c&H00FFFFFF&\fscx100\fscy100} aus
+Dialogue: 0,0:00:13.92,0:00:14.06,Sub,,0,0,0,,plötzlich jeder {\c&H00FFD24A&\fscx112\fscy112}aus{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.06,0:00:14.22,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}dem{\c&H00FFFFFF&\fscx100\fscy100} Fenster.
+Dialogue: 0,0:00:14.22,0:00:14.89,Sub,,0,0,0,,dem {\c&H00FFD24A&\fscx112\fscy112}Fenster.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.69,0:00:16.20,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Manche{\c&H00FFFFFF&\fscx100\fscy100} zum ersten
+Dialogue: 0,0:00:16.20,0:00:16.44,Sub,,0,0,0,,Manche {\c&H00FFD24A&\fscx112\fscy112}zum{\c&H00FFFFFF&\fscx100\fscy100} ersten
+Dialogue: 0,0:00:16.44,0:00:16.77,Sub,,0,0,0,,Manche zum {\c&H00FFD24A&\fscx112\fscy112}ersten{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.77,0:00:17.02,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Mal{\c&H00FFFFFF&\fscx100\fscy100} seit Jahren.
+Dialogue: 0,0:00:17.02,0:00:17.22,Sub,,0,0,0,,Mal {\c&H00FFD24A&\fscx112\fscy112}seit{\c&H00FFFFFF&\fscx100\fscy100} Jahren.
+Dialogue: 0,0:00:17.22,0:00:17.88,Sub,,0,0,0,,Mal seit {\c&H00FFD24A&\fscx112\fscy112}Jahren.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:18.34,0:00:18.54,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Wer{\c&H00FFFFFF&\fscx100\fscy100} sich verabredet,
+Dialogue: 0,0:00:18.54,0:00:18.70,Sub,,0,0,0,,Wer {\c&H00FFD24A&\fscx112\fscy112}sich{\c&H00FFFFFF&\fscx100\fscy100} verabredet,
+Dialogue: 0,0:00:18.70,0:00:19.52,Sub,,0,0,0,,Wer sich {\c&H00FFD24A&\fscx112\fscy112}verabredet,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.52,0:00:19.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}muss{\c&H00FFFFFF&\fscx100\fscy100} pünktlich sein.
+Dialogue: 0,0:00:19.74,0:00:20.13,Sub,,0,0,0,,muss {\c&H00FFD24A&\fscx112\fscy112}pünktlich{\c&H00FFFFFF&\fscx100\fscy100} sein.
+Dialogue: 0,0:00:20.13,0:00:20.66,Sub,,0,0,0,,muss pünktlich {\c&H00FFD24A&\fscx112\fscy112}sein.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.12,0:00:21.59,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Wege{\c&H00FFFFFF&\fscx100\fscy100} fragt man
+Dialogue: 0,0:00:21.59,0:00:21.89,Sub,,0,0,0,,Wege {\c&H00FFD24A&\fscx112\fscy112}fragt{\c&H00FFFFFF&\fscx100\fscy100} man
+Dialogue: 0,0:00:21.89,0:00:22.02,Sub,,0,0,0,,Wege fragt {\c&H00FFD24A&\fscx112\fscy112}man{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:22.02,0:00:22.26,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}wieder{\c&H00FFFFFF&\fscx100\fscy100} Fremde,
+Dialogue: 0,0:00:22.26,0:00:22.90,Sub,,0,0,0,,wieder {\c&H00FFD24A&\fscx112\fscy112}Fremde,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.15,0:00:23.49,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}oder{\c&H00FFFFFF&\fscx100\fscy100} man nimmt
+Dialogue: 0,0:00:23.49,0:00:23.64,Sub,,0,0,0,,oder {\c&H00FFD24A&\fscx112\fscy112}man{\c&H00FFFFFF&\fscx100\fscy100} nimmt
+Dialogue: 0,0:00:23.64,0:00:23.88,Sub,,0,0,0,,oder man {\c&H00FFD24A&\fscx112\fscy112}nimmt{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.88,0:00:24.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}einen{\c&H00FFFFFF&\fscx100\fscy100} Stadtplan aus
+Dialogue: 0,0:00:24.12,0:00:24.61,Sub,,0,0,0,,einen {\c&H00FFD24A&\fscx112\fscy112}Stadtplan{\c&H00FFFFFF&\fscx100\fscy100} aus
+Dialogue: 0,0:00:24.61,0:00:24.78,Sub,,0,0,0,,einen Stadtplan {\c&H00FFD24A&\fscx112\fscy112}aus{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:24.78,0:00:25.50,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Papier.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.05,0:00:26.29,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Und{\c&H00FFFFFF&\fscx100\fscy100} abends sitzen
+Dialogue: 0,0:00:26.29,0:00:26.77,Sub,,0,0,0,,Und {\c&H00FFD24A&\fscx112\fscy112}abends{\c&H00FFFFFF&\fscx100\fscy100} sitzen
+Dialogue: 0,0:00:26.77,0:00:27.16,Sub,,0,0,0,,Und abends {\c&H00FFD24A&\fscx112\fscy112}sitzen{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.16,0:00:27.50,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Freunde{\c&H00FFFFFF&\fscx100\fscy100} zusammen und
+Dialogue: 0,0:00:27.50,0:00:28.08,Sub,,0,0,0,,Freunde {\c&H00FFD24A&\fscx112\fscy112}zusammen{\c&H00FFFFFF&\fscx100\fscy100} und
+Dialogue: 0,0:00:28.08,0:00:28.29,Sub,,0,0,0,,Freunde zusammen {\c&H00FFD24A&\fscx112\fscy112}und{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.29,0:00:28.57,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}reden{\c&H00FFFFFF&\fscx100\fscy100} einfach.
+Dialogue: 0,0:00:28.57,0:00:29.20,Sub,,0,0,0,,reden {\c&H00FFD24A&\fscx112\fscy112}einfach.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:29.86,0:00:30.34,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Ohne{\c&H00FFFFFF&\fscx100\fscy100} dass jemand
+Dialogue: 0,0:00:30.34,0:00:30.59,Sub,,0,0,0,,Ohne {\c&H00FFD24A&\fscx112\fscy112}dass{\c&H00FFFFFF&\fscx100\fscy100} jemand
+Dialogue: 0,0:00:30.59,0:00:30.89,Sub,,0,0,0,,Ohne dass {\c&H00FFD24A&\fscx112\fscy112}jemand{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.89,0:00:31.31,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}nebenbei{\c&H00FFFFFF&\fscx100\fscy100} scrollt.
+Dialogue: 0,0:00:31.31,0:00:32.01,Sub,,0,0,0,,nebenbei {\c&H00FFD24A&\fscx112\fscy112}scrollt.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.67,0:00:33.35,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Wofür{\c&H00FFFFFF&\fscx100\fscy100} würdest du
+Dialogue: 0,0:00:33.35,0:00:33.68,Sub,,0,0,0,,Wofür {\c&H00FFD24A&\fscx112\fscy112}würdest{\c&H00FFFFFF&\fscx100\fscy100} du
+Dialogue: 0,0:00:33.68,0:00:33.78,Sub,,0,0,0,,Wofür würdest {\c&H00FFD24A&\fscx112\fscy112}du{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:33.78,0:00:34.03,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}deine{\c&H00FFFFFF&\fscx100\fscy100} eine Stunde
+Dialogue: 0,0:00:34.03,0:00:34.25,Sub,,0,0,0,,deine {\c&H00FFD24A&\fscx112\fscy112}eine{\c&H00FFFFFF&\fscx100\fscy100} Stunde
+Dialogue: 0,0:00:34.25,0:00:34.57,Sub,,0,0,0,,deine eine {\c&H00FFD24A&\fscx112\fscy112}Stunde{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:34.57,0:00:35.18,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}nutzen?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:35.64,0:00:36.35,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Chats,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:36.43,0:00:37.08,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Musik{\c&H00FFFFFF&\fscx100\fscy100} oder scrollen?
+Dialogue: 0,0:00:37.08,0:00:37.33,Sub,,0,0,0,,Musik {\c&H00FFD24A&\fscx112\fscy112}oder{\c&H00FFFFFF&\fscx100\fscy100} scrollen?
+Dialogue: 0,0:00:37.33,0:00:37.96,Sub,,0,0,0,,Musik oder {\c&H00FFD24A&\fscx112\fscy112}scrollen?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:38.51,0:00:38.89,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Schreib's{\c&H00FFFFFF&\fscx100\fscy100} in die
+Dialogue: 0,0:00:38.89,0:00:38.98,Sub,,0,0,0,,Schreib's {\c&H00FFD24A&\fscx112\fscy112}in{\c&H00FFFFFF&\fscx100\fscy100} die
+Dialogue: 0,0:00:38.98,0:00:39.09,Sub,,0,0,0,,Schreib's in {\c&H00FFD24A&\fscx112\fscy112}die{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:39.09,0:00:40.06,Sub,,0,0,0,,{\fad(40,0)}{\c&H00FFD24A&\fscx112\fscy112}Kommentare.{\c&H00FFFFFF&\fscx100\fscy100}

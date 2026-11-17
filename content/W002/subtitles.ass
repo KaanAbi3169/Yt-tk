@@ -1,0 +1,108 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter Black,74,&H00FFFFFF,&H0000E5FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,2,70,70,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.23,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WER{\c&H00FFFFFF&\fscx100\fscy100} KAUGUMMI VERSCHLUCKT,
+Dialogue: 0,0:00:00.23,0:00:00.69,Sub,,0,0,0,,WER {\c&H0000E5FF&\fscx112\fscy112}KAUGUMMI{\c&H00FFFFFF&\fscx100\fscy100} VERSCHLUCKT,
+Dialogue: 0,0:00:00.69,0:00:01.23,Sub,,0,0,0,,WER KAUGUMMI {\c&H0000E5FF&\fscx112\fscy112}VERSCHLUCKT,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.23,0:00:01.43,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}HAT{\c&H00FFFFFF&\fscx100\fscy100} IHN SIEBEN
+Dialogue: 0,0:00:01.43,0:00:01.59,Sub,,0,0,0,,HAT {\c&H0000E5FF&\fscx112\fscy112}IHN{\c&H00FFFFFF&\fscx100\fscy100} SIEBEN
+Dialogue: 0,0:00:01.59,0:00:01.93,Sub,,0,0,0,,HAT IHN {\c&H0000E5FF&\fscx112\fscy112}SIEBEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.93,0:00:02.24,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}JAHRE{\c&H00FFFFFF&\fscx100\fscy100} IM MAGEN.
+Dialogue: 0,0:00:02.24,0:00:02.36,Sub,,0,0,0,,JAHRE {\c&H0000E5FF&\fscx112\fscy112}IM{\c&H00FFFFFF&\fscx100\fscy100} MAGEN.
+Dialogue: 0,0:00:02.36,0:00:02.93,Sub,,0,0,0,,JAHRE IM {\c&H0000E5FF&\fscx112\fscy112}MAGEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.97,0:00:03.25,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DAS{\c&H00FFFFFF&\fscx100\fscy100} HAST DU
+Dialogue: 0,0:00:03.25,0:00:03.42,Sub,,0,0,0,,DAS {\c&H0000E5FF&\fscx112\fscy112}HAST{\c&H00FFFFFF&\fscx100\fscy100} DU
+Dialogue: 0,0:00:03.42,0:00:03.53,Sub,,0,0,0,,DAS HAST {\c&H0000E5FF&\fscx112\fscy112}DU{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:03.53,0:00:03.97,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}BESTIMMT{\c&H00FFFFFF&\fscx100\fscy100} AUCH SCHON
+Dialogue: 0,0:00:03.97,0:00:04.13,Sub,,0,0,0,,BESTIMMT {\c&H0000E5FF&\fscx112\fscy112}AUCH{\c&H00FFFFFF&\fscx100\fscy100} SCHON
+Dialogue: 0,0:00:04.13,0:00:04.34,Sub,,0,0,0,,BESTIMMT AUCH {\c&H0000E5FF&\fscx112\fscy112}SCHON{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.34,0:00:04.95,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GEHÖRT.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:05.03,0:00:05.47,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}STIMMT{\c&H00FFFFFF&\fscx100\fscy100} ABER NICHT.
+Dialogue: 0,0:00:05.47,0:00:05.69,Sub,,0,0,0,,STIMMT {\c&H0000E5FF&\fscx112\fscy112}ABER{\c&H00FFFFFF&\fscx100\fscy100} NICHT.
+Dialogue: 0,0:00:05.69,0:00:06.17,Sub,,0,0,0,,STIMMT ABER {\c&H0000E5FF&\fscx112\fscy112}NICHT.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.21,0:00:06.46,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DEIN{\c&H00FFFFFF&\fscx100\fscy100} KÖRPER KANN
+Dialogue: 0,0:00:06.46,0:00:06.88,Sub,,0,0,0,,DEIN {\c&H0000E5FF&\fscx112\fscy112}KÖRPER{\c&H00FFFFFF&\fscx100\fscy100} KANN
+Dialogue: 0,0:00:06.88,0:00:07.08,Sub,,0,0,0,,DEIN KÖRPER {\c&H0000E5FF&\fscx112\fscy112}KANN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.08,0:00:07.21,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} KAUMASSE ZWAR
+Dialogue: 0,0:00:07.21,0:00:07.70,Sub,,0,0,0,,DIE {\c&H0000E5FF&\fscx112\fscy112}KAUMASSE{\c&H00FFFFFF&\fscx100\fscy100} ZWAR
+Dialogue: 0,0:00:07.70,0:00:07.91,Sub,,0,0,0,,DIE KAUMASSE {\c&H0000E5FF&\fscx112\fscy112}ZWAR{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.91,0:00:08.10,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NICHT{\c&H00FFFFFF&\fscx100\fscy100} VERDAUEN.
+Dialogue: 0,0:00:08.10,0:00:08.79,Sub,,0,0,0,,NICHT {\c&H0000E5FF&\fscx112\fscy112}VERDAUEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:08.87,0:00:09.28,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ABER{\c&H00FFFFFF&\fscx100\fscy100} ER SCHIEBT
+Dialogue: 0,0:00:09.28,0:00:09.43,Sub,,0,0,0,,ABER {\c&H0000E5FF&\fscx112\fscy112}ER{\c&H00FFFFFF&\fscx100\fscy100} SCHIEBT
+Dialogue: 0,0:00:09.43,0:00:09.73,Sub,,0,0,0,,ABER ER {\c&H0000E5FF&\fscx112\fscy112}SCHIEBT{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.73,0:00:09.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100} EINFACH WEITER,
+Dialogue: 0,0:00:09.88,0:00:10.26,Sub,,0,0,0,,SIE {\c&H0000E5FF&\fscx112\fscy112}EINFACH{\c&H00FFFFFF&\fscx100\fscy100} WEITER,
+Dialogue: 0,0:00:10.26,0:00:10.86,Sub,,0,0,0,,SIE EINFACH {\c&H0000E5FF&\fscx112\fscy112}WEITER,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.86,0:00:11.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DURCH{\c&H00FFFFFF&\fscx100\fscy100} MAGEN UND
+Dialogue: 0,0:00:11.12,0:00:11.48,Sub,,0,0,0,,DURCH {\c&H0000E5FF&\fscx112\fscy112}MAGEN{\c&H00FFFFFF&\fscx100\fscy100} UND
+Dialogue: 0,0:00:11.48,0:00:11.63,Sub,,0,0,0,,DURCH MAGEN {\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:11.63,0:00:12.14,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DARM.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:12.27,0:00:12.92,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FESTKLEBEN{\c&H00FFFFFF&\fscx100\fscy100} KANN
+Dialogue: 0,0:00:12.92,0:00:13.13,Sub,,0,0,0,,FESTKLEBEN {\c&H0000E5FF&\fscx112\fscy112}KANN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.13,0:00:13.25,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100} DABEI NICHT,
+Dialogue: 0,0:00:13.25,0:00:13.55,Sub,,0,0,0,,SIE {\c&H0000E5FF&\fscx112\fscy112}DABEI{\c&H00FFFFFF&\fscx100\fscy100} NICHT,
+Dialogue: 0,0:00:13.55,0:00:14.02,Sub,,0,0,0,,SIE DABEI {\c&H0000E5FF&\fscx112\fscy112}NICHT,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.06,0:00:14.47,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DAFÜR{\c&H00FFFFFF&\fscx100\fscy100} IST ALLES
+Dialogue: 0,0:00:14.47,0:00:14.65,Sub,,0,0,0,,DAFÜR {\c&H0000E5FF&\fscx112\fscy112}IST{\c&H00FFFFFF&\fscx100\fscy100} ALLES
+Dialogue: 0,0:00:14.65,0:00:15.00,Sub,,0,0,0,,DAFÜR IST {\c&H0000E5FF&\fscx112\fscy112}ALLES{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.00,0:00:15.27,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}VIEL{\c&H00FFFFFF&\fscx100\fscy100} ZU FEUCHT
+Dialogue: 0,0:00:15.27,0:00:15.44,Sub,,0,0,0,,VIEL {\c&H0000E5FF&\fscx112\fscy112}ZU{\c&H00FFFFFF&\fscx100\fscy100} FEUCHT
+Dialogue: 0,0:00:15.44,0:00:15.80,Sub,,0,0,0,,VIEL ZU {\c&H0000E5FF&\fscx112\fscy112}FEUCHT{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.80,0:00:15.93,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} GLITSCHIG.
+Dialogue: 0,0:00:15.93,0:00:16.64,Sub,,0,0,0,,UND {\c&H0000E5FF&\fscx112\fscy112}GLITSCHIG.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.72,0:00:17.31,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}MEISTENS{\c&H00FFFFFF&\fscx100\fscy100} IST DER
+Dialogue: 0,0:00:17.31,0:00:17.46,Sub,,0,0,0,,MEISTENS {\c&H0000E5FF&\fscx112\fscy112}IST{\c&H00FFFFFF&\fscx100\fscy100} DER
+Dialogue: 0,0:00:17.46,0:00:17.61,Sub,,0,0,0,,MEISTENS IST {\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.61,0:00:18.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KAUGUMMI{\c&H00FFFFFF&\fscx100\fscy100} NACH EIN
+Dialogue: 0,0:00:18.12,0:00:18.37,Sub,,0,0,0,,KAUGUMMI {\c&H0000E5FF&\fscx112\fscy112}NACH{\c&H00FFFFFF&\fscx100\fscy100} EIN
+Dialogue: 0,0:00:18.37,0:00:18.62,Sub,,0,0,0,,KAUGUMMI NACH {\c&H0000E5FF&\fscx112\fscy112}EIN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:18.62,0:00:18.80,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}BIS{\c&H00FFFFFF&\fscx100\fscy100} DREI TAGEN
+Dialogue: 0,0:00:18.80,0:00:19.10,Sub,,0,0,0,,BIS {\c&H0000E5FF&\fscx112\fscy112}DREI{\c&H00FFFFFF&\fscx100\fscy100} TAGEN
+Dialogue: 0,0:00:19.10,0:00:19.47,Sub,,0,0,0,,BIS DREI {\c&H0000E5FF&\fscx112\fscy112}TAGEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.47,0:00:19.75,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WIEDER{\c&H00FFFFFF&\fscx100\fscy100} DRAUSSEN.
+Dialogue: 0,0:00:19.75,0:00:20.35,Sub,,0,0,0,,WIEDER {\c&H0000E5FF&\fscx112\fscy112}DRAUSSEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:20.35,0:00:20.68,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GANZ{\c&H00FFFFFF&\fscx100\fscy100} NORMAL,
+Dialogue: 0,0:00:20.68,0:00:21.16,Sub,,0,0,0,,GANZ {\c&H0000E5FF&\fscx112\fscy112}NORMAL,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.16,0:00:21.40,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUF{\c&H00FFFFFF&\fscx100\fscy100} DEM ÜBLICHEN
+Dialogue: 0,0:00:21.40,0:00:21.61,Sub,,0,0,0,,AUF {\c&H0000E5FF&\fscx112\fscy112}DEM{\c&H00FFFFFF&\fscx100\fscy100} ÜBLICHEN
+Dialogue: 0,0:00:21.61,0:00:22.06,Sub,,0,0,0,,AUF DEM {\c&H0000E5FF&\fscx112\fscy112}ÜBLICHEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:22.06,0:00:22.54,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WEG.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:22.64,0:00:23.30,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUFPASSEN{\c&H00FFFFFF&\fscx100\fscy100} SOLLTE
+Dialogue: 0,0:00:23.30,0:00:23.63,Sub,,0,0,0,,AUFPASSEN {\c&H0000E5FF&\fscx112\fscy112}SOLLTE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.63,0:00:23.78,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}MAN{\c&H00FFFFFF&\fscx100\fscy100} NUR BEI
+Dialogue: 0,0:00:23.78,0:00:23.98,Sub,,0,0,0,,MAN {\c&H0000E5FF&\fscx112\fscy112}NUR{\c&H00FFFFFF&\fscx100\fscy100} BEI
+Dialogue: 0,0:00:23.98,0:00:24.12,Sub,,0,0,0,,MAN NUR {\c&H0000E5FF&\fscx112\fscy112}BEI{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:24.12,0:00:24.52,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KLEINEN{\c&H00FFFFFF&\fscx100\fscy100} KINDERN
+Dialogue: 0,0:00:24.52,0:00:25.08,Sub,,0,0,0,,KLEINEN {\c&H0000E5FF&\fscx112\fscy112}KINDERN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:25.26,0:00:25.53,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} WENN JEMAND
+Dialogue: 0,0:00:25.53,0:00:25.74,Sub,,0,0,0,,UND {\c&H0000E5FF&\fscx112\fscy112}WENN{\c&H00FFFFFF&\fscx100\fscy100} JEMAND
+Dialogue: 0,0:00:25.74,0:00:26.06,Sub,,0,0,0,,UND WENN {\c&H0000E5FF&\fscx112\fscy112}JEMAND{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.06,0:00:26.33,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SEHR{\c&H00FFFFFF&\fscx100\fscy100} VIELE AUF
+Dialogue: 0,0:00:26.33,0:00:26.66,Sub,,0,0,0,,SEHR {\c&H0000E5FF&\fscx112\fscy112}VIELE{\c&H00FFFFFF&\fscx100\fscy100} AUF
+Dialogue: 0,0:00:26.66,0:00:26.82,Sub,,0,0,0,,SEHR VIELE {\c&H0000E5FF&\fscx112\fscy112}AUF{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.82,0:00:27.07,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}EINMAL{\c&H00FFFFFF&\fscx100\fscy100} SCHLUCKT.
+Dialogue: 0,0:00:27.07,0:00:27.62,Sub,,0,0,0,,EINMAL {\c&H0000E5FF&\fscx112\fscy112}SCHLUCKT.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.64,0:00:27.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}HAST{\c&H00FFFFFF&\fscx100\fscy100} DU DEN
+Dialogue: 0,0:00:27.88,0:00:27.98,Sub,,0,0,0,,HAST {\c&H0000E5FF&\fscx112\fscy112}DU{\c&H00FFFFFF&\fscx100\fscy100} DEN
+Dialogue: 0,0:00:27.98,0:00:28.16,Sub,,0,0,0,,HAST DU {\c&H0000E5FF&\fscx112\fscy112}DEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.16,0:00:29.23,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SIEBEN-JAHRE-MYTHOS{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:29.23,0:00:29.45,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUCH{\c&H00FFFFFF&\fscx100\fscy100} GEGLAUBT?
+Dialogue: 0,0:00:29.45,0:00:30.17,Sub,,0,0,0,,AUCH {\c&H0000E5FF&\fscx112\fscy112}GEGLAUBT?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.30,0:00:30.49,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}JA{\c&H00FFFFFF&\fscx100\fscy100} ODER NEIN,
+Dialogue: 0,0:00:30.49,0:00:30.72,Sub,,0,0,0,,JA {\c&H0000E5FF&\fscx112\fscy112}ODER{\c&H00FFFFFF&\fscx100\fscy100} NEIN,
+Dialogue: 0,0:00:30.72,0:00:31.19,Sub,,0,0,0,,JA ODER {\c&H0000E5FF&\fscx112\fscy112}NEIN,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:31.29,0:00:31.68,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SCHREIB'S{\c&H00FFFFFF&\fscx100\fscy100} IN DIE
+Dialogue: 0,0:00:31.68,0:00:31.76,Sub,,0,0,0,,SCHREIB'S {\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100} DIE
+Dialogue: 0,0:00:31.76,0:00:31.88,Sub,,0,0,0,,SCHREIB'S IN {\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:31.88,0:00:32.86,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KOMMENTARE.{\c&H00FFFFFF&\fscx100\fscy100}

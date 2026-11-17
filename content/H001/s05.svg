@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1714"/><stop offset="1" stop-color="#0c0a09"/></linearGradient>
+    <linearGradient id="gap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8a"/><stop offset="1" stop-color="#ffcf8a" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="#060607"/>
+  <rect x="270" y="220" width="540" height="1000" fill="url(#door)" stroke="#000" stroke-width="10"/>
+  <rect x="320" y="290" width="440" height="380" fill="none" stroke="#2a221c" stroke-width="8"/>
+  <rect x="320" y="740" width="440" height="400" fill="none" stroke="#2a221c" stroke-width="8"/>
+  <circle cx="740" cy="720" r="22" fill="#6b5a3e"/>
+  <rect x="270" y="1220" width="540" height="10" fill="#ffcf8a"/>
+  <path d="M270 1230 L810 1230 L1000 1520 L80 1520 Z" fill="url(#gap)" opacity="0.35"/>
+  <g font-family="DejaVu Serif" font-weight="700" fill="#e8e1d6" opacity="0.85">
+    <text x="420" y="560" font-size="90" transform="rotate(-8 420 560)">klopf</text>
+    <text x="560" y="880" font-size="74" transform="rotate(6 560 880)">klopf</text>
+    <text x="380" y="1060" font-size="60" transform="rotate(-4 380 1060)">klopf</text>
+  </g>
+</svg>

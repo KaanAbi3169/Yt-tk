@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#FFD400"/>
+  <text x="540" y="380" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="78" fill="#1E2A3A">WO LIEGEN DEINE</text>
+  <text x="540" y="470" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="78" fill="#1E2A3A">TOMATEN?</text>
+  <g transform="translate(120,560)"><rect width="390" height="460" rx="40" fill="#fff" stroke="#1E2A3A" stroke-width="12"/>
+    <rect x="120" y="60" width="150" height="230" rx="20" fill="#DDEFFB" stroke="#1E2A3A" stroke-width="10"/><rect x="120" y="150" width="150" height="8" fill="#1E2A3A"/>
+    <text x="195" y="390" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="46" fill="#1E2A3A">KÜHLSCHRANK</text></g>
+  <g transform="translate(570,560)"><rect width="390" height="460" rx="40" fill="#fff" stroke="#1E2A3A" stroke-width="12"/>
+    <circle cx="195" cy="190" r="100" fill="#E8352B" stroke="#1E2A3A" stroke-width="10"/><path d="M160 95 q35 25 70 0 q-12 28 -35 28 q-23 0 -35 -28z" fill="#2E9E3F"/>
+    <text x="195" y="390" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="46" fill="#1E2A3A">ARBEITSPLATTE</text></g>
+  <text x="540" y="1110" text-anchor="middle" font-family="Inter" font-weight="800" font-size="44" fill="#1E2A3A">Schreib's in die Kommentare 👇</text>
+</svg>
