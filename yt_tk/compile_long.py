@@ -45,7 +45,7 @@ LONGS = {
     "L003": {
         "title": "{n} Dinge, die dein Körper und dein Gehirn tun, ohne dass du es merkst", "topic": "Körper und Gehirn", "label": "Thema",
         "intro": "{n} Dinge\ndie dein Körper ohne dich tut",
-        "lead": "Vom Gähnen bis zum Déjà-vu: Dinge, die dein Körper und dein Gehirn ständig tun. Mit den Kapiteln springst du direkt zu deinem Thema.",
+        "lead": "Dinge, die dein Körper und dein Gehirn ständig tun, vom Gähnen bis zum Déjà-vu. Mit den Kapiteln springst du direkt zu deinem Thema.",
         "tags": "#körper #gehirn #wissen #psychologie",
         "parts": [("D035", "Warum Gähnen ansteckt"), ("D039", "Gänsehaut"), ("D043", "Schluckauf"),
                   ("D047", "Warum du dich nicht selbst kitzeln kannst"), ("D051", "Hirnfrost"), ("D055", "Schrumpelfinger im Bad"),
