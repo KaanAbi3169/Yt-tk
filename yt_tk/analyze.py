@@ -175,6 +175,24 @@ def build_report(day, today_posted, notes, problems, inv) -> str:
             L.append(f"| {k} | {e['n']} | {e['views'] / e['n']:.0f} | {e['likes'] / e['n']:.1f} | {w} |")
     else:
         L.append("- n/a (noch keine Zahlen)")
+    L += ["", "## Gruppen im Vergleich (V-033, Ø je Video, Quelle: gesammelte Zahlen)"]
+    gm = {}
+    grp_of = {v["id"]: v.get("group") for v in inv}
+    for pr in perf:
+        g = pr.get("group") or grp_of.get(pr["id"])
+        m = pr.get("7d") or pr.get("24h")
+        if g and m and m.get("views") is not None:
+            e = gm.setdefault(g, {"n": 0, "views": 0, "watch": []})
+            e["n"] += 1; e["views"] += m["views"]
+            if m.get("watch_ms"):
+                e["watch"].append(m["watch_ms"])
+    if gm:
+        L += ["| Gruppe | Posts | Ø Views | Ø Watch-Zeit |", "|---|---|---|---|"]
+        for k, e in sorted(gm.items(), key=lambda kv: -kv[1]["views"] / kv[1]["n"]):
+            w = f"{sum(e['watch']) / len(e['watch']) / 1000:.1f} s" if e["watch"] else "n/a"
+            L.append(f"| {k} | {e['n']} | {e['views'] / e['n']:.0f} | {w} |")
+    else:
+        L.append("- n/a (noch keine Zahlen je Gruppe)")
     L += ["", "## Vorrat (Inventar)"]
     for fmt, st in sorted(counts.items()):
         L.append(f"- {fmt}: " + ", ".join(f"{k} {n}" for k, n in sorted(st.items())))

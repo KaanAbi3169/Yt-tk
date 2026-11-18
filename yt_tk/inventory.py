@@ -192,6 +192,15 @@ def register(vid: str) -> dict:
     return entry
 
 
+def _prio_key(which: str = "order"):
+    """V-033: Reihenfolge der Vorrats-Videos aus data/priority.json. "order" gilt fuer den 10:00-Slot (Test-Gruppe, Winterthemen),
+    "prime" fuer den 16:00-Slot (beste Zeit, staerkste Gruppen). Nicht Gelistete folgen nach ID."""
+    pr = _load("priority.json", {"order": [], "prime": []})
+    order = {vid: i for i, vid in enumerate(pr.get(which, []))}
+    other = {vid: i for i, vid in enumerate(pr.get("order" if which == "prime" else "prime", []))}
+    return lambda x: (order.get(x["id"], 10_000), other.get(x["id"], 10_000), x["id"])
+
+
 def long_link_line(data: dict, vid: str) -> str:
     """V-031: Zeile fuer die YouTube-Beschreibung eines Short, der Teil eines veroeffentlichten Zusammenschnitt-Langvideos ist.
     Nur wenn das Langvideo einen oeffentlichen Link hat (public_url), sonst leer (nie ein toter Link)."""
@@ -216,6 +225,7 @@ def plan(day: str) -> list:
     data = _load("inventory.json", {"videos": []})
     sch = schedule()
     posts = []
+    prio, prime = _prio_key("order"), _prio_key("prime")
     done_groups = set()
     used = set()  # Videos, die dieser Plan schon vergeben hat (nie zweimal am selben Tag)
     for fmt, f in config.FORMATS.items():
@@ -234,19 +244,19 @@ def plan(day: str) -> list:
         v = None
         for g in order:
             ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "ready" and x["id"] not in used),
-                           key=lambda x: x["id"])
+                           key=prio)
             if not ready:  # Reserve aus Google Drive (nur wenn kein neues Video bereitliegt)
                 ready = sorted((x for x in data["videos"] if x["format"] == g and x["status"] == "backup" and x["id"] not in used),
-                               key=lambda x: x["id"])
+                               key=prio)
             if ready:
                 v, fmt, f = ready[0], g, config.FORMATS[g]
                 break
         if v is None and f.get("fallback"):  # kein eigenes Video fertig: Vorrat eines anderen Formats nehmen
             fb = f["fallback"]
             cand = sorted((x for x in data["videos"] if x["format"] == fb and x["status"] == "ready" and x["id"] not in used),
-                          key=lambda x: x["id"]) or \
+                          key=prime) or \
                 sorted((x for x in data["videos"] if x["format"] == fb and x["status"] == "backup" and x.get("title_tiktok")
-                        and x["id"] not in used), key=lambda x: x["id"])
+                        and x["id"] not in used), key=prime)
             if cand:
                 v = cand[0]
         done_groups.add(group)
@@ -313,7 +323,8 @@ def perf(vid: str, platform: str, window: str, kv: list) -> None:
     rec = next((p for p in data["posts"] if p["id"] == vid and p["platform"] == platform), None)
     if not rec:
         rec = {"id": vid, "platform": platform, "format": v.get("format"), "topic": v.get("topic"),
-               "hook_type": v.get("hook_type"), "due": v.get("due"), "duration": v.get("duration")}
+               "hook_type": v.get("hook_type"), "due": v.get("due"), "duration": v.get("duration"),
+               "group": v.get("group")}
         data["posts"].append(rec)
     rec[window] = {**vals, "at": now().isoformat()}
     _save("performance.json", data)
