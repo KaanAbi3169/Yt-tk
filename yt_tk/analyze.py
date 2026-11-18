@@ -14,7 +14,7 @@ liefert die Claude-Routine "Betrieb & Dashboard".
 """
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from . import buffer_api, config, inventory
 

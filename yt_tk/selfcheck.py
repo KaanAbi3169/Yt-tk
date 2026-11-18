@@ -6,13 +6,11 @@
 Ergebnis je Pruefung: OK, WARN oder FEHLER. Exit 1 nur bei FEHLER. Die Claude-Routine liest den Bericht jeden Morgen,
 behebt Fehler (Stufe A, mit Dry-Run) und schlaegt Optimierungen vor (docs/ROUTINE_CODEREVIEW.md im Repo passiv-einkommen)."""
 import importlib
-import json
 import pkgutil
 import sys
-from datetime import date, datetime, timedelta
-from pathlib import Path
+from datetime import datetime, timedelta
 
-from . import config, inventory, textcheck
+from . import inventory, textcheck
 
 R = []  # (Stufe, Text)
 

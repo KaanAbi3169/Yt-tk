@@ -20,7 +20,7 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-from . import config, inventory
+from . import inventory
 
 UA = {"User-Agent": "Mozilla/5.0"}
 

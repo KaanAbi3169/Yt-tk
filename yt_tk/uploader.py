@@ -10,7 +10,6 @@ Logik wie docs/ROUTINE_PLANUNG.md: Plan aus dem Inventar, Doppelschutz ueber die
 Buffer-Limit (max. 10 geplante Posts), Wiederholung nie blind, Status zurueck ins Inventar (media-Branch).
 Exit-Code: 0 ok, 1 Fehler bei mindestens einem Post (GitHub meldet den fehlgeschlagenen Lauf aufs Handy).
 """
-import json
 import os
 import sys
 from datetime import datetime

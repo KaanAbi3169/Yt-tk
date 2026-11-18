@@ -112,7 +112,7 @@ def build(vid: str, px: float, dry: bool) -> int:
             dur = n / FPS
             (tmp / "c.ass").write_text(ass(words, cfg.get("highlight", r"\d|prozent|mythos|best\w+tigt|termin"), dur), encoding="utf-8")
             out = tmp / "out.mp4"
-            vf = f"scale=1080:1920:flags=lanczos,subtitles=c.ass:fontsdir=/usr/share/fonts/truetype/dejavu"
+            vf = "scale=1080:1920:flags=lanczos,subtitles=c.ass:fontsdir=/usr/share/fonts/truetype/dejavu"
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", str(frames / "f%05d.jpg"), "-i", str(audio),
                             "-vf", vf, "-af", f"loudnorm=I={config.TARGET_LUFS}:TP=-1.5:LRA=11,apad=pad_dur=1", "-t", f"{dur:.2f}",
                             "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k",

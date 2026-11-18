@@ -8,7 +8,6 @@ import json
 import re
 import shutil
 import sys
-from pathlib import Path
 
 from . import config, qa, render, subtitles, tts, visuals
 
