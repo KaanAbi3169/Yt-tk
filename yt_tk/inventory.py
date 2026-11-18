@@ -192,6 +192,24 @@ def register(vid: str) -> dict:
     return entry
 
 
+def long_link_line(data: dict, vid: str) -> str:
+    """V-031: Zeile fuer die YouTube-Beschreibung eines Short, der Teil eines veroeffentlichten Zusammenschnitt-Langvideos ist.
+    Nur wenn das Langvideo einen oeffentlichen Link hat (public_url), sonst leer (nie ein toter Link)."""
+    for lv in data["videos"]:
+        if lv.get("format") == "lang" and lv.get("public_url") and vid in (lv.get("parts") or []):
+            return f"Das ganze Video ({lv.get('topic', 'Zusammenschnitt')}, {len(lv['parts'])} Teile): {lv['public_url']}"
+    return ""
+
+
+def with_long_link(text: str, line: str) -> str:
+    if not line or line in text:
+        return text
+    marker = "Stimme und Grafiken mit KI erstellt"
+    if marker in text:  # vor dem KI-Hinweis, Hashtags bleiben am Schluss
+        return text.replace(marker, line + "\n\n" + marker, 1)
+    return text.rstrip() + "\n\n" + line
+
+
 def plan(day: str) -> list:
     """Liefert die Posts fuer einen Tag. Pro Format hoechstens ein Video, Serien in Reihenfolge."""
     d = date.fromisoformat(day)
@@ -252,7 +270,8 @@ def plan(day: str) -> list:
             entry["tiktok"] = {"channelId": config.BUFFER["tiktok_channel_id"], "text": v["text_tiktok"],
                                "metadata": {"tiktok": {"title": v["title_tiktok"], "isAiGenerated": True}}}
         if "youtube" in config.platforms(fmt):
-            entry["youtube"] = {"channelId": config.BUFFER["youtube_channel_id"], "text": v["text_youtube"],
+            yt_text = v["text_youtube"] if entry["long_video"] else with_long_link(v["text_youtube"], long_link_line(data, v["id"]))
+            entry["youtube"] = {"channelId": config.BUFFER["youtube_channel_id"], "text": yt_text,
                                 "metadata": {"youtube": {"title": v["title_youtube"],
                                                          "categoryId": f["youtube_category"],
                                                          "madeForKids": False, "privacy": "public",
@@ -429,6 +448,14 @@ def main(a):
         opts = dict(zip(a[3::2], a[4::2]))
         mark(a[2], opts.get("--tiktok", ""), opts.get("--youtube", ""), opts["--due"],
              opts.get("--status", "scheduled"))
+        print("ok")
+    elif cmd == "public-url":  # python -m yt_tk.inventory public-url L001 https://www.youtube.com/watch?v=...
+        data = _load("inventory.json", {"videos": []})
+        hit = [v for v in data["videos"] if v["id"] == a[2]]
+        if not hit:
+            raise SystemExit(f"{a[2]} nicht im Vorrat")
+        hit[0]["public_url"] = a[3]
+        _save("inventory.json", data)
         print("ok")
     elif cmd == "import-drive":
         print(f"{import_drive(a[2])} Reserve-Videos aufgenommen")
