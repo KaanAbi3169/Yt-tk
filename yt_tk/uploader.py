@@ -57,6 +57,10 @@ def run(day: str, live: bool) -> int:
         if e.get("needs_texts"):
             log(f"{e['id']}: Titel/Texte fehlen - uebersprungen (Notvorrat auffuellen).")
             continue
+        if e.get("long_video"):
+            # Buffer plant auf YouTube nur Shorts (max. 3 Min., Hochformat). Langvideos laufen ueber Metricool (Claude-Sitzung).
+            log(f"{e['id']}: Langvideo - Buffer kann nur Shorts, uebersprungen (Metricool, siehe Tagesbericht).")
+            continue
         ids = {}
         for pf in e["platforms"]:
             hit = find_existing(history[pf], e, pf)
