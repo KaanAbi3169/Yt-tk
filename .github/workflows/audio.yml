@@ -1,0 +1,51 @@
+name: audio
+
+# Holt eine erzeugte Sprachdatei (ElevenLabs, signierter Link, nur wenige Stunden gueltig) und legt sie auf dem Daten-Branch ab:
+# media -> audio/<ID>.mp3. Nur von Hand startbar. 0 EUR. Nur Links von elevenlabsusercontent.com werden akzeptiert.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Video-ID, z. B. T001"
+        required: true
+      url:
+        description: "Signierter Link der Sprachdatei"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          sparse-checkout: audio
+          fetch-depth: 1
+      - name: Datei holen
+        env:
+          VID: ${{ inputs.id }}
+          URL: ${{ inputs.url }}
+        run: |
+          case "$VID" in [A-Z][0-9][0-9][0-9]) ;; *) echo "ungueltige ID"; exit 1;; esac
+          case "$URL" in https://elevenlabsusercontent.com/*) ;; *) echo "nur elevenlabsusercontent.com erlaubt"; exit 1;; esac
+          mkdir -p audio
+          curl -fsSL --max-time 120 -o "audio/$VID.mp3" "$URL"
+          ls -la "audio/$VID.mp3"
+          ffprobe -v error -show_entries format=duration -of csv=p=0 "audio/$VID.mp3" || true
+      - name: Sichern
+        env:
+          VID: ${{ inputs.id }}
+        run: |
+          git config user.name "audio"
+          git config user.email "audio@users.noreply.github.com"
+          git add --sparse audio
+          git commit -qm "Sprachdatei $VID" || echo "nichts zu committen"
+          for i in 1 2 3 4; do git push origin HEAD:media && break || { git pull -q --rebase origin media; sleep 3; }; done
