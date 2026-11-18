@@ -45,7 +45,8 @@
         "tiktok": "6af956fdc5b364e0623c348f",
         "youtube": "6af9570ab9a106584c91332d"
       },
-      "due": "2026-11-15T10:00:00+01:00"
+      "due": "2026-11-15T10:00:00+01:00",
+      "group": "mythos"
     },
     {
       "id": "X001",
@@ -70,7 +71,8 @@
       "due": "2026-11-15T15:00:00+01:00",
       "notes": [
         "2026-11-15: YouTube-Doppel-Upload gestoppt; YouTube-Post = Upload vom 14.11. 23:00 UTC"
-      ]
+      ],
+      "group": "was-waere-wenn-test"
     },
     {
       "id": "D016",
@@ -93,7 +95,8 @@
       "text_youtube": "Fühlst du dich manchmal beobachtet? Das Video erklärt, was dahintersteckt.\nWann ging es dir schon so? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #psychologie #spotlighteffekt #wusstestdu #alltag",
       "notvorrat": true,
       "drive_shared": true,
-      "due": "2026-11-18T16:00:00+01:00"
+      "due": "2026-11-18T16:00:00+01:00",
+      "group": "koerper"
     },
     {
       "id": "D017",
@@ -112,7 +115,8 @@
       "text_tiktok": "Prüf mal, wie du einräumst. Was machst du anders? 👇 #geschirrspüler #haushaltstipps #küchentipps #fürdich",
       "text_youtube": "Ein kleiner Handgriff mit großer Wirkung beim Geschirrspüler.\nWie räumst du ein? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #haushaltstipps #geschirrspüler #küchentipps #alltagswissen",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D019",
@@ -131,7 +135,8 @@
       "text_tiktok": "Ein Reflex, der Katzen berühmt gemacht hat. Hast du es schon gesehen? 👇 #katzen #tierfakten #wusstestdu #lernenmittiktok",
       "text_youtube": "Katzen drehen sich beim Fallen in Sekundenbruchteilen. Wie das funktioniert, zeigt das Video.\nHast du eine Katze zu Hause? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #katzen #tierfakten #wusstestdu #physik",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "physik-test"
     },
     {
       "id": "D021",
@@ -150,7 +155,8 @@
       "text_tiktok": "Wie lüftest du im Winter? Kippen oder ganz auf? 👇 #lüften #wohnen #haushaltstipps #fürdich",
       "text_youtube": "Richtig lüften spart Energie und beugt Feuchtigkeit vor. Das Video zeigt den Unterschied.\nKippen oder Stoßlüften – was machst du? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #lüften #wohnen #haushaltstipps #energiesparen",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "winter"
     },
     {
       "id": "D022",
@@ -169,7 +175,8 @@
       "text_tiktok": "Murphys Gesetz am Frühstückstisch. Stimmt es bei dir? 👇 #toast #mythos #wusstestdu #alltagswissen #lernenmittiktok",
       "text_youtube": "Jeder kennt das Gefühl, dass der Toast auf der Butterseite landet. Stimmt das wirklich?\nWie oft ist es dir passiert? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #toast #wusstestdu #physik",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D023",
@@ -188,7 +195,8 @@
       "text_tiktok": "Ein Vergleich, den kaum jemand kennt. Hättest du das gedacht? 👇 #haie #tierfakten #wusstestdu #lernenmittiktok",
       "text_youtube": "Wie alt sind Haie eigentlich, und wie alt sind Bäume? Das Video vergleicht beide.\nHättest du das gedacht? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #haie #tierfakten #wusstestdu #natur",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D024",
@@ -207,12 +215,13 @@
       "text_tiktok": "Das Bild vom kleinen Kaiser hält sich hartnäckig. Was glaubst du? 👇 #napoleon #geschichte #mythos #wusstestdu",
       "text_youtube": "Napoleon gilt als klein. Woher kommt dieses Bild, und stimmt es?\nWas hast du in der Schule gelernt? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #napoleon #geschichte #mythos #wusstestdu",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D025",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1IUr0EUjEdb71qUAdauhqR3zHv8vOAbVO",
       "drive_title": "V025_Wasserkocher_entkalken.mp4",
@@ -226,7 +235,9 @@
       "text_tiktok": "Kalk im Wasserkocher kennt jeder. Wie entkalkst du? 👇 #wasserkocher #haushaltstipps #küchentipps #fürdich",
       "text_youtube": "Kalk im Wasserkocher lässt sich mit einfachen Mitteln lösen. Das Video zeigt, wie.\nWie entkalkst du deinen? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #haushaltstipps #wasserkocher #küchentipps #putzen",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D027",
@@ -245,7 +256,8 @@
       "text_tiktok": "Weißes Fell, aber was steckt darunter? Hättest du es gewusst? 👇 #eisbär #tierfakten #wusstestdu #lernenmittiktok",
       "text_youtube": "Eisbären wirken ganz weiß. Das Video erklärt, was darunter liegt und warum.\nHättest du es gewusst? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #eisbär #tierfakten #wusstestdu #natur",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "physik-test"
     },
     {
       "id": "D028",
@@ -264,12 +276,13 @@
       "text_tiktok": "Ein Zeitvergleich, der Geschichte auf den Kopf stellt. Hättest du das gedacht? 👇 #kleopatra #geschichte #wusstestdu #lernenmittiktok",
       "text_youtube": "Wie nah sind uns antike Herrscher zeitlich eigentlich? Das Video rechnet nach.\nHättest du das gedacht? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #kleopatra #geschichte #wusstestdu #zeitreise",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D029",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1S1_ZbxvZa7Un0ieb_Iafwj1iVg2Mcu2V",
       "drive_title": "V029_Haltbarkeitsdatum.mp4",
@@ -283,7 +296,9 @@
       "text_tiktok": "Wegwerfen oder noch essen? Wie machst du es? 👇 #haltbarkeitsdatum #lebensmittel #wusstestdu #alltagswissen",
       "text_youtube": "Das Datum auf der Verpackung ist kein Verfallsdatum. Das Video erklärt den Unterschied.\nSchaust du erst hin, bevor du wegwirfst? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #haltbarkeitsdatum #lebensmittel #wusstestdu #nachhaltigkeit",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D030",
@@ -302,7 +317,8 @@
       "text_tiktok": "Jeden Morgen dasselbe im Bad. Weißt du, warum? 👇 #badezimmer #physik #wusstestdu #lernenmittiktok",
       "text_youtube": "Heiße Dusche, beschlagener Spiegel. Was dabei physikalisch passiert, erklärt das Video.\nWusstest du es? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #physik #alltagswissen #wusstestdu #badezimmer",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "physik-test"
     },
     {
       "id": "D031",
@@ -321,7 +337,8 @@
       "text_tiktok": "Kleine Lichter in der Sommernacht. Hast du schon welche gesehen? 👇 #glühwürmchen #natur #tierfakten #lernenmittiktok",
       "text_youtube": "Glühwürmchen erzeugen Licht ohne Hitze. Wie das gelingt, zeigt das Video.\nHast du schon welche gesehen? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #glühwürmchen #natur #tierfakten #wusstestdu",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "physik-test"
     },
     {
       "id": "D032",
@@ -340,7 +357,8 @@
       "text_tiktok": "Das Bild vom Wikinger mit Hörnerhelm kennt jeder. Stimmt es? 👇 #wikinger #geschichte #mythos #wusstestdu",
       "text_youtube": "Hörnerhelme gehören zum Bild der Wikinger. Das Video prüft, was daran stimmt.\nWas hast du geglaubt? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #wikinger #geschichte #mythos #wusstestdu",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "group": "mythos"
     },
     {
       "id": "D033",
@@ -358,7 +376,8 @@
       "title_tiktok": "🍞 Dein Brot ist nach zwei Tagen hart? Dann lagerst du es falsch",
       "title_youtube": "🍞 Brot im Kühlschrank? Der grösste Fehler beim Brotlagern #shorts",
       "text_tiktok": "Im Kühlschrank wird Brot am schnellsten altbacken, ein Brotkasten bei Zimmertemperatur ist besser. Wo lagerst du dein Brot?\n\n#wusstestdu #lernenmittiktok #brot #lebensmittel #haushaltstipps",
-      "text_youtube": "Im Kühlschrank wird Brot am schnellsten altbacken, weil sich die Stärke in der Kälte neu ordnet. Wo lagerst du dein Brot?\n\nStimme und Grafiken mit KI erstellt.\n\n#brot #haushalt #lebensmittel #tipps #shorts"
+      "text_youtube": "Im Kühlschrank wird Brot am schnellsten altbacken, weil sich die Stärke in der Kälte neu ordnet. Wo lagerst du dein Brot?\n\nStimme und Grafiken mit KI erstellt.\n\n#brot #haushalt #lebensmittel #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D034",
@@ -376,7 +395,8 @@
       "title_tiktok": "🥶 Wäsche bei Frost draussen aufhängen? Klingt verrückt, funktioniert aber",
       "title_youtube": "🥶 Wäsche im Frost trocknen lassen? Das geht wirklich #shorts",
       "text_tiktok": "Das Eis in den Fasern wird direkt zu Dampf, ohne vorher zu schmelzen, und die Wäsche wird trocken. Hast du das schon mal probiert?\n\n#wusstestdu #lernenmittiktok #waschtag #winter #haushalt",
-      "text_youtube": "Gefrorene Wäsche wird trocken, weil das Eis ohne Schmelzen zu Dampf wird. Hängst du deine Wäsche im Winter draussen auf?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #winter #haushalt #tipps #shorts"
+      "text_youtube": "Gefrorene Wäsche wird trocken, weil das Eis ohne Schmelzen zu Dampf wird. Hängst du deine Wäsche im Winter draussen auf?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #winter #haushalt #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D035",
@@ -394,7 +414,8 @@
       "title_tiktok": "😴 Warum steckt Gähnen so schnell an? Die Forscher rätseln noch",
       "title_youtube": "😴 Warum ist Gähnen ansteckend? Die Forscher rätseln #shorts",
       "text_tiktok": "In Studien steckten sich Menschen bei Freunden und Familie öfter an als bei Fremden. Hast du in diesem Video schon gegähnt?\n\n#wusstestdu #lernenmittiktok #gaehnen #koerper #studie",
-      "text_youtube": "Manche Hunde gähnen sogar, wenn ihr Mensch gähnt, und warum wir gähnen, ist noch nicht ganz geklärt. Wie oft hast du in diesem Video gegähnt?\n\nStimme und Grafiken mit KI erstellt.\n\n#gaehnen #koerper #tierisch #wissen #shorts"
+      "text_youtube": "Manche Hunde gähnen sogar, wenn ihr Mensch gähnt, und warum wir gähnen, ist noch nicht ganz geklärt. Wie oft hast du in diesem Video gegähnt?\n\nStimme und Grafiken mit KI erstellt.\n\n#gaehnen #koerper #tierisch #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D036",
@@ -412,7 +433,8 @@
       "title_tiktok": "💃 1518 tanzt eine Frau in Strassburg tagelang auf der Strasse. Warum?",
       "title_youtube": "💃 Die Tanzwut von 1518: Warum tanzten Menschen tagelang? #shorts",
       "text_tiktok": "Schnell schlossen sich dutzende Menschen an, und die Stadtoberen holten sogar Musiker, was alles nur schlimmer machte. Was glaubst du, woran es lag?\n\n#wusstestdu #lernenmittiktok #geschichte #europa #raetsel",
-      "text_youtube": "Die Stadt holte Musiker, damit sich die Leute austanzen, und es wurde nur schlimmer. Was glaubst du, woran es lag?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #europa #raetsel #wissen #shorts"
+      "text_youtube": "Die Stadt holte Musiker, damit sich die Leute austanzen, und es wurde nur schlimmer. Was glaubst du, woran es lag?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #europa #raetsel #wissen #shorts",
+      "group": "mythos"
     },
     {
       "id": "D037",
@@ -430,7 +452,8 @@
       "title_tiktok": "🍌 Deine Banane macht die ganze Obstschale kaputt? Ein Gas ist schuld",
       "title_youtube": "🍌 Bananen lassen anderes Obst schneller reifen. So lagerst du richtig #shorts",
       "text_tiktok": "Bananen geben das Gas Ethylen ab, das andere Früchte schneller reifen und matschig werden lässt. Wo lagerst du deine Bananen?\n\n#wusstestdu #lernenmittiktok #obst #bananen #haushalt",
-      "text_youtube": "Ethylen ist ein Gas, das man nicht sieht und nicht riecht, und es lässt Früchte schneller reif werden. Wie lagerst du deine Obstschale?\n\nStimme und Grafiken mit KI erstellt.\n\n#obst #bananen #haushalt #tipps #shorts"
+      "text_youtube": "Ethylen ist ein Gas, das man nicht sieht und nicht riecht, und es lässt Früchte schneller reif werden. Wie lagerst du deine Obstschale?\n\nStimme und Grafiken mit KI erstellt.\n\n#obst #bananen #haushalt #tipps #shorts",
+      "group": "mythos"
     },
     {
       "id": "D038",
@@ -448,7 +471,8 @@
       "title_tiktok": "🧂 Wie kann Salz Eis schmelzen, obwohl es gar nicht warm ist?",
       "title_youtube": "🧂 Salz ist nicht warm und taut trotzdem Eis? Die Physik dahinter #shorts",
       "text_tiktok": "Salzwasser gefriert erst bei deutlich tieferen Temperaturen, deshalb bleibt es bei leichtem Frost flüssig. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #winter #physik #salz",
-      "text_youtube": "Salz stört die Wasserteilchen beim Ordnen zu Eis, und das Salzwasser bleibt bei leichtem Frost flüssig. Hast du dir das schon mal überlegt?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #winter #experiment #salz #shorts"
+      "text_youtube": "Salz stört die Wasserteilchen beim Ordnen zu Eis, und das Salzwasser bleibt bei leichtem Frost flüssig. Hast du dir das schon mal überlegt?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #winter #experiment #salz #shorts",
+      "group": "physik-test"
     },
     {
       "id": "D039",
@@ -466,7 +490,8 @@
       "title_tiktok": "🤯 Warum bekommst du Gänsehaut? Dein Körper macht etwas Altes",
       "title_youtube": "🤯 Gänsehaut bei Musik? Dein Körper hat einen alten Trick #shorts",
       "text_tiktok": "An jedem Haar sitzt ein winziger Muskel, der sich bei Kälte oder grossen Gefühlen zusammenzieht und das Haar aufstellt. Welcher Song gibt dir Gänsehaut?\n\n#wusstestdu #lernenmittiktok #koerper #musik #gaensehaut",
-      "text_youtube": "Ein winziger Muskel an jedem Haar zieht sich zusammen, ein Überbleibsel unserer Vorfahren. Welcher Song gibt dir zuverlässig Gänsehaut?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #musik #wissen #fakten #shorts"
+      "text_youtube": "Ein winziger Muskel an jedem Haar zieht sich zusammen, ein Überbleibsel unserer Vorfahren. Welcher Song gibt dir zuverlässig Gänsehaut?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #musik #wissen #fakten #shorts",
+      "group": "koerper"
     },
     {
       "id": "D040",
@@ -484,7 +509,8 @@
       "title_tiktok": "🐦 1932 führt Australien Krieg gegen Vögel. Wer gewinnt?",
       "title_youtube": "🐦 Australien gegen Emus: Der kuriose Krieg von 1932 #shorts",
       "text_tiktok": "Die Soldaten zogen nach ein paar Wochen wieder ab, und die Emus blieben. Wer hätte das gedacht?\n\n#wusstestdu #lernenmittiktok #geschichte #australien #tiere",
-      "text_youtube": "Nach ein paar Wochen und viel Munition zog sich die Armee zurück, und die Emus blieben. Wer hätte das gedacht?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #australien #tiere #kurioses #shorts"
+      "text_youtube": "Nach ein paar Wochen und viel Munition zog sich die Armee zurück, und die Emus blieben. Wer hätte das gedacht?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #australien #tiere #kurioses #shorts",
+      "group": "mythos"
     },
     {
       "id": "D041",
@@ -502,7 +528,8 @@
       "title_tiktok": "🧅 Warum weinst du beim Zwiebelschneiden? Die Zwiebel wehrt sich",
       "title_youtube": "🧅 Warum bringt dich eine Zwiebel zum Weinen? Drei Tricks #shorts",
       "text_tiktok": "Beim Zerschneiden entsteht ein Reizgas, das in deine Augen steigt und dort Tränen auslöst. Welcher Trick probierst du zuerst aus?\n\n#wusstestdu #lernenmittiktok #kochen #zwiebel #kuechentipp",
-      "text_youtube": "Ein scharfes Messer, eine kalte Zwiebel und Dampfabzug helfen, weil dann weniger Gas entsteht oder es schneller wegzieht. Welcher Trick ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #zwiebel #kuechentipp #haushalt #shorts"
+      "text_youtube": "Ein scharfes Messer, eine kalte Zwiebel und Dampfabzug helfen, weil dann weniger Gas entsteht oder es schneller wegzieht. Welcher Trick ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #zwiebel #kuechentipp #haushalt #shorts",
+      "group": "alltag"
     },
     {
       "id": "D043",
@@ -520,12 +547,13 @@
       "title_tiktok": "😱 Warum kommt der Schluckauf immer im unpassendsten Moment?",
       "title_youtube": "😱 Schluckauf: Warum er kommt und was dahintersteckt #shorts",
       "text_tiktok": "Das Zwerchfell zuckt plötzlich, und die Stimmritze schliesst sich dabei, das ergibt das typische Geräusch. Welches Hausmittel probierst du?\n\n#wusstestdu #lernenmittiktok #koerper #hausmittel #alltag",
-      "text_youtube": "Auslöser sind oft schnelles Essen, Kohlensäure oder viel Lachen, und Erschrecken ist eher ein Mythos. Was hilft dir bei Schluckauf?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #hausmittel #wissen #alltag #shorts"
+      "text_youtube": "Auslöser sind oft schnelles Essen, Kohlensäure oder viel Lachen, und Erschrecken ist eher ein Mythos. Was hilft dir bei Schluckauf?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #hausmittel #wissen #alltag #shorts",
+      "group": "alltag"
     },
     {
       "id": "D044",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1qRK831owkZ4aeqRn6IznJWRltUMtL76-",
       "drive_title": "V044_Preise_9_99.mp4",
@@ -538,7 +566,9 @@
       "title_tiktok": "💸 Warum kostet fast alles 9 Franken 99 statt 10 Franken?",
       "title_youtube": "💸 Warum fast alles 9 Franken 99 kostet und nicht 10 #shorts",
       "text_tiktok": "Dein Gehirn liest von links nach rechts, und die erste Ziffer bleibt hängen, obwohl der Unterschied nur ein einziger Rappen ist. Fällt dir das jetzt auch auf?\n\n#wusstestdu #lernenmittiktok #einkaufen #psychologie #preise",
-      "text_youtube": "Die erste Ziffer bleibt hängen, deshalb wirkt 9 Franken 99 deutlich billiger als 10 Franken. Achtest du beim Einkaufen auf die Preise?\n\nStimme und Grafiken mit KI erstellt.\n\n#einkaufen #psychologie #preise #tipps #shorts"
+      "text_youtube": "Die erste Ziffer bleibt hängen, deshalb wirkt 9 Franken 99 deutlich billiger als 10 Franken. Achtest du beim Einkaufen auf die Preise?\n\nStimme und Grafiken mit KI erstellt.\n\n#einkaufen #psychologie #preise #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D045",
@@ -556,7 +586,8 @@
       "title_tiktok": "🥚 Dein Ei schwimmt im Glas Wasser? Dann ist es zu alt",
       "title_youtube": "🥚 Ei im Glas Wasser: So erkennst du, ob es noch frisch ist #shorts",
       "text_tiktok": "Bleibt das Ei flach am Boden liegen, ist es ganz frisch, und steigt es an die Oberfläche, ist es zu alt. Machst du den Test vor dem Frühstück?\n\n#wusstestdu #lernenmittiktok #fruehstueck #physik #kueche",
-      "text_youtube": "Liegt das Ei flach am Boden, ist es frisch, und steht es auf der Spitze, ist es schon älter. Wie oft prüfst du deine Eier?\n\nStimme und Grafiken mit KI erstellt.\n\n#fruehstueck #physik #kueche #tipps #shorts"
+      "text_youtube": "Liegt das Ei flach am Boden, ist es frisch, und steht es auf der Spitze, ist es schon älter. Wie oft prüfst du deine Eier?\n\nStimme und Grafiken mit KI erstellt.\n\n#fruehstueck #physik #kueche #tipps #shorts",
+      "group": "mythos"
     },
     {
       "id": "D047",
@@ -574,12 +605,13 @@
       "title_tiktok": "🤔 Warum kannst du dich selbst nicht kitzeln?",
       "title_youtube": "🤔 Warum du dich selbst nicht kitzeln kannst #shorts",
       "text_tiktok": "Dein Gehirn sagt jede eigene Bewegung voraus und dämpft die Berührung, deshalb kitzelt sie kaum. Hast du es schon bei jemand anderem probiert?\n\n#wusstestdu #lernenmittiktok #gehirn #koerper #psychologie",
-      "text_youtube": "Kitzeln funktioniert nur mit Überraschung, und genau die fehlt bei der eigenen Berührung. Wer kitzelt dich am meisten?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #koerper #psychologie #wissen #shorts"
+      "text_youtube": "Kitzeln funktioniert nur mit Überraschung, und genau die fehlt bei der eigenen Berührung. Wer kitzelt dich am meisten?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #koerper #psychologie #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D048",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1j7IuAoI8ibA1y1BDuXkd0W9NhKl-tigq",
       "drive_title": "V048_Supermarkt_Tricks.mp4",
@@ -592,7 +624,9 @@
       "title_tiktok": "🛒 Warum kommst du aus dem Supermarkt mit mehr raus als geplant?",
       "title_youtube": "🛒 So lockt dich der Supermarkt zu mehr Einkäufen #shorts",
       "text_tiktok": "Frische Farben am Eingang machen gute Laune, und gute Laune kauft mehr. Schreibst du deine Einkaufsliste immer vorher?\n\n#wusstestdu #lernenmittiktok #einkaufen #supermarkt #sparen",
-      "text_youtube": "Milch und Brot liegen oft ganz hinten, damit du auf dem Weg dorthin an vielem anderen vorbeikommst. Hast du heute eine Liste dabei?\n\nStimme und Grafiken mit KI erstellt.\n\n#einkaufen #supermarkt #sparen #tipps #shorts"
+      "text_youtube": "Milch und Brot liegen oft ganz hinten, damit du auf dem Weg dorthin an vielem anderen vorbeikommst. Hast du heute eine Liste dabei?\n\nStimme und Grafiken mit KI erstellt.\n\n#einkaufen #supermarkt #sparen #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D049",
@@ -610,7 +644,8 @@
       "title_tiktok": "🍝 Schüttest du dein Nudelwasser weg? Dann verschenkst du Geschmack",
       "title_youtube": "🍝 Nudelwasser nicht weggiessen! Eine Tasse macht die Sauce cremig #shorts",
       "text_tiktok": "Die Stärke im Nudelwasser verbindet Wasser und Fett, damit die Sauce cremig wird und an den Nudeln haften bleibt. Hast du das schon ausprobiert?\n\n#wusstestdu #lernenmittiktok #kochen #pasta #kuechentipp",
-      "text_youtube": "Schöpfe vor dem Abgiessen eine Tasse ab und rühre einen Schuss davon direkt in der Pfanne unter. Wie cremig magst du deine Pasta?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #pasta #kuechentipp #haushalt #shorts"
+      "text_youtube": "Schöpfe vor dem Abgiessen eine Tasse ab und rühre einen Schuss davon direkt in der Pfanne unter. Wie cremig magst du deine Pasta?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #pasta #kuechentipp #haushalt #shorts",
+      "group": "mythos"
     },
     {
       "id": "D050",
@@ -628,7 +663,8 @@
       "title_tiktok": "🥚 Warum platzen Eier im kochenden Wasser? Die Luftkammer ist schuld",
       "title_youtube": "🥚 Eier platzen beim Kochen? Drei Tricks helfen #shorts",
       "text_tiktok": "Am stumpfen Ende vom Ei sitzt eine Luftkammer, die sich bei Hitze ausdehnt und die Schale sprengen kann. Hast du schon mal eine Nadel benutzt?\n\n#wusstestdu #lernenmittiktok #kochen #eier #kuechentipp",
-      "text_youtube": "Die Eier vorher kurz aus dem Kühlschrank nehmen und das stumpfe Ende anstechen, damit die Luft entweichen kann. Welcher Trick ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #eier #kuechentipp #fruehstueck #shorts"
+      "text_youtube": "Die Eier vorher kurz aus dem Kühlschrank nehmen und das stumpfe Ende anstechen, damit die Luft entweichen kann. Welcher Trick ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#kochen #eier #kuechentipp #fruehstueck #shorts",
+      "group": "alltag"
     },
     {
       "id": "D051",
@@ -646,12 +682,13 @@
       "title_tiktok": "🍦 Warum sticht die Glace plötzlich in der Stirn? Hirnfrost erklärt",
       "title_youtube": "🍦 Hirnfrost: Warum es in der Stirn sticht, obwohl du im Mund Glace isst #shorts",
       "text_tiktok": "Die Kälte lässt die Blutgefässe im Gaumen sich zusammenziehen und danach schnell weiten, und das Gehirn ordnet den Schmerz falsch ein. Hilft dir der Trick mit der Zunge am Gaumen?\n\n#wusstestdu #lernenmittiktok #koerper #glace #sommer",
-      "text_youtube": "Der Schmerz entsteht im Gaumen, wird aber in der Stirn gespürt, und nach etwa einer halben Minute ist er meist vorbei. Kennst du den Zungentrick?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #glace #sommer #wissen #shorts"
+      "text_youtube": "Der Schmerz entsteht im Gaumen, wird aber in der Stirn gespürt, und nach etwa einer halben Minute ist er meist vorbei. Kennst du den Zungentrick?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #glace #sommer #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D052",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1IF0dVX6Jsbu5Uh-STvSB-2-3YiRS-8Xt",
       "drive_title": "V052_Karte_vs_Bargeld.mp4",
@@ -664,7 +701,9 @@
       "title_tiktok": "💳 Bezahlst du mit Karte mehr aus? Forscher erklären warum",
       "title_youtube": "💳 Karte statt Bargeld: Warum du schneller mehr ausgibst #shorts",
       "text_tiktok": "Beim Bargeld spürst du den Schmerz des Bezahlens, mit Karte fehlt dieses Gefühl fast komplett. Schaust du deine Kartenausgaben regelmässig an?\n\n#wusstestdu #lernenmittiktok #geld #sparen #finanzen",
-      "text_youtube": "In Versuchen waren Menschen bereit, mit Karte mehr für dasselbe Produkt zu bezahlen als mit Bargeld. Wann hast du zuletzt bar bezahlt?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #sparen #tipps #alltag #shorts"
+      "text_youtube": "In Versuchen waren Menschen bereit, mit Karte mehr für dasselbe Produkt zu bezahlen als mit Bargeld. Wann hast du zuletzt bar bezahlt?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #sparen #tipps #alltag #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D054",
@@ -682,7 +721,8 @@
       "title_tiktok": "🧶 Warum schrumpft dein Lieblingspulli in der Wäsche?",
       "title_youtube": "🧶 Pulli eingelaufen? Diese Waschfehler sind schuld #shorts",
       "text_tiktok": "Wollfasern verhaken sich bei Wärme und Bewegung, der Pulli zieht sich zusammen, und das lässt sich nicht rückgängig machen. Wäschst du Wollpullis heiss?\n\n#wusstestdu #lernenmittiktok #waschtag #wolle #haushalt",
-      "text_youtube": "Heisse Wäsche und der Tumbler lassen Kleidung am stärksten schrumpfen, deshalb lohnt sich ein Blick aufs Etikett. Trocknest du Wollpullis liegend?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #wolle #haushalt #tipps #shorts"
+      "text_youtube": "Heisse Wäsche und der Tumbler lassen Kleidung am stärksten schrumpfen, deshalb lohnt sich ein Blick aufs Etikett. Trocknest du Wollpullis liegend?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #wolle #haushalt #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D055",
@@ -700,12 +740,13 @@
       "title_tiktok": "👆 Warum werden deine Finger nach dem Baden schrumpelig?",
       "title_youtube": "👆 Schrumpelige Finger im Bad: Eine Theorie zu den Rillen #shorts",
       "text_tiktok": "Eine Theorie sagt, die Rillen wirken wie ein Reifenprofil und lassen Wasser abfliessen, damit du besser Halt hast. Hast du das schon mal bemerkt?\n\n#wusstestdu #lernenmittiktok #koerper #baden #wissen",
-      "text_youtube": "Die Nerven steuern das, und Gefässe unter der Haut ziehen sich zusammen, deshalb passiert es nur an Fingern und Zehen. Bemerkst du das bei dir auch?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #baden #wissen #alltag #shorts"
+      "text_youtube": "Die Nerven steuern das, und Gefässe unter der Haut ziehen sich zusammen, deshalb passiert es nur an Fingern und Zehen. Bemerkst du das bei dir auch?\n\nStimme und Grafiken mit KI erstellt.\n\n#koerper #baden #wissen #alltag #shorts",
+      "group": "koerper"
     },
     {
       "id": "D056",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "11EIxIDYNdEvDM4b_fwN2Cg42KupFM7DQ",
       "drive_title": "V056_Abo_Falle.mp4",
@@ -718,7 +759,9 @@
       "title_tiktok": "💸 Das Gratis-Probeabo, das still weiterläuft? Die Falle dahinter",
       "title_youtube": "💸 30 Tage gratis, dann zahlst du still weiter? So erkennst du die Falle #shorts",
       "text_tiktok": "Viele Probeabos verlängern sich automatisch, und 10 Franken im Monat sind 120 Franken im Jahr. Hast du gerade ein Abo, das du vergessen hast?\n\n#wusstestdu #lernenmittiktok #geld #abos #sparen",
-      "text_youtube": "Probeabos verlängern sich oft automatisch, und ein einziges Abo kann so im Jahr viel Geld kosten. Wie viele Abos laufen bei dir gerade?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #abos #sparen #tipps #shorts"
+      "text_youtube": "Probeabos verlängern sich oft automatisch, und ein einziges Abo kann so im Jahr viel Geld kosten. Wie viele Abos laufen bei dir gerade?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #abos #sparen #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D057",
@@ -736,12 +779,13 @@
       "title_tiktok": "🥩 Graue Stellen im Tiefkühlfleisch? Das ist Gefrierbrand",
       "title_youtube": "🥩 Gefrierbrand im Tiefkühler: Schuld ist meist die Verpackung #shorts",
       "text_tiktok": "Gefrierbrand entsteht, wenn trockene Tiefkühlluft dem Essen an der Oberfläche Wasser entzieht, und ist nicht gefährlich. Wie verpackst du deine Sachen?\n\n#wusstestdu #lernenmittiktok #tiefkuehlen #vorrat #kueche",
-      "text_youtube": "Luftdicht verpacken, Beutel flachdrücken und die Luft herausstreichen hilft. Wie lange liegt bei dir das Essen schon im Tiefkühler?\n\nStimme und Grafiken mit KI erstellt.\n\n#tiefkuehlen #vorrat #kueche #tipps #shorts"
+      "text_youtube": "Luftdicht verpacken, Beutel flachdrücken und die Luft herausstreichen hilft. Wie lange liegt bei dir das Essen schon im Tiefkühler?\n\nStimme und Grafiken mit KI erstellt.\n\n#tiefkuehlen #vorrat #kueche #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D058",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1DyzPX3QgU04NfrqrJP70XMWUSriTW3Nv",
       "drive_title": "V058_Socken_verschwinden.mp4",
@@ -754,7 +798,9 @@
       "title_tiktok": "🧦 Wohin verschwinden deine Socken in der Waschmaschine?",
       "title_youtube": "🧦 Socken weg? Drei Verstecke in deiner Waschmaschine #shorts",
       "text_tiktok": "Kleine Socken rutschen in die Gummidichtung der Tür und bleiben dort liegen, das ist eines der Verstecke. Hast du schon mal ein Wäschenetz benutzt?\n\n#wusstestdu #lernenmittiktok #waschtag #socken #haushalt",
-      "text_youtube": "In einem Wäschenetz mit Reissverschluss geht keine Socke mehr verloren. Wie viele einzelne Socken liegen bei dir rum?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #socken #haushalt #tipps #shorts"
+      "text_youtube": "In einem Wäschenetz mit Reissverschluss geht keine Socke mehr verloren. Wie viele einzelne Socken liegen bei dir rum?\n\nStimme und Grafiken mit KI erstellt.\n\n#waschtag #socken #haushalt #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D059",
@@ -772,12 +818,13 @@
       "title_tiktok": "🌞 Warum ist der Himmel blau, obwohl die Sonne weisses Licht schickt?",
       "title_youtube": "🌞 Warum ist der Himmel blau? Die Antwort steckt im Licht #shorts",
       "text_tiktok": "Blaues Licht wird von Luftteilchen viel stärker gestreut als rotes und kommt deshalb von überall am Himmel. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #physik #himmel #sonne",
-      "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts"
+      "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts",
+      "group": "physik-test"
     },
     {
       "id": "D060",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1A7Ldn-eR8NK2MGItDTNAdzlIof5qvoT_",
       "drive_title": "V060_Zinseszins.mp4",
@@ -790,12 +837,14 @@
       "title_tiktok": "💰 Zinseszins erklärt: Warum wächst Geld manchmal immer schneller?",
       "title_youtube": "💰 Zinseszins einfach erklärt: Der Schneeball-Effekt beim Geld #shorts",
       "text_tiktok": "Zinsen auf die Zinsen vom letzten Jahr lassen den Schneeball wachsen, und bei Schulden wächst er genauso. Hast du schon mal daran gedacht?\n\n#wusstestdu #lernenmittiktok #geld #zinsen #sparen",
-      "text_youtube": "Aus 1000 Franken mit 5 Prozent werden nach 10 Jahren rund 1630 Franken, ohne dass du etwas nachzahlst. Wie lange würdest du dein Geld anlegen?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #zinsen #sparen #finanzen #shorts"
+      "text_youtube": "Aus 1000 Franken mit 5 Prozent werden nach 10 Jahren rund 1630 Franken, ohne dass du etwas nachzahlst. Wie lange würdest du dein Geld anlegen?\n\nStimme und Grafiken mit KI erstellt.\n\n#geld #zinsen #sparen #finanzen #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D061",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1Mrsk7cKF70Ib7R1YsWD1f0eVqrlFoOkS",
       "drive_title": "V061_Fenster_streifenfrei.mp4",
@@ -808,7 +857,9 @@
       "title_tiktok": "🧽 Warum bekommst du beim Fensterputzen immer Streifen?",
       "title_youtube": "🧽 Fenster streifenfrei putzen: Die Sonne ist schuld #shorts",
       "text_tiktok": "In der Sonne trocknet das Putzwasser zu schnell und hinterlässt Streifen, deshalb putzt du besser an einem bewölkten Tag. Putzt du deine Fenster bei Sonne?\n\n#wusstestdu #lernenmittiktok #putzen #fenster #haushalt",
-      "text_youtube": "Nach jeder Bahn den Abzieher mit einem Tuch trocken wischen, sonst zieht man das Schmutzwasser wieder mit. Wie putzt du deine Fenster?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #fenster #haushalt #tipps #shorts"
+      "text_youtube": "Nach jeder Bahn den Abzieher mit einem Tuch trocken wischen, sonst zieht man das Schmutzwasser wieder mit. Wie putzt du deine Fenster?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #fenster #haushalt #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D062",
@@ -826,7 +877,8 @@
       "title_tiktok": "👕 Kalt oder warm? Dieser Fleck-Trick entscheidet über dein Shirt",
       "title_youtube": "👕 Blut, Ei oder Fett: Welches Wasser hilft bei Flecken? #shorts",
       "text_tiktok": "Blut, Ei und Milch behandelst du mit kaltem Wasser, Fett dagegen mit warmem Wasser und etwas Spülmittel. Welcher Fleck nervt dich am meisten?\n\n#wusstestdu #lernenmittiktok #flecken #waschtag #haushalt",
-      "text_youtube": "Eiweiss gerinnt bei Hitze, deshalb tupfst du solche Flecken mit kaltem Wasser, und ein frischer Fleck geht fast immer raus. Welcher Fleck hat dich schon mal verzweifeln lassen?\n\nStimme und Grafiken mit KI erstellt.\n\n#flecken #waschtag #haushalt #tipps #shorts"
+      "text_youtube": "Eiweiss gerinnt bei Hitze, deshalb tupfst du solche Flecken mit kaltem Wasser, und ein frischer Fleck geht fast immer raus. Welcher Fleck hat dich schon mal verzweifeln lassen?\n\nStimme und Grafiken mit KI erstellt.\n\n#flecken #waschtag #haushalt #tipps #shorts",
+      "group": "mythos"
     },
     {
       "id": "D063",
@@ -844,7 +896,8 @@
       "title_tiktok": "🔥 Auf der Venus ist ein Tag länger als ein Jahr. Wie kann das sein?",
       "title_youtube": "🔥 Ein Venus-Tag dauert länger als das ganze Venus-Jahr #shorts",
       "text_tiktok": "Die Venus braucht rund 243 Erdtage für eine Drehung um sich selbst und nur etwa 225 Tage für eine Runde um die Sonne. Wusstest du das?\n\n#wusstestdu #lernenmittiktok #weltraum #venus #astronomie",
-      "text_youtube": "Die Venus dreht sich sogar rückwärts, und ihre Atmosphäre aus Kohlendioxid hält die Hitze fest. Wusstest du, dass es dort über 460 Grad heiss ist?\n\nStimme und Grafiken mit KI erstellt.\n\n#weltraum #venus #astronomie #wissen #shorts"
+      "text_youtube": "Die Venus dreht sich sogar rückwärts, und ihre Atmosphäre aus Kohlendioxid hält die Hitze fest. Wusstest du, dass es dort über 460 Grad heiss ist?\n\nStimme und Grafiken mit KI erstellt.\n\n#weltraum #venus #astronomie #wissen #shorts",
+      "group": "physik-test"
     },
     {
       "id": "D064",
@@ -862,12 +915,13 @@
       "title_tiktok": "😱 Du wachst auf und kannst dich nicht bewegen? Das ist Schlafparalyse",
       "title_youtube": "😱 Nachts wach und gelähmt? Was hinter Schlafparalyse steckt #shorts",
       "text_tiktok": "Dein Gehirn schaltet beim Träumen die meisten Muskeln ab, und manchmal bleibt diese Abschaltung noch aktiv, wenn du schon wach bist. Hattest du das schon mal?\n\n#wusstestdu #lernenmittiktok #schlaf #traeume #koerper",
-      "text_youtube": "Die meisten Fälle sind harmlos und hängen mit dem Traumschlaf zusammen, und viele alte Sagen gehen vermutlich darauf zurück. Kennst du dieses Gefühl?\n\nStimme und Grafiken mit KI erstellt.\n\n#schlaf #traeume #koerper #wissen #shorts"
+      "text_youtube": "Die meisten Fälle sind harmlos und hängen mit dem Traumschlaf zusammen, und viele alte Sagen gehen vermutlich darauf zurück. Kennst du dieses Gefühl?\n\nStimme und Grafiken mit KI erstellt.\n\n#schlaf #traeume #koerper #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D065",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1IXtjl3Tc30ewS34ErmWTeHHDkpolbvOx",
       "drive_title": "V065_Backofen_Natron.mp4",
@@ -880,7 +934,9 @@
       "title_tiktok": "🧼 Dein Backofen sieht innen aus wie ein Schlachtfeld? Dieses Hausmittel hilft",
       "title_youtube": "🧼 Backofen reinigen mit Natron: Einfach über Nacht einwirken lassen #shorts",
       "text_tiktok": "Natron zu einer streichfähigen Paste anrühren, auf die Krusten streichen und über Nacht einwirken lassen, die Heizstäbe lässt du aus. Wie oft putzt du deinen Ofen?\n\n#wusstestdu #lernenmittiktok #putzen #backofen #hausmittel",
-      "text_youtube": "Die Natron-Paste weicht eingebrannte Krusten auf, und am nächsten Tag wischst du sie mit einem feuchten Schwamm weg. Wie oft reinigst du deinen Backofen?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #backofen #hausmittel #tipps #shorts"
+      "text_youtube": "Die Natron-Paste weicht eingebrannte Krusten auf, und am nächsten Tag wischst du sie mit einem feuchten Schwamm weg. Wie oft reinigst du deinen Backofen?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #backofen #hausmittel #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D067",
@@ -898,7 +954,8 @@
       "title_tiktok": "🌙 Der Mond haut ab! Er entfernt sich jedes Jahr ein Stück von uns",
       "title_youtube": "🌙 Wie schnell entfernt sich der Mond jedes Jahr von der Erde? #shorts",
       "text_tiktok": "Forscher haben mit Lasern gemessen, dass sich der Mond jedes Jahr rund 3,8 cm von uns entfernt. Wusstest du das?\n\n#wusstestdu #lernenmittiktok #mond #weltraum #astronomie",
-      "text_youtube": "Schuld sind Ebbe und Flut, die die Erde bremsen und den Mond gleichzeitig nach aussen schubsen. Wusstest du das schon?\n\nStimme und Grafiken mit KI erstellt.\n\n#mond #weltraum #astronomie #wissen #shorts"
+      "text_youtube": "Schuld sind Ebbe und Flut, die die Erde bremsen und den Mond gleichzeitig nach aussen schubsen. Wusstest du das schon?\n\nStimme und Grafiken mit KI erstellt.\n\n#mond #weltraum #astronomie #wissen #shorts",
+      "group": "mythos"
     },
     {
       "id": "D068",
@@ -916,7 +973,8 @@
       "title_tiktok": "🤨 Dein Toast schaut dich an? Dein Gehirn sieht überall Gesichter",
       "title_youtube": "🤨 Warum du in Steckdosen und Autos Gesichter siehst #shorts",
       "text_tiktok": "Dein Gehirn sucht ständig nach Gesichtern, und zwei Punkte mit einem Strich darunter reichen schon. Wo hast du zuletzt ein Gesicht gesehen, wo keins war?\n\n#wusstestdu #lernenmittiktok #gehirn #psychologie #wahrnehmung",
-      "text_youtube": "Für unsere Vorfahren war es sicherer, einmal zu oft ein Gesicht im Gebüsch zu sehen als einmal zu wenig. Wirkt deine Kaffeemaschine für dich auch schon mal beleidigt?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #psychologie #wahrnehmung #wissen #shorts"
+      "text_youtube": "Für unsere Vorfahren war es sicherer, einmal zu oft ein Gesicht im Gebüsch zu sehen als einmal zu wenig. Wirkt deine Kaffeemaschine für dich auch schon mal beleidigt?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #psychologie #wahrnehmung #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D070",
@@ -934,7 +992,8 @@
       "title_tiktok": "🥘 Glänzende oder matte Seite nach innen? Die Antwort ist langweilig",
       "title_youtube": "🥘 Alufolie: Glänzende oder matte Seite nach innen? Der Unterschied ist klein #shorts",
       "text_tiktok": "Der Unterschied entsteht beim Walzen in der Fabrik und ist für deine Küche praktisch egal. Wusstest du, dass Saures und Salziges nicht in Alufolie gehört?\n\n#wusstestdu #lernenmittiktok #kueche #alufolie #tipps",
-      "text_youtube": "Saures und Salziges sollten nicht in Alufolie, weil sich Aluminium lösen und ins Essen übergehen kann. Womit wickelst du deine Reste ein?\n\nStimme und Grafiken mit KI erstellt.\n\n#kueche #alufolie #tipps #haushalt #shorts"
+      "text_youtube": "Saures und Salziges sollten nicht in Alufolie, weil sich Aluminium lösen und ins Essen übergehen kann. Womit wickelst du deine Reste ein?\n\nStimme und Grafiken mit KI erstellt.\n\n#kueche #alufolie #tipps #haushalt #shorts",
+      "group": "mythos"
     },
     {
       "id": "D071",
@@ -952,7 +1011,8 @@
       "title_tiktok": "💧 Wie schwer ist eine Wolke? Hunderte Tonnen, und sie fällt trotzdem nicht",
       "title_youtube": "💧 Wolken wiegen Tonnen, trotzdem fallen sie nicht runter? #shorts",
       "text_tiktok": "Das Wasser verteilt sich auf Milliarden winziger Tröpfchen, die so langsam fallen, dass warme Luft sie trägt. Wusstest du das?\n\n#wusstestdu #lernenmittiktok #wetter #wolken #natur",
-      "text_youtube": "Erst wenn viele Tröpfchen zusammenstossen und grosse Tropfen bilden, werden sie zu schwer und es regnet. Was denkst du, wie viel eine Wolke wiegt?\n\nStimme und Grafiken mit KI erstellt.\n\n#wetter #wolken #natur #wissen #shorts"
+      "text_youtube": "Erst wenn viele Tröpfchen zusammenstossen und grosse Tropfen bilden, werden sie zu schwer und es regnet. Was denkst du, wie viel eine Wolke wiegt?\n\nStimme und Grafiken mit KI erstellt.\n\n#wetter #wolken #natur #wissen #shorts",
+      "group": "physik-test"
     },
     {
       "id": "D072",
@@ -970,7 +1030,8 @@
       "title_tiktok": "🤔 Du hast alles schon mal erlebt? Was hinter Déjà-vu steckt",
       "title_youtube": "🤔 Déjà-vu: Kann es die Zukunft vorhersagen? Die Antwort ist nein #shorts",
       "text_tiktok": "Ganz geklärt ist das Gefühl nicht, es gibt aber verschiedene Ideen, zum Beispiel einen kleinen Wackler im Gehirn. Hattest du schon mal ein Déjà-vu?\n\n#wusstestdu #lernenmittiktok #gehirn #dejavu #psychologie",
-      "text_youtube": "Müdigkeit und Stress scheinen Déjà-vus zu begünstigen, aber vorhersagen kann es die Zukunft nicht. Hattest du schon mal eines, das dich verwirrt hat?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #dejavu #psychologie #wissen #shorts"
+      "text_youtube": "Müdigkeit und Stress scheinen Déjà-vus zu begünstigen, aber vorhersagen kann es die Zukunft nicht. Hattest du schon mal eines, das dich verwirrt hat?\n\nStimme und Grafiken mit KI erstellt.\n\n#gehirn #dejavu #psychologie #wissen #shorts",
+      "group": "koerper"
     },
     {
       "id": "D073",
@@ -988,7 +1049,8 @@
       "title_tiktok": "🚿 Schwarze Punkte in der Dusche? Diese 30 Sekunden helfen dagegen",
       "title_youtube": "🚿 Schimmel in der Dusche: Die 30-Sekunden-Gewohnheit #shorts",
       "text_tiktok": "Schimmel braucht vor allem Feuchtigkeit, deshalb trocknest du Wände und Glas nach dem Duschen mit dem Abzieher. Machst du das schon?\n\n#wusstestdu #lernenmittiktok #schimmel #bad #haushalt",
-      "text_youtube": "Nasse Handtücher und Badematten trocknest du am besten ausserhalb vom Bad, und die Fugen reinigst du regelmässig. Wann hast du zuletzt im Bad gelüftet?\n\nStimme und Grafiken mit KI erstellt.\n\n#schimmel #bad #haushalt #tipps #shorts"
+      "text_youtube": "Nasse Handtücher und Badematten trocknest du am besten ausserhalb vom Bad, und die Fugen reinigst du regelmässig. Wann hast du zuletzt im Bad gelüftet?\n\nStimme und Grafiken mit KI erstellt.\n\n#schimmel #bad #haushalt #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D074",
@@ -1006,7 +1068,8 @@
       "title_tiktok": "🧽 Dein Küchenschwamm stinkt? Er ist ein Hotel für Bakterien",
       "title_youtube": "🧽 Küchenschwamm riecht muffig? So bleibt er länger frisch #shorts",
       "text_tiktok": "Ein Schwamm ist warm, feucht und voller Essensreste, und in den Poren bleibt Wasser stehen. Wie oft wechselst du deinen Schwamm?\n\n#wusstestdu #lernenmittiktok #kueche #hygiene #haushalt",
-      "text_youtube": "Nach jedem Gebrauch gründlich ausspülen und so hinlegen, dass Luft drankommt, und einmal pro Woche wechseln. Hast du einen Spüllappen aus Stoff?\n\nStimme und Grafiken mit KI erstellt.\n\n#kueche #hygiene #haushalt #tipps #shorts"
+      "text_youtube": "Nach jedem Gebrauch gründlich ausspülen und so hinlegen, dass Luft drankommt, und einmal pro Woche wechseln. Hast du einen Spüllappen aus Stoff?\n\nStimme und Grafiken mit KI erstellt.\n\n#kueche #hygiene #haushalt #tipps #shorts",
+      "group": "alltag"
     },
     {
       "id": "D075",
@@ -1024,7 +1087,8 @@
       "title_tiktok": "🗼 Der Eiffelturm wächst im Sommer? Die Hitze ist schuld",
       "title_youtube": "🗼 Der Eiffelturm wird im Sommer bis zu rund 15 cm höher #shorts",
       "text_tiktok": "Eisen dehnt sich bei Hitze aus, und deshalb wird der Turm an heissen Sommertagen bis zu rund 15 cm höher. Wusstest du das?\n\n#wusstestdu #lernenmittiktok #physik #bauwerk #wissen",
-      "text_youtube": "Die Sonne heizt nur eine Seite auf, deshalb neigt sich die Spitze minimal von der Sonne weg, und das ist eingeplant. Hast du das gewusst?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #bauwerk #wissen #staedtetrip #shorts"
+      "text_youtube": "Die Sonne heizt nur eine Seite auf, deshalb neigt sich die Spitze minimal von der Sonne weg, und das ist eingeplant. Hast du das gewusst?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #bauwerk #wissen #staedtetrip #shorts",
+      "group": "mythos"
     },
     {
       "id": "D076",
@@ -1042,7 +1106,8 @@
       "title_tiktok": "⛵ Ein Schiff ohne Besatzung? Die Mary Celeste ist bis heute ein Rätsel",
       "title_youtube": "⛵ Mary Celeste 1872: Ein Schiff ganz ohne Menschen an Bord #shorts",
       "text_tiktok": "Im Dezember 1872 treibt die Mary Celeste leer im Atlantik, obwohl Vorräte für Monate an Bord sind. Was ist wohl passiert?\n\n#wusstestdu #lernenmittiktok #geschichte #raetsel #schiff",
-      "text_youtube": "Das Rettungsboot fehlte, und die zehn Menschen an Bord wurden nie gefunden. Was glaubst du, ist damals passiert?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #raetsel #schiff #gruselig #shorts"
+      "text_youtube": "Das Rettungsboot fehlte, und die zehn Menschen an Bord wurden nie gefunden. Was glaubst du, ist damals passiert?\n\nStimme und Grafiken mit KI erstellt.\n\n#geschichte #raetsel #schiff #gruselig #shorts",
+      "group": "mythos"
     },
     {
       "id": "D077",
@@ -1060,7 +1125,8 @@
       "title_tiktok": "🔌 Dein Fernseher verbraucht Strom, obwohl du ihn gar nicht brauchst?",
       "title_youtube": "🔌 Standby kostet dich Geld: Die einfache Lösung mit Steckerleiste #shorts",
       "text_tiktok": "Geräte im Standby warten nur darauf, dass du sie brauchst, und dabei läuft Strom, den du nicht nutzt. Hast du eine Steckerleiste mit Schalter?\n\n#wusstestdu #lernenmittiktok #strom #sparen #haushalt",
-      "text_youtube": "Eine Steckerleiste mit Schalter schaltet alles dahinter wirklich aus, und das spart über ein Jahr spürbar Geld. Wie viele Geräte laufen bei dir im Standby?\n\nStimme und Grafiken mit KI erstellt.\n\n#strom #sparen #haushalt #tipps #shorts"
+      "text_youtube": "Eine Steckerleiste mit Schalter schaltet alles dahinter wirklich aus, und das spart über ein Jahr spürbar Geld. Wie viele Geräte laufen bei dir im Standby?\n\nStimme und Grafiken mit KI erstellt.\n\n#strom #sparen #haushalt #tipps #shorts",
+      "group": "winter"
     },
     {
       "id": "D078",
@@ -1078,12 +1144,13 @@
       "title_tiktok": "🍵 Warum wird dein Wasserkocher kurz vor dem Kochen plötzlich leiser?",
       "title_youtube": "🍵 Wasserkocher wird kurz vor dem Kochen leiser? Das ist kein Defekt #shorts",
       "text_tiktok": "Dampfblasen am Boden fallen oben zusammen und machen das Rauschen, bis das ganze Wasser heiss ist. Hast du das schon mal gehört?\n\n#wusstestdu #lernenmittiktok #physik #tee #haushalt",
-      "text_youtube": "Sobald das Wasser überall heiss ist, fallen die Blasen nicht mehr zusammen und steigen bis zur Oberfläche. Hörst du beim Teekochen eher aufs Rauschen oder aufs Blubbern?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #tee #haushalt #wissen #shorts"
+      "text_youtube": "Sobald das Wasser überall heiss ist, fallen die Blasen nicht mehr zusammen und steigen bis zur Oberfläche. Hörst du beim Teekochen eher aufs Rauschen oder aufs Blubbern?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #tee #haushalt #wissen #shorts",
+      "group": "alltag"
     },
     {
       "id": "D079",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1MfPTbOPDlz5p-6dtbe3_dAvQYHEQ3Tk3",
       "drive_title": "V079_Schaltjahr.mp4",
@@ -1096,12 +1163,14 @@
       "title_tiktok": "📅 Warum gibt es alle vier Jahre einen 29. Februar?",
       "title_youtube": "📅 Der 29. Februar: Warum die Erde einen Extratag braucht #shorts",
       "text_tiktok": "Die Erde braucht für eine Runde um die Sonne fast sechs Stunden länger als 365 Tage, und das summiert sich. Was wäre ohne Schaltjahre passiert?\n\n#wusstestdu #lernenmittiktok #kalender #weltraum #wissen",
-      "text_youtube": "Ohne Schaltjahre würden die Jahreszeiten langsam wandern, bis Weihnachten nach ein paar Jahrhunderten im Hochsommer liegt. Kennst du jemanden mit Geburtstag am 29. Februar?\n\nStimme und Grafiken mit KI erstellt.\n\n#kalender #weltraum #wissen #alltag #shorts"
+      "text_youtube": "Ohne Schaltjahre würden die Jahreszeiten langsam wandern, bis Weihnachten nach ein paar Jahrhunderten im Hochsommer liegt. Kennst du jemanden mit Geburtstag am 29. Februar?\n\nStimme und Grafiken mit KI erstellt.\n\n#kalender #weltraum #wissen #alltag #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D081",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1V3ROZGFStuu3CUdCjAdx3ces5keG4IFU",
       "drive_title": "V081_Abfluss_frei.mp4",
@@ -1114,12 +1183,14 @@
       "title_tiktok": "🔧 Lavabo läuft nur noch langsam ab? Probier diese Schritte vor der Chemie",
       "title_youtube": "🔧 Abfluss verstopft? Heisses Wasser, Saugglocke und Spirale #shorts",
       "text_tiktok": "Haare, Seifenreste und Fett bilden zusammen einen Pfropfen, und oft löst schon ein Liter heisses Wasser das Fett. Hast du schon mal eine Saugglocke benutzt?\n\n#wusstestdu #lernenmittiktok #haushalt #abfluss #tipps",
-      "text_youtube": "Erst heisses Wasser nachgiessen, dann mit der Saugglocke kräftig pumpen und zuletzt eine Spirale aus Kunststoff nutzen. Wie löst du bei dir verstopfte Abflüsse?\n\nStimme und Grafiken mit KI erstellt.\n\n#haushalt #abfluss #tipps #notfall #shorts"
+      "text_youtube": "Erst heisses Wasser nachgiessen, dann mit der Saugglocke kräftig pumpen und zuletzt eine Spirale aus Kunststoff nutzen. Wie löst du bei dir verstopfte Abflüsse?\n\nStimme und Grafiken mit KI erstellt.\n\n#haushalt #abfluss #tipps #notfall #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D082",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "1fTPGKJ3uNU6EPpDdrRCIDmQDRk4QPOpC",
       "drive_title": "V082_Mikrowelle_reinigen.mp4",
@@ -1132,12 +1203,14 @@
       "title_tiktok": "🍅 Mikrowelle voller Tomatensauce? Du musst nicht schrubben",
       "title_youtube": "🍅 Mikrowelle reinigen mit Dampf: Kein Schrubben nötig #shorts",
       "text_tiktok": "Eine Schale mit Wasser und Zitronenscheiben etwa 3 Minuten erhitzen, und der Dampf weicht alle Spritzer auf. Wie oft putzt du deine Mikrowelle?\n\n#wusstestdu #lernenmittiktok #putzen #kueche #haushalt",
-      "text_youtube": "Nach dem Dampf die heisse Schale vorsichtig herausnehmen, dann lassen sich die Wände einfach abwischen. Wann hast du deine Mikrowelle zuletzt gereinigt?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #kueche #haushalt #tipps #shorts"
+      "text_youtube": "Nach dem Dampf die heisse Schale vorsichtig herausnehmen, dann lassen sich die Wände einfach abwischen. Wann hast du deine Mikrowelle zuletzt gereinigt?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #kueche #haushalt #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D083",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "18u7p5Hwz0TNblCtQgE5TF3rvoqsMinxx",
       "drive_title": "V083_Staub.mp4",
@@ -1150,12 +1223,14 @@
       "title_tiktok": "🧹 Du hast gestern Staub gewischt und heute ist er wieder da?",
       "title_youtube": "🧹 Warum Staub immer wieder kommt: Fehler Nummer 1 ist das Trockenabstauben #shorts",
       "text_tiktok": "Ein grosser Teil des Hausstaubs stammt von Textilien, und trockenes Abstauben verteilt ihn nur neu im Raum. Wie staubst du ab?\n\n#wusstestdu #lernenmittiktok #putzen #staub #haushalt",
-      "text_youtube": "Ein leicht feuchtes Tuch bindet den Staub, und du arbeitest von oben nach unten, zuletzt den Boden. Machst du zuerst die Regale oder den Boden?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #staub #haushalt #tipps #shorts"
+      "text_youtube": "Ein leicht feuchtes Tuch bindet den Staub, und du arbeitest von oben nach unten, zuletzt den Boden. Machst du zuerst die Regale oder den Boden?\n\nStimme und Grafiken mit KI erstellt.\n\n#putzen #staub #haushalt #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "D084",
       "format": "wissen",
-      "status": "backup",
+      "status": "archived",
       "source": "drive",
       "drive_id": "16eR4QRvvmWuYEUMUzcoHQedgJ3xdtdsP",
       "drive_title": "V084_Sportkleider_Geruch.mp4",
@@ -1168,7 +1243,9 @@
       "title_tiktok": "🏃 Dein Sportshirt riecht nach dem Waschen noch nach Training?",
       "title_youtube": "🏃 Sportshirt riecht trotz Waschen? Vier Tipps gegen den Geruch #shorts",
       "text_tiktok": "Kunstfasern halten Schweiss und Hautfett besonders gut fest, und davon ernähren sich Bakterien. Drehst du dein Shirt vor dem Waschen auf links?\n\n#wusstestdu #lernenmittiktok #sport #waesche #haushalt",
-      "text_youtube": "Vier kurze Tipps helfen: nasses Shirt erst aufhängen, auf links waschen, keinen Weichspüler nehmen und die Trommel nicht vollstopfen. Welcher Tipp ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#sport #waesche #haushalt #tipps #shorts"
+      "text_youtube": "Vier kurze Tipps helfen: nasses Shirt erst aufhängen, auf links waschen, keinen Weichspüler nehmen und die Trommel nicht vollstopfen. Welcher Tipp ist dir neu?\n\nStimme und Grafiken mit KI erstellt.\n\n#sport #waesche #haushalt #tipps #shorts",
+      "group": "anleitung-geld",
+      "notes": "Archiviert 18.11.2026 (V-033, Inhaber: schwache aehnliche Videos), nicht geloescht."
     },
     {
       "id": "W002",
@@ -1193,7 +1270,8 @@
       "due": "2026-11-17T18:00:00+01:00",
       "notes": [
         "17.11.: von Hand eingeplant (Claude-Wochenlimit hatte die Planung blockiert)"
-      ]
+      ],
+      "group": "mythos"
     },
     {
       "id": "W003",
@@ -1215,7 +1293,8 @@
         "tiktok": "6afc18ab7974b480563a333a",
         "youtube": "6afc18ab99aa510fba488cf3"
       },
-      "due": "2026-11-18T10:00:00+01:00"
+      "due": "2026-11-18T10:00:00+01:00",
+      "group": "mythos"
     },
     {
       "id": "X002",
@@ -1240,7 +1319,8 @@
       "due": "2026-11-17T10:00:00+01:00",
       "notes": [
         "17.11.: von Hand eingeplant (Claude-Wochenlimit hatte die Planung blockiert)"
-      ]
+      ],
+      "group": "was-waere-wenn-test"
     },
     {
       "id": "X003",
@@ -1258,7 +1338,8 @@
       "text_tiktok": "Wofür nutzt du deine eine Stunde? 👇 #waswärewenn #gedankenexperiment #handy #fürdich",
       "text_youtube": "Eine Stunde Handy pro Tag – für alle. Was würde sich ändern, und wofür nutzt du deine Stunde? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #handy",
       "scenes": 6,
-      "buffer": {}
+      "buffer": {},
+      "group": "was-waere-wenn-test"
     },
     {
       "id": "L001",
