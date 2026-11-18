@@ -1,0 +1,46 @@
+name: hook-test
+
+# V-032 (Schritt 1): Nur ein TEST (0 EUR, ohne Claude). Rendert fuer 3 Vorrats-Videos ein Standbild mit und ohne Hook-Einblendung.
+# Nichts wird hochgeladen oder veroeffentlicht. Ergebnis: Branch media -> tests/hook/*.jpg
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Video-IDs, kommagetrennt"
+        required: false
+        default: "D016,D017,D082"
+
+permissions:
+  contents: write
+
+jobs:
+  hook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: |
+            data
+            tests
+          fetch-depth: 1
+      - name: Git-Benutzer
+        run: |
+          git -C media config user.name "hook-test"
+          git -C media config user.email "hook-test@users.noreply.github.com"
+      - name: ffmpeg und Schriften
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Testbilder bauen
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          IDS: ${{ inputs.ids }}
+        run: python3 -m yt_tk.hook --test "$IDS"
+      - name: Ergebnis sichern
+        run: |
+          cd media
+          git add --sparse -A
+          git commit -qm "Hook-Test: Standbilder (V-032)" || echo "nichts zu committen"
+          git push origin HEAD:media
