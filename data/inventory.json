@@ -1303,7 +1303,7 @@
     {
       "id": "L002",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-18T01:00:37.765898+01:00",
       "source": "zusammenschnitt",
       "topic": "Mythen und Rätsel",
@@ -1329,7 +1329,10 @@
         "D075",
         "D067"
       ],
-      "buffer": {}
+      "buffer": {
+        "youtube": "metricool:432537490"
+      },
+      "due": "2026-11-20T18:00:00+01:00"
     },
     {
       "id": "L003",
