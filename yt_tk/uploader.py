@@ -46,7 +46,7 @@ def run(day: str, live: bool) -> int:
     if config.paused():
         log("PAUSE/STOP vorhanden - nichts zu tun.")
         return 0
-    plan = inventory.plan(day)
+    plan = inventory.pinned_posts(day) + inventory.plan(day)
     if not plan:
         log("Plan leer (nichts faellig oder kein Vorrat).")
         return 0
@@ -85,7 +85,14 @@ def run(day: str, live: bool) -> int:
                 log(f"FEHLER {e['id']} {pf}: {ex}")
                 inventory.fail(e["id"], f"{pf}: {ex}"[:300])
         if live and ids and set(ids) == set(e["platforms"]):
-            inventory.mark(e["id"], ids.get("tiktok", ""), ids.get("youtube", ""), e["dueAt"])
+            status_ = "scheduled"
+            if e.get("pin"):  # weitere Pins dieses Videos offen? Dann bleibt es "pinned"
+                v = next(x for x in inventory._load("inventory.json", {"videos": []})["videos"] if x["id"] == e["id"])
+                allp = [p for p in inventory._load("pins.json", {"pins": []})["pins"] if p["id"] == e["id"]]
+                done = {**v.get("buffer", {}), **{pf: i for pf, i in ids.items()}}
+                if any(not done.get(p["platform"]) for p in allp):
+                    status_ = "pinned"
+            inventory.mark(e["id"], ids.get("tiktok", ""), ids.get("youtube", ""), e["dueAt"], status_)
     if live:
         log(inventory.sync(f"Uploader {day}"))
     return 1 if errors else 0

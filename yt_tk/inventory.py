@@ -192,6 +192,46 @@ def register(vid: str) -> dict:
     return entry
 
 
+def pins_for(day: str) -> list:
+    """Festgesetzte Posts (data/pins.json): {"pins": [{"id": "T001", "day": "2026-11-19", "time": "10:00", "platform": "tiktok"}]}.
+    Ein Pin belegt den ganzen Sendeplatz (alle Plattformen), die Planung setzt dort kein anderes Video ein."""
+    return [p for p in _load("pins.json", {"pins": []}).get("pins", []) if p.get("day") == day]
+
+
+def _entry(v: dict, fmt: str, due: datetime, platforms: list) -> dict:
+    f = config.FORMATS[fmt]
+    entry = {"id": v["id"], "format": fmt, "dueAt": due.isoformat(), "video_url": v["video_url"],
+             "platforms": platforms, "long_video": f.get("orientation") == "landscape"}
+    if "tiktok" in platforms:
+        entry["tiktok"] = {"channelId": config.BUFFER["tiktok_channel_id"], "text": v["text_tiktok"],
+                           "metadata": {"tiktok": {"title": v["title_tiktok"], "isAiGenerated": True}}}
+    if "youtube" in platforms:
+        entry["youtube"] = {"channelId": config.BUFFER["youtube_channel_id"], "text": v["text_youtube"],
+                            "metadata": {"youtube": {"title": v["title_youtube"], "categoryId": f["youtube_category"],
+                                                     "madeForKids": False, "privacy": "public",
+                                                     "isAiGenerated": True, "notifySubscribers": True}}}
+    return entry
+
+
+def pinned_posts(day: str) -> list:
+    data = _load("inventory.json", {"videos": []})
+    byid = {v["id"]: v for v in data["videos"]}
+    out = []
+    for p in pins_for(day):
+        v = byid.get(p["id"])
+        if not v or not v.get("video_url") or v["status"] in ("failed", "deleted", "archived"):
+            continue
+        hh, mm = map(int, p["time"].split(":"))
+        d = date.fromisoformat(day)
+        due = datetime(d.year, d.month, d.day, hh, mm, tzinfo=TZ)
+        if due <= now() + timedelta(minutes=20):
+            continue
+        e = _entry(v, v["format"], due, [p["platform"]])
+        e["pin"] = True
+        out.append(e)
+    return out
+
+
 def _prio_key(which: str = "order"):
     """V-033: Reihenfolge der Vorrats-Videos aus data/priority.json. "order" gilt fuer den 10:00-Slot (Test-Gruppe, Winterthemen),
     "prime" fuer den 16:00-Slot (beste Zeit, staerkste Gruppen). Nicht Gelistete folgen nach ID."""
@@ -226,6 +266,7 @@ def plan(day: str) -> list:
     sch = schedule()
     posts = []
     prio, prime = _prio_key("order"), _prio_key("prime")
+    pin_times = {p["time"] for p in pins_for(day)}  # durch Pins belegte Sendeplaetze
     done_groups = set()
     used = set()  # Videos, die dieser Plan schon vergeben hat (nie zweimal am selben Tag)
     for fmt, f in config.FORMATS.items():
@@ -234,6 +275,9 @@ def plan(day: str) -> list:
             continue
         if not any(config.runs_on(g, d) for g in group):
             continue  # Format heute nicht dran (Wochentag)
+        if sch[fmt] in pin_times:
+            done_groups.add(group)
+            continue  # Sendeplatz ist durch einen Pin belegt
         slot_prefix = f"{day}T{sch[fmt]}"
         if any((v["format"] in group and (v.get("due") or "").startswith(day)) or (v.get("due") or "").startswith(slot_prefix)
                for v in data["videos"]):
