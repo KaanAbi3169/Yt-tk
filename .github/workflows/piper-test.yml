@@ -1,0 +1,59 @@
+name: piper-test
+
+# V-030: Nur ein TEST (0 EUR, ohne Claude): liest die Lizenzseiten der deutschen Piper-Stimmen und erzeugt je Stimme ein Hoerbeispiel.
+# Nichts wird veroeffentlicht. Ergebnis: Branch media -> tests/piper/ (Lizenzen.md und .mp3).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  piper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          fetch-depth: 1
+          sparse-checkout: tests
+      - name: Git-Benutzer
+        run: |
+          git config user.name "piper-test"
+          git config user.email "piper-test@users.noreply.github.com"
+      - name: Werkzeuge
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q piper-tts
+      - name: Lizenzen lesen und Hoerbeispiele
+        run: |
+          mkdir -p tests/piper && cd tests/piper
+          base=https://huggingface.co/rhasspy/piper-voices/resolve/main/de/de_DE
+          {
+            echo "# Piper: deutsche Stimmen, Lizenzen (gelesen $(date -u +%F))"
+            echo
+          } > Lizenzen.md
+          for v in thorsten/medium thorsten/high thorsten_emotional/medium kerstin/low karlsson/low eva_k/x_low pavoque/low ramona/low mls/medium; do
+            name=$(echo "$v" | tr '/' '-')
+            if curl -fsSL "$base/$v/MODEL_CARD" -o card.txt; then
+              { echo "## $v"; echo '```'; head -c 1500 card.txt; echo; echo '```'; } >> Lizenzen.md
+            else
+              echo "## $v: keine Modellkarte (nicht vorhanden)" >> Lizenzen.md
+            fi
+          done
+          for v in de_DE-thorsten-medium de_DE-kerstin-low; do
+            /tmp/venv/bin/python -m piper.download_voices "$v" --download-dir . >/dev/null 2>&1 || true
+            if [ -f "$v.onnx" ]; then
+              echo "Hallo! Heute zeige ich dir zehn Haushaltstricks, die wirklich funktionieren. Kennst du alle?" | /tmp/venv/bin/python -m piper -m "$v.onnx" -f "$v.wav" >/dev/null 2>&1 || true
+              [ -f "$v.wav" ] && ffmpeg -v error -y -i "$v.wav" -b:a 96k "$v.mp3"
+            fi
+            rm -f "$v.onnx" "$v.onnx.json" "$v.wav"
+          done
+          rm -f card.txt
+          ls -la
+      - name: Ergebnis sichern
+        run: |
+          git add --sparse -A
+          git commit -qm "Piper-Test: Lizenzen und Hoerbeispiele (V-030)" || echo "nichts zu committen"
+          git push origin HEAD:media
