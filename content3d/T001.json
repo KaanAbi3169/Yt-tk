@@ -1,0 +1,11 @@
+{
+  "id": "T001", "scene": "brain", "format": "wissen", "group": "3d-mythos",
+  "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns", "hook_type": "Mythos-Frage",
+  "title_tiktok": "Nutzt du wirklich nur 10 % deines Gehirns? 🧠",
+  "title_youtube": "Du nutzt nur 10 Prozent deines Gehirns? Der Mythos im Check 🧠 #shorts",
+  "text_tiktok": "Hast du den Mythos auch geglaubt? Ja oder nein 👇 #mythos #gehirn #wusstestdu #psychologie #lernenmittiktok",
+  "text_youtube": "Hirnscans zeigen: Fast alle Bereiche des Gehirns sind über den Tag aktiv. Hast du den Mythos auch geglaubt? 👇\n\nQuellen: Scientific American, Wikipedia (Ten percent of the brain myth). Stimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #gehirn #wusstestdu #psychologie",
+  "highlight": "\\d|prozent|mythos|zehn|zwanzig",
+  "sources": ["https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/", "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"],
+  "fix": {}
+}

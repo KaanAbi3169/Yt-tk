@@ -9,3 +9,6 @@ output/
 *.mp3
 *.wav
 !assets/music/*.mp3
+render3d/node_modules/
+render3d/words.json
+render3d/package-lock.json
