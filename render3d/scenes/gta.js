@@ -21,13 +21,13 @@ export default function(S){
   for(const x of[-0.8,0,0.8]) add(new THREE.CylinderGeometry(0.07,0.07,0.5,8),mat(0x333344),x,1.65,0.2,cal).rotation.z=Math.PI/2;
   const fig=makeFigure({});fig.group.position.set(-1.0,0,1.6);fig.group.rotation.y=0.45;fig.group.scale.setScalar(0.7);
   // Konsole (allgemein), PC mit Fragezeichen, Geruechte-Blasen
-  const con=new THREE.Group();con.position.set(0.95,3.1,1.5);con.scale.setScalar(0.55);scene.add(con);
+  const con=new THREE.Group();con.position.set(0.95,3.65,1.5);con.scale.setScalar(0.55);scene.add(con);
   add(new THREE.BoxGeometry(0.5,1.6,1.3),mat(0xf3f3f7),0,0,0,con);add(new THREE.BoxGeometry(0.52,1.5,0.18),mat(0x15151f),0,0,0.2,con);
-  const pc=new THREE.Group();pc.position.set(-0.95,2.9,1.5);pc.scale.setScalar(0.6);scene.add(pc);
+  const pc=new THREE.Group();pc.position.set(-0.95,3.45,1.5);pc.scale.setScalar(0.6);scene.add(pc);
   add(new THREE.BoxGeometry(1.9,1.2,0.12),mat(0x222233),0,0.9,0,pc);add(new THREE.BoxGeometry(0.15,0.6,0.15),mat(0x222233),0,0.25,0,pc);add(new THREE.BoxGeometry(0.9,0.06,0.5),mat(0x222233),0,-0.02,0,pc);
   const q=textPlane('?',{w:1.2,h:1.0,color:'#ffd24a',size:600});q.position.set(0,0.9,0.1);pc.add(q);
-  const noDate=textPlane('Kein Termin',{w:1.25,h:0.42,color:'#fff',bg:'#e0262b',size:130,radius:20});noDate.position.set(-0.8,2.55,1.8);scene.add(noDate);
-  const konLbl=textPlane('Konsolen',{w:1.3,h:0.42,color:'#12183a',bg:'#ffd24a',size:120,radius:20});konLbl.position.set(0.8,2.55,1.8);scene.add(konLbl);
+  const noDate=textPlane('Kein Termin',{w:1.25,h:0.42,color:'#fff',bg:'#e0262b',size:130,radius:20});noDate.position.set(-0.8,2.98,1.8);scene.add(noDate);
+  const konLbl=textPlane('Konsolen',{w:1.3,h:0.42,color:'#12183a',bg:'#ffd24a',size:120,radius:20});konLbl.position.set(0.8,2.98,1.8);scene.add(konLbl);
   const bubbles=[0,1,2].map(i=>{const b=textPlane('…',{w:1.3,h:0.8,color:'#222',bg:'#dcdce6',size:300,radius:60});b.position.set(-1+i*1.0,6.0,1.2);scene.add(b);return b});
   const stampG=textPlane('GERÜCHT',{w:3.0,h:0.9,color:'#fff',bg:'#7a1d8f',size:190,radius:40});stampG.position.set(0,5.2,1.6);stampG.rotation.z=0.12;scene.add(stampG);
   const tHeute=T(/^heute$/,0,0.2), tBest=T(/bestätigt|bestatigt/,0,D*0.1), tTake=T(/take/,0,D*0.2), tKons=T(/konsolen/,0,D*0.4), tPC=T(/^pc$/,0,D*0.5),
