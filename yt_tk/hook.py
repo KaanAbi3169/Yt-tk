@@ -5,8 +5,10 @@
 Die Hook-Frage kommt aus dem vorhandenen TikTok-Titel: erster Satz bis zum Fragezeichen, ohne Emoji, in hoechstens
 zwei Zeilen. Sie wird in den ersten 2,5 Sekunden im oberen Drittel eingeblendet. Das Original bleibt unveraendert.
 """
+import math
 import re
 import subprocess
+import textwrap
 import sys
 import tempfile
 from pathlib import Path
@@ -19,20 +21,14 @@ EMOJI = re.compile("[\U0001F000-\U0001FFFF☀-➿️‍]")
 
 def hook_text(title: str) -> str:
     t = EMOJI.sub("", title).strip()
-    first = re.split(r"(?<=[?!])\s", t, maxsplit=1)[0].strip()
+    first = re.split(r"(?<=[?!])\s|\s[–-]\s", t, maxsplit=1)[0].strip()
     return first if 2 <= len(first.split()) <= 9 else " ".join(first.split()[:7])
 
 
-def wrap(text: str, width: int = 17) -> list:
-    lines, cur = [], ""
-    for w in text.split():
-        if cur and len(cur) + 1 + len(w) > width:
-            lines.append(cur)
-            cur = w
-        else:
-            cur = (cur + " " + w).strip()
-    lines.append(cur)
-    return lines[:3]
+def wrap(text: str, width: int = 22) -> list:
+    """Gleichmaessig auf 1 bis 3 Zeilen verteilen (kein Wort abschneiden)."""
+    n = min(3, max(1, math.ceil(len(text) / width)))
+    return textwrap.wrap(text, width=math.ceil(len(text) / n) + 2) or [text]
 
 
 def render(src: Path, dst: Path, text: str, tmp: Path) -> None:
@@ -41,8 +37,8 @@ def render(src: Path, dst: Path, text: str, tmp: Path) -> None:
     for k, line in enumerate(lines):
         f = tmp / f"hook{k}.txt"
         f.write_text(line, encoding="utf-8")
-        filters.append(f"drawtext=fontfile={compile_long.font()}:textfile={f}:x=(w-text_w)/2:y=h*0.20+{k}*h*0.058:"
-                       f"fontsize=h/24:fontcolor=white:box=1:boxcolor=black@0.62:boxborderw=14:enable='lt(t,{SHOW_S})'")
+        filters.append(f"drawtext=fontfile={compile_long.font()}:textfile={f}:x=(w-text_w)/2:y=h*0.20+{k}*h*0.052:"
+                       f"fontsize=h/28:fontcolor=white:box=1:boxcolor=black@0.62:boxborderw=14:enable='lt(t,{SHOW_S})'")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-vf", ",".join(filters), "-c:v", "libx264", "-crf", "20",
                     "-preset", "veryfast", "-pix_fmt", "yuv420p", "-c:a", "copy", str(dst)], check=True)
 
