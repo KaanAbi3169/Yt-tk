@@ -219,6 +219,11 @@ def make_one(vid: str, dry: bool, local: str, rebuild: bool = False) -> bool:
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(keep.read_bytes())
     keep.unlink(missing_ok=True)
+    try:  # Vorschaubild (V-027), ein Fehler hier stoppt den Bau nicht
+        from . import thumbnail
+        thumbnail.make(cfg, config.DATA / "thumbs" / f"{vid}.jpg", len(names))
+    except Exception as ex:
+        log(f"Vorschaubild fuer {vid} nicht erstellt: {ex}")
     parts = [p for p, _ in cfg["parts"]][:len(names)] + [p for p, _ in cfg["extra"]][:max(0, len(names) - len(cfg["parts"]))]
     inv["videos"].append({
         "id": vid, "format": "lang", "status": "ready", "created": inventory.now().isoformat(), "source": "zusammenschnitt",
