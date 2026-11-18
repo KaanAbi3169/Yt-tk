@@ -1298,7 +1298,8 @@
           "reason": "youtube: createPost InvalidInputError: Invalid post: Video must be no longer than 3 minutes for YouTube Shorts., Video must be vertical (portrait orientation) for YouTube Shorts."
         }
       ],
-      "due": "2026-11-18T18:00:00+01:00"
+      "due": "2026-11-18T18:00:00+01:00",
+      "public_url": "https://www.youtube.com/watch?v=sIG9byeJjCc"
     },
     {
       "id": "L002",
