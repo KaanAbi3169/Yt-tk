@@ -34,6 +34,8 @@ def find_existing(posts: list, entry: dict, platform: str):
     drive_id = entry["video_url"].split("id=")[-1].split("&")[0] if is_drive else None
     head = (entry[platform]["text"] or "")[:60]
     for p in posts:
+        if p.get("status") == "draft":
+            continue  # Entwuerfe (z. B. Selbsttest) werden nie veroeffentlicht und blockieren nichts
         srcs = " ".join((a.get("source") or "") for a in (p.get("assets") or []))
         if (vid_file and vid_file in srcs) or (drive_id and drive_id in srcs) or (head and (p.get("text") or "").startswith(head)):
             return p
