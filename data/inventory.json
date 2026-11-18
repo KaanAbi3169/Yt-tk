@@ -1257,37 +1257,6 @@
       "buffer": {}
     },
     {
-      "id": "L006",
-      "format": "lang",
-      "status": "ready",
-      "created": "2026-11-18T00:41:28.914993+01:00",
-      "source": "zusammenschnitt",
-      "topic": "Natur und Physik",
-      "hook_type": "Liste + Frage",
-      "series": null,
-      "episode": null,
-      "duration": 622.3,
-      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L006.mp4",
-      "title_tiktok": "",
-      "title_youtube": "10 Rätsel der Natur und Physik: Weisst du die Antworten?",
-      "text_tiktok": "",
-      "text_youtube": "10 Rätsel aus Natur und Physik: vom blauen Himmel bis zum Glühwürmchen. Mit den Kapiteln springst du direkt zu deinem Thema.\n\nKAPITEL\n0:00 1. Wie Salz Eis schmelzen lässt\n1:05 2. Warum der Himmel blau ist\n2:06 3. Ein Tag auf der Venus\n3:08 4. Wie schwer ist eine Wolke?\n4:10 5. Warum Eisbären schwarze Haut haben\n5:11 6. Wie Glühwürmchen leuchten\n6:13 7. Warum Katzen auf den Pfoten landen\n7:15 8. Warum der Spiegel beschlägt\n8:16 9. Geschirrspüler richtig einräumen\n9:21 10. Stosslüften statt Kippen\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#natur #physik #wissen #rätsel",
-      "scenes": 10,
-      "parts": [
-        "D038",
-        "D059",
-        "D063",
-        "D071",
-        "D027",
-        "D031",
-        "D019",
-        "D030",
-        "D017",
-        "D021"
-      ],
-      "buffer": {}
-    },
-    {
       "id": "L001",
       "format": "lang",
       "status": "ready",
@@ -1439,6 +1408,37 @@
         "D058",
         "D078",
         "D079"
+      ],
+      "buffer": {}
+    },
+    {
+      "id": "L006",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-18T01:20:35.175904+01:00",
+      "source": "zusammenschnitt",
+      "topic": "Natur und Physik",
+      "hook_type": "Liste + Frage",
+      "series": null,
+      "episode": null,
+      "duration": 622.3,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/L006.mp4",
+      "title_tiktok": "",
+      "title_youtube": "10 Rätsel der Natur und Physik: Weisst du die Antworten?",
+      "text_tiktok": "",
+      "text_youtube": "10 Rätsel aus Natur und Physik: vom blauen Himmel bis zum Glühwürmchen. Mit den Kapiteln springst du direkt zu deinem Thema.\n\nKAPITEL\n0:00 1. Wie Salz Eis schmelzen lässt\n1:05 2. Warum der Himmel blau ist\n2:06 3. Ein Tag auf der Venus\n3:08 4. Wie schwer ist eine Wolke?\n4:10 5. Warum Eisbären schwarze Haut haben\n5:11 6. Wie Glühwürmchen leuchten\n6:13 7. Warum Katzen auf den Pfoten landen\n7:15 8. Warum der Spiegel beschlägt\n8:16 9. Geschirrspüler richtig einräumen\n9:21 10. Stosslüften statt Kippen\n\nWelches Thema kanntest du noch nicht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Zusammenschnitt aus unseren Kurzvideos.\n\n#natur #physik #wissen #rätsel",
+      "scenes": 10,
+      "parts": [
+        "D038",
+        "D059",
+        "D063",
+        "D071",
+        "D027",
+        "D031",
+        "D019",
+        "D030",
+        "D017",
+        "D021"
       ],
       "buffer": {}
     }
