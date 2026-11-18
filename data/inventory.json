@@ -3,7 +3,7 @@
     {
       "id": "H001",
       "format": "horror",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-14T23:59:16.888889+01:00",
       "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
       "hook_type": "Situation + Regel-Bruch",
@@ -28,7 +28,7 @@
     {
       "id": "W001",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-14T23:59:16.926494+01:00",
       "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
       "hook_type": "Du machst einen Fehler",
@@ -50,7 +50,7 @@
     {
       "id": "X001",
       "format": "waswaerewenn",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-14T23:59:16.969351+01:00",
       "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
       "hook_type": "Superkraft-Gedankenexperiment",
@@ -1169,7 +1169,7 @@
     {
       "id": "W002",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-15T08:03:15.422607+01:00",
       "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
       "hook_type": "Mythos aufdecken",
@@ -1216,7 +1216,7 @@
     {
       "id": "X002",
       "format": "waswaerewenn",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-15T08:03:15.537392+01:00",
       "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
       "hook_type": "Emotionales Gedankenexperiment",

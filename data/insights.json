@@ -1,0 +1,244 @@
+{
+  "updated": "2026-11-18T03:35:28.000779+01:00",
+  "top": [
+    [
+      "slot:youtube:Sun 10",
+      {
+        "n": 1,
+        "avg": 956
+      }
+    ],
+    [
+      "slot:tiktok:Sun 18",
+      {
+        "n": 1,
+        "avg": 889
+      }
+    ],
+    [
+      "format:wissen",
+      {
+        "n": 2,
+        "avg": 870
+      }
+    ],
+    [
+      "hook:Du machst einen Fehler",
+      {
+        "n": 2,
+        "avg": 870
+      }
+    ],
+    [
+      "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      {
+        "n": 2,
+        "avg": 870
+      }
+    ],
+    [
+      "slot:tiktok:Sun 15",
+      {
+        "n": 1,
+        "avg": 843
+      }
+    ],
+    [
+      "slot:tiktok:Sun 10",
+      {
+        "n": 1,
+        "avg": 784
+      }
+    ],
+    [
+      "format:horror",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "hook:Situation + Regel-Bruch",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "topic:Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "format:waswaerewenn",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "hook:Superkraft-Gedankenexperiment",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "topic:24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "slot:youtube:Sun 15",
+      {
+        "n": 1,
+        "avg": 2
+      }
+    ],
+    [
+      "slot:youtube:Sun 18",
+      {
+        "n": 1,
+        "avg": 1
+      }
+    ]
+  ],
+  "bottom": [
+    [
+      "slot:tiktok:Sun 15",
+      {
+        "n": 1,
+        "avg": 843
+      }
+    ],
+    [
+      "slot:tiktok:Sun 10",
+      {
+        "n": 1,
+        "avg": 784
+      }
+    ],
+    [
+      "format:horror",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "hook:Situation + Regel-Bruch",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "topic:Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      {
+        "n": 2,
+        "avg": 445
+      }
+    ],
+    [
+      "format:waswaerewenn",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "hook:Superkraft-Gedankenexperiment",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "topic:24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      {
+        "n": 2,
+        "avg": 422
+      }
+    ],
+    [
+      "slot:youtube:Sun 15",
+      {
+        "n": 1,
+        "avg": 2
+      }
+    ],
+    [
+      "slot:youtube:Sun 18",
+      {
+        "n": 1,
+        "avg": 1
+      }
+    ]
+  ],
+  "all": {
+    "format:horror": {
+      "n": 2,
+      "avg": 445
+    },
+    "hook:Situation + Regel-Bruch": {
+      "n": 2,
+      "avg": 445
+    },
+    "slot:tiktok:Sun 18": {
+      "n": 1,
+      "avg": 889
+    },
+    "topic:Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür": {
+      "n": 2,
+      "avg": 445
+    },
+    "slot:youtube:Sun 18": {
+      "n": 1,
+      "avg": 1
+    },
+    "format:wissen": {
+      "n": 2,
+      "avg": 870
+    },
+    "hook:Du machst einen Fehler": {
+      "n": 2,
+      "avg": 870
+    },
+    "slot:tiktok:Sun 10": {
+      "n": 1,
+      "avg": 784
+    },
+    "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)": {
+      "n": 2,
+      "avg": 870
+    },
+    "slot:youtube:Sun 10": {
+      "n": 1,
+      "avg": 956
+    },
+    "format:waswaerewenn": {
+      "n": 2,
+      "avg": 422
+    },
+    "hook:Superkraft-Gedankenexperiment": {
+      "n": 2,
+      "avg": 422
+    },
+    "slot:tiktok:Sun 15": {
+      "n": 1,
+      "avg": 843
+    },
+    "topic:24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst": {
+      "n": 2,
+      "avg": 422
+    },
+    "slot:youtube:Sun 15": {
+      "n": 1,
+      "avg": 2
+    }
+  }
+}

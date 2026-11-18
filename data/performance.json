@@ -1,1 +1,100 @@
-{"posts": []}
+{
+  "posts": [
+    {
+      "id": "H001",
+      "platform": "tiktok",
+      "format": "horror",
+      "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      "hook_type": "Situation + Regel-Bruch",
+      "due": "2026-11-15T18:00:00+01:00",
+      "duration": 77.9,
+      "24h": {
+        "views": 759,
+        "likes": 14,
+        "comments": 3,
+        "shares": 0,
+        "watch_ms": 8090,
+        "at": "2026-11-18T03:35:27.992399+01:00"
+      }
+    },
+    {
+      "id": "H001",
+      "platform": "youtube",
+      "format": "horror",
+      "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      "hook_type": "Situation + Regel-Bruch",
+      "due": "2026-11-15T18:00:00+01:00",
+      "duration": 77.9,
+      "24h": {
+        "views": 1,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-18T03:35:27.993657+01:00"
+      }
+    },
+    {
+      "id": "W001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-15T10:00:00+01:00",
+      "duration": 43.13,
+      "24h": {
+        "views": 739,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 7650,
+        "at": "2026-11-18T03:35:27.995055+01:00"
+      }
+    },
+    {
+      "id": "W001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-15T10:00:00+01:00",
+      "duration": 43.13,
+      "24h": {
+        "views": 916,
+        "likes": 8,
+        "comments": 0,
+        "at": "2026-11-18T03:35:27.996417+01:00"
+      }
+    },
+    {
+      "id": "X001",
+      "platform": "tiktok",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      "hook_type": "Superkraft-Gedankenexperiment",
+      "due": "2026-11-15T15:00:00+01:00",
+      "duration": 51.6,
+      "24h": {
+        "views": 793,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 6370,
+        "at": "2026-11-18T03:35:27.997844+01:00"
+      }
+    },
+    {
+      "id": "X001",
+      "platform": "youtube",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      "hook_type": "Superkraft-Gedankenexperiment",
+      "due": "2026-11-15T15:00:00+01:00",
+      "duration": 51.6,
+      "24h": {
+        "views": 2,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-18T03:35:28.000152+01:00"
+      }
+    }
+  ]
+}
