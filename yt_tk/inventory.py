@@ -443,20 +443,77 @@ def learn() -> dict:
     return result
 
 
+def _merge3(base, up, mine):
+    """Dreiwege-Zusammenfuehrung einer JSON-Datei mit genau einer Liste (inventory.json: videos, performance.json: posts).
+    Aenderungen von 'mine' gegenueber 'base' werden auf 'up' (Stand auf dem Branch) angewendet, nichts anderes geht verloren."""
+    out = dict(up)
+    for k, lst in mine.items():
+        if not isinstance(lst, list):
+            if lst != base.get(k):
+                out[k] = lst
+            continue
+        key = (lambda x: (x.get("id"), x.get("platform"))) if k == "posts" else (lambda x: x.get("id"))
+        b_map = {key(x): x for x in base.get(k, [])}
+        m_map = {key(x): x for x in lst}
+        res = {key(x): x for x in up.get(k, [])}
+        for kk, x in m_map.items():
+            if kk not in b_map or x != b_map[kk]:
+                res[kk] = x            # neu oder von uns geaendert
+        for kk in b_map:
+            if kk not in m_map:
+                res.pop(kk, None)      # von uns entfernt
+        order = [key(x) for x in up.get(k, [])] + [kk for kk in m_map if kk not in {key(x) for x in up.get(k, [])}]
+        out[k] = [res[kk] for kk in order if kk in res]
+    return out
+
+
+def _resolve_conflicts() -> bool:
+    """Loest Rebase-Konflikte in inventory.json und performance.json per Dreiwege-Zusammenfuehrung. False, wenn anderes in Konflikt ist."""
+    files = [f for f in _git("diff", "--name-only", "--diff-filter=U", check=False).splitlines() if f]
+    if not files:
+        return False
+    for f in files:
+        if not (f.endswith("inventory.json") or f.endswith("performance.json")):
+            return False
+        try:
+            base, up, mine = (json.loads(_git("show", f":{n}:{f}")) for n in (1, 2, 3))
+        except (RuntimeError, ValueError):
+            return False
+        (config.DATA / f).write_text(json.dumps(_merge3(base, up, mine), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        _git("add", "--sparse", f)
+    return True
+
+
 def sync(msg: str) -> str:
+    """Committet und pusht den Daten-Branch. Bei gleichzeitigen Laeufen werden Konflikte in den JSON-Dateien zusammengefuehrt.
+    Meldet nur dann 'gepusht', wenn der eigene Commit wirklich auf dem Branch liegt (frueher ging so ein Commit still verloren)."""
     _git("add", "--sparse", "-A")
     if not _git("status", "--porcelain"):
         return "nichts zu committen"
     _git("commit", "-q", "-m", msg)
-    for i in range(4):
-        r = subprocess.run(["git", "push", "-q", "origin", f"HEAD:{config.MEDIA_BRANCH}"], cwd=config.DATA,
-                           capture_output=True, text=True)
+    branch = config.MEDIA_BRANCH
+    err = ""
+    for i in range(5):
+        r = subprocess.run(["git", "push", "-q", "origin", f"HEAD:{branch}"], cwd=config.DATA, capture_output=True, text=True)
         if r.returncode == 0:
-            return "gepusht"
-        if "rejected" in r.stderr or "fetch first" in r.stderr:
-            _git("pull", "-q", "--rebase", "origin", config.MEDIA_BRANCH, check=False)
+            _git("fetch", "-q", "origin", branch, check=False)
+            if subprocess.run(["git", "merge-base", "--is-ancestor", "HEAD", f"origin/{branch}"], cwd=config.DATA).returncode == 0:
+                return "gepusht"
+            err = "Push gemeldet, aber Commit nicht auf dem Branch"
+        else:
+            err = r.stderr.strip()
+        if "rejected" in err or "fetch first" in err or "nicht auf dem Branch" in err:
+            _git("fetch", "-q", "origin", branch)
+            rb = subprocess.run(["git", "rebase", f"origin/{branch}"], cwd=config.DATA, capture_output=True, text=True)
+            guard = 0
+            while rb.returncode != 0 and guard < 5:
+                guard += 1
+                if not _resolve_conflicts():
+                    _git("rebase", "--abort", check=False)
+                    raise RuntimeError("Konflikt auf dem Daten-Branch, nicht automatisch loesbar: " + rb.stderr.strip()[-300:])
+                rb = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=config.DATA, capture_output=True, text=True)
         time.sleep(2 ** (i + 1))
-    raise RuntimeError("Push nach 4 Versuchen fehlgeschlagen: " + r.stderr)
+    raise RuntimeError("Push nach 5 Versuchen fehlgeschlagen: " + err)
 
 
 def compact(keep_days: int = 3) -> str:
