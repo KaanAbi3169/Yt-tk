@@ -1547,6 +1547,30 @@
         "D021"
       ],
       "buffer": {}
+    },
+    {
+      "id": "G001",
+      "format": "wissen",
+      "status": "pinned",
+      "created": "2026-11-18T23:37:32.490984+01:00",
+      "source": "render3d",
+      "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      "hook_type": "Nachricht",
+      "series": null,
+      "episode": null,
+      "duration": 27.3,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/G001.mp4",
+      "title_tiktok": "GTA 6 erscheint heute – das ist bestätigt 🎮",
+      "title_youtube": "GTA 6 erscheint heute: Das ist wirklich bestätigt 🎮 #shorts",
+      "text_tiktok": "Wirst du am ersten Tag spielen oder wartest du? 👇 #gta6 #gaming #gamingnews #releasetag #fürdich",
+      "text_youtube": "GTA 6 erscheint laut Take-Two am 19. November 2026 für die aktuellen Konsolen. Für den PC gibt es bisher weder Termin noch Zeitraum. Wirst du am ersten Tag spielen oder wartest du? 👇\n\nUnabhängiger Kanal, nicht mit den Herstellern verbunden. Quellen: Take-Two Interactive (Geschäftszahlen vom 9. November 2026), GamesRadar. Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #gamingnews #releasetag",
+      "scenes": 1,
+      "buffer": {},
+      "group": "gta-news",
+      "sources": [
+        "https://www.gamesradar.com/gta-6-guide/",
+        "https://www.stocktitan.net/articles/gta-6-release-date-take-two-holiday-sales-2026"
+      ]
     }
   ]
 }
