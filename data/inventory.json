@@ -1571,6 +1571,30 @@
         "https://www.gamesradar.com/gta-6-guide/",
         "https://www.stocktitan.net/articles/gta-6-release-date-take-two-holiday-sales-2026"
       ]
+    },
+    {
+      "id": "T001",
+      "format": "wissen",
+      "status": "pinned",
+      "created": "2026-11-18T23:51:22.860082+01:00",
+      "source": "render3d",
+      "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
+      "hook_type": "Mythos-Frage",
+      "series": null,
+      "episode": null,
+      "duration": 35.6,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/T001.mp4",
+      "title_tiktok": "Nutzt du wirklich nur 10 % deines Gehirns? 🧠",
+      "title_youtube": "Du nutzt nur 10 Prozent deines Gehirns? Der Mythos im Check 🧠 #shorts",
+      "text_tiktok": "Hast du den Mythos auch geglaubt? Ja oder nein 👇 #mythos #gehirn #wusstestdu #psychologie #lernenmittiktok",
+      "text_youtube": "Hirnscans zeigen: Fast alle Bereiche des Gehirns sind über den Tag aktiv. Hast du den Mythos auch geglaubt? 👇\n\nQuellen: Scientific American, Wikipedia (Ten percent of the brain myth). Stimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #gehirn #wusstestdu #psychologie",
+      "scenes": 1,
+      "buffer": {},
+      "group": "3d-mythos",
+      "sources": [
+        "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+        "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
+      ]
     }
   ]
 }
