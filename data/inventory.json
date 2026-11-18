@@ -75,7 +75,7 @@
     {
       "id": "D016",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1MqViq5aikZj2_cWiim4OvJ0qFNpeTpd1",
       "drive_title": "V016_Spotlight_Effekt.mp4",
@@ -83,13 +83,17 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830085+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1MqViq5aikZj2_cWiim4OvJ0qFNpeTpd1",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6afd42456032c1a98f198656",
+        "youtube": "6afd42478ffbb8256dc2512d"
+      },
       "title_tiktok": "Alle schauen auf dich? Der Spotlight-Effekt 🔦",
       "title_youtube": "Warum Spotlight-Effekt? Alle schauen auf dich 🔦 #shorts",
       "text_tiktok": "Wie sehr achten andere wirklich auf dich? Hast du dich auch schon beobachtet gefühlt? 👇 #spotlighteffekt #psychologie #wusstestdu #lernenmittiktok",
       "text_youtube": "Fühlst du dich manchmal beobachtet? Das Video erklärt, was dahintersteckt.\nWann ging es dir schon so? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #psychologie #spotlighteffekt #wusstestdu #alltag",
       "notvorrat": true,
-      "drive_shared": true
+      "drive_shared": true,
+      "due": "2026-11-18T16:00:00+01:00"
     },
     {
       "id": "D017",
@@ -1285,7 +1289,13 @@
         "D083",
         "D025"
       ],
-      "buffer": {}
+      "buffer": {},
+      "errors": [
+        {
+          "at": "2026-11-18T07:14:32.174807+01:00",
+          "reason": "youtube: createPost InvalidInputError: Invalid post: Video must be no longer than 3 minutes for YouTube Shorts., Video must be vertical (portrait orientation) for YouTube Shorts."
+        }
+      ]
     },
     {
       "id": "L002",
