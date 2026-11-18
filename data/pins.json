@@ -1,0 +1,28 @@
+{
+  "pins": [
+    {
+      "id": "T001",
+      "day": "2026-11-19",
+      "time": "10:00",
+      "platform": "tiktok"
+    },
+    {
+      "id": "G001",
+      "day": "2026-11-19",
+      "time": "10:00",
+      "platform": "youtube"
+    },
+    {
+      "id": "G001",
+      "day": "2026-11-19",
+      "time": "16:00",
+      "platform": "tiktok"
+    },
+    {
+      "id": "T001",
+      "day": "2026-11-19",
+      "time": "16:00",
+      "platform": "youtube"
+    }
+  ]
+}
