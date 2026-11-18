@@ -1263,7 +1263,7 @@
     {
       "id": "L001",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-18T00:55:38.199248+01:00",
       "source": "zusammenschnitt",
       "topic": "Haushaltstricks",
@@ -1289,13 +1289,16 @@
         "D083",
         "D025"
       ],
-      "buffer": {},
+      "buffer": {
+        "youtube": "metricool:432427625"
+      },
       "errors": [
         {
           "at": "2026-11-18T07:14:32.174807+01:00",
           "reason": "youtube: createPost InvalidInputError: Invalid post: Video must be no longer than 3 minutes for YouTube Shorts., Video must be vertical (portrait orientation) for YouTube Shorts."
         }
-      ]
+      ],
+      "due": "2026-11-18T18:00:00+01:00"
     },
     {
       "id": "L002",
