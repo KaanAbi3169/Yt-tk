@@ -1,0 +1,334 @@
+{
+  "date": "2026-11-18",
+  "rising": [
+    {
+      "title": "James Bond",
+      "views": 29972,
+      "avg_before": 5744,
+      "ratio": 5.2
+    },
+    {
+      "title": "Berlin",
+      "views": 8269,
+      "avg_before": 2694,
+      "ratio": 3.1
+    },
+    {
+      "title": "Figuren der Harry-Potter-Romane",
+      "views": 10073,
+      "avg_before": 3490,
+      "ratio": 2.9
+    },
+    {
+      "title": "UEFA Nations League 2026/27",
+      "views": 15664,
+      "avg_before": 7765,
+      "ratio": 2.0
+    },
+    {
+      "title": "ChatGPT",
+      "views": 9939,
+      "avg_before": 4922,
+      "ratio": 2.0
+    }
+  ],
+  "new": [
+    {
+      "title": "Leopard von Rudraprayag",
+      "views": 30689
+    },
+    {
+      "title": "Krim-Brücke",
+      "views": 22533
+    },
+    {
+      "title": "Atopisches Ekzem",
+      "views": 12948
+    },
+    {
+      "title": "Ring Magazine Knockout des Jahres",
+      "views": 8533
+    },
+    {
+      "title": "Entführung von Jakub Fiszman",
+      "views": 8475
+    },
+    {
+      "title": "Schneeleopard",
+      "views": 7766
+    },
+    {
+      "title": "Flamingo (Marschflugkörper)",
+      "views": 7308
+    },
+    {
+      "title": "Fredagstaco",
+      "views": 7114
+    },
+    {
+      "title": "Biermösl Blosn",
+      "views": 6444
+    },
+    {
+      "title": "Skulpturenweg Grauholz 98",
+      "views": 5508
+    }
+  ],
+  "evergreen": [
+    {
+      "title": "Nvidia",
+      "avg": 17219
+    },
+    {
+      "title": "Ballers in God",
+      "avg": 14857
+    },
+    {
+      "title": "James Bond",
+      "avg": 8772
+    },
+    {
+      "title": "Deutschland",
+      "avg": 8252
+    },
+    {
+      "title": "Grand Theft Auto",
+      "avg": 5853
+    },
+    {
+      "title": "ChatGPT",
+      "avg": 5549
+    },
+    {
+      "title": "Bundespräsident (Deutschland)",
+      "avg": 4725
+    },
+    {
+      "title": "ZDF",
+      "avg": 4493
+    },
+    {
+      "title": "Figuren der Harry-Potter-Romane",
+      "avg": 4312
+    },
+    {
+      "title": "Periodensystem",
+      "avg": 4177
+    },
+    {
+      "title": "Vereinigte Staaten",
+      "avg": 3509
+    },
+    {
+      "title": "Generation Z",
+      "avg": 3444
+    },
+    {
+      "title": "Berlin",
+      "avg": 3391
+    },
+    {
+      "title": "YouTube",
+      "avg": 2975
+    },
+    {
+      "title": "Nius",
+      "avg": 2660
+    },
+    {
+      "title": "Wahl des deutschen Bundespräsidenten 2027",
+      "avg": 2651
+    },
+    {
+      "title": "Anthropic",
+      "avg": 2648
+    },
+    {
+      "title": "ARD",
+      "avg": 2642
+    },
+    {
+      "title": "Russland",
+      "avg": 2627
+    },
+    {
+      "title": "Österreich",
+      "avg": 2601
+    },
+    {
+      "title": "Figuren in Tolkiens Welt",
+      "avg": 2425
+    },
+    {
+      "title": "Schweiz",
+      "avg": 2371
+    },
+    {
+      "title": "HTTP-Cookie",
+      "avg": 2297
+    },
+    {
+      "title": "Rockstar Games",
+      "avg": 2208
+    },
+    {
+      "title": "Tokio Hotel",
+      "avg": 2155
+    }
+  ],
+  "blocked": 11,
+  "days": 8,
+  "people_removed": 159,
+  "youtube": [
+    {
+      "title": "Fifi x Fero - U Katritha",
+      "channel": "FIFI OFFICIAL",
+      "views": 1202770,
+      "category": "10"
+    },
+    {
+      "title": "Grand Theft Auto VI - Features Trailer | PS5 Games",
+      "channel": "PlayStation",
+      "views": 7104019,
+      "category": "20"
+    },
+    {
+      "title": "Grand Theft Auto VI: Pre-Load Now",
+      "channel": "Rockstar Games",
+      "views": 16832741,
+      "category": "20"
+    },
+    {
+      "title": "BANTU NATION X JAZEEK X LUCIANO X REEZY X THIZZY52 - BLACK",
+      "channel": "Bantu Nation Channel",
+      "views": 766866,
+      "category": "10"
+    },
+    {
+      "title": "O.M - Trailer | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar Periasamy | Sai Abhyankkar",
+      "channel": "Divo Music",
+      "views": 31114638,
+      "category": "10"
+    },
+    {
+      "title": "Der kranke Hype von GTA 6",
+      "channel": "2 Bored Guys",
+      "views": 2575375,
+      "category": "24"
+    },
+    {
+      "title": "Shkumbin Ismaili - Kam zili (Official Music Video)",
+      "channel": "Shkumbin Ismaili",
+      "views": 1054258,
+      "category": "10"
+    },
+    {
+      "title": "NBA 2K27 x GTA 6 (Grand Theft Auto 6) - Official Vice City Crossover Trailer",
+      "channel": "IGN",
+      "views": 1832162,
+      "category": "20"
+    },
+    {
+      "title": "GIGA MEGA BEST OF DES 20 ANS DE WANKIL (Partie 2)",
+      "channel": "Wankil Studio - Laink et Terracid",
+      "views": 1042108,
+      "category": "20"
+    },
+    {
+      "title": "Bujar Mustafa - E TEPRUME",
+      "channel": "BM Official",
+      "views": 3041920,
+      "category": "10"
+    },
+    {
+      "title": "Emily in Paris: The Final Season | Official Teaser | Netflix",
+      "channel": "Netflix",
+      "views": 2995059,
+      "category": "24"
+    },
+    {
+      "title": "😍🔥UNSER 1. J.O.N.A.S. & NEUE Brutale BASE! - Moon Sweepers Folge 2 mit @Rumathra!",
+      "channel": "Trymacs",
+      "views": 508352,
+      "category": "20"
+    },
+    {
+      "title": "Levant - Forever (Official Music Video)",
+      "channel": "Levant",
+      "views": 1310332,
+      "category": "10"
+    },
+    {
+      "title": "Avengers: Doomsday | TV SPOT “DARKNESS” CONCEPT | Marvel Studios",
+      "channel": "MovieTrailers Entertainment",
+      "views": 1702270,
+      "category": "24"
+    },
+    {
+      "title": "ICH DACHTE DIESE CHALLENGE IST UNMÖGLICH (ist sie aber nicht...)",
+      "channel": "BastiGHG",
+      "views": 839671,
+      "category": "20"
+    },
+    {
+      "title": "NUSRET ft NDERIM - ME DUAJ SOT ",
+      "channel": "Nusret Kurtishi",
+      "views": 275079,
+      "category": "10"
+    },
+    {
+      "title": "Warhammer 40,000: Darktide - Sisters Novitiate | Class Reveal Trailer",
+      "channel": "Fatshark",
+      "views": 1186728,
+      "category": "20"
+    },
+    {
+      "title": "😍😱Der UNGLAUBLICHE HYPE um GTA 6 - Legendäres 2boredGuys VIDEO | Trymacs Stream Highlights",
+      "channel": "TryReact",
+      "views": 527899,
+      "category": "24"
+    },
+    {
+      "title": "IDK & Eminem — WELCOME (Prd. By J Dilla) [Official Music Video]",
+      "channel": "idk",
+      "views": 4462805,
+      "category": "10"
+    },
+    {
+      "title": "Nightcrawler: Hope and Brimstone | Character Reveal Trailer | Marvel Rivals",
+      "channel": "Marvel Rivals",
+      "views": 3148090,
+      "category": "20"
+    },
+    {
+      "title": "Wer überlebt am längsten gegen 100 Zuschauer in GTA?",
+      "channel": "Papaplatte Gaming",
+      "views": 1231567,
+      "category": "20"
+    },
+    {
+      "title": "2TON - JE DISTANCU",
+      "channel": "2TONoffical",
+      "views": 1269051,
+      "category": "10"
+    },
+    {
+      "title": "Dune: Part Three | Final Trailer",
+      "channel": "Warner Bros.",
+      "views": 29644446,
+      "category": "1"
+    },
+    {
+      "title": "AUREVOIR GTA 5",
+      "channel": "LaSalle",
+      "views": 768289,
+      "category": "20"
+    },
+    {
+      "title": "Meda ft Afrim Muqiqi - Oj Lulije",
+      "channel": "MEDA",
+      "views": 1186265,
+      "category": "10"
+    }
+  ]
+}
