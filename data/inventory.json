@@ -161,7 +161,7 @@
     {
       "id": "D022",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1QwKsnGW8gNJxc65-0xnFtw4__iDeF2AK",
       "drive_title": "V022_Toast_Butterseite.mp4",
@@ -169,14 +169,18 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830133+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1QwKsnGW8gNJxc65-0xnFtw4__iDeF2AK",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6afe211e49e7044385b4add6",
+        "youtube": "6afe212049e7044385b4aec8"
+      },
       "title_tiktok": "Fällt der Toast wirklich immer auf die Butterseite? 🍞",
       "title_youtube": "Fällt Toast immer auf die Butterseite? Der Mythos im Check 🍞 #shorts",
       "text_tiktok": "Murphys Gesetz am Frühstückstisch. Stimmt es bei dir? 👇 #toast #mythos #wusstestdu #alltagswissen #lernenmittiktok",
       "text_youtube": "Jeder kennt das Gefühl, dass der Toast auf der Butterseite landet. Stimmt das wirklich?\nWie oft ist es dir passiert? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #toast #wusstestdu #physik",
       "notvorrat": true,
       "drive_shared": true,
-      "group": "mythos"
+      "group": "mythos",
+      "due": "2026-11-19T16:00:00+01:00"
     },
     {
       "id": "D023",
@@ -1325,7 +1329,7 @@
     {
       "id": "X003",
       "format": "waswaerewenn",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-15T08:03:15.584053+01:00",
       "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
       "hook_type": "Alltags-Gedankenexperiment",
@@ -1338,8 +1342,12 @@
       "text_tiktok": "Wofür nutzt du deine eine Stunde? 👇 #waswärewenn #gedankenexperiment #handy #fürdich",
       "text_youtube": "Eine Stunde Handy pro Tag – für alle. Was würde sich ändern, und wofür nutzt du deine Stunde? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #handy",
       "scenes": 6,
-      "buffer": {},
-      "group": "was-waere-wenn-test"
+      "buffer": {
+        "tiktok": "6afe2111c5265bdf748cd014",
+        "youtube": "6afe211249e7044385b4a23a"
+      },
+      "group": "was-waere-wenn-test",
+      "due": "2026-11-19T10:00:00+01:00"
     },
     {
       "id": "L001",
