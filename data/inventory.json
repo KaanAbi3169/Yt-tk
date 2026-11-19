@@ -1421,7 +1421,7 @@
     {
       "id": "L003",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-18T01:05:35.544641+01:00",
       "source": "zusammenschnitt",
       "topic": "Körper und Gehirn",
@@ -1447,7 +1447,10 @@
         "D072",
         "D016"
       ],
-      "buffer": {}
+      "buffer": {
+        "youtube": "metricool:433809184"
+      },
+      "due": "2026-11-22T18:00:00+01:00"
     },
     {
       "id": "L004",
