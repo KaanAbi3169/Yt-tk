@@ -3,7 +3,8 @@
     python3 -m yt_tk.build3d --id T001 [--px 2] [--dry]
 
 Eingaben: content3d/<ID>.json (Szene, Titel, Texte) im Code-Repo und die Sprachdatei <Daten>/audio/<ID>.mp3 (Action `audio`).
-Ergebnis: <Daten>/videos/<ID>.mp4 (1080x1920) und ein Eintrag im Inventar (Status pinned, bis die Planung ihn einsetzt).
+Ergebnis: <Daten>/videos/<ID>.mp4 (1080x1920) und ein Eintrag im Inventar (Status aus content3d/<ID>.json, Standard pinned = nur per Pin;
+"ready" = die Planung setzt das Video selbst ein, bevorzugt vor dem Vorrat).
 --dry: baut und prueft das Video, schreibt aber nichts ins Inventar und pusht nicht.
 """
 import json
@@ -184,7 +185,7 @@ def build(vid: str, px: float, dry: bool) -> int:
     inv = inventory._load("inventory.json", {"videos": []})
     inv["videos"] = [x for x in inv["videos"] if x["id"] != vid]
     inv["videos"].append({
-        "id": vid, "format": cfg["format"], "status": "pinned", "created": inventory.now().isoformat(), "source": "render3d",
+        "id": vid, "format": cfg["format"], "status": cfg.get("status", "pinned"), "created": inventory.now().isoformat(), "source": "render3d",
         "topic": cfg["topic"], "hook_type": cfg["hook_type"], "series": None, "episode": None, "duration": round(d, 1),
         "video_url": f"{config.RAW_BASE}/videos/{vid}.mp4", "title_tiktok": cfg["title_tiktok"], "title_youtube": cfg["title_youtube"],
         "text_tiktok": cfg["text_tiktok"], "text_youtube": cfg["text_youtube"], "scenes": 1, "buffer": {}, "group": cfg.get("group", "3d-test"),

@@ -7,7 +7,7 @@ Ein neues 3D-Video braucht keinen eigenen Code mehr: `content3d/<ID>.json` mit `
 2. Sprache erzeugen (ElevenLabs, Kanalstimme Jan) und mit der Action `audio` als `audio/<ID>.mp3` auf `media` ablegen.
 3. `content3d/<ID>.json` schreiben: Titel und Texte (wie bei Shorts), `"scene": "kit"`, `"kit": {...}`. Optional `"credits"` für echte Bilder.
 4. `kitcheck` und `textcheck` laufen lassen, dann Action `render3d` mit der ID. Ergebnis: `videos/<ID>.mp4` und Inventar-Eintrag (Status pinned).
-5. Einplanen: Eintrag in `data/pins.json` (Tag, Zeit, Plattform) oder Status `ready`/`backup` für die Priorität.
+5. Einplanen: Eintrag in `data/pins.json` (Tag, Zeit, Plattform), oder `"status": "ready"` im Inhalt: Dann setzt die Planung das Video selbst ein (bevorzugt vor dem Vorrat, 10:00 und 16:00 nach Priorität).
 
 ## Aufbau von `kit`
 ```json
