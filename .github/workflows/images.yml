@@ -1,0 +1,62 @@
+name: images
+
+# Echte Bilder mit gesicherter Lizenz: suchen (Ergebnis im Log) oder laden (Branch media -> images/<ID>.jpg, data/images.json).
+# Ohne Claude, 0 EUR. Nur freie Lizenzen (Public Domain, CC0, CC BY). Quelle wird klein am Rand eingeblendet.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "search oder fetch"
+        required: true
+        default: "search"
+      query:
+        description: "search: Suchbegriff, fetch: Dateititel (File:...)"
+        required: true
+      id:
+        description: "fetch: Bild-ID, z. B. IMG001"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: images
+  cancel-in-progress: false
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: |
+            data
+            images
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "images"
+          git -C media config user.email "images@users.noreply.github.com"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pillow
+        run: pip install --quiet pillow
+      - name: Bilder
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          MODE: ${{ inputs.mode }}
+          QUERY: ${{ inputs.query }}
+          IMG_ID: ${{ inputs.id }}
+        run: |
+          case "$MODE" in
+            search) python3 -m yt_tk.images search "$QUERY" ;;
+            fetch) case "$IMG_ID" in IMG[0-9][0-9][0-9]) ;; *) echo "ID muss IMG001 aehnlich sein"; exit 1;; esac
+                   python3 -m yt_tk.images fetch "$QUERY" "$IMG_ID" ;;
+            *) echo "mode: search oder fetch"; exit 1 ;;
+          esac
