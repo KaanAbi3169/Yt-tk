@@ -32,7 +32,7 @@
       "avg": 422
     }
   ],
-  "open": 15,
+  "open": 21,
   "items": [
     {
       "title": "James Bond",
@@ -149,6 +149,54 @@
     {
       "title": "Atopisches Ekzem",
       "signal": "neu in den Top 1000 mit 12948 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Voyager 1",
+      "signal": "Wikipedia-Aufrufe 17276 gestern, Faktor 7.9 gegen Schnitt 2199",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Rockstar Games",
+      "signal": "Wikipedia-Aufrufe 6946 gestern, Faktor 3.1 gegen Schnitt 2236",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "UEFA Nations League",
+      "signal": "Wikipedia-Schnitt 10843 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Woolworth Building",
+      "signal": "neu in den Top 1000 mit 24393 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Simone Sommerland, Karsten Glück und die Kita-Frösche",
+      "signal": "neu in den Top 1000 mit 16209 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Alicella gigantea",
+      "signal": "neu in den Top 1000 mit 14224 Aufrufen",
       "kind": "neu",
       "added": "2026-11-19",
       "status": "candidate",
