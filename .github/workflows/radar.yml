@@ -42,6 +42,11 @@ jobs:
           YTTK_DATA: ${{ github.workspace }}/media
           ARGS: ${{ github.event_name == 'schedule' && '' || inputs.args }}
         run: python3 -m yt_tk.radar $ARGS
+      - name: Themenliste (Stufe 3, ohne Claude)
+        if: github.event_name == 'schedule'
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+        run: python3 -m yt_tk.topics
       - name: Fehler melden (GitHub-Ticket, ohne Claude)
         if: failure() && github.event_name == 'schedule'
         uses: actions/github-script@v7
