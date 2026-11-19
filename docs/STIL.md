@@ -5,6 +5,7 @@
 - Erster Satz = Hook (Neugier, Widerspruch, Gefahr oder direkte Ansprache). Kein „Hallo“, kein Intro.
 - Jedes Video endet mit einem Call-to-Action (Kommentar-Frage, A/B, Folgen).
 - Nie fremde Texte, Clips, Musik oder Markennamen/Logos kopieren. Nur eigene Formulierungen und eigene Grafiken.
+- **Echte Bilder (Anweisung des Inhabers, 19.11.2026):** Fotos sind erlaubt, wenn sie nötig sind, aber nur mit gesicherter freier Lizenz (Public Domain, CC0, CC BY) aus Wikimedia Commons über `python3 -m yt_tk.images` (Action `images`). Nie CC BY-SA, NC, ND, GFDL, Fair Use oder Bilder mit Hinweis auf Rechte Dritter (Marken, Persönlichkeitsrechte), keine erkennbaren Privatpersonen. **Die Quelle wird klein und unaufdringlich am Rand eingeblendet** („Bild: Urheber / Lizenz / Quelle“, oben links unter dem Badge-Bereich, nur solange das Bild zu sehen ist) und steht in `data/images.json`. Gilt für alle Videos, wenn ein Bild gebraucht wird. In SVG-Szenen bleiben eingebettete Fotos verboten, Fotos gehören in die 3D-Szene (`photo(id)`) oder in die Zusammenschnitte.
 - Wissen: Jede Faktenaussage muss per Websuche bestätigt sein (Quelle in `sources`). Unsicheres weglassen. Keine Gesundheits-/Finanzratschläge, die schaden könnten.
 - Horror: unheimlich, nicht brutal. Keine Gewaltdetails, kein Blut, keine Selbstverletzung, keine echten Personen/Orte/Verbrechen. Altersgerecht (13+).
 - Was wäre wenn: Gedankenexperimente, eine Pointe/Twist, positive oder nachdenkliche Note.

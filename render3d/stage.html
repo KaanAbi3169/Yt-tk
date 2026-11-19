@@ -44,7 +44,16 @@ function makeFigure({headScale=1,shirt=0xf07a1a,pants=0x2f5bd1,skin=0xf2b88a}={}
   const armL=new THREE.Group();armL.position.set(-0.5,2.2,0);g.add(armL);add(new THREE.CapsuleGeometry(0.11,0.7,4,8),sk,0,-0.4,0,armL);
   const armR=new THREE.Group();armR.position.set(0.5,2.2,0);g.add(armR);add(new THREE.CapsuleGeometry(0.11,0.7,4,8),sk,0,-0.4,0,armR);
   scene.add(g);return {group:g,head,skull,mouth,armL,armR}}
-const stage={THREE,scene,cam,renderer,sun,W,H,mat,add,textPlane,ease,clamp,lerp,pop,T,TE,D,words,makeFigure};
+// echte Bilder (V-034 + Auftrag 19.11.): images/index.json listet die IDs, die Szene holt sie mit photo(id, breite)
+const imgIds=await fetch('/images/index.json').then(r=>r.ok?r.json():[]).catch(()=>[]);
+const tex={};await Promise.all(imgIds.map(id=>new Promise(res=>new THREE.TextureLoader().load(`/images/${id}.jpg`,t=>{t.colorSpace=THREE.SRGBColorSpace;tex[id]=t;res()},undefined,()=>res()))));
+function photo(id,w=2.4,{frame=0.06}={}){
+  const t=tex[id]; if(!t) throw new Error('Bild fehlt: '+id);
+  const h=w*t.image.height/t.image.width, g=new THREE.Group();
+  const back=new THREE.Mesh(new THREE.BoxGeometry(w+frame*2,h+frame*2,0.04),new THREE.MeshStandardMaterial({color:0xffffff,roughness:0.8}));back.castShadow=true;g.add(back);
+  const p=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:t}));p.position.z=0.03;g.add(p);
+  scene.add(g);g.userData={w,h};return g}
+const stage={THREE,scene,cam,renderer,sun,W,H,mat,add,textPlane,ease,clamp,lerp,pop,T,TE,D,words,makeFigure,photo};
 const mod=await import('/scenes/'+q.get('scene')+'.js');
 const sc=mod.default(stage);
 window.duration=D;

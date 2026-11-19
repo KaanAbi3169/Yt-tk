@@ -51,7 +51,7 @@ def clean(words: list, fix: dict) -> list:
     return out
 
 
-def ass(words: list, highlight: str, dur: float) -> str:
+def ass(words: list, highlight: str, dur: float, credits: list = ()) -> str:
     def ts(x):
         h, r = divmod(max(0, x), 3600)
         m, s = divmod(r, 60)
@@ -59,7 +59,8 @@ def ass(words: list, highlight: str, dur: float) -> str:
     head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n"
             "Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,"
             "ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding\n"
-            "Style: W,DejaVu Sans,104,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,10,3,5,60,60,0,1\n\n"
+            "Style: W,DejaVu Sans,104,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,10,3,5,60,60,0,1\n"
+            "Style: C,DejaVu Sans,30,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,1,7,36,36,0,1\n\n"
             "[Events]\nFormat: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n")
     hl = re.compile(highlight, re.I) if highlight else None
     lines = []
@@ -70,6 +71,8 @@ def ass(words: list, highlight: str, dur: float) -> str:
         txt = w["w"].replace("{", "").replace("}", "")
         col = "{\\c&H0000E5FF&}" if hl and hl.search(txt) else ""
         lines.append(f"Dialogue: 0,{ts(start)},{ts(end)},W,,0,0,0,,{{\\an5\\pos(540,1300)\\fscx80\\fscy80\\t(0,90,\\fscx100\\fscy100)}}{col}{txt}")
+    for c in credits:  # kleine Quellenangabe oben links (unterhalb des Badge-Bereichs), nur solange das Bild zu sehen ist
+        lines.append(f"Dialogue: 1,{ts(c['s'])},{ts(c['e'])},C,,0,0,0,,{{\\an7\\pos(36,290)\\1a&H30&}}{c['text'].replace('{', '').replace('}', '')}")
     return head + "\n".join(lines) + "\n"
 
 
@@ -95,6 +98,17 @@ def build(vid: str, px: float, dry: bool) -> int:
         log("Zu wenige Woerter erkannt")
         return 1
     (R3D / "words.json").write_text(json.dumps(words, ensure_ascii=False), encoding="utf-8")
+    imgs = R3D / "images"
+    shutil.rmtree(imgs, ignore_errors=True)
+    imgs.mkdir()
+    used = [c["id"] for c in cfg.get("credits", [])]
+    for iid in used:
+        src = config.DATA / "images" / f"{iid}.jpg"
+        if not src.exists():
+            log(f"Bild fehlt: {iid}")
+            return 1
+        shutil.copy(src, imgs / f"{iid}.jpg")
+    (imgs / "index.json").write_text(json.dumps(used), encoding="utf-8")
     log(f"{len(words)} Woerter, Ende bei {words[-1]['e']:.1f} s")
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORT), "--bind", "127.0.0.1", "--directory", str(R3D)],
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -110,7 +124,12 @@ def build(vid: str, px: float, dry: bool) -> int:
                 return 1
             n = len(list(frames.glob("f*.jpg")))
             dur = n / FPS
-            (tmp / "c.ass").write_text(ass(words, cfg.get("highlight", r"\d|prozent|mythos|best\w+tigt|termin"), dur), encoding="utf-8")
+            db = {x["id"]: x for x in inventory._load("images.json", {"images": []})["images"]}
+            credits = []
+            for c in cfg.get("credits", []):
+                st = c["from"] if isinstance(c["from"], (int, float)) else next((w["s"] for w in words if re.search(c["from"], w["w"], re.I)), 0)
+                credits.append({"s": st, "e": st + c.get("dur", 4.0), "text": db[c["id"]]["credit"]})
+            (tmp / "c.ass").write_text(ass(words, cfg.get("highlight", r"\d|prozent|mythos|best\w+tigt|termin"), dur, credits), encoding="utf-8")
             out = tmp / "out.mp4"
             vf = "scale=1080:1920:flags=lanczos,subtitles=c.ass:fontsdir=/usr/share/fonts/truetype/dejavu"
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", str(frames / "f%05d.jpg"), "-i", str(audio),
