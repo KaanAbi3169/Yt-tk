@@ -1545,7 +1545,7 @@
     {
       "id": "T001",
       "format": "wissen",
-      "status": "pinned",
+      "status": "scheduled",
       "created": "2026-11-18T23:51:22.860082+01:00",
       "source": "render3d",
       "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
@@ -1559,17 +1559,21 @@
       "text_tiktok": "Hast du den Mythos auch geglaubt? Ja oder nein 👇 #mythos #gehirn #wusstestdu #psychologie #lernenmittiktok",
       "text_youtube": "Hirnscans zeigen: Fast alle Bereiche des Gehirns sind über den Tag aktiv. Hast du den Mythos auch geglaubt? 👇\n\nQuellen: Scientific American, Wikipedia (Ten percent of the brain myth). Stimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #gehirn #wusstestdu #psychologie",
       "scenes": 1,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6afe78d2b16549e9b82310aa",
+        "youtube": "6afe78d4f6b6aa0cd49edfd9"
+      },
       "group": "3d-mythos",
       "sources": [
         "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
         "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
-      ]
+      ],
+      "due": "2026-11-19T16:00:00+01:00"
     },
     {
       "id": "G001",
       "format": "wissen",
-      "status": "pinned",
+      "status": "scheduled",
       "created": "2026-11-18T23:58:03.578613+01:00",
       "source": "render3d",
       "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
@@ -1583,12 +1587,16 @@
       "text_tiktok": "Wirst du am ersten Tag spielen oder wartest du? 👇 #gta6 #gaming #gamingnews #releasetag #fürdich",
       "text_youtube": "GTA 6 erscheint laut Take-Two am 19. November 2026 für die aktuellen Konsolen. Für den PC gibt es bisher weder Termin noch Zeitraum. Wirst du am ersten Tag spielen oder wartest du? 👇\n\nUnabhängiger Kanal, nicht mit den Herstellern verbunden. Quellen: Take-Two Interactive (Geschäftszahlen vom 9. November 2026), GamesRadar. Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #gamingnews #releasetag",
       "scenes": 1,
-      "buffer": {},
+      "buffer": {
+        "youtube": "6afe78d3f6b6aa0cd49edf95",
+        "tiktok": "6afe78d4749099bdc70cd167"
+      },
       "group": "gta-news",
       "sources": [
         "https://www.gamesradar.com/gta-6-guide/",
         "https://www.stocktitan.net/articles/gta-6-release-date-take-two-holiday-sales-2026"
-      ]
+      ],
+      "due": "2026-11-19T16:00:00+01:00"
     }
   ]
 }
