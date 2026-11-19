@@ -1597,27 +1597,6 @@
         "https://www.stocktitan.net/articles/gta-6-release-date-take-two-holiday-sales-2026"
       ],
       "due": "2026-11-19T16:00:00+01:00"
-    },
-    {
-      "id": "K001",
-      "format": "wissen",
-      "status": "pinned",
-      "created": "2026-11-19T05:38:22.951130+01:00",
-      "source": "render3d",
-      "topic": "Szenenbaukasten-Test (Nachbau von G001, wird nicht veroeffentlicht)",
-      "hook_type": "Test",
-      "series": null,
-      "episode": null,
-      "duration": 27.3,
-      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/K001.mp4",
-      "title_tiktok": "Test des Szenenbaukastens 🎮",
-      "title_youtube": "Test des Szenenbaukastens: Nachbau der Szene 🎮 #shorts",
-      "text_tiktok": "Was sagst du zum Test? 👇 #test #kit #gaming #gamingnews #fürdich",
-      "text_youtube": "Interner Test. Was sagst du dazu? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #test #kit #gaming #gamingnews",
-      "scenes": 1,
-      "buffer": {},
-      "group": "kit-test",
-      "sources": []
     }
   ]
 }
