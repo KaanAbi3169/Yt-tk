@@ -81,7 +81,7 @@ export default function(S){
     for(const r of Object.values(P)){
       const {o,p}=r;let vis=r.vis,sc=1;
       for(const e of r.ev){if(t<e.t)break;if(e.do==='in'||e.do==='pop'){vis=true;sc=pop((t-e.t)/0.35)}else if(e.do==='out'){const k=clamp((t-e.t)/0.18);sc=1-k;vis=k<1}}
-      let pos=tween(r.ev.filter(e=>e.do==='move'),t,r.bp,e=>e.to);
+      let pos=[...tween(r.ev.filter(e=>e.do==='move'),t,r.bp,e=>e.to)];   // Kopie: sonst wuerde r.bp bei jedem Bild veraendert
       let sy=null,mult=1,rotY=r.baseRotY;
       if(r.h!==undefined)sy=tween(r.ev.filter(e=>e.do==='grow'),t,r.h,e=>e.to);else mult=tween(r.ev.filter(e=>e.do==='grow'),t,1,e=>e.to);
       for(const e of r.ev){if(t<e.t)break;
