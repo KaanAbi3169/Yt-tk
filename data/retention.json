@@ -1,25 +1,25 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "videos": [
-    {
-      "yt_id": "47q_wuXwNH0",
-      "id": "W001",
-      "format": "wissen",
-      "hook": "Du machst einen Fehler",
-      "title": "Tomaten im Kühlschrank? Darum ist das ein Fehler 🍅 #shorts",
-      "views": 909,
-      "avg_s": 20.0,
-      "avg_pct": 45.8
-    },
     {
       "yt_id": "Y3aEen_GUUI",
       "id": "–",
       "format": "–",
       "hook": "–",
       "title": "Das Internet ist 7 Tage weg – Teil 2 🌐 #shorts",
-      "views": 879,
+      "views": 918,
       "avg_s": 18.0,
-      "avg_pct": 42.9
+      "avg_pct": 43.1
+    },
+    {
+      "yt_id": "47q_wuXwNH0",
+      "id": "W001",
+      "format": "wissen",
+      "hook": "Du machst einen Fehler",
+      "title": "Tomaten im Kühlschrank? Darum ist das ein Fehler 🍅 #shorts",
+      "views": 915,
+      "avg_s": 20.0,
+      "avg_pct": 45.8
     },
     {
       "yt_id": "fgJ6hJplw_U",
@@ -27,7 +27,7 @@
       "format": "–",
       "hook": "–",
       "title": "Die 4. Regel ist in DEINER Handschrift – Teil 2 🪞 #shorts",
-      "views": 389,
+      "views": 378,
       "avg_s": 14.0,
       "avg_pct": 31.4
     },
@@ -47,7 +47,7 @@
       "format": "–",
       "hook": "–",
       "title": "Das Bermuda dreieck 😱 #wissenswertes #wissen #mystery",
-      "views": 71,
+      "views": 70,
       "avg_s": 28.0,
       "avg_pct": 45.8
     },
@@ -57,7 +57,7 @@
       "format": "–",
       "hook": "–",
       "title": "IKEA Effekt erklärt #wissen #ikea #shorts #wissenswertes",
-      "views": 30,
+      "views": 29,
       "avg_s": 20.0,
       "avg_pct": 33.5
     },
@@ -67,9 +67,9 @@
       "format": "–",
       "hook": "–",
       "title": "Darum stinkt deine Waschmaschine – und so wirst du es los 🧺 #shorts",
-      "views": 10,
-      "avg_s": 40.0,
-      "avg_pct": 64.7
+      "views": 12,
+      "avg_s": 38.0,
+      "avg_pct": 62.0
     },
     {
       "yt_id": "6vsrPS2q0z4",
@@ -80,6 +80,16 @@
       "views": 6,
       "avg_s": 10.0,
       "avg_pct": 16.8
+    },
+    {
+      "yt_id": "6t884vuFjR8",
+      "id": "–",
+      "format": "–",
+      "hook": "–",
+      "title": "Dieses Tier hat drei Herzen 🐙 #shorts",
+      "views": 3,
+      "avg_s": 0.0,
+      "avg_pct": 0.0
     },
     {
       "yt_id": "31KmU-6CMqs",
@@ -117,16 +127,6 @@
       "format": "–",
       "hook": "–",
       "title": "Die 3 Regeln der Vormieterin – Teil 1 🔦 #shorts",
-      "views": 2,
-      "avg_s": 0.0,
-      "avg_pct": 0.0
-    },
-    {
-      "yt_id": "6t884vuFjR8",
-      "id": "–",
-      "format": "–",
-      "hook": "–",
-      "title": "Dieses Tier hat drei Herzen 🐙 #shorts",
       "views": 2,
       "avg_s": 0.0,
       "avg_pct": 0.0
