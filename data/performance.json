@@ -95,6 +95,74 @@
         "comments": 0,
         "at": "2026-11-18T03:35:28.000152+01:00"
       }
+    },
+    {
+      "id": "W002",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+      "hook_type": "Mythos aufdecken",
+      "due": "2026-11-17T18:00:00+01:00",
+      "duration": 33.57,
+      "group": "mythos",
+      "24h": {
+        "views": 743,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4800,
+        "at": "2026-11-19T02:59:14.075577+01:00"
+      }
+    },
+    {
+      "id": "W002",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+      "hook_type": "Mythos aufdecken",
+      "due": "2026-11-17T18:00:00+01:00",
+      "duration": 33.57,
+      "group": "mythos",
+      "24h": {
+        "views": 1019,
+        "likes": 8,
+        "comments": 1,
+        "at": "2026-11-19T02:59:14.076687+01:00"
+      }
+    },
+    {
+      "id": "X002",
+      "platform": "tiktok",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+      "hook_type": "Emotionales Gedankenexperiment",
+      "due": "2026-11-17T10:00:00+01:00",
+      "duration": 47.4,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 747,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5340,
+        "at": "2026-11-19T02:59:14.077682+01:00"
+      }
+    },
+    {
+      "id": "X002",
+      "platform": "youtube",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+      "hook_type": "Emotionales Gedankenexperiment",
+      "due": "2026-11-17T10:00:00+01:00",
+      "duration": 47.4,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 84,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-19T02:59:14.078582+01:00"
+      }
     }
   ]
 }

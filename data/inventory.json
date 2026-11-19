@@ -77,7 +77,7 @@
     {
       "id": "D016",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "source": "drive",
       "drive_id": "1MqViq5aikZj2_cWiim4OvJ0qFNpeTpd1",
       "drive_title": "V016_Spotlight_Effekt.mp4",
@@ -1277,7 +1277,7 @@
     {
       "id": "W003",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-15T08:03:15.480688+01:00",
       "topic": "Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)",
       "hook_type": "Alltagsfrage Warum",
