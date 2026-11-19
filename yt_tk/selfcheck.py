@@ -6,9 +6,11 @@
 Ergebnis je Pruefung: OK, WARN oder FEHLER. Exit 1 nur bei FEHLER. Die Claude-Routine liest den Bericht jeden Morgen,
 behebt Fehler (Stufe A, mit Dry-Run) und schlaegt Optimierungen vor (docs/ROUTINE_CODEREVIEW.md im Repo passiv-einkommen)."""
 import importlib
+import json
 import pkgutil
 import sys
 from datetime import datetime, timedelta
+from pathlib import Path
 
 from . import inventory, textcheck
 
@@ -89,12 +91,46 @@ def check_stock(inv: list) -> None:
     add("WARN" if len(nxt) < 3 else "OK", f"Langvideos bereit: {len(nxt)} (3 pro Woche: So, Mi, Fr)")
 
 
+def check_3d(inv: list) -> None:
+    """3D-Videos: Texte und Szenenbaukasten gueltig, Pins zeigen auf vorhandene Videos ohne Doppelbelegung, Bilder vorhanden."""
+    from . import kitcheck, textcheck
+    base = Path(__file__).resolve().parent.parent
+    bad, n = [], 0
+    for f in sorted((base / "content3d").glob("*.json")):
+        n += 1
+        cfg = json.loads(f.read_text(encoding="utf-8"))
+        errs = textcheck.check(cfg)
+        if not (base / "render3d" / "scenes" / f"{cfg.get('scene')}.js").exists():
+            errs.append("Szene fehlt")
+        if cfg.get("scene") == "kit":
+            errs += kitcheck.check(cfg)[0]
+        if errs:
+            bad.append(f"{f.stem}: " + ", ".join(errs)[:120])
+    add("FEHLER" if bad else "OK", f"3D-Inhalte gueltig ({n})" if not bad else "3D-Inhalte fehlerhaft: " + "; ".join(bad))
+    pins = inventory._load("pins.json", {"pins": []}).get("pins", [])
+    today = datetime.now(inventory.TZ).date().isoformat()
+    byid = {v["id"]: v for v in inv}
+    seen, perr = set(), []
+    for p in pins:
+        if p["day"] < today:
+            continue
+        key = (p["day"], p["time"], p["platform"])
+        v = byid.get(p["id"])
+        if key in seen:
+            perr.append(f"doppelt {key}")
+        seen.add(key)
+        if not v or not v.get("video_url") or v["status"] in ("failed", "deleted", "archived"):
+            perr.append(f"{p['id']} nicht verfuegbar")
+    add("FEHLER" if perr else "OK", "Pins stimmig" if not perr else "Pins fehlerhaft: " + "; ".join(perr))
+
+
 def main(argv: list) -> int:
     inv = inventory._load("inventory.json", {"videos": []})["videos"]
     check_modules()
     check_inventory(inv)
     check_plan(True)
     check_stock(inv)
+    check_3d(inv)
     day = datetime.now(inventory.TZ).date().isoformat()
     n = {k: sum(1 for l, _ in R if l == k) for k in ("FEHLER", "WARN", "OK")}
     L = [f"# Selbstpruefung {day}", "", f"{n['FEHLER']} Fehler, {n['WARN']} Warnungen, {n['OK']} in Ordnung", ""]

@@ -1,0 +1,39 @@
+{
+  "id": "K001", "scene": "kit", "audio_id": "G001", "format": "wissen", "group": "kit-test",
+  "topic": "Szenenbaukasten-Test (Nachbau von G001, wird nicht veroeffentlicht)", "hook_type": "Test",
+  "title_tiktok": "Test des Szenenbaukastens 🎮",
+  "title_youtube": "Test des Szenenbaukastens: Nachbau der Szene 🎮 #shorts",
+  "text_tiktok": "Was sagst du zum Test? 👇 #test #kit #gaming #gamingnews #fürdich",
+  "text_youtube": "Interner Test. Was sagst du dazu? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #test #kit #gaming #gamingnews",
+  "highlight": "\\d|bestätigt|termin|gerüchte",
+  "kit": {
+    "set": "sunset",
+    "cams": {"start": {"pos": [-0.5, 3.8, 9.2], "look": [0, 3.6, 0]}, "nah": {"pos": [0.5, 3.5, 7.8], "look": [0, 3.6, 0]}},
+    "props": [
+      {"id": "cal", "type": "calendar", "pos": [0, 4.5, 0], "scale": 0.95, "text": "19", "month": "NOV 2026", "prev": "18", "show": true},
+      {"id": "fig", "type": "figure", "pos": [-1.0, 0, 1.6], "rot": 0.45, "scale": 0.7},
+      {"id": "con", "type": "console", "pos": [0.95, 3.65, 1.5], "scale": 0.55},
+      {"id": "lblKon", "type": "stamp", "text": "Konsolen", "w": 1.3, "h": 0.42, "size": 120, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0.8, 2.98, 1.8]},
+      {"id": "pc", "type": "monitor", "screen": "?", "pos": [-0.95, 3.45, 1.5], "scale": 0.6},
+      {"id": "lblPC", "type": "stamp", "text": "Kein Termin", "w": 1.25, "h": 0.42, "size": 130, "radius": 20, "pos": [-0.8, 2.98, 1.8]},
+      {"id": "b1", "type": "bubble", "pos": [-1, 6.0, 1.2]}, {"id": "b2", "type": "bubble", "pos": [0, 6.0, 1.2]}, {"id": "b3", "type": "bubble", "pos": [1, 6.0, 1.2]},
+      {"id": "ger", "type": "stamp", "text": "GERÜCHT", "bg": "#7a1d8f", "pos": [0, 5.2, 1.6], "rot": 0.12}
+    ],
+    "beats": [
+      {"at": 0.5, "id": "cal", "do": "flip", "dur": 0.7},
+      {"at": "bestätigt|bestatigt", "id": "fig", "do": "pose", "pose": "point"},
+      {"at": "bestätigt|bestatigt", "id": "cal", "do": "pulse", "dur": 0.4},
+      {"at": "konsolen", "id": "con", "do": "in"}, {"at": "konsolen", "id": "con", "do": "spin"},
+      {"at": "konsolen", "offset": 0.2, "id": "lblKon", "do": "in"},
+      {"at": "^pc$", "id": "pc", "do": "in"}, {"at": "^pc$", "offset": 0.5, "id": "lblPC", "do": "in"},
+      {"at": "gerüchte|geruchte", "id": "b1", "do": "in"}, {"at": "gerüchte|geruchte", "id": "b2", "do": "in"}, {"at": "gerüchte|geruchte", "id": "b3", "do": "in"},
+      {"at": "gerüchte|geruchte", "offset": 0.9, "id": "b1", "do": "move", "to": [-1, 3.6, 1.2], "dur": 0.8},
+      {"at": "gerüchte|geruchte", "offset": 0.9, "id": "b2", "do": "move", "to": [0, 3.6, 1.2], "dur": 0.8},
+      {"at": "gerüchte|geruchte", "offset": 0.9, "id": "b3", "do": "move", "to": [1, 3.6, 1.2], "dur": 0.8},
+      {"at": "gerüchte|geruchte", "offset": 0.4, "id": "ger", "do": "pop"},
+      {"at": "gerüchte|geruchte", "offset": 2.2, "id": "ger", "do": "out"},
+      {"at": "gerüchte|geruchte", "offset": 2.2, "id": "b1", "do": "out"}, {"at": "gerüchte|geruchte", "offset": 2.2, "id": "b2", "do": "out"}, {"at": "gerüchte|geruchte", "offset": 2.2, "id": "b3", "do": "out"},
+      {"at": 1.0, "do": "cam", "shot": "nah", "dur": 24}
+    ]
+  }
+}

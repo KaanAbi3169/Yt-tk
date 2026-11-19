@@ -15,7 +15,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from . import config, inventory, textcheck, transcribe
+from . import config, inventory, kitcheck, textcheck, transcribe
 
 FPS = 30
 ROOT = Path(__file__).resolve().parent.parent
@@ -88,7 +88,7 @@ def build(vid: str, px: float, dry: bool) -> int:
     if errs:
         log("Textpruefung durchgefallen: " + "; ".join(errs))
         return 1
-    audio = config.DATA / "audio" / f"{vid}.mp3"
+    audio = config.DATA / "audio" / f"{cfg.get('audio_id', vid)}.mp3"  # audio_id: Sprache eines anderen Videos nutzen (Tests)
     if not audio.exists():
         log(f"Sprachdatei fehlt: {audio}")
         return 1
@@ -97,6 +97,16 @@ def build(vid: str, px: float, dry: bool) -> int:
     if len(words) < 10:
         log("Zu wenige Woerter erkannt")
         return 1
+    if cfg["scene"] == "kit":  # Szenenbaukasten: Beschreibung pruefen (Anker gegen die gesprochenen Woerter) und der Buehne geben
+        kerr, kwarn = kitcheck.check(cfg, words)
+        for w in kwarn:
+            log("Baukasten-Warnung: " + w)
+        if kerr:
+            log("Baukasten-Pruefung durchgefallen: " + "; ".join(kerr))
+            return 1
+        (R3D / "scene.json").write_text(json.dumps(cfg["kit"], ensure_ascii=False), encoding="utf-8")
+    else:
+        (R3D / "scene.json").unlink(missing_ok=True)
     (R3D / "words.json").write_text(json.dumps(words, ensure_ascii=False), encoding="utf-8")
     imgs = R3D / "images"
     shutil.rmtree(imgs, ignore_errors=True)
