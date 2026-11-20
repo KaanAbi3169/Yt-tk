@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -7,14 +7,14 @@
   },
   "groups": [
     {
-      "group": "mythos",
-      "n": 2,
-      "avg": 918
-    },
-    {
       "group": "wissen",
       "n": 2,
       "avg": 870
+    },
+    {
+      "group": "mythos",
+      "n": 4,
+      "avg": 686
     },
     {
       "group": "was-waere-wenn-test",
@@ -30,9 +30,14 @@
       "group": "waswaerewenn",
       "n": 2,
       "avg": 422
+    },
+    {
+      "group": "koerper",
+      "n": 2,
+      "avg": 405
     }
   ],
-  "open": 21,
+  "open": 28,
   "items": [
     {
       "title": "James Bond",
@@ -201,6 +206,70 @@
       "signal": "neu in den Top 1000 mit 14224 Aufrufen",
       "kind": "neu",
       "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Anthropic",
+      "signal": "Wikipedia-Aufrufe 25551 gestern, Faktor 8.3 gegen Schnitt 3060",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Tokio Hotel",
+      "signal": "Wikipedia-Aufrufe 9819 gestern, Faktor 4.3 gegen Schnitt 2288",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "PlayStation 5",
+      "signal": "Wikipedia-Aufrufe 7039 gestern, Faktor 2.8 gegen Schnitt 2503",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Thiel und Boerne",
+      "signal": "Wikipedia-Schnitt 4522 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Eisenerzer Höhe",
+      "signal": "neu in den Top 1000 mit 18772 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Diplodia sapinea",
+      "signal": "neu in den Top 1000 mit 11252 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Blühende Kastanienbäume",
+      "signal": "neu in den Top 1000 mit 10963 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Flugunfall auf dem Gauligletscher",
+      "signal": "neu in den Top 1000 mit 10205 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
       "status": "candidate",
       "source": "radar"
     }
