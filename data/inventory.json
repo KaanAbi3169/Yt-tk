@@ -161,7 +161,7 @@
     {
       "id": "D022",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1QwKsnGW8gNJxc65-0xnFtw4__iDeF2AK",
       "drive_title": "V022_Toast_Butterseite.mp4",
@@ -169,7 +169,10 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830133+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1QwKsnGW8gNJxc65-0xnFtw4__iDeF2AK",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6affe4e84c1afd05def8d76e",
+        "youtube": "6affe4eaca85ebefb0fefcb8"
+      },
       "title_tiktok": "Fällt der Toast wirklich immer auf die Butterseite? 🍞",
       "title_youtube": "Fällt Toast immer auf die Butterseite? Der Mythos im Check 🍞 #shorts",
       "text_tiktok": "Murphys Gesetz am Frühstückstisch. Stimmt es bei dir? 👇 #toast #mythos #wusstestdu #alltagswissen #lernenmittiktok",
@@ -177,7 +180,7 @@
       "notvorrat": true,
       "drive_shared": true,
       "group": "mythos",
-      "due": null
+      "due": "2026-11-20T16:00:00+01:00"
     },
     {
       "id": "D023",
@@ -806,7 +809,7 @@
     {
       "id": "D059",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
       "drive_title": "V059_Himmel_blau.mp4",
@@ -814,13 +817,17 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830335+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6affe4e4d5f8acdd0d778021",
+        "youtube": "6affe4e67b0a126cebb1641b"
+      },
       "duration": 61.6,
       "title_tiktok": "🌞 Warum ist der Himmel blau, obwohl die Sonne weisses Licht schickt?",
       "title_youtube": "🌞 Warum ist der Himmel blau? Die Antwort steckt im Licht #shorts",
       "text_tiktok": "Blaues Licht wird von Luftteilchen viel stärker gestreut als rotes und kommt deshalb von überall am Himmel. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #physik #himmel #sonne",
       "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts",
-      "group": "physik-test"
+      "group": "physik-test",
+      "due": "2026-11-20T10:00:00+01:00"
     },
     {
       "id": "D060",
