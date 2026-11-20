@@ -1548,7 +1548,7 @@
     {
       "id": "T001",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-18T23:51:22.860082+01:00",
       "source": "render3d",
       "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
@@ -1576,7 +1576,7 @@
     {
       "id": "G001",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-18T23:58:03.578613+01:00",
       "source": "render3d",
       "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",

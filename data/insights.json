@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T02:59:14.079035+01:00",
+  "updated": "2026-11-20T02:53:38.330363+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
@@ -27,13 +27,6 @@
       {
         "n": 2,
         "avg": 918
-      }
-    ],
-    [
-      "format:wissen",
-      {
-        "n": 4,
-        "avg": 894
       }
     ],
     [
@@ -79,6 +72,13 @@
       }
     ],
     [
+      "slot:tiktok:Wed 16",
+      {
+        "n": 1,
+        "avg": 765
+      }
+    ],
+    [
       "slot:tiktok:Tue 18",
       {
         "n": 1,
@@ -86,56 +86,28 @@
       }
     ],
     [
-      "hook:Emotionales Gedankenexperiment",
+      "slot:tiktok:Wed 10",
       {
-        "n": 2,
-        "avg": 446
+        "n": 1,
+        "avg": 705
       }
     ],
     [
-      "topic:24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+      "format:wissen",
       {
-        "n": 2,
-        "avg": 446
+        "n": 8,
+        "avg": 662
       }
     ],
     [
-      "format:horror",
+      "hook:Alltagsfrage Warum",
       {
         "n": 2,
-        "avg": 445
+        "avg": 454
       }
     ]
   ],
   "bottom": [
-    [
-      "topic:24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
-      {
-        "n": 2,
-        "avg": 446
-      }
-    ],
-    [
-      "format:horror",
-      {
-        "n": 2,
-        "avg": 445
-      }
-    ],
-    [
-      "hook:Situation + Regel-Bruch",
-      {
-        "n": 2,
-        "avg": 445
-      }
-    ],
-    [
-      "topic:Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
-      {
-        "n": 2,
-        "avg": 445
-      }
-    ],
     [
       "format:waswaerewenn",
       {
@@ -158,10 +130,38 @@
       }
     ],
     [
+      "hook:drive-reserve",
+      {
+        "n": 2,
+        "avg": 405
+      }
+    ],
+    [
+      "topic:Spotlight Effekt",
+      {
+        "n": 2,
+        "avg": 405
+      }
+    ],
+    [
+      "slot:youtube:Wed 10",
+      {
+        "n": 1,
+        "avg": 204
+      }
+    ],
+    [
       "slot:youtube:Tue 10",
       {
         "n": 1,
         "avg": 89
+      }
+    ],
+    [
+      "slot:youtube:Wed 16",
+      {
+        "n": 1,
+        "avg": 45
       }
     ],
     [
@@ -201,8 +201,8 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 4,
-      "avg": 894
+      "n": 8,
+      "avg": 662
     },
     "hook:Du machst einen Fehler": {
       "n": 2,
@@ -271,6 +271,38 @@
     "slot:youtube:Tue 10": {
       "n": 1,
       "avg": 89
+    },
+    "hook:drive-reserve": {
+      "n": 2,
+      "avg": 405
+    },
+    "slot:tiktok:Wed 16": {
+      "n": 1,
+      "avg": 765
+    },
+    "topic:Spotlight Effekt": {
+      "n": 2,
+      "avg": 405
+    },
+    "slot:youtube:Wed 16": {
+      "n": 1,
+      "avg": 45
+    },
+    "hook:Alltagsfrage Warum": {
+      "n": 2,
+      "avg": 454
+    },
+    "slot:tiktok:Wed 10": {
+      "n": 1,
+      "avg": 705
+    },
+    "topic:Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)": {
+      "n": 2,
+      "avg": 454
+    },
+    "slot:youtube:Wed 10": {
+      "n": 1,
+      "avg": 204
     }
   }
 }
