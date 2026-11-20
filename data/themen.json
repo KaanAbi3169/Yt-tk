@@ -1,321 +1,373 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "rising": [
     {
-      "title": "Voyager 1",
-      "views": 17276,
-      "avg_before": 2199,
-      "ratio": 7.9
+      "title": "Anthropic",
+      "views": 25551,
+      "avg_before": 3060,
+      "ratio": 8.3
     },
     {
       "title": "Grand Theft Auto",
-      "views": 23689,
-      "avg_before": 6539,
-      "ratio": 3.6
+      "views": 40654,
+      "avg_before": 9393,
+      "ratio": 4.3
+    },
+    {
+      "title": "Tokio Hotel",
+      "views": 9819,
+      "avg_before": 2288,
+      "ratio": 4.3
     },
     {
       "title": "Rockstar Games",
-      "views": 6946,
-      "avg_before": 2236,
-      "ratio": 3.1
+      "views": 10982,
+      "avg_before": 3020,
+      "ratio": 3.6
+    },
+    {
+      "title": "Voyager 1",
+      "views": 15551,
+      "avg_before": 4712,
+      "ratio": 3.3
+    },
+    {
+      "title": "PlayStation 5",
+      "views": 7039,
+      "avg_before": 2503,
+      "ratio": 2.8
     }
   ],
   "new": [
     {
-      "title": "Woolworth Building",
-      "views": 24393
+      "title": "Eisenerzer Höhe",
+      "views": 18772
     },
     {
-      "title": "Simone Sommerland, Karsten Glück und die Kita-Frösche",
-      "views": 16209
+      "title": "Diplodia sapinea",
+      "views": 11252
     },
     {
-      "title": "Alicella gigantea",
-      "views": 14224
+      "title": "Blühende Kastanienbäume",
+      "views": 10963
     },
     {
-      "title": "Leopard von Rudraprayag",
-      "views": 11549
+      "title": "Flugunfall auf dem Gauligletscher",
+      "views": 10205
     },
     {
-      "title": "Büsingen am Hochrhein",
-      "views": 9736
+      "title": "Hohe Tatra",
+      "views": 9127
     },
     {
-      "title": "Awá (Guajá)",
-      "views": 7614
+      "title": "Orchidometer",
+      "views": 8035
+    },
+    {
+      "title": "Sozialistische Reichspartei",
+      "views": 7667
     },
     {
       "title": "Guarding Stars",
-      "views": 6812
+      "views": 7490
     },
     {
-      "title": "NYPD",
-      "views": 6755
+      "title": "Rohingya",
+      "views": 7417
     },
     {
-      "title": "Mercedes-Benz C 111",
-      "views": 5889
+      "title": "Mallorca",
+      "views": 7215
+    },
+    {
+      "title": "Französisch-Guayana",
+      "views": 6823
     },
     {
       "title": "Shenzhen",
-      "views": 5799
+      "views": 6667
+    },
+    {
+      "title": "Santiano",
+      "views": 6499
+    },
+    {
+      "title": "Eierkennzeichnung",
+      "views": 6054
+    },
+    {
+      "title": "Asiatisch-Pazifische Wirtschaftsgemeinschaft",
+      "views": 5755
+    },
+    {
+      "title": "Bundesweite Ausdehnung der CSU",
+      "views": 5714
+    },
+    {
+      "title": "Lichtjahr",
+      "views": 5652
+    },
+    {
+      "title": "Gefäßmalformation",
+      "views": 5561
+    },
+    {
+      "title": "Koalition der Willigen (Ukrainekrieg)",
+      "views": 5536
+    },
+    {
+      "title": "Myanmar",
+      "views": 5387
     }
   ],
   "evergreen": [
     {
       "title": "Nvidia",
-      "avg": 14702
-    },
-    {
-      "title": "Ballers in God",
-      "avg": 11039
-    },
-    {
-      "title": "UEFA Nations League",
-      "avg": 10843
-    },
-    {
-      "title": "James Bond",
-      "avg": 10161
-    },
-    {
-      "title": "UEFA Nations League 2026/27",
-      "avg": 8970
+      "avg": 13946
     },
     {
       "title": "Grand Theft Auto",
-      "avg": 8683
+      "avg": 13300
+    },
+    {
+      "title": "James Bond",
+      "avg": 10882
+    },
+    {
+      "title": "UEFA Nations League",
+      "avg": 9702
+    },
+    {
+      "title": "UEFA Nations League 2026/27",
+      "avg": 8155
     },
     {
       "title": "Deutschland",
-      "avg": 8123
+      "avg": 8119
     },
     {
       "title": "ChatGPT",
-      "avg": 6172
+      "avg": 6712
     },
     {
-      "title": "Figuren der Harry-Potter-Romane",
-      "avg": 4596
-    },
-    {
-      "title": "ZDF",
-      "avg": 4332
-    },
-    {
-      "title": "Periodensystem",
-      "avg": 4058
-    },
-    {
-      "title": "Berlin",
-      "avg": 3730
-    },
-    {
-      "title": "Fußball-Europameisterschaft 2028",
-      "avg": 3558
-    },
-    {
-      "title": "Generation Z",
-      "avg": 3477
-    },
-    {
-      "title": "Vereinigte Staaten",
-      "avg": 3475
+      "title": "Voyager 1",
+      "avg": 6260
     },
     {
       "title": "Anthropic",
-      "avg": 3165
+      "avg": 5872
     },
     {
-      "title": "YouTube",
-      "avg": 2915
+      "title": "Figuren der Harry-Potter-Romane",
+      "avg": 4773
     },
     {
-      "title": "Remmo-Clan",
-      "avg": 2894
+      "title": "Thiel und Boerne",
+      "avg": 4522
+    },
+    {
+      "title": "ZDF",
+      "avg": 4360
+    },
+    {
+      "title": "Periodensystem",
+      "avg": 4041
     },
     {
       "title": "Rockstar Games",
-      "avg": 2825
+      "avg": 4015
     },
     {
-      "title": "ARD",
-      "avg": 2781
+      "title": "Berlin",
+      "avg": 3988
+    },
+    {
+      "title": "Generation Z",
+      "avg": 3675
+    },
+    {
+      "title": "Vereinigte Staaten",
+      "avg": 3502
+    },
+    {
+      "title": "Fußball-Europameisterschaft 2028",
+      "avg": 3324
+    },
+    {
+      "title": "Tokio Hotel",
+      "avg": 3229
+    },
+    {
+      "title": "PlayStation 5",
+      "avg": 3070
+    },
+    {
+      "title": "ATP Finals",
+      "avg": 2845
+    },
+    {
+      "title": "YouTube",
+      "avg": 2841
     },
     {
       "title": "Figuren in Tolkiens Welt",
-      "avg": 2774
-    },
-    {
-      "title": "Russland",
-      "avg": 2659
-    },
-    {
-      "title": "Österreich",
-      "avg": 2634
+      "avg": 2817
     },
     {
       "title": "Nius",
-      "avg": 2607
+      "avg": 2812
     },
     {
-      "title": "Bundespräsident (Deutschland)",
-      "avg": 2557
+      "title": "Russland",
+      "avg": 2799
     }
   ],
-  "blocked": 12,
+  "blocked": 13,
   "days": 8,
-  "people_removed": 150,
+  "people_removed": 169,
   "youtube": [
     {
       "title": "Fifi x Fero - U Katritha",
       "channel": "FIFI OFFICIAL",
-      "views": 1521037,
+      "views": 1816749,
       "category": "10"
     },
     {
-      "title": "GTA VI: SWISS EDITION 🇨🇭(Trailer)",
-      "channel": "Fabian Der Praktikant",
-      "views": 3759,
+      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027)",
+      "channel": "KinoCheck",
+      "views": 220842,
       "category": "24"
     },
     {
       "title": "GTA 6 ist einfach zu krass! - Test / Review ohne Story-Spoiler",
       "channel": "GameStar",
-      "views": 2533619,
+      "views": 3135527,
       "category": "20"
     },
     {
-      "title": "BANTU NATION X JAZEEK X LUCIANO X REEZY X THIZZY52 - BLACK",
-      "channel": "Bantu Nation Channel",
-      "views": 896732,
+      "title": "Durim Malaj - SHEQERE (Official Music Video)",
+      "channel": "Durim Malaj",
+      "views": 1124016,
       "category": "10"
     },
     {
-      "title": "Grand Theft Auto VI - Features Trailer | PS5 Games",
-      "channel": "PlayStation",
-      "views": 7527539,
-      "category": "20"
-    },
-    {
-      "title": "GTA 6 LAUNCH STREAM! Playing GTA 6 for the First Time",
-      "channel": "TGG",
-      "views": 9158082,
-      "category": "20"
-    },
-    {
-      "title": "Shkumbin Ismaili - Kam zili (Official Music Video)",
-      "channel": "Shkumbin Ismaili",
-      "views": 1198587,
-      "category": "10"
-    },
-    {
-      "title": "Avengers: Doomsday | The Return | In Theaters December 18",
-      "channel": "Marvel Entertainment",
-      "views": 6082671,
+      "title": "GTA VI: SWISS EDITION 🇨🇭(Trailer)",
+      "channel": "Fabian Der Praktikant",
+      "views": 4904,
       "category": "24"
     },
     {
-      "title": "Grand Theft Auto VI: Out Now",
-      "channel": "Rockstar Games",
-      "views": 18771790,
-      "category": "20"
-    },
-    {
-      "title": "Bujar Mustafa - E TEPRUME",
-      "channel": "BM Official",
-      "views": 3172344,
-      "category": "10"
-    },
-    {
-      "title": "AVENGERS 5: DOOMSDAY Official “Doctor Doom” Special Look (2026) Marvel",
-      "channel": "KinoCheck.com",
-      "views": 635981,
-      "category": "24"
-    },
-    {
-      "title": "🔴 LIVE! - GTA 6 EARLY ACCESS! FREE ROAM GAMEPLAY LIVE! (PS5 PRO)",
-      "channel": "Typical Gamer",
-      "views": 7067470,
+      "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
+      "channel": "IShowSpeed",
+      "views": 65641155,
       "category": "20"
     },
     {
       "title": "Levant - Forever (Official Music Video)",
       "channel": "Levant",
-      "views": 1638571,
+      "views": 2067338,
+      "category": "10"
+    },
+    {
+      "title": "Grand Theft Auto VI - Features Trailer | PS5 Games",
+      "channel": "PlayStation",
+      "views": 7676059,
+      "category": "20"
+    },
+    {
+      "title": "GTA 6 GAMEPLAY DEUTSCH LIVE!",
+      "channel": "Standart Skill",
+      "views": 1268885,
+      "category": "20"
+    },
+    {
+      "title": "Shkumbin Ismaili - Kam zili (Official Music Video)",
+      "channel": "Shkumbin Ismaili",
+      "views": 1332254,
+      "category": "10"
+    },
+    {
+      "title": "Avengers: Doomsday | The Return | In Theaters December 18",
+      "channel": "Marvel Entertainment",
+      "views": 7370506,
+      "category": "24"
+    },
+    {
+      "title": "MEIN ERSTES GTA 6 GAMEPLAY😱😍 |  GTA 6 - TEIL 1 | SpontanaBlack",
+      "channel": "SpontanaBlack",
+      "views": 767593,
+      "category": "20"
+    },
+    {
+      "title": "BANTU NATION X JAZEEK X LUCIANO X REEZY X THIZZY52 - BLACK",
+      "channel": "Bantu Nation Channel",
+      "views": 974588,
+      "category": "10"
+    },
+    {
+      "title": "AVENGERS 5: DOOMSDAY Official “Doctor Doom” Special Look (2026) Marvel",
+      "channel": "KinoCheck.com",
+      "views": 769592,
+      "category": "24"
+    },
+    {
+      "title": "Ich spiele GTA 6 zum ERSTEN MAL! (LIVE 🔴)",
+      "channel": "iCrimax",
+      "views": 1567591,
+      "category": "20"
+    },
+    {
+      "title": "Bujar Mustafa - E TEPRUME",
+      "channel": "BM Official",
+      "views": 3287918,
       "category": "10"
     },
     {
       "title": "O.M - Trailer | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar Periasamy | Sai Abhyankkar",
       "channel": "Divo Music",
-      "views": 31869436,
+      "views": 32862678,
       "category": "10"
     },
     {
-      "title": "Der kranke Hype von GTA 6",
-      "channel": "2 Bored Guys",
-      "views": 2671268,
-      "category": "24"
-    },
-    {
-      "title": "Durim Malaj - SHEQERE (Official Music Video)",
-      "channel": "Durim Malaj",
-      "views": 754309,
+      "title": "Sido - FLÜGEL (Prod. by Yanek Stärk & Skipbeats) [Official Video]",
+      "channel": "Sido",
+      "views": 225972,
       "category": "10"
     },
     {
       "title": "Artificial - Official Trailer - In Select Theaters Christmas Day, Everywhere January 8",
       "channel": "NEON",
-      "views": 3798422,
+      "views": 7918726,
       "category": "1"
     },
     {
-      "title": "GTA 6 TEST ⭐ J’AI FINI le JEU de ROCKSTAR GAMES c’est MONUMENTAL : REVIEW + GAMEPLAY (SANS SPOILER)",
-      "channel": "Julien Chièze",
-      "views": 548817,
+      "title": "😍🔥GTA 6 GAME of the YEAR! - 13 JAHRE lang WARTEN hat sich SOOO GELOHNT!",
+      "channel": "Trymacs",
+      "views": 860686,
       "category": "20"
     },
     {
       "title": "NUSRET ft NDERIM - ME DUAJ SOT ",
       "channel": "Nusret Kurtishi",
-      "views": 335386,
+      "views": 390988,
       "category": "10"
     },
     {
-      "title": "Emily in Paris: The Final Season | Official Teaser | Netflix",
-      "channel": "Netflix",
-      "views": 3080963,
-      "category": "24"
+      "title": "THE NIGHTINGALE – Official Teaser Trailer (4K)",
+      "channel": "Sony Pictures Entertainment",
+      "views": 4838968,
+      "category": "1"
     },
     {
-      "title": "GIGA MEGA BEST OF DES 20 ANS DE WANKIL (Partie 2)",
-      "channel": "Wankil Studio - Laink et Terracid",
-      "views": 1168565,
-      "category": "20"
+      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
+      "channel": "Sylvain Lyve",
+      "views": 1315401,
+      "category": "2"
     },
     {
-      "title": "IDK & Eminem — WELCOME (Prd. By J Dilla) [Official Music Video]",
-      "channel": "idk",
-      "views": 5203529,
-      "category": "10"
-    },
-    {
-      "title": "Avengers: Doomsday | TV SPOT “DARKNESS” CONCEPT | Marvel Studios",
-      "channel": "MovieTrailers Entertainment",
-      "views": 2257876,
-      "category": "24"
-    },
-    {
-      "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 1)",
-      "channel": "Kai Cenat Live",
-      "views": 11691871,
-      "category": "22"
-    },
-    {
-      "title": "Fiton Syla - Prapë te unë",
-      "channel": "Fiton Syla",
-      "views": 410941,
+      "title": "KIDDA - AKUZA",
+      "channel": "KIDDA",
+      "views": 37570,
       "category": "10"
     }
   ]
