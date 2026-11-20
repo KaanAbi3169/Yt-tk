@@ -42,6 +42,7 @@ Ein neues 3D-Video braucht keinen eigenen Code mehr: `content3d/<ID>.json` mit `
 ## Anker (`at`)
 - Zahl: Sekunden. Text: Muster (Regex) gegen die **kleingeschriebenen Wörter ohne Satzzeichen**, z. B. `"gerüchte|geruchte"`, `"^pc$"`.
 - Zusätze: `"n": 1` (zweites Treffer-Wort), `"end": true` (Ende des Wortes), `"offset": 0.5` (Sekunden danach), `"fallback": 0.3` (Anteil der Videodauer, falls das Wort nicht erkannt wurde).
+- **Zahlen:** Whisper schreibt gesprochene Zahlen als Ziffern („achtzehnhundertneunundsechzig“ wird „1869“, „dreißig“ wird „30“). Muster immer mit Ziffer und Zahlwort angeben (`"1869|neunundsechzig"`) und `fallback` setzen.
 - Passt ein Muster auf kein Wort, bricht die Prüfung ab (Fehler), mit `fallback` nur Warnung.
 
 ## Echte Bilder
