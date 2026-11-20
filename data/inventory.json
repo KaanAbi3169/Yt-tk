@@ -1607,6 +1607,31 @@
         "https://www.stocktitan.net/articles/gta-6-release-date-take-two-holiday-sales-2026"
       ],
       "due": "2026-11-19T16:00:00+01:00"
+    },
+    {
+      "id": "T002",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-20T07:39:18.877367+01:00",
+      "source": "render3d",
+      "topic": "Gallium und Mendelejews Vorhersage im Periodensystem",
+      "hook_type": "Staunen + Ergebnis",
+      "series": null,
+      "episode": null,
+      "duration": 40.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/T002.mp4",
+      "title_tiktok": "Dieses Metall schmilzt in deiner Hand 🧪",
+      "title_youtube": "Dieses Metall schmilzt in deiner Hand: Gallium und das Periodensystem 🧪 #shorts",
+      "text_tiktok": "Hättest du dem Periodensystem so vertraut? Schreib es in die Kommentare 👇 #wusstestdu #chemie #periodensystem #wissen #lernenmittiktok",
+      "text_youtube": "Gallium schmilzt knapp über Zimmertemperatur. Mendelejew hatte dafür im Periodensystem schon vor der Entdeckung eine Lücke gelassen. Hättest du dem Periodensystem so vertraut? 👇\n\nQuellen: Wikipedia (Mendeleev's predicted elements), Los Alamos National Laboratory (periodic.lanl.gov, Gallium), Royal Society of Chemistry. Stimme und Grafiken mit KI erstellt.\n\n#shorts #chemie #periodensystem #wusstestdu #wissen",
+      "scenes": 1,
+      "buffer": {},
+      "group": "3d-wissen",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "https://periodic.lanl.gov/31.shtml",
+        "https://edu.rsc.org/elements/gallium/2020009.article"
+      ]
     }
   ]
 }
