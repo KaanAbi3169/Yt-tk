@@ -1,13 +1,23 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "videos": [
+    {
+      "yt_id": "BibnA5CKqjE",
+      "id": "W002",
+      "format": "wissen",
+      "hook": "Mythos aufdecken",
+      "title": "Bleibt verschluckter Kaugummi 7 Jahre im Magen? 🫧 #shorts",
+      "views": 1020,
+      "avg_s": 16.0,
+      "avg_pct": 49.5
+    },
     {
       "yt_id": "Y3aEen_GUUI",
       "id": "–",
       "format": "–",
       "hook": "–",
       "title": "Das Internet ist 7 Tage weg – Teil 2 🌐 #shorts",
-      "views": 918,
+      "views": 919,
       "avg_s": 18.0,
       "avg_pct": 43.1
     },
@@ -42,6 +52,16 @@
       "avg_pct": 48.1
     },
     {
+      "yt_id": "vAnTfkSdx_I",
+      "id": "X002",
+      "format": "waswaerewenn",
+      "hook": "Emotionales Gedankenexperiment",
+      "title": "Was würdest du deinem 10-jährigen Ich sagen? 🧒 #shorts",
+      "views": 85,
+      "avg_s": 20.0,
+      "avg_pct": 42.5
+    },
+    {
       "yt_id": "AMH4oCcPv_0",
       "id": "–",
       "format": "–",
@@ -72,6 +92,16 @@
       "avg_pct": 62.0
     },
     {
+      "yt_id": "ZwJD9H1ahO8",
+      "id": "–",
+      "format": "–",
+      "hook": "–",
+      "title": "Um 3:17 Uhr knackt das Babyfon… | Horror Geschichte (Deutsch)",
+      "views": 11,
+      "avg_s": 142.0,
+      "avg_pct": 23.3
+    },
+    {
       "yt_id": "6vsrPS2q0z4",
       "id": "–",
       "format": "–",
@@ -80,16 +110,6 @@
       "views": 6,
       "avg_s": 10.0,
       "avg_pct": 16.8
-    },
-    {
-      "yt_id": "6t884vuFjR8",
-      "id": "–",
-      "format": "–",
-      "hook": "–",
-      "title": "Dieses Tier hat drei Herzen 🐙 #shorts",
-      "views": 3,
-      "avg_s": 0.0,
-      "avg_pct": 0.0
     },
     {
       "yt_id": "31KmU-6CMqs",
@@ -102,12 +122,12 @@
       "avg_pct": 29.0
     },
     {
-      "yt_id": "Q8iCq5eao38",
+      "yt_id": "6t884vuFjR8",
       "id": "–",
       "format": "–",
       "hook": "–",
-      "title": "",
-      "views": 2,
+      "title": "Dieses Tier hat drei Herzen 🐙 #shorts",
+      "views": 3,
       "avg_s": 0.0,
       "avg_pct": 0.0
     },
@@ -120,6 +140,16 @@
       "views": 2,
       "avg_s": 6.0,
       "avg_pct": 9.7
+    },
+    {
+      "yt_id": "Q8iCq5eao38",
+      "id": "–",
+      "format": "–",
+      "hook": "–",
+      "title": "",
+      "views": 2,
+      "avg_s": 0.0,
+      "avg_pct": 0.0
     },
     {
       "yt_id": "A9VodC7KnDo",
