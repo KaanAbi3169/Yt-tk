@@ -127,8 +127,10 @@
       "signal": "Wikipedia-Schnitt 4177 Aufrufe pro Tag (8 Tage)",
       "kind": "dauerbrenner",
       "added": "2026-11-19",
-      "status": "candidate",
-      "source": "radar"
+      "status": "produced",
+      "source": "radar",
+      "video": "T002",
+      "angle": "Gallium schmilzt in der Hand, Mendelejews Vorhersage (1869, 1875)"
     },
     {
       "title": "Leopard von Rudraprayag",
