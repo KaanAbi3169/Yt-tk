@@ -1643,6 +1643,31 @@
         "https://edu.rsc.org/elements/gallium/2020009.article"
       ],
       "due": "2026-11-21T16:00:00+01:00"
+    },
+    {
+      "id": "T003",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-21T09:51:02.217167+01:00",
+      "source": "render3d",
+      "topic": "Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)",
+      "hook_type": "Staunen + Aktualität",
+      "series": null,
+      "episode": null,
+      "duration": 38.2,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/T003.mp4",
+      "title_tiktok": "Diese Sonde ist einen ganzen Lichttag entfernt 🚀",
+      "title_youtube": "Voyager 1: Diese Sonde ist jetzt einen ganzen Lichttag von der Erde entfernt 🚀 #shorts",
+      "text_tiktok": "Würdest du einen Tag auf eine Antwort warten? Schreib es in die Kommentare 👇 #wusstestdu #weltraum #voyager #wissen #lernenmittiktok",
+      "text_youtube": "Voyager 1 hat laut NASA am 18. November 2026 einen Lichttag Abstand zur Erde erreicht. Würdest du einen Tag auf eine Antwort warten? 👇\n\nQuellen: NASA, DLR, Wikipedia (Voyager 1). Stimme und Grafiken mit KI erstellt.\n\n#shorts #voyager #weltraum #wusstestdu #wissen",
+      "scenes": 1,
+      "buffer": {},
+      "group": "3d-wissen",
+      "sources": [
+        "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+        "https://www.dlr.de/de/blog/archiv/2026/sonde-voyager-1-ist-jetzt-einen-lichttag-entfernt",
+        "https://en.wikipedia.org/wiki/Voyager_1"
+      ]
     }
   ]
 }
