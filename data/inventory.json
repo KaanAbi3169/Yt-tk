@@ -818,8 +818,7 @@
       "created": "2026-11-15T07:54:50.830335+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
       "buffer": {
-        "tiktok": "6affe4e4d5f8acdd0d778021",
-        "youtube": "6affe4e67b0a126cebb1641b"
+        "tiktok": "6affe4e4d5f8acdd0d778021"
       },
       "duration": 61.6,
       "title_tiktok": "🌞 Warum ist der Himmel blau, obwohl die Sonne weisses Licht schickt?",
@@ -833,7 +832,8 @@
           "at": "2026-11-21T02:43:10.002662+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
         }
-      ]
+      ],
+      "note": "YouTube 20.11. 10:00 fehlgeschlagen (daily posting limit), nur TikTok online; YouTube-Post in Buffer geloescht"
     },
     {
       "id": "D060",
