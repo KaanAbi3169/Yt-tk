@@ -1617,7 +1617,7 @@
     {
       "id": "T002",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-20T07:51:42.510445+01:00",
       "source": "render3d",
       "topic": "Gallium und Mendelejews Vorhersage im Periodensystem",
@@ -1631,13 +1631,17 @@
       "text_tiktok": "Hättest du dem Periodensystem so vertraut? Schreib es in die Kommentare 👇 #wusstestdu #chemie #periodensystem #wissen #lernenmittiktok",
       "text_youtube": "Gallium schmilzt knapp über Zimmertemperatur. Mendelejew hatte dafür im Periodensystem schon vor der Entdeckung eine Lücke gelassen. Hättest du dem Periodensystem so vertraut? 👇\n\nQuellen: Wikipedia (Mendeleev's predicted elements), Los Alamos National Laboratory (periodic.lanl.gov, Gallium), Royal Society of Chemistry. Stimme und Grafiken mit KI erstellt.\n\n#shorts #chemie #periodensystem #wusstestdu #wissen",
       "scenes": 1,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b0159f4dd205ed779cf9546",
+        "youtube": "6b0159f520a2d09a0ae65371"
+      },
       "group": "3d-wissen",
       "sources": [
         "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
         "https://periodic.lanl.gov/31.shtml",
         "https://edu.rsc.org/elements/gallium/2020009.article"
-      ]
+      ],
+      "due": "2026-11-21T16:00:00+01:00"
     }
   ]
 }
