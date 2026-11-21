@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -15,6 +15,16 @@
       "group": "mythos",
       "n": 4,
       "avg": 686
+    },
+    {
+      "group": "gta-news",
+      "n": 2,
+      "avg": 570
+    },
+    {
+      "group": "3d-mythos",
+      "n": 2,
+      "avg": 480
     },
     {
       "group": "was-waere-wenn-test",
@@ -37,7 +47,7 @@
       "avg": 405
     }
   ],
-  "open": 28,
+  "open": 32,
   "items": [
     {
       "title": "James Bond",
@@ -272,6 +282,46 @@
       "signal": "neu in den Top 1000 mit 10205 Aufrufen",
       "kind": "neu",
       "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Generation Z",
+      "signal": "Wikipedia-Aufrufe 15408 gestern, Faktor 4.0 gegen Schnitt 3811",
+      "kind": "steigend",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Black Friday",
+      "signal": "Wikipedia-Aufrufe 5116 gestern, Faktor 2.1 gegen Schnitt 2430",
+      "kind": "steigend",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Riemannsche Vermutung",
+      "signal": "neu in den Top 1000 mit 30852 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Fiona (Flusspferd)",
+      "signal": "neu in den Top 1000 mit 17723 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Stiefelknecht (Münze)",
+      "signal": "neu in den Top 1000 mit 13690 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
       "status": "candidate",
       "source": "radar"
     }
