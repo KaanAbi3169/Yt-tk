@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T02:53:38.330363+01:00",
+  "updated": "2026-11-21T02:43:10.010644+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
@@ -86,6 +86,13 @@
       }
     ],
     [
+      "slot:tiktok:Thu 16",
+      {
+        "n": 2,
+        "avg": 748
+      }
+    ],
+    [
       "slot:tiktok:Wed 10",
       {
         "n": 1,
@@ -95,26 +102,12 @@
     [
       "format:wissen",
       {
-        "n": 8,
-        "avg": 662
-      }
-    ],
-    [
-      "hook:Alltagsfrage Warum",
-      {
-        "n": 2,
-        "avg": 454
+        "n": 12,
+        "avg": 616
       }
     ]
   ],
   "bottom": [
-    [
-      "format:waswaerewenn",
-      {
-        "n": 4,
-        "avg": 434
-      }
-    ],
     [
       "hook:Superkraft-Gedankenexperiment",
       {
@@ -141,6 +134,13 @@
       {
         "n": 2,
         "avg": 405
+      }
+    ],
+    [
+      "slot:youtube:Thu 16",
+      {
+        "n": 2,
+        "avg": 303
       }
     ],
     [
@@ -201,8 +201,8 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 8,
-      "avg": 662
+      "n": 12,
+      "avg": 616
     },
     "hook:Du machst einen Fehler": {
       "n": 2,
@@ -303,6 +303,30 @@
     "slot:youtube:Wed 10": {
       "n": 1,
       "avg": 204
+    },
+    "hook:Mythos-Frage": {
+      "n": 2,
+      "avg": 480
+    },
+    "slot:tiktok:Thu 16": {
+      "n": 2,
+      "avg": 748
+    },
+    "topic:Mythos: Wir nutzen nur 10 Prozent des Gehirns": {
+      "n": 2,
+      "avg": 480
+    },
+    "slot:youtube:Thu 16": {
+      "n": 2,
+      "avg": 303
+    },
+    "hook:Nachricht": {
+      "n": 2,
+      "avg": 570
+    },
+    "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)": {
+      "n": 2,
+      "avg": 570
     }
   }
 }

@@ -161,7 +161,7 @@
     {
       "id": "D022",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "source": "drive",
       "drive_id": "1QwKsnGW8gNJxc65-0xnFtw4__iDeF2AK",
       "drive_title": "V022_Toast_Butterseite.mp4",
@@ -827,7 +827,13 @@
       "text_tiktok": "Blaues Licht wird von Luftteilchen viel stärker gestreut als rotes und kommt deshalb von überall am Himmel. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #physik #himmel #sonne",
       "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts",
       "group": "physik-test",
-      "due": "2026-11-20T10:00:00+01:00"
+      "due": "2026-11-20T10:00:00+01:00",
+      "errors": [
+        {
+          "at": "2026-11-21T02:43:10.002662+01:00",
+          "reason": "Buffer-Fehler, siehe Bericht"
+        }
+      ]
     },
     {
       "id": "D060",

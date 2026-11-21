@@ -231,6 +231,74 @@
         "comments": 0,
         "at": "2026-11-20T02:53:38.329754+01:00"
       }
+    },
+    {
+      "id": "T001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
+      "hook_type": "Mythos-Frage",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 35.6,
+      "group": "3d-mythos",
+      "24h": {
+        "views": 693,
+        "likes": 11,
+        "comments": 0,
+        "shares": 1,
+        "watch_ms": 6880,
+        "at": "2026-11-21T02:43:10.005592+01:00"
+      }
+    },
+    {
+      "id": "T001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
+      "hook_type": "Mythos-Frage",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 35.6,
+      "group": "3d-mythos",
+      "24h": {
+        "views": 172,
+        "likes": 6,
+        "comments": 0,
+        "at": "2026-11-21T02:43:10.006475+01:00"
+      }
+    },
+    {
+      "id": "G001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      "hook_type": "Nachricht",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 27.3,
+      "group": "gta-news",
+      "24h": {
+        "views": 354,
+        "likes": 10,
+        "comments": 0,
+        "at": "2026-11-21T02:43:10.008036+01:00"
+      }
+    },
+    {
+      "id": "G001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      "hook_type": "Nachricht",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 27.3,
+      "group": "gta-news",
+      "24h": {
+        "views": 702,
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 3170,
+        "at": "2026-11-21T02:43:10.009579+01:00"
+      }
     }
   ]
 }
