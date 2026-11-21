@@ -166,8 +166,10 @@
       "signal": "Wikipedia-Aufrufe 17276 gestern, Faktor 7.9 gegen Schnitt 2199",
       "kind": "steigend",
       "added": "2026-11-19",
-      "status": "candidate",
-      "source": "radar"
+      "status": "produced",
+      "source": "radar",
+      "video": "T003",
+      "angle": "Lichttag-Meilenstein am 18.11.2026"
     },
     {
       "title": "Rockstar Games",
