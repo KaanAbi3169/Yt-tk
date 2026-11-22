@@ -34,6 +34,7 @@ jobs:
           sparse-checkout: |
             data
             audio
+            images
           fetch-depth: 1
       - name: Git-Benutzer fuer den Daten-Branch
         run: |
