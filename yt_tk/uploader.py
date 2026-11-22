@@ -12,7 +12,7 @@ Exit-Code: 0 ok, 1 Fehler bei mindestens einem Post (GitHub meldet den fehlgesch
 """
 import os
 import sys
-from datetime import datetime
+from datetime import date, datetime, timedelta
 
 from . import buffer_api, config, inventory
 
@@ -170,8 +170,17 @@ def main(argv: list) -> int:
     live = os.environ.get("UPLOADER_LIVE", "").lower() in ("1", "true", "yes")
     if "--selftest-draft" in argv:
         return selftest_draft(day)
-    log(f"Uploader {day} · {'LIVE' if live else 'TROCKENLAUF'}")
-    return run(day, live)
+    # Vorplanung: GitHub startet geplante Laeufe 4 bis 9 Stunden zu spaet (Messung 18. bis 22.11.2026, Mittel 7,6 h), der
+    # 10:00-Slot des Tages waere dann leer. Darum plant der geplante Lauf (ohne --day) zusaetzlich den Folgetag. Von Hand
+    # (--day) nur dieser Tag, ausser mit --ahead N.
+    ahead = int(argv[argv.index("--ahead") + 1]) if "--ahead" in argv else (0 if "--day" in argv else 1)
+    log(f"Uploader {day} (+{ahead} Tag(e) voraus) · {'LIVE' if live else 'TROCKENLAUF'}")
+    rc = run(day, live)
+    for k in range(1, ahead + 1):
+        nxt = (date.fromisoformat(day) + timedelta(days=k)).isoformat()
+        log(f"Vorplanung {nxt}")
+        rc |= run(nxt, live)
+    return rc
 
 
 if __name__ == "__main__":
