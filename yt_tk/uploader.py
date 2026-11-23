@@ -33,8 +33,8 @@ def find_existing(posts: list, entry: dict, platform: str):
     drive_id = entry["video_url"].split("id=")[-1].split("&")[0] if is_drive else None
     head = (entry[platform]["text"] or "")[:60]
     for p in posts:
-        if p.get("status") == "draft":
-            continue  # Entwuerfe (z. B. Selbsttest) werden nie veroeffentlicht und blockieren nichts
+        if p.get("status") in ("draft", "error"):
+            continue  # Entwuerfe (z. B. Selbsttest) und Fehler-Posts wurden nie veroeffentlicht und blockieren nichts
         srcs = " ".join((a.get("source") or "") for a in (p.get("assets") or []))
         if (vid_file and vid_file in srcs) or (drive_id and drive_id in srcs) or (head and (p.get("text") or "").startswith(head)):
             return p
@@ -45,12 +45,15 @@ def run(day: str, live: bool) -> int:
     if config.paused():
         log("PAUSE/STOP vorhanden - nichts zu tun.")
         return 0
+    history = {pf: buffer_api.list_posts(ORG, ch) for pf, ch in CHANNELS.items()}
+    if live:
+        for m in inventory.repair_failed(history):
+            log("REPARATUR " + m)
     plan = inventory.pinned_posts(day) + inventory.plan(day)
     if not plan:
         log("Plan leer (nichts faellig oder kein Vorrat).")
         return 0
     errors = 0
-    history = {pf: buffer_api.list_posts(ORG, ch) for pf, ch in CHANNELS.items()}
     scheduled = sum(1 for pf in history for p in history[pf] if p.get("status") in ("scheduled", "sending"))
     for e in plan:
         if e.get("needs_texts"):

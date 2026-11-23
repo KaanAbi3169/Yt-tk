@@ -359,6 +359,36 @@ def fail(vid: str, reason: str) -> None:
     _save("inventory.json", data)
 
 
+def repair_failed(history: dict, retry_max: int = 2) -> list:
+    """Selbstheilung (Optimierungspaket 23.11.2026): Ein Buffer-Post mit Status "error" (z. B. YouTube "daily posting limit") wurde nie
+    veroeffentlicht. Das Video geht auf "ready" zurueck, nur die fehlende Plattform wird neu eingeplant (der Doppelschutz im Uploader
+    findet den gesendeten Post der anderen Plattform). Hoechstens retry_max Versuche je Video und Plattform, danach bleibt es
+    liegen und der Tagesbericht meldet es. history: {plattform: [Buffer-Posts]}. Liefert Meldungen."""
+    data = _load("inventory.json", {"videos": []})
+    msgs = []
+    for v in data["videos"]:
+        if v.get("status") not in ("scheduled", "posted") or not v.get("buffer"):
+            continue
+        for pf, pid in list(v["buffer"].items()):
+            post = next((x for x in history.get(pf, []) if x.get("id") == pid), None)
+            if not post or post.get("status") != "error":
+                continue
+            n = v.setdefault("retries", {}).get(pf, 0)
+            if n >= retry_max:
+                msgs.append(f"{v['id']} {pf}: Fehler-Post {pid}, {n} Versuche erreicht - bleibt liegen (Tagesbericht)")
+                continue
+            v["retries"][pf] = n + 1
+            v.setdefault("errors", []).append({"at": now().isoformat(), "reason": f"{pf}: Buffer-Post {pid} Status error ({(post.get('error') or {}).get('message', '')[:80]})"})
+            v["buffer"].pop(pf)
+            v["due_failed"] = v.get("due")
+            v["due"] = None
+            v["status"] = "ready"
+            msgs.append(f"{v['id']} {pf}: Fehler-Post {pid} - Video zurueck auf ready, Versuch {n + 1} von {retry_max}")
+    if msgs:
+        _save("inventory.json", data)
+    return msgs
+
+
 def perf(vid: str, platform: str, window: str, kv: list) -> None:
     data = _load("performance.json", {"posts": []})
     vals = {k: int(float(x)) for k, x in (i.split("=", 1) for i in kv)}
