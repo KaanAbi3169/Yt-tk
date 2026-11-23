@@ -8,6 +8,16 @@
       "license": "CC BY 3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Baby_Snow_Leopard_(263733407).jpeg",
       "credit": "Bild: Steffen / CC BY 3.0 / Wikimedia Commons"
+    },
+    {
+      "id": "IMG010",
+      "file": "images/IMG010.jpg",
+      "title": "ov:8f876eb5-81a0-43b5-9941-3e835dffdd96",
+      "author": "NASA Goddard Space Flight Center",
+      "license": "CC BY 2.0",
+      "page": "https://www.flickr.com/photos/35278629@N08/6550195937",
+      "credit": "Bild: NASA Goddard Space Flight Center / CC BY 2.0 / flickr",
+      "provider": "flickr"
     }
   ]
 }
