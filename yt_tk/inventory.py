@@ -378,7 +378,20 @@ def repair_failed(history: dict, retry_max: int = 2) -> list:
                 msgs.append(f"{v['id']} {pf}: Fehler-Post {pid}, {n} Versuche erreicht - bleibt liegen (Tagesbericht)")
                 continue
             v["retries"][pf] = n + 1
-            v.setdefault("errors", []).append({"at": now().isoformat(), "reason": f"{pf}: Buffer-Post {pid} Status error ({(post.get('error') or {}).get('message', '')[:80]})"})
+            # Messung fuer die Ursache des YouTube-Limits: wie viele YouTube-Uploads lagen in den 24 h vor diesem Slot?
+            vor = 0
+            try:
+                t = datetime.fromisoformat(v["due"])
+                for w in data["videos"]:
+                    if w is v or not w.get("due") or w.get("status") not in ("scheduled", "posted"):
+                        continue
+                    if pf not in (w.get("buffer") or {}):
+                        continue
+                    dt = t - datetime.fromisoformat(w["due"])
+                    vor += timedelta(0) <= dt <= timedelta(hours=24)
+            except (KeyError, ValueError, TypeError):
+                vor = None
+            v.setdefault("errors", []).append({"at": now().isoformat(), "uploads_24h_davor": vor, "reason": f"{pf}: Buffer-Post {pid} Status error ({(post.get('error') or {}).get('message', '')[:80]})"})
             v["buffer"].pop(pf)
             v["due_failed"] = v.get("due")
             v["due"] = None
