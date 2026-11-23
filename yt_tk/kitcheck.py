@@ -11,7 +11,7 @@ import re
 import sys
 from pathlib import Path
 
-SETS = {"sunset", "night", "room", "studio"}
+SETS = {"sunset", "night", "room", "studio", "ocean", "space"}
 TYPES = {"text", "stamp", "bubble", "counter", "box", "sphere", "cylinder", "bar", "arrow", "monitor", "console", "calendar", "photo", "figure"}
 ACTIONS = {"in", "pop", "out", "move", "grow", "spin", "pulse", "pose", "flip", "count", "cam", "shake"}
 POSES = {"idle", "point", "wave", "think", "cheer", "shrug"}

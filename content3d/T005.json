@@ -1,44 +1,357 @@
 {
-  "id": "T005", "scene": "kit", "format": "wissen", "group": "3d-wissen", "status": "ready",
-  "topic": "Alicella gigantea: größter Flohkrebs der Tiefsee", "hook_type": "Staunen + Zahl",
+  "id": "T005",
+  "scene": "kit",
+  "format": "wissen",
+  "group": "3d-wissen",
+  "status": "ready",
+  "topic": "Alicella gigantea: größter Flohkrebs der Tiefsee",
+  "hook_type": "Staunen + Zahl",
   "title_tiktok": "Dieser Krebs aus der Tiefsee wird 34 cm lang 🦐",
   "title_youtube": "Alicella gigantea: Der größte Flohkrebs der Welt lebt in der Tiefsee 🦐 #shorts",
   "text_tiktok": "Hättest du so ein Tier erwartet? Schreib es in die Kommentare 👇 #wusstestdu #tiefsee #tierfakten #natur #lernenmittiktok",
-  "text_youtube": "Alicella gigantea wird bis zu 34 Zentimeter lang und lebt nach einer Studie von 2025 in Tiefen zwischen 3 890 und 8 931 Metern. Hättest du so ein Tier erwartet? 👇\n\nQuellen: Wikipedia (Alicella), Maroni et al. 2025 (Royal Society Open Science), Discover Wildlife. Bild: Maroni, Niyazi u. a. / CC BY 4.0 / Wikimedia Commons. Stimme und Grafiken mit KI erstellt.\n\n#shorts #tiefsee #tierfakten #wusstestdu #natur",
+  "text_youtube": "Alicella gigantea wird bis zu 34 Zentimeter lang und lebt nach einer Studie von 2025 in Tiefen zwischen 3 890 und 8 931 Metern. Hättest du so ein Tier erwartet? 👇\n\nQuellen: Wikipedia (Alicella), Maroni et al. 2025 (Royal Society Open Science), Discover Wildlife. Stimme und Grafiken mit KI erstellt.\n\n#shorts #tiefsee #tierfakten #wusstestdu #natur",
   "highlight": "\\d|vierunddreißig|ozeanen|tiefsee|sechzig|prozent|alicella",
-  "sources": ["https://en.wikipedia.org/wiki/Alicella", "https://www.discoverwildlife.com/animal-facts/marine-animals/alicella-gigantea-inhabits-over-half-worlds-oceans", "https://utmsi.utexas.edu/science-and-the-sea/print-article/the-not-so-rare-giant-crustacean/"],
-  "credits": [{"id": "IMG002", "from": 0.3, "dur": 33}],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alicella",
+    "https://www.discoverwildlife.com/animal-facts/marine-animals/alicella-gigantea-inhabits-over-half-worlds-oceans",
+    "https://utmsi.utexas.edu/science-and-the-sea/print-article/the-not-so-rare-giant-crustacean/"
+  ],
   "kit": {
-    "set": "night",
-    "cams": {"start": {"pos": [-0.3, 4.3, 9.2], "look": [0, 4.3, 0]}, "nah": {"pos": [0.3, 4.4, 8.3], "look": [0, 4.4, 0]}},
+    "set": "ocean",
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.3,
+          9.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.4,
+          8.3
+        ],
+        "look": [
+          0,
+          4.4,
+          0
+        ]
+      }
+    },
     "props": [
-      {"id": "pic", "type": "photo", "image": "IMG002", "w": 2.2, "pos": [0, 4.5, 0.4], "show": false},
-      {"id": "len", "type": "stamp", "text": "bis 34 cm", "w": 1.9, "h": 0.5, "size": 130, "radius": 20, "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "name", "type": "stamp", "text": "Alicella gigantea", "w": 2.6, "h": 0.5, "size": 110, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "funde", "type": "stamp", "text": "195 Funde", "w": 1.9, "h": 0.5, "size": 130, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "ocean", "type": "stamp", "text": "3 Ozeane", "w": 1.9, "h": 0.5, "size": 130, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "depth", "type": "stamp", "text": "3 900 bis 8 900 m", "w": 2.7, "h": 0.5, "size": 105, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "cnt", "type": "counter", "fmt": "{n} %", "from": 0, "w": 1.6, "h": 0.6, "size": 190, "color": "#ffd24a", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "fig", "type": "figure", "pos": [-1.3, 0, 1.6], "rot": 0.4, "scale": 0.7}
+      {
+        "id": "bar",
+        "type": "bar",
+        "w": 0.8,
+        "d": 0.5,
+        "color": "#ffb020",
+        "h": 0.05,
+        "pos": [
+          -0.9,
+          3.3,
+          0.4
+        ]
+      },
+      {
+        "id": "o1",
+        "type": "sphere",
+        "r": 0.3,
+        "color": "#4fa3ff",
+        "pos": [
+          0.5,
+          3.9,
+          0.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o2",
+        "type": "sphere",
+        "r": 0.36,
+        "color": "#5bc0eb",
+        "pos": [
+          1.15,
+          4.5,
+          0.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o3",
+        "type": "sphere",
+        "r": 0.28,
+        "color": "#7ee0f0",
+        "pos": [
+          1.1,
+          3.6,
+          0.4
+        ],
+        "show": false
+      },
+      {
+        "id": "len",
+        "type": "counter",
+        "fmt": "{n} cm",
+        "from": 0,
+        "w": 2.0,
+        "h": 0.6,
+        "size": 190,
+        "color": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "name",
+        "type": "stamp",
+        "text": "Alicella gigantea",
+        "w": 2.6,
+        "h": 0.5,
+        "size": 110,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "funde",
+        "type": "stamp",
+        "text": "195 Funde",
+        "w": 1.9,
+        "h": 0.5,
+        "size": 130,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "ocean",
+        "type": "stamp",
+        "text": "3 Ozeane",
+        "w": 1.9,
+        "h": 0.5,
+        "size": 130,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "depth",
+        "type": "stamp",
+        "text": "3 900 bis 8 900 m",
+        "w": 2.7,
+        "h": 0.5,
+        "size": 105,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "cnt",
+        "type": "counter",
+        "fmt": "{n} %",
+        "from": 0,
+        "w": 1.6,
+        "h": 0.6,
+        "size": 190,
+        "color": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7
+      }
     ],
     "beats": [
-      {"at": 0.2, "id": "pic", "do": "pop"},
-      {"at": "^34$|vierunddreißig|vierunddreissig", "fallback": 0.05, "id": "len", "do": "pop"},
-      {"at": "^34$|vierunddreißig|vierunddreissig", "fallback": 0.05, "id": "fig", "do": "pose", "pose": "point"},
-      {"at": "ali[cs]ella|gigantea", "fallback": 0.13, "id": "len", "do": "out"},
-      {"at": "ali[cs]ella|gigantea", "fallback": 0.13, "offset": 0.1, "id": "name", "do": "pop"},
-      {"at": "^195$|hundertfünfundneunzig|hundertfunfundneunzig", "fallback": 0.43, "id": "name", "do": "out"},
-      {"at": "^195$|hundertfünfundneunzig|hundertfunfundneunzig", "fallback": 0.43, "offset": 0.1, "id": "funde", "do": "pop"},
-      {"at": "ozeanen", "fallback": 0.55, "id": "funde", "do": "out"},
-      {"at": "ozeanen", "fallback": 0.55, "offset": 0.1, "id": "ocean", "do": "pop"},
-      {"at": "tiefen", "fallback": 0.62, "id": "ocean", "do": "out"},
-      {"at": "tiefen", "fallback": 0.62, "offset": 0.1, "id": "depth", "do": "pop"},
-      {"at": "^60$|sechzig", "fallback": 0.82, "id": "depth", "do": "out"},
-      {"at": "^60$|sechzig", "fallback": 0.82, "id": "cnt", "do": "pop"},
-      {"at": "^60$|sechzig", "fallback": 0.82, "id": "cnt", "do": "count", "from": 0, "to": 60, "dur": 1.4, "fmt": "{n} %"},
-      {"at": "erwartet", "fallback": 0.92, "id": "fig", "do": "pose", "pose": "shrug"},
-      {"at": "kommentare", "fallback": 0.97, "id": "fig", "do": "pose", "pose": "wave"},
-      {"at": 1.0, "do": "cam", "shot": "nah", "dur": 30}
+      {
+        "at": "^34$|vierunddreißig|vierunddreissig",
+        "fallback": 0.05,
+        "id": "len",
+        "do": "pop"
+      },
+      {
+        "at": "^34$|vierunddreißig|vierunddreissig",
+        "fallback": 0.05,
+        "id": "len",
+        "do": "count",
+        "from": 0,
+        "to": 34,
+        "dur": 1.6,
+        "fmt": "{n} cm"
+      },
+      {
+        "at": "^34$|vierunddreißig|vierunddreissig",
+        "fallback": 0.05,
+        "id": "bar",
+        "do": "grow",
+        "to": 2.3,
+        "dur": 1.6
+      },
+      {
+        "at": "^34$|vierunddreißig|vierunddreissig",
+        "fallback": 0.05,
+        "id": "fig",
+        "do": "pose",
+        "pose": "point"
+      },
+      {
+        "at": "ali[cs]ella|gigantea",
+        "fallback": 0.13,
+        "id": "len",
+        "do": "out"
+      },
+      {
+        "at": "ali[cs]ella|gigantea",
+        "fallback": 0.13,
+        "offset": 0.1,
+        "id": "name",
+        "do": "pop"
+      },
+      {
+        "at": "^195$|hundertfünfundneunzig|hundertfunfundneunzig",
+        "fallback": 0.43,
+        "id": "name",
+        "do": "out"
+      },
+      {
+        "at": "^195$|hundertfünfundneunzig|hundertfunfundneunzig",
+        "fallback": 0.43,
+        "offset": 0.1,
+        "id": "funde",
+        "do": "pop"
+      },
+      {
+        "at": "ozeanen",
+        "fallback": 0.55,
+        "id": "funde",
+        "do": "out"
+      },
+      {
+        "at": "ozeanen",
+        "fallback": 0.55,
+        "offset": 0.1,
+        "id": "ocean",
+        "do": "pop"
+      },
+      {
+        "at": "ozeanen",
+        "fallback": 0.55,
+        "id": "o1",
+        "do": "pop"
+      },
+      {
+        "at": "ozeanen",
+        "fallback": 0.55,
+        "offset": 0.2,
+        "id": "o2",
+        "do": "pop"
+      },
+      {
+        "at": "ozeanen",
+        "fallback": 0.55,
+        "offset": 0.4,
+        "id": "o3",
+        "do": "pop"
+      },
+      {
+        "at": "tiefen",
+        "fallback": 0.62,
+        "id": "ocean",
+        "do": "out"
+      },
+      {
+        "at": "tiefen",
+        "fallback": 0.62,
+        "offset": 0.1,
+        "id": "depth",
+        "do": "pop"
+      },
+      {
+        "at": "^60$|sechzig",
+        "fallback": 0.82,
+        "id": "depth",
+        "do": "out"
+      },
+      {
+        "at": "^60$|sechzig",
+        "fallback": 0.82,
+        "id": "cnt",
+        "do": "pop"
+      },
+      {
+        "at": "^60$|sechzig",
+        "fallback": 0.82,
+        "id": "cnt",
+        "do": "count",
+        "from": 0,
+        "to": 60,
+        "dur": 1.4,
+        "fmt": "{n} %"
+      },
+      {
+        "at": "erwartet",
+        "fallback": 0.92,
+        "id": "fig",
+        "do": "pose",
+        "pose": "shrug"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.97,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 30
+      }
     ]
   }
 }

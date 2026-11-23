@@ -12,7 +12,7 @@ Ein neues 3D-Video braucht keinen eigenen Code mehr: `content3d/<ID>.json` mit `
 ## Aufbau von `kit`
 ```json
 {
-  "set": "sunset | night | room | studio",
+  "set": "sunset | night | room | studio | ocean | space",
   "bg": "#rrggbb (optional)", "drift": 0.35,
   "cams": {"start": {"pos": [x,y,z], "look": [x,y,z]}, "nah": {"pos": [...], "look": [...]}},
   "props": [ {"id": "...", "type": "...", "pos": [x,y,z], "scale": 1, "rot": 0, "show": false, ...} ],

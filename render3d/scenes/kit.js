@@ -23,6 +23,22 @@ export default function(S){
     studio(){scene.background=C(0xe9edf5);scene.fog=new THREE.Fog(0xe9edf5,16,34);
       add(new THREE.BoxGeometry(24,0.2,24),mat(0xcfd6e6),0,-0.1,0);add(new THREE.BoxGeometry(24,10,0.2),mat(0xdfe6f4),0,5,-5);
       [[-3.5,0xff6b6b],[0,0xffd24a],[3.5,0x4fa3ff]].forEach(([x,c])=>add(new THREE.BoxGeometry(2.4,10,0.1),mat(c),x,5,-4.9))},
+    ocean(){scene.background=C(0x06304f);scene.fog=new THREE.Fog(0x06304f,10,26);
+      const sea=new THREE.Mesh(new THREE.PlaneGeometry(40,24),new THREE.MeshBasicMaterial({vertexColors:true}));const pp=sea.geometry.attributes.position,cc=[];
+      for(let i=0;i<pp.count;i++){const k=(pp.getY(i)+12)/24;const c=C(0x021a2e).lerp(C(0x0f6aa8),k);cc.push(c.r,c.g,c.b)}
+      sea.geometry.setAttribute('color',new THREE.Float32BufferAttribute(cc,3));sea.position.set(0,9,-14);scene.add(sea);
+      add(new THREE.BoxGeometry(30,0.2,30),mat(0x23404f),0,-0.1,-4);
+      let sd=7;const rnd=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+      for(let i=0;i<9;i++)add(new THREE.BoxGeometry(0.5+rnd()*1.2,0.4+rnd()*1.0,0.5+rnd()*0.8),mat(0x2e5266),(rnd()-0.5)*14,0.2,-6-rnd()*4);
+      for(let i=0;i<46;i++){const b=add(new THREE.SphereGeometry(0.05+rnd()*0.16,10,8),new THREE.MeshBasicMaterial({color:0x9fd8f5,transparent:true,opacity:0.55}),(rnd()-0.5)*16,1+rnd()*10,-8+rnd()*6);b.castShadow=false}},
+    space(){scene.background=C(0x05060f);scene.fog=new THREE.Fog(0x05060f,24,60);
+      let sd=11;const rnd=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+      const pts=[];for(let i=0;i<420;i++)pts.push((rnd()-0.5)*40,rnd()*20,-10-rnd()*8);
+      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pts,3));
+      scene.add(new THREE.Points(g,new THREE.PointsMaterial({color:0xffffff,size:0.09})));
+      const pl=add(new THREE.SphereGeometry(3.4,40,30),mat(0x3b6fd6),4.8,6.5,-12);pl.castShadow=false;
+      const ring=add(new THREE.TorusGeometry(5.2,0.18,8,60),mat(0xd9c28a),4.8,6.5,-12);ring.rotation.x=1.25;ring.castShadow=false;
+      add(new THREE.CylinderGeometry(3.4,3.6,0.25,40),mat(0x1b2150),0,-0.1,0)},
   };
   (SETS[kit.set||'night']||(()=>{throw new Error('Kulisse unbekannt: '+kit.set)}))();
   if(kit.bg)scene.background=C(kit.bg);
