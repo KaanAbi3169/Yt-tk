@@ -12,6 +12,10 @@ on:
       query:
         description: "search: Suchbegriff, fetch: Dateititel (File:...)"
         required: true
+      src:
+        description: "search: wikimedia oder openverse (fetch erkennt Openverse am Titel ov:<id>)"
+        required: false
+        default: "wikimedia"
       id:
         description: "fetch: Bild-ID, z. B. IMG001"
         required: false
@@ -53,9 +57,10 @@ jobs:
           MODE: ${{ inputs.mode }}
           QUERY: ${{ inputs.query }}
           IMG_ID: ${{ inputs.id }}
+          SRC: ${{ inputs.src }}
         run: |
           case "$MODE" in
-            search) python3 -m yt_tk.images search "$QUERY" ;;
+            search) python3 -m yt_tk.images search "$QUERY" --src "${SRC:-wikimedia}" ;;
             fetch) case "$IMG_ID" in IMG[0-9][0-9][0-9]) ;; *) echo "ID muss IMG001 aehnlich sein"; exit 1;; esac
                    python3 -m yt_tk.images fetch "$QUERY" "$IMG_ID" ;;
             *) echo "mode: search oder fetch"; exit 1 ;;

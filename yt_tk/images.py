@@ -1,7 +1,8 @@
 """Echte Bilder mit gesicherter Lizenz (Auftrag des Inhabers 19.11.2026): suchen, laden, Quelle klein am Rand einblenden.
 
     python3 -m yt_tk.images search "Gehirn Magnetresonanz" [--n 8]      # Kandidaten mit Lizenz anzeigen (nur erlaubte Lizenzen)
-    python3 -m yt_tk.images fetch "File:Beispiel.jpg" IMG001            # laden (max. 1600 px breit) und Quelle in data/images.json eintragen
+    python3 -m yt_tk.images search "Voyager Raumsonde" --src openverse  # zweite Quelle (Openverse: NASA u. a.), Titel "ov:<id>"
+    python3 -m yt_tk.images fetch "File:Beispiel.jpg" IMG001            # laden (Wikimedia) bzw. "ov:<id>" (Openverse) (max. 1600 px breit) und Quelle in data/images.json eintragen
 
 Erlaubt (frei nutzbar, auch mit Werbeeinnahmen): Public Domain, CC0, CC BY (Namensnennung = Quelle am Rand).
 Nicht erlaubt: CC BY-SA (Weitergabe unter gleichen Bedingungen), NC, ND, GFDL, "Fair Use", Bilder mit Hinweis auf Rechte
@@ -73,13 +74,39 @@ def info(titles=None, query=None, n=8) -> list:
     return out
 
 
+OV_API = "https://api.openverse.org/v1/images/"
+OV_LICENSES = {"cc0": "CC0", "pdm": "Public Domain Mark", "by": "CC BY"}  # nur diese (kein sa, nc, nd)
+
+
+def _ov_rec(r: dict) -> dict:
+    """Openverse-Treffer in dieselbe Form wie die Wikimedia-Treffer bringen. Nur cc0, pdm und by sind erlaubt."""
+    lic = (r.get("license") or "").lower()
+    ok = lic in OV_LICENSES and not r.get("mature")
+    ver = r.get("license_version") or ""
+    label = f"{OV_LICENSES.get(lic, lic.upper() or '?')} {ver}".strip() if lic != "pdm" else OV_LICENSES["pdm"]
+    return {"title": "ov:" + str(r.get("id")), "ok": ok, "why": "" if ok else f"Lizenz nicht erlaubt: {lic or '?'}",
+            "license": label, "author": _meta(r.get("creator") or ""), "page": r.get("foreign_landing_url") or r.get("url"),
+            "thumb": r.get("url"), "w": r.get("width"), "h": r.get("height"), "provider": r.get("provider") or r.get("source") or "Openverse"}
+
+
+def ov_info(query=None, oid=None, n=8) -> list:
+    """Zweite freie Bildquelle (Openverse, bündelt u. a. NASA, Smithsonian, Flickr Commons). Nur Lizenzen cc0, pdm, by."""
+    if oid:
+        return [_ov_rec(json.loads(_get(OV_API + urllib.parse.quote(oid) + "/")))]
+    q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "page_size": str(n * 2), "mature": "false", "extension": "jpg"})
+    return [_ov_rec(r) for r in json.loads(_get(OV_API + "?" + q)).get("results", [])]
+
+
 def credit_text(rec: dict) -> str:
     who = rec["author"][:40] if rec.get("author") else "unbekannt"
-    return f"Bild: {who} / {rec['license']} / Wikimedia Commons"
+    return f"Bild: {who} / {rec['license']} / {rec.get('provider') or 'Wikimedia Commons'}"
 
 
 def fetch(title: str, img_id: str) -> dict:
-    found = [x for x in info(titles=title) if x["title"].lower() == title.lower()]
+    if title.lower().startswith("ov:"):
+        found = ov_info(oid=title[3:])
+    else:
+        found = [x for x in info(titles=title) if x["title"].lower() == title.lower()]
     if not found:
         raise SystemExit("Datei nicht gefunden")
     rec = found[0]
@@ -88,15 +115,19 @@ def fetch(title: str, img_id: str) -> dict:
     dest = config.DATA / "images" / f"{img_id}.jpg"
     dest.parent.mkdir(parents=True, exist_ok=True)
     raw = _get(rec["thumb"])
-    if rec["thumb"].lower().endswith(".png"):  # PNG -> JPEG, damit alles einheitlich ist
+    if rec["thumb"].lower().endswith(".png") or rec.get("provider"):  # PNG -> JPEG, Originale (Openverse) auf 1600 px verkleinern
         import io
 
         from PIL import Image
-        Image.open(io.BytesIO(raw)).convert("RGB").save(dest, "JPEG", quality=90)
+        im = Image.open(io.BytesIO(raw)).convert("RGB")
+        im.thumbnail((1600, 1600))
+        im.save(dest, "JPEG", quality=90)
     else:
         dest.write_bytes(raw)
     entry = {"id": img_id, "file": f"images/{img_id}.jpg", "title": rec["title"], "author": rec["author"], "license": rec["license"],
              "page": rec["page"], "credit": credit_text(rec)}
+    if rec.get("provider"):
+        entry["provider"] = rec["provider"]
     db = inventory._load("images.json", {"images": []})
     db["images"] = [x for x in db["images"] if x["id"] != img_id] + [entry]
     inventory._save("images.json", db)
@@ -106,7 +137,7 @@ def fetch(title: str, img_id: str) -> dict:
 def main(argv: list) -> int:
     if len(argv) >= 2 and argv[0] == "search":
         n = int(argv[argv.index("--n") + 1]) if "--n" in argv else 8
-        res = info(query=argv[1], n=n)
+        res = ov_info(query=argv[1], n=n) if "--src" in argv and argv[argv.index("--src") + 1] == "openverse" else info(query=argv[1], n=n)
         shown = 0
         for r in res:
             if shown >= n:
