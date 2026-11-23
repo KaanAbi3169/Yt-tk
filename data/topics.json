@@ -223,8 +223,10 @@
       "signal": "neu in den Top 1000 mit 14224 Aufrufen",
       "kind": "neu",
       "added": "2026-11-19",
-      "status": "candidate",
-      "source": "radar"
+      "status": "produced",
+      "source": "radar",
+      "video": "T005",
+      "angle": "größter Flohkrebs, 34 cm, 3 Ozeane, 60 % der Weltmeere"
     },
     {
       "title": "Anthropic",
