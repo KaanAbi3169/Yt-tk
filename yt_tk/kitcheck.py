@@ -60,6 +60,12 @@ def check(cfg: dict, words: list = None) -> tuple:
                 errs.append(f"{i}: ragt seitlich aus dem Bild (x={pos[0]}, w={w}, erlaubt bis +-{MAX_X})")
         if isinstance(pos, list) and len(pos) == 3 and p.get("type") not in ("figure",) and not (SAFE_Y[0] <= pos[1] <= SAFE_Y[1]) and p.get("show"):
             warns.append(f"{i}: y={pos[1]} ausserhalb der sicheren Zone {SAFE_Y}")
+    # Sichtbarkeit: Am Anfang sichtbar sind nur Bauteile mit "show": true und die Figur. Alles andere braucht einen Beat in oder pop,
+    # sonst erscheint es nie (T005: Laengenbalken ohne show war unsichtbar).
+    shown_by_beat = {b.get("id") for b in k.get("beats", []) if b.get("do") in ("in", "pop")}
+    for i, p in ids.items():
+        if p.get("show") is not True and p.get("type") != "figure" and i not in shown_by_beat:
+            errs.append(f"{i}: wird nie sichtbar (\"show\": true setzen oder Beat in/pop)")
     shots = set(k.get("cams", {}))
     for n, c in k.get("cams", {}).items():
         if not (isinstance(c.get("pos"), list) and isinstance(c.get("look"), list)):
