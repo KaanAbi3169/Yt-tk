@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#FFF1DC"/>
+  <rect x="290" y="380" width="500" height="580" fill="#8FD3FF" stroke="#1E2A3A" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="#EF233C"><circle cx="290" cy="380" r="46"/><circle cx="790" cy="380" r="46"/><circle cx="290" cy="960" r="46"/><circle cx="790" cy="960" r="46"/></g>
+  <g fill="none" stroke="#EF233C" stroke-width="10"><circle cx="290" cy="380" r="90" opacity="0.5"/><circle cx="790" cy="380" r="90" opacity="0.5"/><circle cx="290" cy="960" r="90" opacity="0.5"/><circle cx="790" cy="960" r="90" opacity="0.5"/></g>
+  <text x="540" y="320" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="60" fill="#EF233C">STRESS IN DEN ECKEN</text>
+</svg>

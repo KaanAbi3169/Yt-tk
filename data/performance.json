@@ -1,0 +1,432 @@
+{
+  "posts": [
+    {
+      "id": "H001",
+      "platform": "tiktok",
+      "format": "horror",
+      "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      "hook_type": "Situation + Regel-Bruch",
+      "due": "2026-11-15T18:00:00+01:00",
+      "duration": 77.9,
+      "24h": {
+        "views": 759,
+        "likes": 14,
+        "comments": 3,
+        "shares": 0,
+        "watch_ms": 8090,
+        "at": "2026-11-18T03:35:27.992399+01:00"
+      },
+      "7d": {
+        "views": 760,
+        "likes": 14,
+        "comments": 3,
+        "shares": 0,
+        "watch_ms": 8080,
+        "at": "2026-11-23T02:07:45.324010+01:00"
+      }
+    },
+    {
+      "id": "H001",
+      "platform": "youtube",
+      "format": "horror",
+      "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+      "hook_type": "Situation + Regel-Bruch",
+      "due": "2026-11-15T18:00:00+01:00",
+      "duration": 77.9,
+      "24h": {
+        "views": 1,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-18T03:35:27.993657+01:00"
+      },
+      "7d": {
+        "views": 1,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-23T02:07:45.325642+01:00"
+      }
+    },
+    {
+      "id": "W001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-15T10:00:00+01:00",
+      "duration": 43.13,
+      "24h": {
+        "views": 739,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 7650,
+        "at": "2026-11-18T03:35:27.995055+01:00"
+      },
+      "7d": {
+        "views": 741,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 7640,
+        "at": "2026-11-23T02:07:45.327370+01:00"
+      }
+    },
+    {
+      "id": "W001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-15T10:00:00+01:00",
+      "duration": 43.13,
+      "24h": {
+        "views": 916,
+        "likes": 8,
+        "comments": 0,
+        "at": "2026-11-18T03:35:27.996417+01:00"
+      },
+      "7d": {
+        "views": 913,
+        "likes": 8,
+        "comments": 0,
+        "at": "2026-11-23T02:07:45.329062+01:00"
+      }
+    },
+    {
+      "id": "X001",
+      "platform": "tiktok",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      "hook_type": "Superkraft-Gedankenexperiment",
+      "due": "2026-11-15T15:00:00+01:00",
+      "duration": 51.6,
+      "24h": {
+        "views": 793,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 6370,
+        "at": "2026-11-18T03:35:27.997844+01:00"
+      },
+      "7d": {
+        "views": 793,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 6370,
+        "at": "2026-11-23T02:07:45.330752+01:00"
+      }
+    },
+    {
+      "id": "X001",
+      "platform": "youtube",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+      "hook_type": "Superkraft-Gedankenexperiment",
+      "due": "2026-11-15T15:00:00+01:00",
+      "duration": 51.6,
+      "24h": {
+        "views": 2,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-18T03:35:28.000152+01:00"
+      },
+      "7d": {
+        "views": 2,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-23T02:07:45.332408+01:00"
+      }
+    },
+    {
+      "id": "W002",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+      "hook_type": "Mythos aufdecken",
+      "due": "2026-11-17T18:00:00+01:00",
+      "duration": 33.57,
+      "group": "mythos",
+      "24h": {
+        "views": 743,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4800,
+        "at": "2026-11-19T02:59:14.075577+01:00"
+      }
+    },
+    {
+      "id": "W002",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+      "hook_type": "Mythos aufdecken",
+      "due": "2026-11-17T18:00:00+01:00",
+      "duration": 33.57,
+      "group": "mythos",
+      "24h": {
+        "views": 1019,
+        "likes": 8,
+        "comments": 1,
+        "at": "2026-11-19T02:59:14.076687+01:00"
+      }
+    },
+    {
+      "id": "X002",
+      "platform": "tiktok",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+      "hook_type": "Emotionales Gedankenexperiment",
+      "due": "2026-11-17T10:00:00+01:00",
+      "duration": 47.4,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 747,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5340,
+        "at": "2026-11-19T02:59:14.077682+01:00"
+      }
+    },
+    {
+      "id": "X002",
+      "platform": "youtube",
+      "format": "waswaerewenn",
+      "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+      "hook_type": "Emotionales Gedankenexperiment",
+      "due": "2026-11-17T10:00:00+01:00",
+      "duration": 47.4,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 84,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-19T02:59:14.078582+01:00"
+      }
+    },
+    {
+      "id": "D016",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Spotlight Effekt",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-18T16:00:00+01:00",
+      "duration": null,
+      "group": "koerper",
+      "24h": {
+        "views": 720,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4270,
+        "at": "2026-11-20T02:53:38.326049+01:00"
+      }
+    },
+    {
+      "id": "D016",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Spotlight Effekt",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-18T16:00:00+01:00",
+      "duration": null,
+      "group": "koerper",
+      "24h": {
+        "views": 45,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-20T02:53:38.327167+01:00"
+      }
+    },
+    {
+      "id": "W003",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)",
+      "hook_type": "Alltagsfrage Warum",
+      "due": "2026-11-18T10:00:00+01:00",
+      "duration": 39.93,
+      "group": "mythos",
+      "24h": {
+        "views": 690,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5710,
+        "at": "2026-11-20T02:53:38.328460+01:00"
+      }
+    },
+    {
+      "id": "W003",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)",
+      "hook_type": "Alltagsfrage Warum",
+      "due": "2026-11-18T10:00:00+01:00",
+      "duration": 39.93,
+      "group": "mythos",
+      "24h": {
+        "views": 199,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-20T02:53:38.329754+01:00"
+      }
+    },
+    {
+      "id": "T001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
+      "hook_type": "Mythos-Frage",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 35.6,
+      "group": "3d-mythos",
+      "24h": {
+        "views": 693,
+        "likes": 11,
+        "comments": 0,
+        "shares": 1,
+        "watch_ms": 6880,
+        "at": "2026-11-21T02:43:10.005592+01:00"
+      }
+    },
+    {
+      "id": "T001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Mythos: Wir nutzen nur 10 Prozent des Gehirns",
+      "hook_type": "Mythos-Frage",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 35.6,
+      "group": "3d-mythos",
+      "24h": {
+        "views": 172,
+        "likes": 6,
+        "comments": 0,
+        "at": "2026-11-21T02:43:10.006475+01:00"
+      }
+    },
+    {
+      "id": "G001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      "hook_type": "Nachricht",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 27.3,
+      "group": "gta-news",
+      "24h": {
+        "views": 354,
+        "likes": 10,
+        "comments": 0,
+        "at": "2026-11-21T02:43:10.008036+01:00"
+      }
+    },
+    {
+      "id": "G001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      "hook_type": "Nachricht",
+      "due": "2026-11-19T16:00:00+01:00",
+      "duration": 27.3,
+      "group": "gta-news",
+      "24h": {
+        "views": 702,
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 3170,
+        "at": "2026-11-21T02:43:10.009579+01:00"
+      }
+    },
+    {
+      "id": "D022",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Toast Butterseite",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-20T16:00:00+01:00",
+      "duration": null,
+      "group": "mythos",
+      "24h": {
+        "views": 252,
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 3120,
+        "at": "2026-11-22T01:39:51.832583+01:00"
+      }
+    },
+    {
+      "id": "D022",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Toast Butterseite",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-20T16:00:00+01:00",
+      "duration": null,
+      "group": "mythos",
+      "24h": {
+        "views": 32,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-22T01:39:51.834085+01:00"
+      }
+    },
+    {
+      "id": "D059",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Himmel blau",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-20T10:00:00+01:00",
+      "duration": 61.6,
+      "group": "physik-test",
+      "24h": {
+        "views": 284,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4920,
+        "at": "2026-11-22T01:39:51.835681+01:00"
+      }
+    },
+    {
+      "id": "T002",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Gallium und Mendelejews Vorhersage im Periodensystem",
+      "hook_type": "Staunen + Ergebnis",
+      "due": "2026-11-21T16:00:00+01:00",
+      "duration": 40.0,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 252,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 8770,
+        "at": "2026-11-23T02:07:45.334085+01:00"
+      }
+    },
+    {
+      "id": "T002",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Gallium und Mendelejews Vorhersage im Periodensystem",
+      "hook_type": "Staunen + Ergebnis",
+      "due": "2026-11-21T16:00:00+01:00",
+      "duration": 40.0,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 115,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-23T02:07:45.335733+01:00"
+      }
+    }
+  ]
+}

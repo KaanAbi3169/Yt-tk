@@ -1,0 +1,368 @@
+{
+  "updated": "2026-11-23T02:07:45.336517+01:00",
+  "top": [
+    [
+      "slot:youtube:Tue 18",
+      {
+        "n": 1,
+        "avg": 1079
+      }
+    ],
+    [
+      "slot:youtube:Sun 10",
+      {
+        "n": 1,
+        "avg": 953
+      }
+    ],
+    [
+      "hook:Mythos aufdecken",
+      {
+        "n": 2,
+        "avg": 918
+      }
+    ],
+    [
+      "topic:Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+      {
+        "n": 2,
+        "avg": 918
+      }
+    ],
+    [
+      "slot:tiktok:Sun 18",
+      {
+        "n": 1,
+        "avg": 890
+      }
+    ],
+    [
+      "hook:Du machst einen Fehler",
+      {
+        "n": 2,
+        "avg": 870
+      }
+    ],
+    [
+      "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+      {
+        "n": 2,
+        "avg": 870
+      }
+    ],
+    [
+      "slot:tiktok:Sun 15",
+      {
+        "n": 1,
+        "avg": 843
+      }
+    ],
+    [
+      "slot:tiktok:Tue 10",
+      {
+        "n": 1,
+        "avg": 802
+      }
+    ],
+    [
+      "slot:tiktok:Sun 10",
+      {
+        "n": 1,
+        "avg": 786
+      }
+    ],
+    [
+      "slot:tiktok:Wed 16",
+      {
+        "n": 1,
+        "avg": 765
+      }
+    ],
+    [
+      "slot:tiktok:Tue 18",
+      {
+        "n": 1,
+        "avg": 758
+      }
+    ],
+    [
+      "slot:tiktok:Thu 16",
+      {
+        "n": 2,
+        "avg": 748
+      }
+    ],
+    [
+      "slot:tiktok:Wed 10",
+      {
+        "n": 1,
+        "avg": 705
+      }
+    ],
+    [
+      "hook:Nachricht",
+      {
+        "n": 2,
+        "avg": 570
+      }
+    ]
+  ],
+  "bottom": [
+    [
+      "hook:Staunen + Ergebnis",
+      {
+        "n": 2,
+        "avg": 208
+      }
+    ],
+    [
+      "topic:Gallium und Mendelejews Vorhersage im Periodensystem",
+      {
+        "n": 2,
+        "avg": 208
+      }
+    ],
+    [
+      "slot:youtube:Wed 10",
+      {
+        "n": 1,
+        "avg": 204
+      }
+    ],
+    [
+      "topic:Toast Butterseite",
+      {
+        "n": 2,
+        "avg": 152
+      }
+    ],
+    [
+      "slot:youtube:Sat 16",
+      {
+        "n": 1,
+        "avg": 120
+      }
+    ],
+    [
+      "slot:youtube:Tue 10",
+      {
+        "n": 1,
+        "avg": 89
+      }
+    ],
+    [
+      "slot:youtube:Wed 16",
+      {
+        "n": 1,
+        "avg": 45
+      }
+    ],
+    [
+      "slot:youtube:Fri 16",
+      {
+        "n": 1,
+        "avg": 32
+      }
+    ],
+    [
+      "slot:youtube:Sun 15",
+      {
+        "n": 1,
+        "avg": 2
+      }
+    ],
+    [
+      "slot:youtube:Sun 18",
+      {
+        "n": 1,
+        "avg": 1
+      }
+    ]
+  ],
+  "all": {
+    "format:horror": {
+      "n": 2,
+      "avg": 446
+    },
+    "hook:Situation + Regel-Bruch": {
+      "n": 2,
+      "avg": 446
+    },
+    "slot:tiktok:Sun 18": {
+      "n": 1,
+      "avg": 890
+    },
+    "topic:Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür": {
+      "n": 2,
+      "avg": 446
+    },
+    "slot:youtube:Sun 18": {
+      "n": 1,
+      "avg": 1
+    },
+    "format:wissen": {
+      "n": 17,
+      "avg": 497
+    },
+    "hook:Du machst einen Fehler": {
+      "n": 2,
+      "avg": 870
+    },
+    "slot:tiktok:Sun 10": {
+      "n": 1,
+      "avg": 786
+    },
+    "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)": {
+      "n": 2,
+      "avg": 870
+    },
+    "slot:youtube:Sun 10": {
+      "n": 1,
+      "avg": 953
+    },
+    "format:waswaerewenn": {
+      "n": 4,
+      "avg": 434
+    },
+    "hook:Superkraft-Gedankenexperiment": {
+      "n": 2,
+      "avg": 422
+    },
+    "slot:tiktok:Sun 15": {
+      "n": 1,
+      "avg": 843
+    },
+    "topic:24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst": {
+      "n": 2,
+      "avg": 422
+    },
+    "slot:youtube:Sun 15": {
+      "n": 1,
+      "avg": 2
+    },
+    "hook:Mythos aufdecken": {
+      "n": 2,
+      "avg": 918
+    },
+    "slot:tiktok:Tue 18": {
+      "n": 1,
+      "avg": 758
+    },
+    "topic:Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen": {
+      "n": 2,
+      "avg": 918
+    },
+    "slot:youtube:Tue 18": {
+      "n": 1,
+      "avg": 1079
+    },
+    "hook:Emotionales Gedankenexperiment": {
+      "n": 2,
+      "avg": 446
+    },
+    "slot:tiktok:Tue 10": {
+      "n": 1,
+      "avg": 802
+    },
+    "topic:24 Stunden mit dem eigenen 10-jährigen Ich verbringen": {
+      "n": 2,
+      "avg": 446
+    },
+    "slot:youtube:Tue 10": {
+      "n": 1,
+      "avg": 89
+    },
+    "hook:drive-reserve": {
+      "n": 5,
+      "avg": 289
+    },
+    "slot:tiktok:Wed 16": {
+      "n": 1,
+      "avg": 765
+    },
+    "topic:Spotlight Effekt": {
+      "n": 2,
+      "avg": 405
+    },
+    "slot:youtube:Wed 16": {
+      "n": 1,
+      "avg": 45
+    },
+    "hook:Alltagsfrage Warum": {
+      "n": 2,
+      "avg": 454
+    },
+    "slot:tiktok:Wed 10": {
+      "n": 1,
+      "avg": 705
+    },
+    "topic:Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)": {
+      "n": 2,
+      "avg": 454
+    },
+    "slot:youtube:Wed 10": {
+      "n": 1,
+      "avg": 204
+    },
+    "hook:Mythos-Frage": {
+      "n": 2,
+      "avg": 480
+    },
+    "slot:tiktok:Thu 16": {
+      "n": 2,
+      "avg": 748
+    },
+    "topic:Mythos: Wir nutzen nur 10 Prozent des Gehirns": {
+      "n": 2,
+      "avg": 480
+    },
+    "slot:youtube:Thu 16": {
+      "n": 2,
+      "avg": 303
+    },
+    "hook:Nachricht": {
+      "n": 2,
+      "avg": 570
+    },
+    "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)": {
+      "n": 2,
+      "avg": 570
+    },
+    "slot:tiktok:Fri 16": {
+      "n": 1,
+      "avg": 272
+    },
+    "topic:Toast Butterseite": {
+      "n": 2,
+      "avg": 152
+    },
+    "slot:youtube:Fri 16": {
+      "n": 1,
+      "avg": 32
+    },
+    "slot:tiktok:Fri 10": {
+      "n": 1,
+      "avg": 329
+    },
+    "topic:Himmel blau": {
+      "n": 1,
+      "avg": 329
+    },
+    "hook:Staunen + Ergebnis": {
+      "n": 2,
+      "avg": 208
+    },
+    "slot:tiktok:Sat 16": {
+      "n": 1,
+      "avg": 297
+    },
+    "topic:Gallium und Mendelejews Vorhersage im Periodensystem": {
+      "n": 2,
+      "avg": 208
+    },
+    "slot:youtube:Sat 16": {
+      "n": 1,
+      "avg": 120
+    }
+  }
+}

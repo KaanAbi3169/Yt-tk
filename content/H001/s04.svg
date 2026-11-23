@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#f1efe7"/>
+  <rect width="1080" height="1920" fill="#000" opacity="0.18"/>
+  <text x="120" y="380" font-family="Inter" font-weight="800" font-size="52" fill="#1a1a1a">Neue Notiz</text>
+  <text x="120" y="425" font-family="Inter" font-size="30" fill="#8a8a8a">Heute, 03:13</text>
+  <line x1="120" y1="460" x2="960" y2="460" stroke="#d2cfc4" stroke-width="3"/>
+  <g font-family="DejaVu Serif" font-size="70" fill="#141414">
+    <text x="120" y="520">Sie hört dich,</text>
+    <text x="120" y="610">wenn du sprichst.</text>
+    <text x="120" y="760" fill="#9a0000" font-weight="700">Antworte ihr nicht.</text>
+    <text x="120" y="900">Egal, was sie sagt.</text>
+  </g>
+  <rect x="120" y="950" width="6" height="70" fill="#1a73e8"/>
+  <path d="M0 0 H1080 V1920 H0 Z" fill="none" stroke="#000" stroke-width="160" opacity="0.35"/>
+</svg>

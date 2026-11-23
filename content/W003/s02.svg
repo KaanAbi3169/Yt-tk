@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#2B2D42"/>
+  <g transform="translate(540,640)"><path d="M-420 0 C -420 -150, -300 -200, 0 -200 C 300 -200, 470 -120, 470 0 C 470 120, 300 200, 0 200 C -300 200, -420 150, -420 0 Z" fill="#E9EEF3" stroke="#1E2A3A" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="#1E3B7E"><rect x="-300" y="-60" width="70" height="100" rx="30"/><rect x="-180" y="-60" width="70" height="100" rx="30"/><rect x="-60" y="-60" width="70" height="100" rx="30"/><rect x="60" y="-60" width="70" height="100" rx="30"/><rect x="180" y="-60" width="70" height="100" rx="30"/></g></g>
+  <g fill="none" stroke="#FFD400" stroke-width="14" stroke-linecap="round"><path d="M540 360 v-60 M540 920 v60 M90 640 h-50"/><path d="M200 400 l-40 -40 M880 400 l40 -40 M200 880 l-40 40 M880 880 l40 40"/></g>
+  <text x="540" y="1060" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="64" fill="#FFD400">DRUCK VON INNEN</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1E4A"/><stop offset="0.6" stop-color="#132E6B"/><stop offset="1" stop-color="#071433"/></linearGradient><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1080" height="1920" fill="url(#bg)"/><g fill="#9FC3FF" opacity="0.5"><circle cx="120" cy="420" r="3"/><circle cx="960" cy="380" r="4"/><circle cx="820" cy="1180" r="3"/><circle cx="180" cy="1250" r="4"/><circle cx="600" cy="300" r="2"/></g>
+  <circle cx="820" cy="420" r="90" fill="#F3F0D7" opacity="0.9"/>
+  <g fill="#06102A" stroke="#2C55B0" stroke-width="4">
+    <rect x="40" y="760" width="160" height="420"/><rect x="210" y="640" width="130" height="540"/><rect x="350" y="820" width="170" height="360"/>
+    <rect x="530" y="560" width="140" height="620"/><rect x="680" y="720" width="150" height="460"/><rect x="840" y="800" width="200" height="380"/>
+  </g>
+  <g fill="#FFD24A" opacity="0.8"><rect x="80" y="820" width="24" height="30"/><rect x="250" y="700" width="24" height="30"/><rect x="580" y="640" width="24" height="30"/><rect x="720" y="800" width="24" height="30"/><rect x="900" y="860" width="24" height="30"/><rect x="400" y="900" width="24" height="30"/></g>
+  <g fill="#FF3B6B" filter="url(#gl)"><circle cx="130" cy="720" r="16"/><circle cx="280" cy="600" r="16"/><circle cx="440" cy="780" r="16"/><circle cx="600" cy="520" r="16"/><circle cx="760" cy="680" r="16"/><circle cx="940" cy="760" r="16"/><circle cx="350" cy="560" r="10"/><circle cx="690" cy="600" r="10"/><circle cx="1000" cy="640" r="10"/></g>
+</svg>

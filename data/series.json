@@ -1,0 +1,12 @@
+{
+  "horror": {
+    "season": 1,
+    "title": "Das Zimmer ohne Fenster",
+    "episodes_planned": 5,
+    "episode": 1,
+    "story_bible": "Ich-Erzähler(in) 'du' wacht um 3:17 in seinem Zimmer auf. Das Fenster ist zu Wand geworden, das Handy hat kein Netz, eine Notiz in der Handschrift von 'du' (vor 4 Min. geschrieben) warnt: 'Sie hört dich, wenn du sprichst. Antworte ihr nicht. Egal, was sie sagt.' Eine Stimme wie die eigene Mutter steht vor der Tür (Mutter wohnt 312 km entfernt). Regeln des Zimmers: Es ist eine Schleife zwischen 3:13 und 3:33; das 'Wesen' kann nur rein, wenn man ihm antwortet oder es hereinbittet; die Notizen schreibt 'du' sich selbst aus früheren Schleifen. Finale-Idee: Das Fenster kehrt zurück; draußen sieht man das eigene Zimmer von außen – mit jemandem im Bett, der genau wie 'du' aussieht und gerade aufwacht.",
+    "branches_open": {"A": "Tür öffnen: Flur ist endlos, 'Mama' steht mit dem Rücken zu dir und zählt rückwärts von 17.", "B": "Notiz weiterlesen: 3 Regeln. Regel 2: 'Wenn das Fenster zurückkommt, schau nicht hinaus.'"},
+    "choices": [],
+    "episodes": {"1": "H001"}
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "date": "2026-11-17",
+  "videos": 212,
+  "outliers": 27,
+  "outlier_channels": 20,
+  "outlier_summary": {
+    "n": 27,
+    "title_len": 60,
+    "duration": 45,
+    "hashtags": 2,
+    "question": 70,
+    "digit": 15,
+    "emoji": 63
+  },
+  "rest_summary": {
+    "n": 185,
+    "title_len": 66,
+    "duration": 41,
+    "hashtags": 2,
+    "question": 37,
+    "digit": 35,
+    "emoji": 34
+  },
+  "by_format": {
+    "horror": {
+      "outliers": 0,
+      "videos": 27,
+      "median_views": null
+    },
+    "waswaerewenn": {
+      "outliers": 6,
+      "videos": 8,
+      "median_views": 456485
+    },
+    "wissen": {
+      "outliers": 21,
+      "videos": 177,
+      "median_views": 31260
+    }
+  },
+  "hours": [
+    [
+      12,
+      5
+    ],
+    [
+      19,
+      4
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      22,
+      2
+    ]
+  ],
+  "weekdays": [
+    [
+      "Samstag",
+      6
+    ],
+    [
+      "Donnerstag",
+      5
+    ],
+    [
+      "Freitag",
+      4
+    ]
+  ],
+  "hashtags": [
+    [
+      "#wusstestduschon",
+      7
+    ],
+    [
+      "#shorts",
+      5
+    ],
+    [
+      "#viral",
+      4
+    ],
+    [
+      "#physik",
+      3
+    ],
+    [
+      "#satire",
+      3
+    ],
+    [
+      "#fürdich",
+      3
+    ],
+    [
+      "#fyp",
+      3
+    ]
+  ],
+  "top": [
+    {
+      "id": "voOpVRpfR0Q",
+      "format": "wissen",
+      "title": "Wie 25 Leute eine La-Ola für 50.000 starten #laola #physik",
+      "channel": "Herbert",
+      "views": 404672,
+      "subs": 573,
+      "ratio": 404.67,
+      "duration": 32
+    },
+    {
+      "id": "MPs-9HtZaW4",
+      "format": "waswaerewenn",
+      "title": "Was wäre, wenn alle Rentner zur Bundeswehr müssten? 👵 #deutschland #waswärewenn #bundeswehr",
+      "channel": "Die Welt in 60Sekunden!?",
+      "views": 423747,
+      "subs": 1210,
+      "ratio": 350.2,
+      "duration": 39
+    },
+    {
+      "id": "2PBnVXZsXbM",
+      "format": "waswaerewenn",
+      "title": "Was wäre wenn Spongebob russe wäre? 🇷🇺 #russland #russisch #fürdich #viral#satire",
+      "channel": "TakeTo_clip",
+      "views": 1388293,
+      "subs": 7230,
+      "ratio": 192.02,
+      "duration": 45
+    },
+    {
+      "id": "cU-hLh4gJbc",
+      "format": "waswaerewenn",
+      "title": "Was wäre, wenn bei dir in der Schule Amokalarm ist? 😳 „Frau Koma kommt zu Besuch“",
+      "channel": "Kurz Serien 🎞️🍿",
+      "views": 438901,
+      "subs": 2620,
+      "ratio": 167.52,
+      "duration": 72
+    },
+    {
+      "id": "1iYb6T4lcZk",
+      "format": "wissen",
+      "title": "Warum die Titanic sank: vier Lecks hätte sie überlebt #titanic #physik",
+      "channel": "Herbert",
+      "views": 127072,
+      "subs": 573,
+      "ratio": 127.07,
+      "duration": 34
+    },
+    {
+      "id": "s2YstBZ_NSM",
+      "format": "waswaerewenn",
+      "title": "Was wäre wenn spongbob Deutscher wäre?🇩🇪was noch? #deutschland #deutscher #viral #satire #fürdich",
+      "channel": "TakeTo_clip",
+      "views": 563825,
+      "subs": 7230,
+      "ratio": 77.98,
+      "duration": 49
+    },
+    {
+      "id": "_xd0BzLW3Sc",
+      "format": "waswaerewenn",
+      "title": "Was wäre wenn spongbob Türke wäre🇹🇷? Was noch👇🏼 #Türkei #Türke #viral #satire #fürdich",
+      "channel": "TakeTo_clip",
+      "views": 474069,
+      "subs": 7230,
+      "ratio": 65.57,
+      "duration": 45
+    },
+    {
+      "id": "9H-C_Rehlr4",
+      "format": "wissen",
+      "title": "Heizkosten sparen – so geht’s! 🔥 #Sparen #shorts #wusstestduschon",
+      "channel": "Durchblick",
+      "views": 46470,
+      "subs": 524,
+      "ratio": 46.47,
+      "duration": 60
+    },
+    {
+      "id": "FVVpQKGfcKc",
+      "format": "wissen",
+      "title": "Was wäre, wenn alle Menschen gleichzeitig springen? #physik #gedankenspiel",
+      "channel": "Herbert",
+      "views": 34852,
+      "subs": 573,
+      "ratio": 34.85,
+      "duration": 33
+    },
+    {
+      "id": "8oieUHeVtfg",
+      "format": "wissen",
+      "title": "Dieser Hund wurde 29 Jahre alt 🐕🇦🇺 #wusstestduschon",
+      "channel": "BLITZFAKT",
+      "views": 62167,
+      "subs": 1790,
+      "ratio": 34.73,
+      "duration": 7
+    },
+    {
+      "id": "IvxZ5GC_VS8",
+      "format": "wissen",
+      "title": "Warum ist eine Staumauer unten so dick? 🌊 (3D erklärt)",
+      "channel": "Super! Du hast Gebaut",
+      "views": 28404,
+      "subs": 231,
+      "ratio": 28.4,
+      "duration": 81
+    },
+    {
+      "id": "oTJPAhQCwbk",
+      "format": "wissen",
+      "title": "Julius Cäsar wurde nicht per Kaiserschnitt geboren 🏛️ #wusstestduschon",
+      "channel": "BLITZFAKT",
+      "views": 49317,
+      "subs": 1790,
+      "ratio": 27.55,
+      "duration": 7
+    },
+    {
+      "id": "Yguxhc0GF1E",
+      "format": "wissen",
+      "title": "wie deine heizung funktioniert – ganz einfach erklärt",
+      "channel": "Kapitel Null",
+      "views": 30445,
+      "subs": 1290,
+      "ratio": 23.6,
+      "duration": 88
+    },
+    {
+      "id": "2oEC9Eui1j0",
+      "format": "wissen",
+      "title": "Warum man ein Baumhaus nicht festnageln darf 🌳 (3D erklärt)",
+      "channel": "Super! Du hast Gebaut",
+      "views": 23019,
+      "subs": 231,
+      "ratio": 23.02,
+      "duration": 75
+    },
+    {
+      "id": "NyOenN_yapU",
+      "format": "wissen",
+      "title": "#zombieameise #fyp #animation #fakten #wusstestduschon",
+      "channel": "Rudi Real",
+      "views": 21456,
+      "subs": 415,
+      "ratio": 21.46,
+      "duration": 60
+    }
+  ]
+}

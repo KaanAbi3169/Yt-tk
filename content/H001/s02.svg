@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1c22"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.4" r="0.5"><stop offset="0" stop-color="#3b3f4a" stop-opacity="0.55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#wall)"/>
+  <rect width="1080" height="1920" fill="url(#spot)"/>
+  <rect x="250" y="380" width="580" height="640" fill="none" stroke="#3a3d47" stroke-width="5" stroke-dasharray="22 16" opacity="0.8"/>
+  <rect x="270" y="400" width="540" height="600" fill="#22252d" opacity="0.55"/>
+  <g stroke="#4a4e59" stroke-width="3" opacity="0.6">
+    <path d="M300 460 l60 40"/><path d="M700 900 l70 -30"/><path d="M520 980 l-30 -50"/>
+  </g>
+  <rect x="210" y="1030" width="660" height="36" rx="6" fill="#2a2d35"/>
+  <path d="M230 1066 h620 l-20 30 h-580 z" fill="#15171c"/>
+  <path d="M250 380 C 230 600, 260 800, 250 1020" stroke="#0e0f13" stroke-width="40" opacity="0.6" fill="none"/>
+  <path d="M830 380 C 850 600, 820 800, 830 1020" stroke="#0e0f13" stroke-width="40" opacity="0.6" fill="none"/>
+</svg>

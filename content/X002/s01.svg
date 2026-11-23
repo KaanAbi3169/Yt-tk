@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1E4A"/><stop offset="0.6" stop-color="#132E6B"/><stop offset="1" stop-color="#071433"/></linearGradient><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1080" height="1920" fill="url(#bg)"/><g fill="#9FC3FF" opacity="0.5"><circle cx="120" cy="420" r="3"/><circle cx="960" cy="380" r="4"/><circle cx="820" cy="1180" r="3"/><circle cx="180" cy="1250" r="4"/><circle cx="600" cy="300" r="2"/></g>
+  <circle cx="540" cy="650" r="300" fill="none" stroke="#FFD24A" stroke-width="10" filter="url(#gl)" opacity="0.9"/>
+  <circle cx="420" cy="560" r="85" fill="#06102A" stroke="#9FC3FF" stroke-width="6"/><path d="M290 900 q130 -260 260 0" fill="#06102A" stroke="#9FC3FF" stroke-width="6"/>
+  <circle cx="690" cy="680" r="55" fill="#1B2F63" stroke="#FFD24A" stroke-width="6"/><path d="M610 900 q80 -170 160 0" fill="#1B2F63" stroke="#FFD24A" stroke-width="6"/>
+  <text x="540" y="1060" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="60" fill="#FFD24A">DU + DU MIT 10</text>
+</svg>

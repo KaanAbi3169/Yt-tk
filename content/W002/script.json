@@ -1,0 +1,49 @@
+{
+ "id": "W002",
+ "format": "wissen",
+ "series": "Alltagswissen",
+ "topic": "Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
+ "hook_type": "Mythos aufdecken",
+ "hook_overlay": "Kaugummi verschluckt?",
+ "sources": [
+  "Barmer: Können verschluckte Kaugummis den Magen verkleben?",
+  "aponet.de: Ist es gefährlich, ein Kaugummi zu verschlucken?",
+  "heilpraxisnet.de (Czerwony, Cleveland Clinic)"
+ ],
+ "scenes": [
+  {
+   "text": "Wer Kaugummi verschluckt, hat ihn sieben Jahre im Magen. Das hast du bestimmt auch schon gehört.",
+   "svg_file": "s01.svg",
+   "motion": "zoom_in"
+  },
+  {
+   "text": "Stimmt aber nicht.",
+   "svg_file": "s02.svg",
+   "motion": "zoom_out"
+  },
+  {
+   "text": "Dein Körper kann die Kaumasse zwar nicht verdauen. Aber er schiebt sie einfach weiter, durch Magen und Darm. Festkleben kann sie dabei nicht, dafür ist alles viel zu feucht und glitschig.",
+   "svg_file": "s03.svg",
+   "motion": "pan_down"
+  },
+  {
+   "text": "Meistens ist der Kaugummi nach ein bis drei Tagen wieder draußen. Ganz normal, auf dem üblichen Weg.",
+   "svg_file": "s04.svg",
+   "motion": "zoom_in"
+  },
+  {
+   "text": "Aufpassen sollte man nur bei kleinen Kindern und wenn jemand sehr viele auf einmal schluckt.",
+   "svg_file": "s05.svg",
+   "motion": "pan_up"
+  },
+  {
+   "text": "Hast du den Sieben-Jahre-Mythos auch geglaubt? Ja oder nein, schreib's in die Kommentare.",
+   "svg_file": "s06.svg",
+   "motion": "zoom_out"
+  }
+ ],
+ "title_tiktok": "Kaugummi bleibt 7 Jahre im Magen? 🫧 Der Mythos",
+ "title_youtube": "Bleibt verschluckter Kaugummi 7 Jahre im Magen? 🫧 #shorts",
+ "text_tiktok": "Hast du den Mythos auch geglaubt? Ja oder nein 👇 #mythos #wusstestdu #alltagswissen #kaugummi #lernenmittiktok",
+ "text_youtube": "Der Körper verdaut Kaugummi nicht – aber er transportiert ihn weiter. Meist ist er nach wenigen Tagen draußen.\nHast du den Mythos auch geglaubt? 👇\n\nQuellen: Barmer, aponet.de. Stimme und Grafiken mit KI erstellt.\n\n#shorts #mythos #wusstestdu #alltagswissen #kaugummi"
+}

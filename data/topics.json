@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-22",
+  "test_share": 0.3,
+  "slots_14d": {
+    "proven": 20,
+    "test": 8
+  },
+  "groups": [
+    {
+      "group": "wissen",
+      "n": 2,
+      "avg": 870
+    },
+    {
+      "group": "gta-news",
+      "n": 2,
+      "avg": 570
+    },
+    {
+      "group": "mythos",
+      "n": 6,
+      "avg": 508
+    },
+    {
+      "group": "3d-mythos",
+      "n": 2,
+      "avg": 480
+    },
+    {
+      "group": "was-waere-wenn-test",
+      "n": 2,
+      "avg": 446
+    },
+    {
+      "group": "horror",
+      "n": 2,
+      "avg": 445
+    },
+    {
+      "group": "waswaerewenn",
+      "n": 2,
+      "avg": 422
+    },
+    {
+      "group": "koerper",
+      "n": 2,
+      "avg": 405
+    },
+    {
+      "group": "physik-test",
+      "n": 1,
+      "avg": 329
+    }
+  ],
+  "open": 36,
+  "items": [
+    {
+      "title": "James Bond",
+      "signal": "Wikipedia-Aufrufe 29972 gestern, Faktor 5.2 gegen Schnitt 5744",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Berlin",
+      "signal": "Wikipedia-Aufrufe 8269 gestern, Faktor 3.1 gegen Schnitt 2694",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Figuren der Harry-Potter-Romane",
+      "signal": "Wikipedia-Aufrufe 10073 gestern, Faktor 2.9 gegen Schnitt 3490",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "UEFA Nations League 2026/27",
+      "signal": "Wikipedia-Aufrufe 15664 gestern, Faktor 2.0 gegen Schnitt 7765",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "ChatGPT",
+      "signal": "Wikipedia-Aufrufe 9939 gestern, Faktor 2.0 gegen Schnitt 4922",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Nvidia",
+      "signal": "Wikipedia-Schnitt 17219 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Ballers in God",
+      "signal": "Wikipedia-Schnitt 14857 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Deutschland",
+      "signal": "Wikipedia-Schnitt 8252 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Grand Theft Auto",
+      "signal": "Wikipedia-Schnitt 5853 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Bundespräsident (Deutschland)",
+      "signal": "Wikipedia-Schnitt 4725 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "ZDF",
+      "signal": "Wikipedia-Schnitt 4493 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Periodensystem",
+      "signal": "Wikipedia-Schnitt 4177 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "produced",
+      "source": "radar",
+      "video": "T002",
+      "angle": "Gallium schmilzt in der Hand, Mendelejews Vorhersage (1869, 1875)"
+    },
+    {
+      "title": "Leopard von Rudraprayag",
+      "signal": "neu in den Top 1000 mit 30689 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Krim-Brücke",
+      "signal": "neu in den Top 1000 mit 22533 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Atopisches Ekzem",
+      "signal": "neu in den Top 1000 mit 12948 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Voyager 1",
+      "signal": "Wikipedia-Aufrufe 17276 gestern, Faktor 7.9 gegen Schnitt 2199",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "produced",
+      "source": "radar",
+      "video": "T003",
+      "angle": "Lichttag-Meilenstein am 18.11.2026"
+    },
+    {
+      "title": "Rockstar Games",
+      "signal": "Wikipedia-Aufrufe 6946 gestern, Faktor 3.1 gegen Schnitt 2236",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "UEFA Nations League",
+      "signal": "Wikipedia-Schnitt 10843 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Woolworth Building",
+      "signal": "neu in den Top 1000 mit 24393 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Simone Sommerland, Karsten Glück und die Kita-Frösche",
+      "signal": "neu in den Top 1000 mit 16209 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Alicella gigantea",
+      "signal": "neu in den Top 1000 mit 14224 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Anthropic",
+      "signal": "Wikipedia-Aufrufe 25551 gestern, Faktor 8.3 gegen Schnitt 3060",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Tokio Hotel",
+      "signal": "Wikipedia-Aufrufe 9819 gestern, Faktor 4.3 gegen Schnitt 2288",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "PlayStation 5",
+      "signal": "Wikipedia-Aufrufe 7039 gestern, Faktor 2.8 gegen Schnitt 2503",
+      "kind": "steigend",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Thiel und Boerne",
+      "signal": "Wikipedia-Schnitt 4522 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Eisenerzer Höhe",
+      "signal": "neu in den Top 1000 mit 18772 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Diplodia sapinea",
+      "signal": "neu in den Top 1000 mit 11252 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Blühende Kastanienbäume",
+      "signal": "neu in den Top 1000 mit 10963 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Flugunfall auf dem Gauligletscher",
+      "signal": "neu in den Top 1000 mit 10205 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-20",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Generation Z",
+      "signal": "Wikipedia-Aufrufe 15408 gestern, Faktor 4.0 gegen Schnitt 3811",
+      "kind": "steigend",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Black Friday",
+      "signal": "Wikipedia-Aufrufe 5116 gestern, Faktor 2.1 gegen Schnitt 2430",
+      "kind": "steigend",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Riemannsche Vermutung",
+      "signal": "neu in den Top 1000 mit 30852 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Fiona (Flusspferd)",
+      "signal": "neu in den Top 1000 mit 17723 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Stiefelknecht (Münze)",
+      "signal": "neu in den Top 1000 mit 13690 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Schneeleopard",
+      "signal": "neu in den Top 1000 mit 7766 Aufrufen (Radar 18.11., unter der Listenschwelle)",
+      "kind": "neu",
+      "added": "2026-11-22",
+      "status": "produced",
+      "source": "analyse",
+      "video": "T004",
+      "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
+    },
+    {
+      "title": "Xnxx.com",
+      "signal": "Wikipedia-Aufrufe 6607 gestern, Faktor 4.5 gegen Schnitt 1482",
+      "kind": "steigend",
+      "added": "2026-11-22",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Rothschild (Familie)",
+      "signal": "Wikipedia-Schnitt 4317 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-22",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Angriff auf Pearl Harbor",
+      "signal": "neu in den Top 1000 mit 13261 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-22",
+      "status": "candidate",
+      "source": "radar"
+    },
+    {
+      "title": "Sang an Aegir",
+      "signal": "neu in den Top 1000 mit 10330 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-22",
+      "status": "candidate",
+      "source": "radar"
+    }
+  ]
+}

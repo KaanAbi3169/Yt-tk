@@ -1,0 +1,122 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter Black,74,&H00FFFFFF,&H0000E5FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,2,70,70,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.20,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DU{\c&H00FFFFFF&\fscx100\fscy100} MACHST MIT
+Dialogue: 0,0:00:00.20,0:00:00.48,Sub,,0,0,0,,DU {\c&H0000E5FF&\fscx112\fscy112}MACHST{\c&H00FFFFFF&\fscx100\fscy100} MIT
+Dialogue: 0,0:00:00.48,0:00:00.61,Sub,,0,0,0,,DU MACHST {\c&H0000E5FF&\fscx112\fscy112}MIT{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:00.61,0:00:01.16,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}TOMATEN{\c&H00FFFFFF&\fscx100\fscy100} WAHRSCHEINLICH
+Dialogue: 0,0:00:01.16,0:00:01.75,Sub,,0,0,0,,TOMATEN {\c&H0000E5FF&\fscx112\fscy112}WAHRSCHEINLICH{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.75,0:00:02.02,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SEIT{\c&H00FFFFFF&\fscx100\fscy100} JAHREN EINEN
+Dialogue: 0,0:00:02.02,0:00:02.47,Sub,,0,0,0,,SEIT {\c&H0000E5FF&\fscx112\fscy112}JAHREN{\c&H00FFFFFF&\fscx100\fscy100} EINEN
+Dialogue: 0,0:00:02.47,0:00:02.75,Sub,,0,0,0,,SEIT JAHREN {\c&H0000E5FF&\fscx112\fscy112}EINEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.75,0:00:03.30,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FEHLER.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:03.34,0:00:03.52,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}IM{\c&H00FFFFFF&\fscx100\fscy100} KÜHLSCHRANK
+Dialogue: 0,0:00:03.52,0:00:04.12,Sub,,0,0,0,,IM {\c&H0000E5FF&\fscx112\fscy112}KÜHLSCHRANK{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.12,0:00:04.43,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FAHREN{\c&H00FFFFFF&\fscx100\fscy100} TOMATEN
+Dialogue: 0,0:00:04.43,0:00:04.92,Sub,,0,0,0,,FAHREN {\c&H0000E5FF&\fscx112\fscy112}TOMATEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.92,0:00:05.06,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} GENE HERUNTER,
+Dialogue: 0,0:00:05.06,0:00:05.36,Sub,,0,0,0,,DIE {\c&H0000E5FF&\fscx112\fscy112}GENE{\c&H00FFFFFF&\fscx100\fscy100} HERUNTER,
+Dialogue: 0,0:00:05.36,0:00:06.06,Sub,,0,0,0,,DIE GENE {\c&H0000E5FF&\fscx112\fscy112}HERUNTER,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.06,0:00:06.24,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} FÜR IHR
+Dialogue: 0,0:00:06.24,0:00:06.38,Sub,,0,0,0,,DIE {\c&H0000E5FF&\fscx112\fscy112}FÜR{\c&H00FFFFFF&\fscx100\fscy100} IHR
+Dialogue: 0,0:00:06.38,0:00:06.57,Sub,,0,0,0,,DIE FÜR {\c&H0000E5FF&\fscx112\fscy112}IHR{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.57,0:00:07.00,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AROMA{\c&H00FFFFFF&\fscx100\fscy100} ZUSTÄNDIG
+Dialogue: 0,0:00:07.00,0:00:07.55,Sub,,0,0,0,,AROMA {\c&H0000E5FF&\fscx112\fscy112}ZUSTÄNDIG{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.55,0:00:08.03,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SIND.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:08.05,0:00:08.88,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GLEICHZEITIG{\c&H00FFFFFF&\fscx100\fscy100} LEIDEN
+Dialogue: 0,0:00:08.88,0:00:09.18,Sub,,0,0,0,,GLEICHZEITIG {\c&H0000E5FF&\fscx112\fscy112}LEIDEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.18,0:00:09.35,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} ZELLEN.
+Dialogue: 0,0:00:09.35,0:00:09.91,Sub,,0,0,0,,DIE {\c&H0000E5FF&\fscx112\fscy112}ZELLEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.95,0:00:10.34,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DARUM{\c&H00FFFFFF&\fscx100\fscy100} WIRD DAS
+Dialogue: 0,0:00:10.34,0:00:10.53,Sub,,0,0,0,,DARUM {\c&H0000E5FF&\fscx112\fscy112}WIRD{\c&H00FFFFFF&\fscx100\fscy100} DAS
+Dialogue: 0,0:00:10.53,0:00:10.75,Sub,,0,0,0,,DARUM WIRD {\c&H0000E5FF&\fscx112\fscy112}DAS{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.75,0:00:11.44,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FRUCHTFLEISCH{\c&H00FFFFFF&\fscx100\fscy100} OFT
+Dialogue: 0,0:00:11.44,0:00:11.73,Sub,,0,0,0,,FRUCHTFLEISCH {\c&H0000E5FF&\fscx112\fscy112}OFT{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:11.73,0:00:12.13,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}MEHLIG{\c&H00FFFFFF&\fscx100\fscy100} UND WÄSSRIG.
+Dialogue: 0,0:00:12.13,0:00:12.29,Sub,,0,0,0,,MEHLIG {\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} WÄSSRIG.
+Dialogue: 0,0:00:12.29,0:00:12.95,Sub,,0,0,0,,MEHLIG UND {\c&H0000E5FF&\fscx112\fscy112}WÄSSRIG.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.13,0:00:13.58,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FORSCHER{\c&H00FFFFFF&\fscx100\fscy100} HABEN
+Dialogue: 0,0:00:13.58,0:00:13.85,Sub,,0,0,0,,FORSCHER {\c&H0000E5FF&\fscx112\fscy112}HABEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:13.85,0:00:14.77,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}2016{\c&H00FFFFFF&\fscx100\fscy100} GEZEIGT:
+Dialogue: 0,0:00:14.77,0:00:15.44,Sub,,0,0,0,,2016 {\c&H0000E5FF&\fscx112\fscy112}GEZEIGT:{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:15.49,0:00:15.72,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NACH{\c&H00FFFFFF&\fscx100\fscy100} EINER WOCHE
+Dialogue: 0,0:00:15.72,0:00:15.99,Sub,,0,0,0,,NACH {\c&H0000E5FF&\fscx112\fscy112}EINER{\c&H00FFFFFF&\fscx100\fscy100} WOCHE
+Dialogue: 0,0:00:15.99,0:00:16.28,Sub,,0,0,0,,NACH EINER {\c&H0000E5FF&\fscx112\fscy112}WOCHE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.28,0:00:16.42,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}IM{\c&H00FFFFFF&\fscx100\fscy100} KÜHLSCHRANK
+Dialogue: 0,0:00:16.42,0:00:17.00,Sub,,0,0,0,,IM {\c&H0000E5FF&\fscx112\fscy112}KÜHLSCHRANK{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.00,0:00:17.28,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KOMMT{\c&H00FFFFFF&\fscx100\fscy100} DAS AROMA
+Dialogue: 0,0:00:17.28,0:00:17.47,Sub,,0,0,0,,KOMMT {\c&H0000E5FF&\fscx112\fscy112}DAS{\c&H00FFFFFF&\fscx100\fscy100} AROMA
+Dialogue: 0,0:00:17.47,0:00:17.91,Sub,,0,0,0,,KOMMT DAS {\c&H0000E5FF&\fscx112\fscy112}AROMA{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:17.91,0:00:18.18,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NICHT{\c&H00FFFFFF&\fscx100\fscy100} MEHR GANZ
+Dialogue: 0,0:00:18.18,0:00:18.33,Sub,,0,0,0,,NICHT {\c&H0000E5FF&\fscx112\fscy112}MEHR{\c&H00FFFFFF&\fscx100\fscy100} GANZ
+Dialogue: 0,0:00:18.33,0:00:18.66,Sub,,0,0,0,,NICHT MEHR {\c&H0000E5FF&\fscx112\fscy112}GANZ{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:18.66,0:00:19.19,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ZURÜCK.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.19,0:00:19.48,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AUCH{\c&H00FFFFFF&\fscx100\fscy100} NICHT,
+Dialogue: 0,0:00:19.48,0:00:19.77,Sub,,0,0,0,,AUCH {\c&H0000E5FF&\fscx112\fscy112}NICHT,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.77,0:00:19.93,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WENN{\c&H00FFFFFF&\fscx100\fscy100} DIE TOMATE
+Dialogue: 0,0:00:19.93,0:00:20.04,Sub,,0,0,0,,WENN {\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100} TOMATE
+Dialogue: 0,0:00:20.04,0:00:20.48,Sub,,0,0,0,,WENN DIE {\c&H0000E5FF&\fscx112\fscy112}TOMATE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:20.48,0:00:20.80,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}DANACH{\c&H00FFFFFF&\fscx100\fscy100} WIEDER WARM
+Dialogue: 0,0:00:20.80,0:00:21.06,Sub,,0,0,0,,DANACH {\c&H0000E5FF&\fscx112\fscy112}WIEDER{\c&H00FFFFFF&\fscx100\fscy100} WARM
+Dialogue: 0,0:00:21.06,0:00:21.32,Sub,,0,0,0,,DANACH WIEDER {\c&H0000E5FF&\fscx112\fscy112}WARM{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.32,0:00:21.71,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WIRD.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.71,0:00:22.32,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}BESSER:{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:22.40,0:00:22.83,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}LAGERE{\c&H00FFFFFF&\fscx100\fscy100} SIE BEI
+Dialogue: 0,0:00:22.83,0:00:22.98,Sub,,0,0,0,,LAGERE {\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100} BEI
+Dialogue: 0,0:00:22.98,0:00:23.14,Sub,,0,0,0,,LAGERE SIE {\c&H0000E5FF&\fscx112\fscy112}BEI{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.14,0:00:24.42,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ZIMMERTEMPERATUR,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:24.52,0:00:24.83,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NICHT{\c&H00FFFFFF&\fscx100\fscy100} IN DER
+Dialogue: 0,0:00:24.83,0:00:24.91,Sub,,0,0,0,,NICHT {\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100} DER
+Dialogue: 0,0:00:24.91,0:00:25.05,Sub,,0,0,0,,NICHT IN {\c&H0000E5FF&\fscx112\fscy112}DER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:25.05,0:00:25.43,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}PRALLEN{\c&H00FFFFFF&\fscx100\fscy100} SONNE,
+Dialogue: 0,0:00:25.43,0:00:25.96,Sub,,0,0,0,,PRALLEN {\c&H0000E5FF&\fscx112\fscy112}SONNE,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.01,0:00:26.27,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} ISS SIE
+Dialogue: 0,0:00:26.27,0:00:26.48,Sub,,0,0,0,,UND {\c&H0000E5FF&\fscx112\fscy112}ISS{\c&H00FFFFFF&\fscx100\fscy100} SIE
+Dialogue: 0,0:00:26.48,0:00:26.66,Sub,,0,0,0,,UND ISS {\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.66,0:00:27.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}INNERHALB{\c&H00FFFFFF&\fscx100\fscy100} WENIGER
+Dialogue: 0,0:00:27.12,0:00:27.56,Sub,,0,0,0,,INNERHALB {\c&H0000E5FF&\fscx112\fscy112}WENIGER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.56,0:00:28.15,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}TAGE.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.25,0:00:28.48,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} LEG SIE
+Dialogue: 0,0:00:28.48,0:00:28.70,Sub,,0,0,0,,UND {\c&H0000E5FF&\fscx112\fscy112}LEG{\c&H00FFFFFF&\fscx100\fscy100} SIE
+Dialogue: 0,0:00:28.70,0:00:28.85,Sub,,0,0,0,,UND LEG {\c&H0000E5FF&\fscx112\fscy112}SIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.85,0:00:29.12,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}NICHT{\c&H00FFFFFF&\fscx100\fscy100} NEBEN GURKEN.
+Dialogue: 0,0:00:29.12,0:00:29.37,Sub,,0,0,0,,NICHT {\c&H0000E5FF&\fscx112\fscy112}NEBEN{\c&H00FFFFFF&\fscx100\fscy100} GURKEN.
+Dialogue: 0,0:00:29.37,0:00:29.96,Sub,,0,0,0,,NICHT NEBEN {\c&H0000E5FF&\fscx112\fscy112}GURKEN.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:30.00,0:00:30.59,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}TOMATEN{\c&H00FFFFFF&\fscx100\fscy100} GEBEN DAS
+Dialogue: 0,0:00:30.59,0:00:30.84,Sub,,0,0,0,,TOMATEN {\c&H0000E5FF&\fscx112\fscy112}GEBEN{\c&H00FFFFFF&\fscx100\fscy100} DAS
+Dialogue: 0,0:00:30.84,0:00:31.07,Sub,,0,0,0,,TOMATEN GEBEN {\c&H0000E5FF&\fscx112\fscy112}DAS{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:31.07,0:00:31.74,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}REIFEGAS{\c&H00FFFFFF&\fscx100\fscy100} ETHYLEN
+Dialogue: 0,0:00:31.74,0:00:32.31,Sub,,0,0,0,,REIFEGAS {\c&H0000E5FF&\fscx112\fscy112}ETHYLEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.31,0:00:32.67,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}AB,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.72,0:00:32.90,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100} DAVON WERDEN
+Dialogue: 0,0:00:32.90,0:00:33.39,Sub,,0,0,0,,UND {\c&H0000E5FF&\fscx112\fscy112}DAVON{\c&H00FFFFFF&\fscx100\fscy100} WERDEN
+Dialogue: 0,0:00:33.39,0:00:33.70,Sub,,0,0,0,,UND DAVON {\c&H0000E5FF&\fscx112\fscy112}WERDEN{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:33.70,0:00:34.06,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}GURKEN{\c&H00FFFFFF&\fscx100\fscy100} SCHNELLER
+Dialogue: 0,0:00:34.06,0:00:34.47,Sub,,0,0,0,,GURKEN {\c&H0000E5FF&\fscx112\fscy112}SCHNELLER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:34.47,0:00:35.03,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WEICH.{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:35.21,0:00:35.90,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KÜHLSCHRANK{\c&H00FFFFFF&\fscx100\fscy100} ODER
+Dialogue: 0,0:00:35.90,0:00:36.14,Sub,,0,0,0,,KÜHLSCHRANK {\c&H0000E5FF&\fscx112\fscy112}ODER{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:36.14,0:00:37.09,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ARBEITSPLATTE,{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:37.16,0:00:37.44,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}WO{\c&H00FFFFFF&\fscx100\fscy100} LIEGEN DEINE
+Dialogue: 0,0:00:37.44,0:00:37.71,Sub,,0,0,0,,WO {\c&H0000E5FF&\fscx112\fscy112}LIEGEN{\c&H00FFFFFF&\fscx100\fscy100} DEINE
+Dialogue: 0,0:00:37.71,0:00:37.95,Sub,,0,0,0,,WO LIEGEN {\c&H0000E5FF&\fscx112\fscy112}DEINE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:37.95,0:00:38.72,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}TOMATEN?{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:38.86,0:00:39.27,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}SCHREIB'S{\c&H00FFFFFF&\fscx100\fscy100} IN DIE
+Dialogue: 0,0:00:39.27,0:00:39.35,Sub,,0,0,0,,SCHREIB'S {\c&H0000E5FF&\fscx112\fscy112}IN{\c&H00FFFFFF&\fscx100\fscy100} DIE
+Dialogue: 0,0:00:39.35,0:00:39.46,Sub,,0,0,0,,SCHREIB'S IN {\c&H0000E5FF&\fscx112\fscy112}DIE{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:39.46,0:00:40.33,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}KOMMENTARE{\c&H00FFFFFF&\fscx100\fscy100} UND
+Dialogue: 0,0:00:40.33,0:00:40.55,Sub,,0,0,0,,KOMMENTARE {\c&H0000E5FF&\fscx112\fscy112}UND{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:40.55,0:00:40.87,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}FOLG{\c&H00FFFFFF&\fscx100\fscy100} FÜR MEHR
+Dialogue: 0,0:00:40.87,0:00:41.04,Sub,,0,0,0,,FOLG {\c&H0000E5FF&\fscx112\fscy112}FÜR{\c&H00FFFFFF&\fscx100\fscy100} MEHR
+Dialogue: 0,0:00:41.04,0:00:41.28,Sub,,0,0,0,,FOLG FÜR {\c&H0000E5FF&\fscx112\fscy112}MEHR{\c&H00FFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:41.28,0:00:42.43,Sub,,0,0,0,,{\fad(40,0)}{\c&H0000E5FF&\fscx112\fscy112}ALLTAGSWISSEN.{\c&H00FFFFFF&\fscx100\fscy100}

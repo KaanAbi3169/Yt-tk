@@ -1,0 +1,44 @@
+{
+ "id": "X002",
+ "format": "waswaerewenn",
+ "series": "Was wäre wenn",
+ "topic": "24 Stunden mit dem eigenen 10-jährigen Ich verbringen",
+ "hook_type": "Emotionales Gedankenexperiment",
+ "hook_overlay": "Du triffst dich selbst. Mit 10.",
+ "scenes": [
+  {
+   "text": "Was wäre, wenn du für einen Tag dein zehnjähriges Ich treffen könntest?",
+   "svg_file": "s01.svg",
+   "motion": "zoom_in"
+  },
+  {
+   "text": "Du klopfst an die Tür von deinem alten Kinderzimmer. Die Poster an der Wand, der Geruch von früher, alles ist wie damals. Ein Kind schaut dich an und fragt: Wer bist du?",
+   "svg_file": "s02.svg",
+   "motion": "pan_right"
+  },
+  {
+   "text": "Dann kommen die Fragen. Bin ich berühmt? Hab ich ein Haustier? Gibt es schon fliegende Autos?",
+   "svg_file": "s03.svg",
+   "motion": "zoom_in"
+  },
+  {
+   "text": "Es erzählt dir von seinen Träumen. Und du weißt genau, welche davon wahr geworden sind und welche nicht. Dann, ganz leise, die schwierigste Frage: Bist du stolz auf uns?",
+   "svg_file": "s04.svg",
+   "motion": "zoom_in"
+  },
+  {
+   "text": "Du darfst ihm genau einen Satz mitgeben. Keine Lottozahlen, keine Zukunft. Nur einen Rat.",
+   "svg_file": "s05.svg",
+   "motion": "pan_up"
+  },
+  {
+   "text": "Was würdest du deinem zehnjährigen Ich sagen? Schreib's in die Kommentare.",
+   "svg_file": "s06.svg",
+   "motion": "zoom_out"
+  }
+ ],
+ "title_tiktok": "Was wäre, wenn du dein 10-jähriges Ich triffst? 🧒",
+ "title_youtube": "Was würdest du deinem 10-jährigen Ich sagen? 🧒 #shorts",
+ "text_tiktok": "Ein Satz. Nur einer. Was sagst du ihm? 👇 #waswärewenn #gedankenexperiment #kindheit #fürdich",
+ "text_youtube": "Ein Tag mit deinem jüngeren Ich – und du darfst genau einen Satz mitgeben. Welcher wäre es? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #kindheit"
+}

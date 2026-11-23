@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1E4A"/><stop offset="0.6" stop-color="#132E6B"/><stop offset="1" stop-color="#071433"/></linearGradient><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1080" height="1920" fill="url(#bg)"/><g fill="#9FC3FF" opacity="0.5"><circle cx="120" cy="420" r="3"/><circle cx="960" cy="380" r="4"/><circle cx="820" cy="1180" r="3"/><circle cx="180" cy="1250" r="4"/><circle cx="600" cy="300" r="2"/></g>
+  <rect x="100" y="380" width="880" height="560" rx="40" fill="#0A1838" stroke="#4F7DF0" stroke-width="8"/>
+  <g fill="#1E3B7E"><rect x="140" y="420" width="380" height="300" rx="20"/><rect x="560" y="420" width="380" height="300" rx="20"/></g>
+  <g fill="#2C55B0" opacity="0.7"><rect x="160" y="600" width="80" height="120"/><rect x="260" y="560" width="70" height="160"/><rect x="600" y="580" width="90" height="140"/><rect x="720" y="540" width="60" height="180"/></g>
+  <circle cx="420" cy="820" r="70" fill="#06102A" stroke="#9FC3FF" stroke-width="6"/><rect x="360" y="880" width="120" height="60" rx="20" fill="#06102A"/>
+  <rect x="470" y="770" width="34" height="64" rx="8" fill="#9FC3FF"/>
+  <g transform="translate(520,1000)"><rect width="440" height="130" rx="40" fill="#fff"/><text x="220" y="85" text-anchor="middle" font-family="Inter" font-weight="700" font-size="38" fill="#132E6B">„Bin in 5 Min da!“</text></g>
+  <g transform="translate(150,1020)"><g filter="url(#gl)"><rect width="250" height="100" rx="50" fill="#FF3B6B"/><text x="125" y="70" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="58" fill="#fff">PIEP</text></g></g>
+</svg>

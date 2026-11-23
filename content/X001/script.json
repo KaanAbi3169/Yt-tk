@@ -1,0 +1,22 @@
+{
+  "id": "X001",
+  "format": "waswaerewenn",
+  "series": "Was wäre wenn",
+  "topic": "24 Stunden jede Lüge als Piepen hören – Twist: man piept selbst",
+  "hook_type": "Superkraft-Gedankenexperiment",
+  "hook_overlay": "Jede Lüge piept.",
+  "scenes": [
+    {"text": "Was wäre, wenn du ab morgen jede Lüge hören könntest? Als leises Piepen, direkt in deinem Kopf.", "svg_file": "s01.svg", "motion": "zoom_in"},
+    {"text": "Sieben Uhr früh. Dein Mitbewohner sagt: Ich hab deinen Joghurt nicht gegessen. Piep.", "svg_file": "s02.svg", "motion": "pan_right"},
+    {"text": "Im Bus telefoniert jemand: Ich bin in fünf Minuten da. Piep.", "svg_file": "s03.svg", "motion": "pan_left"},
+    {"text": "Im Büro sagt deine Chefin: Die Beförderung ist so gut wie sicher. Piep. Piep. Piep.", "svg_file": "s04.svg", "motion": "zoom_in"},
+    {"text": "Am Abend fragt dich ein Freund, ob dir sein neues Lied gefällt. Du sagst: Ja, mega. Und zum ersten Mal hörst du es bei dir selbst. Piep.", "svg_file": "s05.svg", "motion": "zoom_in"},
+    {"text": "Nach einem Tag weißt du: Fast jeder lügt ein bisschen. Meistens nicht aus Bosheit, sondern um nett zu sein.", "svg_file": "s06.svg", "motion": "pan_up"},
+    {"text": "Würdest du diese Fähigkeit behalten? Ja oder nein? Schreib's in die Kommentare.", "svg_file": "s07.svg", "motion": "zoom_out"}
+  ],
+  "cta": "Ja/Nein in die Kommentare",
+  "title_tiktok": "Was wäre, wenn jede Lüge piepen würde? 🔊",
+  "title_youtube": "Was wäre, wenn du jede Lüge hören könntest? 🔊 #shorts",
+  "text_tiktok": "Würdest du die Fähigkeit behalten? Ja oder nein 👇 #waswärewenn #gedankenexperiment #story #fürdich",
+  "text_youtube": "24 Stunden lang piept jede Lüge in deinem Kopf – auch deine eigene. Würdest du die Fähigkeit behalten? 👇\n\nGedankenexperiment, frei erfunden. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #story"
+}

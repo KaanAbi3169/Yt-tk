@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1E4A"/><stop offset="0.6" stop-color="#132E6B"/><stop offset="1" stop-color="#071433"/></linearGradient><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1080" height="1920" fill="url(#bg)"/><g fill="#9FC3FF" opacity="0.5"><circle cx="120" cy="420" r="3"/><circle cx="960" cy="380" r="4"/><circle cx="820" cy="1180" r="3"/><circle cx="180" cy="1250" r="4"/><circle cx="600" cy="300" r="2"/></g>
+  <g transform="translate(140,360)"><rect width="800" height="600" rx="30" fill="#E6EEFF" stroke="#4F7DF0" stroke-width="8"/>
+  <path d="M120 80 h560 M120 80 v440 M120 520 h560" stroke="#132E6B" stroke-width="6"/>
+  <g stroke="#FF3B6B" stroke-width="8" fill="none"><path d="M250 200 C 300 160, 360 240, 420 190 C 470 150, 520 230, 600 180"/><circle cx="300" cy="380" r="18" fill="#FF3B6B"/><circle cx="540" cy="340" r="18" fill="#FF3B6B"/></g>
+  <text x="400" y="460" text-anchor="middle" font-family="Inter" font-weight="800" font-size="44" fill="#132E6B">Papier-Stadtplan 🗺️</text></g>
+</svg>

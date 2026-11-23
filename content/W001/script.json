@@ -1,0 +1,23 @@
+{
+  "id": "W001",
+  "format": "wissen",
+  "series": "Alltagswissen",
+  "topic": "Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
+  "hook_type": "Du machst einen Fehler",
+  "hook_overlay": "Tomaten im Kühlschrank?",
+  "sources": ["Zhang et al. 2016, PNAS: Chilling-induced tomato flavor loss is associated with altered volatile synthesis and transient changes in DNA methylation"],
+  "scenes": [
+    {"text": "Du machst mit Tomaten wahrscheinlich seit Jahren einen Fehler.", "svg_file": "s01.svg", "motion": "zoom_in"},
+    {"text": "Im Kühlschrank fahren Tomaten die Gene herunter, die für ihr Aroma zuständig sind.", "svg_file": "s02.svg", "motion": "zoom_out"},
+    {"text": "Gleichzeitig leiden die Zellen. Darum wird das Fruchtfleisch oft mehlig und wässrig.", "svg_file": "s03.svg", "motion": "zoom_in"},
+    {"text": "Forscher haben 2016 gezeigt: Nach einer Woche im Kühlschrank kommt das Aroma nicht mehr ganz zurück. Auch nicht, wenn die Tomate danach wieder warm wird.", "svg_file": "s04.svg", "motion": "pan_up"},
+    {"text": "Besser: Lagere sie bei Zimmertemperatur, nicht in der prallen Sonne, und iss sie innerhalb weniger Tage.", "svg_file": "s05.svg", "motion": "pan_right"},
+    {"text": "Und leg sie nicht neben Gurken. Tomaten geben das Reifegas Ethylen ab, und davon werden Gurken schneller weich.", "svg_file": "s06.svg", "motion": "pan_left"},
+    {"text": "Kühlschrank oder Arbeitsplatte, wo liegen deine Tomaten? Schreib's in die Kommentare und folg für mehr Alltagswissen.", "svg_file": "s07.svg", "motion": "zoom_out"}
+  ],
+  "cta": "Kommentar: Kühlschrank oder Arbeitsplatte + Folgen",
+  "title_tiktok": "Darum gehören Tomaten NICHT in den Kühlschrank 🍅",
+  "title_youtube": "Tomaten im Kühlschrank? Darum ist das ein Fehler 🍅 #shorts",
+  "text_tiktok": "Kühlschrank oder Arbeitsplatte – wo liegen deine? 👇 #alltagswissen #küchentipps #tomaten #wusstestdu #lernenmittiktok",
+  "text_youtube": "Kälte schaltet das Aroma von Tomaten herunter und macht sie mehlig. So lagerst du sie richtig.\nKühlschrank oder Arbeitsplatte – wo liegen deine? 👇\n\nQuelle: Zhang et al. (2016), PNAS. Stimme und Grafiken mit KI erstellt.\n\n#shorts #alltagswissen #küchentipps #tomaten #wusstestdu"
+}

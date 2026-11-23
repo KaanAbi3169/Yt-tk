@@ -1,0 +1,30 @@
+{
+  "id": "H001",
+  "format": "horror",
+  "series": "Du wachst auf – Staffel 1: Das Zimmer ohne Fenster",
+  "episode": 1,
+  "part_label": "TEIL 1",
+  "topic": "Aufwachen um 3:17, Fenster verschwunden, Notiz von sich selbst, falsche Mutter an der Tür",
+  "hook_type": "Situation + Regel-Bruch",
+  "hook_overlay": "Dein Fenster ist weg.",
+  "scenes": [
+    {"text": "Du wachst auf. Es ist drei Uhr siebzehn. Und irgendetwas in deinem Zimmer ist falsch.", "svg_file": "s01.svg", "motion": "zoom_in"},
+    {"text": "Du brauchst eine Sekunde, bis du es merkst. Dein Fenster ist weg. Da, wo es immer war, ist nur noch Wand. Kalte, glatte Wand.", "svg_file": "s02.svg", "motion": "zoom_in"},
+    {"text": "Dein Handy leuchtet. Kein Netz. Kein WLAN. Aber eine neue Notiz. Geschrieben vor vier Minuten. Von dir.", "svg_file": "s03.svg", "motion": "pan_up"},
+    {"text": "Da steht: Sie hört dich, wenn du sprichst. Antworte ihr nicht. Egal, was sie sagt.", "svg_file": "s04.svg", "motion": "zoom_out"},
+    {"text": "Dann klopft es an deiner Tür. Drei Mal. Ganz langsam.", "svg_file": "s05.svg", "motion": "shake"},
+    {"text": "Und eine Stimme sagt: Schatz, machst du auf? Ich bin's. Mama.", "svg_file": "s06.svg", "motion": "zoom_in"},
+    {"text": "Es ist ihre Stimme. Ganz genau ihre Stimme. Nur: Deine Mutter wohnt über dreihundert Kilometer von hier. Und vor zwei Stunden hat sie dir noch geschrieben: Schlaf gut.", "svg_file": "s07.svg", "motion": "pan_down"},
+    {"text": "Unter der Tür siehst du zwei Schatten. Sie bewegen sich nicht.", "svg_file": "s08.svg", "motion": "zoom_in"},
+    {"text": "Was machst du? A: Du öffnest die Tür. B: Du liest die Notiz weiter, denn da steht noch mehr. Schreib A oder B in die Kommentare. Die Mehrheit entscheidet, wie es weitergeht.", "svg_file": "s09.svg", "motion": "zoom_out"}
+  ],
+  "cta": "A oder B – Mehrheit entscheidet Teil 2",
+  "title_tiktok": "Du wachst auf – und dein Fenster ist weg 🪟 Teil 1",
+  "title_youtube": "Du wachst um 3:17 auf – und dein Fenster ist weg… Teil 1 #shorts",
+  "text_tiktok": "Antworte ihr nicht. Egal, was sie sagt. A oder B? 👇 Die Mehrheit entscheidet Teil 2. #duwachstauf #horror #gruselgeschichte #creepy #fürdich",
+  "text_youtube": "Eine Notiz, die du nicht geschrieben hast. Eine Stimme, die nicht da sein dürfte. A oder B – du entscheidest, wie es weitergeht 👇\n\nFrei erfundene Geschichte. Stimme und Grafiken mit KI erstellt.\n\n#shorts #horror #gruselgeschichte #duwachstauf #creepy",
+  "branches": {
+    "A": "Tür öffnen: Flur ist endlos lang, Mama steht mit dem Rücken zu dir, zählt rückwärts.",
+    "B": "Notiz weiterlesen: Liste mit 3 Regeln, Regel 2: 'Wenn das Fenster zurückkommt, schau nicht hinaus.'"
+  }
+}

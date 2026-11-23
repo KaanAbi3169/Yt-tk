@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1E4A"/><stop offset="0.6" stop-color="#132E6B"/><stop offset="1" stop-color="#071433"/></linearGradient><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1080" height="1920" fill="url(#bg)"/><g fill="#9FC3FF" opacity="0.5"><circle cx="120" cy="420" r="3"/><circle cx="960" cy="380" r="4"/><circle cx="820" cy="1180" r="3"/><circle cx="180" cy="1250" r="4"/><circle cx="600" cy="300" r="2"/></g>
+  <rect x="80" y="380" width="920" height="520" rx="30" fill="#0A1838" stroke="#4F7DF0" stroke-width="6"/>
+  <g fill="#06102A" stroke="#9FC3FF" stroke-width="5"><circle cx="260" cy="560" r="55"/><path d="M180 760 q80 -150 160 0"/><circle cx="540" cy="540" r="55"/><path d="M460 740 q80 -150 160 0"/><circle cx="820" cy="560" r="55"/><path d="M740 760 q80 -150 160 0"/></g>
+  <g fill="#FFD24A"><rect x="215" y="610" width="40" height="24" rx="6"/><rect x="495" y="590" width="40" height="24" rx="6"/></g>
+  <text x="540" y="1020" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="58" fill="#FFD24A">ALLE SCHAUEN HOCH</text>
+</svg>
