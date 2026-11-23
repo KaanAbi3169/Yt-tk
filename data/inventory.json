@@ -198,8 +198,7 @@
       "created": "2026-11-15T07:54:50.830138+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1Yx3cc7BclQSmlgd-YBo6dns0DRX78568",
       "buffer": {
-        "tiktok": "6b02877502479690922a4ad7",
-        "youtube": "6b028777cc364169c13075fd"
+        "tiktok": "6b02877502479690922a4ad7"
       },
       "title_tiktok": "Haie sind älter als Bäume – stimmt das? 🦈",
       "title_youtube": "Sind Haie älter als Bäume? Die Antwort überrascht 🦈 #shorts",
@@ -214,7 +213,8 @@
           "at": "2026-11-23T02:07:45.314531+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
         }
-      ]
+      ],
+      "note": "YouTube 22.11. 16:00 fehlgeschlagen (daily posting limit), TikTok gesendet; YouTube-Post in Buffer geloescht"
     },
     {
       "id": "D024",
@@ -1485,7 +1485,8 @@
       "buffer": {
         "youtube": "metricool:433809184"
       },
-      "due": "2026-11-22T18:00:00+01:00"
+      "due": "2026-11-22T18:00:00+01:00",
+      "public_url": "https://www.youtube.com/watch?v=yMDPQ4PEV9s"
     },
     {
       "id": "L004",
