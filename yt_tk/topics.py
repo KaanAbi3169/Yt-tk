@@ -7,6 +7,7 @@ Quellen: data/themen.json (Radar), data/performance.json (Gruppen). Jeder Kandid
 Die Claude-Routine (Tageszyklus) waehlt daraus, prueft Fakten und setzt den Status:
 candidate -> chosen -> produced | rejected (mit Grund). Entscheidungen bleiben bei neuen Laeufen erhalten.
 Regeln: hoechstens 30 % Test-Slots, Nachrufe/Gewalt/lebende Personen bleiben draussen (Radar filtert vor)."""
+import re
 import sys
 from datetime import datetime, timedelta
 
@@ -29,6 +30,30 @@ def group_table() -> list:
             g.setdefault(p.get("group") or p.get("format") or "?", []).append(s)
     rows = [{"group": k, "n": len(v), "avg": round(sum(v) / len(v))} for k, v in g.items()]
     return sorted(rows, key=lambda r: -r["avg"])
+
+
+# Eignung (Auftrag "Optimiere alles", 23.11.2026): Der Radar liefert Wikipedia-Titel, nicht jeder taugt fuer ein Wissensvideo.
+# gesperrt: nie vorschlagen (Erwachseneninhalt, Politik, Gewalt, Verschwoerungs- und Personenthemen).
+GESPERRT = re.compile(r"(xnxx|xvideos|pornhub|onlyfans|porn|erotik|sex\b|bundespr|bundestag|bundesregierung|\bwahl\b|partei|afd|cdu|spd|"
+                      r"trump|putin|selenskyj|krieg|krim|ukrain|gaza|israel|russland|angriff|anschlag|attentat|massaker|unfall|absturz|mord|rothschild|illuminati|nazi|hitler|"
+                      r"leopard von rudraprayag|tokio hotel|ballers in god|thiel und boerne|sommerland)", re.I)
+# zu breit: kein einzelnes Video moeglich, nur mit konkretem Winkel
+ZU_BREIT = {"berlin", "deutschland", "zdf", "ard", "nvidia", "chatgpt", "anthropic", "generation z", "black friday",
+            "grand theft auto", "periodensystem", "james bond", "uefa nations league", "uefa nations league 2026/27"}
+# gute Wissensthemen: Tiere, Natur, Weltraum, Koerper, Technik, Wissenschaft
+GUT = re.compile(r"(alicella|leopard|krebs|hai\b|wal\b|pilz|baum|kastanie|vulkan|gletscher|planet|sonde|voyager|mond\b|stern|komet|galax|"
+                 r"gehirn|herz|knochen|virus|bakter|zelle|gen\b|riemann|vermutung|zahl|mathe|physik|chemie|element|atom|laser|quanten|"
+                 r"flusspferd|elefant|delfin|pinguin|oktopus|biene|ameise|spinne|tiefsee|ozean|meer|insel|wald|regen|sturm|erdbeben|"
+                 r"pearl|rakete|satellit|roboter|ki\b|computer|chip|batterie|solar|energie)", re.I)
+
+
+def eignung(title: str) -> str:
+    t = title.strip()
+    if GESPERRT.search(t):
+        return "gesperrt"
+    if t.lower() in ZU_BREIT:
+        return "zu breit"
+    return "gut" if GUT.search(t) else "pruefen"
 
 
 def candidates(th: dict) -> list:
@@ -55,9 +80,18 @@ def build(today: datetime) -> dict:
             keep.append(it)
     known = {it["title"].lower() for it in keep}
     for c in candidates(inventory._load("themen.json", {})):
+        e = eignung(c["title"])
+        if e == "gesperrt":
+            continue  # nie vorschlagen
         if c["title"].lower() not in known:
-            keep.append({**c, "added": day, "status": "candidate", "source": "radar"})
+            keep.append({**c, "added": day, "status": "candidate", "source": "radar", "fit": e})
             known.add(c["title"].lower())
+    for it in keep:  # alte Eintraege neu bewerten (Filter wurde nachgeschaerft)
+        if it.get("status") == "candidate":
+            it["fit"] = eignung(it["title"])
+    keep = [it for it in keep if not (it.get("status") == "candidate" and it["fit"] == "gesperrt")]
+    rank = {"gut": 0, "pruefen": 1, "zu breit": 2}
+    keep.sort(key=lambda it: (it.get("status") != "candidate", rank.get(it.get("fit"), 3)))
     items = [it for it in keep if it["status"] != "candidate" or it.get("added", day) >= cutoff]
     live = [it for it in items if it["status"] in ("candidate", "chosen")]
     return {"date": day, "test_share": TEST_SHARE,
@@ -70,8 +104,8 @@ def report(t: dict) -> str:
          f"Kontingent 14 Tage (2 Videos/Tag): {t['slots_14d']['proven']} bewaehrt, hoechstens {t['slots_14d']['test']} Test. Offen: {t['open']}.", "",
          "## Gruppen (Durchschnitt 7 Tage, sonst 24 h)", "| Gruppe | Videos | Ø Wert |", "|---|---|---|"]
     L += [f"| {g['group']} | {g['n']} | {g['avg']} |" for g in t["groups"]] or ["| n/a (keine Messwerte) | | |"]
-    L += ["", "## Themen", "| Status | Thema | Art | Signal |", "|---|---|---|---|"]
-    L += [f"| {i['status']} | {i['title']} | {i.get('kind', '-')} | {i.get('signal', '-')} |" for i in t["items"]]
+    L += ["", "## Themen (sortiert: gut, pruefen, zu breit)", "| Status | Eignung | Thema | Art | Signal |", "|---|---|---|---|---|"]
+    L += [f"| {i['status']} | {i.get('fit', '-')} | {i['title']} | {i.get('kind', '-')} | {i.get('signal', '-')} |" for i in t["items"]]
     return "\n".join(L) + "\n"
 
 

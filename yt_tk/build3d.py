@@ -180,6 +180,7 @@ def build(vid: str, px: float, dry: bool) -> int:
             thumb = config.DATA / "thumbs" / f"{vid}.jpg"
             thumb.parent.mkdir(parents=True, exist_ok=True)
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{min(2.5, d / 3):.1f}", "-i", str(out), "-frames:v", "1", "-q:v", "3", str(thumb)], check=True)
+            contact_sheet(out, config.DATA / "qa" / f"{vid}.jpg", d)
     finally:
         srv.terminate()
     inv = inventory._load("inventory.json", {"videos": []})
@@ -193,6 +194,22 @@ def build(vid: str, px: float, dry: bool) -> int:
     inventory._save("inventory.json", inv)
     log(inventory.sync(f"{vid}: 3D-Video {cfg['topic']} ({d:.0f} s)"))
     return 0
+
+
+def contact_sheet(src: Path, dest: Path, d: float) -> None:
+    """Prueffoto: sechs Standbilder (8, 25, 42, 58, 75, 92 Prozent) nebeneinander, Branch media -> qa/<ID>.jpg.
+    Der Tageszyklus sieht damit Layoutfehler (Beschriftung auf den Untertiteln, abgeschnittener Text) ohne Frames von Hand zu ziehen."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory() as td:
+        files = []
+        for k, f in enumerate((0.08, 0.25, 0.42, 0.58, 0.75, 0.92)):
+            fp = Path(td) / f"s{k}.jpg"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{d * f:.2f}", "-i", str(src), "-frames:v", "1", "-vf", "scale=360:-2", str(fp)], check=True)
+            files.append(fp)
+        cmd = ["ffmpeg", "-v", "error", "-y"]
+        for fp in files:
+            cmd += ["-i", str(fp)]
+        subprocess.run(cmd + ["-filter_complex", "hstack=inputs=6", "-q:v", "4", str(dest)], check=True)
 
 
 def main(argv: list) -> int:

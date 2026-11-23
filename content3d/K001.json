@@ -13,9 +13,9 @@
       {"id": "cal", "type": "calendar", "pos": [0, 4.5, 0], "scale": 0.95, "text": "19", "month": "NOV 2026", "prev": "18", "show": true},
       {"id": "fig", "type": "figure", "pos": [-1.0, 0, 1.6], "rot": 0.45, "scale": 0.7},
       {"id": "con", "type": "console", "pos": [0.95, 3.65, 1.5], "scale": 0.55},
-      {"id": "lblKon", "type": "stamp", "text": "Konsolen", "w": 1.3, "h": 0.42, "size": 120, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0.8, 2.98, 1.8]},
+      {"id": "lblKon", "type": "stamp", "text": "Konsolen", "w": 1.3, "h": 0.42, "size": 120, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0.8, 3.3, 1.8]},
       {"id": "pc", "type": "monitor", "screen": "?", "pos": [-0.95, 3.45, 1.5], "scale": 0.6},
-      {"id": "lblPC", "type": "stamp", "text": "Kein Termin", "w": 1.25, "h": 0.42, "size": 130, "radius": 20, "pos": [-0.8, 2.98, 1.8]},
+      {"id": "lblPC", "type": "stamp", "text": "Kein Termin", "w": 1.25, "h": 0.42, "size": 130, "radius": 20, "pos": [-0.8, 3.3, 1.8]},
       {"id": "b1", "type": "bubble", "pos": [-1, 6.0, 1.2]}, {"id": "b2", "type": "bubble", "pos": [0, 6.0, 1.2]}, {"id": "b3", "type": "bubble", "pos": [1, 6.0, 1.2]},
       {"id": "ger", "type": "stamp", "text": "GERÜCHT", "bg": "#7a1d8f", "pos": [0, 5.2, 1.6], "rot": 0.12}
     ],

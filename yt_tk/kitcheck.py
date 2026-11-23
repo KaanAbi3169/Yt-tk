@@ -17,6 +17,10 @@ ACTIONS = {"in", "pop", "out", "move", "grow", "spin", "pulse", "pose", "flip", 
 POSES = {"idle", "point", "wave", "think", "cheer", "shrug"}
 NEEDS = {"move": ["to"], "grow": ["to"], "pose": ["pose"], "count": ["to"], "cam": ["shot"]}
 ONLY = {"flip": {"calendar"}, "count": {"counter", "text"}, "pose": {"figure"}, "grow": None}
+TEXTY = {"text", "stamp", "bubble", "counter"}
+CAPTION_Y = 3.2   # darunter liegen die Untertitel (T003: y 2.95 verdeckt, T002: y 3.3 frei)
+MAX_X = 1.85      # darueber ragen Beschriftungen aus dem Bild (T002: Germanium x 1.2 + w 1.9 / 2)
+NUMWORDS = re.compile(r"(zig|ßig|ssig|hundert|zehn)", re.I)
 SAFE_Y = (2.6, 6.3)  # sichtbarer, nicht von Untertiteln und Bedienelementen verdeckter Bereich (Weltkoordinaten, Standardkamera)
 
 
@@ -46,6 +50,14 @@ def check(cfg: dict, words: list = None) -> tuple:
             errs.append(f"{i}: text fehlt")
         ids[i] = p
         pos = p.get("pos", [0, 0, 0])
+        # Layout-Waechter (gemessene Fehler T002 und T003): Beschriftungen duerfen nicht auf den Untertiteln liegen und nicht ueber den
+        # Bildrand ragen. Mit "free": true im Bauteil bewusst ausnehmen.
+        if (p.get("type") in TEXTY and isinstance(pos, list) and len(pos) == 3 and not p.get("free")):
+            if pos[1] < CAPTION_Y:
+                errs.append(f"{i}: y={pos[1]} liegt auf den Untertiteln (Beschriftungen mindestens y={CAPTION_Y})")
+            w = p.get("w", 1.4)
+            if abs(pos[0]) + w / 2 > MAX_X:
+                errs.append(f"{i}: ragt seitlich aus dem Bild (x={pos[0]}, w={w}, erlaubt bis +-{MAX_X})")
         if isinstance(pos, list) and len(pos) == 3 and p.get("type") not in ("figure",) and not (SAFE_Y[0] <= pos[1] <= SAFE_Y[1]) and p.get("show"):
             warns.append(f"{i}: y={pos[1]} ausserhalb der sicheren Zone {SAFE_Y}")
     shots = set(k.get("cams", {}))
@@ -81,6 +93,8 @@ def check(cfg: dict, words: list = None) -> tuple:
             except re.error:
                 errs.append(f"Beat {a}: at ist kein gueltiges Muster: {at}")
                 continue
+            if NUMWORDS.search(at) and not re.search(r"[0-9]", at) and f"Anker {at}" not in " ".join(warns):
+                warns.append(f"Anker {at}: Whisper schreibt Zahlen als Ziffern, Muster mit Ziffer ergaenzen (z. B. 1869|neunundsechzig)")
             if words is not None and not [w for w in words if re.search(at, norm(w["w"]), re.I)]:
                 (warns if b.get("fallback") is not None else errs).append(f"Anker passt auf kein gesprochenes Wort: {at}")
     return errs, warns
