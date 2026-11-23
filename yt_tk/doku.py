@@ -23,7 +23,7 @@ from .build3d import clean, contact_sheet, log, probe, whisper_words
 ROOT = Path(__file__).resolve().parent.parent
 THEMES = {"nacht", "tiefsee", "weltraum", "erde", "papier", "glut"}
 TYPES = {"titel": ["title"], "kapitel": ["nr", "title"], "zahl": ["value", "label"], "liste": ["items"], "vergleich": ["bars"],
-         "zeitleiste": ["events"], "fakt": ["text"], "frage": ["question"]}
+         "zeitleiste": ["events"], "fakt": ["text"], "frage": ["question"], "bild": ["image"], "diagramm": ["points"]}
 MOTIONS = ("zoom_in", "pan_left", "zoom_out", "pan_right", "zoom_in", "pan_up", "zoom_out", "pan_down")
 MIN_WORDS = 1450   # bei ca. 2,45 Woertern pro Sekunde (gemessen) ergibt das mindestens 10 Minuten
 FPS = 30
@@ -208,6 +208,13 @@ def build(vid: str, dry: bool, fake: bool) -> int:
             for j, s in enumerate(sc):
                 d = span * w[j] / sum(w)
                 spec = dict(s, theme=cfg["theme"])
+                if spec.get("type") == "bild":  # Bild-ID -> Datei und Quellenzeile aus data/images.json
+                    img = next((x for x in inventory._load("images.json", {"images": []})["images"] if x["id"] == spec["image"]), None)
+                    f = config.DATA / "images" / f"{spec['image']}.jpg"
+                    if not img or not f.exists():
+                        log(f"Bild {spec['image']} fehlt - Abbruch")
+                        return 1
+                    spec["url"], spec["credit"] = f.as_uri(), img["credit"]
                 if b.get("chapter") and "kicker" not in spec:
                     spec["kicker"] = b["chapter"]
                 plan.append({"name": f"s{bi:02d}_{j}", "spec": spec, "s": starts[bi] + acc, "d": d})

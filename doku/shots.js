@@ -1,5 +1,5 @@
 // Rendert Szenen als PNG (1920x1080): node shots.js <shots.json> <ausgabeordner>
-// shots.json: [{"name":"s001","spec":{...}}, ...]   (spec.type: titel, kapitel, zahl, liste, vergleich, zeitleiste, fakt, frage, vorschau)
+// shots.json: [{"name":"s001","spec":{...}}, ...]   (spec.type: titel, kapitel, zahl, liste, vergleich, zeitleiste, fakt, frage, bild, diagramm, vorschau)
 const {chromium}=require('playwright'); const fs=require('fs'); const path=require('path');
 (async()=>{
   const [inp,out]=process.argv.slice(2); const shots=JSON.parse(fs.readFileSync(inp,'utf8')); fs.mkdirSync(out,{recursive:true});

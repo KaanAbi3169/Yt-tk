@@ -31,7 +31,7 @@ function base(spec,o={}){
   for(const [x,y,s] of rings){const r=document.createElement('div');r.className='ring';r.style.cssText=`left:${x}px;top:${y}px;width:${s}px;height:${s}px`;root.appendChild(r)}
   if(spec.kicker&&!o.nokicker)root.insertAdjacentHTML('beforeend',`<div class="kicker">${esc(spec.kicker)}</div>`);
   if(!o.nobrand)root.insertAdjacentHTML('beforeend',`<div class="brand">Ai · Wissen</div>`);
-  if(spec.source)root.insertAdjacentHTML('beforeend',`<div class="src">Quelle: ${esc(spec.source)}</div>`);
+  if(spec.source&&!o.nosrc)root.insertAdjacentHTML('beforeend',`<div class="src">Quelle: ${esc(spec.source)}</div>`);
 }
 const R={
  titel(s){base(s,{nokicker:1});
@@ -83,6 +83,22 @@ const R={
    h+=`<div class="abs" style="left:${x}px;top:560px;width:${w}px;height:260px;border-radius:28px;background:rgba(255,255,255,.1);border:4px solid var(--accent);padding:32px">
    <div style="font-size:72px;font-weight:800;color:var(--accent)">${'ABCD'[i]}</div><div style="font-size:44px;margin-top:10px;line-height:1.2">${esc(o)}</div></div>`});
   root.insertAdjacentHTML('beforeend',h)},
+ bild(s){base(s,{nosrc:1});
+  const cap=s.caption?`<div class="abs" style="left:120px;top:150px;width:1500px;font-size:64px;font-weight:700;line-height:1.15;text-shadow:0 4px 24px rgba(0,0,0,.6)">${esc(s.caption)}</div>`:'';
+  root.insertAdjacentHTML('beforeend',`<div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#000 url('${esc(s.url)}') center/cover"></div>
+  <div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,transparent 35%,transparent 70%,rgba(0,0,0,.7) 100%)"></div>${cap}
+  <div class="abs" style="left:120px;bottom:40px;font-size:26px;opacity:.85;max-width:1600px;text-shadow:0 2px 10px #000">${esc(s.credit||'')}</div>`)},
+ diagramm(s){base(s);
+  const P=s.points,n=P.length,vals=P.map(p=>p.y),mn=Math.min(0,...vals),mx=Math.max(...vals),x0=240,x1=1740,y0=(s.title||'').length>32?430:340,y1=900;
+  const X=i=>n===1?(x0+x1)/2:x0+i*(x1-x0)/(n-1),Y=v=>y1-(mx===mn?0.5:(v-mn)/(mx-mn))*(y1-y0);
+  let g=`<line x1="${x0}" y1="${y1}" x2="${x1}" y2="${y1}" stroke="rgba(255,255,255,.4)" stroke-width="4"/>`;
+  for(let k=0;k<=4;k++){const v=mn+(mx-mn)*k/4,yy=Y(v);g+=`<line x1="${x0}" y1="${yy}" x2="${x1}" y2="${yy}" stroke="rgba(255,255,255,.12)" stroke-width="2"/><text x="${x0-18}" y="${yy+10}" text-anchor="end" font-size="30" fill="currentColor" opacity=".7">${Math.round(v*10)/10}</text>`}
+  g+=`<polyline fill="none" stroke="var(--accent)" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" points="${P.map((p,i)=>X(i)+','+Y(p.y)).join(' ')}"/>`;
+  P.forEach((p,i)=>{const f=(s.focus==null||s.focus===i||i===0||i===n-1);
+   g+=`<circle cx="${X(i)}" cy="${Y(p.y)}" r="${s.focus===i?20:11}" fill="${s.focus===i?'var(--accent2)':'var(--accent)'}" stroke="var(--bg1)" stroke-width="5"/>`;
+   if(f)g+=`<text x="${X(i)}" y="${Y(p.y)-30}" text-anchor="middle" font-size="${s.focus===i?44:32}" font-weight="800" fill="currentColor">${esc(p.y)}${s.unit&&s.focus===i?' '+esc(s.unit):''}</text>`;
+   if(n<=12||i%Math.ceil(n/10)===0||i===n-1)g+=`<text x="${X(i)}" y="${y1+50}" text-anchor="middle" font-size="30" fill="currentColor" opacity=".8">${esc(p.x)}</text>`});
+  root.insertAdjacentHTML('beforeend',`<h1 class="abs" style="left:120px;top:150px;width:1650px;font-size:70px">${esc(s.title||'')}</h1><svg class="abs" style="left:0;top:0;color:var(--text)" width="1920" height="1080">${g}</svg>`)},
  vorschau(s){base(s,{nokicker:1,nobrand:1,source:0});  // Vorschaubild 1920x1080, wird auf 1280x720 skaliert
   const L=s.title.length,fs=L>26?150:L>14?190:240;
   root.insertAdjacentHTML('beforeend',`<div class="abs" style="left:100px;top:150px;width:1000px;font-family:'DejaVu Serif',serif;font-size:${fs}px;font-weight:800;line-height:1.02;text-shadow:0 8px 40px rgba(0,0,0,.45)">${esc(s.title)}</div>
