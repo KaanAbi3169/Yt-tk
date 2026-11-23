@@ -1,58 +1,1561 @@
 {
-  "date": "2026-11-17",
-  "videos": 212,
+  "top_all": [
+    {
+      "id": "9H-C_Rehlr4",
+      "kind": "sonstiges",
+      "views": 46569,
+      "duration": 60,
+      "out": true
+    },
+    {
+      "id": "gB-TZ5hij1s",
+      "kind": "sonstiges",
+      "views": 45773,
+      "duration": 20,
+      "out": true
+    },
+    {
+      "id": "ToQmAHZNdew",
+      "kind": "erklaerung",
+      "views": 34798,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "_7i--ZBEyX8",
+      "kind": "liste",
+      "views": 62679,
+      "duration": 6,
+      "out": true
+    },
+    {
+      "id": "kScC6L6urLw",
+      "kind": "sonstiges",
+      "views": 31149,
+      "duration": 10,
+      "out": true
+    },
+    {
+      "id": "vddfU-LdR_8",
+      "kind": "sonstiges",
+      "views": 20974,
+      "duration": 72,
+      "out": true
+    },
+    {
+      "id": "NyOenN_yapU",
+      "kind": "sonstiges",
+      "views": 21512,
+      "duration": 60,
+      "out": true
+    },
+    {
+      "id": "XPAdSCwLQLA",
+      "kind": "sonstiges",
+      "views": 30987,
+      "duration": 7,
+      "out": true
+    },
+    {
+      "id": "fPWwh53HcrU",
+      "kind": "mythos",
+      "views": 3475,
+      "duration": 56,
+      "out": false
+    },
+    {
+      "id": "0dg5gHMbKjA",
+      "kind": "mythos",
+      "views": 1569,
+      "duration": 52,
+      "out": false
+    },
+    {
+      "id": "aIPJIyZB2Qo",
+      "kind": "mythos",
+      "views": 1297,
+      "duration": 79,
+      "out": false
+    },
+    {
+      "id": "glJbNxFgu_I",
+      "kind": "mythos",
+      "views": 1523,
+      "duration": 64,
+      "out": false
+    },
+    {
+      "id": "TpQ7c52yGwM",
+      "kind": "mythos",
+      "views": 1187,
+      "duration": 60,
+      "out": false
+    },
+    {
+      "id": "ZNFDbzXHD8Q",
+      "kind": "mythos",
+      "views": 1120,
+      "duration": 52,
+      "out": false
+    },
+    {
+      "id": "seuL-lowFf0",
+      "kind": "mythos",
+      "views": 1053,
+      "duration": 64,
+      "out": false
+    },
+    {
+      "id": "X2riB1s3ZJ0",
+      "kind": "geschichte",
+      "views": 1249,
+      "duration": 73,
+      "out": false
+    },
+    {
+      "id": "K1ztA6zW9eI",
+      "kind": "mythos",
+      "views": 1056,
+      "duration": 47,
+      "out": false
+    },
+    {
+      "id": "H-ln1VqtA7A",
+      "kind": "mythos",
+      "views": 1036,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "hmqhMUOzUX4",
+      "kind": "mythos",
+      "views": 1311,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "Sf_L9Q8oyfg",
+      "kind": "mythos",
+      "views": 1612,
+      "duration": 6,
+      "out": false
+    },
+    {
+      "id": "KbK6yXd9m58",
+      "kind": "mythos",
+      "views": 542,
+      "duration": 58,
+      "out": false
+    },
+    {
+      "id": "F4C6zP3EwY0",
+      "kind": "mythos",
+      "views": 826,
+      "duration": 73,
+      "out": false
+    },
+    {
+      "id": "bG_I_XJvWcY",
+      "kind": "mythos",
+      "views": 417,
+      "duration": 40,
+      "out": false
+    },
+    {
+      "id": "qX2HjqTItWk",
+      "kind": "mythos",
+      "views": 726,
+      "duration": 27,
+      "out": false
+    },
+    {
+      "id": "WtDdf_qavDk",
+      "kind": "mythos",
+      "views": 291,
+      "duration": 51,
+      "out": false
+    },
+    {
+      "id": "thYfT8jSvbw",
+      "kind": "mythos",
+      "views": 357,
+      "duration": 86,
+      "out": false
+    },
+    {
+      "id": "X5R8aSTZouQ",
+      "kind": "mythos",
+      "views": 123,
+      "duration": 66,
+      "out": false
+    },
+    {
+      "id": "u3nQdIgk-fk",
+      "kind": "mythos",
+      "views": 183,
+      "duration": 35,
+      "out": false
+    },
+    {
+      "id": "WTL1HZTXTM8",
+      "kind": "mythos",
+      "views": 205,
+      "duration": 26,
+      "out": false
+    },
+    {
+      "id": "VsKajJxJK0k",
+      "kind": "mythos",
+      "views": 222,
+      "duration": 29,
+      "out": false
+    },
+    {
+      "id": "lw_I2vR1HEE",
+      "kind": "sonstiges",
+      "views": 227,
+      "duration": 49,
+      "out": false
+    },
+    {
+      "id": "L9wS2Gyq2wc",
+      "kind": "mythos",
+      "views": 135,
+      "duration": 31,
+      "out": false
+    },
+    {
+      "id": "as0G1igyEOs",
+      "kind": "mythos",
+      "views": 115,
+      "duration": 36,
+      "out": false
+    },
+    {
+      "id": "1lJGhznvlPU",
+      "kind": "mythos",
+      "views": 132,
+      "duration": 6,
+      "out": false
+    },
+    {
+      "id": "anHIITnkP2k",
+      "kind": "mythos",
+      "views": 24,
+      "duration": 34,
+      "out": false
+    },
+    {
+      "id": "TH-lu0lJPDA",
+      "kind": "mythos",
+      "views": 40,
+      "duration": 41,
+      "out": false
+    },
+    {
+      "id": "UdzK4q6bpto",
+      "kind": "mythos",
+      "views": 30,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "TIzVSv7XzC4",
+      "kind": "geschichte",
+      "views": 20,
+      "duration": 24,
+      "out": false
+    },
+    {
+      "id": "VUDKltll0QI",
+      "kind": "mythos",
+      "views": 4,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "hl1qIkznLVk",
+      "kind": "mythos",
+      "views": 34,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "kcx5QPg2LuM",
+      "kind": "mythos",
+      "views": 5,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "6wOtk8_mz3s",
+      "kind": "mythos",
+      "views": 6,
+      "duration": 62,
+      "out": false
+    },
+    {
+      "id": "Z_auswn_qyE",
+      "kind": "mythos",
+      "views": 4,
+      "duration": 59,
+      "out": false
+    },
+    {
+      "id": "IiEUBmyF_PY",
+      "kind": "mythos",
+      "views": 6,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "BpUK6KxpA40",
+      "kind": "mythos",
+      "views": 3,
+      "duration": 57,
+      "out": false
+    },
+    {
+      "id": "FbbCWCKjM2A",
+      "kind": "mythos",
+      "views": 4,
+      "duration": 58,
+      "out": false
+    },
+    {
+      "id": "WYL2CZl1fJo",
+      "kind": "mythos",
+      "views": 3,
+      "duration": 52,
+      "out": false
+    },
+    {
+      "id": "8Dvb80bXfWY",
+      "kind": "mythos",
+      "views": 3,
+      "duration": 19,
+      "out": false
+    },
+    {
+      "id": "zol3rECQQYs",
+      "kind": "mythos",
+      "views": 18,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "LArkXGFWtB0",
+      "kind": "mythos",
+      "views": 2,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "-Cu06CaRYSM",
+      "kind": "mythos",
+      "views": 0,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "P9cjBzj6Ejg",
+      "kind": "mythos",
+      "views": 3,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "3E-NbactrNE",
+      "kind": "sonstiges",
+      "views": 18112,
+      "duration": 19,
+      "out": false
+    },
+    {
+      "id": "aifhoaSZMZ0",
+      "kind": "sonstiges",
+      "views": 14328,
+      "duration": 14,
+      "out": false
+    },
+    {
+      "id": "Eedn0FTzBzE",
+      "kind": "sonstiges",
+      "views": 8310,
+      "duration": 79,
+      "out": false
+    },
+    {
+      "id": "yfvZTtOfE0E",
+      "kind": "sonstiges",
+      "views": 5632,
+      "duration": 25,
+      "out": false
+    },
+    {
+      "id": "dGrklEWjrso",
+      "kind": "sonstiges",
+      "views": 4965,
+      "duration": 31,
+      "out": false
+    },
+    {
+      "id": "x2CcmqyAaRs",
+      "kind": "mythos",
+      "views": 3188,
+      "duration": 75,
+      "out": false
+    },
+    {
+      "id": "syBpNfXcIC4",
+      "kind": "sonstiges",
+      "views": 3986,
+      "duration": 67,
+      "out": false
+    },
+    {
+      "id": "cNV2VrdfJNw",
+      "kind": "sonstiges",
+      "views": 3415,
+      "duration": 76,
+      "out": false
+    },
+    {
+      "id": "HOsWKIdzwtw",
+      "kind": "sonstiges",
+      "views": 3772,
+      "duration": 27,
+      "out": false
+    },
+    {
+      "id": "cYKAvwBpK6E",
+      "kind": "sonstiges",
+      "views": 2483,
+      "duration": 72,
+      "out": false
+    },
+    {
+      "id": "ARwJ3vzLhAs",
+      "kind": "sonstiges",
+      "views": 2661,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "_9JI5YvWP_A",
+      "kind": "sonstiges",
+      "views": 1757,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "2pN9SvGIXHk",
+      "kind": "sonstiges",
+      "views": 1590,
+      "duration": 26,
+      "out": false
+    },
+    {
+      "id": "InZKo4DhytQ",
+      "kind": "sonstiges",
+      "views": 1237,
+      "duration": 10,
+      "out": false
+    },
+    {
+      "id": "XTMQy6S5hX8",
+      "kind": "sonstiges",
+      "views": 1049,
+      "duration": 33,
+      "out": false
+    },
+    {
+      "id": "E3ueEWrPZOA",
+      "kind": "sonstiges",
+      "views": 1768,
+      "duration": 7,
+      "out": false
+    },
+    {
+      "id": "0VolHPesHgA",
+      "kind": "sonstiges",
+      "views": 687,
+      "duration": 23,
+      "out": false
+    },
+    {
+      "id": "kqyFxkx1Fd0",
+      "kind": "sonstiges",
+      "views": 1148,
+      "duration": 15,
+      "out": false
+    },
+    {
+      "id": "nigQUQy9h14",
+      "kind": "liste",
+      "views": 598,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "WJeNgx0kHB4",
+      "kind": "sonstiges",
+      "views": 419,
+      "duration": 25,
+      "out": false
+    },
+    {
+      "id": "9vISJJRHgHc",
+      "kind": "sonstiges",
+      "views": 307,
+      "duration": 48,
+      "out": false
+    },
+    {
+      "id": "Dq5P7u-w0-A",
+      "kind": "sonstiges",
+      "views": 288,
+      "duration": 26,
+      "out": false
+    },
+    {
+      "id": "YZ4ztMV01UY",
+      "kind": "sonstiges",
+      "views": 534,
+      "duration": 31,
+      "out": false
+    },
+    {
+      "id": "ID8JvLe7DVg",
+      "kind": "liste",
+      "views": 196,
+      "duration": 59,
+      "out": false
+    },
+    {
+      "id": "dGqOG-K3nns",
+      "kind": "liste",
+      "views": 128,
+      "duration": 67,
+      "out": false
+    },
+    {
+      "id": "8uoT2iebfd8",
+      "kind": "sonstiges",
+      "views": 84,
+      "duration": 82,
+      "out": false
+    },
+    {
+      "id": "X4V_2bV6XqI",
+      "kind": "liste",
+      "views": 73,
+      "duration": 67,
+      "out": false
+    },
+    {
+      "id": "bYZdpyAGksg",
+      "kind": "sonstiges",
+      "views": 118,
+      "duration": 6,
+      "out": false
+    },
+    {
+      "id": "qWgUkFBVTTg",
+      "kind": "sonstiges",
+      "views": 32,
+      "duration": 22,
+      "out": false
+    },
+    {
+      "id": "WbEsaAzostg",
+      "kind": "sonstiges",
+      "views": 48,
+      "duration": 16,
+      "out": false
+    },
+    {
+      "id": "ZE_tcOWJuWI",
+      "kind": "mythos",
+      "views": 58,
+      "duration": 14,
+      "out": false
+    },
+    {
+      "id": "cIFoXzBp7lA",
+      "kind": "liste",
+      "views": 14,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "0Y6Bda3O_Nk",
+      "kind": "mythos",
+      "views": 1,
+      "duration": 60,
+      "out": false
+    },
+    {
+      "id": "Q9ZaE9mvjlg",
+      "kind": "mythos",
+      "views": 0,
+      "duration": 60,
+      "out": false
+    },
+    {
+      "id": "2PBnVXZsXbM",
+      "kind": "was-waere-wenn",
+      "views": 1412772,
+      "duration": 45,
+      "out": true
+    },
+    {
+      "id": "s2YstBZ_NSM",
+      "kind": "was-waere-wenn",
+      "views": 578972,
+      "duration": 49,
+      "out": true
+    },
+    {
+      "id": "cU-hLh4gJbc",
+      "kind": "sonstiges",
+      "views": 462514,
+      "duration": 72,
+      "out": true
+    },
+    {
+      "id": "Eth6Ly9vj04",
+      "kind": "was-waere-wenn",
+      "views": 474259,
+      "duration": 49,
+      "out": false
+    },
+    {
+      "id": "_xd0BzLW3Sc",
+      "kind": "was-waere-wenn",
+      "views": 485174,
+      "duration": 45,
+      "out": true
+    },
+    {
+      "id": "9WJjGjTAUzQ",
+      "kind": "was-waere-wenn",
+      "views": 428115,
+      "duration": 50,
+      "out": false
+    },
+    {
+      "id": "S5qGPpEq97o",
+      "kind": "sonstiges",
+      "views": 431473,
+      "duration": 57,
+      "out": true
+    },
+    {
+      "id": "_0BNONfAA30",
+      "kind": "sonstiges",
+      "views": 312025,
+      "duration": 71,
+      "out": true
+    },
+    {
+      "id": "ojPfASMVkIk",
+      "kind": "sonstiges",
+      "views": 322389,
+      "duration": 25,
+      "out": true
+    },
+    {
+      "id": "OGOnIyr8xNA",
+      "kind": "erklaerung",
+      "views": 159944,
+      "duration": 23,
+      "out": true
+    },
+    {
+      "id": "pKC_cw3HZ60",
+      "kind": "erklaerung",
+      "views": 111958,
+      "duration": 46,
+      "out": false
+    },
+    {
+      "id": "llIumFxgRaw",
+      "kind": "erklaerung",
+      "views": 68450,
+      "duration": 14,
+      "out": false
+    },
+    {
+      "id": "FUxQP48hnFk",
+      "kind": "erklaerung",
+      "views": 39116,
+      "duration": 15,
+      "out": false
+    },
+    {
+      "id": "d6nQJ6dqjU4",
+      "kind": "erklaerung",
+      "views": 23217,
+      "duration": 9,
+      "out": true
+    },
+    {
+      "id": "kseb6D0fMcY",
+      "kind": "erklaerung",
+      "views": 5300,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "k6Hakxduyfc",
+      "kind": "erklaerung",
+      "views": 5395,
+      "duration": 25,
+      "out": false
+    },
+    {
+      "id": "88XB2VHpdyg",
+      "kind": "erklaerung",
+      "views": 6374,
+      "duration": 10,
+      "out": false
+    },
+    {
+      "id": "vNdopdDSBL4",
+      "kind": "erklaerung",
+      "views": 5771,
+      "duration": 16,
+      "out": false
+    },
+    {
+      "id": "X47pmC5nTBs",
+      "kind": "erklaerung",
+      "views": 4091,
+      "duration": 23,
+      "out": false
+    },
+    {
+      "id": "APst9hTabPg",
+      "kind": "erklaerung",
+      "views": 6123,
+      "duration": 40,
+      "out": false
+    },
+    {
+      "id": "8-5CIxtbPLI",
+      "kind": "erklaerung",
+      "views": 3543,
+      "duration": 57,
+      "out": false
+    },
+    {
+      "id": "QI8zZS2-Fxs",
+      "kind": "liste",
+      "views": 3273,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "-yNy_7Ko6eg",
+      "kind": "erklaerung",
+      "views": 2765,
+      "duration": 7,
+      "out": false
+    },
+    {
+      "id": "gxmx9aN-86U",
+      "kind": "erklaerung",
+      "views": 100781,
+      "duration": 75,
+      "out": true
+    },
+    {
+      "id": "I5ienrHCoDs",
+      "kind": "sonstiges",
+      "views": 112946,
+      "duration": 65,
+      "out": true
+    },
+    {
+      "id": "k_3zdfhKIPI",
+      "kind": "mythos",
+      "views": 33666,
+      "duration": 44,
+      "out": true
+    },
+    {
+      "id": "FVVpQKGfcKc",
+      "kind": "sonstiges",
+      "views": 34854,
+      "duration": 33,
+      "out": true
+    },
+    {
+      "id": "IvxZ5GC_VS8",
+      "kind": "erklaerung",
+      "views": 28460,
+      "duration": 81,
+      "out": true
+    },
+    {
+      "id": "zBjfuCd1prg",
+      "kind": "erklaerung",
+      "views": 31327,
+      "duration": 41,
+      "out": false
+    },
+    {
+      "id": "32eKSUBOTk8",
+      "kind": "mythos",
+      "views": 28731,
+      "duration": 33,
+      "out": true
+    },
+    {
+      "id": "2oEC9Eui1j0",
+      "kind": "erklaerung",
+      "views": 23236,
+      "duration": 75,
+      "out": true
+    },
+    {
+      "id": "0agGSs8BLyQ",
+      "kind": "erklaerung",
+      "views": 23946,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "NRq0chH8cKg",
+      "kind": "sonstiges",
+      "views": 15489,
+      "duration": 79,
+      "out": false
+    },
+    {
+      "id": "iUyuXBHeh44",
+      "kind": "erklaerung",
+      "views": 12005,
+      "duration": 9,
+      "out": true
+    },
+    {
+      "id": "U1IrXiH1wms",
+      "kind": "erklaerung",
+      "views": 9593,
+      "duration": 24,
+      "out": false
+    },
+    {
+      "id": "FQ_3cVOz5F0",
+      "kind": "erklaerung",
+      "views": 5023,
+      "duration": 79,
+      "out": false
+    },
+    {
+      "id": "Ouh5DQNGFqI",
+      "kind": "sonstiges",
+      "views": 4162,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "QAJVH4Ofcao",
+      "kind": "erklaerung",
+      "views": 3380,
+      "duration": 72,
+      "out": false
+    },
+    {
+      "id": "x67XKpWiho8",
+      "kind": "erklaerung",
+      "views": 3917,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "HPS3dSZmo5I",
+      "kind": "sonstiges",
+      "views": 3251,
+      "duration": 40,
+      "out": false
+    },
+    {
+      "id": "STi1XL2mYbQ",
+      "kind": "sonstiges",
+      "views": 4101,
+      "duration": 35,
+      "out": false
+    },
+    {
+      "id": "lNkBQxw1DWs",
+      "kind": "erklaerung",
+      "views": 2715,
+      "duration": 82,
+      "out": false
+    },
+    {
+      "id": "8lDvr7oa-oI",
+      "kind": "erklaerung",
+      "views": 3115,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "9phs4uXIFXo",
+      "kind": "erklaerung",
+      "views": 2892,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "ocbrTO7kG4M",
+      "kind": "erklaerung",
+      "views": 2566,
+      "duration": 89,
+      "out": false
+    },
+    {
+      "id": "v1j_9Kl2Goo",
+      "kind": "erklaerung",
+      "views": 2496,
+      "duration": 70,
+      "out": false
+    },
+    {
+      "id": "T3MF806UVEk",
+      "kind": "erklaerung",
+      "views": 2424,
+      "duration": 74,
+      "out": false
+    },
+    {
+      "id": "_42u9xmksNc",
+      "kind": "erklaerung",
+      "views": 2729,
+      "duration": 25,
+      "out": false
+    },
+    {
+      "id": "L3sy_2zdjbg",
+      "kind": "erklaerung",
+      "views": 2253,
+      "duration": 81,
+      "out": false
+    },
+    {
+      "id": "_C7az-2uWgc",
+      "kind": "sonstiges",
+      "views": 2350,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "YK_9z0tIn3Q",
+      "kind": "erklaerung",
+      "views": 1940,
+      "duration": 81,
+      "out": false
+    },
+    {
+      "id": "nCjlrpGgeo8",
+      "kind": "erklaerung",
+      "views": 2014,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "lUcxoH6XlrA",
+      "kind": "erklaerung",
+      "views": 2159,
+      "duration": 83,
+      "out": false
+    },
+    {
+      "id": "2gl88aOMyLA",
+      "kind": "erklaerung",
+      "views": 1578,
+      "duration": 87,
+      "out": false
+    },
+    {
+      "id": "YqJBqiOZSJ0",
+      "kind": "liste",
+      "views": 2352,
+      "duration": 34,
+      "out": false
+    },
+    {
+      "id": "T5Abe79sJ5Y",
+      "kind": "erklaerung",
+      "views": 1553,
+      "duration": 86,
+      "out": false
+    },
+    {
+      "id": "-IrYwup90b0",
+      "kind": "erklaerung",
+      "views": 1823,
+      "duration": 88,
+      "out": false
+    },
+    {
+      "id": "riffi8IwGpk",
+      "kind": "sonstiges",
+      "views": 2223,
+      "duration": 54,
+      "out": false
+    },
+    {
+      "id": "ZnVXar60nFk",
+      "kind": "sonstiges",
+      "views": 1872,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "Y6pZ8tetu08",
+      "kind": "sonstiges",
+      "views": 1747,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "D08ptAcOx3M",
+      "kind": "sonstiges",
+      "views": 2044,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "X9TYBzYORiQ",
+      "kind": "erklaerung",
+      "views": 1661,
+      "duration": 80,
+      "out": false
+    },
+    {
+      "id": "IHWMhPBD3uI",
+      "kind": "geschichte",
+      "views": 1967,
+      "duration": 23,
+      "out": false
+    },
+    {
+      "id": "RXI1_FBL5-c",
+      "kind": "geschichte",
+      "views": 1360,
+      "duration": 80,
+      "out": false
+    },
+    {
+      "id": "nOiiWW2yhZM",
+      "kind": "geschichte",
+      "views": 1249,
+      "duration": 41,
+      "out": false
+    },
+    {
+      "id": "Cx7FJ--UQ2M",
+      "kind": "liste",
+      "views": 1410,
+      "duration": 27,
+      "out": false
+    },
+    {
+      "id": "Yio_T09Ce0I",
+      "kind": "geschichte",
+      "views": 910,
+      "duration": 55,
+      "out": false
+    },
+    {
+      "id": "1cnq6O1YSuw",
+      "kind": "liste",
+      "views": 848,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "aLGW0ot_SoM",
+      "kind": "geschichte",
+      "views": 904,
+      "duration": 48,
+      "out": false
+    },
+    {
+      "id": "TTn2u6Wxz_I",
+      "kind": "geschichte",
+      "views": 788,
+      "duration": 88,
+      "out": false
+    },
+    {
+      "id": "RdQa-D8F4gA",
+      "kind": "geschichte",
+      "views": 358,
+      "duration": 68,
+      "out": false
+    },
+    {
+      "id": "4BDimFuKbtI",
+      "kind": "geschichte",
+      "views": 374,
+      "duration": 68,
+      "out": false
+    },
+    {
+      "id": "ylV5zN0tFWQ",
+      "kind": "geschichte",
+      "views": 368,
+      "duration": 50,
+      "out": false
+    },
+    {
+      "id": "wBLQ3nPPEM0",
+      "kind": "geschichte",
+      "views": 552,
+      "duration": 19,
+      "out": false
+    },
+    {
+      "id": "w2UXm0MHJ9U",
+      "kind": "geschichte",
+      "views": 270,
+      "duration": 55,
+      "out": false
+    },
+    {
+      "id": "JoLunjiDiog",
+      "kind": "geschichte",
+      "views": 350,
+      "duration": 51,
+      "out": false
+    },
+    {
+      "id": "ghW4100bjYk",
+      "kind": "geschichte",
+      "views": 235,
+      "duration": 46,
+      "out": false
+    },
+    {
+      "id": "vGi5ryyBQjw",
+      "kind": "geschichte",
+      "views": 308,
+      "duration": 62,
+      "out": false
+    },
+    {
+      "id": "fWK4dqUIwUE",
+      "kind": "geschichte",
+      "views": 198,
+      "duration": 63,
+      "out": false
+    },
+    {
+      "id": "Ffs9KHxpQPQ",
+      "kind": "geschichte",
+      "views": 181,
+      "duration": 85,
+      "out": false
+    },
+    {
+      "id": "Z-9TXvSYbbY",
+      "kind": "geschichte",
+      "views": 170,
+      "duration": 84,
+      "out": false
+    },
+    {
+      "id": "QMEKt6Ri59E",
+      "kind": "liste",
+      "views": 179,
+      "duration": 90,
+      "out": false
+    },
+    {
+      "id": "POu08J-MfQc",
+      "kind": "geschichte",
+      "views": 203,
+      "duration": 34,
+      "out": false
+    },
+    {
+      "id": "urb8-TpM-JI",
+      "kind": "geschichte",
+      "views": 139,
+      "duration": 86,
+      "out": false
+    },
+    {
+      "id": "i8xLTTQ29nU",
+      "kind": "geschichte",
+      "views": 258,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "uBoAChf6qdc",
+      "kind": "geschichte",
+      "views": 137,
+      "duration": 41,
+      "out": false
+    },
+    {
+      "id": "wGysHX07nrU",
+      "kind": "geschichte",
+      "views": 159,
+      "duration": 63,
+      "out": false
+    },
+    {
+      "id": "byOslXozXWU",
+      "kind": "geschichte",
+      "views": 127,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "bLchqqTJGkA",
+      "kind": "liste",
+      "views": 131,
+      "duration": 44,
+      "out": false
+    },
+    {
+      "id": "PzzG38_Oj3Q",
+      "kind": "liste",
+      "views": 109,
+      "duration": 42,
+      "out": false
+    },
+    {
+      "id": "xOYy5P6mJ-4",
+      "kind": "geschichte",
+      "views": 246,
+      "duration": 78,
+      "out": false
+    },
+    {
+      "id": "XhFlWyxT1Hg",
+      "kind": "liste",
+      "views": 114,
+      "duration": 45,
+      "out": false
+    },
+    {
+      "id": "EcYZ9kZ9P90",
+      "kind": "liste",
+      "views": 84,
+      "duration": 38,
+      "out": false
+    },
+    {
+      "id": "xcHQnxkZA6s",
+      "kind": "liste",
+      "views": 113,
+      "duration": 44,
+      "out": false
+    },
+    {
+      "id": "UG0W4JbKo4c",
+      "kind": "sonstiges",
+      "views": 500201,
+      "duration": 31,
+      "out": true
+    },
+    {
+      "id": "vWnH9UPm4vA",
+      "kind": "sonstiges",
+      "views": 59084,
+      "duration": 4,
+      "out": true
+    },
+    {
+      "id": "4uGMux3dPBE",
+      "kind": "sonstiges",
+      "views": 14202,
+      "duration": 53,
+      "out": false
+    },
+    {
+      "id": "idqYsNrI2-M",
+      "kind": "mythos",
+      "views": 11696,
+      "duration": 17,
+      "out": true
+    },
+    {
+      "id": "GwYF3TQ7b20",
+      "kind": "sonstiges",
+      "views": 6329,
+      "duration": 70,
+      "out": false
+    },
+    {
+      "id": "Bb_9yk2YO-c",
+      "kind": "sonstiges",
+      "views": 2813,
+      "duration": 75,
+      "out": false
+    },
+    {
+      "id": "VOB7aDgUWhU",
+      "kind": "sonstiges",
+      "views": 1345,
+      "duration": 68,
+      "out": false
+    },
+    {
+      "id": "ZQpdaUKT1lo",
+      "kind": "sonstiges",
+      "views": 1894,
+      "duration": 21,
+      "out": false
+    },
+    {
+      "id": "ToEsDXj-VxA",
+      "kind": "sonstiges",
+      "views": 5738,
+      "duration": 19,
+      "out": false
+    },
+    {
+      "id": "4e5oPsJ0If0",
+      "kind": "sonstiges",
+      "views": 1069,
+      "duration": 48,
+      "out": false
+    },
+    {
+      "id": "N4xkVvpeBGo",
+      "kind": "sonstiges",
+      "views": 1121,
+      "duration": 67,
+      "out": false
+    },
+    {
+      "id": "H3LEVXg0lEI",
+      "kind": "mythos",
+      "views": 792,
+      "duration": 61,
+      "out": false
+    },
+    {
+      "id": "nHsW0IrG6U0",
+      "kind": "sonstiges",
+      "views": 1210,
+      "duration": 31,
+      "out": false
+    },
+    {
+      "id": "S8l9MAkkKpE",
+      "kind": "sonstiges",
+      "views": 864,
+      "duration": 15,
+      "out": false
+    },
+    {
+      "id": "4YSEzOXwVKU",
+      "kind": "liste",
+      "views": 453,
+      "duration": 40,
+      "out": false
+    },
+    {
+      "id": "6iAxvE5rI0Q",
+      "kind": "sonstiges",
+      "views": 383,
+      "duration": 16,
+      "out": false
+    },
+    {
+      "id": "amHT_fss38E",
+      "kind": "sonstiges",
+      "views": 401,
+      "duration": 58,
+      "out": false
+    },
+    {
+      "id": "NTmd91bokPE",
+      "kind": "sonstiges",
+      "views": 650,
+      "duration": 57,
+      "out": false
+    },
+    {
+      "id": "uCW9x2vMjJw",
+      "kind": "liste",
+      "views": 582,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "vGKvafiABEY",
+      "kind": "sonstiges",
+      "views": 533,
+      "duration": 15,
+      "out": false
+    },
+    {
+      "id": "1DIIR5UY7JY",
+      "kind": "sonstiges",
+      "views": 333,
+      "duration": 33,
+      "out": false
+    },
+    {
+      "id": "twZE_IXAoaY",
+      "kind": "sonstiges",
+      "views": 371,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "Vhyt-1e-Vqc",
+      "kind": "sonstiges",
+      "views": 140,
+      "duration": 79,
+      "out": false
+    },
+    {
+      "id": "Pk5HT3xh_h8",
+      "kind": "sonstiges",
+      "views": 272,
+      "duration": 27,
+      "out": false
+    },
+    {
+      "id": "9VXnLZVhqoY",
+      "kind": "sonstiges",
+      "views": 223,
+      "duration": 35,
+      "out": false
+    },
+    {
+      "id": "Vk6n8qloJOY",
+      "kind": "sonstiges",
+      "views": 126,
+      "duration": 37,
+      "out": false
+    },
+    {
+      "id": "MSzLs8zMlvI",
+      "kind": "sonstiges",
+      "views": 194,
+      "duration": 50,
+      "out": false
+    },
+    {
+      "id": "ETsqdn-Hu2s",
+      "kind": "sonstiges",
+      "views": 208,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "vuzEKI0AeZc",
+      "kind": "sonstiges",
+      "views": 111,
+      "duration": 20,
+      "out": false
+    },
+    {
+      "id": "uvKBAhBfIJs",
+      "kind": "sonstiges",
+      "views": 144,
+      "duration": 51,
+      "out": false
+    },
+    {
+      "id": "yFrQ6mzxto8",
+      "kind": "sonstiges",
+      "views": 184,
+      "duration": 32,
+      "out": false
+    },
+    {
+      "id": "71ioSPses9Q",
+      "kind": "sonstiges",
+      "views": 45,
+      "duration": 60,
+      "out": false
+    },
+    {
+      "id": "LYDQjltqRTc",
+      "kind": "sonstiges",
+      "views": 79,
+      "duration": 46,
+      "out": false
+    },
+    {
+      "id": "f3ywgDT_12g",
+      "kind": "sonstiges",
+      "views": 100,
+      "duration": 31,
+      "out": false
+    }
+  ],
+  "long": false,
+  "date": "2026-11-23",
+  "videos": 214,
   "outliers": 27,
-  "outlier_channels": 20,
+  "outlier_channels": 21,
   "outlier_summary": {
     "n": 27,
-    "title_len": 60,
-    "duration": 45,
-    "hashtags": 2,
+    "title_len": 74,
+    "duration": 44,
+    "hashtags": 4,
+    "chapters": 0,
     "question": 70,
-    "digit": 15,
-    "emoji": 63
+    "digit": 19,
+    "emoji": 52
   },
   "rest_summary": {
-    "n": 185,
-    "title_len": 66,
-    "duration": 41,
+    "n": 187,
+    "title_len": 65,
+    "duration": 42,
     "hashtags": 2,
-    "question": 37,
-    "digit": 35,
-    "emoji": 34
+    "chapters": 0,
+    "question": 40,
+    "digit": 36,
+    "emoji": 30
   },
   "by_format": {
     "horror": {
       "outliers": 0,
-      "videos": 27,
+      "videos": 32,
       "median_views": null
     },
     "waswaerewenn": {
-      "outliers": 6,
-      "videos": 8,
-      "median_views": 456485
+      "outliers": 7,
+      "videos": 9,
+      "median_views": 462514
     },
     "wissen": {
-      "outliers": 21,
-      "videos": 177,
-      "median_views": 31260
+      "outliers": 20,
+      "videos": 173,
+      "median_views": 32407
     }
   },
   "hours": [
     [
-      12,
-      5
-    ],
-    [
-      19,
-      4
-    ],
-    [
-      16,
+      18,
       3
     ],
     [
       13,
+      3
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      16,
       2
     ],
     [
@@ -62,11 +1565,11 @@
   ],
   "weekdays": [
     [
-      "Samstag",
+      "Dienstag",
       6
     ],
     [
-      "Donnerstag",
+      "Montag",
       5
     ],
     [
@@ -76,27 +1579,27 @@
   ],
   "hashtags": [
     [
-      "#wusstestduschon",
-      7
-    ],
-    [
       "#shorts",
-      5
+      6
     ],
     [
       "#viral",
       4
     ],
     [
+      "#wusstestduschon",
+      4
+    ],
+    [
       "#physik",
+      4
+    ],
+    [
+      "#fürdich",
       3
     ],
     [
       "#satire",
-      3
-    ],
-    [
-      "#fürdich",
       3
     ],
     [
@@ -106,33 +1609,33 @@
   ],
   "top": [
     {
-      "id": "voOpVRpfR0Q",
-      "format": "wissen",
-      "title": "Wie 25 Leute eine La-Ola für 50.000 starten #laola #physik",
-      "channel": "Herbert",
-      "views": 404672,
-      "subs": 573,
-      "ratio": 404.67,
-      "duration": 32
+      "id": "ojPfASMVkIk",
+      "format": "waswaerewenn",
+      "title": "Was wäre, wenn alle Waffen Butterfly-Messer wären? 🦋 #waswärewenn #bundeswehr #shorts",
+      "channel": "Die Welt in 60Sekunden!?",
+      "views": 322389,
+      "subs": 1330,
+      "ratio": 242.4,
+      "duration": 25
     },
     {
-      "id": "MPs-9HtZaW4",
-      "format": "waswaerewenn",
-      "title": "Was wäre, wenn alle Rentner zur Bundeswehr müssten? 👵 #deutschland #waswärewenn #bundeswehr",
-      "channel": "Die Welt in 60Sekunden!?",
-      "views": 423747,
-      "subs": 1210,
-      "ratio": 350.2,
-      "duration": 39
+      "id": "UG0W4JbKo4c",
+      "format": "wissen",
+      "title": "Work-Life-Balance in der Schweiz #geldsparen #etf #investieren #finanzen #schwiizerdütsch #mundart",
+      "channel": "INDIFOX",
+      "views": 500201,
+      "subs": 2080,
+      "ratio": 240.48,
+      "duration": 31
     },
     {
       "id": "2PBnVXZsXbM",
       "format": "waswaerewenn",
       "title": "Was wäre wenn Spongebob russe wäre? 🇷🇺 #russland #russisch #fürdich #viral#satire",
       "channel": "TakeTo_clip",
-      "views": 1388293,
-      "subs": 7230,
-      "ratio": 192.02,
+      "views": 1412772,
+      "subs": 7430,
+      "ratio": 190.14,
       "duration": 45
     },
     {
@@ -140,29 +1643,29 @@
       "format": "waswaerewenn",
       "title": "Was wäre, wenn bei dir in der Schule Amokalarm ist? 😳 „Frau Koma kommt zu Besuch“",
       "channel": "Kurz Serien 🎞️🍿",
-      "views": 438901,
-      "subs": 2620,
-      "ratio": 167.52,
+      "views": 462514,
+      "subs": 3730,
+      "ratio": 124.0,
       "duration": 72
     },
     {
-      "id": "1iYb6T4lcZk",
+      "id": "gxmx9aN-86U",
       "format": "wissen",
-      "title": "Warum die Titanic sank: vier Lecks hätte sie überlebt #titanic #physik",
-      "channel": "Herbert",
-      "views": 127072,
-      "subs": 573,
-      "ratio": 127.07,
-      "duration": 34
+      "title": "Warum bleiben diese Radfahrer mitten im Rennen stehen? Bahnsprint erklärt #shorts",
+      "channel": "Sportskizze",
+      "views": 100781,
+      "subs": 123,
+      "ratio": 100.78,
+      "duration": 75
     },
     {
       "id": "s2YstBZ_NSM",
       "format": "waswaerewenn",
       "title": "Was wäre wenn spongbob Deutscher wäre?🇩🇪was noch? #deutschland #deutscher #viral #satire #fürdich",
       "channel": "TakeTo_clip",
-      "views": 563825,
-      "subs": 7230,
-      "ratio": 77.98,
+      "views": 578972,
+      "subs": 7430,
+      "ratio": 77.92,
       "duration": 49
     },
     {
@@ -170,19 +1673,29 @@
       "format": "waswaerewenn",
       "title": "Was wäre wenn spongbob Türke wäre🇹🇷? Was noch👇🏼 #Türkei #Türke #viral #satire #fürdich",
       "channel": "TakeTo_clip",
-      "views": 474069,
-      "subs": 7230,
-      "ratio": 65.57,
+      "views": 485174,
+      "subs": 7430,
+      "ratio": 65.3,
       "duration": 45
+    },
+    {
+      "id": "_0BNONfAA30",
+      "format": "waswaerewenn",
+      "title": "Was wäre, wenn die Bismarck heute gegen eine Fregatte kämpfen müsste?",
+      "channel": "Was Wäre Wenn",
+      "views": 312025,
+      "subs": 5540,
+      "ratio": 56.32,
+      "duration": 71
     },
     {
       "id": "9H-C_Rehlr4",
       "format": "wissen",
       "title": "Heizkosten sparen – so geht’s! 🔥 #Sparen #shorts #wusstestduschon",
       "channel": "Durchblick",
-      "views": 46470,
-      "subs": 524,
-      "ratio": 46.47,
+      "views": 46569,
+      "subs": 686,
+      "ratio": 46.57,
       "duration": 60
     },
     {
@@ -190,70 +1703,60 @@
       "format": "wissen",
       "title": "Was wäre, wenn alle Menschen gleichzeitig springen? #physik #gedankenspiel",
       "channel": "Herbert",
-      "views": 34852,
-      "subs": 573,
+      "views": 34854,
+      "subs": 594,
       "ratio": 34.85,
       "duration": 33
     },
     {
-      "id": "8oieUHeVtfg",
+      "id": "k_3zdfhKIPI",
       "format": "wissen",
-      "title": "Dieser Hund wurde 29 Jahre alt 🐕🇦🇺 #wusstestduschon",
-      "channel": "BLITZFAKT",
-      "views": 62167,
-      "subs": 1790,
-      "ratio": 34.73,
-      "duration": 7
+      "title": "Rückwärtsgang bei 100 km/h: Was wirklich passiert #auto #physik",
+      "channel": "Herbert",
+      "views": 33666,
+      "subs": 594,
+      "ratio": 33.67,
+      "duration": 44
+    },
+    {
+      "id": "32eKSUBOTk8",
+      "format": "wissen",
+      "title": "Münze vom Empire State Building: Tödlich oder harmlos? #physik #mythos",
+      "channel": "Herbert",
+      "views": 28731,
+      "subs": 594,
+      "ratio": 28.73,
+      "duration": 33
     },
     {
       "id": "IvxZ5GC_VS8",
       "format": "wissen",
       "title": "Warum ist eine Staumauer unten so dick? 🌊 (3D erklärt)",
       "channel": "Super! Du hast Gebaut",
-      "views": 28404,
-      "subs": 231,
-      "ratio": 28.4,
+      "views": 28460,
+      "subs": 270,
+      "ratio": 28.46,
       "duration": 81
     },
     {
-      "id": "oTJPAhQCwbk",
+      "id": "_7i--ZBEyX8",
       "format": "wissen",
-      "title": "Julius Cäsar wurde nicht per Kaiserschnitt geboren 🏛️ #wusstestduschon",
-      "channel": "BLITZFAKT",
-      "views": 49317,
-      "subs": 1790,
-      "ratio": 27.55,
-      "duration": 7
-    },
-    {
-      "id": "Yguxhc0GF1E",
-      "format": "wissen",
-      "title": "wie deine heizung funktioniert – ganz einfach erklärt",
-      "channel": "Kapitel Null",
-      "views": 30445,
-      "subs": 1290,
-      "ratio": 23.6,
-      "duration": 88
+      "title": "7 unglaubliche Fakten über den menschlichen Körper – Wusstest du das? 😱#WusstestDuSchon #witze",
+      "channel": "Lebensimpuls",
+      "views": 62679,
+      "subs": 2460,
+      "ratio": 25.48,
+      "duration": 6
     },
     {
       "id": "2oEC9Eui1j0",
       "format": "wissen",
       "title": "Warum man ein Baumhaus nicht festnageln darf 🌳 (3D erklärt)",
       "channel": "Super! Du hast Gebaut",
-      "views": 23019,
-      "subs": 231,
-      "ratio": 23.02,
+      "views": 23236,
+      "subs": 270,
+      "ratio": 23.24,
       "duration": 75
-    },
-    {
-      "id": "NyOenN_yapU",
-      "format": "wissen",
-      "title": "#zombieameise #fyp #animation #fakten #wusstestduschon",
-      "channel": "Rudi Real",
-      "views": 21456,
-      "subs": 415,
-      "ratio": 21.46,
-      "duration": 60
     }
   ]
 }
