@@ -1742,6 +1742,31 @@
         "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-snow-leopards/"
       ],
       "due": "2026-11-23T16:00:00+01:00"
+    },
+    {
+      "id": "T005",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-23T07:31:33.071161+01:00",
+      "source": "render3d",
+      "topic": "Alicella gigantea: größter Flohkrebs der Tiefsee",
+      "hook_type": "Staunen + Zahl",
+      "series": null,
+      "episode": null,
+      "duration": 34.4,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/T005.mp4",
+      "title_tiktok": "Dieser Krebs aus der Tiefsee wird 34 cm lang 🦐",
+      "title_youtube": "Alicella gigantea: Der größte Flohkrebs der Welt lebt in der Tiefsee 🦐 #shorts",
+      "text_tiktok": "Hättest du so ein Tier erwartet? Schreib es in die Kommentare 👇 #wusstestdu #tiefsee #tierfakten #natur #lernenmittiktok",
+      "text_youtube": "Alicella gigantea wird bis zu 34 Zentimeter lang und lebt nach einer Studie von 2025 in Tiefen zwischen 3 890 und 8 931 Metern. Hättest du so ein Tier erwartet? 👇\n\nQuellen: Wikipedia (Alicella), Maroni et al. 2025 (Royal Society Open Science), Discover Wildlife. Stimme und Grafiken mit KI erstellt.\n\n#shorts #tiefsee #tierfakten #wusstestdu #natur",
+      "scenes": 1,
+      "buffer": {},
+      "group": "3d-wissen",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alicella",
+        "https://www.discoverwildlife.com/animal-facts/marine-animals/alicella-gigantea-inhabits-over-half-worlds-oceans",
+        "https://utmsi.utexas.edu/science-and-the-sea/print-article/the-not-so-rare-giant-crustacean/"
+      ]
     }
   ]
 }
