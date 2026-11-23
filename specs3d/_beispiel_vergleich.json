@@ -1,0 +1,49 @@
+{
+ "id": "V900",
+ "type": "vergleich",
+ "format": "wissen",
+ "group": "vergleich",
+ "topic": "Beispiel: Planetengroessen im Vergleich (nicht produziert)",
+ "hook_type": "Vergleich",
+ "headline": "Durchmesser in km",
+ "items": [
+  {
+   "name": "Erde",
+   "value": 12756,
+   "label": "12 756"
+  },
+  {
+   "name": "Neptun",
+   "value": 49528,
+   "label": "49 528"
+  },
+  {
+   "name": "Saturn",
+   "value": 120536,
+   "label": "120 536"
+  },
+  {
+   "name": "Jupiter",
+   "value": 142984,
+   "label": "142 984"
+  }
+ ],
+ "script": "Wie groß sind die Planeten im Vergleich? Die Erde misst zwölftausendsiebenhundertsechsundfünfzig Kilometer. Neptun ist fast viermal so breit, Saturn mehr als neunmal und Jupiter mehr als elfmal. Das sind die Durchmesser am Äquator laut NASA. Und noch etwas: Jupiter ist so groß, dass alle anderen Planeten zusammen noch immer kleiner wären als er. Welcher Planet überrascht dich am meisten? Schreib es in die Kommentare und folge uns für mehr Weltraumwissen.",
+ "anchors": {
+  "items": [
+   "^erde$",
+   "neptun",
+   "saturn",
+   "jupiter"
+  ],
+  "end": "kommentare"
+ },
+ "title_tiktok": "Planeten im Größenvergleich 🪐",
+ "title_youtube": "Planeten im Größenvergleich: Wer ist der Riese? 🪐 #shorts",
+ "text_tiktok": "Welcher Planet überrascht dich am meisten? Schreib es in die Kommentare 👇 #weltraum #planeten #vergleich #wusstestdu #lernenmittiktok",
+ "text_youtube": "Der Durchmesser der Planeten im Vergleich (NASA). Welcher überrascht dich? 👇\n\nQuelle: NASA. Stimme und Grafiken mit KI erstellt.\n\n#shorts #weltraum #planeten #vergleich #wusstestdu",
+ "highlight": "\\d|erde|jupiter",
+ "sources": [
+  "https://science.nasa.gov/solar-system/planet-sizes-and-locations-in-our-solar-system/"
+ ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "R001",
+  "format": "wissen",
+  "group": "top3",
+  "topic": "Top 3: Die größten Planeten des Sonnensystems",
+  "hook_type": "Ranking",
+  "title_tiktok": "Die 3 größten Planeten unseres Sonnensystems 🪐",
+  "title_youtube": "Top 3: Die größten Planeten des Sonnensystems im Ranking 🪐 #shorts",
+  "text_tiktok": "Welcher Planet gefällt dir am besten? Schreib es in die Kommentare 👇 #weltraum #planeten #top3 #wusstestdu #lernenmittiktok",
+  "text_youtube": "Jupiter, Saturn und Uranus sind die drei größten Planeten, gemessen am Durchmesser am Äquator (NASA). Welcher gefällt dir am besten? 👇\n\nQuelle: NASA (Planet Sizes and Locations in Our Solar System). Stimme und Grafiken mit KI erstellt.\n\n#shorts #weltraum #planeten #top3 #wusstestdu",
+  "highlight": "\\d|platz|jupiter|saturn|uranus",
+  "sources": [
+    "https://science.nasa.gov/solar-system/planet-sizes-and-locations-in-our-solar-system/",
+    "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+  ],
+  "script": "Die drei größten Planeten unseres Sonnensystems! Platz drei: Uranus mit einem Durchmesser von rund einundfünfzigtausend Kilometern, das ist etwa viermal so viel wie bei der Erde. Platz zwei: Saturn mit rund einhundertzwanzigtausend Kilometern, berühmt für seine Ringe. Und Platz eins: Jupiter mit rund einhundertdreiundvierzigtausend Kilometern. Neben ihm hätten mehr als elf Erden in einer Reihe Platz. Alle Werte sind Durchmesser am Äquator. Welcher Planet gefällt dir am besten? Schreib es in die Kommentare.",
+  "status": "ready",
+  "scene": "kit",
+  "kit": {
+    "set": "space",
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.3,
+          9.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.4,
+          8.3
+        ],
+        "look": [
+          0,
+          4.4,
+          0
+        ]
+      }
+    },
+    "props": [
+      {
+        "id": "head",
+        "type": "stamp",
+        "text": "Die 3 größten Planeten",
+        "w": 3.4,
+        "h": 0.6,
+        "size": 100,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#12183a",
+        "pos": [
+          0.0,
+          6.1,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "p3",
+        "type": "stamp",
+        "text": "3   Uranus  ·  51 118 km",
+        "w": 3.5,
+        "h": 0.62,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#a98bff",
+        "pos": [
+          0.0,
+          3.75,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "p2",
+        "type": "stamp",
+        "text": "2   Saturn  ·  120 536 km",
+        "w": 3.5,
+        "h": 0.62,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#7ee0f0",
+        "pos": [
+          0.0,
+          4.55,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "p1",
+        "type": "stamp",
+        "text": "1   Jupiter  ·  142 984 km",
+        "w": 3.5,
+        "h": 0.62,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ff8a5c",
+        "pos": [
+          0.0,
+          5.35,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7,
+        "shirt": "#26a69a",
+        "pants": "#3949ab"
+      }
+    ],
+    "beats": [
+      {
+        "at": 0.2,
+        "id": "head",
+        "do": "pop"
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.18,
+        "id": "p3",
+        "do": "pop",
+        "n": 0
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.18,
+        "id": "fig",
+        "do": "pose",
+        "pose": "think",
+        "n": 0
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.46,
+        "id": "p2",
+        "do": "pop",
+        "n": 1
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.46,
+        "id": "fig",
+        "do": "pose",
+        "pose": "point",
+        "n": 1
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.74,
+        "id": "p1",
+        "do": "pop",
+        "n": 2
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.74,
+        "id": "fig",
+        "do": "pose",
+        "pose": "cheer",
+        "n": 2
+      },
+      {
+        "at": "^platz$",
+        "fallback": 0.64,
+        "offset": 0.4,
+        "id": "p1",
+        "do": "pulse",
+        "dur": 0.6,
+        "n": 2
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.95,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 28
+      }
+    ]
+  }
+}

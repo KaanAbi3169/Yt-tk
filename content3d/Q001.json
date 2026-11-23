@@ -1,0 +1,297 @@
+{
+  "id": "Q001",
+  "format": "wissen",
+  "group": "quiz",
+  "topic": "Quiz: Wie hoch ist der Mount Everest?",
+  "hook_type": "Quiz",
+  "title_tiktok": "Quiz: Wie hoch ist der Mount Everest? 🏔️",
+  "title_youtube": "Quiz: Wie hoch ist der Mount Everest? Weißt du es? 🏔️ #shorts",
+  "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #wissen #everest #wusstestdu #lernenmittiktok",
+  "text_youtube": "Wie hoch ist der Mount Everest wirklich? Nepal und China haben ihn im Dezember 2020 neu vermessen. Hattest du es gewusst? 👇\n\nQuellen: Al Jazeera, ORF, Phys.org (Neuvermessung 2020). Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #wissen #everest #wusstestdu",
+  "highlight": "\\d|richtige|meter|everest",
+  "sources": [
+    "https://www.aljazeera.com/news/2020/12/8/mt-everest-nepal-china-announce-revised-height-at-8848-metres",
+    "https://orf.at/stories/3192855/",
+    "https://phys.org/news/2020-12-china-nepal-everest-bit-higher.pdf"
+  ],
+  "script": "Quiz: Wie hoch ist der Mount Everest? Antwort A: achttausenddreihundertneunundvierzig Meter. Antwort B: achttausendachthundertneunundvierzig Meter. Antwort C: neuntausendzweihundertneunundvierzig Meter. Du hast drei Sekunden. Drei, zwei, eins. Die richtige Antwort ist B! Nepal und China haben den Everest am achten Dezember zweitausendzwanzig neu vermessen und kamen auf achttausendachthundertachtundvierzig Komma sechsundachtzig Meter. Der zweithöchste Berg, der K zwei, liegt mit achttausendsechshundertelf Metern rund zweihundertvierzig Meter tiefer. Hattest du es gewusst? Schreib deine Antwort in die Kommentare.",
+  "status": "ready",
+  "scene": "kit",
+  "kit": {
+    "set": "sunset",
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.3,
+          9.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.4,
+          8.3
+        ],
+        "look": [
+          0,
+          4.4,
+          0
+        ]
+      }
+    },
+    "props": [
+      {
+        "id": "q",
+        "type": "stamp",
+        "text": "Wie hoch ist der Mount Everest?",
+        "w": 3.5,
+        "h": 0.62,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ff8a5c",
+        "pos": [
+          0.0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o0",
+        "type": "stamp",
+        "text": "A   8 349 m",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffe066",
+        "pos": [
+          0.0,
+          5.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o1",
+        "type": "stamp",
+        "text": "B   8 849 m",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffe066",
+        "pos": [
+          0.0,
+          4.35,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "r1",
+        "type": "stamp",
+        "text": "B   8 849 m",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#43c463",
+        "pos": [
+          0.0,
+          4.35,
+          1.7
+        ],
+        "show": false
+      },
+      {
+        "id": "o2",
+        "type": "stamp",
+        "text": "C   9 249 m",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffe066",
+        "pos": [
+          0.0,
+          3.7,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "cnt",
+        "type": "counter",
+        "fmt": "{n}",
+        "from": 3,
+        "w": 1.0,
+        "h": 0.9,
+        "size": 260,
+        "color": "#ffffff",
+        "pos": [
+          0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fact",
+        "type": "stamp",
+        "text": "8 848,86 m",
+        "w": 3.2,
+        "h": 0.62,
+        "size": 110,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#43c463",
+        "pos": [
+          0.0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7,
+        "shirt": "#1e88a8",
+        "pants": "#4a2f6b"
+      }
+    ],
+    "beats": [
+      {
+        "at": 0.2,
+        "id": "q",
+        "do": "pop"
+      },
+      {
+        "at": "8349|achttausenddreihundertneunundvierzig",
+        "fallback": 0.2,
+        "id": "o0",
+        "do": "pop"
+      },
+      {
+        "at": "8849|achttausendachthundertneunundvierzig",
+        "fallback": 0.30000000000000004,
+        "id": "o1",
+        "do": "pop"
+      },
+      {
+        "at": "9249|neuntausendzweihundertneunundvierzig",
+        "fallback": 0.4,
+        "id": "o2",
+        "do": "pop"
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "q",
+        "do": "out",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "cnt",
+        "do": "pop",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "cnt",
+        "do": "count",
+        "from": 3,
+        "to": 1,
+        "dur": 2.2,
+        "fmt": "{n}",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "fig",
+        "do": "pose",
+        "pose": "think",
+        "n": 1
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "cnt",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "r1",
+        "do": "pop"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "offset": 0.1,
+        "id": "fact",
+        "do": "pop"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "fig",
+        "do": "pose",
+        "pose": "cheer"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o0",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o2",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o1",
+        "do": "out"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.95,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 28
+      }
+    ]
+  }
+}

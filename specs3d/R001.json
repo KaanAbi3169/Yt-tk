@@ -1,0 +1,50 @@
+{
+ "id": "R001",
+ "type": "ranking",
+ "format": "wissen",
+ "group": "top3",
+ "topic": "Top 3: Die größten Planeten des Sonnensystems",
+ "hook_type": "Ranking",
+ "headline": "Die 3 größten Planeten",
+ "items": [
+  {
+   "name": "Uranus",
+   "value": "51 118 km"
+  },
+  {
+   "name": "Saturn",
+   "value": "120 536 km"
+  },
+  {
+   "name": "Jupiter",
+   "value": "142 984 km"
+  }
+ ],
+ "script": "Die drei größten Planeten unseres Sonnensystems! Platz drei: Uranus mit einem Durchmesser von rund einundfünfzigtausend Kilometern, das ist etwa viermal so viel wie bei der Erde. Platz zwei: Saturn mit rund einhundertzwanzigtausend Kilometern, berühmt für seine Ringe. Und Platz eins: Jupiter mit rund einhundertdreiundvierzigtausend Kilometern. Neben ihm hätten mehr als elf Erden in einer Reihe Platz. Alle Werte sind Durchmesser am Äquator. Welcher Planet gefällt dir am besten? Schreib es in die Kommentare.",
+ "anchors": {
+  "places": [
+   [
+    "^platz$",
+    0
+   ],
+   [
+    "^platz$",
+    1
+   ],
+   [
+    "^platz$",
+    2
+   ]
+  ],
+  "end": "kommentare"
+ },
+ "title_tiktok": "Die 3 größten Planeten unseres Sonnensystems 🪐",
+ "title_youtube": "Top 3: Die größten Planeten des Sonnensystems im Ranking 🪐 #shorts",
+ "text_tiktok": "Welcher Planet gefällt dir am besten? Schreib es in die Kommentare 👇 #weltraum #planeten #top3 #wusstestdu #lernenmittiktok",
+ "text_youtube": "Jupiter, Saturn und Uranus sind die drei größten Planeten, gemessen am Durchmesser am Äquator (NASA). Welcher gefällt dir am besten? 👇\n\nQuelle: NASA (Planet Sizes and Locations in Our Solar System). Stimme und Grafiken mit KI erstellt.\n\n#shorts #weltraum #planeten #top3 #wusstestdu",
+ "highlight": "\\d|platz|jupiter|saturn|uranus",
+ "sources": [
+  "https://science.nasa.gov/solar-system/planet-sizes-and-locations-in-our-solar-system/",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+ ]
+}

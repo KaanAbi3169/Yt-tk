@@ -1,0 +1,41 @@
+{
+ "id": "Q001",
+ "type": "quiz",
+ "format": "wissen",
+ "group": "quiz",
+ "topic": "Quiz: Wie hoch ist der Mount Everest?",
+ "hook_type": "Quiz",
+ "question": "Wie hoch ist der Mount Everest?",
+ "options": [
+  "8 349 m",
+  "8 849 m",
+  "9 249 m"
+ ],
+ "answer": 1,
+ "reveal_label": "8 848,86 m",
+ "script": "Quiz: Wie hoch ist der Mount Everest? Antwort A: achttausenddreihundertneunundvierzig Meter. Antwort B: achttausendachthundertneunundvierzig Meter. Antwort C: neuntausendzweihundertneunundvierzig Meter. Du hast drei Sekunden. Drei, zwei, eins. Die richtige Antwort ist B! Nepal und China haben den Everest am achten Dezember zweitausendzwanzig neu vermessen und kamen auf achttausendachthundertachtundvierzig Komma sechsundachtzig Meter. Der zweithöchste Berg, der K zwei, liegt mit achttausendsechshundertelf Metern rund zweihundertvierzig Meter tiefer. Hattest du es gewusst? Schreib deine Antwort in die Kommentare.",
+ "anchors": {
+  "options": [
+   "8349|achttausenddreihundertneunundvierzig",
+   "8849|achttausendachthundertneunundvierzig",
+   "9249|neuntausendzweihundertneunundvierzig"
+  ],
+  "count": [
+   "^3$|^drei$",
+   1
+  ],
+  "reveal": "richtige",
+  "end": "kommentare"
+ },
+ "title_tiktok": "Quiz: Wie hoch ist der Mount Everest? 🏔️",
+ "title_youtube": "Quiz: Wie hoch ist der Mount Everest? Weißt du es? 🏔️ #shorts",
+ "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #wissen #everest #wusstestdu #lernenmittiktok",
+ "text_youtube": "Wie hoch ist der Mount Everest wirklich? Nepal und China haben ihn im Dezember 2020 neu vermessen. Hattest du es gewusst? 👇\n\nQuellen: Al Jazeera, ORF, Phys.org (Neuvermessung 2020). Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #wissen #everest #wusstestdu",
+ "highlight": "\\d|richtige|meter|everest",
+ "sources": [
+  "https://www.aljazeera.com/news/2020/12/8/mt-everest-nepal-china-announce-revised-height-at-8848-metres",
+  "https://orf.at/stories/3192855/",
+  "https://phys.org/news/2020-12-china-nepal-everest-bit-higher.pdf"
+ ],
+ "look": 2
+}
