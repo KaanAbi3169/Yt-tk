@@ -193,6 +193,24 @@ def build_report(day, today_posted, notes, problems, inv) -> str:
             L.append(f"| {k} | {e['n']} | {e['views'] / e['n']:.0f} | {w} |")
     else:
         L.append("- n/a (noch keine Zahlen je Gruppe)")
+    # 3D gegen Standard je Plattform (Optimierungspaket 23.11.2026): Grundlage fuer die Entscheidung, ob mehr 3D produziert wird
+    is3d = {v["id"]: v.get("source") == "render3d" for v in inv}
+    cmp_ = {}
+    for pr in perf:
+        m = pr.get("7d") or pr.get("24h")
+        if m and m.get("views") is not None and pr["id"] in is3d:
+            e = cmp_.setdefault((pr["platform"], "3D" if is3d[pr["id"]] else "Standard"), {"n": 0, "views": 0, "likes": 0, "watch": []})
+            e["n"] += 1; e["views"] += m["views"]; e["likes"] += m.get("likes", 0)
+            if m.get("watch_ms"):
+                e["watch"].append(m["watch_ms"])
+    L += ["", "## 3D gegen Standard (Ø je Post, 7-Tage-Wert sonst 24 h; ab n=5 je Zeile belastbar)"]
+    if cmp_:
+        L += ["| Plattform | Art | Posts | Ø Views | Ø Likes | Ø Watch-Zeit |", "|---|---|---|---|---|---|"]
+        for (pf, art), e in sorted(cmp_.items()):
+            w = f"{sum(e['watch']) / len(e['watch']) / 1000:.1f} s" if e["watch"] else "n/a"
+            L.append(f"| {pf} | {art} | {e['n']}{' (zu wenig)' if e['n'] < 5 else ''} | {e['views'] / e['n']:.0f} | {e['likes'] / e['n']:.1f} | {w} |")
+    else:
+        L.append("- n/a (noch keine Zahlen)")
     L += ["", "## Vorrat (Inventar)"]
     for fmt, st in sorted(counts.items()):
         L.append(f"- {fmt}: " + ", ".join(f"{k} {n}" for k, n in sorted(st.items())))
