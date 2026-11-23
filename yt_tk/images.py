@@ -12,6 +12,7 @@ import html
 import json
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -24,7 +25,16 @@ BAD = re.compile(r"(\bsa\b|-sa\b|\bnc\b|-nc\b|\bnd\b|-nd\b|gfdl|fair use|non-?co
 
 
 def _get(url: str) -> bytes:
-    return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
+    """Mit Wiederholung: Wikimedia antwortet auf geteilten Runner-Adressen manchmal mit 429 (zu viele Anfragen)."""
+    import time
+    for k in range(4):
+        try:
+            return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or k == 3:
+                raise
+            wait = int(e.headers.get("Retry-After") or 0) if e.headers else 0
+            time.sleep(min(max(wait, 15 * (k + 1)), 90))
 
 
 def _meta(v: dict) -> str:
