@@ -1349,7 +1349,7 @@
     {
       "id": "X003",
       "format": "waswaerewenn",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-15T08:03:15.584053+01:00",
       "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
       "hook_type": "Alltags-Gedankenexperiment",
@@ -1362,9 +1362,12 @@
       "text_tiktok": "Wofür nutzt du deine eine Stunde? 👇 #waswärewenn #gedankenexperiment #handy #fürdich",
       "text_youtube": "Eine Stunde Handy pro Tag – für alle. Was würde sich ändern, und wofür nutzt du deine Stunde? 👇\n\nGedankenexperiment. Stimme und Grafiken mit KI erstellt.\n\n#shorts #waswärewenn #gedankenexperiment #handy",
       "scenes": 6,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b03d908a6de38de9ec332ed",
+        "youtube": "6b03d909846b0ee907ea7fff"
+      },
       "group": "was-waere-wenn-test",
-      "due": null
+      "due": "2026-11-23T10:00:00+01:00"
     },
     {
       "id": "L001",
@@ -1689,7 +1692,7 @@
     {
       "id": "T004",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-22T07:45:41.176236+01:00",
       "source": "render3d",
       "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung",
@@ -1703,13 +1706,17 @@
       "text_tiktok": "Kanntest du das schon? Schreib es in die Kommentare 👇 #wusstestdu #tierfakten #schneeleopard #natur #lernenmittiktok",
       "text_youtube": "Der Schneeleopard brüllt nicht, springt aber bis zu 16 Meter weit (Angabe NABU). Kanntest du das schon? 👇\n\nQuellen: NABU, WWF, Discover Wildlife. Bild: Steffen / CC BY 3.0 / Wikimedia Commons. Stimme und Grafiken mit KI erstellt.\n\n#shorts #schneeleopard #tierfakten #wusstestdu #natur",
       "scenes": 1,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b03d909d5eabfb8cc0dd196",
+        "youtube": "6b03d90a846b0ee907ea803b"
+      },
       "group": "3d-wissen",
       "sources": [
         "https://www.nabu.de/natur-und-artenwissen/saeugetiere/schneeleopard/artensteckbrief-schneeleopard",
         "https://wwf.org.au/get-involved/snow-leopard",
         "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-snow-leopards/"
-      ]
+      ],
+      "due": "2026-11-23T16:00:00+01:00"
     }
   ]
 }
