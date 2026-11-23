@@ -80,8 +80,8 @@ def check_content(cfg: dict, strict: bool = True) -> list:
         errs.append("part muss aufsteigend sein")
     for p in set(parts):
         n = sum(len(b["text"]) + 1 for b in blocks if b.get("part", 1) == p)
-        if n > 9500:
-            errs.append(f"Teil {p}: {n} Zeichen (ElevenLabs-Limit ca. 10 000)")
+        if n > 4900:
+            errs.append(f"Teil {p}: {n} Zeichen (ElevenLabs-Limit 5 000 je Aufnahme)")
     return errs
 
 

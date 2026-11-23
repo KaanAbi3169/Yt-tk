@@ -237,7 +237,7 @@
    "chapter": "Der blasse blaue Punkt"
   },
   {
-   "part": 1,
+   "part": 2,
    "text": "Sagan nannte das Foto den blassen blauen Punkt, auf Englisch Pale Blue Dot. Es erinnert daran, dass alles, was wir kennen, auf diesem winzigen Punkt stattfindet. Jede Geschichte, jeder Krieg, jede Liebe, jeder Mensch. Der Planet, den wir für riesig halten, ist aus dieser Entfernung kaum mehr als ein Staubkorn im Licht der Sonne.",
    "scenes": [
     {
@@ -249,7 +249,7 @@
    ]
   },
   {
-   "part": 1,
+   "part": 2,
    "text": "An Bord befindet sich außerdem eine Botschaft für mögliche Außerirdische: die goldene Schallplatte. Ein Komitee unter der Leitung von Carl Sagan hat ausgewählt, was darauf kommt. Es sind hundertfünfzehn Bilder, ein zwölfminütiger Zusammenschnitt aus Geräuschen der Erde und rund neunzig Minuten Musik aus vielen Kulturen.",
    "scenes": [
     {
@@ -275,7 +275,7 @@
    "chapter": "Die goldene Schallplatte"
   },
   {
-   "part": 1,
+   "part": 2,
    "text": "Dazu kommen gesprochene Grüße in fünfundfünfzig Sprachen. Die Chance, dass jemand die Platte jemals findet, ist winzig, denn die Sonde braucht Zehntausende Jahre, bis sie überhaupt in die Nähe eines anderen Sterns kommt. Aber die Platte ist ein Zeugnis davon, wie sich die Menschen in den Siebzigerjahren selbst sehen wollten, und das ist der eigentliche Wert dieser Botschaft.",
    "scenes": [
     {
@@ -446,7 +446,7 @@
    "chapter": "Die Reparatur aus dem All"
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Ingenieure finden die Ursache in einem einzigen Speicherchip mit zweihundertsechsundfünfzig Wörtern, in dem ein Teil des Bordprogramms liegt. Ob ein Teilchen aus dem All ihn getroffen hat oder ob er nach sechsundvierzig Jahren einfach verschlissen war, bleibt offen. Weil man den Chip nicht ersetzen kann, schiebt das Team den betroffenen Programmteil an andere Stellen im Speicher. Am achtzehnten April zweitausendvierundzwanzig wird der neue Code abgeschickt, und zwei Tage später kommen wieder lesbare Daten an.",
    "scenes": [
     {
@@ -486,7 +486,7 @@
    ]
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Voyager eins hat keine Solarzellen, denn weit draußen ist die Sonne zu schwach. Ihre Energie kommt aus Radionuklidbatterien, die aus dem Zerfall von Plutonium Wärme in Strom umwandeln. Doch das Plutonium zerfällt, und die Leistung sinkt um rund vier Watt pro Jahr. Im April zweitausendsechsundzwanzig war sie schon unter die Hälfte des ursprünglichen Wertes gefallen.",
    "scenes": [
     {
@@ -508,7 +508,7 @@
    "chapter": "Der letzte Strom"
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Am siebenundzwanzigsten Februar zweitausendsechsundzwanzig fiel die Spannung bei einem Manöver kurz ab. Um die Sonde zu retten, schaltete das Team am siebzehnten April ein Messgerät ab, das Teilchen untersucht. Das soll ungefähr ein weiteres Jahr Betrieb bringen. Zwei wissenschaftliche Instrumente laufen noch, eines für Plasmawellen und eines für Magnetfelder. Das Ziel ist, bis in die Zweitausenddreißiger mindestens ein Instrument je Sonde zu betreiben.",
    "scenes": [
     {
@@ -527,7 +527,7 @@
    ]
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Und so kommt es zu diesem einen Tag. Am achtzehnten November zweitausendsechsundzwanzig ist Voyager eins einen Lichttag von uns entfernt, rund sechsundzwanzig Milliarden Kilometer. Das sind mehr als einhundertsiebzig Mal die Entfernung zwischen Erde und Sonne. Für diese Strecke braucht selbst das Licht vierundzwanzig Stunden, und die Sonde fliegt unbeirrt weiter.",
    "scenes": [
     {
@@ -570,7 +570,7 @@
    "chapter": "Ein Lichttag"
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Ein Lichttag ist die Strecke, die das Licht an einem Tag zurücklegt. In nur einer Sekunde schafft es rund dreihunderttausend Kilometer, das ist siebenmal um die Erde. Ein Tag hat sechsundachtzigtausendvierhundert Sekunden. Multipliziert man beides, kommt man auf die Strecke, die Voyager eins nun erreicht hat.",
    "scenes": [
     {
@@ -587,7 +587,7 @@
    ]
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Die Schwestersonde Voyager zwei soll diese Marke erst im November zweitausendfünfunddreißig erreichen. Bis dahin funken beide Sonden weiter, solange der Strom reicht, mit jedem Jahr ein Instrument weniger. Irgendwann wird die Energie nicht mehr genügen. Doch die Reise endet damit nicht. Beide Sonden fliegen stumm weiter durch die Dunkelheit zwischen den Sternen, getragen von Schwung, den ihnen die Planeten vor fast fünfzig Jahren gaben.",
    "scenes": [
     {
@@ -608,7 +608,7 @@
    ]
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Fassen wir die Reise zusammen. Neunzehnhundertsiebenundsiebzig der Start, neunzehnhundertneunundsiebzig die Vulkane auf Io, neunzehnhundertachtzig der Saturn und die Abzweigung nach Norden. Neunzehnhundertneunzig der blasse blaue Punkt, zweitausendzwölf die Grenze der Sonne und zweitausendsechsundzwanzig der erste Lichttag. Fast fünfzig Jahre lang hat eine Maschine funktioniert, die für wenige Planeten gebaut wurde und heute weiter ist als alles, was Menschen je ins All geschickt haben.",
    "scenes": [
     {
@@ -713,7 +713,7 @@
    ]
   },
   {
-   "part": 2,
+   "part": 3,
    "text": "Was meinst du: Hat sich dieser Aufwand für eine Botschaft ins Nichts gelohnt? Würdest du eine Antwort abwarten, die erst nach Tagen kommt? Oder ist gerade dieses Warten das Faszinierende an der Raumfahrt? Schreib es in die Kommentare, und wenn dir das Video gefallen hat, abonniere den Kanal für die nächsten Reisen durch Wissenschaft und Geschichte.",
    "scenes": [
     {
