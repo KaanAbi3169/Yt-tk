@@ -1,53 +1,383 @@
 {
-  "id": "T003", "scene": "kit", "format": "wissen", "group": "3d-wissen", "status": "ready",
-  "topic": "Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)", "hook_type": "Staunen + Aktualität",
+  "id": "T003",
+  "scene": "kit",
+  "format": "wissen",
+  "group": "3d-wissen",
+  "status": "ready",
+  "topic": "Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)",
+  "hook_type": "Staunen + Aktualität",
   "title_tiktok": "Diese Sonde ist einen ganzen Lichttag entfernt 🚀",
   "title_youtube": "Voyager 1: Diese Sonde ist jetzt einen ganzen Lichttag von der Erde entfernt 🚀 #shorts",
   "text_tiktok": "Würdest du einen Tag auf eine Antwort warten? Schreib es in die Kommentare 👇 #wusstestdu #weltraum #voyager #wissen #lernenmittiktok",
   "text_youtube": "Voyager 1 hat laut NASA am 18. November 2026 einen Lichttag Abstand zur Erde erreicht. Würdest du einen Tag auf eine Antwort warten? 👇\n\nQuellen: NASA, DLR, Wikipedia (Voyager 1). Stimme und Grafiken mit KI erstellt.\n\n#shorts #voyager #weltraum #wusstestdu #wissen",
   "highlight": "lichttag|\\d|voyager|milliarden|stunden",
-  "sources": ["https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/", "https://www.dlr.de/de/blog/archiv/2026/sonde-voyager-1-ist-jetzt-einen-lichttag-entfernt", "https://en.wikipedia.org/wiki/Voyager_1"],
+  "sources": [
+    "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+    "https://www.dlr.de/de/blog/archiv/2026/sonde-voyager-1-ist-jetzt-einen-lichttag-entfernt",
+    "https://en.wikipedia.org/wiki/Voyager_1"
+  ],
   "kit": {
     "set": "night",
-    "cams": {"start": {"pos": [-0.3, 3.9, 9.2], "look": [0, 4.0, 0]}, "nah": {"pos": [0.3, 4.0, 7.9], "look": [0, 4.0, 0]}},
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          3.9,
+          9.2
+        ],
+        "look": [
+          0,
+          4.0,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.0,
+          7.9
+        ],
+        "look": [
+          0,
+          4.0,
+          0
+        ]
+      }
+    },
     "props": [
-      {"id": "earth", "type": "sphere", "r": 0.5, "color": "#3a7bd5", "pos": [-1.3, 4.3, 0], "show": false},
-      {"id": "lblE", "type": "stamp", "text": "Erde", "w": 0.95, "h": 0.4, "size": 120, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [-1.3, 3.6, 1.5], "show": false},
-      {"id": "probe", "type": "box", "size": [0.4, 0.4, 0.4], "color": "#c4ced8", "pos": [0.4, 4.3, 0], "show": false},
-      {"id": "lblV", "type": "stamp", "text": "Voyager 1", "w": 1.3, "h": 0.4, "size": 110, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [1.0, 3.6, 1.5], "show": false},
-      {"id": "lblLT", "type": "stamp", "text": "1 Lichttag", "w": 1.6, "h": 0.45, "size": 120, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0, 4.85, 1.6], "show": false},
-      {"id": "lblKm", "type": "stamp", "text": "ca. 26 Mrd. km", "w": 2.0, "h": 0.45, "size": 105, "radius": 20, "pos": [0, 4.85, 1.6], "show": false},
-      {"id": "y1977", "type": "text", "text": "1977", "w": 1.6, "h": 0.7, "size": 200, "color": "#ffffff", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "date", "type": "stamp", "text": "18. Nov. 2026", "w": 2.1, "h": 0.5, "size": 110, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "y2012", "type": "text", "text": "2012", "w": 1.6, "h": 0.7, "size": 200, "color": "#ffffff", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "y2035", "type": "text", "text": "Voyager 2: 2035", "w": 2.6, "h": 0.6, "size": 150, "color": "#ffffff", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "cnt", "type": "counter", "fmt": "{n} h", "from": 0, "w": 1.5, "h": 0.6, "size": 190, "color": "#ffd24a", "pos": [0, 5.45, 1.2], "show": false},
-      {"id": "fig", "type": "figure", "pos": [-1.3, 0, 1.6], "rot": 0.4, "scale": 0.7}
+      {
+        "id": "earth",
+        "type": "sphere",
+        "r": 0.5,
+        "color": "#3a7bd5",
+        "pos": [
+          -1.3,
+          4.3,
+          0
+        ],
+        "show": false
+      },
+      {
+        "id": "lblE",
+        "type": "stamp",
+        "text": "Erde",
+        "w": 0.95,
+        "h": 0.4,
+        "size": 120,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          -1.3,
+          3.6,
+          1.5
+        ],
+        "show": false
+      },
+      {
+        "id": "probe",
+        "type": "box",
+        "size": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "color": "#c4ced8",
+        "pos": [
+          0.4,
+          4.3,
+          0
+        ],
+        "show": false
+      },
+      {
+        "id": "lblV",
+        "type": "stamp",
+        "text": "Voyager 1",
+        "w": 1.3,
+        "h": 0.4,
+        "size": 110,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#ffd24a",
+        "pos": [
+          1.0,
+          3.6,
+          1.5
+        ],
+        "show": false
+      },
+      {
+        "id": "lblLT",
+        "type": "stamp",
+        "text": "1 Lichttag",
+        "w": 1.6,
+        "h": 0.45,
+        "size": 120,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#ffd24a",
+        "pos": [
+          0,
+          4.85,
+          1.6
+        ],
+        "show": false
+      },
+      {
+        "id": "lblKm",
+        "type": "stamp",
+        "text": "ca. 26 Mrd. km",
+        "w": 2.0,
+        "h": 0.45,
+        "size": 105,
+        "radius": 20,
+        "pos": [
+          0,
+          4.85,
+          1.6
+        ],
+        "show": false
+      },
+      {
+        "id": "y1977",
+        "type": "text",
+        "text": "1977",
+        "w": 1.6,
+        "h": 0.7,
+        "size": 200,
+        "color": "#ffffff",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "date",
+        "type": "stamp",
+        "text": "18. Nov. 2026",
+        "w": 2.1,
+        "h": 0.5,
+        "size": 110,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "y2012",
+        "type": "text",
+        "text": "2012",
+        "w": 1.6,
+        "h": 0.7,
+        "size": 200,
+        "color": "#ffffff",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "y2035",
+        "type": "text",
+        "text": "Voyager 2: 2035",
+        "w": 2.6,
+        "h": 0.6,
+        "size": 150,
+        "color": "#ffffff",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "cnt",
+        "type": "counter",
+        "fmt": "{n} h",
+        "from": 0,
+        "w": 1.5,
+        "h": 0.6,
+        "size": 190,
+        "color": "#ffd24a",
+        "pos": [
+          0,
+          5.45,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7
+      }
     ],
     "beats": [
-      {"at": 0.2, "id": "earth", "do": "pop"},
-      {"at": 0.3, "id": "probe", "do": "pop"},
-      {"at": 0.3, "id": "probe", "do": "spin"},
-      {"at": "lichttag", "id": "lblLT", "do": "pop"},
-      {"at": "lichttag", "id": "probe", "do": "move", "to": [1.3, 4.3, 0], "dur": 1.2},
-      {"at": "voyager", "id": "lblV", "do": "pop"},
-      {"at": "voyager", "id": "lblE", "do": "pop"},
-      {"at": "1977|neunzehnhundertsiebenundsiebzig", "fallback": 0.15, "id": "y1977", "do": "pop"},
-      {"at": "^18$|achtzehnten", "fallback": 0.3, "id": "y1977", "do": "out"},
-      {"at": "^18$|achtzehnten", "fallback": 0.3, "offset": 0.15, "id": "date", "do": "pop"},
-      {"at": "^18$|achtzehnten", "fallback": 0.3, "id": "fig", "do": "pose", "pose": "point"},
-      {"at": "^24$|vierundzwanzig", "fallback": 0.42, "id": "date", "do": "out"},
-      {"at": "^24$|vierundzwanzig", "fallback": 0.42, "id": "cnt", "do": "pop"},
-      {"at": "^24$|vierundzwanzig", "fallback": 0.42, "id": "cnt", "do": "count", "from": 0, "to": 24, "dur": 1.6, "fmt": "{n} h"},
-      {"at": "^26$|sechsundzwanzig", "fallback": 0.55, "id": "lblLT", "do": "out"},
-      {"at": "^26$|sechsundzwanzig", "fallback": 0.55, "offset": 0.15, "id": "lblKm", "do": "pop"},
-      {"at": "^26$|sechsundzwanzig", "fallback": 0.55, "id": "cnt", "do": "out"},
-      {"at": "^2012$|zweitausendzwölf|zweitausendzwolf", "fallback": 0.65, "id": "y2012", "do": "pop"},
-      {"at": "^2035$|zweitausendfünfunddreißig|zweitausendfunfunddreissig", "fallback": 0.78, "id": "y2012", "do": "out"},
-      {"at": "^2035$|zweitausendfünfunddreißig|zweitausendfunfunddreissig", "fallback": 0.78, "offset": 0.15, "id": "y2035", "do": "pop"},
-      {"at": "warten", "fallback": 0.9, "id": "fig", "do": "pose", "pose": "shrug"},
-      {"at": "kommentare", "fallback": 0.97, "id": "fig", "do": "pose", "pose": "wave"},
-      {"at": 1.0, "do": "cam", "shot": "nah", "dur": 36}
+      {
+        "at": 0.2,
+        "id": "earth",
+        "do": "pop"
+      },
+      {
+        "at": 0.3,
+        "id": "probe",
+        "do": "pop"
+      },
+      {
+        "at": 0.3,
+        "id": "probe",
+        "do": "spin"
+      },
+      {
+        "at": "lichttag",
+        "id": "lblLT",
+        "do": "pop"
+      },
+      {
+        "at": "lichttag",
+        "id": "probe",
+        "do": "move",
+        "to": [
+          1.3,
+          4.3,
+          0
+        ],
+        "dur": 1.2
+      },
+      {
+        "at": "voyager",
+        "id": "lblV",
+        "do": "pop"
+      },
+      {
+        "at": "voyager",
+        "id": "lblE",
+        "do": "pop"
+      },
+      {
+        "at": "1977|neunzehnhundertsiebenundsiebzig",
+        "fallback": 0.15,
+        "id": "y1977",
+        "do": "pop"
+      },
+      {
+        "at": "^18$|achtzehnten",
+        "fallback": 0.3,
+        "id": "y1977",
+        "do": "out"
+      },
+      {
+        "at": "^18$|achtzehnten",
+        "fallback": 0.3,
+        "offset": 0.15,
+        "id": "date",
+        "do": "pop"
+      },
+      {
+        "at": "^18$|achtzehnten",
+        "fallback": 0.3,
+        "id": "fig",
+        "do": "pose",
+        "pose": "point"
+      },
+      {
+        "at": "^24$|vierundzwanzig",
+        "fallback": 0.42,
+        "id": "date",
+        "do": "out"
+      },
+      {
+        "at": "^24$|vierundzwanzig",
+        "fallback": 0.42,
+        "id": "cnt",
+        "do": "pop"
+      },
+      {
+        "at": "^24$|vierundzwanzig",
+        "fallback": 0.42,
+        "id": "cnt",
+        "do": "count",
+        "from": 0,
+        "to": 24,
+        "dur": 1.6,
+        "fmt": "{n} h"
+      },
+      {
+        "at": "^26$|sechsundzwanzig",
+        "fallback": 0.55,
+        "id": "lblLT",
+        "do": "out"
+      },
+      {
+        "at": "^26$|sechsundzwanzig",
+        "fallback": 0.55,
+        "offset": 0.15,
+        "id": "lblKm",
+        "do": "pop"
+      },
+      {
+        "at": "^26$|sechsundzwanzig",
+        "fallback": 0.55,
+        "id": "cnt",
+        "do": "out"
+      },
+      {
+        "at": "^2012$|zweitausendzwölf|zweitausendzwolf",
+        "fallback": 0.65,
+        "id": "y2012",
+        "do": "pop"
+      },
+      {
+        "at": "^2035$|zweitausendfünfunddreißig|zweitausendfunfunddreissig",
+        "fallback": 0.78,
+        "id": "y2012",
+        "do": "out"
+      },
+      {
+        "at": "^2035$|zweitausendfünfunddreißig|zweitausendfunfunddreissig",
+        "fallback": 0.78,
+        "offset": 0.15,
+        "id": "y2035",
+        "do": "pop"
+      },
+      {
+        "at": "warten",
+        "fallback": 0.9,
+        "id": "fig",
+        "do": "pose",
+        "pose": "shrug"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.97,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 36
+      }
     ]
-  }
+  },
+  "script": "Diese Sonde ist jetzt einen ganzen Lichttag entfernt. Voyager eins startete neunzehnhundertsiebenundsiebzig und ist heute das am weitesten entfernte Objekt, das Menschen gebaut haben. Am achtzehnten November erreichte sie laut NASA einen Lichttag Abstand. Das heißt: Selbst ein Funksignal braucht rund vierundzwanzig Stunden bis zur Erde. Das sind etwa sechsundzwanzig Milliarden Kilometer. Zweitausendzwölf verließ Voyager eins den Einflussbereich der Sonne. Die Schwestersonde Voyager zwei soll diese Marke erst zweitausendfünfunddreißig erreichen. Würdest du einen Tag auf eine Antwort warten? Schreib es in die Kommentare."
 }

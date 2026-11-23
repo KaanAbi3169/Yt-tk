@@ -37,6 +37,17 @@ def check(t: dict) -> list:
     for k in ("text_tiktok", "text_youtube"):
         if "?" not in t[k]:
             errs.append(f"{k} ohne Frage")
+    sc = (t.get("script") or "").strip()
+    if sc:  # gesprochener Text (optional im Inhalt): Hook-Regel und Laenge nach docs/STIL.md
+        first = re.split(r"(?<=[.!?])\s", sc, maxsplit=1)[0]
+        n_hook = len(first.split())
+        if n_hook > 12:
+            errs.append(f"Hook {n_hook} Woerter (max 12, Ziel 10)")
+        n = len(sc.split())
+        if not 70 <= n <= 140:
+            errs.append(f"Skript {n} Woerter (70 bis 140, Ziel 85 bis 120)")
+        if "?" not in sc:
+            errs.append("Skript ohne Kommentarfrage")
     return errs
 
 

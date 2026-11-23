@@ -1,44 +1,292 @@
 {
-  "id": "T004", "scene": "kit", "format": "wissen", "group": "3d-wissen", "status": "ready",
-  "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung", "hook_type": "Überraschung",
+  "id": "T004",
+  "scene": "kit",
+  "format": "wissen",
+  "group": "3d-wissen",
+  "status": "ready",
+  "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung",
+  "hook_type": "Überraschung",
   "title_tiktok": "Dieses Tier kann nicht brüllen 🐆",
   "title_youtube": "Der Schneeleopard kann nicht brüllen: 4 Fakten über die Bergkatze 🐆 #shorts",
   "text_tiktok": "Kanntest du das schon? Schreib es in die Kommentare 👇 #wusstestdu #tierfakten #schneeleopard #natur #lernenmittiktok",
   "text_youtube": "Der Schneeleopard brüllt nicht, springt aber bis zu 16 Meter weit (Angabe NABU). Kanntest du das schon? 👇\n\nQuellen: NABU, WWF, Discover Wildlife. Bild: Steffen / CC BY 3.0 / Wikimedia Commons. Stimme und Grafiken mit KI erstellt.\n\n#shorts #schneeleopard #tierfakten #wusstestdu #natur",
   "highlight": "brüllen|\\d|schneeleopard|sechzehn|fünftausend|meter|schwanz",
-  "sources": ["https://www.nabu.de/natur-und-artenwissen/saeugetiere/schneeleopard/artensteckbrief-schneeleopard", "https://wwf.org.au/get-involved/snow-leopard", "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-snow-leopards/"],
-  "credits": [{"id": "IMG001", "from": 0.3, "dur": 31}],
+  "sources": [
+    "https://www.nabu.de/natur-und-artenwissen/saeugetiere/schneeleopard/artensteckbrief-schneeleopard",
+    "https://wwf.org.au/get-involved/snow-leopard",
+    "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-snow-leopards/"
+  ],
+  "credits": [
+    {
+      "id": "IMG001",
+      "from": 0.3,
+      "dur": 31
+    }
+  ],
   "kit": {
     "set": "studio",
-    "cams": {"start": {"pos": [-0.3, 4.2, 9.2], "look": [0, 4.2, 0]}, "nah": {"pos": [0.3, 4.3, 8.2], "look": [0, 4.3, 0]}},
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.2,
+          9.2
+        ],
+        "look": [
+          0,
+          4.2,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.3,
+          8.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      }
+    },
     "props": [
-      {"id": "pic", "type": "photo", "image": "IMG001", "w": 2.7, "pos": [0, 4.5, 0.4], "show": false},
-      {"id": "noRoar", "type": "stamp", "text": "Kein Brüllen", "w": 2.0, "h": 0.5, "size": 120, "radius": 20, "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "asia", "type": "stamp", "text": "Zentralasien", "w": 2.0, "h": 0.5, "size": 120, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "cnt", "type": "counter", "fmt": "{n} m", "from": 0, "w": 1.8, "h": 0.6, "size": 190, "color": "#ffd24a", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "tail", "type": "stamp", "text": "Schwanz ca. 1 m", "w": 2.4, "h": 0.5, "size": 110, "radius": 20, "color": "#12183a", "bg": "#ffd24a", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "jump", "type": "stamp", "text": "Sprung bis 16 m", "w": 2.5, "h": 0.5, "size": 110, "radius": 20, "color": "#12183a", "bg": "#7ee0a1", "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "few", "type": "stamp", "text": "nur wenige tausend", "w": 2.7, "h": 0.5, "size": 105, "radius": 20, "pos": [0, 6.05, 1.2], "show": false},
-      {"id": "fig", "type": "figure", "pos": [-1.3, 0, 1.6], "rot": 0.4, "scale": 0.7}
+      {
+        "id": "pic",
+        "type": "photo",
+        "image": "IMG001",
+        "w": 2.7,
+        "pos": [
+          0,
+          4.5,
+          0.4
+        ],
+        "show": false
+      },
+      {
+        "id": "noRoar",
+        "type": "stamp",
+        "text": "Kein Brüllen",
+        "w": 2.0,
+        "h": 0.5,
+        "size": 120,
+        "radius": 20,
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "asia",
+        "type": "stamp",
+        "text": "Zentralasien",
+        "w": 2.0,
+        "h": 0.5,
+        "size": 120,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "cnt",
+        "type": "counter",
+        "fmt": "{n} m",
+        "from": 0,
+        "w": 1.8,
+        "h": 0.6,
+        "size": 190,
+        "color": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "tail",
+        "type": "stamp",
+        "text": "Schwanz ca. 1 m",
+        "w": 2.4,
+        "h": 0.5,
+        "size": 110,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#ffd24a",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "jump",
+        "type": "stamp",
+        "text": "Sprung bis 16 m",
+        "w": 2.5,
+        "h": 0.5,
+        "size": 110,
+        "radius": 20,
+        "color": "#12183a",
+        "bg": "#7ee0a1",
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "few",
+        "type": "stamp",
+        "text": "nur wenige tausend",
+        "w": 2.7,
+        "h": 0.5,
+        "size": 105,
+        "radius": 20,
+        "pos": [
+          0,
+          6.05,
+          1.2
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7
+      }
     ],
     "beats": [
-      {"at": 0.2, "id": "pic", "do": "pop"},
-      {"at": "brüllen|brullen", "fallback": 0.05, "id": "noRoar", "do": "pop"},
-      {"at": "brüllen|brullen", "fallback": 0.05, "id": "fig", "do": "pose", "pose": "shrug"},
-      {"at": "zentralasiens", "fallback": 0.3, "id": "noRoar", "do": "out"},
-      {"at": "zentralasiens", "fallback": 0.3, "offset": 0.1, "id": "asia", "do": "pop"},
-      {"at": "^5000$|fünftausend|funftausend", "fallback": 0.42, "id": "asia", "do": "out"},
-      {"at": "^5000$|fünftausend|funftausend", "fallback": 0.42, "id": "cnt", "do": "pop"},
-      {"at": "^5000$|fünftausend|funftausend", "fallback": 0.42, "id": "cnt", "do": "count", "from": 0, "to": 5000, "dur": 1.6, "fmt": "{n} m"},
-      {"at": "schwanz", "fallback": 0.55, "id": "cnt", "do": "out"},
-      {"at": "schwanz", "fallback": 0.55, "offset": 0.1, "id": "tail", "do": "pop"},
-      {"at": "schwanz", "fallback": 0.55, "id": "fig", "do": "pose", "pose": "point"},
-      {"at": "^16$|sechzehn", "fallback": 0.72, "id": "tail", "do": "out"},
-      {"at": "^16$|sechzehn", "fallback": 0.72, "offset": 0.1, "id": "jump", "do": "pop"},
-      {"at": "tausend", "fallback": 0.85, "id": "jump", "do": "out"},
-      {"at": "tausend", "fallback": 0.85, "offset": 0.1, "id": "few", "do": "pop"},
-      {"at": "kommentare", "fallback": 0.97, "id": "fig", "do": "pose", "pose": "wave"},
-      {"at": 1.0, "do": "cam", "shot": "nah", "dur": 28}
+      {
+        "at": 0.2,
+        "id": "pic",
+        "do": "pop"
+      },
+      {
+        "at": "brüllen|brullen",
+        "fallback": 0.05,
+        "id": "noRoar",
+        "do": "pop"
+      },
+      {
+        "at": "brüllen|brullen",
+        "fallback": 0.05,
+        "id": "fig",
+        "do": "pose",
+        "pose": "shrug"
+      },
+      {
+        "at": "zentralasiens",
+        "fallback": 0.3,
+        "id": "noRoar",
+        "do": "out"
+      },
+      {
+        "at": "zentralasiens",
+        "fallback": 0.3,
+        "offset": 0.1,
+        "id": "asia",
+        "do": "pop"
+      },
+      {
+        "at": "^5000$|fünftausend|funftausend",
+        "fallback": 0.42,
+        "id": "asia",
+        "do": "out"
+      },
+      {
+        "at": "^5000$|fünftausend|funftausend",
+        "fallback": 0.42,
+        "id": "cnt",
+        "do": "pop"
+      },
+      {
+        "at": "^5000$|fünftausend|funftausend",
+        "fallback": 0.42,
+        "id": "cnt",
+        "do": "count",
+        "from": 0,
+        "to": 5000,
+        "dur": 1.6,
+        "fmt": "{n} m"
+      },
+      {
+        "at": "schwanz",
+        "fallback": 0.55,
+        "id": "cnt",
+        "do": "out"
+      },
+      {
+        "at": "schwanz",
+        "fallback": 0.55,
+        "offset": 0.1,
+        "id": "tail",
+        "do": "pop"
+      },
+      {
+        "at": "schwanz",
+        "fallback": 0.55,
+        "id": "fig",
+        "do": "pose",
+        "pose": "point"
+      },
+      {
+        "at": "^16$|sechzehn",
+        "fallback": 0.72,
+        "id": "tail",
+        "do": "out"
+      },
+      {
+        "at": "^16$|sechzehn",
+        "fallback": 0.72,
+        "offset": 0.1,
+        "id": "jump",
+        "do": "pop"
+      },
+      {
+        "at": "tausend",
+        "fallback": 0.85,
+        "id": "jump",
+        "do": "out"
+      },
+      {
+        "at": "tausend",
+        "fallback": 0.85,
+        "offset": 0.1,
+        "id": "few",
+        "do": "pop"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.97,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 28
+      }
     ]
-  }
+  },
+  "script": "Dieses Tier kann nicht brüllen. Der Schneeleopard gehört zu den Großkatzen, schnurrt aber wie eine Hauskatze und stößt hohe, jaulende Rufe aus. Er lebt in den Hochgebirgen Zentralasiens, oberhalb der Baumgrenze, bis in fünftausend Meter Höhe. Sein Schwanz ist fast einen Meter lang. Er hilft beim Gleichgewicht und wärmt wie ein Schal. Nach Angaben des NABU springt er damit bis zu sechzehn Meter weit. Weltweit gibt es nur noch wenige tausend Tiere. Kanntest du das schon? Schreib es in die Kommentare."
 }

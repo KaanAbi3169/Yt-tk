@@ -5,7 +5,7 @@ Ein neues 3D-Video braucht keinen eigenen Code mehr: `content3d/<ID>.json` mit `
 ## Ablauf für ein neues Video
 1. Skript schreiben (STIL.md: Hook, Fakten mit Quelle, Kommentarfrage).
 2. Sprache erzeugen (ElevenLabs, Kanalstimme Jan) und mit der Action `audio` als `audio/<ID>.mp3` auf `media` ablegen.
-3. `content3d/<ID>.json` schreiben: Titel und Texte (wie bei Shorts), `"scene": "kit"`, `"kit": {...}`. Optional `"credits"` für echte Bilder.
+3. `content3d/<ID>.json` schreiben: Titel und Texte (wie bei Shorts), dazu `"script"` mit dem gesprochenen Text (der Prüfer kontrolliert Hook höchstens 12 Wörter, 70 bis 140 Wörter, Kommentarfrage), `"scene": "kit"`, `"kit": {...}`. Optional `"credits"` für echte Bilder.
 4. `kitcheck` und `textcheck` laufen lassen, dann Action `render3d` mit der ID. Ergebnis: `videos/<ID>.mp4` und Inventar-Eintrag (Status pinned).
 5. Einplanen: Eintrag in `data/pins.json` (Tag, Zeit, Plattform), oder `"status": "ready"` im Inhalt: Dann setzt die Planung das Video selbst ein (bevorzugt vor dem Vorrat, 10:00 und 16:00 nach Priorität).
 
@@ -50,3 +50,9 @@ Bild über die Action `images` laden (nur freie Lizenzen), als Bauteil `photo` e
 
 ## Beispiel
 `content3d/K001.json` (Nachbau der GTA-Szene als Test, wird nicht veröffentlicht).
+
+## Prüfungen vor dem Rendern (automatisch)
+- Beschriftungen (text, stamp, bubble, counter) nicht unter y 3,2 (Untertitel) und nicht über den Bildrand (|x| + w/2 höchstens 1,85). Ausnahme mit `"free": true`.
+- Zahlen als Ziffer und Zahlwort im Muster angeben (Whisper schreibt Ziffern).
+- Nach dem Rendern liegt ein Kontaktbogen mit sechs Standbildern auf `media` unter `qa/<ID>.jpg`.
+- Kulissen: sunset, night, room, studio, ocean (Tiefsee), space (Sternenhimmel mit Planet).
