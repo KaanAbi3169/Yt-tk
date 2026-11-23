@@ -107,6 +107,14 @@ def check_3d(inv: list) -> None:
         if errs:
             bad.append(f"{f.stem}: " + ", ".join(errs)[:120])
     add("FEHLER" if bad else "OK", f"3D-Inhalte gueltig ({n})" if not bad else "3D-Inhalte fehlerhaft: " + "; ".join(bad))
+    from . import doku
+    dbad, dn = [], 0
+    for f in sorted((base / "content_doku").glob("E*.json")):
+        dn += 1
+        e = doku.check_content(json.loads(f.read_text(encoding="utf-8")))
+        if e:
+            dbad.append(f"{f.stem}: " + ", ".join(e)[:160])
+    add("FEHLER" if dbad else "OK", f"Doku-Inhalte gueltig ({dn})" if not dbad else "Doku-Inhalte fehlerhaft: " + "; ".join(dbad))
     pins = inventory._load("pins.json", {"pins": []}).get("pins", [])
     today = datetime.now(inventory.TZ).date().isoformat()
     byid = {v["id"]: v for v in inv}

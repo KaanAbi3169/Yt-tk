@@ -34,7 +34,7 @@ jobs:
           VID: ${{ inputs.id }}
           URL: ${{ inputs.url }}
         run: |
-          case "$VID" in [A-Z][0-9][0-9][0-9]) ;; *) echo "ungueltige ID"; exit 1;; esac
+          case "$VID" in [A-Z][0-9][0-9][0-9]|[A-Z][0-9][0-9][0-9]_[1-3]) ;; *) echo "ungueltige ID"; exit 1;; esac
           case "$URL" in https://elevenlabsusercontent.com/*) ;; *) echo "nur elevenlabsusercontent.com erlaubt"; exit 1;; esac
           mkdir -p audio
           curl -fsSL --max-time 120 -o "audio/$VID.mp3" "$URL"
