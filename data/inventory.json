@@ -141,7 +141,7 @@
     {
       "id": "D021",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1ktx4jJzWZeLNwVtEuTrP9L5b3XXPfzwZ",
       "drive_title": "V021_Stosslueften.mp4",
@@ -149,14 +149,18 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830125+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1ktx4jJzWZeLNwVtEuTrP9L5b3XXPfzwZ",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b03d90ed864a0110526fa87",
+        "youtube": "6b03d910c72676f5e98eb48a"
+      },
       "title_tiktok": "Stoßlüften oder Fenster kippen – was ist besser? 🪟",
       "title_youtube": "Stoßlüften oder Fenster kippen? Was wirklich besser ist 🪟 #shorts",
       "text_tiktok": "Wie lüftest du im Winter? Kippen oder ganz auf? 👇 #lüften #wohnen #haushaltstipps #fürdich",
       "text_youtube": "Richtig lüften spart Energie und beugt Feuchtigkeit vor. Das Video zeigt den Unterschied.\nKippen oder Stoßlüften – was machst du? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #lüften #wohnen #haushaltstipps #energiesparen",
       "notvorrat": true,
       "drive_shared": true,
-      "group": "winter"
+      "group": "winter",
+      "due": "2026-11-24T10:00:00+01:00"
     },
     {
       "id": "D022",
@@ -215,7 +219,7 @@
     {
       "id": "D024",
       "format": "wissen",
-      "status": "backup",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1hITnQlwXLWJ4tQmjxI4P-wVBvuYCXne1",
       "drive_title": "V024_Napoleon_nicht_klein.mp4",
@@ -223,14 +227,18 @@
       "hook_type": "drive-reserve",
       "created": "2026-11-15T07:54:50.830143+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1hITnQlwXLWJ4tQmjxI4P-wVBvuYCXne1",
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b03d912d864a0110526fc9c",
+        "youtube": "6b03d914c72676f5e98eb594"
+      },
       "title_tiktok": "War Napoleon wirklich so klein? 👑",
       "title_youtube": "War Napoleon wirklich klein? Der Mythos im Check 👑 #shorts",
       "text_tiktok": "Das Bild vom kleinen Kaiser hält sich hartnäckig. Was glaubst du? 👇 #napoleon #geschichte #mythos #wusstestdu",
       "text_youtube": "Napoleon gilt als klein. Woher kommt dieses Bild, und stimmt es?\nWas hast du in der Schule gelernt? 👇\n\nStimme und Grafiken mit KI erstellt.\n\n#shorts #napoleon #geschichte #mythos #wusstestdu",
       "notvorrat": true,
       "drive_shared": true,
-      "group": "mythos"
+      "group": "mythos",
+      "due": "2026-11-24T16:00:00+01:00"
     },
     {
       "id": "D025",
