@@ -189,7 +189,7 @@
     {
       "id": "D023",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "ready",
       "source": "drive",
       "drive_id": "1Yx3cc7BclQSmlgd-YBo6dns0DRX78568",
       "drive_title": "V023_Hai_aelter_als_Baeume.mp4",
@@ -207,14 +207,22 @@
       "notvorrat": true,
       "drive_shared": true,
       "group": "mythos",
-      "due": "2026-11-22T16:00:00+01:00",
+      "due": null,
       "errors": [
         {
           "at": "2026-11-23T02:07:45.314531+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
+        },
+        {
+          "at": "2026-11-23T07:30:00+01:00",
+          "reason": "youtube: daily posting limit, Buffer-Post geloescht, neu einplanen (Versuch 1 von 2)"
         }
       ],
-      "note": "YouTube 22.11. 16:00 fehlgeschlagen (daily posting limit), TikTok gesendet; YouTube-Post in Buffer geloescht"
+      "note": "YouTube 22.11. 16:00 fehlgeschlagen (daily posting limit), TikTok gesendet; YouTube-Post in Buffer geloescht",
+      "due_failed": "2026-11-22T16:00:00+01:00",
+      "retries": {
+        "youtube": 1
+      }
     },
     {
       "id": "D024",
@@ -827,7 +835,7 @@
     {
       "id": "D059",
       "format": "wissen",
-      "status": "posted",
+      "status": "ready",
       "source": "drive",
       "drive_id": "19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
       "drive_title": "V059_Himmel_blau.mp4",
@@ -844,14 +852,22 @@
       "text_tiktok": "Blaues Licht wird von Luftteilchen viel stärker gestreut als rotes und kommt deshalb von überall am Himmel. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #physik #himmel #sonne",
       "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts",
       "group": "physik-test",
-      "due": "2026-11-20T10:00:00+01:00",
+      "due": null,
       "errors": [
         {
           "at": "2026-11-21T02:43:10.002662+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
+        },
+        {
+          "at": "2026-11-23T07:30:00+01:00",
+          "reason": "youtube: daily posting limit, Buffer-Post geloescht, neu einplanen (Versuch 1 von 2)"
         }
       ],
-      "note": "YouTube 20.11. 10:00 fehlgeschlagen (daily posting limit), nur TikTok online; YouTube-Post in Buffer geloescht"
+      "note": "YouTube 20.11. 10:00 fehlgeschlagen (daily posting limit), nur TikTok online; YouTube-Post in Buffer geloescht",
+      "due_failed": "2026-11-20T10:00:00+01:00",
+      "retries": {
+        "youtube": 1
+      }
     },
     {
       "id": "D060",
