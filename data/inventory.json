@@ -1797,6 +1797,30 @@
         "https://en.wikipedia.org/wiki/Voyager_Golden_Record"
       ],
       "due": "2026-11-25T18:00:00+01:00"
+    },
+    {
+      "id": "R001",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-23T08:40:33.659725+01:00",
+      "source": "render3d",
+      "topic": "Top 3: Die größten Planeten des Sonnensystems",
+      "hook_type": "Ranking",
+      "series": null,
+      "episode": null,
+      "duration": 36.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/R001.mp4",
+      "title_tiktok": "Die 3 größten Planeten unseres Sonnensystems 🪐",
+      "title_youtube": "Top 3: Die größten Planeten des Sonnensystems im Ranking 🪐 #shorts",
+      "text_tiktok": "Welcher Planet gefällt dir am besten? Schreib es in die Kommentare 👇 #weltraum #planeten #top3 #wusstestdu #lernenmittiktok",
+      "text_youtube": "Jupiter, Saturn und Uranus sind die drei größten Planeten, gemessen am Durchmesser am Äquator (NASA). Welcher gefällt dir am besten? 👇\n\nQuelle: NASA (Planet Sizes and Locations in Our Solar System). Stimme und Grafiken mit KI erstellt.\n\n#shorts #weltraum #planeten #top3 #wusstestdu",
+      "scenes": 1,
+      "buffer": {},
+      "group": "top3",
+      "sources": [
+        "https://science.nasa.gov/solar-system/planet-sizes-and-locations-in-our-solar-system/",
+        "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+      ]
     }
   ]
 }
