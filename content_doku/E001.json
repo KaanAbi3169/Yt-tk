@@ -1,0 +1,732 @@
+{
+ "id": "E001",
+ "theme": "weltraum",
+ "topic": "Voyager 1: Die längste Reise der Menschheit (Doku)",
+ "hook_type": "Doku mit Aktualität",
+ "group": "lang-doku",
+ "status": "ready",
+ "title_youtube": "Voyager 1: 49 Jahre unterwegs – die längste Reise der Menschheit (Doku)",
+ "text_youtube": "Voyager 1 startete 1977, ist heute das am weitesten entfernte Objekt, das Menschen gebaut haben, und hat am 18. November 2026 einen Lichttag Abstand zur Erde erreicht. Diese Dokumentation erzählt die Reise: Start, Jupiter und Saturn, der blasse blaue Punkt, die goldene Schallplatte, die Rettung aus dem All und die Frage, wie lange die Sonde noch durchhält.\n\n{KAPITEL}\n\nQuellen: NASA Science (science.nasa.gov/mission/voyager), NASA/JPL Voyager-Blog (2024 und 2026), DLR (Sonde Voyager 1 ist jetzt einen Lichttag entfernt), IEEE Spectrum, Smithsonian, Wikipedia (Voyager 1, Voyager Golden Record).\n\nWas meinst du: Hat sich diese Reise gelohnt? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#voyager #weltraum #doku #wissen #nasa",
+ "sources": [
+  "https://science.nasa.gov/mission/voyager/voyager-1/",
+  "https://www.dlr.de/de/blog/archiv/2026/sonde-voyager-1-ist-jetzt-einen-lichttag-entfernt",
+  "https://science.nasa.gov/blogs/voyager/2024/04/04/engineers-pinpoint-cause-of-voyager-1-issue-are-working-on-solution/",
+  "https://science.nasa.gov/blogs/voyager/2026/04/17/nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/",
+  "https://en.wikipedia.org/wiki/Voyager_Golden_Record"
+ ],
+ "thumb": {
+  "title": "Voyager 1",
+  "sub": "Ein Lichttag entfernt",
+  "big": "24 h"
+ },
+ "blocks": [
+  {
+   "part": 1,
+   "text": "Stell dir vor, du schickst eine Nachricht an ein Gerät, und die Antwort braucht zwei volle Tage. Genau so ist es heute bei Voyager eins. Die Sonde ist das am weitesten entfernte Objekt, das Menschen je gebaut haben. Sie fliegt seit neunzehnhundertsiebenundsiebzig durch das All. Und am achtzehnten November zweitausendsechsundzwanzig hat sie eine Marke erreicht, die noch keine Sonde vor ihr geschafft hat: einen ganzen Lichttag Abstand zur Erde.",
+   "scenes": [
+    {
+     "type": "titel",
+     "title": "Voyager 1: Die längste Reise der Menschheit",
+     "sub": "49 Jahre unterwegs, ein Lichttag von der Erde entfernt",
+     "tag": "Dokumentation",
+     "w": 0.8
+    },
+    {
+     "type": "zahl",
+     "value": "26 Mrd.",
+     "unit": "km",
+     "label": "Entfernung am 18. November 2026",
+     "note": "Das ist ein Lichttag: Licht braucht für diese Strecke 24 Stunden.",
+     "source": "NASA, DLR",
+     "w": 1.2
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "In dieser Geschichte geht es um eine Sonde, die eigentlich nur Jupiter und Saturn erkunden sollte und nach fast fünfzig Jahren immer noch funkt. Wir schauen auf den Start, auf die großen Planeten und auf das berühmteste Foto der Erde. Wir öffnen die goldene Schallplatte an Bord, sprechen über die Reparatur aus mehr als zwanzig Milliarden Kilometern Entfernung und fragen, wie lange die Sonde noch durchhält.",
+   "scenes": [
+    {
+     "type": "liste",
+     "title": "Das erwartet dich",
+     "items": [
+      "Start und Jupiter",
+      "Saturn und die Abzweigung",
+      "Der blasse blaue Punkt und die goldene Schallplatte",
+      "Die Reparatur aus dem All",
+      "Wie lange hält die Sonde durch?"
+     ],
+     "source": "NASA, JPL"
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "Der Name der Sonde passt zu ihrer Aufgabe, denn Voyager bedeutet auf Deutsch Reisender. Gebaut wurde sie, um die äußeren Planeten unseres Sonnensystems zu besuchen und Bilder und Messwerte zur Erde zu schicken. Dass sie dabei zum Botschafter der Menschheit zwischen den Sternen werden würde, hatte damals kaum jemand erwartet.",
+   "scenes": [
+    {
+     "type": "fakt",
+     "text": "Voyager bedeutet Reisender. Gebaut für die äußeren Planeten, wurde die Sonde zum Botschafter der Menschheit.",
+     "source": "NASA, JPL"
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "Am fünften September neunzehnhundertsiebenundsiebzig hebt Voyager eins in Cape Canaveral in Florida ab. Sechzehn Tage zuvor war bereits ihre Zwillingssonde Voyager zwei gestartet. Dass Voyager eins trotzdem zuerst am Ziel ankam, lag an ihrer schnelleren Flugbahn. Sie überholte ihre Schwester auf dem Weg zum Jupiter.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "1",
+     "title": "Der Start 1977",
+     "w": 0.6
+    },
+    {
+     "type": "zeitleiste",
+     "title": "Zwei Sonden, zwei Starts",
+     "events": [
+      {
+       "year": "20.8.1977",
+       "text": "Start von Voyager 2"
+      },
+      {
+       "year": "5.9.1977",
+       "text": "Start von Voyager 1"
+      },
+      {
+       "year": "5.3.1979",
+       "text": "Voyager 1 erreicht Jupiter"
+      }
+     ],
+     "focus": 1,
+     "source": "NASA, JPL",
+     "w": 1.4
+    }
+   ],
+   "chapter": "Der Start 1977"
+  },
+  {
+   "part": 1,
+   "text": "Die beiden Sonden nutzten eine seltene Gelegenheit: Die großen Planeten standen so, dass man mit Hilfe ihrer Schwerkraft von einem zum nächsten schwingen konnte. Jeder Vorbeiflug gibt der Sonde Schwung und lenkt sie zum nächsten Ziel. So spart man Treibstoff und viele Jahre. Voyager eins brauchte nur anderthalb Jahre bis zum Jupiter.",
+   "scenes": [
+    {
+     "type": "fakt",
+     "text": "Mit jedem Vorbeiflug an einem Planeten nimmt die Sonde Schwung auf und wird zum nächsten Ziel gelenkt.",
+     "source": "NASA, JPL",
+     "w": 1.2
+    },
+    {
+     "type": "zahl",
+     "value": "1,5",
+     "unit": "Jahre",
+     "label": "vom Start bis zum Jupiter",
+     "note": "September 1977 bis März 1979",
+     "source": "NASA, JPL",
+     "w": 0.8
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "Am fünften März neunzehnhundertneunundsiebzig fliegt Voyager eins an Jupiter vorbei. Die Bilder zeigen Wolkenbänder, gewaltige Stürme und den berühmten Großen Roten Fleck in nie gesehener Schärfe. Doch die größte Überraschung wartet auf einem kleinen Mond.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "2",
+     "title": "Jupiter und die Vulkane",
+     "w": 0.8
+    },
+    {
+     "type": "fakt",
+     "text": "Die größte Überraschung am Jupiter lag nicht auf dem Planeten selbst, sondern auf einem seiner Monde.",
+     "source": "NASA, JPL",
+     "w": 1.2
+    }
+   ],
+   "chapter": "Jupiter und die Vulkane"
+  },
+  {
+   "part": 1,
+   "text": "Die Navigationsingenieurin Linda Morabito bearbeitet ein Bild des Mondes Io und entdeckt am Rand eine seltsame Wolke. Zuerst hält sie das Gebilde für einen weiteren Mond. Doch es ist die Fahne eines aktiven Vulkans. Zum ersten Mal sehen Menschen einen Vulkanausbruch auf einem anderen Himmelskörper. Die Bilder von Voyager eins zeigen auf Io mindestens acht aktive Vulkane.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": "8",
+     "unit": "Vulkane",
+     "label": "mindestens acht aktive Vulkane auf dem Mond Io",
+     "note": "Erstmals wurden aktive Vulkane auf einem anderen Himmelskörper gesehen.",
+     "source": "NASA",
+     "w": 1.3
+    },
+    {
+     "type": "fakt",
+     "text": "Entdeckt hat sie die Navigationsingenieurin Linda Morabito beim Bearbeiten eines Bildes.",
+     "source": "NASA, Astronomy Magazine",
+     "w": 0.9
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "Im November neunzehnhundertachtzig erreicht Voyager eins den Saturn. Am zwölften November ist die Sonde dem Planeten am nächsten. Sie nimmt die Ringe und die Monde auf. Danach fliegt sie noch an Saturns größtem Mond Titan vorbei, in nur viertausend Kilometern Abstand.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "3",
+     "title": "Saturn und die Abzweigung",
+     "w": 0.8
+    },
+    {
+     "type": "zahl",
+     "value": "4 000",
+     "unit": "km",
+     "label": "Abstand beim Vorbeiflug am Mond Titan",
+     "note": "Am 12. November 1980 erreichte Voyager 1 den Saturn.",
+     "source": "NASA, JPL",
+     "w": 1.2
+    }
+   ],
+   "chapter": "Saturn und die Abzweigung"
+  },
+  {
+   "part": 1,
+   "text": "Dieser Vorbeiflug an Titan hat einen Preis. Die Schwerkraft lenkt die Sonde nach Norden, aus der Ebene heraus, in der die Planeten die Sonne umkreisen. Sie fliegt jetzt rund fünfunddreißig Grad schräg nach oben, mit etwa dreieinhalb astronomischen Einheiten pro Jahr. Für Uranus und Neptun ist damit kein Weg mehr frei. Das übernimmt die Schwestersonde Voyager zwei.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": "35°",
+     "unit": "",
+     "label": "schräg nach Norden aus der Planetenebene",
+     "note": "Rund 3,5 astronomische Einheiten pro Jahr",
+     "source": "NASA, JPL",
+     "w": 1.2
+    },
+    {
+     "type": "liste",
+     "title": "Wer besuchte welchen Planeten?",
+     "items": [
+      "Voyager 1: Jupiter und Saturn",
+      "Voyager 2: Jupiter, Saturn, Uranus und Neptun"
+     ],
+     "focus": 1,
+     "source": "NASA",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "Dann, am vierzehnten Februar neunzehnhundertneunzig, passiert etwas Ungewöhnliches. Voyager eins hat ihre Planeten längst hinter sich. Auf Anregung von Carl Sagan dreht die NASA die Kamera noch einmal um und fotografiert die Heimat. Aus rund sechs Milliarden Kilometern Entfernung ist die Erde nur noch ein winziger Punkt in einem Lichtstreifen.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "4",
+     "title": "Der blasse blaue Punkt",
+     "w": 0.8
+    },
+    {
+     "type": "zahl",
+     "value": "6 Mrd.",
+     "unit": "km",
+     "label": "Entfernung beim Foto vom 14. Februar 1990",
+     "note": "Auf Anregung von Carl Sagan gemacht",
+     "source": "NASA, JPL",
+     "w": 1.2
+    }
+   ],
+   "chapter": "Der blasse blaue Punkt"
+  },
+  {
+   "part": 1,
+   "text": "Sagan nannte das Foto den blassen blauen Punkt, auf Englisch Pale Blue Dot. Es erinnert daran, dass alles, was wir kennen, auf diesem winzigen Punkt stattfindet. Jede Geschichte, jeder Krieg, jede Liebe, jeder Mensch. Der Planet, den wir für riesig halten, ist aus dieser Entfernung kaum mehr als ein Staubkorn im Licht der Sonne.",
+   "scenes": [
+    {
+     "type": "fakt",
+     "text": "Alles, was wir kennen, findet auf diesem winzigen Punkt statt. Aus sechs Milliarden Kilometern ist die Erde kaum mehr als ein Staubkorn im Sonnenlicht.",
+     "source": "NASA, Carl Sagan",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 1,
+   "text": "An Bord befindet sich außerdem eine Botschaft für mögliche Außerirdische: die goldene Schallplatte. Ein Komitee unter der Leitung von Carl Sagan hat ausgewählt, was darauf kommt. Es sind hundertfünfzehn Bilder, ein zwölfminütiger Zusammenschnitt aus Geräuschen der Erde und rund neunzig Minuten Musik aus vielen Kulturen.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "5",
+     "title": "Die goldene Schallplatte",
+     "w": 0.7
+    },
+    {
+     "type": "liste",
+     "title": "Das steckt auf der Platte",
+     "items": [
+      "115 Bilder",
+      "12 Minuten Geräusche der Erde",
+      "rund 90 Minuten Musik",
+      "gesprochene Grüße in 55 Sprachen"
+     ],
+     "focus": 0,
+     "source": "NASA, Smithsonian",
+     "w": 1.3
+    }
+   ],
+   "chapter": "Die goldene Schallplatte"
+  },
+  {
+   "part": 1,
+   "text": "Dazu kommen gesprochene Grüße in fünfundfünfzig Sprachen. Die Chance, dass jemand die Platte jemals findet, ist winzig, denn die Sonde braucht Zehntausende Jahre, bis sie überhaupt in die Nähe eines anderen Sterns kommt. Aber die Platte ist ein Zeugnis davon, wie sich die Menschen in den Siebzigerjahren selbst sehen wollten, und das ist der eigentliche Wert dieser Botschaft.",
+   "scenes": [
+    {
+     "type": "liste",
+     "title": "Das steckt auf der Platte",
+     "items": [
+      "115 Bilder",
+      "12 Minuten Geräusche der Erde",
+      "rund 90 Minuten Musik",
+      "gesprochene Grüße in 55 Sprachen"
+     ],
+     "focus": 3,
+     "source": "NASA, Smithsonian",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Während Voyager eins weiterfliegt, verlässt sie langsam den Einflussbereich der Sonne. Die Sonne bläst ständig geladene Teilchen ins All, den Sonnenwind. Er bildet eine riesige Blase, die Heliosphäre. Am fünfundzwanzigsten August zweitausendzwölf durchquert Voyager eins ihren Rand, die Heliopause, in rund einhunderteinundzwanzig Mal der Entfernung zwischen Erde und Sonne.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "6",
+     "title": "Die Grenze der Sonne",
+     "w": 0.7
+    },
+    {
+     "type": "vergleich",
+     "title": "Entfernung zur Sonne in astronomischen Einheiten (1 = Erde)",
+     "unit": "AE",
+     "source": "NASA, JPL",
+     "bars": [
+      {
+       "label": "Erde",
+       "value": 1,
+       "text": "1"
+      },
+      {
+       "label": "Jupiter",
+       "value": 5.2,
+       "text": "5,2"
+      },
+      {
+       "label": "Neptun",
+       "value": 30,
+       "text": "30"
+      },
+      {
+       "label": "Heliopause 2012",
+       "value": 121,
+       "text": "121"
+      }
+     ],
+     "highlight": 3,
+     "w": 1.3
+    }
+   ],
+   "chapter": "Die Grenze der Sonne"
+  },
+  {
+   "part": 2,
+   "text": "Damit ist Voyager eins das erste von Menschen gebaute Objekt im interstellaren Raum. Ihre Instrumente messen dort ein anderes Plasma als in der Nähe der Sonne. Auch die Schwestersonde Voyager zwei hat die Grenze später überquert. Beide fliegen nun durch den Raum zwischen den Sternen, in dem es keine Sonne mehr gibt, die sie anleuchtet.",
+   "scenes": [
+    {
+     "type": "fakt",
+     "text": "Voyager 1 war das erste von Menschen gebaute Objekt im interstellaren Raum, am 25. August 2012.",
+     "source": "NASA, Wikipedia",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Die Schwestersonde verdient an dieser Stelle einen eigenen Moment. Voyager zwei flog nach Jupiter und Saturn weiter zu Uranus und Neptun und ist bis heute die einzige Sonde, die diese beiden Planeten besucht hat. Auch sie ist noch unterwegs und sendet weiter Daten. Zusammen sind die beiden Voyager damit die am längsten laufende Mission der Raumfahrt.",
+   "scenes": [
+    {
+     "type": "liste",
+     "title": "Voyager 2, die Schwestersonde",
+     "items": [
+      "Start am 20. August 1977",
+      "besuchte Jupiter und Saturn",
+      "als einzige Sonde auch Uranus und Neptun",
+      "sendet noch heute Daten"
+     ],
+     "focus": 2,
+     "source": "NASA, PBS"
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Wie spricht man mit einer Sonde, die so weit weg ist? Der Sender von Voyager eins hat nur etwa zweiundzwanzig Watt Leistung, ungefähr so viel wie eine Lampe im Kühlschrank. Bei uns kommt davon fast nichts mehr an. Das Signal ist auf der Erde nur noch etwa ein Trillionstel Watt stark, und doch fangen es riesige Antennen auf, die zum Deep Space Network der NASA gehören.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "7",
+     "title": "Wie spricht man mit einer Sonde?",
+     "w": 0.7
+    },
+    {
+     "type": "zahl",
+     "value": "22 W",
+     "unit": "",
+     "label": "Sendeleistung, etwa wie eine Kühlschranklampe",
+     "note": "Die Antennen stehen in Kalifornien, Spanien und Australien.",
+     "source": "NASA, JPL",
+     "w": 1.3
+    }
+   ],
+   "chapter": "Wie spricht man mit einer Sonde?"
+  },
+  {
+   "part": 2,
+   "text": "Weil sich die Erde dreht, reicht eine einzelne Antenne nicht aus. Deshalb stehen die großen Schüsseln an drei Orten der Welt, in Kalifornien, in Spanien und in Australien. Dreht sich die Erde weiter, übernimmt die nächste Station das Gespräch mit der Sonde. Jede dieser Antennen misst siebzig Meter im Durchmesser.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": "70",
+     "unit": "m",
+     "label": "Durchmesser der großen Antennen",
+     "note": "Standorte: Kalifornien, Spanien und Australien",
+     "source": "NASA, JPL"
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Die Daten kommen mit etwa einhundertsechzig Bit pro Sekunde an. Ein einziges Handyfoto von heute würde bei dieser Geschwindigkeit mehr als einen Tag brauchen. Dazu kommt die Wartezeit: Ein Befehl vom Boden ist rund einen Tag unterwegs, die Antwort noch einmal. Wer der Sonde einen Auftrag gibt, wartet also fast zwei Tage auf die Bestätigung.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": "160",
+     "unit": "Bit/s",
+     "label": "Datenrate der Sonde",
+     "note": "Zum Vergleich: Ein Handyfoto hat mehrere Millionen Byte.",
+     "source": "NASA, JPL",
+     "w": 1.0
+    },
+    {
+     "type": "zahl",
+     "value": "~47",
+     "unit": "Stunden",
+     "label": "von der Frage bis zur Antwort",
+     "note": "Rund 24 Stunden hin und 24 Stunden zurück",
+     "source": "NASA, DLR",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Im November zweitausenddreiundzwanzig geschieht etwas Beunruhigendes. Voyager eins sendet plötzlich nur noch unlesbare Daten. Das Bordsystem, das die Messwerte für den Funk verpackt, funktioniert nicht mehr. Mehrere Monate lang weiß die Mannschaft am Boden nicht, was mit der Sonde los ist, und viele fürchten das Ende der Mission.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "8",
+     "title": "Die Reparatur aus dem All",
+     "w": 0.7
+    },
+    {
+     "type": "fakt",
+     "text": "Ab dem 14. November 2023 sendete Voyager 1 nur noch unlesbare Daten. Monatelang war unklar, warum.",
+     "source": "NASA, IEEE Spectrum",
+     "w": 1.3
+    }
+   ],
+   "chapter": "Die Reparatur aus dem All"
+  },
+  {
+   "part": 2,
+   "text": "Ingenieure finden die Ursache in einem einzigen Speicherchip mit zweihundertsechsundfünfzig Wörtern, in dem ein Teil des Bordprogramms liegt. Ob ein Teilchen aus dem All ihn getroffen hat oder ob er nach sechsundvierzig Jahren einfach verschlissen war, bleibt offen. Weil man den Chip nicht ersetzen kann, schiebt das Team den betroffenen Programmteil an andere Stellen im Speicher. Am achtzehnten April zweitausendvierundzwanzig wird der neue Code abgeschickt, und zwei Tage später kommen wieder lesbare Daten an.",
+   "scenes": [
+    {
+     "type": "zeitleiste",
+     "title": "Die Rettung in vier Schritten",
+     "events": [
+      {
+       "year": "11/2023",
+       "text": "Daten werden unlesbar"
+      },
+      {
+       "year": "3/2024",
+       "text": "Fehler im Speicherchip gefunden"
+      },
+      {
+       "year": "18.4.2024",
+       "text": "Reparaturcode gesendet"
+      },
+      {
+       "year": "20.4.2024",
+       "text": "Wieder lesbare Daten"
+      }
+     ],
+     "focus": 2,
+     "source": "NASA, JPL",
+     "w": 1.4
+    },
+    {
+     "type": "zahl",
+     "value": "256",
+     "unit": "Wörter",
+     "label": "so klein war der defekte Speicherbereich",
+     "note": "Die Ursache bleibt offen: Teilchen aus dem All oder Verschleiß nach 46 Jahren.",
+     "source": "NASA, JPL",
+     "w": 0.8
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Voyager eins hat keine Solarzellen, denn weit draußen ist die Sonne zu schwach. Ihre Energie kommt aus Radionuklidbatterien, die aus dem Zerfall von Plutonium Wärme in Strom umwandeln. Doch das Plutonium zerfällt, und die Leistung sinkt um rund vier Watt pro Jahr. Im April zweitausendsechsundzwanzig war sie schon unter die Hälfte des ursprünglichen Wertes gefallen.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "9",
+     "title": "Der letzte Strom",
+     "w": 0.7
+    },
+    {
+     "type": "zahl",
+     "value": "−4 W",
+     "unit": "",
+     "label": "weniger Leistung pro Jahr",
+     "note": "Im April 2026 lag sie unter der Hälfte des Startwerts.",
+     "source": "NASA, JPL",
+     "w": 1.3
+    }
+   ],
+   "chapter": "Der letzte Strom"
+  },
+  {
+   "part": 2,
+   "text": "Am siebenundzwanzigsten Februar zweitausendsechsundzwanzig fiel die Spannung bei einem Manöver kurz ab. Um die Sonde zu retten, schaltete das Team am siebzehnten April ein Messgerät ab, das Teilchen untersucht. Das soll ungefähr ein weiteres Jahr Betrieb bringen. Zwei wissenschaftliche Instrumente laufen noch, eines für Plasmawellen und eines für Magnetfelder. Das Ziel ist, bis in die Zweitausenddreißiger mindestens ein Instrument je Sonde zu betreiben.",
+   "scenes": [
+    {
+     "type": "liste",
+     "title": "Was Voyager 1 noch misst (Stand 2026)",
+     "items": [
+      "Plasmawellen: läuft",
+      "Magnetfeld: läuft",
+      "Teilchenmessung: im April 2026 abgeschaltet",
+      "Ziel: ein Instrument je Sonde bis in die 2030er"
+     ],
+     "focus": 2,
+     "source": "NASA, JPL",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Und so kommt es zu diesem einen Tag. Am achtzehnten November zweitausendsechsundzwanzig ist Voyager eins einen Lichttag von uns entfernt, rund sechsundzwanzig Milliarden Kilometer. Das sind mehr als einhundertsiebzig Mal die Entfernung zwischen Erde und Sonne. Für diese Strecke braucht selbst das Licht vierundzwanzig Stunden, und die Sonde fliegt unbeirrt weiter.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "10",
+     "title": "Ein Lichttag",
+     "w": 0.7
+    },
+    {
+     "type": "vergleich",
+     "title": "Entfernung zur Sonne in astronomischen Einheiten (1 = Erde)",
+     "unit": "AE",
+     "source": "NASA, JPL",
+     "bars": [
+      {
+       "label": "Erde",
+       "value": 1,
+       "text": "1"
+      },
+      {
+       "label": "Neptun",
+       "value": 30,
+       "text": "30"
+      },
+      {
+       "label": "Heliopause 2012",
+       "value": 121,
+       "text": "121"
+      },
+      {
+       "label": "Voyager 1, Nov. 2026",
+       "value": 173,
+       "text": "rund 173"
+      }
+     ],
+     "highlight": 3,
+     "w": 1.3
+    }
+   ],
+   "chapter": "Ein Lichttag"
+  },
+  {
+   "part": 2,
+   "text": "Ein Lichttag ist die Strecke, die das Licht an einem Tag zurücklegt. In nur einer Sekunde schafft es rund dreihunderttausend Kilometer, das ist siebenmal um die Erde. Ein Tag hat sechsundachtzigtausendvierhundert Sekunden. Multipliziert man beides, kommt man auf die Strecke, die Voyager eins nun erreicht hat.",
+   "scenes": [
+    {
+     "type": "liste",
+     "title": "So rechnet man einen Lichttag",
+     "items": [
+      "Licht: rund 300 000 km pro Sekunde",
+      "ein Tag: 24 × 60 × 60 = 86 400 Sekunden",
+      "Ergebnis: rund 26 Milliarden Kilometer"
+     ],
+     "focus": 2,
+     "source": "NASA, DLR"
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Die Schwestersonde Voyager zwei soll diese Marke erst im November zweitausendfünfunddreißig erreichen. Bis dahin funken beide Sonden weiter, solange der Strom reicht, mit jedem Jahr ein Instrument weniger. Irgendwann wird die Energie nicht mehr genügen. Doch die Reise endet damit nicht. Beide Sonden fliegen stumm weiter durch die Dunkelheit zwischen den Sternen, getragen von Schwung, den ihnen die Planeten vor fast fünfzig Jahren gaben.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": "2035",
+     "unit": "",
+     "label": "Voyager 2 erreicht ihren ersten Lichttag",
+     "note": "Voraussichtlich im November 2035",
+     "source": "NASA",
+     "w": 1.0
+    },
+    {
+     "type": "fakt",
+     "text": "Auch ohne Funk fliegen beide Sonden weiter durch den Raum zwischen den Sternen.",
+     "source": "NASA",
+     "w": 1.0
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Fassen wir die Reise zusammen. Neunzehnhundertsiebenundsiebzig der Start, neunzehnhundertneunundsiebzig die Vulkane auf Io, neunzehnhundertachtzig der Saturn und die Abzweigung nach Norden. Neunzehnhundertneunzig der blasse blaue Punkt, zweitausendzwölf die Grenze der Sonne und zweitausendsechsundzwanzig der erste Lichttag. Fast fünfzig Jahre lang hat eine Maschine funktioniert, die für wenige Planeten gebaut wurde und heute weiter ist als alles, was Menschen je ins All geschickt haben.",
+   "scenes": [
+    {
+     "type": "zeitleiste",
+     "title": "Die Reise im Rückblick",
+     "events": [
+      {
+       "year": "1977",
+       "text": "Start"
+      },
+      {
+       "year": "1979",
+       "text": "Jupiter und Io"
+      },
+      {
+       "year": "1980",
+       "text": "Saturn"
+      },
+      {
+       "year": "1990",
+       "text": "Pale Blue Dot"
+      },
+      {
+       "year": "2012",
+       "text": "Interstellar"
+      },
+      {
+       "year": "2026",
+       "text": "Ein Lichttag"
+      }
+     ],
+     "focus": 1,
+     "source": "NASA, JPL",
+     "w": 1
+    },
+    {
+     "type": "zeitleiste",
+     "title": "Die Reise im Rückblick",
+     "events": [
+      {
+       "year": "1977",
+       "text": "Start"
+      },
+      {
+       "year": "1979",
+       "text": "Jupiter und Io"
+      },
+      {
+       "year": "1980",
+       "text": "Saturn"
+      },
+      {
+       "year": "1990",
+       "text": "Pale Blue Dot"
+      },
+      {
+       "year": "2012",
+       "text": "Interstellar"
+      },
+      {
+       "year": "2026",
+       "text": "Ein Lichttag"
+      }
+     ],
+     "focus": 3,
+     "source": "NASA, JPL",
+     "w": 1
+    },
+    {
+     "type": "zeitleiste",
+     "title": "Die Reise im Rückblick",
+     "events": [
+      {
+       "year": "1977",
+       "text": "Start"
+      },
+      {
+       "year": "1979",
+       "text": "Jupiter und Io"
+      },
+      {
+       "year": "1980",
+       "text": "Saturn"
+      },
+      {
+       "year": "1990",
+       "text": "Pale Blue Dot"
+      },
+      {
+       "year": "2012",
+       "text": "Interstellar"
+      },
+      {
+       "year": "2026",
+       "text": "Ein Lichttag"
+      }
+     ],
+     "focus": 5,
+     "source": "NASA, JPL",
+     "w": 1
+    }
+   ]
+  },
+  {
+   "part": 2,
+   "text": "Was meinst du: Hat sich dieser Aufwand für eine Botschaft ins Nichts gelohnt? Würdest du eine Antwort abwarten, die erst nach Tagen kommt? Oder ist gerade dieses Warten das Faszinierende an der Raumfahrt? Schreib es in die Kommentare, und wenn dir das Video gefallen hat, abonniere den Kanal für die nächsten Reisen durch Wissenschaft und Geschichte.",
+   "scenes": [
+    {
+     "type": "frage",
+     "question": "Hat sich diese Reise gelohnt?",
+     "options": [
+      "Ja, Forschung ist unbezahlbar",
+      "Nein, zu viel Aufwand",
+      "Ich bin hin und weg"
+     ],
+     "w": 1.0
+    }
+   ]
+  }
+ ]
+}
