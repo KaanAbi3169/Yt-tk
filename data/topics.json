@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -53,11 +53,11 @@
     },
     {
       "group": "3d-wissen",
-      "n": 2,
-      "avg": 208
+      "n": 4,
+      "avg": 232
     }
   ],
-  "open": 29,
+  "open": 31,
   "items": [
     {
       "title": "Blühende Kastanienbäume",
@@ -67,26 +67,6 @@
       "status": "candidate",
       "source": "radar",
       "fit": "gut"
-    },
-    {
-      "title": "Riemannsche Vermutung",
-      "signal": "neu in den Top 1000 mit 30852 Aufrufen",
-      "kind": "neu",
-      "added": "2026-11-21",
-      "status": "produced",
-      "source": "radar",
-      "fit": "gut",
-      "video": "Q002"
-    },
-    {
-      "title": "Fiona (Flusspferd)",
-      "signal": "neu in den Top 1000 mit 17723 Aufrufen",
-      "kind": "neu",
-      "added": "2026-11-21",
-      "status": "produced",
-      "source": "radar",
-      "fit": "gut",
-      "video": "V001"
     },
     {
       "title": "Figuren der Harry-Potter-Romane",
@@ -215,6 +195,42 @@
       "fit": "pruefen"
     },
     {
+      "title": "Hodgkin-Lymphom",
+      "signal": "neu in den Top 1000 mit 28059 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-24",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Mama ist die Best(i)e",
+      "signal": "neu in den Top 1000 mit 18022 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-24",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Bischofsbasilika von Philippopolis",
+      "signal": "neu in den Top 1000 mit 10657 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-24",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Projekt 20380",
+      "signal": "neu in den Top 1000 mit 10511 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-24",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
       "title": "James Bond",
       "signal": "Wikipedia-Aufrufe 29972 gestern, Faktor 5.2 gegen Schnitt 5744",
       "kind": "steigend",
@@ -321,6 +337,26 @@
       "status": "candidate",
       "source": "radar",
       "fit": "zu breit"
+    },
+    {
+      "title": "Riemannsche Vermutung",
+      "signal": "neu in den Top 1000 mit 30852 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "produced",
+      "source": "radar",
+      "fit": "gut",
+      "video": "Q002"
+    },
+    {
+      "title": "Fiona (Flusspferd)",
+      "signal": "neu in den Top 1000 mit 17723 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-21",
+      "status": "produced",
+      "source": "radar",
+      "fit": "gut",
+      "video": "V001"
     },
     {
       "title": "Periodensystem",
