@@ -1665,7 +1665,7 @@
     {
       "id": "L004",
       "format": "lang",
-      "status": "scheduled",
+      "status": "archived",
       "created": "2026-11-18T01:10:34.231114+01:00",
       "source": "zusammenschnitt",
       "topic": "Küche und Alltag",
@@ -1691,10 +1691,11 @@
         "D070",
         "D037"
       ],
-      "buffer": {
-        "youtube": "metricool:438393509"
-      },
-      "due": "2026-11-27T18:00:00+01:00"
+      "buffer": {},
+      "due": null,
+      "notes": [
+        "24.11.2026: durch Kinetic-Langvideo E002 ersetzt (Metricool-Post 438393509 aktualisiert)"
+      ]
     },
     {
       "id": "L005",
@@ -2273,7 +2274,7 @@
     {
       "id": "E002",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T14:56:18.559136+01:00",
       "source": "kinetic",
       "topic": "GTA 6: Die Zahlen zum Start (Verschiebungen, Trailer-Rekorde, Preis, Kosten, Starttag)",
@@ -2287,7 +2288,9 @@
       "text_tiktok": "",
       "text_youtube": "GTA 6 ist seit dem 19. November 2026 erhältlich. In diesem Video: die zwei Verschiebungen, die Trailer-Rekorde, der Preis, die geschätzten Kosten und der Starttag-Umsatz. Zahlen, die nicht offiziell sind, sind als Schätzung gekennzeichnet.\n\nKAPITEL\n0:00 Einleitung\n1:06 Die zwei Verschiebungen\n2:36 Die Trailer-Rekorde\n4:05 Preis und Plattformen\n4:53 Was kostet so ein Spiel?\n6:18 Der Start\n9:41 Wie geht es weiter?\n\nQuellen: Fox 5 NY, 80.lv, Guinness World Records, TechCrunch, Variety, Hollywood Reporter, TechRadar, Video Games Chronicle, Engadget, Windows Central, Destructoid, TechSpot (Sony). Kein Spielmaterial, keine Logos. Alle Zahlen mit Quelle, Schätzungen markiert.\n\nWas meinst du: Ist GTA 6 den Hype wert? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#gta6 #gaming #rockstar #nachrichten #wissen",
       "scenes": 87,
-      "buffer": {},
+      "buffer": {
+        "youtube": "metricool:440327210"
+      },
       "group": "lang-kin",
       "sources": [
         "https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record",
@@ -2300,7 +2303,8 @@
         "https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box",
         "https://destructoid.com/why-the-rumored-2-billion-gta-6-budget-is-quite-unlikely-to-be-real",
         "https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html"
-      ]
+      ],
+      "due": "2026-11-27T18:00:00+01:00"
     }
   ]
 }
