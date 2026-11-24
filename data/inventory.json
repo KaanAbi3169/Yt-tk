@@ -189,7 +189,7 @@
     {
       "id": "D023",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "1Yx3cc7BclQSmlgd-YBo6dns0DRX78568",
       "drive_title": "V023_Hai_aelter_als_Baeume.mp4",
@@ -198,7 +198,8 @@
       "created": "2026-11-15T07:54:50.830138+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=1Yx3cc7BclQSmlgd-YBo6dns0DRX78568",
       "buffer": {
-        "tiktok": "6b02877502479690922a4ad7"
+        "tiktok": "6b02877502479690922a4ad7",
+        "youtube": "6b052a86286252d7383a1892"
       },
       "title_tiktok": "Haie sind älter als Bäume – stimmt das? 🦈",
       "title_youtube": "Sind Haie älter als Bäume? Die Antwort überrascht 🦈 #shorts",
@@ -207,7 +208,7 @@
       "notvorrat": true,
       "drive_shared": true,
       "group": "mythos",
-      "due": null,
+      "due": "2026-11-25T16:00:00+01:00",
       "errors": [
         {
           "at": "2026-11-23T02:07:45.314531+01:00",
@@ -835,7 +836,7 @@
     {
       "id": "D059",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "source": "drive",
       "drive_id": "19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
       "drive_title": "V059_Himmel_blau.mp4",
@@ -844,7 +845,8 @@
       "created": "2026-11-15T07:54:50.830335+01:00",
       "video_url": "https://drive.google.com/uc?export=download&id=19O65b8d4euSeXTcX97pd6iv-k3ytU2it",
       "buffer": {
-        "tiktok": "6affe4e4d5f8acdd0d778021"
+        "tiktok": "6affe4e4d5f8acdd0d778021",
+        "youtube": "6b052a84ca4899309e61ddac"
       },
       "duration": 61.6,
       "title_tiktok": "🌞 Warum ist der Himmel blau, obwohl die Sonne weisses Licht schickt?",
@@ -852,7 +854,7 @@
       "text_tiktok": "Blaues Licht wird von Luftteilchen viel stärker gestreut als rotes und kommt deshalb von überall am Himmel. Hast du das gewusst?\n\n#wusstestdu #lernenmittiktok #physik #himmel #sonne",
       "text_youtube": "Am Abend muss das Licht einen längeren Weg nehmen, das Blau wird weggestreut und Rot bleibt übrig. Wie findest du rote Sonnenuntergänge?\n\nStimme und Grafiken mit KI erstellt.\n\n#physik #himmel #sonne #wissen #shorts",
       "group": "physik-test",
-      "due": null,
+      "due": "2026-11-25T10:00:00+01:00",
       "errors": [
         {
           "at": "2026-11-21T02:43:10.002662+01:00",
