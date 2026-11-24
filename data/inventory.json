@@ -2132,6 +2132,31 @@
         "https://www.pcgameshardware.de/Black-Friday-Sale-266963/News/Black-Friday-2025-Rabatte-oft-mehr-Schein-als-Sein-1484384/"
       ],
       "due": "2026-11-25T10:00:00+01:00"
+    },
+    {
+      "id": "N003",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-24T13:22:05.833741+01:00",
+      "source": "kinetic",
+      "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)",
+      "hook_type": "Staunen + Rekord",
+      "series": null,
+      "episode": null,
+      "duration": 45.6,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N003.mp4",
+      "title_tiktok": "Weiter weg als je ein Mensch 🚀",
+      "title_youtube": "Artemis II: Neuer Distanzrekord um den Mond (Apollo 13 übertroffen) #shorts",
+      "text_tiktok": "Würdest du mitfliegen? Schreib es in die Kommentare 👇 #artemis #nasa #weltraum #mond #fürdich",
+      "text_youtube": "Am 6. April 2026 flog die Mission Artemis II um den Mond und übertraf mit rund 407 000 Kilometern Abstand zur Erde den Rekord von Apollo 13 um etwa 6 600 Kilometer. Würdest du mitfliegen? 👇\n\nQuellen: NASA, ABC News, NBC. Stimme und Grafiken mit KI erstellt.\n\n#shorts #artemis #nasa #weltraum #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-space",
+      "sources": [
+        "https://www.nasa.gov/news-release/nasas-artemis-ii-crew-eclipses-record-for-farthest-human-spaceflight",
+        "https://abc7.com/post/artemis-ii-astronauts-race-set-new-distance-record-earth-behold-moons-far-side/18847214/",
+        "https://www.nbcchicago.com/news/national-international/artemis-2-astronauts-set-new-distance-record-moon-flyby/3918809/"
+      ]
     }
   ]
 }
