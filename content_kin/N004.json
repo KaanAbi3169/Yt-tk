@@ -1,0 +1,17 @@
+{
+ "id": "N004", "topic": "Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)", "hook_type": "Zahl-Schock", "group": "kin-saison", "theme": "toxic", "music": "wissen",
+ "hl": "millionen|prozent|siebenhundert|advent",
+ "script": "Deutschland kauft jedes Jahr fünfundzwanzig Millionen Weihnachtsbäume. Der Bundesverband der Weihnachtsbaumerzeuger schätzt den Absatz auf dreiundzwanzig bis fünfundzwanzig Millionen Bäume pro Jahr. Etwa neunzehn Millionen davon wachsen in Deutschland. Rund drei von vier Bäumen sind laut einer Auswertung Nordmanntannen. Der Umsatz liegt bei etwa siebenhundert Millionen Euro. Die meisten Bäume wachsen auf Plantagen. Am ersten Advent, dem neunundzwanzigsten November, beginnt die Saison. Wie sieht dein Baum dieses Jahr aus? Echt oder künstlich? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"25 MILLIONEN WEIHNACHTSBÄUME","emoji":"🎄","hl":"25"},
+  {"type":"zahl","at":"dreiundzwanzig","fallback":0.14,"value":25,"text":"23–25","unit":"MIO. BÄUME","label":"verkauft pro Jahr in Deutschland"},
+  {"type":"zahl","at":"neunzehn","fallback":0.34,"value":19,"text":"19","unit":"MIO.","label":"davon aus Deutschland"},
+  {"type":"zahl","at":"^drei$","fallback":0.5,"value":75,"text":"75","unit":"%","label":"sind Nordmanntannen"},
+  {"type":"zahl","at":"siebenhundert","fallback":0.64,"value":700,"text":"700","unit":"MIO. €","label":"Umsatz pro Jahr"},
+  {"type":"hook","at":"advent","fallback":0.8,"text":"1. ADVENT: 29. NOVEMBER","emoji":"🕯️","hl":"ADVENT"},
+  {"type":"frage","at":"^wie$","fallback":0.9,"text":"ECHT ODER KÜNSTLICH?","options":["ECHT 🎄","KÜNSTLICH"]}
+ ],
+ "title_tiktok":"25 Millionen Weihnachtsbäume pro Jahr 🎄","title_youtube":"Wie viele Weihnachtsbäume kauft Deutschland? Die Zahlen überraschen #shorts",
+ "text_tiktok":"Echt oder künstlich? Schreib es in die Kommentare 👇 #weihnachten #weihnachtsbaum #advent #wusstestdu #fürdich","text_youtube":"Laut dem Bundesverband der Weihnachtsbaumerzeuger werden in Deutschland jedes Jahr 23 bis 25 Millionen Weihnachtsbäume verkauft, etwa 19 Millionen davon wachsen hier. Echt oder künstlich? 👇\n\nQuellen: Bundesverband der Weihnachtsbaumerzeuger (über Payback und Bundesregierung), ZDFheute, Statista. Stimme und Grafiken mit KI erstellt.\n\n#shorts #weihnachten #weihnachtsbaum #advent #wusstestdu",
+ "sources":["https://www.bundesregierung.de/breg-de/service/archiv/fakten-zum-weihnachtsbaum-1688316","https://www.payback.de/ratgeber/besser-leben/zahl-des-tages-weihnachtsbaeume","https://www.zdfheute.de/wirtschaft/tannenbaum-teuer-kosten-weihnachten-weihnachtsbaeume-100.html","https://de.statista.com/infografik/amp/20318/haeufigste-weihnachtsbaumarten-in-deutschland"]
+}
