@@ -2107,7 +2107,7 @@
     {
       "id": "N002",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T13:27:58.188145+01:00",
       "source": "kinetic",
       "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)",
@@ -2121,13 +2121,17 @@
       "text_tiktok": "Welchen Spar-Trick nutzt du? Schreib es in die Kommentare 👇 #blackfriday #sparen #tipps #wusstestdu #fürdich",
       "text_youtube": "Laut einer Auswertung von Idealo (Black Friday 2025, rund 10 000 beliebte Produkte) lag die durchschnittliche Ersparnis bei 8 Prozent, und 52 Prozent der Produkte waren früher im November schon günstiger. Welchen Spar-Trick nutzt du? 👇\n\nQuellen: Idealo (Preisauswertung, ein Vergleichsportal mit eigenem Interesse), Verbraucherzentrale. Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #sparen #tipps #wusstestdu",
       "scenes": 7,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b058309bc7aa0eec24abb7b",
+        "youtube": "6b05830af6a22c1e50ecb1ef"
+      },
       "group": "kin-spar",
       "sources": [
         "https://retail-news.de/black-friday-2026-idealo-preisstudie-rabatte/",
         "https://www.evz.de/aktuelles/presse-archiv/black-friday-2025/",
         "https://www.pcgameshardware.de/Black-Friday-Sale-266963/News/Black-Friday-2025-Rabatte-oft-mehr-Schein-als-Sein-1484384/"
-      ]
+      ],
+      "due": "2026-11-25T10:00:00+01:00"
     },
     {
       "id": "N004",
@@ -2158,7 +2162,7 @@
     {
       "id": "N003",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T13:27:57.204768+01:00",
       "source": "kinetic",
       "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)",
@@ -2172,13 +2176,17 @@
       "text_tiktok": "Würdest du mitfliegen? Schreib es in die Kommentare 👇 #artemis #nasa #weltraum #mond #fürdich",
       "text_youtube": "Am 6. April 2026 flog die Mission Artemis II um den Mond und übertraf mit rund 407 000 Kilometern Abstand zur Erde den Rekord von Apollo 13 um etwa 6 600 Kilometer. Würdest du mitfliegen? 👇\n\nQuellen: NASA, ABC News, NBC. Stimme und Grafiken mit KI erstellt.\n\n#shorts #artemis #nasa #weltraum #wusstestdu",
       "scenes": 7,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b05830b328248f765f9220f",
+        "youtube": "6b05830bbc7aa0eec24abbf3"
+      },
       "group": "kin-space",
       "sources": [
         "https://www.nasa.gov/news-release/nasas-artemis-ii-crew-eclipses-record-for-farthest-human-spaceflight",
         "https://abc7.com/post/artemis-ii-astronauts-race-set-new-distance-record-earth-behold-moons-far-side/18847214/",
         "https://www.nbcchicago.com/news/national-international/artemis-2-astronauts-set-new-distance-record-moon-flyby/3918809/"
-      ]
+      ],
+      "due": "2026-11-25T16:00:00+01:00"
     },
     {
       "id": "N005",
