@@ -73,18 +73,20 @@
       "signal": "neu in den Top 1000 mit 30852 Aufrufen",
       "kind": "neu",
       "added": "2026-11-21",
-      "status": "candidate",
+      "status": "produced",
       "source": "radar",
-      "fit": "gut"
+      "fit": "gut",
+      "video": "Q002"
     },
     {
       "title": "Fiona (Flusspferd)",
       "signal": "neu in den Top 1000 mit 17723 Aufrufen",
       "kind": "neu",
       "added": "2026-11-21",
-      "status": "candidate",
+      "status": "produced",
       "source": "radar",
-      "fit": "gut"
+      "fit": "gut",
+      "video": "V001"
     },
     {
       "title": "Figuren der Harry-Potter-Romane",
