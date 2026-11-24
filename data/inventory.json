@@ -2107,7 +2107,7 @@
     {
       "id": "N002",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T13:20:53.486599+01:00",
       "source": "kinetic",
       "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)",
@@ -2121,13 +2121,17 @@
       "text_tiktok": "Welchen Spar-Trick nutzt du? Schreib es in die Kommentare 👇 #blackfriday #sparen #tipps #wusstestdu #fürdich",
       "text_youtube": "Laut einer Auswertung von Idealo (Black Friday 2025, rund 10 000 beliebte Produkte) lag die durchschnittliche Ersparnis bei 8 Prozent, und 52 Prozent der Produkte waren früher im November schon günstiger. Welchen Spar-Trick nutzt du? 👇\n\nQuellen: Idealo (Preisauswertung, ein Vergleichsportal mit eigenem Interesse), Verbraucherzentrale. Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #sparen #tipps #wusstestdu",
       "scenes": 6,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b05816a35d19879be29e996",
+        "youtube": "6b05816b508d3abe26a35f91"
+      },
       "group": "kin-spar",
       "sources": [
         "https://retail-news.de/black-friday-2026-idealo-preisstudie-rabatte/",
         "https://www.evz.de/aktuelles/presse-archiv/black-friday-2025/",
         "https://www.pcgameshardware.de/Black-Friday-Sale-266963/News/Black-Friday-2025-Rabatte-oft-mehr-Schein-als-Sein-1484384/"
-      ]
+      ],
+      "due": "2026-11-25T10:00:00+01:00"
     }
   ]
 }
