@@ -2222,32 +2222,6 @@
       "due": "2026-11-26T16:00:00+01:00"
     },
     {
-      "id": "N007",
-      "format": "wissen",
-      "status": "ready",
-      "created": "2026-11-24T13:30:11.004140+01:00",
-      "source": "kinetic",
-      "topic": "Handy über Nacht laden: schadet das dem Akku?",
-      "hook_type": "Mythos aufdecken",
-      "series": null,
-      "episode": null,
-      "duration": 44.1,
-      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N007.mp4",
-      "title_tiktok": "Handy über Nacht laden: Fehler? 🔋",
-      "title_youtube": "Schadet nächtliches Laden deinem Handy-Akku? Das sagen die Ratgeber #shorts",
-      "text_tiktok": "Lädst du nachts? Schreib es in die Kommentare 👇 #handy #akku #technik #tipps #fürdich",
-      "text_youtube": "Moderne Handys stoppen bei 100 Prozent, trotzdem belastet stundenlanges Verharren auf voller Ladung die Lithium-Ionen-Akkus. Optimiertes Laden hilft. Lädst du nachts? 👇\n\nQuellen: Netzwelt, Mimikama, Utopia, GIGA. Stimme und Grafiken mit KI erstellt.\n\n#shorts #handy #akku #technik #wusstestdu",
-      "scenes": 6,
-      "buffer": {},
-      "group": "kin-tech",
-      "sources": [
-        "https://www.netzwelt.de/news/217415-mythos-akkuschaden-naechtliche-aufladen-handys-wirklich-schaedlich.html",
-        "https://www.mimikama.org/akku-mythos-naechtliches-laden-schadet-nicht/",
-        "https://utopia.de/ratgeber/handy-nachts-laden-energie-mythen/",
-        "https://www.techbook.de/mobile-lifestyle/smartphone/handy-akku-laden-schaden"
-      ]
-    },
-    {
       "id": "N006",
       "format": "wissen",
       "status": "ready",
@@ -2271,6 +2245,32 @@
         "https://www.shacknews.com/article/151326/sony-ps5-has-sold-100-million-units-since-launch",
         "https://www.invenglobal.com/articles/28482/ps5-passes-100-million-units-shipped-sony-confirms",
         "https://www.channelnews.com.au/sonys-ps5-crosses-100-million-sales-despite-rising-console-prices/"
+      ]
+    },
+    {
+      "id": "N007",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-24T13:35:14.130171+01:00",
+      "source": "kinetic",
+      "topic": "Handy über Nacht laden: schadet das dem Akku?",
+      "hook_type": "Mythos aufdecken",
+      "series": null,
+      "episode": null,
+      "duration": 44.1,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N007.mp4",
+      "title_tiktok": "Handy über Nacht laden: Fehler? 🔋",
+      "title_youtube": "Schadet nächtliches Laden deinem Handy-Akku? Das sagen die Ratgeber #shorts",
+      "text_tiktok": "Lädst du nachts? Schreib es in die Kommentare 👇 #handy #akku #technik #tipps #fürdich",
+      "text_youtube": "Moderne Handys stoppen bei 100 Prozent, trotzdem belastet stundenlanges Verharren auf voller Ladung die Lithium-Ionen-Akkus. Optimiertes Laden hilft. Lädst du nachts? 👇\n\nQuellen: Netzwelt, Mimikama, Utopia, GIGA. Stimme und Grafiken mit KI erstellt.\n\n#shorts #handy #akku #technik #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-tech",
+      "sources": [
+        "https://www.netzwelt.de/news/217415-mythos-akkuschaden-naechtliche-aufladen-handys-wirklich-schaedlich.html",
+        "https://www.mimikama.org/akku-mythos-naechtliches-laden-schadet-nicht/",
+        "https://utopia.de/ratgeber/handy-nachts-laden-energie-mythen/",
+        "https://www.techbook.de/mobile-lifestyle/smartphone/handy-akku-laden-schaden"
       ]
     }
   ]
