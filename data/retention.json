@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "videos": [
     {
       "yt_id": "BibnA5CKqjE",
@@ -67,7 +67,7 @@
       "format": "wissen",
       "hook": "Alltagsfrage Warum",
       "title": "Warum sind Flugzeugfenster nie eckig? ✈️ #shorts",
-      "views": 214,
+      "views": 213,
       "avg_s": 17.0,
       "avg_pct": 44.0
     },
@@ -77,9 +77,29 @@
       "format": "wissen",
       "hook": "Mythos-Frage",
       "title": "Du nutzt nur 10 Prozent deines Gehirns? Der Mythos im Check 🧠 #shorts",
-      "views": 183,
+      "views": 186,
       "avg_s": 15.0,
-      "avg_pct": 42.6
+      "avg_pct": 42.7
+    },
+    {
+      "yt_id": "LbDLZw0tG70",
+      "id": "T002",
+      "format": "wissen",
+      "hook": "Staunen + Ergebnis",
+      "title": "Dieses Metall schmilzt in deiner Hand: Gallium und das Periodensystem 🧪 #shorts",
+      "views": 115,
+      "avg_s": 19.0,
+      "avg_pct": 47.6
+    },
+    {
+      "yt_id": "zV-YWIko5FM",
+      "id": "D022",
+      "format": "wissen",
+      "hook": "drive-reserve",
+      "title": "Fällt Toast immer auf die Butterseite? Der Mythos im Check 🍞 #shorts",
+      "views": 95,
+      "avg_s": 21.0,
+      "avg_pct": 34.0
     },
     {
       "yt_id": "vAnTfkSdx_I",
@@ -107,7 +127,7 @@
       "format": "–",
       "hook": "–",
       "title": "Um 3:17 Uhr knackt das Babyfon… | Horror Geschichte (Deutsch)",
-      "views": 53,
+      "views": 50,
       "avg_s": 168.0,
       "avg_pct": 27.6
     },
@@ -130,16 +150,6 @@
       "views": 29,
       "avg_s": 20.0,
       "avg_pct": 33.5
-    },
-    {
-      "yt_id": "zV-YWIko5FM",
-      "id": "D022",
-      "format": "wissen",
-      "hook": "drive-reserve",
-      "title": "Fällt Toast immer auf die Butterseite? Der Mythos im Check 🍞 #shorts",
-      "views": 28,
-      "avg_s": 6.0,
-      "avg_pct": 10.0
     },
     {
       "yt_id": "sIG9byeJjCc",
