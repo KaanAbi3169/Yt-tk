@@ -2246,6 +2246,32 @@
         "https://utopia.de/ratgeber/handy-nachts-laden-energie-mythen/",
         "https://www.techbook.de/mobile-lifestyle/smartphone/handy-akku-laden-schaden"
       ]
+    },
+    {
+      "id": "N006",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-24T13:30:26.668822+01:00",
+      "source": "kinetic",
+      "topic": "PlayStation 5: über 100 Millionen Konsolen (Sony, 10.11.2026)",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 42.9,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N006.mp4",
+      "title_tiktok": "PS5: 100 Millionen Konsolen 🎮",
+      "title_youtube": "PlayStation 5 knackt 100 Millionen: So steht sie gegen PS4 und PS2 #shorts",
+      "text_tiktok": "Welche Konsole hattest du als Erste? Schreib es in die Kommentare 👇 #ps5 #playstation #gaming #sony #fürdich",
+      "text_youtube": "Laut Sony wurden bis zum 10. November 2026 mehr als 100 Millionen PlayStation 5 ausgeliefert (Auslieferung an den Handel, nicht Verkäufe an Kunden). Welche Konsole hattest du als Erste? 👇\n\nQuellen: Sony Business Data (über TechSpot und Shacknews), Inven Global. Stimme und Grafiken mit KI erstellt.\n\n#shorts #ps5 #playstation #gaming #wusstestdu",
+      "scenes": 6,
+      "buffer": {},
+      "group": "kin-gaming",
+      "sources": [
+        "https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html",
+        "https://www.shacknews.com/article/151326/sony-ps5-has-sold-100-million-units-since-launch",
+        "https://www.invenglobal.com/articles/28482/ps5-passes-100-million-units-shipped-sony-confirms",
+        "https://www.channelnews.com.au/sonys-ps5-crosses-100-million-sales-despite-rising-console-prices/"
+      ]
     }
   ]
 }
