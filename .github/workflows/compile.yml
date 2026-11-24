@@ -3,8 +3,7 @@ name: compile
 # V-023: Baut das Zusammenschnitt-Langvideo L001 (10 Haushaltstricks) aus Vorrats-Shorts, ohne Claude, 0 EUR.
 # Zeitplan: --auto (siehe unten). Von Hand: --all, --id L00x oder --dry. Ergebnis: Branch media -> videos/L001.mp4 und Eintrag im Inventar (Status ready).
 on:
-  schedule:
-    - cron: "30 3 * * *"   # 04:30 MEZ: ist der Vorrat an Langvideos unter 3, wird das naechste Zusammenschnitt-Video gebaut (ohne Claude)
+  # Automatik AUS (Auftrag des Inhabers 24.11.2026: keine alten Zusammenschnitte mehr). Nur noch von Hand startbar.
   workflow_dispatch:
     inputs:
       args:
