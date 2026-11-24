@@ -1,0 +1,674 @@
+{
+ "id": "E002",
+ "topic": "GTA 6: Die Zahlen zum Start (Verschiebungen, Trailer-Rekorde, Preis, Kosten, Starttag)",
+ "hook_type": "Kinetic-Doku Nachrichten",
+ "group": "lang-kin",
+ "theme": "neon",
+ "music": "waswaerewenn",
+ "hl": "\\d|gta|milliarden|millionen",
+ "title_youtube": "GTA 6: Rekord-Start? Alle Zahlen im Check (Wartezeit, Trailer, Preis, Umsatz)",
+ "text_youtube": "GTA 6 ist seit dem 19. November 2026 erhältlich. In diesem Video: die zwei Verschiebungen, die Trailer-Rekorde, der Preis, die geschätzten Kosten und der Starttag-Umsatz. Zahlen, die nicht offiziell sind, sind als Schätzung gekennzeichnet.\n\n{KAPITEL}\n\nQuellen: Fox 5 NY, 80.lv, Guinness World Records, TechCrunch, Variety, Hollywood Reporter, TechRadar, Video Games Chronicle, Engadget, Windows Central, Destructoid, TechSpot (Sony). Kein Spielmaterial, keine Logos. Alle Zahlen mit Quelle, Schätzungen markiert.\n\nWas meinst du: Ist GTA 6 den Hype wert? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#gta6 #gaming #rockstar #nachrichten #wissen",
+ "sources": [
+  "https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record",
+  "https://80.lv/articles/report-gta-6-generated-nearly-usd2b-in-sales-by-launch-day",
+  "https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900",
+  "https://techcrunch.com/2023/12/05/grand-theft-auto-vi-trailer-breaks-mrbeasts-record-for-most-youtube-views-in-24-hours/",
+  "https://www.hollywoodreporter.com/business/digital/gta6-release-date-delayed-2026-rockstar-games-1236205960/",
+  "https://www.videogameschronicle.com/news/take-two-ceo-says-it-supports-fully-rockstars-gta-6-delay-expects-record-net-bookings-this-year-regardless/",
+  "https://www.techradar.com/gaming/the-latest-grand-theft-auto-6-trailer-has-set-a-major-record-by-racking-up-475-million-views-in-24-hours",
+  "https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box",
+  "https://destructoid.com/why-the-rumored-2-billion-gta-6-budget-is-quite-unlikely-to-be-real",
+  "https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html"
+ ],
+ "thumb": {
+  "title": "GTA 6",
+  "sub": "Die Zahlen zum Start",
+  "big": "1,84 Mrd. $"
+ },
+ "blocks": [
+  {
+   "text": "Am neunzehnten November zweitausendsechsundzwanzig ist Grand Theft Auto sechs erschienen. Dreizehn Jahre lang haben Millionen Menschen auf diesen Tag gewartet. In diesem Video schauen wir auf die Zahlen: die Verschiebungen, die Trailer-Rekorde, den Preis, die geschätzten Kosten und den Start. Eine Regel vorweg: Was belegt ist, nenne ich belegt, und alles andere heißt Schätzung.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "GTA 6: DIE ZAHLEN",
+     "emoji": "🎮",
+     "hl": "GTA"
+    },
+    {
+     "type": "zahl",
+     "value": 13,
+     "text": "13",
+     "unit": "JAHRE",
+     "label": "Wartezeit seit GTA 5 (2013)"
+    }
+   ],
+   "chapter": "Einleitung",
+   "part": 1
+  },
+  {
+   "text": "Zuerst die Wartezeit. Der Vorgänger, GTA fünf, kam am siebzehnten September zweitausenddreizehn heraus. Bis zum Start von GTA sechs sind das mehr als dreizehn Jahre. Das ist eine sehr lange Pause für eine so große Spielreihe, und genau das hat die Erwartungen so hoch getrieben.",
+   "scenes": [
+    {
+     "type": "zeit",
+     "title": "13 JAHRE ZWISCHEN ZWEI GTA",
+     "events": [
+      {
+       "year": "2013",
+       "text": "GTA 5 erscheint"
+      },
+      {
+       "year": "2023",
+       "text": "Erster Trailer zu GTA 6"
+      },
+      {
+       "year": "2025",
+       "text": "Zweiter Trailer, erste Verschiebung"
+      },
+      {
+       "year": "2026",
+       "text": "GTA 6 erscheint"
+      }
+     ],
+     "focus": 3
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine Frage taucht in dieser Zeit immer wieder auf: Warum dauert das so lange? Rockstar hat dazu selten etwas gesagt. Was wir wissen, steht in den Mitteilungen des Studios und des Mutterkonzerns Take-Two. Und diese Mitteilungen erzählen eine Geschichte aus zwei Verschiebungen.",
+   "scenes": [
+    {
+     "type": "zitat",
+     "text": "Rockstar sagt wenig. Was wir wissen, steht in den Mitteilungen von Rockstar und Take-Two.",
+     "hl": "Take-Two"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Ursprünglich war der Start für den Herbst zweitausendfünfundzwanzig geplant. Anfang Mai zweitausendfünfundzwanzig verkündete Rockstar die erste Verschiebung auf den sechsundzwanzigsten Mai zweitausendsechsundzwanzig. Das Studio entschuldigte sich bei den Fans und erklärte, das Spiel brauche mehr Zeit, um die gewohnte Qualität zu erreichen.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "1",
+     "title": "Die zwei Verschiebungen"
+    },
+    {
+     "type": "hook",
+     "text": "ERSTE VERSCHIEBUNG: 26. MAI 2026",
+     "emoji": "⏳",
+     "hl": "MAI"
+    }
+   ],
+   "chapter": "Die zwei Verschiebungen",
+   "part": 1
+  },
+  {
+   "text": "Im November zweitausendfünfundzwanzig kam die zweite Verschiebung, bekanntgegeben zusammen mit den Quartalszahlen von Take-Two. Das neue Datum: Donnerstag, der neunzehnte November zweitausendsechsundzwanzig. Die Aktie des Konzerns fiel danach um fast zehn Prozent, erholte sich aber im Laufe der Investorenrunde etwas.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "ZWEITE VERSCHIEBUNG: 19. NOVEMBER 2026",
+     "emoji": "📅",
+     "hl": "NOVEMBER"
+    },
+    {
+     "type": "zahl",
+     "value": 10,
+     "text": "-10",
+     "unit": "%",
+     "label": "Take-Two-Aktie nach der Ankündigung (fast)",
+     "static": true
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Der Chef von Take-Two sagte damals, er sei sehr zuversichtlich beim neuen Datum, und der Konzern stehe voll hinter der Entscheidung von Rockstar. Das Datum ist am Ende tatsächlich geblieben: Das Spiel erschien wie angekündigt. Für die Fans war das nach zwei Verschiebungen die wichtigste Nachricht überhaupt.",
+   "scenes": [
+    {
+     "type": "zeit",
+     "title": "DER WEG ZUM START",
+     "events": [
+      {
+       "year": "Herbst 2025",
+       "text": "ursprünglicher Plan"
+      },
+      {
+       "year": "Mai 2025",
+       "text": "Verschiebung auf 26.5.2026"
+      },
+      {
+       "year": "Nov. 2025",
+       "text": "Verschiebung auf 19.11.2026"
+      },
+      {
+       "year": "19.11.2026",
+       "text": "Start"
+      }
+     ],
+     "focus": 3
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Interessant ist auch, was Take-Two damals zusätzlich sagte: Der Konzern erwartete trotz der Verschiebung für das laufende Geschäftsjahr Rekord-Nettoumsätze. Mit anderen Worten: Die Verschiebung kostete Zeit und Börsenwert, aber der Konzern ging davon aus, dass sich das Warten finanziell lohnt. Ob das aufgeht, zeigen die Zahlen der kommenden Quartale.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "TROTZDEM: REKORD ERWARTET",
+     "emoji": "💰",
+     "hl": "REKORD"
+    },
+    {
+     "type": "zitat",
+     "text": "Take-Two erwartete trotz der Verschiebung Rekord-Nettoumsätze im laufenden Geschäftsjahr.",
+     "hl": "Rekord"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Dann die Trailer. Der erste, im Dezember zweitausenddreiundzwanzig veröffentlicht, kam laut YouTube in den ersten vierundzwanzig Stunden auf mehr als dreiundneunzig Millionen Aufrufe. Guinness zählte ihn als meistgesehene Spiele-Enthüllung auf YouTube und als meistgesehenes Video außerhalb der Musik innerhalb eines Tages.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "2",
+     "title": "Die Trailer-Rekorde"
+    },
+    {
+     "type": "zahl",
+     "value": 93,
+     "text": "93+",
+     "unit": "MIO. AUFRUFE",
+     "label": "Trailer 1, erste 24 Stunden auf YouTube"
+    }
+   ],
+   "chapter": "Die Trailer-Rekorde",
+   "part": 1
+  },
+  {
+   "text": "Den bisherigen Rekord für ein Video außerhalb der Musik hielt der Youtuber MrBeast mit rund neunundfünfzig Millionen Aufrufen in vierundzwanzig Stunden. Der Trailer übertraf ihn deutlich. Nur ein Musikvideo lag noch davor: Butter von BTS mit gut hundertacht Millionen Aufrufen am ersten Tag.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "AUFRUFE IN DEN ERSTEN 24 STUNDEN (MIO.)",
+     "items": [
+      {
+       "name": "BTS: Butter",
+       "value": 108,
+       "text": "108+"
+      },
+      {
+       "name": "GTA 6 Trailer 1",
+       "value": 93,
+       "text": "93+"
+      },
+      {
+       "name": "MrBeast-Video",
+       "value": 59.4,
+       "text": "59,4"
+      }
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Der zweite Trailer erreichte laut Rockstar etwa vierhundertfünfundsiebzig Millionen Aufrufe in einem Tag. Aber Vorsicht: Diese Zahl zählt mehrere Plattformen zusammen, während der erste Trailer nur auf YouTube lief. Sie ist deshalb mit dem YouTube-Rekord nicht direkt vergleichbar.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 475,
+     "text": "475",
+     "unit": "MIO. AUFRUFE",
+     "label": "Trailer 2, 24 Stunden, alle Plattformen (laut Rockstar)"
+    },
+    {
+     "type": "hook",
+     "text": "NICHT DIREKT VERGLEICHBAR",
+     "emoji": "⚠️",
+     "hl": "VERGLEICHBAR"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine Quelle nennt für den zweiten Trailer allein auf YouTube rund fünfundachtzig Millionen Aufrufe in vierundzwanzig Stunden. Das wäre weniger als beim ersten Trailer, aber immer noch eine gewaltige Zahl. Der Unterschied zeigt, wie sehr es darauf ankommt, was genau gezählt wird: nur YouTube oder alle Plattformen zusammen.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 85,
+     "text": "85",
+     "unit": "MIO. AUFRUFE",
+     "label": "Trailer 2 nur auf YouTube, 24 Stunden (eine Quelle)"
+    },
+    {
+     "type": "karten",
+     "title": "WAS WIRD GEZÄHLT?",
+     "items": [
+      "Nur YouTube?",
+      "Alle Plattformen zusammen?",
+      "Welcher Zeitraum?"
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Zum Preis: Rockstar nannte im Juni zweitausendsechsundzwanzig die Preise. Die Standardversion kostet neunundsiebzig Dollar und neunundneunzig Cent, die Ultimate-Edition neunundneunzig Dollar und neunundneunzig Cent. Damit liegt GTA sechs über den üblichen neunundsechzig Dollar und neunundneunzig Cent großer Spiele, aber unter der Marke von hundert Dollar, über die lange spekuliert wurde.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "3",
+     "title": "Preis und Plattformen"
+    },
+    {
+     "type": "balken",
+     "title": "PREIS IN DOLLAR",
+     "items": [
+      {
+       "name": "Üblicher Preis",
+       "value": 69.99,
+       "text": "69,99"
+      },
+      {
+       "name": "GTA 6 Standard",
+       "value": 79.99,
+       "text": "79,99"
+      },
+      {
+       "name": "GTA 6 Ultimate",
+       "value": 99.99,
+       "text": "99,99"
+      }
+     ]
+    }
+   ],
+   "chapter": "Preis und Plattformen",
+   "part": 1
+  },
+  {
+   "text": "Erschienen ist das Spiel für die PlayStation fünf und die Xbox Series X und S. Eine PC-Version gehörte nicht zum Start, es wird erwartet, dass sie später folgt. Außerdem enthält die Verpackung der Kaufversion keine Disc, sondern einen Code zum Herunterladen.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "ZUM START",
+     "items": [
+      "PlayStation 5",
+      "Xbox Series X und S",
+      "PC: nicht zum Start",
+      "Kaufversion: Download-Code statt Disc"
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Wie teuer die Entwicklung war, hat Rockstar nie bestätigt. Analysten und Medien schätzen sie auf rund eine bis eineinhalb Milliarden Dollar, andere Quellen nennen noch höhere Summen. Diese Zahlen sind unbestätigt. Ein Teil davon dürfte außerdem auf Marketing entfallen und nicht nur auf die Entwicklung.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "4",
+     "title": "Was kostet so ein Spiel?"
+    },
+    {
+     "type": "zahl",
+     "value": 1.5,
+     "text": "1-1,5",
+     "unit": "MRD. $",
+     "label": "geschätzte Kosten, unbestätigt",
+     "static": true
+    }
+   ],
+   "chapter": "Was kostet so ein Spiel?",
+   "part": 2
+  },
+  {
+   "text": "Zum Vergleich: GTA fünf hat nach Schätzungen von Analysten, auf heutige Preise umgerechnet, rund dreihundertdreiunddreißig Millionen Dollar gekostet, davon etwa hundertsiebenunddreißig Millionen für die Entwicklung. GTA sechs wäre damit ein Vielfaches davon, sollten die Schätzungen stimmen.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "GESCHÄTZTE GESAMTKOSTEN (MIO. $)",
+     "items": [
+      {
+       "name": "GTA 5 (inflationsbereinigt)",
+       "value": 333,
+       "text": "333"
+      },
+      {
+       "name": "GTA 6 (Schätzung, niedrig)",
+       "value": 1000,
+       "text": "1 000"
+      },
+      {
+       "name": "GTA 6 (Schätzung, hoch)",
+       "value": 1500,
+       "text": "1 500"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Warum sprechen wir ständig von Schätzungen? Weil Take-Two keine Tageszahlen veröffentlicht. Marktforscher wie Sensor Tower und Newzoo rechnen aus Marktdaten hoch, wie viel verkauft wurde. Diese Rechnungen können gut sein, aber sie können auch daneben liegen, und sie widersprechen sich manchmal.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "WARUM NUR SCHÄTZUNGEN?",
+     "emoji": "🧮",
+     "hl": "SCHÄTZUNGEN"
+    },
+    {
+     "type": "karten",
+     "title": "SO LIEST DU ZAHLEN",
+     "items": [
+      "Offiziell oder Schätzung?",
+      "Ausgeliefert oder verkauft?",
+      "Umsatz ist nicht Gewinn"
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Drei Begriffe helfen beim Lesen solcher Zahlen. Umsatz ist das eingenommene Geld, nicht der Gewinn. Ausgeliefert heißt, dass Geräte an den Handel gingen, nicht, dass jemand sie gekauft hat. Und eine Schätzung ist eine Rechnung von außen, die der Hersteller weder bestätigt noch widerlegt hat. Wer diese drei Wörter kennt, fällt auf weniger Schlagzeilen herein.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "DREI WÖRTER, DIE DU KENNEN SOLLTEST",
+     "items": [
+      "Umsatz ≠ Gewinn",
+      "Ausgeliefert ≠ verkauft",
+      "Schätzung ≠ offiziell"
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Im Quartal April bis Juni zweitausendsechsundzwanzig meldete Take-Two Umsätze von eins Komma drei neun Milliarden Dollar. In diese Zeit fiel der Start der Vorbestellungen. Der Konzern sagte dazu nur, die Vorbestellungen lägen weit über den eigenen Erwartungen. Genaue Stückzahlen nannte er nicht.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "5",
+     "title": "Der Start"
+    },
+    {
+     "type": "zahl",
+     "value": 1.39,
+     "text": "1,39",
+     "unit": "MRD. $",
+     "label": "Take-Two-Umsatz im Quartal April bis Juni 2026",
+     "decimals": 2
+    }
+   ],
+   "chapter": "Der Start",
+   "part": 2
+  },
+  {
+   "text": "Und dann der Starttag. Am neunzehnten November zweitausendsechsundzwanzig ging GTA sechs an den Start. Laut Schätzungen von Marktforschern kam es am ersten Tag auf rund eins Komma acht vier Milliarden Dollar Umsatz. Das berichten unter anderem Fox fünf und das Branchenportal achtzig Level.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "19. NOVEMBER 2026: START",
+     "emoji": "🚀",
+     "hl": "START"
+    },
+    {
+     "type": "zahl",
+     "value": 1.84,
+     "text": "1,84",
+     "unit": "MRD. $",
+     "label": "geschätzter Umsatz am Starttag",
+     "decimals": 2
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Das wären mehr als doppelt so viel wie bei GTA fünf. Der Vorgänger hatte im Jahr zweitausenddreizehn in den ersten vierundzwanzig Stunden laut Guinness rund achthundertsechzehn Millionen Dollar eingespielt und elf Komma zwei Millionen Exemplare verkauft. Nach drei Tagen war die Marke von einer Milliarde Dollar erreicht.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "UMSATZ AM ERSTEN TAG",
+     "a": {
+      "name": "GTA 5 (2013)",
+      "value": 0.816,
+      "text": "0,82 Mrd. $"
+     },
+     "b": {
+      "name": "GTA 6 (Schätzung)",
+      "value": 1.84,
+      "text": "1,84 Mrd. $"
+     },
+     "win": "b"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Der Vorgänger hat damals gleich mehrere Rekorde gebrochen. Guinness bestätigte sechs neue Weltrekorde, darunter den höchsten Umsatz eines Unterhaltungsprodukts in vierundzwanzig Stunden und die schnellste Unterhaltungsmarke auf eine Milliarde Dollar, nämlich in nur drei Tagen. Der vorherige Rekordhalter, Call of Duty Black Ops zwei, hatte dafür fünfzehn Tage gebraucht.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 6,
+     "text": "6",
+     "unit": "WELTREKORDE",
+     "label": "bestätigte Guinness für GTA 5 (2013)"
+    },
+    {
+     "type": "balken",
+     "title": "TAGE BIS ZUR ERSTEN MILLIARDE",
+     "items": [
+      {
+       "name": "Call of Duty Black Ops 2",
+       "value": 15,
+       "text": "15"
+      },
+      {
+       "name": "GTA 5",
+       "value": 3,
+       "text": "3"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Zu den Stückzahlen: Schätzungen vom Starttag sprechen von rund siebzehn bis neunzehn Millionen verkauften Exemplaren. Zum Vergleich: GTA fünf kam in den ersten vierundzwanzig Stunden auf gut elf Millionen. Auch das sind keine offiziellen Zahlen, sondern Hochrechnungen von Marktforschern.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 19,
+     "text": "17-19",
+     "unit": "MIO. EXEMPLARE",
+     "label": "geschätzt am Starttag (GTA 5: 11,2 Mio.)",
+     "static": true
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Vor dem Start gab es außerdem Prognosen für die Stückzahlen. Eine Investmentbank rechnete mit rund sechsundvierzig Millionen Exemplaren beim Start, andere Analysten erwarteten bis zu einundfünfzig Millionen in der Debütwoche. Auch das sind Vorhersagen und keine Messwerte. Sie zeigen aber, mit welchen Größenordnungen die Branche gerechnet hat.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 51,
+     "text": "46-51",
+     "unit": "MIO. EXEMPLARE",
+     "label": "Prognose vor dem Start (Analysten)",
+     "static": true
+    },
+    {
+     "type": "hook",
+     "text": "PROGNOSE, NICHT MESSWERT",
+     "emoji": "🔮",
+     "hl": "PROGNOSE"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Wichtig ist: Die Zahlen von GTA sechs sind Schätzungen. Rockstar und Take-Two haben bisher keine offiziellen Verkaufszahlen genannt. Wenn sie kommen, können sie höher oder niedriger ausfallen. Bei GTA fünf hat Take-Two die ersten Zahlen schon am Tag nach dem Start veröffentlicht, deshalb könnten sie bald folgen.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "SCHÄTZUNG, KEINE OFFIZIELLE ZAHL",
+     "emoji": "⚠️",
+     "hl": "SCHÄTZUNG"
+    },
+    {
+     "type": "zitat",
+     "text": "Offizielle Zahlen von Rockstar und Take-Two gibt es bisher nicht.",
+     "hl": "Offizielle"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Außerdem sollen laut einer Schätzung rund drei Viertel der frühen Käufe auf der PlayStation entstanden sein, der Rest auf der Xbox. Das passt zu einem Markt, in dem die PlayStation fünf gerade die Marke von hundert Millionen Konsolen erreicht hat. Sony bestätigte sie für den zehnten November zweitausendsechsundzwanzig, gerechnet nach ausgelieferten Geräten.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 75,
+     "text": "75",
+     "unit": "%",
+     "label": "der frühen Käufe auf PlayStation (Schätzung)"
+    },
+    {
+     "type": "zahl",
+     "value": 100,
+     "text": "100+",
+     "unit": "MIO. PS5",
+     "label": "ausgeliefert bis 10.11.2026 (Sony)"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Spannend ist der Blick auf die Konsole selbst. Sony hatte bis Ende September zweiundneunzig Komma neun Millionen PlayStation fünf ausgeliefert, im Sommerquartal waren es nur zwei Komma sechs Millionen nach vier Millionen im Vorjahr. Die Verkäufe der Konsole waren also schon deutlich langsamer geworden. Ob GTA sechs sie wieder ankurbelt, ist offen.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 2.6,
+     "text": "2,6",
+     "unit": "MIO. IM SOMMER",
+     "label": "PS5-Auslieferungen Juli bis September 2026 (Vorjahr: 4,0)",
+     "decimals": 1
+    },
+    {
+     "type": "hook",
+     "text": "KURBELT GTA 6 DIE PS5 AN?",
+     "emoji": "❓",
+     "hl": "GTA"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Was kommt in den nächsten Wochen? Vor dem Start rechneten Analysten mit sehr hohen Umsätzen in der ersten Woche. Die Schätzungen von Newzoo reichten von gut drei bis über fünf Milliarden Dollar. Ob das eintritt, zeigen erst die offiziellen Zahlen. Bis dahin bleibt es eine Prognose.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "6",
+     "title": "Wie geht es weiter?"
+    },
+    {
+     "type": "zahl",
+     "value": 5.2,
+     "text": "3,3-5,2",
+     "unit": "MRD. $",
+     "label": "Prognose für die erste Woche (Newzoo)",
+     "static": true
+    }
+   ],
+   "chapter": "Wie geht es weiter?",
+   "part": 3
+  },
+  {
+   "text": "Einen Haken gibt es: Bei vielen vorbestellten Spielen fällt der Umsatz nach dem Start schneller ab, weil viele Käufer ihr Exemplar schon am ersten Tag abholen. Manche Analysten warnen deshalb davor, die Starttag-Zahlen einfach auf die ganze Woche hochzurechnen. Der Start allein sagt also noch nicht, wie lange der Erfolg anhält.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "START ≠ GANZE WOCHE",
+     "emoji": "📉",
+     "hl": "GANZE"
+    },
+    {
+     "type": "karten",
+     "title": "WAS DIE ZAHLEN NICHT SAGEN",
+     "items": [
+      "Wie lange der Erfolg anhält",
+      "Wie viel Gewinn bleibt",
+      "Wie gut das Spiel ist"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Ein Wort zu den Quellen. Für dieses Video habe ich Berichte von Fox fünf, achtzig Level, Guinness, TechCrunch, Variety, dem Hollywood Reporter, TechRadar, Video Games Chronicle und Windows Central verglichen. Wo sich Quellen widersprechen, habe ich das gesagt. Alle Links stehen in der Beschreibung, damit du die Zahlen selbst nachprüfen kannst.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "WOHER DIE ZAHLEN KOMMEN",
+     "items": [
+      "Rockstar und Take-Two (offiziell)",
+      "Guinness World Records (bestätigt)",
+      "Marktforscher (Schätzungen)",
+      "Sony (Auslieferungen)"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Und noch ein Gedanke zum Schluss, bevor wir zusammenfassen. Ein Rekord ist eine Zahl, kein Qualitätsurteil. Ob GTA sechs ein gutes Spiel ist, sagen weder die Verkaufszahlen noch die Trailer-Aufrufe, sondern die Menschen, die es spielen. Deshalb interessiert mich deine Meinung am Ende des Videos besonders.",
+   "scenes": [
+    {
+     "type": "zitat",
+     "text": "Ein Rekord ist eine Zahl, kein Qualitätsurteil.",
+     "hl": "Rekord"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Fassen wir zusammen. Dreizehn Jahre Wartezeit, zwei Verschiebungen, ein Trailer mit mehr als dreiundneunzig Millionen Aufrufen an einem Tag, ein Preis von neunundsiebzig Dollar neunundneunzig und ein geschätzter Starttag-Umsatz von eins Komma acht vier Milliarden Dollar. Alles, was geschätzt ist, bleibt bis zu einer offiziellen Zahl eine Schätzung.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "DIE ZAHLEN IM ÜBERBLICK",
+     "items": [
+      "13 Jahre Wartezeit",
+      "2 Verschiebungen",
+      "93 Mio. Aufrufe in 24 h (Trailer 1)",
+      "79,99 $ Standardpreis",
+      "1,84 Mrd. $ Umsatz am Starttag (Schätzung)"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Was meinst du: Ist GTA sechs den Hype wert, oder übertreiben die Zahlen? Hast du es schon gespielt und was ist dein Eindruck? Schreib es in die Kommentare, und wenn dir das Video gefallen hat, abonniere den Kanal für die nächsten Themen, die gerade aktuell sind.",
+   "scenes": [
+    {
+     "type": "frage",
+     "text": "IST GTA 6 DEN HYPE WERT?",
+     "options": [
+      "JA 🎮",
+      "NEIN",
+      "NOCH NICHT GESPIELT"
+     ]
+    }
+   ],
+   "part": 3
+  }
+ ]
+}
