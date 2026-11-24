@@ -2136,7 +2136,7 @@
     {
       "id": "N004",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T13:27:49.412399+01:00",
       "source": "kinetic",
       "topic": "Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)",
@@ -2150,14 +2150,18 @@
       "text_tiktok": "Echt oder künstlich? Schreib es in die Kommentare 👇 #weihnachten #weihnachtsbaum #advent #wusstestdu #fürdich",
       "text_youtube": "Laut dem Bundesverband der Weihnachtsbaumerzeuger werden in Deutschland jedes Jahr 23 bis 25 Millionen Weihnachtsbäume verkauft, etwa 19 Millionen davon wachsen hier. Echt oder künstlich? 👇\n\nQuellen: Bundesverband der Weihnachtsbaumerzeuger (über Payback und Bundesregierung), ZDFheute, Statista. Stimme und Grafiken mit KI erstellt.\n\n#shorts #weihnachten #weihnachtsbaum #advent #wusstestdu",
       "scenes": 7,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b05830ebc7aa0eec24abcca",
+        "youtube": "6b05830f35d19879be2a8ec0"
+      },
       "group": "kin-saison",
       "sources": [
         "https://www.bundesregierung.de/breg-de/service/archiv/fakten-zum-weihnachtsbaum-1688316",
         "https://www.payback.de/ratgeber/besser-leben/zahl-des-tages-weihnachtsbaeume",
         "https://www.zdfheute.de/wirtschaft/tannenbaum-teuer-kosten-weihnachten-weihnachtsbaeume-100.html",
         "https://de.statista.com/infografik/amp/20318/haeufigste-weihnachtsbaumarten-in-deutschland"
-      ]
+      ],
+      "due": "2026-11-26T10:00:00+01:00"
     },
     {
       "id": "N003",
@@ -2191,7 +2195,7 @@
     {
       "id": "N005",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T13:28:01.476746+01:00",
       "source": "kinetic",
       "topic": "ChatGPT: über eine Milliarde Nutzer laut OpenAI",
@@ -2205,13 +2209,17 @@
       "text_tiktok": "Nutzt du ChatGPT? Schreib es in die Kommentare 👇 #chatgpt #ki #openai #technik #fürdich",
       "text_youtube": "OpenAI meldete im Sommer 2026 mehr als eine Milliarde aktive Nutzer, im Februar 2026 waren es laut TechCrunch 900 Millionen pro Woche. Die Zahlen stammen von OpenAI und messen nicht immer dasselbe. Nutzt du ChatGPT? 👇\n\nQuellen: TechCrunch, The Next Web, Bloomberg Law. Stimme und Grafiken mit KI erstellt.\n\n#shorts #chatgpt #ki #openai #wusstestdu",
       "scenes": 7,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b05831035d19879be2a8f0e",
+        "youtube": "6b05831135d19879be2a9009"
+      },
       "group": "kin-tech",
       "sources": [
         "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
         "https://thenextweb.com/news/chatgpt-1-billion-weekly-active-users-openai-target",
         "https://news.bloomberglaw.com/artificial-intelligence/openai-has-more-than-1-billion-users-2-million-businesses"
-      ]
+      ],
+      "due": "2026-11-26T16:00:00+01:00"
     }
   ]
 }
