@@ -1,0 +1,16 @@
+{
+ "id": "N006", "topic": "PlayStation 5: über 100 Millionen Konsolen (Sony, 10.11.2026)", "hook_type": "Zahl-Schock", "group": "kin-gaming", "theme": "fire", "music": "waswaerewenn",
+ "hl": "millionen|hundert|vierte",
+ "script": "Die PS fünf hat die Marke von hundert Millionen geknackt. Sony bestätigt: Zum zehnten November zweitausendsechsundzwanzig wurden mehr als hundert Millionen Konsolen ausgeliefert. Das ist kurz vor dem sechsten Geburtstag der Konsole. Zum Vergleich: Die PlayStation vier kam auf über einhundertsiebzehn Millionen, die PlayStation zwei sogar auf über einhundertsechzig Millionen. Die erste PlayStation liegt bei gut einhundertzwei Millionen. Damit ist die PS fünf erst die vierte Sony-Konsole mit dieser Marke. Aber die Verkäufe werden langsamer. Im Sommerquartal waren es nur zwei Komma sechs Millionen statt vier Millionen im Vorjahr. Welche Konsole hattest du als Erste? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"100 MILLIONEN PS5","emoji":"🎮","hl":"100"},
+  {"type":"zahl","at":"best.tigt","fallback":0.1,"value":100,"text":"100+","unit":"MIO. KONSOLEN","label":"ausgeliefert bis 10.11.2026 (Sony)"},
+  {"type":"balken","at":"vergleich","fallback":0.36,"title":"SONY-KONSOLEN (MIO.)","items":[{"name":"PS2","value":160,"text":"160+"},{"name":"PS4","value":117,"text":"117+"},{"name":"PS1","value":102,"text":"102"},{"name":"PS5","value":100,"text":"100+"}]},
+  {"type":"hook","at":"damit","fallback":0.68,"text":"ERST DIE 4. SONY-KONSOLE MIT 100 MIO.","emoji":"🏆","hl":"4\\."},
+  {"type":"zahl","at":"^aber$","fallback":0.78,"value":2.6,"decimals":1,"text":"2,6","unit":"MIO. IM SOMMER","label":"statt 4,0 Mio. im Vorjahr"},
+  {"type":"frage","at":"^welche$","fallback":0.92,"text":"DEINE ERSTE KONSOLE?","options":["PLAYSTATION 🎮","ANDERE"]}
+ ],
+ "title_tiktok":"PS5: 100 Millionen Konsolen 🎮","title_youtube":"PlayStation 5 knackt 100 Millionen: So steht sie gegen PS4 und PS2 #shorts",
+ "text_tiktok":"Welche Konsole hattest du als Erste? Schreib es in die Kommentare 👇 #ps5 #playstation #gaming #sony #fürdich","text_youtube":"Laut Sony wurden bis zum 10. November 2026 mehr als 100 Millionen PlayStation 5 ausgeliefert (Auslieferung an den Handel, nicht Verkäufe an Kunden). Welche Konsole hattest du als Erste? 👇\n\nQuellen: Sony Business Data (über TechSpot und Shacknews), Inven Global. Stimme und Grafiken mit KI erstellt.\n\n#shorts #ps5 #playstation #gaming #wusstestdu",
+ "sources":["https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html","https://www.shacknews.com/article/151326/sony-ps5-has-sold-100-million-units-since-launch","https://www.invenglobal.com/articles/28482/ps5-passes-100-million-units-shipped-sony-confirms","https://www.channelnews.com.au/sonys-ps5-crosses-100-million-sales-despite-rising-console-prices/"]
+}

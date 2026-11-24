@@ -1,0 +1,16 @@
+{
+ "id": "N007", "topic": "Handy über Nacht laden: schadet das dem Akku?", "hook_type": "Mythos aufdecken", "group": "kin-tech", "theme": "toxic", "music": "wissen",
+ "hl": "hundert|achtzig|nein|optimiertes",
+ "script": "Schadet das nächtliche Laden wirklich deinem Handy? Kurz gesagt: Nein, aber es gibt einen Haken. Moderne Handys stoppen den Ladevorgang bei hundert Prozent, Ratgeber wie Netzwelt und Mimikama nennen den Mythos überholt. Aber stundenlang auf hundert Prozent zu bleiben belastet Lithium-Ionen-Akkus, weil sie die hohe Spannung schlecht vertragen. Deshalb laden viele Hersteller nachts nur bis etwa achtzig Prozent und füllen kurz vor dem Aufstehen auf. Zwei Tipps: Schalte optimiertes Laden in den Einstellungen ein. Und lade nicht ständig von null auf voll. Lädst du nachts? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"SCHADET NÄCHTLICHES LADEN?","emoji":"🔋","hl":"SCHADET"},
+  {"type":"hook","at":"^kurz$","fallback":0.14,"text":"NEIN. ABER ES GIBT EINEN HAKEN","emoji":"☝️","hl":"HAKEN"},
+  {"type":"zahl","at":"^aber$","fallback":0.4,"value":100,"text":"100","unit":"%","label":"stundenlang voll belastet den Akku"},
+  {"type":"zahl","at":"achtzig","fallback":0.62,"value":80,"text":"80","unit":"%","label":"nachts laden viele Hersteller nur bis hier"},
+  {"type":"karten","at":"^zwei$","fallback":0.76,"title":"2 TIPPS","items":["Optimiertes Laden einschalten","Nicht ständig von 0 auf 100 laden"]},
+  {"type":"frage","at":"^l.dst$","fallback":0.93,"text":"LÄDST DU NACHTS?","options":["JA 🔌","NEIN"]}
+ ],
+ "title_tiktok":"Handy über Nacht laden: Fehler? 🔋","title_youtube":"Schadet nächtliches Laden deinem Handy-Akku? Das sagen die Ratgeber #shorts",
+ "text_tiktok":"Lädst du nachts? Schreib es in die Kommentare 👇 #handy #akku #technik #tipps #fürdich","text_youtube":"Moderne Handys stoppen bei 100 Prozent, trotzdem belastet stundenlanges Verharren auf voller Ladung die Lithium-Ionen-Akkus. Optimiertes Laden hilft. Lädst du nachts? 👇\n\nQuellen: Netzwelt, Mimikama, Utopia, GIGA. Stimme und Grafiken mit KI erstellt.\n\n#shorts #handy #akku #technik #wusstestdu",
+ "sources":["https://www.netzwelt.de/news/217415-mythos-akkuschaden-naechtliche-aufladen-handys-wirklich-schaedlich.html","https://www.mimikama.org/akku-mythos-naechtliches-laden-schadet-nicht/","https://utopia.de/ratgeber/handy-nachts-laden-energie-mythen/","https://www.techbook.de/mobile-lifestyle/smartphone/handy-akku-laden-schaden"]
+}
