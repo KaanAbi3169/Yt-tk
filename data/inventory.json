@@ -1934,7 +1934,7 @@
     {
       "id": "E001",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-24T14:58:37.262407+01:00",
       "source": "kinetic",
       "topic": "Voyager 1: Die längste Reise der Menschheit (Doku)",
@@ -1948,7 +1948,9 @@
       "text_tiktok": "",
       "text_youtube": "Voyager 1 startete 1977, ist heute das am weitesten entfernte Objekt, das Menschen gebaut haben, und hat am 18. November 2026 einen Lichttag Abstand zur Erde erreicht. Diese Dokumentation erzählt die Reise: Start, Jupiter und Saturn, der blasse blaue Punkt, die goldene Schallplatte, die Rettung aus dem All und die Frage, wie lange die Sonde noch durchhält.\n\nKAPITEL\n0:00 Einleitung\n0:58 Der Start 1977\n2:05 Jupiter und die Vulkane\n2:50 Saturn und die Abzweigung\n3:35 Der blasse blaue Punkt\n4:23 Die goldene Schallplatte\n5:10 Die Grenze der Sonne\n6:24 Wie spricht man mit einer Sonde?\n7:33 Die Reparatur aus dem All\n8:29 Der letzte Strom\n9:26 Ein Lichttag\n\nQuellen: NASA Science (science.nasa.gov/mission/voyager), NASA/JPL Voyager-Blog (2024 und 2026), DLR (Sonde Voyager 1 ist jetzt einen Lichttag entfernt), IEEE Spectrum, Smithsonian, Wikipedia (Voyager 1, Voyager Golden Record).\n\nWas meinst du: Hat sich diese Reise gelohnt? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#voyager #weltraum #doku #wissen #nasa",
       "scenes": 86,
-      "buffer": {},
+      "buffer": {
+        "youtube": "metricool:440329018"
+      },
       "group": "lang-kin",
       "sources": [
         "https://science.nasa.gov/mission/voyager/voyager-1/",
@@ -1956,7 +1958,8 @@
         "https://science.nasa.gov/blogs/voyager/2024/04/04/engineers-pinpoint-cause-of-voyager-1-issue-are-working-on-solution/",
         "https://science.nasa.gov/blogs/voyager/2026/04/17/nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/",
         "https://en.wikipedia.org/wiki/Voyager_Golden_Record"
-      ]
+      ],
+      "due": "2026-11-25T18:00:00+01:00"
     },
     {
       "id": "R001",
