@@ -1,0 +1,18 @@
+{
+ "id": "N001", "topic": "GTA 6: Starttag-Umsatz laut Schätzungen gegen GTA 5", "hook_type": "Zahl-Schock", "group": "kin-gaming", "theme": "neon", "music": "waswaerewenn",
+ "hl": "milliarden|million|prozent|schätzung",
+ "script": "GTA sechs verdient am ersten Tag Milliarden. Am neunzehnten November zweitausendsechsundzwanzig ist das Spiel erschienen. Laut Schätzung von Marktforschern lag der Umsatz am Starttag bei rund eins Komma acht vier Milliarden Dollar. Zum Vergleich: GTA fünf kam in den ersten vierundzwanzig Stunden auf gut achthundert Millionen Dollar. Das wäre mehr als das Doppelte. Offizielle Zahlen gibt es bisher nicht, es sind also Schätzungen. Rund drei Viertel der frühen Käufe sollen auf der PlayStation entstanden sein. Dreizehn Jahre lang haben Fans auf den Nachfolger gewartet. Hast du es schon gespielt? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"MILLIARDEN AM ERSTEN TAG","emoji":"🎮","hl":"MILLIARDEN"},
+  {"type":"hook","at":"neunzehnten","fallback":0.12,"text":"19. NOVEMBER 2026: GTA 6 IST DA","emoji":"📅","hl":"GTA"},
+  {"type":"zahl","at":"sch.tzung","fallback":0.24,"value":1.84,"decimals":2,"text":"1,84","unit":"MILLIARDEN $","label":"Umsatz am Starttag (Schätzung)"},
+  {"type":"vs","at":"vergleich","fallback":0.42,"title":"ERSTER TAG","a":{"name":"GTA 5","value":0.8,"text":"0,8 Mrd. $"},"b":{"name":"GTA 6","value":1.84,"text":"1,84 Mrd. $"},"win":"b"},
+  {"type":"hook","at":"offizielle","fallback":0.58,"text":"NOCH KEINE OFFIZIELLEN ZAHLEN","emoji":"⚠️","hl":"OFFIZIELLEN"},
+  {"type":"zahl","at":"^drei$","fallback":0.7,"value":75,"text":"75","unit":"%","label":"der frühen Käufe auf PlayStation (Schätzung)"},
+  {"type":"zahl","at":"dreizehn","fallback":0.82,"value":13,"text":"13","unit":"JAHRE","label":"Wartezeit seit GTA 5"},
+  {"type":"frage","at":"^hast$","fallback":0.93,"text":"SCHON GESPIELT?","options":["JA 🎮","NOCH NICHT"]}
+ ],
+ "title_tiktok":"GTA 6 macht Milliarden am ersten Tag 🎮","title_youtube":"GTA 6: Über eine Milliarde Dollar am ersten Tag? Das sagen Schätzungen #shorts",
+ "text_tiktok":"Hast du GTA 6 schon gespielt? Schreib es in die Kommentare 👇 #gta6 #gaming #rockstar #gta #fürdich","text_youtube":"GTA 6 ist seit dem 19. November 2026 erhältlich. Marktforscher schätzen den Starttag-Umsatz auf rund 1,84 Milliarden Dollar, GTA 5 kam am ersten Tag auf über 800 Millionen. Offizielle Zahlen gibt es noch nicht. Hast du es schon gespielt? 👇\n\nQuellen: Fox 5 NY, 80.lv, Guinness World Records (GTA 5). Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #rockstar #wusstestdu",
+ "sources":["https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record","https://80.lv/articles/report-gta-6-generated-nearly-usd2b-in-sales-by-launch-day","https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900","https://www.oneindia.com/international/gta-6-sales-cross-1-6-billion-as-playstation-accounts-for-75-of-early-purchases-8264247.html"]
+}

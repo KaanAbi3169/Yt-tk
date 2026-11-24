@@ -12,3 +12,4 @@ output/
 render3d/node_modules/
 render3d/words.json
 render3d/package-lock.json
+kinetic/node_modules/

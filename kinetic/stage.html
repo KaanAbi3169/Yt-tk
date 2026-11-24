@@ -1,0 +1,112 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:'DejaVu Sans','Noto Color Emoji',sans-serif;font-weight:800}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;color:#fff}
+.abs{position:absolute}
+.fill{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.stroke{-webkit-text-stroke:11px #000;paint-order:stroke fill;text-shadow:0 6px 0 rgba(0,0,0,.35)}
+.c{display:flex;align-items:center;justify-content:center;text-align:center}
+</style></head><body><div id="root"></div><script>
+const THEMES={
+ neon:{bg:['#10002b','#3a0ca3'],acc:['#ff2d95','#00f0ff','#ffe600','#7cff6b']},
+ toxic:{bg:['#020b04','#0b3d1f'],acc:['#b6ff00','#00ffa3','#ffe600','#ff4d6d']},
+ sunset:{bg:['#240046','#c9184a'],acc:['#ffd60a','#ff9e00','#ffffff','#00e5ff']},
+ ice:{bg:['#03045e','#0077b6'],acc:['#caf0f8','#ffd60a','#ff5d8f','#7cff6b']},
+ fire:{bg:['#1a0000','#9d0208'],acc:['#ffba08','#ff6d00','#ffffff','#00e5ff']},
+ mono:{bg:['#0a0a0a','#2b2b2b'],acc:['#ffe600','#ff2d55','#00e5ff','#ffffff']}
+};
+let J=null,IMG={};
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>1-Math.pow(1-clamp(x),3);
+const ob=x=>{x=clamp(x);const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const fmtNum=(v,dec)=>{const s=Number(v).toFixed(dec||0);const [i,d]=s.split('.');return i.replace(/\B(?=(\d{3})+(?!\d))/g,' ')+(d?','+d:'')};
+window.init=async j=>{J=j;for(const s of j.scenes){if(s.type==='foto'&&s.url){await new Promise(r=>{const im=new Image();im.onload=()=>r();im.onerror=()=>r();im.src=s.url;IMG[s.url]=im})}}return true};
+
+function bg(t,th,acc){
+  const a=(t*14)%360;
+  let h=`<div class="fill" style="background:linear-gradient(${a}deg,${th.bg[0]},${th.bg[1]})"></div>`;
+  for(let i=0;i<3;i++){const x=540+Math.sin(t*.7+i*2.1)*420,y=500+i*480+Math.cos(t*.6+i)*160,r=420+i*60;
+    h+=`<div class="abs" style="left:${x-r}px;top:${y-r}px;width:${2*r}px;height:${2*r}px;border-radius:50%;background:${th.acc[i%th.acc.length]};opacity:.22;filter:blur(90px)"></div>`}
+  h+=`<div class="fill" style="background:repeating-linear-gradient(115deg,rgba(255,255,255,.045) 0 38px,transparent 38px 90px);background-position:${(t*60)%90}px 0"></div>`;
+  return h;
+}
+function words(txt,lt,size,hl,acc,step=.11){
+  const w=String(txt).split(' ');let h='';
+  w.forEach((x,i)=>{const p=clamp((lt-i*step)/.28);if(p<=0)return;const sc=1+(1-ob(p))*1.1;
+    const isH=hl&&new RegExp(hl,'i').test(x);
+    h+=`<span class="stroke" style="display:inline-block;margin:0 .12em;font-size:${size}px;line-height:1.05;transform:scale(${sc});color:${isH?acc:'#fff'};opacity:${clamp(p*3)}">${esc(x)}</span>`});
+  return h;
+}
+const S={
+ hook(sc,lt,acc){
+  const L=sc.text.length,size=sc.size||(L<=16?170:L<=28?138:L<=44?112:92);
+  const em=sc.emoji?`<div class="c" style="font-size:300px;height:330px;transform:scale(${1+(1-ob(lt/.35))*1.2}) rotate(${Math.sin(lt*7)*4}deg)">${sc.emoji}</div>`:'';
+  const sh=lt<.5?Math.sin(lt*90)*(1-lt*2)*14:0;
+  return `<div class="abs c" style="left:40px;top:${sc.emoji?250:360}px;width:1000px;height:${sc.emoji?830:720}px;flex-direction:column;transform:translateX(${sh}px)">${em}<div style="text-align:center;width:1000px">${words(sc.text,lt,size,sc.hl,acc)}</div></div>`},
+ zahl(sc,lt,acc){
+  const p=eo(lt/(sc.dur||1.3)),dec=sc.decimals||0,cur=sc.value*p;
+  const txt=lt>(sc.dur||1.3)?(sc.text||fmtNum(sc.value,dec)):fmtNum(cur,dec);
+  const n=(sc.text||fmtNum(sc.value,dec)).length,size=n>12?120:n>9?150:n>6?200:n>4?250:320;
+  return `<div class="abs c" style="left:20px;top:300px;width:1040px;height:760px;flex-direction:column">
+   <div class="stroke" style="font-size:${size}px;line-height:1;color:${acc};transform:scale(${1+(1-ob(lt/.3))*.6})">${txt}</div>
+   <div class="stroke" style="font-size:${size>200?90:72}px;margin-top:20px">${esc(sc.unit||'')}</div>
+   <div style="font-size:58px;margin-top:34px;width:900px;text-align:center;line-height:1.2;opacity:${clamp((lt-.5)/.3)};text-shadow:0 4px 18px #000">${esc(sc.label||'')}</div></div>`},
+ karten(sc,lt,acc,th){
+  const n=sc.items.length,step=n>4?150:180,y0=330;let h='';
+  sc.items.forEach((it,i)=>{const p=ob((lt-.15-i*.55)/.4);if(p<=0)return;const dir=i%2?1:-1,x=60+dir*(1-clamp(p,0,1))*1100,c=th.acc[i%th.acc.length];
+    const dark=/^#(ff[e-f]|b6|ca|7c|ff[d-f])/i.test(c);
+    h+=`<div class="abs" style="left:${x}px;top:${y0+i*step}px;width:960px;height:${step-24}px;border-radius:30px;background:${c};color:${dark?'#111':'#fff'};display:flex;align-items:center;padding:0 36px;gap:30px;box-shadow:0 12px 0 rgba(0,0,0,.35)">
+     <div style="font-size:72px;min-width:70px">${sc.nums===false?'•':i+1}</div><div style="font-size:${it.length>26?44:54}px;line-height:1.12">${esc(it)}</div></div>`});
+  return (sc.title?`<div class="abs c stroke" style="left:40px;top:150px;width:1000px;height:150px;font-size:70px">${esc(sc.title)}</div>`:'')+h},
+ vs(sc,lt,acc,th){
+  const mx=Math.max(sc.a.value,sc.b.value),base=1120;let h='';
+  [['a',270,th.acc[0]],['b',810,th.acc[1]]].forEach(([k,cx,c],i)=>{const d=sc[k],hh=Math.max(40,640*d.value/mx)*eo((lt-.2-i*.35)/.9);
+    const win=sc.win===k&&lt>1.8;
+    h+=`<div class="abs" style="left:${cx-190}px;top:${base-hh}px;width:380px;height:${hh}px;border-radius:26px 26px 0 0;background:${c};box-shadow:0 0 ${win?60:0}px ${c}"></div>
+     <div class="abs c stroke" style="left:${cx-250}px;top:${base-hh-120}px;width:500px;height:110px;font-size:${String(d.text).length>8?64:84}px;opacity:${clamp((lt-.9-i*.3)/.3)}">${esc(d.text)}</div>
+     <div class="abs c" style="left:${cx-250}px;top:${base+14}px;width:500px;height:90px;font-size:50px;text-shadow:0 4px 14px #000">${esc(d.name)}${win?' 🏆':''}</div>`});
+  return (sc.title?`<div class="abs c stroke" style="left:40px;top:160px;width:1000px;height:130px;font-size:68px">${esc(sc.title)}</div>`:'')+h},
+ balken(sc,lt,acc,th){
+  const mx=Math.max(...sc.items.map(i=>i.value)),n=sc.items.length,step=Math.min(190,820/n);let h='';
+  sc.items.forEach((it,i)=>{const w=Math.max(30,840*it.value/mx)*eo((lt-.15-i*.3)/.8),y=330+i*step,c=th.acc[i%th.acc.length];
+    h+=`<div class="abs" style="left:60px;top:${y}px;width:900px;font-size:46px;text-shadow:0 4px 14px #000">${esc(it.name)}</div>
+     <div class="abs" style="left:60px;top:${y+58}px;width:${w}px;height:${step-90}px;border-radius:16px;background:${c}"></div>
+     <div class="abs stroke" style="left:${70+w}px;top:${y+58}px;height:${step-90}px;display:flex;align-items:center;font-size:52px;white-space:nowrap;opacity:${clamp((lt-.6-i*.3)/.3)}">${esc(it.text)}</div>`});
+  return (sc.title?`<div class="abs c stroke" style="left:40px;top:150px;width:1000px;height:150px;font-size:70px">${esc(sc.title)}</div>`:'')+h},
+ foto(sc,lt,acc){
+  const z=1.06+Math.min(lt/(sc.len||4),1)*.16,dx=Math.sin(lt*.5)*18;
+  const cap=sc.caption?`<div class="abs c" style="left:40px;top:150px;width:1000px;height:300px;flex-direction:column"><div style="width:1000px;text-align:center">${words(sc.caption,lt,96,sc.hl,acc,.1)}</div></div>`:'';
+  return `<div class="abs" style="left:0;top:0;width:1080px;height:1250px;overflow:hidden"><div class="fill" style="height:1250px;background:#000 url('${sc.url}') center/cover;transform:scale(${z}) translateX(${dx}px)"></div>
+   <div class="fill" style="height:1250px;background:linear-gradient(180deg,rgba(0,0,0,.6),transparent 35%,transparent 65%,rgba(0,0,0,.65))"></div></div>${cap}
+   <div class="abs" style="left:40px;top:1195px;font-size:24px;opacity:.85;text-shadow:0 2px 8px #000;font-weight:600">${esc(sc.credit||'')}</div>`},
+ frage(sc,lt,acc,th){
+  const op=sc.options||[];let h='';
+  op.forEach((o,i)=>{const p=ob((lt-.4-i*.25)/.4);const pulse=1+Math.sin(lt*6+i)*.02;
+    h+=`<div class="abs c" style="left:${80}px;top:${650+i*210}px;width:920px;height:170px;border-radius:40px;background:${th.acc[i%th.acc.length]};color:#111;font-size:62px;transform:scale(${clamp(p,0,1.1)*pulse});box-shadow:0 12px 0 rgba(0,0,0,.35)">${esc(o)}</div>`});
+  return `<div class="abs c" style="left:40px;top:200px;width:1000px;height:420px;flex-direction:column"><div style="width:1000px;text-align:center">${words(sc.text,lt,96,sc.hl,acc)}</div></div>${h}`}
+};
+function captions(t){
+  const W=J.words;let ch=[],cur=[];
+  W.forEach((w,i)=>{cur.push(i);const gap=i+1<W.length?W[i+1].s-w.e:9;if(cur.length>=3||gap>.35||/[.?!:]$/.test(J.raw?.[i]||'')){ch.push(cur);cur=[]}});if(cur.length)ch.push(cur);
+  let c=null;for(let k=0;k<ch.length;k++){const s=W[ch[k][0]].s,nx=k+1<ch.length?W[ch[k+1][0]].s:J.dur;if(t>=s-.03&&t<nx){c=ch[k];break}}
+  if(!c)return '';
+  const tot=c.reduce((a,i)=>a+W[i].w.length,0),fs=tot<=12?100:tot<=18?86:tot<=26?72:60;
+  return `<div class="abs" style="left:30px;top:1230px;width:1020px;height:260px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;align-content:center;gap:0 46px">`+c.map(i=>{const w=W[i],on=t>=w.s&&t<w.e+.12;
+    const hl=J.hl&&new RegExp(J.hl,'i').test(w.w);
+    return `<span class="stroke" style="display:inline-block;font-size:${fs}px;line-height:1.15;transform:scale(${on?1.12:1});color:${on||hl?'#ffe600':'#fff'}">${esc(w.w)}</span>`}).join('')+`</div>`;
+}
+window.frame=t=>{
+  const th=THEMES[J.theme]||THEMES.neon;
+  let idx=0;J.scenes.forEach((s,i)=>{if(t>=s.s)idx=i});const sc=J.scenes[idx],lt=t-sc.s,acc=th.acc[idx%th.acc.length];
+  const punch=1+Math.max(0,1-lt/.22)*.05;
+  let h=bg(t,th,acc);
+  h+=`<div class="fill" style="transform:scale(${punch});transform-origin:50% 40%">${(S[sc.type]||S.hook)(sc,lt,acc,th)}</div>`;
+  h+=captions(t);
+  if(idx>0&&lt<.12)h+=`<div class="fill" style="background:#fff;opacity:${.45*(1-lt/.12)}"></div>`;
+  h+=`<div class="abs" style="left:60px;top:56px;width:960px;height:12px;border-radius:6px;background:rgba(255,255,255,.25)"><div style="width:${clamp(t/J.dur)*100}%;height:12px;border-radius:6px;background:${acc}"></div></div>`;
+  if(J.tag)h+=`<div class="abs" style="left:60px;top:92px;padding:6px 22px;border-radius:999px;background:${acc};color:#111;font-size:34px">${esc(J.tag)}</div>`;
+  document.getElementById('root').innerHTML=h;
+  return true;
+};
+</script></body></html>

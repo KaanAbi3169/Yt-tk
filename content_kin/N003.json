@@ -1,0 +1,17 @@
+{
+ "id": "N003", "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)", "hook_type": "Staunen + Rekord", "group": "kin-space", "theme": "ice", "music": "wissen",
+ "hl": "kilometer|rekord|apollo",
+ "script": "Vier Menschen flogen weiter weg als jeder vor ihnen. Am sechsten April zweitausendsechsundzwanzig umrundete die Raumkapsel Orion der Mission Artemis zwei den Mond. Der größte Abstand zur Erde lag bei rund vierhundertsiebentausend Kilometern. Das sind etwa sechstausendsechshundert Kilometer mehr als beim bisherigen Rekord von Apollo dreizehn aus dem Jahr neunzehnhundertsiebzig. Am Mond selbst kam die Crew auf rund sechstausendfünfhundert Kilometer an die Oberfläche heran. Es war der erste bemannte Flug zum Mond seit mehr als fünfzig Jahren. Das Ziel ist, wieder Menschen auf dem Mond landen zu lassen. Würdest du mitfliegen? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"WEITER ALS JE EIN MENSCH","emoji":"🚀","hl":"WEITER"},
+  {"type":"hook","at":"sechsten","fallback":0.12,"text":"6. APRIL 2026: ARTEMIS II UMRUNDET DEN MOND","emoji":"🌕","hl":"ARTEMIS"},
+  {"type":"zahl","at":"vierhundertsiebentausend","fallback":0.3,"value":407000,"text":"407 000","unit":"KM VON DER ERDE","label":"größter Abstand der Mission"},
+  {"type":"zahl","at":"sechstausendsechshundert","fallback":0.5,"value":6600,"text":"6 600","unit":"KM MEHR","label":"als Apollo 13 (1970)"},
+  {"type":"zahl","at":"sechstausendf.nfhundert","fallback":0.68,"value":6500,"text":"6 500","unit":"KM","label":"Abstand zur Mondoberfläche"},
+  {"type":"hook","at":"erste","fallback":0.8,"text":"ERSTER FLUG ZUM MOND SEIT 1972","emoji":"👨‍🚀","hl":"1972"},
+  {"type":"frage","at":"^w.rdest$","fallback":0.93,"text":"WÜRDEST DU MITFLIEGEN?","options":["JA 🚀","NIEMALS"]}
+ ],
+ "title_tiktok":"Weiter weg als je ein Mensch 🚀","title_youtube":"Artemis II: Neuer Distanzrekord um den Mond (Apollo 13 übertroffen) #shorts",
+ "text_tiktok":"Würdest du mitfliegen? Schreib es in die Kommentare 👇 #artemis #nasa #weltraum #mond #fürdich","text_youtube":"Am 6. April 2026 flog die Mission Artemis II um den Mond und übertraf mit rund 407 000 Kilometern Abstand zur Erde den Rekord von Apollo 13 um etwa 6 600 Kilometer. Würdest du mitfliegen? 👇\n\nQuellen: NASA, ABC News, NBC. Stimme und Grafiken mit KI erstellt.\n\n#shorts #artemis #nasa #weltraum #wusstestdu",
+ "sources":["https://www.nasa.gov/news-release/nasas-artemis-ii-crew-eclipses-record-for-farthest-human-spaceflight","https://abc7.com/post/artemis-ii-astronauts-race-set-new-distance-record-earth-behold-moons-far-side/18847214/","https://www.nbcchicago.com/news/national-international/artemis-2-astronauts-set-new-distance-record-moon-flyby/3918809/"]
+}

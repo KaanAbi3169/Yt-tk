@@ -1,0 +1,64 @@
+name: kin
+
+# Kinetic-Kurzvideo (neuer Stil, Auftrag des Inhabers 24.11.2026): baut ein 9:16-Video aus content_kin/<ID>.json und audio/<ID>.mp3
+# (Daten-Branch media). Whisper-Wortzeiten, bewegte Typografie (Chromium, Bild fuer Bild), Ton und Musik (ffmpeg), Pruefung,
+# Inventar-Eintrag (Status ready), Kontaktbogen qa/<ID>.jpg. Ohne Claude, 0 EUR. Von Hand startbar.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Video-ID, z. B. N001"
+        required: true
+      args:
+        description: "Optionale Argumente, z. B. --dry"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: kin-${{ inputs.id }}
+  cancel-in-progress: false
+
+jobs:
+  kin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+          sparse-checkout: |
+            data
+            audio
+            images
+          fetch-depth: 1
+      - name: Git-Benutzer fuer den Daten-Branch
+        run: |
+          git -C media config user.name "kin"
+          git -C media config user.email "kin@users.noreply.github.com"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: ffmpeg, Schriften, Whisper
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fonts-noto-color-emoji
+          pip install --quiet faster-whisper
+      - name: Chromium
+        working-directory: kinetic
+        run: |
+          npm install --silent playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - name: Video bauen
+        env:
+          YTTK_DATA: ${{ github.workspace }}/media
+          VID: ${{ inputs.id }}
+          ARGS: ${{ inputs.args }}
+        run: python3 -m yt_tk.kinetic build --id "$VID" $ARGS

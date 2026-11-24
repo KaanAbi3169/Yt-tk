@@ -1,0 +1,16 @@
+{
+ "id": "N002", "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)", "hook_type": "Du machst einen Fehler", "group": "kin-spar", "theme": "sunset", "music": "wissen",
+ "hl": "prozent|acht|zweiundfünfzig|neunundsiebzig",
+ "script": "Black Friday spart dir im Schnitt nur acht Prozent. Das hat das Vergleichsportal Idealo für das Jahr zweitausendfünfundzwanzig ausgewertet. Es ging um zehntausend beliebte Produkte, und neunundsiebzig Prozent davon waren günstiger als im Oktober. Aber Achtung: Mehr als die Hälfte, nämlich zweiundfünfzig Prozent, war schon an einem früheren Tag im November sogar billiger als am Black Friday selbst. Der Termin ist also nicht automatisch der beste Zeitpunkt. Dieses Jahr ist Black Friday am siebenundzwanzigsten November. Drei Tipps: Vergleiche die Preise schon vorher in mindestens zwei Portalen. Schau dir den Preisverlauf an. Kaufe nur, was du sowieso brauchst. Welchen Spar-Trick nutzt du? Schreib es in die Kommentare.",
+ "scenes": [
+  {"type":"hook","text":"NUR 8 % SPAREN?","emoji":"🛍️","hl":"8"},
+  {"type":"zahl","at":"zehntausend","fallback":0.2,"value":79,"text":"79","unit":"%","label":"der Produkte günstiger als im Oktober"},
+  {"type":"zahl","at":"h.lfte","fallback":0.4,"value":52,"text":"52","unit":"%","label":"schon früher im November billiger"},
+  {"type":"hook","at":"siebenundzwanzigsten","fallback":0.6,"text":"BLACK FRIDAY: 27. NOVEMBER","emoji":"📅","hl":"BLACK"},
+  {"type":"karten","at":"tipps","fallback":0.72,"title":"3 TIPPS","items":["Preise in 2 Portalen vergleichen","Preisverlauf prüfen","Nur kaufen, was du brauchst"]},
+  {"type":"frage","at":"^welchen$","fallback":0.93,"text":"DEIN SPAR-TRICK?","options":["VERGLEICHEN","WARTEN"]}
+ ],
+ "title_tiktok":"Black Friday: So viel sparst du wirklich 🛍️","title_youtube":"Black Friday 2026: Lohnt es sich wirklich? Das zeigen die Preisdaten #shorts",
+ "text_tiktok":"Welchen Spar-Trick nutzt du? Schreib es in die Kommentare 👇 #blackfriday #sparen #tipps #wusstestdu #fürdich","text_youtube":"Laut einer Auswertung von Idealo (Black Friday 2025, rund 10 000 beliebte Produkte) lag die durchschnittliche Ersparnis bei 8 Prozent, und 52 Prozent der Produkte waren früher im November schon günstiger. Welchen Spar-Trick nutzt du? 👇\n\nQuellen: Idealo (Preisauswertung, ein Vergleichsportal mit eigenem Interesse), Verbraucherzentrale. Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #sparen #tipps #wusstestdu",
+ "sources":["https://retail-news.de/black-friday-2026-idealo-preisstudie-rabatte/","https://www.evz.de/aktuelles/presse-archiv/black-friday-2025/","https://www.pcgameshardware.de/Black-Friday-Sale-266963/News/Black-Friday-2025-Rabatte-oft-mehr-Schein-als-Sein-1484384/"]
+}
