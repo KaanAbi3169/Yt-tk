@@ -427,6 +427,40 @@
         "comments": 0,
         "at": "2026-11-23T02:07:45.335733+01:00"
       }
+    },
+    {
+      "id": "T003",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)",
+      "hook_type": "Staunen + Aktualität",
+      "due": "2026-11-22T10:00:00+01:00",
+      "duration": 38.2,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 314,
+        "likes": 14,
+        "comments": 0,
+        "shares": 3,
+        "watch_ms": 9130,
+        "at": "2026-11-24T05:58:03.606326+01:00"
+      }
+    },
+    {
+      "id": "T003",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)",
+      "hook_type": "Staunen + Aktualität",
+      "due": "2026-11-22T10:00:00+01:00",
+      "duration": 38.2,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 85,
+        "likes": 2,
+        "comments": 0,
+        "at": "2026-11-24T05:58:03.608028+01:00"
+      }
     }
   ]
 }

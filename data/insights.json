@@ -1,18 +1,11 @@
 {
-  "updated": "2026-11-23T02:07:45.336517+01:00",
+  "updated": "2026-11-24T05:58:03.608877+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
       {
         "n": 1,
         "avg": 1079
-      }
-    ],
-    [
-      "slot:youtube:Sun 10",
-      {
-        "n": 1,
-        "avg": 953
       }
     ],
     [
@@ -65,13 +58,6 @@
       }
     ],
     [
-      "slot:tiktok:Sun 10",
-      {
-        "n": 1,
-        "avg": 786
-      }
-    ],
-    [
       "slot:tiktok:Wed 16",
       {
         "n": 1,
@@ -100,7 +86,21 @@
       }
     ],
     [
+      "slot:tiktok:Sun 10",
+      {
+        "n": 2,
+        "avg": 600
+      }
+    ],
+    [
       "hook:Nachricht",
+      {
+        "n": 2,
+        "avg": 570
+      }
+    ],
+    [
+      "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
       {
         "n": 2,
         "avg": 570
@@ -201,24 +201,24 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 17,
-      "avg": 497
+      "n": 19,
+      "avg": 471
     },
     "hook:Du machst einen Fehler": {
       "n": 2,
       "avg": 870
     },
     "slot:tiktok:Sun 10": {
-      "n": 1,
-      "avg": 786
+      "n": 2,
+      "avg": 600
     },
     "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)": {
       "n": 2,
       "avg": 870
     },
     "slot:youtube:Sun 10": {
-      "n": 1,
-      "avg": 953
+      "n": 2,
+      "avg": 524
     },
     "format:waswaerewenn": {
       "n": 4,
@@ -363,6 +363,14 @@
     "slot:youtube:Sat 16": {
       "n": 1,
       "avg": 120
+    },
+    "hook:Staunen + Aktualität": {
+      "n": 2,
+      "avg": 254
+    },
+    "topic:Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)": {
+      "n": 2,
+      "avg": 254
     }
   }
 }

@@ -1373,7 +1373,7 @@
     {
       "id": "X003",
       "format": "waswaerewenn",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-15T08:03:15.584053+01:00",
       "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
       "hook_type": "Alltags-Gedankenexperiment",
@@ -1717,7 +1717,7 @@
     {
       "id": "T004",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-22T07:45:41.176236+01:00",
       "source": "render3d",
       "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung",
