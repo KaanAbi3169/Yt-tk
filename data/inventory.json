@@ -1700,7 +1700,7 @@
     {
       "id": "L005",
       "format": "lang",
-      "status": "ready",
+      "status": "archived",
       "created": "2026-11-18T01:15:34.484534+01:00",
       "source": "zusammenschnitt",
       "topic": "Geld und Konsum",
@@ -1726,12 +1726,16 @@
         "D078",
         "D079"
       ],
-      "buffer": {}
+      "buffer": {},
+      "due": null,
+      "notes": [
+        "24.11.2026: archiviert (Auftrag des Inhabers: keine alten Zusammenschnitte mehr)"
+      ]
     },
     {
       "id": "L006",
       "format": "lang",
-      "status": "ready",
+      "status": "archived",
       "created": "2026-11-18T01:20:35.175904+01:00",
       "source": "zusammenschnitt",
       "topic": "Natur und Physik",
@@ -1757,7 +1761,11 @@
         "D017",
         "D021"
       ],
-      "buffer": {}
+      "buffer": {},
+      "due": null,
+      "notes": [
+        "24.11.2026: archiviert (Auftrag des Inhabers: keine alten Zusammenschnitte mehr)"
+      ]
     },
     {
       "id": "T001",
