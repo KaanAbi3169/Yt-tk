@@ -128,9 +128,9 @@ window.frame=t=>{
   const punch=1+Math.max(0,1-lt/.22)*.04;
   let h=bg(t,th);
   h+=`<div class="fill" style="transform:scale(${punch});transform-origin:50% 45%">${(S[sc.type]||S.hook)(sc,lt,acc,th,t)}</div>`;
-  if(sc.type!=='satz'&&sc.type!=='zitat')h+=captions(t);
+  if(sc.type!=='satz'&&sc.type!=='zitat'&&sc.type!=='thumb')h+=captions(t);
   if(idx>0&&lt<.12&&sc.flash!==false)h+=`<div class="fill" style="background:#fff;opacity:${.4*(1-lt/.12)}"></div>`;
-  h+=`<div class="abs" style="left:80px;top:26px;width:1760px;height:10px;border-radius:5px;background:rgba(255,255,255,.25)"><div style="width:${clamp(t/J.dur)*100}%;height:10px;border-radius:5px;background:${acc}"></div></div>`;
+  if(sc.type!=='thumb')h+=`<div class="abs" style="left:80px;top:26px;width:1760px;height:10px;border-radius:5px;background:rgba(255,255,255,.25)"><div style="width:${clamp(t/J.dur)*100}%;height:10px;border-radius:5px;background:${acc}"></div></div>`;
   if(sc.kicker)h+=`<div class="abs" style="left:80px;top:50px;padding:5px 20px;border-radius:999px;background:${acc};color:#111;font-size:30px">${esc(sc.kicker)}</div>`;
   document.getElementById('root').innerHTML=h;
   return true;
