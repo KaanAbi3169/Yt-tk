@@ -95,7 +95,7 @@ def build_ranking(spec):
     items = spec["items"]  # Platz 3, 2, 1 in dieser Reihenfolge der Nennung
     ys = {3: 3.75, 2: 4.55, 1: 5.35}
     cols = {3: L["b"], 2: L["c"], 1: L["a"]}
-    props = [stamp("head", spec["headline"], 6.1, w=3.4, h=0.6, bg="#12183a", color="#ffffff", size=100)]
+    props = [stamp("head", spec["headline"], 6.3, w=3.4, h=0.6, bg="#12183a", color="#ffffff", size=100)]
     beats = [{"at": 0.2, "id": "head", "do": "pop"}]
     for k, it in enumerate(items):
         place = 3 - k
@@ -117,10 +117,10 @@ def build_vergleich(spec):
     xs = {2: [-0.7, 0.7], 3: [-1.1, 0.0, 1.1], 4: [-1.3, -0.45, 0.45, 1.3]}[n]
     w = {2: 0.9, 3: 0.75, 4: 0.6}[n]
     cols = [L["a"], L["b"], L["c"], "#ff8a8a"]
-    props = [stamp("head", spec["headline"], 6.1, w=3.4, h=0.6, bg="#12183a", color="#ffffff", size=100)]
+    props = [stamp("head", spec["headline"], 6.3, w=3.4, h=0.6, bg="#12183a", color="#ffffff", size=100)]
     beats = [{"at": 0.2, "id": "head", "do": "pop"}]
     for k, it in enumerate(items):
-        h = max(0.12, 1.8 * it["value"] / top)
+        h = max(0.12, 1.25 * it["value"] / top)
         props.append({"id": f"b{k}", "type": "bar", "w": w, "d": 0.5, "color": cols[k], "h": 0.02, "pos": [xs[k], 3.95, 0.4], "show": True})
         props.append(stamp(f"n{k}", it["name"], 3.5, w=min(1.6, 3.4 / n), h=0.42, bg="#12183a", color="#ffffff", x=xs[k], size=90))
         props.append(stamp(f"v{k}", it["label"], 3.95 + h + 0.4, w=min(1.6, 3.4 / n), h=0.45, bg="#ffffff", color="#12183a", x=xs[k], size=100))
