@@ -1,0 +1,296 @@
+{
+  "id": "Q002",
+  "format": "wissen",
+  "group": "quiz",
+  "topic": "Quiz: Preisgeld für den Beweis der Riemannschen Vermutung",
+  "hook_type": "Quiz",
+  "title_tiktok": "Quiz: Eine Million Dollar für einen Beweis? 🧮",
+  "title_youtube": "Quiz: Wie viel Preisgeld gibt es für die Riemannsche Vermutung? 🧮 #shorts",
+  "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #mathe #wissen #wusstestdu #lernenmittiktok",
+  "text_youtube": "Eine Million Dollar für einen Beweis: Die Riemannsche Vermutung gehört zu den sieben Millennium-Problemen des Clay-Instituts. Hattest du es gewusst? 👇\n\nQuellen: Britannica, Clay Mathematics Institute. Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #mathe #wissen #wusstestdu",
+  "highlight": "\\d|richtige|million|riemann",
+  "sources": [
+    "https://www.britannica.com/topic/Riemann-hypothesis",
+    "https://www.claymath.org/millennium/riemann-hypothesis/"
+  ],
+  "script": "Quiz: Wie viel Geld bekommt, wer die Riemannsche Vermutung beweist? Antwort A: hunderttausend Dollar. Antwort B: eine Million Dollar. Antwort C: zehn Millionen Dollar. Du hast drei Sekunden. Drei, zwei, eins. Die richtige Antwort ist B! Das Clay-Institut hat im Jahr zweitausend sieben Probleme der Mathematik mit je einer Million Dollar ausgeschrieben. Bernhard Riemann stellte seine Vermutung achtzehnhundertneunundfünfzig auf, und sie ist bis heute ungelöst. Gelöst wurde bisher nur ein Problem der Liste, die Poincaré-Vermutung. Hattest du es gewusst? Schreib deine Antwort in die Kommentare.",
+  "status": "ready",
+  "scene": "kit",
+  "kit": {
+    "set": "room",
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.3,
+          9.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.4,
+          8.3
+        ],
+        "look": [
+          0,
+          4.4,
+          0
+        ]
+      }
+    },
+    "props": [
+      {
+        "id": "q",
+        "type": "stamp",
+        "text": "Preisgeld für Riemanns Vermutung?",
+        "w": 3.5,
+        "h": 0.62,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#42a5f5",
+        "pos": [
+          0.0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o0",
+        "type": "stamp",
+        "text": "A   100 000 $",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ff7043",
+        "pos": [
+          0.0,
+          5.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "o1",
+        "type": "stamp",
+        "text": "B   1 Mio. $",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ff7043",
+        "pos": [
+          0.0,
+          4.35,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "r1",
+        "type": "stamp",
+        "text": "B   1 Mio. $",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#43c463",
+        "pos": [
+          0.0,
+          4.35,
+          1.7
+        ],
+        "show": false
+      },
+      {
+        "id": "o2",
+        "type": "stamp",
+        "text": "C   10 Mio. $",
+        "w": 3.2,
+        "h": 0.55,
+        "size": 110,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ff7043",
+        "pos": [
+          0.0,
+          3.7,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "cnt",
+        "type": "counter",
+        "fmt": "{n}",
+        "from": 3,
+        "w": 1.0,
+        "h": 0.9,
+        "size": 260,
+        "color": "#ffffff",
+        "pos": [
+          0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fact",
+        "type": "stamp",
+        "text": "1 000 000 $",
+        "w": 3.2,
+        "h": 0.62,
+        "size": 110,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#43c463",
+        "pos": [
+          0.0,
+          6.0,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7,
+        "shirt": "#fdd835",
+        "pants": "#37474f"
+      }
+    ],
+    "beats": [
+      {
+        "at": 0.2,
+        "id": "q",
+        "do": "pop"
+      },
+      {
+        "at": "hunderttausend",
+        "fallback": 0.2,
+        "id": "o0",
+        "do": "pop"
+      },
+      {
+        "at": "^eine$",
+        "fallback": 0.30000000000000004,
+        "id": "o1",
+        "do": "pop"
+      },
+      {
+        "at": "^zehn$",
+        "fallback": 0.4,
+        "id": "o2",
+        "do": "pop"
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "q",
+        "do": "out",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "cnt",
+        "do": "pop",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "cnt",
+        "do": "count",
+        "from": 3,
+        "to": 1,
+        "dur": 2.2,
+        "fmt": "{n}",
+        "n": 1
+      },
+      {
+        "at": "^3$|^drei$",
+        "fallback": 0.5,
+        "id": "fig",
+        "do": "pose",
+        "pose": "think",
+        "n": 1
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "cnt",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "r1",
+        "do": "pop"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "offset": 0.1,
+        "id": "fact",
+        "do": "pop"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "fig",
+        "do": "pose",
+        "pose": "cheer"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o0",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o2",
+        "do": "out"
+      },
+      {
+        "at": "richtige",
+        "fallback": 0.62,
+        "id": "o1",
+        "do": "out"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.95,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 28
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "Q002",
+ "type": "quiz",
+ "format": "wissen",
+ "group": "quiz",
+ "topic": "Quiz: Preisgeld für den Beweis der Riemannschen Vermutung",
+ "hook_type": "Quiz",
+ "question": "Preisgeld für Riemanns Vermutung?",
+ "options": ["100 000 $", "1 Mio. $", "10 Mio. $"],
+ "answer": 1,
+ "reveal_label": "1 000 000 $",
+ "script": "Quiz: Wie viel Geld bekommt, wer die Riemannsche Vermutung beweist? Antwort A: hunderttausend Dollar. Antwort B: eine Million Dollar. Antwort C: zehn Millionen Dollar. Du hast drei Sekunden. Drei, zwei, eins. Die richtige Antwort ist B! Das Clay-Institut hat im Jahr zweitausend sieben Probleme der Mathematik mit je einer Million Dollar ausgeschrieben. Bernhard Riemann stellte seine Vermutung achtzehnhundertneunundfünfzig auf, und sie ist bis heute ungelöst. Gelöst wurde bisher nur ein Problem der Liste, die Poincaré-Vermutung. Hattest du es gewusst? Schreib deine Antwort in die Kommentare.",
+ "anchors": {
+  "options": ["hunderttausend", "^eine$", "^zehn$"],
+  "count": ["^3$|^drei$", 1],
+  "reveal": "richtige",
+  "end": "kommentare"
+ },
+ "title_tiktok": "Quiz: Eine Million Dollar für einen Beweis? 🧮",
+ "title_youtube": "Quiz: Wie viel Preisgeld gibt es für die Riemannsche Vermutung? 🧮 #shorts",
+ "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #mathe #wissen #wusstestdu #lernenmittiktok",
+ "text_youtube": "Eine Million Dollar für einen Beweis: Die Riemannsche Vermutung gehört zu den sieben Millennium-Problemen des Clay-Instituts. Hattest du es gewusst? 👇\n\nQuellen: Britannica, Clay Mathematics Institute. Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #mathe #wissen #wusstestdu",
+ "highlight": "\\d|richtige|million|riemann",
+ "sources": [
+  "https://www.britannica.com/topic/Riemann-hypothesis",
+  "https://www.claymath.org/millennium/riemann-hypothesis/"
+ ],
+ "look": 3
+}

@@ -1,0 +1,308 @@
+{
+  "id": "V001",
+  "format": "wissen",
+  "group": "vergleich",
+  "topic": "Fiona, das Frühchen-Flusspferd, im Gewichtsvergleich",
+  "hook_type": "Vergleich",
+  "title_tiktok": "Fiona: 13 Kilo und überlebt 🦛",
+  "title_youtube": "Fiona das Flusspferd: Mit 13 Kilo geboren, normal sind mindestens 25 🦛 #shorts",
+  "text_tiktok": "Wie viel hättest du ihr zugetraut? Schreib es in die Kommentare 👇 #fiona #flusspferd #tiere #wusstestdu #lernenmittiktok",
+  "text_youtube": "Fiona kam 2017 im Zoo von Cincinnati sechs Wochen zu früh zur Welt und wog 13 Kilogramm, normal sind bei Flusspferd-Babys 25 bis 54. 2022 wog sie 907 Kilogramm. Wie viel hättest du ihr zugetraut? 👇\n\nQuellen: Wikipedia, NPR, AP. Stimme und Grafiken mit KI erstellt.\n\n#shorts #fiona #flusspferd #tiere #wusstestdu",
+  "highlight": "\\d|fiona|kilogramm",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fiona_(hippopotamus)",
+    "https://www.npr.org/2018/01/17/578584988/thriving-after-prematurity-fiona-the-celebrity-hippo-turns-1",
+    "https://m.washingtontimes.com/news/2022/aug/4/fiona-gets-a-sibling-baby-hippo-born-at-cincinnati/"
+  ],
+  "script": "Dieses Flusspferd wog bei der Geburt dreizehn Kilogramm. Fiona kam am vierundzwanzigsten Januar zweitausendsiebzehn im Zoo von Cincinnati sechs Wochen zu früh zur Welt. Ein normales Flusspferd-Baby wiegt bei der Geburt zwischen fünfundzwanzig und vierundfünfzig Kilogramm. Fiona wog also weniger als die Hälfte. Sie gilt als die kleinste bekannte Frühgeburt ihrer Art, die überlebt hat. Im Jahr zweitausendzweiundzwanzig wog sie neunhundertsieben Kilogramm. Wie viel hättest du ihr zugetraut? Schreib es in die Kommentare.",
+  "status": "ready",
+  "scene": "kit",
+  "kit": {
+    "set": "ocean",
+    "cams": {
+      "start": {
+        "pos": [
+          -0.3,
+          4.3,
+          9.2
+        ],
+        "look": [
+          0,
+          4.3,
+          0
+        ]
+      },
+      "nah": {
+        "pos": [
+          0.3,
+          4.4,
+          8.3
+        ],
+        "look": [
+          0,
+          4.4,
+          0
+        ]
+      }
+    },
+    "props": [
+      {
+        "id": "head",
+        "type": "stamp",
+        "text": "Geburtsgewicht in kg",
+        "w": 3.4,
+        "h": 0.6,
+        "size": 100,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#12183a",
+        "pos": [
+          0.0,
+          6.1,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "b0",
+        "type": "bar",
+        "w": 0.75,
+        "d": 0.5,
+        "color": "#ffd24a",
+        "h": 0.02,
+        "pos": [
+          -1.1,
+          3.95,
+          0.4
+        ],
+        "show": true
+      },
+      {
+        "id": "n0",
+        "type": "stamp",
+        "text": "Fiona",
+        "w": 1.1333333333333333,
+        "h": 0.42,
+        "size": 90,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#12183a",
+        "pos": [
+          -1.1,
+          3.5,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "v0",
+        "type": "stamp",
+        "text": "13",
+        "w": 1.1333333333333333,
+        "h": 0.45,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffffff",
+        "pos": [
+          -1.1,
+          4.783333333333334,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "b1",
+        "type": "bar",
+        "w": 0.75,
+        "d": 0.5,
+        "color": "#7ee0f0",
+        "h": 0.02,
+        "pos": [
+          0.0,
+          3.95,
+          0.4
+        ],
+        "show": true
+      },
+      {
+        "id": "n1",
+        "type": "stamp",
+        "text": "Normal ab",
+        "w": 1.1333333333333333,
+        "h": 0.42,
+        "size": 90,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#12183a",
+        "pos": [
+          0.0,
+          3.5,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "v1",
+        "type": "stamp",
+        "text": "25",
+        "w": 1.1333333333333333,
+        "h": 0.45,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffffff",
+        "pos": [
+          0.0,
+          5.183333333333334,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "b2",
+        "type": "bar",
+        "w": 0.75,
+        "d": 0.5,
+        "color": "#9be37a",
+        "h": 0.02,
+        "pos": [
+          1.1,
+          3.95,
+          0.4
+        ],
+        "show": true
+      },
+      {
+        "id": "n2",
+        "type": "stamp",
+        "text": "Normal bis",
+        "w": 1.1333333333333333,
+        "h": 0.42,
+        "size": 90,
+        "radius": 18,
+        "color": "#ffffff",
+        "bg": "#12183a",
+        "pos": [
+          1.1,
+          3.5,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "v2",
+        "type": "stamp",
+        "text": "54",
+        "w": 1.1333333333333333,
+        "h": 0.45,
+        "size": 100,
+        "radius": 18,
+        "color": "#12183a",
+        "bg": "#ffffff",
+        "pos": [
+          1.1,
+          6.15,
+          1.4
+        ],
+        "show": false
+      },
+      {
+        "id": "fig",
+        "type": "figure",
+        "pos": [
+          -1.3,
+          0,
+          1.6
+        ],
+        "rot": 0.4,
+        "scale": 0.7,
+        "shirt": "#ec407a",
+        "pants": "#1b3a57"
+      }
+    ],
+    "beats": [
+      {
+        "at": 0.2,
+        "id": "head",
+        "do": "pop"
+      },
+      {
+        "at": "dreizehn|^13$",
+        "fallback": 0.15,
+        "id": "n0",
+        "do": "pop"
+      },
+      {
+        "at": "dreizehn|^13$",
+        "fallback": 0.15,
+        "id": "b0",
+        "do": "grow",
+        "to": 0.43333333333333335,
+        "dur": 1.2
+      },
+      {
+        "at": "dreizehn|^13$",
+        "fallback": 0.15,
+        "offset": 1.0,
+        "id": "v0",
+        "do": "pop"
+      },
+      {
+        "at": "f.nfundzwanzig|^25$",
+        "fallback": 0.35,
+        "id": "n1",
+        "do": "pop"
+      },
+      {
+        "at": "f.nfundzwanzig|^25$",
+        "fallback": 0.35,
+        "id": "b1",
+        "do": "grow",
+        "to": 0.8333333333333334,
+        "dur": 1.2
+      },
+      {
+        "at": "f.nfundzwanzig|^25$",
+        "fallback": 0.35,
+        "offset": 1.0,
+        "id": "v1",
+        "do": "pop"
+      },
+      {
+        "at": "vierundf.nfzig|^54$",
+        "fallback": 0.55,
+        "id": "n2",
+        "do": "pop"
+      },
+      {
+        "at": "vierundf.nfzig|^54$",
+        "fallback": 0.55,
+        "id": "b2",
+        "do": "grow",
+        "to": 1.8,
+        "dur": 1.2
+      },
+      {
+        "at": "vierundf.nfzig|^54$",
+        "fallback": 0.55,
+        "offset": 1.0,
+        "id": "v2",
+        "do": "pop"
+      },
+      {
+        "at": "kommentare",
+        "fallback": 0.95,
+        "id": "fig",
+        "do": "pose",
+        "pose": "wave"
+      },
+      {
+        "at": 1.0,
+        "do": "cam",
+        "shot": "nah",
+        "dur": 28
+      }
+    ]
+  }
+}
