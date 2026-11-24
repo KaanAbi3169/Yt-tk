@@ -14,8 +14,8 @@
  ],
  "thumb": {
   "title": "Voyager 1",
-  "sub": "Ein Lichttag entfernt",
-  "big": "24 h"
+  "sub": "Ein Lichttag entfernt (24 Stunden)",
+  "big": "24"
  },
  "status": "ready",
  "theme": "weltraum",
