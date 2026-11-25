@@ -1,0 +1,97 @@
+{
+ "id": "N011",
+ "topic": "Glühwein: Zucker und Kalorien pro Tasse",
+ "hook_type": "Du machst einen Fehler",
+ "group": "kin-saison",
+ "theme": "neon",
+ "music": "waswaerewenn",
+ "hl": "gramm|kalorien|zucker",
+ "script": "Eine Tasse Glühwein enthält fünf bis sechs Zuckerwürfel. Das zeigt eine Untersuchung auf Wiener Weihnachtsmärkten: Im Schnitt stecken rund achtzig Gramm Zucker in einem Liter. Im Ökotest-Vergleich waren es zwischen sechsundsechzig und vierundneunzig Gramm je Liter. Die Verbraucherzentrale Thüringen nennt für einen Becher mit zweihundert Millilitern rund hundertachtzig Kalorien, das ist fast ein Zehntel des Tagesbedarfs. Dazu kommen etwa dreizehn Gramm Alkohol pro Tasse. Zwei Tassen bringen dich also schon auf rund dreihundertsechzig Kalorien. Wie viele Tassen trinkst du pro Besuch? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "5–6 ZUCKERWÜRFEL PRO TASSE",
+   "emoji": "🍬",
+   "hl": "ZUCKER"
+  },
+  {
+   "type": "zahl",
+   "at": "wiener",
+   "fallback": 0.2,
+   "value": 80,
+   "text": "80",
+   "unit": "G ZUCKER",
+   "label": "pro Liter im Schnitt (Wiener Märkte, VKI)"
+  },
+  {
+   "type": "balken",
+   "at": "kotest",
+   "fallback": 0.36,
+   "title": "ZUCKER IN GRAMM PRO LITER",
+   "items": [
+    {
+     "name": "Ökotest, niedrigster",
+     "value": 66,
+     "text": "66"
+    },
+    {
+     "name": "Wiener Märkte, Schnitt",
+     "value": 80,
+     "text": "80"
+    },
+    {
+     "name": "Ökotest, höchster",
+     "value": 94,
+     "text": "94"
+    }
+   ]
+  },
+  {
+   "type": "zahl",
+   "at": "verbraucherzentrale",
+   "fallback": 0.52,
+   "value": 180,
+   "text": "180",
+   "unit": "KCAL",
+   "label": "pro 200-ml-Becher (Verbraucherzentrale Thüringen)"
+  },
+  {
+   "type": "zahl",
+   "at": "dreizehn",
+   "fallback": 0.7,
+   "value": 13,
+   "text": "13",
+   "unit": "G ALKOHOL",
+   "label": "pro Tasse (ca. 200 ml)"
+  },
+  {
+   "type": "hook",
+   "text": "2 TASSEN: RUND 360 KCAL",
+   "emoji": "🔥",
+   "hl": "360",
+   "at": "^zwei$",
+   "fallback": 0.82
+  },
+  {
+   "type": "frage",
+   "at": "^wie$",
+   "fallback": 0.92,
+   "text": "WIE VIELE TASSEN?",
+   "options": [
+    "EINE",
+    "ZWEI",
+    "MEHR"
+   ]
+  }
+ ],
+ "title_tiktok": "Glühwein: 5 Zuckerwürfel pro Tasse 🍬",
+ "title_youtube": "Wie viel Zucker steckt im Glühwein? Das zeigen Tests der Verbraucherschützer #shorts",
+ "text_tiktok": "Wie viele Tassen trinkst du pro Besuch? Schreib es in die Kommentare 👇 #glühwein #zucker #weihnachtsmarkt #advent #fürdich",
+ "text_youtube": "Eine VKI-Untersuchung auf Wiener Weihnachtsmärkten fand im Schnitt rund 80 Gramm Zucker pro Liter Glühwein, das entspricht 5 bis 6 Würfelzucker pro Tasse. Ökotest kam auf 66 bis 94 Gramm je Liter, die Verbraucherzentrale Thüringen nennt rund 180 Kalorien pro 200-ml-Becher. Wie viele Tassen trinkst du? 👇\\n\\nQuellen: Verbraucherzentrale Thüringen, Ökotest (über Utopia), VKI (über Aponet), Fitbook. Stimme und Grafiken mit KI erstellt.\\n\\n#shorts #glühwein #zucker #advent #wusstestdu",
+ "sources": [
+  "https://www.aponet.de/artikel/gluehwein-im-check-was-steckt-drin-31199",
+  "https://utopia.de/ratgeber/oekotest-welche-gluehweine-sind-am-besten",
+  "https://www.hogapage.de/nachrichten/beverage/wein-sekt/gluehwein-oft-extrem-suess/",
+  "https://www.stuttgarter-zeitung.de/wissen/weihnachtsmarkt-essen-kalorien-mhsd-79207469.html"
+ ]
+}

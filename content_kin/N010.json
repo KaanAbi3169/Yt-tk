@@ -1,0 +1,93 @@
+{
+ "id": "N010",
+ "topic": "Glühwein-Preise 2026 auf Weihnachtsmärkten",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-saison",
+ "theme": "fire",
+ "music": "wissen",
+ "hl": "euro|pfand|sieben",
+ "script": "Eine Tasse Glühwein kostet dieses Jahr rund fünf Euro. So schätzt es der Verband BWS für viele große Weihnachtsmärkte. Eine Umfrage von Coupons Punkt de kam im Schnitt auf vier Euro sechzig. In München ist es mit bis zu sieben Euro am teuersten, in Bayern liegt der Schnitt laut Antenne Bayern bei vier Euro siebenundzwanzig, sechsunddreißig Cent mehr als im Vorjahr. Dazu kommen fast überall drei Euro Pfand für die Tasse. In Köln und Berlin bleiben viele Preise gleich. Wie viel zahlst du für einen Glühwein? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "5 EURO FÜR EINE TASSE GLÜHWEIN",
+   "emoji": "🍷",
+   "hl": "5"
+  },
+  {
+   "type": "zahl",
+   "at": "umfrage",
+   "fallback": 0.3,
+   "value": 4.6,
+   "decimals": 2,
+   "text": "4,60",
+   "unit": "€ IM SCHNITT",
+   "label": "klassischer Glühwein (Coupons.de)"
+  },
+  {
+   "type": "balken",
+   "at": "m.nchen",
+   "fallback": 0.46,
+   "title": "PREIS PRO TASSE IN €",
+   "items": [
+    {
+     "name": "München (bis)",
+     "value": 7,
+     "text": "7,00"
+    },
+    {
+     "name": "Große Märkte (BWS)",
+     "value": 5,
+     "text": "ca. 5"
+    },
+    {
+     "name": "Umfrage-Schnitt",
+     "value": 4.6,
+     "text": "4,60"
+    },
+    {
+     "name": "Bayern (Antenne)",
+     "value": 4.27,
+     "text": "4,27"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "text": "DAZU: 3 € PFAND",
+   "emoji": "🥤",
+   "hl": "PFAND",
+   "at": "^dazu$",
+   "fallback": 0.7
+  },
+  {
+   "type": "hook",
+   "text": "KÖLN UND BERLIN: PREISE BLEIBEN",
+   "emoji": "📍",
+   "hl": "BLEIBEN",
+   "at": "k.ln",
+   "fallback": 0.82
+  },
+  {
+   "type": "frage",
+   "at": "^wie$",
+   "fallback": 0.92,
+   "text": "WAS ZAHLST DU?",
+   "options": [
+    "UNTER 4 €",
+    "4 BIS 6 €",
+    "ÜBER 6 €"
+   ]
+  }
+ ],
+ "title_tiktok": "Glühwein: So teuer ist die Tasse 🍷",
+ "title_youtube": "Was kostet Glühwein 2026? Die Preise auf den Weihnachtsmärkten #shorts",
+ "text_tiktok": "Wie viel zahlst du für einen Glühwein? Schreib es in die Kommentare 👇 #glühwein #weihnachtsmarkt #advent #preise #fürdich",
+ "text_youtube": "Für 2026 wird auf vielen großen Weihnachtsmärkten mit rund 5 Euro pro Tasse Glühwein gerechnet (Schätzung des Verbands BWS), dazu kommen meist 3 Euro Pfand. Eine Umfrage nennt im Schnitt 4,60 Euro, München liegt bei bis zu 7 Euro. Wie viel zahlst du? 👇\\n\\nQuellen: BWS (über Vinetur), Coupons.de und Antenne Bayern (über News.at und Infranken), t-online. Stimme und Grafiken mit KI erstellt.\\n\\n#shorts #glühwein #weihnachtsmarkt #advent #wusstestdu",
+ "sources": [
+  "https://www.vinetur.com/de/pdf/111151/a-cup-of-mulled-wine-is-expected-to-cost-about-euro5-at-many-large-german-christmas-markets-in-2026.pdf",
+  "https://www.news.at/kulinarik/gluehwein-preise-2026-weihnachtsmarkt-kosten-tasse",
+  "https://www.infranken.de/deutschland/wie-viel-eine-tasse-gluehwein-kostet-art-6411146",
+  "https://ms-aktuell.de/welt/gluehweinpreise-2026-15-11-2026/"
+ ]
+}

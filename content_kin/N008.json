@@ -1,0 +1,90 @@
+{
+ "id": "N008",
+ "topic": "Riemannsche Vermutung: eine Million Dollar Preisgeld",
+ "hook_type": "Quiz",
+ "group": "kin-mathe",
+ "theme": "ice",
+ "music": "wissen",
+ "hl": "million|riemann|1859",
+ "script": "Quiz: Wie viel Geld bekommt, wer die Riemannsche Vermutung beweist? Antwort A: hunderttausend Dollar. Antwort B: eine Million Dollar. Antwort C: zehn Millionen Dollar. Du hast drei Sekunden. Drei, zwei, eins. Die richtige Antwort ist B! Das Clay-Institut hat im Jahr zweitausend sieben Probleme der Mathematik mit je einer Million Dollar ausgeschrieben. Bernhard Riemann stellte seine Vermutung achtzehnhundertneunundfünfzig auf, und sie ist bis heute ungelöst. Gelöst wurde bisher nur ein Problem der Liste, die Poincaré-Vermutung. Hattest du es gewusst? Schreib deine Antwort in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "EINE MILLION DOLLAR FÜR EINEN BEWEIS?",
+   "emoji": "🧮",
+   "hl": "MILLION"
+  },
+  {
+   "type": "karten",
+   "at": "^antwort$",
+   "fallback": 0.14,
+   "title": "WIE VIEL PREISGELD?",
+   "items": [
+    "A: 100 000 $",
+    "B: 1 Million $",
+    "C: 10 Millionen $"
+   ]
+  },
+  {
+   "type": "hook",
+   "text": "DU HAST 3 SEKUNDEN",
+   "emoji": "⏱️",
+   "hl": "3",
+   "at": "^du$",
+   "fallback": 0.32
+  },
+  {
+   "type": "zahl",
+   "at": "richtige",
+   "fallback": 0.42,
+   "value": 1000000,
+   "text": "1 000 000",
+   "unit": "DOLLAR",
+   "label": "B ist richtig: Preisgeld für den Beweis"
+  },
+  {
+   "type": "hook",
+   "text": "7 PROBLEME, JE 1 MIO. $",
+   "emoji": "🏆",
+   "hl": "7",
+   "at": "clay",
+   "fallback": 0.56
+  },
+  {
+   "type": "hook",
+   "text": "SEIT 1859 UNGELÖST",
+   "emoji": "⏳",
+   "hl": "1859",
+   "at": "riemann",
+   "fallback": 0.7
+  },
+  {
+   "type": "zahl",
+   "at": "^gel.st$",
+   "fallback": 0.8,
+   "value": 1,
+   "text": "1 von 7",
+   "static": true,
+   "unit": "GELÖST",
+   "label": "bisher nur die Poincaré-Vermutung"
+  },
+  {
+   "type": "frage",
+   "at": "hattest",
+   "fallback": 0.92,
+   "text": "HATTEST DU DAS GEWUSST?",
+   "options": [
+    "JA",
+    "NEIN"
+   ]
+  }
+ ],
+ "title_tiktok": "Quiz: Eine Million Dollar für einen Beweis? 🧮",
+ "title_youtube": "Quiz: Wie viel Preisgeld gibt es für die Riemannsche Vermutung? 🧮 #shorts",
+ "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #mathe #wissen #wusstestdu #lernenmittiktok",
+ "text_youtube": "Eine Million Dollar für einen Beweis: Die Riemannsche Vermutung gehört zu den sieben Millennium-Problemen des Clay-Instituts. Hattest du es gewusst? 👇\n\nQuellen: Britannica, Clay Mathematics Institute. Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #mathe #wissen #wusstestdu",
+ "sources": [
+  "https://www.britannica.com/topic/Riemann-hypothesis",
+  "https://www.claymath.org/millennium/riemann-hypothesis/"
+ ]
+}

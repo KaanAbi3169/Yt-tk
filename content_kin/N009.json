@@ -1,0 +1,85 @@
+{
+ "id": "N009",
+ "topic": "Fiona, das Frühchen-Flusspferd: 13 kg Geburtsgewicht",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-tiere",
+ "theme": "sunset",
+ "music": "waswaerewenn",
+ "hl": "kilogramm|13|fiona",
+ "script": "Dieses Flusspferd wog bei der Geburt dreizehn Kilogramm. Fiona kam am vierundzwanzigsten Januar zweitausendsiebzehn im Zoo von Cincinnati sechs Wochen zu früh zur Welt. Ein normales Flusspferd-Baby wiegt bei der Geburt zwischen fünfundzwanzig und vierundfünfzig Kilogramm. Fiona wog also weniger als die Hälfte. Sie gilt als die kleinste bekannte Frühgeburt ihrer Art, die überlebt hat. Im Jahr zweitausendzweiundzwanzig wog sie neunhundertsieben Kilogramm. Wie viel hättest du ihr zugetraut? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "13 KILO: FIONA ÜBERLEBT",
+   "emoji": "🦛",
+   "hl": "13"
+  },
+  {
+   "type": "hook",
+   "text": "24.1.2017: 6 WOCHEN ZU FRÜH",
+   "emoji": "📅",
+   "hl": "WOCHEN",
+   "at": "^fiona$",
+   "fallback": 0.12
+  },
+  {
+   "type": "balken",
+   "at": "normales",
+   "fallback": 0.34,
+   "title": "GEBURTSGEWICHT IN KG",
+   "items": [
+    {
+     "name": "Fiona",
+     "value": 13,
+     "text": "13"
+    },
+    {
+     "name": "Normal, min.",
+     "value": 25,
+     "text": "25"
+    },
+    {
+     "name": "Normal, max.",
+     "value": 54,
+     "text": "54"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "text": "KLEINSTE BEKANNTE FRÜHGEBURT, DIE ÜBERLEBTE",
+   "emoji": "🏆",
+   "hl": "KLEINSTE",
+   "at": "kleinste",
+   "fallback": 0.6
+  },
+  {
+   "type": "zahl",
+   "at": "zweitausendzweiundzwanzig",
+   "fallback": 0.74,
+   "value": 907,
+   "text": "907",
+   "unit": "KG IM JAHR 2022",
+   "label": "Fionas Gewicht (AP)"
+  },
+  {
+   "type": "frage",
+   "at": "^wie$",
+   "fallback": 0.92,
+   "text": "WIE VIEL HÄTTEST DU IHR ZUGETRAUT?",
+   "options": [
+    "UNTER 100 KG",
+    "ÜBER 500 KG"
+   ]
+  }
+ ],
+ "title_tiktok": "Fiona: 13 Kilo und überlebt 🦛",
+ "title_youtube": "Fiona das Flusspferd: Mit 13 Kilo geboren, normal sind mindestens 25 🦛 #shorts",
+ "text_tiktok": "Wie viel hättest du ihr zugetraut? Schreib es in die Kommentare 👇 #fiona #flusspferd #tiere #wusstestdu #lernenmittiktok",
+ "text_youtube": "Fiona kam 2017 im Zoo von Cincinnati sechs Wochen zu früh zur Welt und wog 13 Kilogramm, normal sind bei Flusspferd-Babys 25 bis 54. 2022 wog sie 907 Kilogramm. Wie viel hättest du ihr zugetraut? 👇\n\nQuellen: Wikipedia, NPR, AP. Stimme und Grafiken mit KI erstellt.\n\n#shorts #fiona #flusspferd #tiere #wusstestdu",
+ "sources": [
+  "https://en.wikipedia.org/wiki/Fiona_(hippopotamus)",
+  "https://www.npr.org/2018/01/17/578584988/thriving-after-prematurity-fiona-the-celebrity-hippo-turns-1",
+  "https://m.washingtontimes.com/news/2022/aug/4/fiona-gets-a-sibling-baby-hippo-born-at-cincinnati/"
+ ]
+}
