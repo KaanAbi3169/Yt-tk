@@ -89,7 +89,7 @@ mutation Create($input: CreatePostInput!) {
     ... on MutationError { message }
   }
 }"""
-HISTORY_STATUS = ["scheduled", "sending", "sent", "draft"]
+HISTORY_STATUS = ["scheduled", "sending", "sent", "draft", "error"]  # error: damit die Selbstheilung (inventory.repair_failed) Fehler-Posts sieht
 # ------------------------------------------------------------------------------------------------
 
 
