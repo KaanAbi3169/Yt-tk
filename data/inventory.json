@@ -149,7 +149,7 @@
     {
       "id": "D021",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "source": "drive",
       "drive_id": "1ktx4jJzWZeLNwVtEuTrP9L5b3XXPfzwZ",
       "drive_title": "V021_Stosslueften.mp4",
@@ -2111,7 +2111,13 @@
         "https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900",
         "https://www.oneindia.com/international/gta-6-sales-cross-1-6-billion-as-playstation-accounts-for-75-of-early-purchases-8264247.html"
       ],
-      "due": "2026-11-24T16:00:00+01:00"
+      "due": "2026-11-24T16:00:00+01:00",
+      "errors": [
+        {
+          "at": "2026-11-25T04:44:11.065890+01:00",
+          "reason": "Buffer-Fehler, siehe Bericht"
+        }
+      ]
     },
     {
       "id": "N002",

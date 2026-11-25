@@ -1,25 +1,25 @@
 {
-  "updated": "2026-11-24T05:58:03.608877+01:00",
+  "updated": "2026-11-25T04:44:11.086888+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
       {
         "n": 1,
-        "avg": 1079
+        "avg": 1095
       }
     ],
     [
       "hook:Mythos aufdecken",
       {
         "n": 2,
-        "avg": 918
+        "avg": 931
       }
     ],
     [
       "topic:Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen",
       {
         "n": 2,
-        "avg": 918
+        "avg": 931
       }
     ],
     [
@@ -58,17 +58,17 @@
       }
     ],
     [
+      "slot:tiktok:Tue 18",
+      {
+        "n": 1,
+        "avg": 767
+      }
+    ],
+    [
       "slot:tiktok:Wed 16",
       {
         "n": 1,
         "avg": 765
-      }
-    ],
-    [
-      "slot:tiktok:Tue 18",
-      {
-        "n": 1,
-        "avg": 758
       }
     ],
     [
@@ -109,31 +109,17 @@
   ],
   "bottom": [
     [
-      "hook:Staunen + Ergebnis",
+      "hook:Alltags-Gedankenexperiment",
       {
         "n": 2,
-        "avg": 208
+        "avg": 144
       }
     ],
     [
-      "topic:Gallium und Mendelejews Vorhersage im Periodensystem",
+      "topic:Alle Handys funktionieren nur noch eine Stunde pro Tag",
       {
         "n": 2,
-        "avg": 208
-      }
-    ],
-    [
-      "slot:youtube:Wed 10",
-      {
-        "n": 1,
-        "avg": 204
-      }
-    ],
-    [
-      "topic:Toast Butterseite",
-      {
-        "n": 2,
-        "avg": 152
+        "avg": 144
       }
     ],
     [
@@ -147,7 +133,7 @@
       "slot:youtube:Tue 10",
       {
         "n": 1,
-        "avg": 89
+        "avg": 91
       }
     ],
     [
@@ -162,6 +148,20 @@
       {
         "n": 1,
         "avg": 32
+      }
+    ],
+    [
+      "slot:youtube:Mon 10",
+      {
+        "n": 1,
+        "avg": 27
+      }
+    ],
+    [
+      "slot:youtube:Mon 16",
+      {
+        "n": 1,
+        "avg": 24
       }
     ],
     [
@@ -201,8 +201,8 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 19,
-      "avg": 471
+      "n": 21,
+      "avg": 443
     },
     "hook:Du machst einen Fehler": {
       "n": 2,
@@ -221,8 +221,8 @@
       "avg": 524
     },
     "format:waswaerewenn": {
-      "n": 4,
-      "avg": 434
+      "n": 6,
+      "avg": 338
     },
     "hook:Superkraft-Gedankenexperiment": {
       "n": 2,
@@ -242,19 +242,19 @@
     },
     "hook:Mythos aufdecken": {
       "n": 2,
-      "avg": 918
+      "avg": 931
     },
     "slot:tiktok:Tue 18": {
       "n": 1,
-      "avg": 758
+      "avg": 767
     },
     "topic:Mythos: Verschluckter Kaugummi bleibt 7 Jahre im Magen": {
       "n": 2,
-      "avg": 918
+      "avg": 931
     },
     "slot:youtube:Tue 18": {
       "n": 1,
-      "avg": 1079
+      "avg": 1095
     },
     "hook:Emotionales Gedankenexperiment": {
       "n": 2,
@@ -270,7 +270,7 @@
     },
     "slot:youtube:Tue 10": {
       "n": 1,
-      "avg": 89
+      "avg": 91
     },
     "hook:drive-reserve": {
       "n": 5,
@@ -371,6 +371,38 @@
     "topic:Voyager 1 erreicht einen Lichttag Abstand (18.11.2026)": {
       "n": 2,
       "avg": 254
+    },
+    "hook:Alltags-Gedankenexperiment": {
+      "n": 2,
+      "avg": 144
+    },
+    "slot:tiktok:Mon 10": {
+      "n": 1,
+      "avg": 260
+    },
+    "topic:Alle Handys funktionieren nur noch eine Stunde pro Tag": {
+      "n": 2,
+      "avg": 144
+    },
+    "slot:youtube:Mon 10": {
+      "n": 1,
+      "avg": 27
+    },
+    "hook:Überraschung": {
+      "n": 2,
+      "avg": 160
+    },
+    "slot:tiktok:Mon 16": {
+      "n": 1,
+      "avg": 297
+    },
+    "topic:Schneeleopard: kann nicht brüllen, Schwanz, Sprung": {
+      "n": 2,
+      "avg": 160
+    },
+    "slot:youtube:Mon 16": {
+      "n": 1,
+      "avg": 24
     }
   }
 }

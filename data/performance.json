@@ -154,6 +154,14 @@
         "shares": 0,
         "watch_ms": 4800,
         "at": "2026-11-19T02:59:14.075577+01:00"
+      },
+      "7d": {
+        "views": 752,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4790,
+        "at": "2026-11-25T04:44:11.071080+01:00"
       }
     },
     {
@@ -170,6 +178,12 @@
         "likes": 8,
         "comments": 1,
         "at": "2026-11-19T02:59:14.076687+01:00"
+      },
+      "7d": {
+        "views": 1030,
+        "likes": 9,
+        "comments": 1,
+        "at": "2026-11-25T04:44:11.073125+01:00"
       }
     },
     {
@@ -188,6 +202,14 @@
         "shares": 0,
         "watch_ms": 5340,
         "at": "2026-11-19T02:59:14.077682+01:00"
+      },
+      "7d": {
+        "views": 747,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5340,
+        "at": "2026-11-25T04:44:11.075254+01:00"
       }
     },
     {
@@ -204,6 +226,12 @@
         "likes": 1,
         "comments": 0,
         "at": "2026-11-19T02:59:14.078582+01:00"
+      },
+      "7d": {
+        "views": 86,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-25T04:44:11.077318+01:00"
       }
     },
     {
@@ -460,6 +488,74 @@
         "likes": 2,
         "comments": 0,
         "at": "2026-11-24T05:58:03.608028+01:00"
+      }
+    },
+    {
+      "id": "X003",
+      "platform": "tiktok",
+      "format": "waswaerewenn",
+      "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
+      "hook_type": "Alltags-Gedankenexperiment",
+      "due": "2026-11-23T10:00:00+01:00",
+      "duration": 40.74,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 240,
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 7980,
+        "at": "2026-11-25T04:44:11.079477+01:00"
+      }
+    },
+    {
+      "id": "X003",
+      "platform": "youtube",
+      "format": "waswaerewenn",
+      "topic": "Alle Handys funktionieren nur noch eine Stunde pro Tag",
+      "hook_type": "Alltags-Gedankenexperiment",
+      "due": "2026-11-23T10:00:00+01:00",
+      "duration": 40.74,
+      "group": "was-waere-wenn-test",
+      "24h": {
+        "views": 22,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-25T04:44:11.081638+01:00"
+      }
+    },
+    {
+      "id": "T004",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung",
+      "hook_type": "Überraschung",
+      "due": "2026-11-23T16:00:00+01:00",
+      "duration": 31.7,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 267,
+        "likes": 6,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5490,
+        "at": "2026-11-25T04:44:11.083730+01:00"
+      }
+    },
+    {
+      "id": "T004",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Schneeleopard: kann nicht brüllen, Schwanz, Sprung",
+      "hook_type": "Überraschung",
+      "due": "2026-11-23T16:00:00+01:00",
+      "duration": 31.7,
+      "group": "3d-wissen",
+      "24h": {
+        "views": 24,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-25T04:44:11.085852+01:00"
       }
     }
   ]
