@@ -2375,30 +2375,6 @@
       ]
     },
     {
-      "id": "N008",
-      "format": "wissen",
-      "status": "ready",
-      "created": "2026-11-25T07:18:45.383818+01:00",
-      "source": "kinetic",
-      "topic": "Riemannsche Vermutung: eine Million Dollar Preisgeld",
-      "hook_type": "Quiz",
-      "series": null,
-      "episode": null,
-      "duration": 39.9,
-      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N008.mp4",
-      "title_tiktok": "Quiz: Eine Million Dollar für einen Beweis? 🧮",
-      "title_youtube": "Quiz: Wie viel Preisgeld gibt es für die Riemannsche Vermutung? 🧮 #shorts",
-      "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #mathe #wissen #wusstestdu #lernenmittiktok",
-      "text_youtube": "Eine Million Dollar für einen Beweis: Die Riemannsche Vermutung gehört zu den sieben Millennium-Problemen des Clay-Instituts. Hattest du es gewusst? 👇\n\nQuellen: Britannica, Clay Mathematics Institute. Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #mathe #wissen #wusstestdu",
-      "scenes": 8,
-      "buffer": {},
-      "group": "kin-mathe",
-      "sources": [
-        "https://www.britannica.com/topic/Riemann-hypothesis",
-        "https://www.claymath.org/millennium/riemann-hypothesis/"
-      ]
-    },
-    {
       "id": "N011",
       "format": "wissen",
       "status": "ready",
@@ -2422,6 +2398,30 @@
         "https://utopia.de/ratgeber/oekotest-welche-gluehweine-sind-am-besten",
         "https://www.hogapage.de/nachrichten/beverage/wein-sekt/gluehwein-oft-extrem-suess/",
         "https://www.stuttgarter-zeitung.de/wissen/weihnachtsmarkt-essen-kalorien-mhsd-79207469.html"
+      ]
+    },
+    {
+      "id": "N008",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-25T07:24:36.327552+01:00",
+      "source": "kinetic",
+      "topic": "Riemannsche Vermutung: eine Million Dollar Preisgeld",
+      "hook_type": "Quiz",
+      "series": null,
+      "episode": null,
+      "duration": 39.9,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N008.mp4",
+      "title_tiktok": "Quiz: Eine Million Dollar für einen Beweis? 🧮",
+      "title_youtube": "Quiz: Wie viel Preisgeld gibt es für die Riemannsche Vermutung? 🧮 #shorts",
+      "text_tiktok": "Hattest du es gewusst? Schreib deine Antwort in die Kommentare 👇 #quiz #mathe #wissen #wusstestdu #lernenmittiktok",
+      "text_youtube": "Eine Million Dollar für einen Beweis: Die Riemannsche Vermutung gehört zu den sieben Millennium-Problemen des Clay-Instituts. Hattest du es gewusst? 👇\n\nQuellen: Britannica, Clay Mathematics Institute. Stimme und Grafiken mit KI erstellt.\n\n#shorts #quiz #mathe #wissen #wusstestdu",
+      "scenes": 8,
+      "buffer": {},
+      "group": "kin-mathe",
+      "sources": [
+        "https://www.britannica.com/topic/Riemann-hypothesis",
+        "https://www.claymath.org/millennium/riemann-hypothesis/"
       ]
     }
   ]
