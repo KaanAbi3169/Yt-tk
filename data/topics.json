@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -19,7 +19,7 @@
     {
       "group": "mythos",
       "n": 6,
-      "avg": 508
+      "avg": 512
     },
     {
       "group": "3d-mythos",
@@ -28,11 +28,6 @@
     },
     {
       "group": "horror",
-      "n": 2,
-      "avg": 446
-    },
-    {
-      "group": "was-waere-wenn-test",
       "n": 2,
       "avg": 446
     },
@@ -52,12 +47,17 @@
       "avg": 329
     },
     {
-      "group": "3d-wissen",
+      "group": "was-waere-wenn-test",
       "n": 4,
-      "avg": 232
+      "avg": 295
+    },
+    {
+      "group": "3d-wissen",
+      "n": 6,
+      "avg": 208
     }
   ],
-  "open": 31,
+  "open": 35,
   "items": [
     {
       "title": "Blühende Kastanienbäume",
@@ -226,6 +226,42 @@
       "signal": "neu in den Top 1000 mit 10511 Aufrufen",
       "kind": "neu",
       "added": "2026-11-24",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Der talentierte Mr. F.",
+      "signal": "neu in den Top 1000 mit 17972 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-25",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Molybdän",
+      "signal": "neu in den Top 1000 mit 17657 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-25",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "St. Kilda (Schottland)",
+      "signal": "neu in den Top 1000 mit 17546 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-25",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Reichsverweser (Ungarn)",
+      "signal": "neu in den Top 1000 mit 13915 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-25",
       "status": "candidate",
       "source": "radar",
       "fit": "pruefen"
