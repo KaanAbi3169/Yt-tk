@@ -2322,6 +2322,31 @@
         "https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html"
       ],
       "due": "2026-11-27T18:00:00+01:00"
+    },
+    {
+      "id": "N009",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-25T07:18:04.341642+01:00",
+      "source": "kinetic",
+      "topic": "Fiona, das Frühchen-Flusspferd: 13 kg Geburtsgewicht",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 32.2,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N009.mp4",
+      "title_tiktok": "Fiona: 13 Kilo und überlebt 🦛",
+      "title_youtube": "Fiona das Flusspferd: Mit 13 Kilo geboren, normal sind mindestens 25 🦛 #shorts",
+      "text_tiktok": "Wie viel hättest du ihr zugetraut? Schreib es in die Kommentare 👇 #fiona #flusspferd #tiere #wusstestdu #lernenmittiktok",
+      "text_youtube": "Fiona kam 2017 im Zoo von Cincinnati sechs Wochen zu früh zur Welt und wog 13 Kilogramm, normal sind bei Flusspferd-Babys 25 bis 54. 2022 wog sie 907 Kilogramm. Wie viel hättest du ihr zugetraut? 👇\n\nQuellen: Wikipedia, NPR, AP. Stimme und Grafiken mit KI erstellt.\n\n#shorts #fiona #flusspferd #tiere #wusstestdu",
+      "scenes": 6,
+      "buffer": {},
+      "group": "kin-tiere",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fiona_(hippopotamus)",
+        "https://www.npr.org/2018/01/17/578584988/thriving-after-prematurity-fiona-the-celebrity-hippo-turns-1",
+        "https://m.washingtontimes.com/news/2022/aug/4/fiona-gets-a-sibling-baby-hippo-born-at-cincinnati/"
+      ]
     }
   ]
 }
