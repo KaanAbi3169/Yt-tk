@@ -12,7 +12,8 @@
    "type": "hook",
    "text": "5–6 ZUCKERWÜRFEL PRO TASSE",
    "emoji": "🍬",
-   "hl": "ZUCKER"
+   "hl": "ZUCKER",
+   "size": 88
   },
   {
    "type": "zahl",

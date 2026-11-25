@@ -47,9 +47,9 @@ const S={
  zahl(sc,lt,acc){
   const p=eo(lt/(sc.dur||1.3)),dec=sc.decimals||0,cur=sc.value*p;
   const txt=lt>(sc.dur||1.3)?(sc.text||fmtNum(sc.value,dec)):fmtNum(cur,dec);
-  const n=(sc.text||fmtNum(sc.value,dec)).length,size=n>12?120:n>9?150:n>6?200:n>4?250:320;
+  const n=(sc.text||fmtNum(sc.value,dec)).length,size=n>12?96:n>8?130:n>6?190:n>4?250:320;
   return `<div class="abs c" style="left:20px;top:300px;width:1040px;height:760px;flex-direction:column">
-   <div class="stroke" style="font-size:${size}px;line-height:1;color:${acc};transform:scale(${1+(1-ob(lt/.3))*.6})">${txt}</div>
+   <div class="stroke" style="font-size:${size}px;line-height:1;white-space:nowrap;color:${acc};transform:scale(${1+(1-ob(lt/.3))*.6})">${txt}</div>
    <div class="stroke" style="font-size:${size>200?90:72}px;margin-top:20px">${esc(sc.unit||'')}</div>
    <div style="font-size:58px;margin-top:34px;width:900px;text-align:center;line-height:1.2;opacity:${clamp((lt-.5)/.3)};text-shadow:0 4px 18px #000">${esc(sc.label||'')}</div></div>`},
  karten(sc,lt,acc,th){
