@@ -1,0 +1,713 @@
+{
+ "id": "E003",
+ "topic": "Weihnachten in Zahlen: Baum, Markt, Glühwein, Geschenke, Adventskranz (1. Advent 29.11.2026)",
+ "hook_type": "Kinetic-Doku Saison",
+ "group": "lang-kin",
+ "theme": "fire",
+ "music": "wissen",
+ "hl": "\\\\d|euro|millionen|milliarden|prozent",
+ "title_youtube": "Weihnachten in Zahlen: Baum, Markt, Glühwein, Geschenke und Adventskranz",
+ "text_youtube": "Am 29. November 2026 ist der erste Advent. Dieses Video zeigt die Zahlen hinter Weihnachten in Deutschland: Weihnachtsbäume, Weihnachtsmärkte, Glühwein-Preise und Zucker, Geschenkbudgets und die Geschichte des Adventskranzes. Hochrechnungen und Schätzungen sind als solche gekennzeichnet.\\n\\n{KAPITEL}\\n\\nQuellen: Bundesverband der Weihnachtsbaumerzeuger (über Payback und Bundesregierung), ZDFheute, Statista, Land NRW, Deutscher Schaustellerbund (Weihnachtsmarktstudie 2024), BWS (über Vinetur), Coupons.de und Antenne Bayern (über News.at und Infranken), Verbraucherzentrale Thüringen, Ökotest (über Utopia), VKI (über Aponet), Handelsverband Deutschland (über Lebensmittelpraxis und FashionUnited), Idealo (über Retail-News), evangelisch.de, Hamburg Tourismus.\\n\\nWelche Zahl hat dich am meisten überrascht? Schreib es in die Kommentare.\\n\\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\\n\\n#weihnachten #advent #glühwein #weihnachtsmarkt #wissen",
+ "sources": [
+  "https://www.bundesregierung.de/breg-de/service/archiv/fakten-zum-weihnachtsbaum-1688316",
+  "https://www.payback.de/ratgeber/besser-leben/zahl-des-tages-weihnachtsbaeume",
+  "https://www.zdfheute.de/wirtschaft/tannenbaum-teuer-kosten-weihnachten-weihnachtsbaeume-100.html",
+  "https://de.statista.com/infografik/amp/20318/haeufigste-weihnachtsbaumarten-in-deutschland",
+  "https://www.land.nrw/pressemitteilung/oh-tannenbaum-jeder-dritte-weihnachtsbaum-stammt-aus-nordrhein-westfalen",
+  "https://www.dsbev.de/wp-content/uploads/2025/05/Fact-Sheet-Weihnachtsmarktstudie-2024.pdf",
+  "https://www.zdfheute.de/panorama/weihnachtsmarkt-sicherheitskonzepte-100.html",
+  "https://www.vinetur.com/de/pdf/111151/a-cup-of-mulled-wine-is-expected-to-cost-about-euro5-at-many-large-german-christmas-markets-in-2026.pdf",
+  "https://www.news.at/kulinarik/gluehwein-preise-2026-weihnachtsmarkt-kosten-tasse",
+  "https://www.infranken.de/deutschland/wie-viel-eine-tasse-gluehwein-kostet-art-6411146",
+  "https://www.aponet.de/artikel/gluehwein-im-check-was-steckt-drin-31199",
+  "https://utopia.de/ratgeber/oekotest-welche-gluehweine-sind-am-besten",
+  "https://lebensmittelpraxis.de/handel-aktuell/zentrale-management/50248-handelsverband-deutschland-hde-rechnet-mit-einem-stabilen-weihnachtsgeschaeft.html",
+  "https://retail-news.de/black-friday-2026-idealo-preisstudie-rabatte/",
+  "https://www.evangelisch.de/inhalte/178946/27-11-2020/neue-erkenntnisse-zum-adventskranz"
+ ],
+ "thumb": {
+  "title": "Weihnachten",
+  "sub": "in Zahlen zum 1. Advent",
+  "big": "29.11."
+ },
+ "blocks": [
+  {
+   "text": "Am neunundzwanzigsten November zweitausendsechsundzwanzig ist der erste Advent. In diesem Video schauen wir auf die Zahlen hinter Weihnachten in Deutschland: Weihnachtsbäume, Weihnachtsmärkte, Glühwein, Geschenke und den Adventskranz. Wo Zahlen Schätzungen sind, sage ich es dazu. Fangen wir mit dem Baum an.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "WEIHNACHTEN IN ZAHLEN",
+     "emoji": "🎄",
+     "hl": "ZAHLEN"
+    },
+    {
+     "type": "hook",
+     "text": "1. ADVENT: 29. NOVEMBER",
+     "emoji": "🕯️",
+     "hl": "ADVENT"
+    }
+   ],
+   "chapter": "Einleitung",
+   "part": 1
+  },
+  {
+   "text": "Zuerst der Baum. Der Bundesverband der Weihnachtsbaumerzeuger schätzt, dass in Deutschland jedes Jahr zwischen dreiundzwanzig und fünfundzwanzig Millionen Weihnachtsbäume verkauft werden. Rechnerisch kommt damit etwa ein Baum auf drei bis vier Einwohner.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "1",
+     "title": "Der Baum"
+    },
+    {
+     "type": "zahl",
+     "value": 25,
+     "text": "23-25",
+     "unit": "MIO. BÄUME",
+     "label": "verkauft pro Jahr (Bundesverband)",
+     "static": true
+    }
+   ],
+   "chapter": "Der Baum",
+   "part": 1
+  },
+  {
+   "text": "Eine Frage, die bei dieser Zahl oft kommt: Ist ein echter Baum schlechter als ein künstlicher? Die Antwort hängt davon ab, wie lange man einen künstlichen Baum nutzt, woher der echte stammt und wie er entsorgt wird. Darüber streiten Fachleute, und deshalb nenne ich hier bewusst keinen Sieger, sondern nur die Zahl der verkauften Bäume.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "ECHT ODER KÜNSTLICH?",
+     "emoji": "🤔",
+     "hl": "ECHT"
+    },
+    {
+     "type": "zitat",
+     "text": "Es hängt davon ab, wie lange du ihn nutzt, woher er kommt und wie er entsorgt wird.",
+     "hl": "hängt"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Rund neunzehn Millionen dieser Bäume wachsen nach Angaben des Verbands in Deutschland, der Rest kommt aus dem Ausland. Die beliebteste Sorte ist die Nordmanntanne. Laut einer älteren Auswertung von Statista machte sie etwa fünfundsiebzig Prozent aus, danach folgen die Blaufichte mit fünfzehn und die Fichte mit sieben Prozent.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 19,
+     "text": "19",
+     "unit": "MIO.",
+     "label": "wachsen in Deutschland"
+    },
+    {
+     "type": "balken",
+     "title": "BELIEBTE SORTEN (ANTEIL IN %, STATISTA)",
+     "items": [
+      {
+       "name": "Nordmanntanne",
+       "value": 75,
+       "text": "75"
+      },
+      {
+       "name": "Blaufichte",
+       "value": 15,
+       "text": "15"
+      },
+      {
+       "name": "Fichte",
+       "value": 7,
+       "text": "7"
+      }
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Der Umsatz mit Weihnachtsbäumen liegt nach Schätzung des Verbands bei rund siebenhundert Millionen Euro im Jahr. Die meisten Bäume wachsen auf Plantagen. Laut dem Land Nordrhein-Westfalen stammt jeder dritte deutsche Weihnachtsbaum von dort.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 700,
+     "text": "700",
+     "unit": "MIO. €",
+     "label": "Umsatz pro Jahr (Schätzung)"
+    },
+    {
+     "type": "hook",
+     "text": "JEDER 3. BAUM AUS NRW",
+     "emoji": "📍",
+     "hl": "3"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Zu den Preisen: Laut ZDFheute sind Weihnachtsbäume zuletzt teurer geworden. Wie viel ein Baum kostet, hängt stark von der Sorte und der Größe ab, und die Preise unterscheiden sich von Region zu Region. Deshalb gibt es keine einzige Zahl, die für ganz Deutschland gilt. Es lohnt sich, vor dem Kauf zwei, drei Anbieter zu vergleichen.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "PREISE: JE NACH SORTE UND GRÖSSE",
+     "emoji": "🌲",
+     "hl": "SORTE"
+    },
+    {
+     "type": "karten",
+     "title": "WAS DEN PREIS BESTIMMT",
+     "items": [
+      "Sorte (Nordmanntanne meist teurer)",
+      "Größe des Baums",
+      "Region und Anbieter"
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Nun zu den Weihnachtsmärkten. Der Deutsche Schaustellerbund spricht von rund dreitausendzweihundertfünfzig größeren Weihnachtsmärkten. Laut einer Studie, die der Verband in Auftrag gab, wurden sie im Jahr zweitausendvierundzwanzig rund einhundertsiebzig Millionen Mal besucht. Neuere bundesweite Zahlen für die Jahre danach habe ich nicht gefunden.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "2",
+     "title": "Der Markt"
+    },
+    {
+     "type": "zahl",
+     "value": 170,
+     "text": "170",
+     "unit": "MIO. BESUCHE",
+     "label": "Weihnachtsmärkte 2024 (Schaustellerbund-Studie)"
+    }
+   ],
+   "chapter": "Der Markt",
+   "part": 1
+  },
+  {
+   "text": "Auf den Märkten selbst lag der Umsatz laut dieser Studie bei vier Komma eins sieben Milliarden Euro, ein Plus von rund fünfundvierzig Prozent. Außerhalb der Märkte kamen weitere vier Komma acht acht Milliarden Euro dazu, die Besucher bei Nahverkehr, Gastronomie und Einzelhandel ausgaben.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "UMSATZ 2024 (MRD. €)",
+     "items": [
+      {
+       "name": "auf den Märkten",
+       "value": 4.17,
+       "text": "4,17"
+      },
+      {
+       "name": "außerhalb (ÖPNV, Gastro, Handel)",
+       "value": 4.88,
+       "text": "4,88"
+      }
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Die Zahl der Märkte hängt davon ab, wer zählt. Die GEMA meldete, dass im Jahr zweitausendfünfundzwanzig achttausend Weihnachtsmärkte eine Lizenz erworben haben, mehr als im Vorjahr. Der Schaustellerbund nennt rund dreitausendzweihundertfünfzig größere Märkte. Vermutlich liegt der Unterschied daran, dass die GEMA auch kleine Märkte mitzählt.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "WIE VIELE MÄRKTE?",
+     "items": [
+      {
+       "name": "GEMA-Lizenzen 2025",
+       "value": 8000,
+       "text": "8 000"
+      },
+      {
+       "name": "Schaustellerbund (größere)",
+       "value": 3250,
+       "text": "3 250"
+      }
+     ]
+    },
+    {
+     "type": "hook",
+     "text": "ES KOMMT AUFS ZÄHLEN AN",
+     "emoji": "🧮",
+     "hl": "ZÄHLEN"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Für die Schausteller sind die Märkte besonders wichtig: Sie erzielen dort rund ein Drittel ihres Gesamtumsatzes. Gleichzeitig steht die Branche unter Druck, denn Kosten und Sicherheitsauflagen sind gestiegen. Einzelne Städte haben Märkte abgesagt, der Schaustellerbund widerspricht aber dem Bild massenhafter Absagen.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 33,
+     "text": "33",
+     "unit": "%",
+     "label": "des Jahresumsatzes der Schausteller entstehen auf Weihnachtsmärkten"
+    },
+    {
+     "type": "hook",
+     "text": "KOSTEN UND SICHERHEIT: DRUCK AUF MÄRKTE",
+     "emoji": "⚠️",
+     "hl": "DRUCK"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Einzelne Märkte melden eigene Zahlen. Beim Heidelberger Weihnachtsmarkt waren es im Jahr zweitausendfünfundzwanzig mehr als eine Million Besucher, obwohl andere Märkte schwächere Zahlen hatten. Solche Einzelwerte zeigen: Es gibt Gewinner und Verlierer, und der Durchschnitt versteckt beides.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 1,
+     "text": "1+",
+     "unit": "MIO. BESUCHE",
+     "label": "Heidelberger Weihnachtsmarkt 2025 (Stadtmeldung)",
+     "static": true
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine Einordnung: Die Studie stammt vom Verband der Schausteller selbst. Solche Zahlen sind nützlich, aber sie haben einen Absender mit eigenem Interesse. Deshalb nenne ich bei jeder Zahl, woher sie kommt, und bei jeder Hochrechnung, dass es eine Rechnung ist.",
+   "scenes": [
+    {
+     "type": "zitat",
+     "text": "Zahlen von Verbänden sind nützlich, haben aber einen Absender mit Interesse.",
+     "hl": "Absender"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine eigene Rechnung dazu: Teilt man den Umsatz auf den Märkten durch die einhundertsiebzig Millionen Besuche, ergeben sich rund vierundzwanzig Euro pro Besuch. Zählt man die Ausgaben außerhalb dazu, sind es rund dreiundfünfzig Euro. Das ist ein Durchschnitt, kein Einzelfall, und er mischt Familien mit Einzelbesuchern.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "EIGENE RECHNUNG: PRO BESUCH",
+     "a": {
+      "name": "nur auf dem Markt",
+      "value": 24,
+      "text": "ca. 24 €"
+     },
+     "b": {
+      "name": "mit Anreise, Essen, Einkauf",
+      "value": 53,
+      "text": "ca. 53 €"
+     },
+     "win": "b"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Jetzt zum Glühwein. Für zweitausendsechsundzwanzig rechnet der Verband BWS auf vielen großen Märkten mit rund fünf Euro pro Tasse. Eine Umfrage von Coupons Punkt de kam im Schnitt auf vier Euro sechzig für einen klassischen roten Glühwein.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "3",
+     "title": "Der Glühwein"
+    },
+    {
+     "type": "zahl",
+     "value": 5,
+     "text": "5",
+     "unit": "€ PRO TASSE",
+     "label": "Schätzung des Verbands BWS für große Märkte"
+    }
+   ],
+   "chapter": "Der Glühwein",
+   "part": 1
+  },
+  {
+   "text": "Am oberen Ende steht der Münchner Christkindlmarkt mit bis zu sieben Euro. In Bayern liegt der Schnitt laut Antenne Bayern bei vier Euro siebenundzwanzig, sechsunddreißig Cent mehr als im Vorjahr. In Köln und Berlin bleiben viele Preise dagegen gleich.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "GLÜHWEIN: PREIS PRO TASSE (€)",
+     "items": [
+      {
+       "name": "München (bis)",
+       "value": 7,
+       "text": "7,00"
+      },
+      {
+       "name": "Große Märkte (BWS)",
+       "value": 5,
+       "text": "ca. 5"
+      },
+      {
+       "name": "Umfrage-Schnitt",
+       "value": 4.6,
+       "text": "4,60"
+      },
+      {
+       "name": "Bayern (Antenne)",
+       "value": 4.27,
+       "text": "4,27"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Dazu kommt fast überall ein Pfand von drei Euro für die Tasse. Wer die Tasse zurückgibt, bekommt es wieder. Wer sie als Andenken behält, hat den Glühwein am Ende drei Euro teurer bezahlt. Für viele ist das Teil des Erlebnisses.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "DAZU: 3 € PFAND",
+     "emoji": "🥤",
+     "hl": "PFAND"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Eine Rechnung für einen Abend zu zweit: Zwei Glühwein zu vier Euro sechzig kosten neun Euro zwanzig. Dazu kommen sechs Euro Pfand für zwei Tassen, die du zurückbekommst, wenn du sie abgibst. Wer also nur Glühwein trinkt, bezahlt am Ende neun Euro zwanzig, wer die Tassen mitnimmt, fünfzehn Euro zwanzig.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "2 GLÜHWEIN AM ABEND (EIGENE RECHNUNG)",
+     "a": {
+      "name": "Tassen zurückgeben",
+      "value": 9.2,
+      "text": "9,20 €"
+     },
+     "b": {
+      "name": "Tassen mitnehmen",
+      "value": 15.2,
+      "text": "15,20 €"
+     },
+     "win": "a"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Und was steckt drin? Eine Untersuchung auf Wiener Weihnachtsmärkten fand im Schnitt rund achtzig Gramm Zucker pro Liter, das entspricht fünf bis sechs Würfelzucker pro Tasse. Im Ökotest-Vergleich lagen die Werte zwischen sechsundsechzig und vierundneunzig Gramm je Liter.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 80,
+     "text": "80",
+     "unit": "G ZUCKER",
+     "label": "pro Liter im Schnitt (Wiener Märkte, VKI)"
+    },
+    {
+     "type": "balken",
+     "title": "ZUCKER IN G PRO LITER",
+     "items": [
+      {
+       "name": "Ökotest, niedrigster",
+       "value": 66,
+       "text": "66"
+      },
+      {
+       "name": "Wiener Märkte",
+       "value": 80,
+       "text": "80"
+      },
+      {
+       "name": "Ökotest, höchster",
+       "value": 94,
+       "text": "94"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Die Verbraucherzentrale Thüringen nennt für einen Becher mit zweihundert Millilitern rund hundertachtzig Kalorien, fast ein Zehntel des Tagesbedarfs. Dazu kommen etwa dreizehn Gramm Alkohol pro Tasse. Zwei Tassen sind damit schon rund dreihundertsechzig Kalorien.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 180,
+     "text": "180",
+     "unit": "KCAL",
+     "label": "pro 200-ml-Becher (Verbraucherzentrale Thüringen)"
+    },
+    {
+     "type": "zahl",
+     "value": 13,
+     "text": "13",
+     "unit": "G ALKOHOL",
+     "label": "pro Tasse, ca. 200 ml"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Eine kurze Rechnung: Drei Tassen an einem Abend sind nach diesen Werten rund fünfhundertvierzig Kalorien und etwa fünfzehn bis achtzehn Würfelzucker. Wer das weiß, kann entscheiden, ob es ihm das wert ist. Verbieten will ich niemandem etwas, es geht nur um die Zahlen hinter der Tasse.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "3 TASSEN: ~540 KCAL",
+     "emoji": "🔥",
+     "hl": "540"
+    },
+    {
+     "type": "zitat",
+     "text": "Es geht nicht ums Verbieten, nur um die Zahlen hinter der Tasse.",
+     "hl": "Zahlen"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Kommen wir zu den Geschenken. Laut einer Umfrage des Handelsverbands Deutschland, kurz HDE, wollen die Deutschen im Schnitt zweihundertzweiundsechzig Euro pro Person für Weihnachtsgeschenke ausgeben. Im Vorjahr waren es zweihundertdreiundsechzig Euro. Die Geschenkbudgets bleiben also praktisch gleich.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "4",
+     "title": "Die Geschenke"
+    },
+    {
+     "type": "zahl",
+     "value": 262,
+     "text": "262",
+     "unit": "€ PRO PERSON",
+     "label": "geplante Geschenkausgaben (HDE-Umfrage), Vorjahr: 263"
+    }
+   ],
+   "chapter": "Die Geschenke",
+   "part": 2
+  },
+  {
+   "text": "Im Internet erwartet der HDE für das Weihnachtsgeschäft ein nominales Plus von vier Komma eins Prozent. Eine andere Quelle rechnet daraus einen Online-Umsatz von dreiundzwanzig Komma eins Milliarden Euro. Auch hier gilt: Es ist eine Erwartung des Verbands, kein Endergebnis.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 4.1,
+     "text": "+4,1",
+     "unit": "%",
+     "label": "erwartetes Online-Plus im Weihnachtsgeschäft (HDE)",
+     "decimals": 1,
+     "static": true
+    },
+    {
+     "type": "hook",
+     "text": "ERWARTUNG, KEIN ERGEBNIS",
+     "emoji": "🔮",
+     "hl": "ERWARTUNG"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Die Händler selbst sind skeptisch. Etwa zwei Drittel von dreihundert befragten Handelsunternehmen rechnen mit einem schlechteren Weihnachtsgeschäft als im Vorjahr, im Non-Food-Handel sind es sechsundfünfzig Prozent. Stabile Budgets bedeuten also nicht automatisch gute Stimmung im Laden.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 66,
+     "text": "2 von 3",
+     "static": true,
+     "unit": "HÄNDLERN",
+     "label": "erwarten ein schlechteres Weihnachtsgeschäft (300 befragte Unternehmen)"
+    },
+    {
+     "type": "zahl",
+     "value": 56,
+     "text": "56",
+     "unit": "%",
+     "label": "im Non-Food-Handel"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Für den gesamten Einzelhandel rechnet der HDE im Jahr zweitausendsechsundzwanzig mit rund sechshundertsiebenundneunzig Komma vier Milliarden Euro Umsatz, nach sechshundertdreiundachtzig Komma sieben Milliarden im Jahr davor. Preisbereinigt erwartet der Verband ein Prozent Wachstum.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "EINZELHANDELSUMSATZ (MRD. €, HDE)",
+     "items": [
+      {
+       "name": "2025",
+       "value": 683.7,
+       "text": "683,7"
+      },
+      {
+       "name": "2026 (Prognose)",
+       "value": 697.4,
+       "text": "697,4"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Ein Termin kurz vor dem ersten Advent ist der Black Friday am siebenundzwanzigsten November. Laut dem Vergleichsportal Idealo waren im Jahr zweitausendfünfundzwanzig neunundsiebzig Prozent der untersuchten Produkte günstiger als im Oktober, im Schnitt um acht Prozent. Aber zweiundfünfzig Prozent waren schon früher im November noch billiger. Das Portal hat ein Eigeninteresse, die Zahlen sind mit Vorsicht zu lesen.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "BLACK FRIDAY: 27. NOVEMBER",
+     "emoji": "🛍️",
+     "hl": "BLACK"
+    },
+    {
+     "type": "zahl",
+     "value": 52,
+     "text": "52",
+     "unit": "%",
+     "label": "waren schon früher im November billiger (Idealo, 2025)"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Damit du den Überblick behältst, hier die Termine: Black Friday am siebenundzwanzigsten November, erster Advent am neunundzwanzigsten, Cyber Monday am dreißigsten, Nikolaus am sechsten Dezember, vierter Advent am zwanzigsten und Heiligabend am vierundzwanzigsten Dezember.",
+   "scenes": [
+    {
+     "type": "zeit",
+     "title": "TERMINE 2026",
+     "events": [
+      {
+       "year": "27.11.",
+       "text": "Black Friday"
+      },
+      {
+       "year": "29.11.",
+       "text": "1. Advent"
+      },
+      {
+       "year": "6.12.",
+       "text": "Nikolaus"
+      },
+      {
+       "year": "20.12.",
+       "text": "4. Advent"
+      },
+      {
+       "year": "24.12.",
+       "text": "Heiligabend"
+      }
+     ],
+     "focus": 1
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Ein Wort dazu, wie du solche Zahlen selbst prüfst. Frage dich bei jeder Zahl drei Dinge: Wer sagt das und hat er ein Interesse? Für welches Jahr gilt die Zahl? Und wie wurde gezählt, zum Beispiel Verkäufe, Auslieferungen oder Besuche? Wenn eine dieser Antworten fehlt, ist die Zahl nur ein Anhaltspunkt.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "3 FRAGEN AN JEDE ZAHL",
+     "items": [
+      "Wer sagt das, mit welchem Interesse?",
+      "Für welches Jahr gilt sie?",
+      "Wie wurde gezählt?"
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Eine kleine Rechnung zu den Geschenken: Eine vierköpfige Familie, die genau den Durchschnitt von zweihundertzweiundsechzig Euro pro Person ausgibt, kommt auf rund tausendachtundvierzig Euro. Das ist eine reine Rechnung mit dem Durchschnitt. Echte Budgets sind sehr verschieden, und viele Menschen schenken weniger, andere mehr.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 1048,
+     "text": "1 048",
+     "unit": "€",
+     "label": "Beispiel: 4 Personen x 262 Euro (reine Rechnung)"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Zum Schluss der Adventskranz. Er geht nach allgemeiner Darstellung auf den Hamburger Theologen Johann Hinrich Wichern zurück. Im Jahr achtzehnhundertneununddreißig stellte er im Rauhen Haus, einem Heim für Kinder, einen Kranz auf, an dem die Kinder die Tage bis Weihnachten abzählen konnten.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "5",
+     "title": "Der Adventskranz"
+    },
+    {
+     "type": "zahl",
+     "value": 1839,
+     "text": "1839",
+     "unit": "",
+     "label": "Wichern im Rauhen Haus in Hamburg",
+     "static": true
+    }
+   ],
+   "chapter": "Der Adventskranz",
+   "part": 2
+  },
+  {
+   "text": "Die Details sind umstritten. Eine Quelle nennt ein Wagenrad mit vierundzwanzig kleinen roten und vier großen weißen Kerzen, eine andere neunzehn kleine rote und vier dicke weiße. Ein Bericht aus dem Jahr zweitausendzwanzig weist darauf hin, dass es für unterschiedliche Kerzen keine sicheren Belege gibt. Das Archiv des Rauhen Hauses besitze nur eine einzige bildliche Darstellung des ersten Kranzes.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "WIE SAH DER ERSTE KRANZ AUS?",
+     "items": [
+      "Quelle A: 24 kleine rote + 4 große weiße Kerzen",
+      "Quelle B: 19 kleine rote + 4 dicke weiße Kerzen",
+      "Bericht 2020: keine sicheren Belege"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Heute hat der Kranz meistens vier Kerzen, eine für jeden Advent. Der erste Advent ist am neunundzwanzigsten November, der vierte am zwanzigsten Dezember, vier Tage vor Heiligabend. Aus einem Zählkranz für Kinder ist ein Symbol der Vorweihnachtszeit geworden.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "4 KERZEN, 4 SONNTAGE",
+     "emoji": "🕯️",
+     "hl": "4"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Für dieses Video habe ich Berichte und Daten vom Bundesverband der Weihnachtsbaumerzeuger, vom Deutschen Schaustellerbund, vom Handelsverband Deutschland, von der Verbraucherzentrale Thüringen, von Ökotest, vom Vergleichsportal Idealo und von evangelisch.de verglichen. Wo sich Quellen widersprechen, habe ich das gesagt. Alle Links stehen in der Beschreibung.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "QUELLEN IM VIDEO",
+     "items": [
+      "Verbände (Bäume, Märkte, Handel)",
+      "Verbraucherzentrale, Ökotest",
+      "Preisportale (Idealo, Coupons.de)",
+      "Kirche und Hamburg Tourismus (Kranz)"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Fassen wir zusammen. Bis zu fünfundzwanzig Millionen verkaufte Bäume im Jahr, rund einhundertsiebzig Millionen Marktbesuche im Jahr zweitausendvierundzwanzig, etwa fünf Euro pro Tasse Glühwein, zweihundertzweiundsechzig Euro Geschenkbudget pro Person und ein Adventskranz, der seit achtzehnhundertneununddreißig Tage zählt. Alles, was geschätzt oder hochgerechnet ist, habe ich so genannt.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "WEIHNACHTEN IN ZAHLEN",
+     "items": [
+      "Bis 25 Mio. Bäume pro Jahr",
+      "170 Mio. Marktbesuche (2024)",
+      "ca. 5 € pro Tasse Glühwein",
+      "262 € Geschenkbudget pro Person",
+      "Adventskranz seit 1839"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Welche Zahl hat dich am meisten überrascht? Schreib es in die Kommentare. Und sag mir: Was gehört für dich zur Adventszeit am meisten, der Baum, der Markt, der Glühwein oder der Kranz? Wenn dir das Video gefallen hat, abonniere den Kanal für die nächsten Themen, die gerade aktuell sind.",
+   "scenes": [
+    {
+     "type": "frage",
+     "text": "WAS GEHÖRT FÜR DICH DAZU?",
+     "options": [
+      "BAUM",
+      "MARKT",
+      "GLÜHWEIN",
+      "KRANZ"
+     ]
+    }
+   ],
+   "part": 3
+  }
+ ]
+}
