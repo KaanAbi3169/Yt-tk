@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "videos": [
     {
       "yt_id": "BibnA5CKqjE",
@@ -7,7 +7,7 @@
       "format": "wissen",
       "hook": "Mythos aufdecken",
       "title": "Bleibt verschluckter Kaugummi 7 Jahre im Magen? 🫧 #shorts",
-      "views": 1029,
+      "views": 1030,
       "avg_s": 16.0,
       "avg_pct": 49.9
     },
@@ -87,9 +87,9 @@
       "format": "wissen",
       "hook": "Staunen + Ergebnis",
       "title": "Dieses Metall schmilzt in deiner Hand: Gallium und das Periodensystem 🧪 #shorts",
-      "views": 115,
-      "avg_s": 19.0,
-      "avg_pct": 47.6
+      "views": 134,
+      "avg_s": 18.0,
+      "avg_pct": 45.9
     },
     {
       "yt_id": "zV-YWIko5FM",
@@ -97,9 +97,9 @@
       "format": "wissen",
       "hook": "drive-reserve",
       "title": "Fällt Toast immer auf die Butterseite? Der Mythos im Check 🍞 #shorts",
-      "views": 95,
-      "avg_s": 21.0,
-      "avg_pct": 34.0
+      "views": 120,
+      "avg_s": 19.0,
+      "avg_pct": 30.8
     },
     {
       "yt_id": "vAnTfkSdx_I",
@@ -112,12 +112,22 @@
       "avg_pct": 42.5
     },
     {
+      "yt_id": "Xq0z4czxIjI",
+      "id": "T003",
+      "format": "wissen",
+      "hook": "Staunen + Aktualität",
+      "title": "Voyager 1: Diese Sonde ist jetzt einen ganzen Lichttag von der Erde entfernt 🚀 #shorts",
+      "views": 85,
+      "avg_s": 19.0,
+      "avg_pct": 49.4
+    },
+    {
       "yt_id": "AMH4oCcPv_0",
       "id": "–",
       "format": "–",
       "hook": "–",
       "title": "Das Bermuda dreieck 😱 #wissenswertes #wissen #mystery",
-      "views": 71,
+      "views": 72,
       "avg_s": 28.0,
       "avg_pct": 45.8
     },
@@ -190,6 +200,16 @@
       "views": 5,
       "avg_s": 34.0,
       "avg_pct": 55.4
+    },
+    {
+      "yt_id": "yMDPQ4PEV9s",
+      "id": "L003",
+      "format": "lang",
+      "hook": "Liste + Frage",
+      "title": "10 Dinge, die dein Körper und dein Gehirn tun, ohne dass du es merkst",
+      "views": 3,
+      "avg_s": 15.0,
+      "avg_pct": 2.6
     },
     {
       "yt_id": "6t884vuFjR8",
