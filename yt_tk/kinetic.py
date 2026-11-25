@@ -253,7 +253,7 @@ def _sentences(text: str) -> list:
     return [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
 
 
-def timeline(cfg: dict, words: list, dur_v: float) -> tuple:
+def timeline(cfg: dict, words: list, dur_v: float, raw: list = None) -> tuple:
     """Szenenliste fuer ein Langvideo: je Block zuerst die Bildszenen, danach Karaoke-Saetze (satz) bis zum Blockende."""
     texts = [b["text"].strip() for b in cfg["blocks"]]
     starts, fb = align(texts, words)
@@ -272,6 +272,11 @@ def timeline(cfg: dict, words: list, dur_v: float) -> tuple:
             a = idx[0] + int(round(len(idx) * acc / tot)) if idx else 0
             acc += len(x.split())
             bounds.append(min(a, len(words) - 1))
+        # genauer: Satzzeichen aus der Whisper-Ausgabe (Zahlen als Ziffern verfaelschen die Wortzaehlung)
+        if raw and idx and len(raw) == len(words):
+            wb = [idx[0]] + [k + 1 for k in idx[:-1] if re.search(r"[.!?]$", raw[k]) and not re.match(r"^\d+\.$", raw[k])]
+            if len(wb) >= max(1, len(sent) // 2):
+                bounds = wb
         # Ende der Bildszenen: erste Satzgrenze nach 40 Prozent der Blockzeit (mindestens 4 s), sonst Blockende
         vis_end = t1
         if span > 9 and idx:
@@ -353,7 +358,7 @@ def build_long(vid: str, dry: bool, fake: bool) -> int:
         if len(words) < 300:
             log("Zu wenige Woerter erkannt")
             return 1
-        scenes, starts, fb = timeline(cfg, words, dur_v)
+        scenes, starts, fb = timeline(cfg, words, dur_v, raw)
         if fb > len(texts) * 0.3:
             log(f"Zu viele Bloecke ohne Wortanker ({fb}), Zuordnung unsicher - Abbruch")
             return 1

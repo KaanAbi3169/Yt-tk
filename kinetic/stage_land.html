@@ -104,7 +104,7 @@ const S={
   const L=sc.title.length,fs=L>26?128:L>14?160:L>8?150:200,big=String(sc.big||'');
   return `<div class="abs" style="left:90px;top:130px;width:1000px;font-size:${fs}px;line-height:1.02;font-family:'DejaVu Serif',serif" ><span class="stroke">${esc(sc.title)}</span></div>
    <div class="abs" style="left:96px;top:820px"><span style="display:inline-block;padding:14px 46px;border-radius:999px;background:${acc};color:#111;font-size:60px">${esc(sc.sub||'')}</span></div>
-   <div class="abs stroke" style="right:80px;top:150px;width:720px;text-align:right;font-size:${big.length>3?300:460}px;line-height:1;color:${th.acc[2]}">${esc(big)}</div>`},
+   <div class="abs stroke" style="right:80px;top:${big.length>3?340:150}px;width:${big.length>3?1100:720}px;text-align:right;font-size:${big.length>3?300:460}px;line-height:1;color:${th.acc[2]}">${esc(big)}</div>`},
  satz(sc,lt,acc,th,t){
   const W=J.words.slice(sc.wi0,sc.wi1+1),n=W.length,size=n<=12?104:n<=20?88:n<=30?74:62;
   let h='';W.forEach((w,i)=>{const on=t>=w.s&&t<w.e+.15,past=t>=w.e+.15;
