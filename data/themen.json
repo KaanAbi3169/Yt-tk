@@ -1,326 +1,304 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "rising": [
     {
-      "title": "Berlin",
-      "views": 176646,
-      "avg_before": 4184,
-      "ratio": 42.2
-    },
-    {
       "title": "Nvidia",
-      "views": 10057,
-      "avg_before": 3402,
-      "ratio": 3.0
+      "views": 8345,
+      "avg_before": 3883,
+      "ratio": 2.1
     }
   ],
   "new": [
     {
-      "title": "Merkuri",
-      "views": 40189
+      "title": "Der talentierte Mr. F.",
+      "views": 17972
+    },
+    {
+      "title": "Molybdän",
+      "views": 17657
+    },
+    {
+      "title": "St. Kilda (Schottland)",
+      "views": 17546
+    },
+    {
+      "title": "Reichsverweser (Ungarn)",
+      "views": 13915
+    },
+    {
+      "title": "Kaeng Masaman",
+      "views": 9437
     },
     {
       "title": "Hodgkin-Lymphom",
-      "views": 28059
+      "views": 8502
     },
     {
-      "title": "Mama ist die Best(i)e",
-      "views": 18022
+      "title": "Visegrád-Gruppe",
+      "views": 5415
     },
     {
-      "title": "Fidèle",
-      "views": 11317
+      "title": "Steirerbiest",
+      "views": 5367
     },
     {
-      "title": "Bischofsbasilika von Philippopolis",
-      "views": 10657
+      "title": "Marie Brand und der überwundene Tod",
+      "views": 5291
     },
     {
-      "title": "Projekt 20380",
-      "views": 10511
-    },
-    {
-      "title": "Helvetische Republik",
-      "views": 7348
-    },
-    {
-      "title": "Neume",
-      "views": 6597
-    },
-    {
-      "title": "BepiColombo",
-      "views": 6510
-    },
-    {
-      "title": "Apnoetauchen",
-      "views": 6264
-    },
-    {
-      "title": "Kamow Ka-27",
-      "views": 6109
-    },
-    {
-      "title": "Georgische Rugby-Union-Nationalmannschaft",
-      "views": 5760
-    },
-    {
-      "title": "Tengelmann (Unternehmen)",
-      "views": 5745
-    },
-    {
-      "title": "Crossair-Flug 3597",
-      "views": 5362
+      "title": "Schachweltmeisterschaft 2026",
+      "views": 5010
     }
   ],
   "evergreen": [
     {
       "title": "Berlin",
-      "avg": 25742
+      "avg": 26111
     },
     {
       "title": "Grand Theft Auto",
-      "avg": 17125
+      "avg": 16874
     },
     {
       "title": "James Bond",
-      "avg": 13015
-    },
-    {
-      "title": "Anthropic",
-      "avg": 8150
+      "avg": 10141
     },
     {
       "title": "ChatGPT",
-      "avg": 8028
+      "avg": 8094
+    },
+    {
+      "title": "Anthropic",
+      "avg": 8072
     },
     {
       "title": "Deutschland",
-      "avg": 7767
+      "avg": 7448
     },
     {
       "title": "Voyager 1",
-      "avg": 6814
+      "avg": 6588
     },
     {
       "title": "Krim-Brücke",
-      "avg": 5975
-    },
-    {
-      "title": "Generation Z",
-      "avg": 5720
+      "avg": 6576
     },
     {
       "title": "Rockstar Games",
-      "avg": 5623
+      "avg": 5692
     },
     {
-      "title": "Figuren der Harry-Potter-Romane",
-      "avg": 4980
+      "title": "Generation Z",
+      "avg": 5639
     },
     {
       "title": "ZDF",
-      "avg": 4502
+      "avg": 4501
     },
     {
       "title": "Nvidia",
-      "avg": 4234
+      "avg": 4440
     },
     {
       "title": "Tokio Hotel",
-      "avg": 4122
+      "avg": 4092
     },
     {
       "title": "PlayStation 5",
-      "avg": 4018
-    },
-    {
-      "title": "Rothschild (Familie)",
-      "avg": 3907
-    },
-    {
-      "title": "Periodensystem",
-      "avg": 3717
+      "avg": 4049
     },
     {
       "title": "Totensonntag",
-      "avg": 3607
+      "avg": 3917
+    },
+    {
+      "title": "Periodensystem",
+      "avg": 3650
     },
     {
       "title": "ATP Finals",
-      "avg": 3486
-    },
-    {
-      "title": "Vereinigte Staaten",
-      "avg": 3274
-    },
-    {
-      "title": "Black Friday",
-      "avg": 3204
+      "avg": 3592
     },
     {
       "title": "Die Tribute von Panem",
-      "avg": 3172
+      "avg": 3367
     },
     {
-      "title": "ATP Finals 2026",
-      "avg": 3028
+      "title": "Figuren der Harry-Potter-Romane",
+      "avg": 3309
+    },
+    {
+      "title": "Rothschild (Familie)",
+      "avg": 3262
+    },
+    {
+      "title": "Black Friday",
+      "avg": 3224
+    },
+    {
+      "title": "Vereinigte Staaten",
+      "avg": 3181
     },
     {
       "title": "Russland",
-      "avg": 2780
+      "avg": 2883
     },
     {
       "title": "ARD",
-      "avg": 2773
+      "avg": 2788
+    },
+    {
+      "title": "YouTube",
+      "avg": 2753
     }
   ],
-  "blocked": 11,
+  "blocked": 10,
   "days": 8,
-  "people_removed": 144,
+  "people_removed": 137,
   "youtube": [
     {
       "title": "Durim Malaj - SHEQERE (Official Music Video)",
       "channel": "Durim Malaj",
-      "views": 3229206,
+      "views": 3639008,
       "category": "10"
     },
     {
       "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
       "channel": "Marvel Entertainment",
-      "views": 40086527,
+      "views": 49732063,
       "category": "24"
     },
     {
       "title": "GTA 6 ist einfach zu krass! - Test / Review ohne Story-Spoiler",
       "channel": "GameStar",
-      "views": 3709666,
-      "category": "20"
-    },
-    {
-      "title": "Fifi x Fero - U Katritha",
-      "channel": "FIFI OFFICIAL",
-      "views": 2766148,
-      "category": "10"
-    },
-    {
-      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027)",
-      "channel": "KinoCheck",
-      "views": 709295,
-      "category": "24"
-    },
-    {
-      "title": "KIDDA - AKUZA",
-      "channel": "KIDDA",
-      "views": 332560,
-      "category": "10"
-    },
-    {
-      "title": "AVENGERS DOOMSDAY: FINALER TRAILER | Meine Gedanken",
-      "channel": "BelYves",
-      "views": 121787,
-      "category": "1"
-    },
-    {
-      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
-      "channel": "Sylvain Lyve",
-      "views": 2692602,
-      "category": "2"
-    },
-    {
-      "title": "Levant - Forever (Official Music Video)",
-      "channel": "Levant",
-      "views": 3826068,
-      "category": "10"
-    },
-    {
-      "title": "GTA VI: SWISS EDITION 🇨🇭(Trailer)",
-      "channel": "Fabian Der Praktikant",
-      "views": 7022,
-      "category": "24"
-    },
-    {
-      "title": "I Survived 100 Hours In GTA 6",
-      "channel": "MrBeast Gaming",
-      "views": 69646192,
-      "category": "20"
-    },
-    {
-      "title": "Džejla Ramović & Jakov Jozinović - Suze (Official video)",
-      "channel": "Jakov Jozinovic",
-      "views": 1911157,
-      "category": "10"
-    },
-    {
-      "title": "Grand Theft Auto VI - Features Trailer | PS5 Games",
-      "channel": "PlayStation",
-      "views": 7808738,
-      "category": "20"
-    },
-    {
-      "title": "GTA 6 WTF and Funny Moments! #3",
-      "channel": "Zynxize",
-      "views": 3940026,
+      "views": 3745235,
       "category": "20"
     },
     {
       "title": "Bujar Mustafa - Zinxhiri",
       "channel": "BM Official",
-      "views": 219379,
+      "views": 419001,
       "category": "10"
     },
     {
-      "title": "AVENGERS 5: DOOMSDAY Official “Doctor Doom” Special Look (2026) Marvel",
-      "channel": "KinoCheck.com",
-      "views": 819537,
+      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027)",
+      "channel": "KinoCheck",
+      "views": 735234,
       "category": "24"
     },
     {
-      "title": "Why GTA is a Bigger Deal Than You Think",
-      "channel": "Mrwhosetheboss",
-      "views": 11000488,
-      "category": "28"
+      "title": "Fifi x Fero - U Katritha",
+      "channel": "FIFI OFFICIAL",
+      "views": 2940737,
+      "category": "10"
+    },
+    {
+      "title": "AVENGERS DOOMSDAY: FINALER TRAILER | Meine Gedanken",
+      "channel": "BelYves",
+      "views": 142911,
+      "category": "1"
+    },
+    {
+      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
+      "channel": "Sylvain Lyve",
+      "views": 2818075,
+      "category": "2"
+    },
+    {
+      "title": "KIDDA - AKUZA",
+      "channel": "KIDDA",
+      "views": 383844,
+      "category": "10"
+    },
+    {
+      "title": "Dune: Part Three - Exclusive Teaser Trailer (2026) Timothée Chalamet, Zendaya, Robert Pattinson",
+      "channel": "IGN",
+      "views": 1405743,
+      "category": "24"
+    },
+    {
+      "title": "10,000 Players Simulate WORLD WAR in Minecraft",
+      "channel": "Spoke",
+      "views": 6125280,
+      "category": "20"
+    },
+    {
+      "title": "Levant - Forever (Official Music Video)",
+      "channel": "Levant",
+      "views": 4218466,
+      "category": "10"
+    },
+    {
+      "title": "Avengers Doomsday Trailer: ALLE Details & Theorien!",
+      "channel": "Film Bastion",
+      "views": 91326,
+      "category": "1"
+    },
+    {
+      "title": "I Survived 100 Hours In GTA 6",
+      "channel": "MrBeast Gaming",
+      "views": 72248738,
+      "category": "20"
+    },
+    {
+      "title": "Džejla Ramović & Jakov Jozinović - Suze (Official video)",
+      "channel": "Jakov Jozinovic",
+      "views": 2193558,
+      "category": "10"
+    },
+    {
+      "title": "GTA VI: SWISS EDITION 🇨🇭(Trailer)",
+      "channel": "Fabian Der Praktikant",
+      "views": 7338,
+      "category": "24"
+    },
+    {
+      "title": "ICH HABE EINEN NEUEN SPIELMODUS ENTWICKELT (20 MINUTEN BATTLE)",
+      "channel": "BastiGHG",
+      "views": 388933,
+      "category": "20"
     },
     {
       "title": "Shkumbin Ismaili - Kam zili (Official Music Video)",
       "channel": "Shkumbin Ismaili",
-      "views": 1805231,
+      "views": 1905242,
       "category": "10"
     },
     {
-      "title": "AVENGERS: DOOMSDAY Finaler Trailer German Deutsch (2026)",
-      "channel": "Robert Hofmann",
-      "views": 64029,
-      "category": "24"
+      "title": "Grand Theft Auto VI - Features Trailer | PS5 Games",
+      "channel": "PlayStation",
+      "views": 7827150,
+      "category": "20"
     },
     {
-      "title": "Wieso GTA VI jetzt abstürzt (KRANKER HATE)",
-      "channel": "Malternativ",
-      "views": 499882,
-      "category": "27"
-    },
-    {
-      "title": "BANTU NATION X JAZEEK X LUCIANO X REEZY X THIZZY52 - BLACK",
-      "channel": "Bantu Nation Channel",
-      "views": 1210401,
-      "category": "10"
-    },
-    {
-      "title": "O.M - Trailer | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar Periasamy | Sai Abhyankkar",
-      "channel": "Divo Music",
-      "views": 34512823,
-      "category": "10"
-    },
-    {
-      "title": "GTA 6 - Stealing a Jet From the Military Base",
-      "channel": "TmarTn2",
-      "views": 12276830,
+      "title": "GTA 6 WTF and Funny Moments! #3",
+      "channel": "Zynxize",
+      "views": 4047178,
       "category": "20"
     },
     {
       "title": "Aferdita Demaku & JANO - Hajde Nane Myzhde Ka #2027",
       "channel": "Aferdita Demaku ",
-      "views": 117030,
+      "views": 204114,
       "category": "24"
+    },
+    {
+      "title": "Honest Trailers | The Odyssey",
+      "channel": "Screen Junkies",
+      "views": 56060,
+      "category": "22"
+    },
+    {
+      "title": "Do GTA 6 NPCs Actually Have Lives?",
+      "channel": "Sonny Evans",
+      "views": 5676522,
+      "category": "20"
+    },
+    {
+      "title": "BANTU NATION X JAZEEK X LUCIANO X REEZY X THIZZY52 - BLACK",
+      "channel": "Bantu Nation ",
+      "views": 1261076,
+      "category": "10"
     }
   ]
 }
