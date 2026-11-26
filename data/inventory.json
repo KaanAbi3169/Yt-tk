@@ -2116,13 +2116,17 @@
         {
           "at": "2026-11-25T04:44:11.065890+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
+        },
+        {
+          "at": "2026-11-26T04:04:08.140442+01:00",
+          "reason": "Buffer-Fehler, siehe Bericht"
         }
       ]
     },
     {
       "id": "N002",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-24T13:27:58.188145+01:00",
       "source": "kinetic",
       "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)",
@@ -2181,7 +2185,7 @@
     {
       "id": "N003",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-24T13:27:57.204768+01:00",
       "source": "kinetic",
       "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)",

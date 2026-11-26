@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T04:44:11.086888+01:00",
+  "updated": "2026-11-26T04:04:08.169255+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
@@ -20,6 +20,13 @@
       {
         "n": 2,
         "avg": 931
+      }
+    ],
+    [
+      "slot:tiktok:Tue 16",
+      {
+        "n": 1,
+        "avg": 912
       }
     ],
     [
@@ -51,10 +58,10 @@
       }
     ],
     [
-      "slot:tiktok:Tue 10",
+      "slot:tiktok:Wed 16",
       {
         "n": 1,
-        "avg": 802
+        "avg": 768
       }
     ],
     [
@@ -62,13 +69,6 @@
       {
         "n": 1,
         "avg": 767
-      }
-    ],
-    [
-      "slot:tiktok:Wed 16",
-      {
-        "n": 1,
-        "avg": 765
       }
     ],
     [
@@ -82,7 +82,14 @@
       "slot:tiktok:Wed 10",
       {
         "n": 1,
-        "avg": 705
+        "avg": 707
+      }
+    ],
+    [
+      "slot:tiktok:Tue 10",
+      {
+        "n": 2,
+        "avg": 620
       }
     ],
     [
@@ -98,23 +105,9 @@
         "n": 2,
         "avg": 570
       }
-    ],
-    [
-      "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
-      {
-        "n": 2,
-        "avg": 570
-      }
     ]
   ],
   "bottom": [
-    [
-      "hook:Alltags-Gedankenexperiment",
-      {
-        "n": 2,
-        "avg": 144
-      }
-    ],
     [
       "topic:Alle Handys funktionieren nur noch eine Stunde pro Tag",
       {
@@ -132,15 +125,15 @@
     [
       "slot:youtube:Tue 10",
       {
-        "n": 1,
-        "avg": 91
+        "n": 2,
+        "avg": 53
       }
     ],
     [
       "slot:youtube:Wed 16",
       {
         "n": 1,
-        "avg": 45
+        "avg": 46
       }
     ],
     [
@@ -177,6 +170,13 @@
         "n": 1,
         "avg": 1
       }
+    ],
+    [
+      "slot:youtube:Tue 16",
+      {
+        "n": 1,
+        "avg": 0
+      }
     ]
   ],
   "all": {
@@ -201,8 +201,8 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 21,
-      "avg": 443
+      "n": 25,
+      "avg": 427
     },
     "hook:Du machst einen Fehler": {
       "n": 2,
@@ -261,48 +261,48 @@
       "avg": 446
     },
     "slot:tiktok:Tue 10": {
-      "n": 1,
-      "avg": 802
+      "n": 2,
+      "avg": 620
     },
     "topic:24 Stunden mit dem eigenen 10-jährigen Ich verbringen": {
       "n": 2,
       "avg": 446
     },
     "slot:youtube:Tue 10": {
-      "n": 1,
-      "avg": 91
+      "n": 2,
+      "avg": 53
     },
     "hook:drive-reserve": {
-      "n": 5,
-      "avg": 289
+      "n": 7,
+      "avg": 271
     },
     "slot:tiktok:Wed 16": {
       "n": 1,
-      "avg": 765
+      "avg": 768
     },
     "topic:Spotlight Effekt": {
       "n": 2,
-      "avg": 405
+      "avg": 407
     },
     "slot:youtube:Wed 16": {
       "n": 1,
-      "avg": 45
+      "avg": 46
     },
     "hook:Alltagsfrage Warum": {
       "n": 2,
-      "avg": 454
+      "avg": 462
     },
     "slot:tiktok:Wed 10": {
       "n": 1,
-      "avg": 705
+      "avg": 707
     },
     "topic:Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)": {
       "n": 2,
-      "avg": 454
+      "avg": 462
     },
     "slot:youtube:Wed 10": {
       "n": 1,
-      "avg": 204
+      "avg": 218
     },
     "hook:Mythos-Frage": {
       "n": 2,
@@ -403,6 +403,26 @@
     "slot:youtube:Mon 16": {
       "n": 1,
       "avg": 24
+    },
+    "topic:Stosslueften": {
+      "n": 2,
+      "avg": 226
+    },
+    "hook:Zahl-Schock": {
+      "n": 2,
+      "avg": 456
+    },
+    "slot:tiktok:Tue 16": {
+      "n": 1,
+      "avg": 912
+    },
+    "topic:GTA 6: Starttag-Umsatz laut Schätzungen gegen GTA 5": {
+      "n": 2,
+      "avg": 456
+    },
+    "slot:youtube:Tue 16": {
+      "n": 1,
+      "avg": 0
     }
   }
 }

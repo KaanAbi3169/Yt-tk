@@ -250,6 +250,14 @@
         "shares": 0,
         "watch_ms": 4270,
         "at": "2026-11-20T02:53:38.326049+01:00"
+      },
+      "7d": {
+        "views": 723,
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 4260,
+        "at": "2026-11-26T04:04:08.152406+01:00"
       }
     },
     {
@@ -266,6 +274,12 @@
         "likes": 0,
         "comments": 0,
         "at": "2026-11-20T02:53:38.327167+01:00"
+      },
+      "7d": {
+        "views": 46,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-26T04:04:08.154585+01:00"
       }
     },
     {
@@ -284,6 +298,14 @@
         "shares": 0,
         "watch_ms": 5710,
         "at": "2026-11-20T02:53:38.328460+01:00"
+      },
+      "7d": {
+        "views": 692,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 5690,
+        "at": "2026-11-26T04:04:08.161338+01:00"
       }
     },
     {
@@ -300,6 +322,12 @@
         "likes": 1,
         "comments": 0,
         "at": "2026-11-20T02:53:38.329754+01:00"
+      },
+      "7d": {
+        "views": 213,
+        "likes": 1,
+        "comments": 0,
+        "at": "2026-11-26T04:04:08.163634+01:00"
       }
     },
     {
@@ -556,6 +584,74 @@
         "likes": 0,
         "comments": 0,
         "at": "2026-11-25T04:44:11.085852+01:00"
+      }
+    },
+    {
+      "id": "D021",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Stosslueften",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-24T10:00:00+01:00",
+      "duration": null,
+      "group": "winter",
+      "24h": {
+        "views": 373,
+        "likes": 11,
+        "comments": 0,
+        "shares": 1,
+        "watch_ms": 4170,
+        "at": "2026-11-26T04:04:08.156846+01:00"
+      }
+    },
+    {
+      "id": "D021",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Stosslueften",
+      "hook_type": "drive-reserve",
+      "due": "2026-11-24T10:00:00+01:00",
+      "duration": null,
+      "group": "winter",
+      "24h": {
+        "views": 15,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-26T04:04:08.159104+01:00"
+      }
+    },
+    {
+      "id": "N001",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "GTA 6: Starttag-Umsatz laut Schätzungen gegen GTA 5",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-24T16:00:00+01:00",
+      "duration": 40.4,
+      "group": "kin-gaming",
+      "24h": {
+        "views": 747,
+        "likes": 31,
+        "comments": 0,
+        "shares": 1,
+        "watch_ms": 7190,
+        "at": "2026-11-26T04:04:08.165906+01:00"
+      }
+    },
+    {
+      "id": "N001",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "GTA 6: Starttag-Umsatz laut Schätzungen gegen GTA 5",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-24T16:00:00+01:00",
+      "duration": 40.4,
+      "group": "kin-gaming",
+      "24h": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-26T04:04:08.168163+01:00"
       }
     }
   ]
