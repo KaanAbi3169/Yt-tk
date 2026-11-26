@@ -13,6 +13,9 @@ HASHTAG = re.compile(r"#\w+", re.UNICODE)
 
 def check(t: dict) -> list:
     errs = []
+    for k in ("text_tiktok", "text_youtube"):
+        if "\\n" in str(t.get(k, "")):
+            errs.append(f"{k} enthaelt ein Backslash-n als Text (echter Zeilenumbruch noetig)")
     for k in ("title_tiktok", "title_youtube", "text_tiktok", "text_youtube"):
         if not (t.get(k) or "").strip():
             errs.append(f"{k} fehlt")

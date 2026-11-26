@@ -47,8 +47,6 @@ def check_content(cfg: dict) -> list:
             errs.append(f"{k} fehlt")
     if cfg.get("theme", "neon") not in THEMES:
         errs.append("theme unbekannt")
-    if any("\\n" in str(cfg.get(k, "")) for k in ("text_tiktok", "text_youtube")):
-        errs.append("text enthaelt ein Backslash-n als Text (echten Zeilenumbruch schreiben)")
     sc = cfg.get("scenes") or []
     if not 5 <= len(sc) <= 16:
         errs.append(f"{len(sc)} Szenen (5 bis 16)")
