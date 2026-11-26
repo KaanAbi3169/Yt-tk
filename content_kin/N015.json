@@ -1,0 +1,92 @@
+{
+ "id": "N015",
+ "topic": "Gemini und ChatGPT: je eine Milliarde Nutzer, aber nicht dieselbe Messung",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-ki",
+ "theme": "ice",
+ "music": "wissen",
+ "hl": "milliarde|prozent|nutzer",
+ "script": "Gemini hat eine Milliarde Nutzer, ChatGPT auch. Aber die beiden Zahlen messen nicht dasselbe. Googles Gemini-App erreichte eine Milliarde monatliche Nutzer. ChatGPT nennt eine Milliarde wöchentliche Nutzer. Das ist die strengere Zahl, weil man in sieben Tagen aktiv sein muss und nicht in dreißig. Laut Sensor Tower fiel der Marktanteil von ChatGPT unter den KI-Assistenten im ersten Halbjahr zweitausendsechsundzwanzig erstmals unter fünfzig Prozent. Gemini stieg auf siebenundzwanzig Komma sieben Prozent. Bei den absoluten Nutzerzahlen liegt ChatGPT laut derselben Quelle weiter vorn. Welche KI nutzt du am meisten? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "1 MRD. NUTZER: GEMINI UND CHATGPT",
+   "emoji": "🤖",
+   "hl": "1"
+  },
+  {
+   "type": "hook",
+   "at": "^aber$",
+   "fallback": 0.1,
+   "text": "ABER: NICHT DASSELBE GEMESSEN",
+   "emoji": "⚖",
+   "hl": "NICHT"
+  },
+  {
+   "type": "vs",
+   "at": "^googles$",
+   "fallback": 0.22,
+   "title": "1 MILLIARDE NUTZER",
+   "a": {
+    "name": "GEMINI",
+    "value": 1,
+    "text": "1 Mrd. pro Monat"
+   },
+   "b": {
+    "name": "CHATGPT",
+    "value": 1,
+    "text": "1 Mrd. pro Woche"
+   },
+   "win": "b"
+  },
+  {
+   "type": "zahl",
+   "at": "^f.nfzig$",
+   "fallback": 0.55,
+   "value": 50,
+   "decimals": 0,
+   "text": "<50",
+   "unit": "% MARKTANTEIL CHATGPT",
+   "label": "1. Halbjahr 2026 (Sensor Tower)"
+  },
+  {
+   "type": "zahl",
+   "at": "^siebenundzwanzig$",
+   "fallback": 0.7,
+   "value": 27.7,
+   "decimals": 1,
+   "text": "27,7",
+   "unit": "% MARKTANTEIL GEMINI",
+   "label": "1. Halbjahr 2026 (Sensor Tower)"
+  },
+  {
+   "type": "hook",
+   "at": "^absoluten$",
+   "fallback": 0.82,
+   "text": "ABSOLUT LIEGT CHATGPT VORN",
+   "emoji": "🏆",
+   "hl": "CHATGPT"
+  },
+  {
+   "type": "frage",
+   "at": "^welche$",
+   "fallback": 0.93,
+   "text": "WELCHE KI NUTZT DU?",
+   "options": [
+    "CHATGPT",
+    "GEMINI",
+    "ANDERE"
+   ]
+  }
+ ],
+ "title_tiktok": "Gemini vs ChatGPT: Wer hat mehr Nutzer? 🤖",
+ "title_youtube": "Gemini gegen ChatGPT: 1 Milliarde Nutzer, aber nicht dasselbe #shorts",
+ "text_tiktok": "Welche KI nutzt du am meisten? Schreib es in die Kommentare 👇 #chatgpt #gemini #ki #technik #fürdich",
+ "text_youtube": "Die Gemini-App nennt 1 Milliarde monatliche Nutzer, ChatGPT 1 Milliarde wöchentliche. Die Zahlen messen nicht dasselbe. Laut Sensor Tower fiel ChatGPTs Marktanteil im ersten Halbjahr 2026 erstmals unter 50 Prozent, Gemini kam auf 27,7 Prozent. Welche KI nutzt du am meisten? 👇\n\nQuellen: Gizmodo, The Next Web, KOMO News, Sensor Tower (über Dritte). Stimme und Grafiken mit KI erstellt.\n\n#shorts #chatgpt #gemini #ki #wusstestdu",
+ "sources": [
+  "https://gizmodo.com/google-gemini-just-hit-one-billion-monthly-users-in-record-speed-2000797686",
+  "https://thenextweb.com/news/gemini-1-billion-monthly-users-chatgpt-weekly-actives-comparison",
+  "https://komonews.com/news/nation-world/google-gemini-passes-1-billion-monthly-users-as-chatgpt-reaches-1-billion-weekly-users",
+  "https://pasqualepillitteri.it/de/news/8856/gemini-950-millionen-nutzer-chatgpt"
+ ]
+}

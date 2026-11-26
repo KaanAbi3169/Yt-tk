@@ -1,0 +1,92 @@
+{
+ "id": "N012",
+ "topic": "Artemis III landet nicht auf dem Mond: NASA-Plan vom 23.10.2026",
+ "hook_type": "Nachricht",
+ "group": "kin-weltraum",
+ "theme": "weltraum",
+ "music": "wissen",
+ "hl": "zweitausend\\w+|landung|erdumlaufbahn",
+ "script": "Artemis drei landet nicht auf dem Mond. Das hat die NASA am dreiundzwanzigsten Oktober zweitausendsechsundzwanzig bekannt gegeben. Artemis drei soll im Jahr zweitausendsiebenundzwanzig nur noch einen Test in der Erdumlaufbahn fliegen. Die Landung auf dem Mond ist jetzt für Artemis vier im Jahr zweitausendachtundzwanzig geplant. Vorher war die Landung schon mit Artemis drei im Jahr zweitausendachtundzwanzig vorgesehen. Artemis zwei flog im April zweitausendsechsundzwanzig um den Mond und landete am zehnten April im Meer. Termine in der Raumfahrt verschieben sich oft, deshalb sind alle Jahre Planung und keine Garantie. Glaubst du, dass es dieses Mal klappt? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "ARTEMIS III LANDET NICHT AUF DEM MOND",
+   "emoji": "🌕",
+   "hl": "NICHT"
+  },
+  {
+   "type": "hook",
+   "at": "dreiundzwanzigsten",
+   "fallback": 0.1,
+   "text": "23. OKTOBER 2026: NEUER NASA-PLAN",
+   "emoji": "📅",
+   "hl": "NEUER"
+  },
+  {
+   "type": "zahl",
+   "at": "zweitausendsiebenundzwanzig",
+   "fallback": 0.25,
+   "value": 2027,
+   "decimals": 0,
+   "static": true,
+   "text": "2027",
+   "unit": "ERDORBIT-TEST",
+   "label": "Artemis III (Planung der NASA)"
+  },
+  {
+   "type": "karten",
+   "at": "^landung$",
+   "fallback": 0.45,
+   "title": "DER NEUE PLAN",
+   "items": [
+    "Artemis III: Test im Erdorbit, 2027",
+    "Artemis IV: Mondlandung, 2028"
+   ]
+  },
+  {
+   "type": "hook",
+   "at": "^vorher$",
+   "fallback": 0.6,
+   "text": "VORHER: LANDUNG MIT ARTEMIS III",
+   "emoji": "⏪",
+   "hl": "VORHER"
+  },
+  {
+   "type": "hook",
+   "at": "^zwei$",
+   "fallback": 0.72,
+   "text": "ARTEMIS II: UM DEN MOND, APRIL 2026",
+   "emoji": "🚀",
+   "hl": "ARTEMIS"
+  },
+  {
+   "type": "hook",
+   "at": "^termine$",
+   "fallback": 0.86,
+   "text": "JAHRE = PLANUNG, KEINE GARANTIE",
+   "emoji": "🗓",
+   "hl": "PLANUNG"
+  },
+  {
+   "type": "frage",
+   "at": "^glaubst$",
+   "fallback": 0.93,
+   "text": "KLAPPT ES DIESMAL?",
+   "options": [
+    "JA",
+    "NEIN",
+    "SCHAUEN WIR"
+   ]
+  }
+ ],
+ "title_tiktok": "Artemis III landet nicht auf dem Mond 🌕",
+ "title_youtube": "Artemis III landet nicht auf dem Mond: Das ändert die NASA #shorts",
+ "text_tiktok": "Glaubst du, dass es dieses Mal klappt? Schreib es in die Kommentare 👇 #artemis #nasa #mondlandung #weltraum #fürdich",
+ "text_youtube": "Die NASA hat am 23. Oktober 2026 ihren Artemis-Plan geändert: Artemis III fliegt 2027 als Test in der Erdumlaufbahn, die Mondlandung soll mit Artemis IV 2028 folgen. Das sind Planungsangaben, Termine können sich verschieben. Glaubst du, dass es klappt? 👇\n\nQuellen: NASA, NBC News, Universe Today. Stimme und Grafiken mit KI erstellt.\n\n#shorts #artemis #nasa #mondlandung #wusstestdu",
+ "sources": [
+  "https://www.nbcnews.com/science/space/nasa-artemis-moon-mission-overhaul-rcna260971",
+  "https://universetoday.com/articles/nasa-updates-artemis-program-adding-a-mission-and-delaying-lunar-landing",
+  "https://www.neoteo.com/en/nasa-plans-artemis-iii-as-a-2027-earth-orbit-test",
+  "https://www.nasa.gov/humans-in-space/artemis/"
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "id": "N014",
+ "topic": "Spotify Wrapped 2026: Termin unbestätigt, Zahlen",
+ "hook_type": "Du-Hook",
+ "group": "kin-musik",
+ "theme": "neon",
+ "music": "wissen",
+ "hl": "millionen|mittwoch|wrapped",
+ "script": "Dein Spotify Wrapped kommt wahrscheinlich bald. Spotify hat noch kein Datum bestätigt. Official Charts rechnet mit Mittwoch, dem zweiten Dezember, das ist eine Vermutung. Von zweitausendeinundzwanzig bis zweitausendfünfundzwanzig kam Wrapped jedes Jahr an einem Mittwoch, zwischen dem neunundzwanzigsten November und dem sechsten Dezember. Ende zweitausendfünfundzwanzig hatte Spotify siebenhunderteinundfünfzig Millionen aktive Nutzer im Monat und zweihundertneunzig Millionen zahlende Abos. Mehr als dreihundert Millionen Menschen nutzten Wrapped, mit über sechshundertdreißig Millionen geteilten Beiträgen. Welchen Künstler erwartest du ganz oben? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "DEIN SPOTIFY WRAPPED KOMMT BALD",
+   "emoji": "🎧",
+   "hl": "WRAPPED"
+  },
+  {
+   "type": "hook",
+   "at": "^noch$",
+   "fallback": 0.1,
+   "text": "DATUM: NOCH NICHT BESTÄTIGT",
+   "emoji": "❓",
+   "hl": "NICHT"
+  },
+  {
+   "type": "hook",
+   "at": "^official$",
+   "fallback": 0.2,
+   "text": "VERMUTUNG: MITTWOCH, 2. DEZEMBER",
+   "emoji": "📅",
+   "hl": "VERMUTUNG"
+  },
+  {
+   "type": "hook",
+   "at": "^zweitausendeinundzwanzig$",
+   "fallback": 0.35,
+   "text": "SEIT 2021: IMMER EIN MITTWOCH",
+   "emoji": "🗓",
+   "hl": "MITTWOCH"
+  },
+  {
+   "type": "zahl",
+   "at": "^siebenhunderteinundf.nfzig$",
+   "fallback": 0.55,
+   "value": 751,
+   "decimals": 0,
+   "text": "751",
+   "unit": "MIO. NUTZER IM MONAT",
+   "label": "Ende 2025 (Spotify, laut Hypebeast)"
+  },
+  {
+   "type": "zahl",
+   "at": "^zweihundertneunzig$",
+   "fallback": 0.68,
+   "value": 290,
+   "decimals": 0,
+   "text": "290",
+   "unit": "MIO. ZAHLENDE ABOS",
+   "label": "Ende 2025 (Spotify)"
+  },
+  {
+   "type": "zahl",
+   "at": "^sechshundertdrei.ig$",
+   "fallback": 0.82,
+   "value": 630,
+   "decimals": 0,
+   "text": "630",
+   "unit": "MIO. GETEILTE BEITRÄGE",
+   "label": "Wrapped 2025 (laut Hypebeast)"
+  },
+  {
+   "type": "frage",
+   "at": "^welchen$",
+   "fallback": 0.93,
+   "text": "WER IST DEIN TOP-KÜNSTLER?",
+   "options": [
+    "POP",
+    "RAP",
+    "ROCK"
+   ]
+  }
+ ],
+ "title_tiktok": "Spotify Wrapped: Wann kommt es? 🎧",
+ "title_youtube": "Spotify Wrapped 2026: Wann kommt dein Rückblick? #shorts",
+ "text_tiktok": "Welchen Künstler erwartest du ganz oben? Schreib es in die Kommentare 👇 #spotify #wrapped #musik #zahlen #fürdich",
+ "text_youtube": "Spotify hat den Termin für Wrapped 2026 noch nicht bestätigt. Official Charts vermutet Mittwoch, den 2. Dezember (Vermutung). Ende 2025 hatte Spotify 751 Millionen monatlich aktive Nutzer und 290 Millionen Abos. Welchen Künstler erwartest du ganz oben? 👇\n\nQuellen: Official Charts, Südostschweiz, Hypebeast. Stimme und Grafiken mit KI erstellt.\n\n#shorts #spotify #wrapped #musik #wusstestdu",
+ "sources": [
+  "https://www.officialcharts.com/chart-news/spotify-wrapped-2026-release-date/",
+  "https://www.suedostschweiz.ch/panorama/wann-kommt-spotify-wrapped-2026-2235385",
+  "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
+ ]
+}

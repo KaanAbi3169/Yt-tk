@@ -1,0 +1,101 @@
+{
+ "id": "N013",
+ "topic": "Black Friday und Cyber Monday 2026: HDE-Prognose 6,2 Mrd. Euro",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-news",
+ "theme": "toxic",
+ "music": "wissen",
+ "hl": "euro|milliarden|prozent|sechs",
+ "script": "Sechs Komma zwei Milliarden Euro Umsatz in nur zwei Tagen. Das erwartet der Handelsverband Deutschland für Black Friday und Cyber Monday zweitausendsechsundzwanzig. Es ist eine Prognose und kein Endergebnis. Im Vorjahr lag die Prognose bei fünf Komma acht Milliarden Euro, damals erstmals seit zweitausendsechzehn mit einem Rückgang. Etwa eins Komma neun Milliarden Euro sollen diesmal auf Weihnachtseinkäufe entfallen. Die Termine: Black Friday ist am siebenundzwanzigsten November, Cyber Monday am dreißigsten November. Planst du dieses Jahr Einkäufe? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "6,2 MRD. € IN NUR 2 TAGEN",
+   "emoji": "🛒",
+   "hl": "6,2"
+  },
+  {
+   "type": "zahl",
+   "at": "^erwartet$",
+   "fallback": 0.1,
+   "value": 6.2,
+   "decimals": 1,
+   "text": "6,2",
+   "unit": "MRD. € PROGNOSE",
+   "label": "Black Friday + Cyber Monday 2026 (Handelsverband)"
+  },
+  {
+   "type": "hook",
+   "at": "^prognose$",
+   "fallback": 0.28,
+   "text": "KEIN ENDERGEBNIS, NUR PROGNOSE",
+   "emoji": "⚠",
+   "hl": "PROGNOSE"
+  },
+  {
+   "type": "vs",
+   "at": "^vorjahr$",
+   "fallback": 0.4,
+   "title": "PROGNOSE DES HANDELS",
+   "a": {
+    "name": "2025",
+    "value": 5.8,
+    "text": "5,8 Mrd. €"
+   },
+   "b": {
+    "name": "2026",
+    "value": 6.2,
+    "text": "6,2 Mrd. €"
+   },
+   "win": "b"
+  },
+  {
+   "type": "hook",
+   "at": "^damals$",
+   "fallback": 0.55,
+   "text": "2025: ERSTER RÜCKGANG SEIT 2016",
+   "emoji": "📉",
+   "hl": "RÜCKGANG"
+  },
+  {
+   "type": "zahl",
+   "at": "^etwa$",
+   "fallback": 0.68,
+   "value": 1.9,
+   "decimals": 1,
+   "text": "1,9",
+   "unit": "MRD. € WEIHNACHT",
+   "label": "Anteil Weihnachtseinkäufe (Prognose)"
+  },
+  {
+   "type": "karten",
+   "at": "^termine$",
+   "fallback": 0.82,
+   "title": "DIE TERMINE",
+   "items": [
+    "Black Friday: 27. November",
+    "Cyber Monday: 30. November"
+   ]
+  },
+  {
+   "type": "frage",
+   "at": "^planst$",
+   "fallback": 0.93,
+   "text": "KAUFST DU MIT?",
+   "options": [
+    "JA",
+    "NEIN",
+    "VIELLEICHT"
+   ]
+  }
+ ],
+ "title_tiktok": "6,2 Milliarden Euro in zwei Tagen 🛒",
+ "title_youtube": "Black Friday und Cyber Monday 2026: Das erwartet der Handel #shorts",
+ "text_tiktok": "Planst du dieses Jahr Einkäufe? Schreib es in die Kommentare 👇 #blackfriday #cybermonday #handel #zahlen #fürdich",
+ "text_youtube": "Der Handelsverband Deutschland rechnet für Black Friday (27.11.) und Cyber Monday (30.11.) 2026 mit rund 6,2 Milliarden Euro Umsatz, davon etwa 1,9 Milliarden für Weihnachtseinkäufe. Das ist eine Prognose, kein Endergebnis. Im Vorjahr lag sie bei 5,8 Milliarden Euro. Planst du Einkäufe? 👇\n\nQuellen: Handelsverband Deutschland (über retail-news.de und Lebensmittelpraxis). Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #cybermonday #handel #wusstestdu",
+ "sources": [
+  "https://retail-news.de/black-friday-cyber-monday-hde-umsatzprognose-2026/",
+  "https://lebensmittelpraxis.de/handel-aktuell/46645-aktionstage-handelsverband-rechnet-erstmals-mit-sinkenden-umsaetzen-an-black-friday-und-cyber-monday.html",
+  "https://lebensmittelpraxis.de/handel-aktuell/zentrale-management/50248-handelsverband-deutschland-hde-rechnet-mit-einem-stabilen-weihnachtsgeschaeft.html"
+ ]
+}
