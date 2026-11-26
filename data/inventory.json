@@ -2483,6 +2483,31 @@
         "https://www.evangelisch.de/inhalte/178946/27-11-2020/neue-erkenntnisse-zum-adventskranz"
       ],
       "due": "2026-11-29T18:00:00+01:00"
+    },
+    {
+      "id": "N013",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-26T07:34:57.071246+01:00",
+      "source": "kinetic",
+      "topic": "Black Friday und Cyber Monday 2026: HDE-Prognose 6,2 Mrd. Euro",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 38.3,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N013.mp4",
+      "title_tiktok": "6,2 Milliarden Euro in zwei Tagen 🛒",
+      "title_youtube": "Black Friday und Cyber Monday 2026: Das erwartet der Handel #shorts",
+      "text_tiktok": "Planst du dieses Jahr Einkäufe? Schreib es in die Kommentare 👇 #blackfriday #cybermonday #handel #zahlen #fürdich",
+      "text_youtube": "Der Handelsverband Deutschland rechnet für Black Friday (27.11.) und Cyber Monday (30.11.) 2026 mit rund 6,2 Milliarden Euro Umsatz, davon etwa 1,9 Milliarden für Weihnachtseinkäufe. Das ist eine Prognose, kein Endergebnis. Im Vorjahr lag sie bei 5,8 Milliarden Euro. Planst du Einkäufe? 👇\n\nQuellen: Handelsverband Deutschland (über retail-news.de und Lebensmittelpraxis). Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #cybermonday #handel #wusstestdu",
+      "scenes": 8,
+      "buffer": {},
+      "group": "kin-news",
+      "sources": [
+        "https://retail-news.de/black-friday-cyber-monday-hde-umsatzprognose-2026/",
+        "https://lebensmittelpraxis.de/handel-aktuell/46645-aktionstage-handelsverband-rechnet-erstmals-mit-sinkenden-umsaetzen-an-black-friday-und-cyber-monday.html",
+        "https://lebensmittelpraxis.de/handel-aktuell/zentrale-management/50248-handelsverband-deutschland-hde-rechnet-mit-einem-stabilen-weihnachtsgeschaeft.html"
+      ]
     }
   ]
 }
