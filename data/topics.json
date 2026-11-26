@@ -433,6 +433,46 @@
       "source": "analyse",
       "video": "T004",
       "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
+    },
+    {
+      "title": "Artemis III: Landung auf 2028 verschoben",
+      "signal": "Nachrichtenlage 26.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-26",
+      "status": "produced",
+      "video": "N012",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Black Friday und Cyber Monday 2026: HDE-Prognose",
+      "signal": "Nachrichtenlage 26.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-26",
+      "status": "produced",
+      "video": "N013",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Spotify Wrapped 2026: Termin und Zahlen",
+      "signal": "Nachrichtenlage 26.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-26",
+      "status": "produced",
+      "video": "N014",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Gemini und ChatGPT: je 1 Mrd. Nutzer, andere Messung",
+      "signal": "Nachrichtenlage 26.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-26",
+      "status": "produced",
+      "video": "N015",
+      "source": "websuche",
+      "fit": "gut"
     }
   ]
 }
