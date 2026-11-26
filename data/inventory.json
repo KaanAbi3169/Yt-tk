@@ -2533,6 +2533,32 @@
         "https://www.suedostschweiz.ch/panorama/wann-kommt-spotify-wrapped-2026-2235385",
         "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
       ]
+    },
+    {
+      "id": "N012",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-26T07:49:10.870845+01:00",
+      "source": "kinetic",
+      "topic": "Artemis III landet nicht auf dem Mond: NASA-Plan vom 23.10.2026",
+      "hook_type": "Nachricht",
+      "series": null,
+      "episode": null,
+      "duration": 43.4,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N012.mp4",
+      "title_tiktok": "Artemis III landet nicht auf dem Mond 🌕",
+      "title_youtube": "Artemis III landet nicht auf dem Mond: Das ändert die NASA #shorts",
+      "text_tiktok": "Glaubst du, dass es dieses Mal klappt? Schreib es in die Kommentare 👇 #artemis #nasa #mondlandung #weltraum #fürdich",
+      "text_youtube": "Die NASA hat am 23. Oktober 2026 ihren Artemis-Plan geändert: Artemis III fliegt 2027 als Test in der Erdumlaufbahn, die Mondlandung soll mit Artemis IV 2028 folgen. Das sind Planungsangaben, Termine können sich verschieben. Glaubst du, dass es klappt? 👇\n\nQuellen: NASA, NBC News, Universe Today. Stimme und Grafiken mit KI erstellt.\n\n#shorts #artemis #nasa #mondlandung #wusstestdu",
+      "scenes": 8,
+      "buffer": {},
+      "group": "kin-weltraum",
+      "sources": [
+        "https://www.nbcnews.com/science/space/nasa-artemis-moon-mission-overhaul-rcna260971",
+        "https://universetoday.com/articles/nasa-updates-artemis-program-adding-a-mission-and-delaying-lunar-landing",
+        "https://www.neoteo.com/en/nasa-plans-artemis-iii-as-a-2027-earth-orbit-test",
+        "https://www.nasa.gov/humans-in-space/artemis/"
+      ]
     }
   ]
 }
