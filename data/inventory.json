@@ -2508,6 +2508,31 @@
         "https://lebensmittelpraxis.de/handel-aktuell/46645-aktionstage-handelsverband-rechnet-erstmals-mit-sinkenden-umsaetzen-an-black-friday-und-cyber-monday.html",
         "https://lebensmittelpraxis.de/handel-aktuell/zentrale-management/50248-handelsverband-deutschland-hde-rechnet-mit-einem-stabilen-weihnachtsgeschaeft.html"
       ]
+    },
+    {
+      "id": "N014",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-26T07:36:16.771595+01:00",
+      "source": "kinetic",
+      "topic": "Spotify Wrapped 2026: Termin unbestätigt, Zahlen",
+      "hook_type": "Du-Hook",
+      "series": null,
+      "episode": null,
+      "duration": 46.7,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N014.mp4",
+      "title_tiktok": "Spotify Wrapped: Wann kommt es? 🎧",
+      "title_youtube": "Spotify Wrapped 2026: Wann kommt dein Rückblick? #shorts",
+      "text_tiktok": "Welchen Künstler erwartest du ganz oben? Schreib es in die Kommentare 👇 #spotify #wrapped #musik #zahlen #fürdich",
+      "text_youtube": "Spotify hat den Termin für Wrapped 2026 noch nicht bestätigt. Official Charts vermutet Mittwoch, den 2. Dezember (Vermutung). Ende 2025 hatte Spotify 751 Millionen monatlich aktive Nutzer und 290 Millionen Abos. Welchen Künstler erwartest du ganz oben? 👇\n\nQuellen: Official Charts, Südostschweiz, Hypebeast. Stimme und Grafiken mit KI erstellt.\n\n#shorts #spotify #wrapped #musik #wusstestdu",
+      "scenes": 8,
+      "buffer": {},
+      "group": "kin-musik",
+      "sources": [
+        "https://www.officialcharts.com/chart-news/spotify-wrapped-2026-release-date/",
+        "https://www.suedostschweiz.ch/panorama/wann-kommt-spotify-wrapped-2026-2235385",
+        "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
+      ]
     }
   ]
 }
