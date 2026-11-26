@@ -32,6 +32,14 @@ NEED = {"hook": ["text"], "zahl": ["value", "label"], "karten": ["items"], "vs":
 FPS = 30
 
 
+def _norm_text(cfg: dict) -> dict:
+    """Ein als Text geschriebenes Backslash-n (zwei Zeichen) wird zum Zeilenumbruch (sonst steht es sichtbar im Beitrag)."""
+    for k in ("text_tiktok", "text_youtube"):
+        if isinstance(cfg.get(k), str):
+            cfg[k] = cfg[k].replace("\\n", "\n")
+    return cfg
+
+
 def check_content(cfg: dict) -> list:
     errs = []
     for k in ("id", "topic", "script", "scenes", "title_tiktok", "title_youtube", "text_tiktok", "text_youtube"):
@@ -39,6 +47,8 @@ def check_content(cfg: dict) -> list:
             errs.append(f"{k} fehlt")
     if cfg.get("theme", "neon") not in THEMES:
         errs.append("theme unbekannt")
+    if any("\\n" in str(cfg.get(k, "")) for k in ("text_tiktok", "text_youtube")):
+        errs.append("text enthaelt ein Backslash-n als Text (echten Zeilenumbruch schreiben)")
     sc = cfg.get("scenes") or []
     if not 5 <= len(sc) <= 16:
         errs.append(f"{len(sc)} Szenen (5 bis 16)")
@@ -91,7 +101,7 @@ def resolve(scenes: list, words: list, dur: float) -> list:
 
 
 def build(vid: str, dry: bool, fake: bool) -> int:
-    cfg = json.loads((ROOT / "content_kin" / f"{vid}.json").read_text(encoding="utf-8"))
+    cfg = _norm_text(json.loads((ROOT / "content_kin" / f"{vid}.json").read_text(encoding="utf-8")))
     errs = check_content(cfg)
     if errs:
         log("Pruefung des Inhalts durchgefallen: " + "; ".join(errs))
@@ -320,7 +330,7 @@ def timeline(cfg: dict, words: list, dur_v: float, raw: list = None) -> tuple:
 
 
 def build_long(vid: str, dry: bool, fake: bool) -> int:
-    cfg = json.loads((ROOT / "content_kin" / f"{vid}.json").read_text(encoding="utf-8"))
+    cfg = _norm_text(json.loads((ROOT / "content_kin" / f"{vid}.json").read_text(encoding="utf-8")))
     errs = check_long(cfg, strict=not fake)
     if errs:
         log("Pruefung des Inhalts durchgefallen: " + "; ".join(errs))
