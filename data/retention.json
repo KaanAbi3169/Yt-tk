@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "videos": [
     {
       "yt_id": "BibnA5CKqjE",
@@ -87,9 +87,9 @@
       "format": "wissen",
       "hook": "Staunen + Ergebnis",
       "title": "Dieses Metall schmilzt in deiner Hand: Gallium und das Periodensystem 🧪 #shorts",
-      "views": 134,
+      "views": 138,
       "avg_s": 18.0,
-      "avg_pct": 45.9
+      "avg_pct": 46.3
     },
     {
       "yt_id": "zV-YWIko5FM",
@@ -102,6 +102,16 @@
       "avg_pct": 30.8
     },
     {
+      "yt_id": "Xq0z4czxIjI",
+      "id": "T003",
+      "format": "wissen",
+      "hook": "Staunen + Aktualität",
+      "title": "Voyager 1: Diese Sonde ist jetzt einen ganzen Lichttag von der Erde entfernt 🚀 #shorts",
+      "views": 88,
+      "avg_s": 19.0,
+      "avg_pct": 51.1
+    },
+    {
       "yt_id": "vAnTfkSdx_I",
       "id": "X002",
       "format": "waswaerewenn",
@@ -110,16 +120,6 @@
       "views": 86,
       "avg_s": 20.0,
       "avg_pct": 42.5
-    },
-    {
-      "yt_id": "Xq0z4czxIjI",
-      "id": "T003",
-      "format": "wissen",
-      "hook": "Staunen + Aktualität",
-      "title": "Voyager 1: Diese Sonde ist jetzt einen ganzen Lichttag von der Erde entfernt 🚀 #shorts",
-      "views": 85,
-      "avg_s": 19.0,
-      "avg_pct": 49.4
     },
     {
       "yt_id": "AMH4oCcPv_0",
@@ -162,6 +162,26 @@
       "avg_pct": 33.5
     },
     {
+      "yt_id": "vX09wkjSaL8",
+      "id": "T004",
+      "format": "wissen",
+      "hook": "Überraschung",
+      "title": "Der Schneeleopard kann nicht brüllen: 4 Fakten über die Bergkatze 🐆 #shorts",
+      "views": 24,
+      "avg_s": 13.0,
+      "avg_pct": 43.2
+    },
+    {
+      "yt_id": "uX5CWBsnF20",
+      "id": "X003",
+      "format": "waswaerewenn",
+      "hook": "Alltags-Gedankenexperiment",
+      "title": "Was wäre, wenn Handys nur noch 1 Stunde am Tag funktionieren? 📱 #shorts",
+      "views": 22,
+      "avg_s": 10.0,
+      "avg_pct": 25.1
+    },
+    {
       "yt_id": "sIG9byeJjCc",
       "id": "L001",
       "format": "lang",
@@ -202,16 +222,6 @@
       "avg_pct": 55.4
     },
     {
-      "yt_id": "yMDPQ4PEV9s",
-      "id": "L003",
-      "format": "lang",
-      "hook": "Liste + Frage",
-      "title": "10 Dinge, die dein Körper und dein Gehirn tun, ohne dass du es merkst",
-      "views": 3,
-      "avg_s": 15.0,
-      "avg_pct": 2.6
-    },
-    {
       "yt_id": "6t884vuFjR8",
       "id": "–",
       "format": "–",
@@ -222,11 +232,31 @@
       "avg_pct": 0.0
     },
     {
+      "yt_id": "yMDPQ4PEV9s",
+      "id": "L003",
+      "format": "lang",
+      "hook": "Liste + Frage",
+      "title": "10 Dinge, die dein Körper und dein Gehirn tun, ohne dass du es merkst",
+      "views": 3,
+      "avg_s": 15.0,
+      "avg_pct": 2.6
+    },
+    {
       "yt_id": "A9VodC7KnDo",
       "id": "–",
       "format": "–",
       "hook": "–",
       "title": "Die 3 Regeln der Vormieterin – Teil 1 🔦 #shorts",
+      "views": 2,
+      "avg_s": 0.0,
+      "avg_pct": 0.0
+    },
+    {
+      "yt_id": "Q8iCq5eao38",
+      "id": "–",
+      "format": "–",
+      "hook": "–",
+      "title": "",
       "views": 2,
       "avg_s": 0.0,
       "avg_pct": 0.0
@@ -240,16 +270,6 @@
       "views": 2,
       "avg_s": 6.0,
       "avg_pct": 9.7
-    },
-    {
-      "yt_id": "Q8iCq5eao38",
-      "id": "–",
-      "format": "–",
-      "hook": "–",
-      "title": "",
-      "views": 2,
-      "avg_s": 0.0,
-      "avg_pct": 0.0
     },
     {
       "yt_id": "o-o69fu5XBA",
