@@ -39,6 +39,22 @@
    "hl": "MITTWOCH"
   },
   {
+   "type": "hook",
+   "at": "^zwischen$",
+   "fallback": 0.45,
+   "text": "ZWISCHEN 29. NOVEMBER UND 6. DEZEMBER",
+   "emoji": "🗓",
+   "hl": "ZWISCHEN"
+  },
+  {
+   "type": "hook",
+   "at": "^ende$",
+   "fallback": 0.52,
+   "text": "SPOTIFY IN ZAHLEN: ENDE 2025",
+   "emoji": "📊",
+   "hl": "ZAHLEN"
+  },
+  {
    "type": "zahl",
    "at": "^siebenhunderteinundf.nfzig$",
    "fallback": 0.55,
