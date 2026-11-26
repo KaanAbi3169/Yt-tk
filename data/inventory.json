@@ -2086,7 +2086,7 @@
     {
       "id": "N001",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "ready",
       "created": "2026-11-24T13:20:01.244945+01:00",
       "source": "kinetic",
       "topic": "GTA 6: Starttag-Umsatz laut Schätzungen gegen GTA 5",
@@ -2101,8 +2101,7 @@
       "text_youtube": "GTA 6 ist seit dem 19. November 2026 erhältlich. Marktforscher schätzen den Starttag-Umsatz auf rund 1,84 Milliarden Dollar, GTA 5 kam am ersten Tag auf über 800 Millionen. Offizielle Zahlen gibt es noch nicht. Hast du es schon gespielt? 👇\n\nQuellen: Fox 5 NY, 80.lv, Guinness World Records (GTA 5). Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #rockstar #wusstestdu",
       "scenes": 8,
       "buffer": {
-        "tiktok": "6b058166d280bf495ba8a5c4",
-        "youtube": "6b058167d280bf495ba8a60e"
+        "tiktok": "6b058166d280bf495ba8a5c4"
       },
       "group": "kin-gaming",
       "sources": [
@@ -2111,7 +2110,7 @@
         "https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900",
         "https://www.oneindia.com/international/gta-6-sales-cross-1-6-billion-as-playstation-accounts-for-75-of-early-purchases-8264247.html"
       ],
-      "due": "2026-11-24T16:00:00+01:00",
+      "due": null,
       "errors": [
         {
           "at": "2026-11-25T04:44:11.065890+01:00",
@@ -2120,8 +2119,17 @@
         {
           "at": "2026-11-26T04:04:08.140442+01:00",
           "reason": "Buffer-Fehler, siehe Bericht"
+        },
+        {
+          "at": "2026-11-26T07:11:54.364164+01:00",
+          "uploads_24h_davor": 2,
+          "reason": "youtube: Buffer-Post 6b058167d280bf495ba8a60e Status error ()"
         }
-      ]
+      ],
+      "retries": {
+        "youtube": 1
+      },
+      "due_failed": "2026-11-24T16:00:00+01:00"
     },
     {
       "id": "N002",
@@ -2355,7 +2363,7 @@
     {
       "id": "N010",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-25T07:18:08.985789+01:00",
       "source": "kinetic",
       "topic": "Glühwein-Preise 2026 auf Weihnachtsmärkten",
@@ -2369,19 +2377,23 @@
       "text_tiktok": "Wie viel zahlst du für einen Glühwein? Schreib es in die Kommentare 👇 #glühwein #weihnachtsmarkt #advent #preise #fürdich",
       "text_youtube": "Für 2026 wird auf vielen großen Weihnachtsmärkten mit rund 5 Euro pro Tasse Glühwein gerechnet (Schätzung des Verbands BWS), dazu kommen meist 3 Euro Pfand. Eine Umfrage nennt im Schnitt 4,60 Euro, München liegt bei bis zu 7 Euro. Wie viel zahlst du? 👇\\n\\nQuellen: BWS (über Vinetur), Coupons.de und Antenne Bayern (über News.at und Infranken), t-online. Stimme und Grafiken mit KI erstellt.\\n\\n#shorts #glühwein #weihnachtsmarkt #advent #wusstestdu",
       "scenes": 6,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b07cdab63939e1d0078cdbb",
+        "youtube": "6b07cdabaca861248084689d"
+      },
       "group": "kin-saison",
       "sources": [
         "https://www.vinetur.com/de/pdf/111151/a-cup-of-mulled-wine-is-expected-to-cost-about-euro5-at-many-large-german-christmas-markets-in-2026.pdf",
         "https://www.news.at/kulinarik/gluehwein-preise-2026-weihnachtsmarkt-kosten-tasse",
         "https://www.infranken.de/deutschland/wie-viel-eine-tasse-gluehwein-kostet-art-6411146",
         "https://ms-aktuell.de/welt/gluehweinpreise-2026-15-11-2026/"
-      ]
+      ],
+      "due": "2026-11-27T10:00:00+01:00"
     },
     {
       "id": "N011",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-25T07:25:02.986392+01:00",
       "source": "kinetic",
       "topic": "Glühwein: Zucker und Kalorien pro Tasse",
@@ -2395,14 +2407,18 @@
       "text_tiktok": "Wie viele Tassen trinkst du pro Besuch? Schreib es in die Kommentare 👇 #glühwein #zucker #weihnachtsmarkt #advent #fürdich",
       "text_youtube": "Eine VKI-Untersuchung auf Wiener Weihnachtsmärkten fand im Schnitt rund 80 Gramm Zucker pro Liter Glühwein, das entspricht 5 bis 6 Würfelzucker pro Tasse. Ökotest kam auf 66 bis 94 Gramm je Liter, die Verbraucherzentrale Thüringen nennt rund 180 Kalorien pro 200-ml-Becher. Wie viele Tassen trinkst du? 👇\\n\\nQuellen: Verbraucherzentrale Thüringen, Ökotest (über Utopia), VKI (über Aponet), Fitbook. Stimme und Grafiken mit KI erstellt.\\n\\n#shorts #glühwein #zucker #advent #wusstestdu",
       "scenes": 7,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b07cdacf13f49a92597cd35",
+        "youtube": "6b07cdad7cb39d7aa3545065"
+      },
       "group": "kin-saison",
       "sources": [
         "https://www.aponet.de/artikel/gluehwein-im-check-was-steckt-drin-31199",
         "https://utopia.de/ratgeber/oekotest-welche-gluehweine-sind-am-besten",
         "https://www.hogapage.de/nachrichten/beverage/wein-sekt/gluehwein-oft-extrem-suess/",
         "https://www.stuttgarter-zeitung.de/wissen/weihnachtsmarkt-essen-kalorien-mhsd-79207469.html"
-      ]
+      ],
+      "due": "2026-11-27T16:00:00+01:00"
     },
     {
       "id": "N008",
