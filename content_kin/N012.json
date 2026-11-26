@@ -11,7 +11,7 @@
   {
    "type": "hook",
    "text": "ARTEMIS III LANDET NICHT AUF DEM MOND",
-   "emoji": "🌕",
+   "emoji": "🚀",
    "hl": "NICHT"
   },
   {
@@ -56,7 +56,7 @@
    "at": "^zwei$",
    "fallback": 0.72,
    "text": "ARTEMIS II: UM DEN MOND, APRIL 2026",
-   "emoji": "🚀",
+   "emoji": "🌍",
    "hl": "ARTEMIS"
   },
   {

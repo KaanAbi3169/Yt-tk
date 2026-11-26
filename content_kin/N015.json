@@ -40,6 +40,22 @@
    "win": "b"
   },
   {
+   "type": "hook",
+   "at": "^das$",
+   "fallback": 0.4,
+   "text": "WÖCHENTLICH IST DIE STRENGERE ZAHL",
+   "emoji": "🔒",
+   "hl": "STRENGERE"
+  },
+  {
+   "type": "hook",
+   "at": "^laut$",
+   "fallback": 0.5,
+   "text": "LAUT SENSOR TOWER, 1. HALBJAHR 2026",
+   "emoji": "📊",
+   "hl": "SENSOR"
+  },
+  {
    "type": "zahl",
    "at": "^f.nfzig$",
    "fallback": 0.55,
