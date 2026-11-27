@@ -2646,6 +2646,31 @@
         "https://gamingbolt.com/?p=656406",
         "https://news.instant-gaming.com/de/artikel/22877-die-switch-2-wurde-weltweit-26-35-millionen-mal-verkauft"
       ]
+    },
+    {
+      "id": "N018",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-27T07:25:48.527836+01:00",
+      "source": "kinetic",
+      "topic": "Nikolaus (6.12.): Schokolade in Deutschland, Destatis",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 46.8,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N018.mp4",
+      "title_tiktok": "Nikolaus: So viel Schokolade steckt dahinter 🍫",
+      "title_youtube": "Nikolaus: So viel Schokolade stellt Deutschland her (Destatis) #shorts",
+      "text_tiktok": "Was steckt bei dir im Stiefel? Schreib es in die Kommentare 👇 #nikolaus #schokolade #advent #zahlen #fürdich",
+      "text_youtube": "Nach dem Statistischen Bundesamt wurden 2024 in Deutschland 12,8 Kilogramm Schokolade pro Kopf hergestellt, exportiert wurden 981 400 Tonnen. Eine Statistik (über evangelisch.de) nennt 2,6 Tafeln pro Kopf und Woche. Das sind Durchschnittswerte, keine Zahlen für den Nikolaustag. Was steckt bei dir im Stiefel? 👇\n\nQuellen: Statistisches Bundesamt (Zahl der Woche), evangelisch.de. Stimme und Grafiken mit KI erstellt.\n\n#shorts #nikolaus #schokolade #advent #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-saison",
+      "sources": [
+        "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_49_p002.html",
+        "https://www.evangelisch.de/inhalte/236753/03-12-2024/statistik-26-tafeln-schokolade-pro-kopf-und-woche",
+        "https://de.statista.com/infografik/amp/26336/produktionsmenge-von-schokoladenfiguren-in-deutschland"
+      ]
     }
   ]
 }
