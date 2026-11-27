@@ -2647,31 +2647,6 @@
       ]
     },
     {
-      "id": "N019",
-      "format": "wissen",
-      "status": "ready",
-      "created": "2026-11-27T07:32:11.449292+01:00",
-      "source": "kinetic",
-      "topic": "Bahn: Fahrplanwechsel 13.12.2026, keine Preiserhöhung im Fernverkehr bis Mai 2027",
-      "hook_type": "Du-Hook",
-      "series": null,
-      "episode": null,
-      "duration": 43.0,
-      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N019.mp4",
-      "title_tiktok": "Bahn: Keine Preiserhöhung im Fernverkehr 🚆",
-      "title_youtube": "Bahn 2027: Fernverkehr bleibt vorerst gleich teuer (Fahrplanwechsel) #shorts",
-      "text_tiktok": "Fährst du über die Feiertage Bahn? Schreib es in die Kommentare 👇 #bahn #fahrplan #zug #tipps #fürdich",
-      "text_youtube": "Die Bahn verzichtet nach eigenen Angaben auf Preiserhöhungen im Fernverkehr, laut Berichten bis Mai 2027. Der neue Fahrplan gilt ab 13. Dezember 2026, ab Mitte Dezember soll es täglich rund 70 Sprinter-Fahrten geben. Zu Preisen im Nahverkehr habe ich nichts Belastbares gefunden. Fährst du über die Feiertage Bahn? 👇\n\nQuellen: ZDFheute, Volksstimme (Angaben der Deutschen Bahn). Stimme und Grafiken mit KI erstellt.\n\n#shorts #bahn #fahrplan #zug #wusstestdu",
-      "scenes": 7,
-      "buffer": {},
-      "group": "kin-alltag",
-      "sources": [
-        "https://www.zdfheute.de/politik/deutschland/bahn-fernverkehr-tickets-preise-100.html",
-        "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/fahrplan-2027-was-sich-fur-bahnreisende-andert-4337963",
-        "https://www.zdfheute.de/ratgeber/bahn-fahrplan-2027-aenderungen-100.html"
-      ]
-    },
-    {
       "id": "N016",
       "format": "wissen",
       "status": "ready",
@@ -2695,6 +2670,31 @@
         "https://www.berliner-zeitung.de/article/10472123",
         "https://www.heidelberg24.de/deutschland/baden-wuerttemberg/weisse-weihnachten-deutschland-polarwirbel-schnee-chancen-94598671.html",
         "https://www.zdfheute.de/panorama/weisse-weihnachten-selten-nieselregen-statt-schnee-100.html"
+      ]
+    },
+    {
+      "id": "N019",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-27T07:39:02.548562+01:00",
+      "source": "kinetic",
+      "topic": "Bahn: Fahrplanwechsel 13.12.2026, keine Preiserhöhung im Fernverkehr bis Mai 2027",
+      "hook_type": "Du-Hook",
+      "series": null,
+      "episode": null,
+      "duration": 43.0,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N019.mp4",
+      "title_tiktok": "Bahn: Keine Preiserhöhung im Fernverkehr 🚆",
+      "title_youtube": "Bahn 2027: Fernverkehr bleibt vorerst gleich teuer (Fahrplanwechsel) #shorts",
+      "text_tiktok": "Fährst du über die Feiertage Bahn? Schreib es in die Kommentare 👇 #bahn #fahrplan #zug #tipps #fürdich",
+      "text_youtube": "Die Bahn verzichtet nach eigenen Angaben auf Preiserhöhungen im Fernverkehr, laut Berichten bis Mai 2027. Der neue Fahrplan gilt ab 13. Dezember 2026, ab Mitte Dezember soll es täglich rund 70 Sprinter-Fahrten geben. Zu Preisen im Nahverkehr habe ich nichts Belastbares gefunden. Fährst du über die Feiertage Bahn? 👇\n\nQuellen: ZDFheute, Volksstimme (Angaben der Deutschen Bahn). Stimme und Grafiken mit KI erstellt.\n\n#shorts #bahn #fahrplan #zug #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-alltag",
+      "sources": [
+        "https://www.zdfheute.de/politik/deutschland/bahn-fernverkehr-tickets-preise-100.html",
+        "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/fahrplan-2027-was-sich-fur-bahnreisende-andert-4337963",
+        "https://www.zdfheute.de/ratgeber/bahn-fahrplan-2027-aenderungen-100.html"
       ]
     }
   ]
