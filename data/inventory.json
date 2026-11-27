@@ -2696,6 +2696,43 @@
         "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/fahrplan-2027-was-sich-fur-bahnreisende-andert-4337963",
         "https://www.zdfheute.de/ratgeber/bahn-fahrplan-2027-aenderungen-100.html"
       ]
+    },
+    {
+      "id": "E004",
+      "format": "lang",
+      "status": "ready",
+      "created": "2026-11-27T07:43:58.916961+01:00",
+      "source": "kinetic",
+      "topic": "KI-Chatbots in Zahlen: Nutzer, Marktanteile und wie gezählt wird (Stand 27.11.2026)",
+      "hook_type": "Kinetic-Doku KI",
+      "series": null,
+      "episode": null,
+      "duration": 736.4,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/E004.mp4",
+      "title_tiktok": "",
+      "title_youtube": "KI-Chatbots in Zahlen: Wer hat wirklich wie viele Nutzer? (ChatGPT, Gemini, Claude)",
+      "text_tiktok": "",
+      "text_youtube": "Wie viele Menschen nutzen KI-Chatbots wirklich? Dieses Video vergleicht die Zahlen zu ChatGPT, Gemini, Claude, Meta AI und Co. aus Anbieterangaben, Marktforschung (Sensor Tower, Similarweb, Counterpoint) und der Bitkom-Umfrage für Deutschland. Zu jeder Zahl steht, wer sie nennt und was gezählt wird. Schätzungen und Prognosen sind gekennzeichnet.\n\nKAPITEL\n0:00 Einleitung\n0:52 ChatGPT\n2:23 Gemini\n3:48 Marktanteile\n5:09 Web-Traffic\n6:33 Claude, Meta AI und Co.\n9:07 Deutschland\n10:15 So liest du die Zahlen\n\nQuellen: OpenAI und AP (über CTV News), TechCrunch, The Next Web, Alphabet (Q2 2026), 9to5Google, PPC Land, Sensor Tower (State of AI 2026), Similarweb (über PPC Land, The Decoder und The Next Web), Counterpoint Research, DataReportal, Bitkom.\n\nWelcher Chatbot ist für dich der wichtigste? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#ki #chatgpt #gemini #claude #zahlen",
+      "scenes": 96,
+      "buffer": {},
+      "group": "lang-kin",
+      "sources": [
+        "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
+        "https://thenextweb.com/news/chatgpt-1-billion-weekly-active-users-openai-target",
+        "https://www.ctvnews.ca/sci-tech/article/openai-says-has-more-than-1-billion-active-users/",
+        "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+        "https://9to5google.com/2026/08/11/gemini-app-1-billion/",
+        "https://ppc.land/gemini-app-gains-350m-users-in-a-year-to-pass-1bn-alphabet-says/",
+        "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+        "https://sensortower.com/press/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year",
+        "https://ppc.land/chatgpt-drops-to-52-7-as-claude-triples-its-ai-traffic-share",
+        "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/",
+        "https://thenextweb.com/news/similarweb-2026-generative-ai-landscape-ai-search-fragmentation",
+        "https://counterpointresearch.com/en/insights/Global-LLM-Adoption-and-Revenue-Snapshot",
+        "https://datareportal.com/reports/similarweb-2026-generative-ai-visibility-index",
+        "https://www.bitkom.org/Presse/Presseinformation/Ein-Drittel-nutzt-KI-mindestens-einmal-pro-Woche",
+        "https://thenextweb.com/news/claude-chatgpt-revenue-per-user-sensor-tower"
+      ]
     }
   ]
 }
