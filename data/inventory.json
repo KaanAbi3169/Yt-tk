@@ -2700,7 +2700,7 @@
     {
       "id": "E004",
       "format": "lang",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-27T07:43:58.916961+01:00",
       "source": "kinetic",
       "topic": "KI-Chatbots in Zahlen: Nutzer, Marktanteile und wie gezählt wird (Stand 27.11.2026)",
@@ -2714,7 +2714,9 @@
       "text_tiktok": "",
       "text_youtube": "Wie viele Menschen nutzen KI-Chatbots wirklich? Dieses Video vergleicht die Zahlen zu ChatGPT, Gemini, Claude, Meta AI und Co. aus Anbieterangaben, Marktforschung (Sensor Tower, Similarweb, Counterpoint) und der Bitkom-Umfrage für Deutschland. Zu jeder Zahl steht, wer sie nennt und was gezählt wird. Schätzungen und Prognosen sind gekennzeichnet.\n\nKAPITEL\n0:00 Einleitung\n0:52 ChatGPT\n2:23 Gemini\n3:48 Marktanteile\n5:09 Web-Traffic\n6:33 Claude, Meta AI und Co.\n9:07 Deutschland\n10:15 So liest du die Zahlen\n\nQuellen: OpenAI und AP (über CTV News), TechCrunch, The Next Web, Alphabet (Q2 2026), 9to5Google, PPC Land, Sensor Tower (State of AI 2026), Similarweb (über PPC Land, The Decoder und The Next Web), Counterpoint Research, DataReportal, Bitkom.\n\nWelcher Chatbot ist für dich der wichtigste? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#ki #chatgpt #gemini #claude #zahlen",
       "scenes": 96,
-      "buffer": {},
+      "buffer": {
+        "youtube": "metricool:443985135"
+      },
       "group": "lang-kin",
       "sources": [
         "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
@@ -2732,7 +2734,8 @@
         "https://datareportal.com/reports/similarweb-2026-generative-ai-visibility-index",
         "https://www.bitkom.org/Presse/Presseinformation/Ein-Drittel-nutzt-KI-mindestens-einmal-pro-Woche",
         "https://thenextweb.com/news/claude-chatgpt-revenue-per-user-sensor-tower"
-      ]
+      ],
+      "due": "2026-12-02T18:00:00+01:00"
     }
   ]
 }
