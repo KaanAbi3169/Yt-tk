@@ -1,0 +1,97 @@
+{
+ "id": "N017",
+ "topic": "Switch 2: 26,35 Mio. ausgeliefert, Hardware im Halbjahr minus 37,4 Prozent (Nintendo, November 2026)",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-gaming",
+ "theme": "fire",
+ "music": "wissen",
+ "hl": "millionen|prozent|\\d",
+ "script": "Sechsundzwanzig Komma drei fünf Millionen Switch zwei sind ausgeliefert. Das meldet Nintendo für die Zeit bis zum dreißigsten September zweitausendsechsundzwanzig. Im letzten Quartal waren es zwei Komma sechs sieben Millionen Geräte. Im ersten Halbjahr des Geschäftsjahres fielen die Verkäufe der Konsole aber um siebenunddreißig Komma vier Prozent auf sechs Komma vier neun Millionen. Die Software legte um achtzehn Komma acht Prozent auf vierundzwanzig Komma vier neun Millionen Exemplare zu. Das meistverkaufte Spiel kommt auf sechzehn Komma vier acht Millionen. Die erste Switch steht bei einhundertsiebenundfünfzig Komma zwei Millionen. Die Jahresprognose bleibt unverändert. Kaufst du dir eine? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "26,35 MIO. SWITCH 2 AUSGELIEFERT",
+   "emoji": "🎮",
+   "hl": "26,35"
+  },
+  {
+   "type": "zahl",
+   "at": "^letzten$",
+   "fallback": 0.2,
+   "value": 2.67,
+   "decimals": 2,
+   "static": true,
+   "text": "2,67",
+   "unit": "MIO. IM LETZTEN QUARTAL",
+   "label": "Switch 2 (Nintendo, bis 30.9.2026)"
+  },
+  {
+   "type": "zahl",
+   "at": "^ersten$",
+   "fallback": 0.35,
+   "value": 37.4,
+   "decimals": 1,
+   "static": true,
+   "text": "-37,4",
+   "unit": "% HARDWARE IM HALBJAHR",
+   "label": "6,49 Mio. Geräte (Nintendo)"
+  },
+  {
+   "type": "zahl",
+   "at": "^software$",
+   "fallback": 0.55,
+   "value": 18.8,
+   "decimals": 1,
+   "static": true,
+   "text": "+18,8",
+   "unit": "% SOFTWARE",
+   "label": "24,49 Mio. Exemplare (Nintendo)"
+  },
+  {
+   "type": "hook",
+   "text": "MEISTVERKAUFTES SPIEL: 16,48 MIO.",
+   "emoji": "🏆",
+   "hl": "16,48",
+   "at": "^meistverkaufte$",
+   "fallback": 0.7
+  },
+  {
+   "type": "vs",
+   "at": "^erste$",
+   "fallback": 0.82,
+   "title": "AUSGELIEFERT (MIO.)",
+   "a": {
+    "name": "Switch 1",
+    "value": 157.2,
+    "text": "157,2"
+   },
+   "b": {
+    "name": "Switch 2",
+    "value": 26.35,
+    "text": "26,35"
+   },
+   "win": "a"
+  },
+  {
+   "type": "frage",
+   "at": "^kaufst$",
+   "fallback": 0.94,
+   "text": "KAUFST DU EINE?",
+   "options": [
+    "JA",
+    "NEIN",
+    "SCHON GEKAUFT"
+   ]
+  }
+ ],
+ "title_tiktok": "Switch 2: So viele sind schon verkauft 🎮",
+ "title_youtube": "Switch 2: 26,35 Millionen, aber die Hardware schwächelt #shorts",
+ "text_tiktok": "Kaufst du dir eine? Schreib es in die Kommentare 👇 #switch2 #nintendo #gaming #zahlen #fürdich",
+ "text_youtube": "Nintendo meldet für die Zeit bis 30. September 2026 insgesamt 26,35 Millionen ausgelieferte Switch-2-Konsolen. Im ersten Halbjahr des Geschäftsjahres sanken die Hardware-Verkäufe um 37,4 Prozent auf 6,49 Millionen, die Software stieg um 18,8 Prozent auf 24,49 Millionen Exemplare. Kaufst du dir eine? 👇\n\nQuellen: Nintendo (über Shacknews, VGC, Gamingbolt, Instant Gaming). Stimme und Grafiken mit KI erstellt.\n\n#shorts #switch2 #nintendo #gaming #wusstestdu",
+ "sources": [
+  "https://shacknews.com/article/151284/nintendo-switch-2-sells-2-67-million-units-q2-fy27",
+  "https://www.videogameschronicle.com/news/nintendo-switch-2-sales-have-dropped-37-but-its-still-comfortably-beating-the-o",
+  "https://gamingbolt.com/?p=656406",
+  "https://news.instant-gaming.com/de/artikel/22877-die-switch-2-wurde-weltweit-26-35-millionen-mal-verkauft"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "id": "N016",
+ "topic": "Weiße Weihnachten: DWD-Wahrscheinlichkeiten nach Stadt",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-saison",
+ "theme": "ice",
+ "music": "wissen",
+ "hl": "prozent|\\d",
+ "script": "Weiße Weihnachten: In Köln nur drei Komma drei Prozent. So liegt die Chance nach Daten des Deutschen Wetterdienstes im Durchschnitt der Jahre neunzehnhunderteinundneunzig bis zweitausendzwanzig. In Berlin und Hamburg sind es sechs Komma sieben Prozent, in München dreizehn Komma acht Prozent. Auf der Zugspitze sind es mehr als fünfundneunzig Prozent. Zwischen dem Zeitraum neunzehnhunderteinundsechzig bis neunzehnhundertneunzig und dem heutigen ist die Wahrscheinlichkeit bundesweit um zweiundfünfzig Prozent gesunken. Für den Winter nennt ein Bericht einundsechzig Prozent Wahrscheinlichkeit für überdurchschnittlich warme Temperaturen. Wie sieht es bei dir aus? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "WEISSE WEIHNACHTEN: KÖLN NUR 3,3 %",
+   "emoji": "🎄",
+   "hl": "3,3"
+  },
+  {
+   "type": "zahl",
+   "at": "^k.ln$",
+   "fallback": 0.1,
+   "value": 3.3,
+   "decimals": 1,
+   "static": true,
+   "text": "3,3",
+   "unit": "% CHANCE IN KÖLN",
+   "label": "Durchschnitt 1991-2020 (DWD-Daten)"
+  },
+  {
+   "type": "balken",
+   "at": "^berlin$",
+   "fallback": 0.3,
+   "title": "CHANCE AUF WEISSE WEIHNACHTEN (%)",
+   "items": [
+    {
+     "name": "München",
+     "value": 13.8,
+     "text": "13,8"
+    },
+    {
+     "name": "Berlin",
+     "value": 6.7,
+     "text": "6,7"
+    },
+    {
+     "name": "Hamburg",
+     "value": 6.7,
+     "text": "6,7"
+    },
+    {
+     "name": "Köln",
+     "value": 3.3,
+     "text": "3,3"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "text": "ZUGSPITZE: ÜBER 95 %",
+   "emoji": "🏔",
+   "hl": "95",
+   "at": "^zugspitze$",
+   "fallback": 0.5
+  },
+  {
+   "type": "zahl",
+   "at": "^zweiundf.nfzig$",
+   "fallback": 0.65,
+   "value": 52,
+   "decimals": 0,
+   "static": true,
+   "text": "-52",
+   "unit": "% WENIGER CHANCE BUNDESWEIT",
+   "label": "1961-1990 gegen 1991-2020 (DWD)"
+  },
+  {
+   "type": "hook",
+   "text": "WINTER: 61 % WAHRSCHEINLICH ZU WARM",
+   "emoji": "🌡",
+   "hl": "61",
+   "at": "^winter$",
+   "fallback": 0.8
+  },
+  {
+   "type": "frage",
+   "at": "^wie$",
+   "fallback": 0.92,
+   "text": "SCHNEE ZU WEIHNACHTEN?",
+   "options": [
+    "JA",
+    "NEIN",
+    "SELTEN"
+   ]
+  }
+ ],
+ "title_tiktok": "Weiße Weihnachten: Deine Chance? 🎄",
+ "title_youtube": "Weiße Weihnachten: So klein ist deine Chance je nach Stadt #shorts",
+ "text_tiktok": "Wie sieht es bei dir aus? Schreib es in die Kommentare 👇 #weihnachten #schnee #wetter #dwd #fürdich",
+ "text_youtube": "Nach DWD-Daten liegt die Chance auf weiße Weihnachten (Durchschnitt 1991 bis 2020) in Köln bei 3,3 Prozent, in Berlin und Hamburg bei 6,7 Prozent, in München bei 13,8 Prozent und auf der Zugspitze bei über 95 Prozent. Bundesweit ist sie seit 1961 bis 1990 um 52 Prozent gesunken. Wie sieht es bei dir aus? 👇\n\nQuellen: Deutscher Wetterdienst (über newstime, Wunderweib, Berliner Zeitung), Heidelberg24. Stimme und Grafiken mit KI erstellt.\n\n#shorts #weihnachten #schnee #wetter #wusstestdu",
+ "sources": [
+  "https://newstime.joyn.de/themen/wetter/weisse-weihnachten-wann-es-schneit-wie-haeufig-216078",
+  "https://www.berliner-zeitung.de/article/10472123",
+  "https://www.heidelberg24.de/deutschland/baden-wuerttemberg/weisse-weihnachten-deutschland-polarwirbel-schnee-chancen-94598671.html",
+  "https://www.zdfheute.de/panorama/weisse-weihnachten-selten-nieselregen-statt-schnee-100.html"
+ ]
+}

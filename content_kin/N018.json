@@ -1,0 +1,87 @@
+{
+ "id": "N018",
+ "topic": "Nikolaus (6.12.): Schokolade in Deutschland, Destatis",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-saison",
+ "theme": "sunset",
+ "music": "wissen",
+ "hl": "kilo\\w*|tonnen|tafeln|\\d",
+ "script": "Zwölf Komma acht Kilo Schokolade, pro Kopf hergestellt. Am sechsten Dezember kommt der Nikolaus, und mit ihm die Schokolade. Nach dem Statistischen Bundesamt wurden in Deutschland im Jahr zweitausendvierundzwanzig zwölf Komma acht Kilogramm Schokolade pro Kopf hergestellt. Deutschland exportierte in dem Jahr neunhunderteinundachtzigtausendvierhundert Tonnen Schokolade. Eine Statistik, über die evangelisch.de berichtet, nennt zwei Komma sechs Tafeln Schokolade pro Kopf und Woche. Das sind Durchschnittswerte und keine Zahlen für den Nikolaustag. Zahlen nur für Schokoladenfiguren habe ich in den Quellen nicht gefunden. Was steckt bei dir im Stiefel? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "12,8 KILO SCHOKOLADE PRO KOPF",
+   "emoji": "🍫",
+   "hl": "12,8"
+  },
+  {
+   "type": "hook",
+   "text": "6. DEZEMBER: NIKOLAUS",
+   "emoji": "🎅",
+   "hl": "NIKOLAUS",
+   "at": "^am$",
+   "fallback": 0.15
+  },
+  {
+   "type": "zahl",
+   "at": "^kilogramm$",
+   "fallback": 0.35,
+   "value": 12.8,
+   "decimals": 1,
+   "static": true,
+   "text": "12,8",
+   "unit": "KG SCHOKOLADE PRO KOPF",
+   "label": "2024 hergestellt (Destatis)"
+  },
+  {
+   "type": "zahl",
+   "at": "^exportierte$",
+   "fallback": 0.52,
+   "value": 981400,
+   "decimals": 0,
+   "static": true,
+   "text": "981 400",
+   "unit": "TONNEN EXPORT",
+   "label": "Deutschland 2024 (Destatis)"
+  },
+  {
+   "type": "zahl",
+   "at": "^eine$",
+   "fallback": 0.66,
+   "value": 2.6,
+   "decimals": 1,
+   "static": true,
+   "text": "2,6",
+   "unit": "TAFELN PRO KOPF UND WOCHE",
+   "label": "Statistik (über evangelisch.de)"
+  },
+  {
+   "type": "hook",
+   "text": "DURCHSCHNITT, KEINE NIKOLAUS-ZAHL",
+   "emoji": "⚠",
+   "hl": "DURCHSCHNITT",
+   "at": "^das$",
+   "fallback": 0.8
+  },
+  {
+   "type": "frage",
+   "at": "^was$",
+   "fallback": 0.93,
+   "text": "WAS STECKT IM STIEFEL?",
+   "options": [
+    "SCHOKOLADE",
+    "NÜSSE",
+    "MANDARINEN"
+   ]
+  }
+ ],
+ "title_tiktok": "Nikolaus: So viel Schokolade steckt dahinter 🍫",
+ "title_youtube": "Nikolaus: So viel Schokolade stellt Deutschland her (Destatis) #shorts",
+ "text_tiktok": "Was steckt bei dir im Stiefel? Schreib es in die Kommentare 👇 #nikolaus #schokolade #advent #zahlen #fürdich",
+ "text_youtube": "Nach dem Statistischen Bundesamt wurden 2024 in Deutschland 12,8 Kilogramm Schokolade pro Kopf hergestellt, exportiert wurden 981 400 Tonnen. Eine Statistik (über evangelisch.de) nennt 2,6 Tafeln pro Kopf und Woche. Das sind Durchschnittswerte, keine Zahlen für den Nikolaustag. Was steckt bei dir im Stiefel? 👇\n\nQuellen: Statistisches Bundesamt (Zahl der Woche), evangelisch.de. Stimme und Grafiken mit KI erstellt.\n\n#shorts #nikolaus #schokolade #advent #wusstestdu",
+ "sources": [
+  "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_49_p002.html",
+  "https://www.evangelisch.de/inhalte/236753/03-12-2024/statistik-26-tafeln-schokolade-pro-kopf-und-woche",
+  "https://de.statista.com/infografik/amp/26336/produktionsmenge-von-schokoladenfiguren-in-deutschland"
+ ]
+}

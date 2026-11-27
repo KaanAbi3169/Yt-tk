@@ -1,0 +1,78 @@
+{
+ "id": "N019",
+ "topic": "Bahn: Fahrplanwechsel 13.12.2026, keine Preiserhöhung im Fernverkehr bis Mai 2027",
+ "hook_type": "Du-Hook",
+ "group": "kin-alltag",
+ "theme": "mono",
+ "music": "wissen",
+ "hl": "mai|dezember|siebzig|\\d",
+ "script": "Deine Bahn-Tickets im Fernverkehr werden vorerst nicht teurer. Das berichten ZDFheute und die Volksstimme. Die Bahn verzichtet nach eigenen Angaben auf Preiserhöhungen im Fernverkehr, die Bahn-Chefin hatte schon im April zugesagt, dass das bis Mai zweitausendsiebenundzwanzig so bleibt. Spar- und Flexpreise und die BahnCard bleiben unverändert. Der neue Fahrplan gilt ab dem dreizehnten Dezember, die Tickets sind seit dem vierzehnten Oktober buchbar. Ab Mitte Dezember soll es täglich rund siebzig Sprinter-Fahrten auf wichtigen Strecken geben. Zu Preisen im Nahverkehr habe ich nichts Belastbares gefunden. Fährst du über die Feiertage Bahn? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "KEINE PREISERHÖHUNG BIS MAI 2027",
+   "emoji": "🚆",
+   "hl": "KEINE"
+  },
+  {
+   "type": "karten",
+   "at": "^spar$",
+   "fallback": 0.3,
+   "title": "BLEIBT UNVERÄNDERT",
+   "items": [
+    "Spar- und Flexpreise",
+    "BahnCard"
+   ]
+  },
+  {
+   "type": "zahl",
+   "at": "^fahrplan$",
+   "fallback": 0.5,
+   "value": 13,
+   "decimals": 0,
+   "static": true,
+   "text": "13.",
+   "unit": "DEZEMBER: NEUER FAHRPLAN",
+   "label": "Tickets seit 14. Oktober buchbar"
+  },
+  {
+   "type": "zahl",
+   "at": "^siebzig$",
+   "fallback": 0.7,
+   "value": 70,
+   "decimals": 0,
+   "static": true,
+   "text": "70",
+   "unit": "SPRINTER-FAHRTEN TÄGLICH",
+   "label": "ab Mitte Dezember (Bahn)"
+  },
+  {
+   "type": "hook",
+   "text": "NAHVERKEHR: NICHTS BELASTBARES",
+   "emoji": "🔎",
+   "hl": "NAHVERKEHR",
+   "at": "^preisen$",
+   "fallback": 0.82
+  },
+  {
+   "type": "frage",
+   "at": "^f.hrst$",
+   "fallback": 0.93,
+   "text": "BAHN ZU WEIHNACHTEN?",
+   "options": [
+    "JA",
+    "NEIN",
+    "AUTO"
+   ]
+  }
+ ],
+ "title_tiktok": "Bahn: Keine Preiserhöhung im Fernverkehr 🚆",
+ "title_youtube": "Bahn 2027: Fernverkehr bleibt vorerst gleich teuer (Fahrplanwechsel) #shorts",
+ "text_tiktok": "Fährst du über die Feiertage Bahn? Schreib es in die Kommentare 👇 #bahn #fahrplan #zug #tipps #fürdich",
+ "text_youtube": "Die Bahn verzichtet nach eigenen Angaben auf Preiserhöhungen im Fernverkehr, laut Berichten bis Mai 2027. Der neue Fahrplan gilt ab 13. Dezember 2026, ab Mitte Dezember soll es täglich rund 70 Sprinter-Fahrten geben. Zu Preisen im Nahverkehr habe ich nichts Belastbares gefunden. Fährst du über die Feiertage Bahn? 👇\n\nQuellen: ZDFheute, Volksstimme (Angaben der Deutschen Bahn). Stimme und Grafiken mit KI erstellt.\n\n#shorts #bahn #fahrplan #zug #wusstestdu",
+ "sources": [
+  "https://www.zdfheute.de/politik/deutschland/bahn-fernverkehr-tickets-preise-100.html",
+  "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/fahrplan-2027-was-sich-fur-bahnreisende-andert-4337963",
+  "https://www.zdfheute.de/ratgeber/bahn-fahrplan-2027-aenderungen-100.html"
+ ]
+}
