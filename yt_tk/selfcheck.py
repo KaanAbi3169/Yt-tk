@@ -88,7 +88,7 @@ def check_stock(inv: list) -> None:
     days = len(usable) / 2  # zwei Shorts pro Tag
     add("WARN" if days < 14 else "OK", f"Short-Vorrat {len(usable)} Videos = {days:.0f} Tage (Notvorrat 14 Tage)")
     nxt = [v for v in inv if v["format"] == "lang" and v["status"] == "ready"]
-    add("WARN" if len(nxt) < 3 else "OK", f"Langvideos bereit: {len(nxt)} (3 pro Woche: So, Mi, Fr)")
+    add("WARN" if len(nxt) < 3 else "OK", f"Langvideos bereit: {len(nxt)} (3 pro Woche: Mi, Do, Fr)")
 
 
 def check_3d(inv: list) -> None:
