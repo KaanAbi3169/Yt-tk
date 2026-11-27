@@ -55,8 +55,9 @@ def now() -> datetime:
 
 
 def schedule() -> dict:
-    s = _load("schedule.json", {})
-    return {fmt: s.get(fmt, f["slot"]) for fmt, f in config.FORMATS.items()}
+    """Erster Sendeplatz je Format an einem Wochentag (fester Sendeplan, config.SENDEPLAN)."""
+    monday = date(2026, 1, 5)
+    return {fmt: min(config.slot_times(fmt, monday).values() or [f["slot"]]) for fmt, f in config.FORMATS.items()}
 
 
 # ---------- Befehle ----------
@@ -263,7 +264,6 @@ def plan(day: str) -> list:
     """Liefert die Posts fuer einen Tag. Pro Format hoechstens ein Video, Serien in Reihenfolge."""
     d = date.fromisoformat(day)
     data = _load("inventory.json", {"videos": []})
-    sch = schedule()
     posts = []
     prio, prime = _prio_key("order"), _prio_key("prime")
     pin_times = {p["time"] for p in pins_for(day)}  # durch Pins belegte Sendeplaetze
@@ -275,10 +275,20 @@ def plan(day: str) -> list:
             continue
         if not any(config.runs_on(g, d) for g in group):
             continue  # Format heute nicht dran (Wochentag)
-        if sch[fmt] in pin_times:
+        times = config.slot_times(group[0], d) if len(group) > 1 else config.slot_times(fmt, d)
+        if not times:
+            done_groups.add(group)
+            continue  # Format laeuft an diesem Wochentag nicht (Sendeplan)
+        if config.skips_on_long_day(fmt) and any(
+                x["format"] == "lang" and (x.get("due") or "").startswith(day) and x["status"] in ("scheduled", "posted", "ready")
+                for x in data["videos"]):
+            done_groups.add(group)
+            continue  # Langvideo-Tag: nur ein Kurzvideo (YouTube-Tageslimit)
+        primary = min(times.values())  # erster Sendeplatz des Tages (Belegung und Pins)
+        if primary in pin_times:
             done_groups.add(group)
             continue  # Sendeplatz ist durch einen Pin belegt
-        slot_prefix = f"{day}T{sch[fmt]}"
+        slot_prefix = f"{day}T{primary}"
         if any((v["format"] in group and (v.get("due") or "").startswith(day)) or (v.get("due") or "").startswith(slot_prefix)
                for v in data["videos"]):
             done_groups.add(group)
@@ -310,16 +320,18 @@ def plan(day: str) -> list:
         if v.get("source") == "drive" and not v.get("title_tiktok"):
             posts.append({"id": v["id"], "format": fmt, "needs_texts": True, "topic": v["topic"],
                           "drive_id": v["drive_id"], "drive_title": v["drive_title"],
-                          "dueAt": datetime(d.year, d.month, d.day, *map(int, sch[fmt].split(":")), tzinfo=TZ).isoformat(),
+                          "dueAt": datetime(d.year, d.month, d.day, *map(int, primary.split(":")), tzinfo=TZ).isoformat(),
                           "hint": "Erst Drive-Datei freigeben (anyoneWithLink) und Texte schreiben: "
                                   "inventory texts <ID> <json>, dann plan erneut ausfuehren."})
             continue
-        hh, mm = map(int, sch[fmt].split(":"))
-        due = datetime(d.year, d.month, d.day, hh, mm, tzinfo=TZ)
+        times = config.slot_times(fmt, d) or times
+        dues = {pf: datetime(d.year, d.month, d.day, *map(int, t.split(":")), tzinfo=TZ) for pf, t in times.items()}
+        due = min(dues.values())
         if due <= now() + timedelta(minutes=20):
             continue
         entry = {"id": v["id"], "format": fmt, "dueAt": due.isoformat(), "video_url": v["video_url"],
-                 "platforms": config.platforms(fmt), "long_video": f.get("orientation") == "landscape"}
+                 "platforms": config.platforms(fmt), "long_video": f.get("orientation") == "landscape",
+                 "due_by_platform": {pf: t.isoformat() for pf, t in dues.items()}}
         if "tiktok" in config.platforms(fmt):
             entry["tiktok"] = {"channelId": config.BUFFER["tiktok_channel_id"], "text": v["text_tiktok"],
                                "metadata": {"tiktok": {"title": v["title_tiktok"], "isAiGenerated": True}}}
@@ -457,8 +469,9 @@ def learn() -> dict:
     result = {"updated": now().isoformat(), "top": ranked[:15], "bottom": ranked[-10:], "all": insights}
     _save("insights.json", result)
 
-    # Montags: Zeitplan anhand der Slot-Werte anpassen (nur mit genug Daten, max. +-2 h pro Woche)
-    if now().weekday() == 0:
+    # Montags: Zeitplan anhand der Slot-Werte anpassen. AUS seit 27.11.2026: Der Inhaber hat einen festen Sendeplan
+    # (config.SENDEPLAN) angewiesen; die Werte stehen weiter in insights.json, der Wochenreview schlaegt Aenderungen vor.
+    if False and now().weekday() == 0:
         sch = schedule()
         groups_seen = set()
         for fmt in config.FORMATS:

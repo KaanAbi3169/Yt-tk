@@ -74,14 +74,15 @@ def run(day: str, live: bool) -> int:
                 log(f"{e['id']} {pf}: Buffer-Limit {BUFFER_LIMIT} erreicht - spaeter.")
                 continue
             payload = e[pf]
+            due_pf = (e.get("due_by_platform") or {}).get(pf, e["dueAt"])  # Sendeplan: Uhrzeit je Plattform
             if not live:
-                log(f"TROCKENLAUF {e['id']} {pf} {e['dueAt']}: {payload['metadata'].get(pf, {}).get('title')}")
+                log(f"TROCKENLAUF {e['id']} {pf} {due_pf}: {payload['metadata'].get(pf, {}).get('title')}")
                 continue
             try:
-                ids[pf] = buffer_api.create_post(payload["channelId"], payload["text"], e["dueAt"], e["video_url"],
+                ids[pf] = buffer_api.create_post(payload["channelId"], payload["text"], due_pf, e["video_url"],
                                                  payload["metadata"])
                 scheduled += 1
-                log(f"{e['id']} {pf}: geplant {e['dueAt']} (Post {ids[pf]})")
+                log(f"{e['id']} {pf}: geplant {due_pf} (Post {ids[pf]})")
             except Exception as ex:  # nie blind wiederholen
                 errors += 1
                 log(f"FEHLER {e['id']} {pf}: {ex}")

@@ -57,7 +57,8 @@ FORMATS = {
     "horror": {
         "label": "Horror – Du wachst auf",
         "prefix": "H",
-        "slot": "16:00",     # zweiter Kurzvideo-Slot: YouTube-Spitze laut Metricool (V-023, 17.11.); TikTok ebenfalls stark
+        "slot": "16:00",     # zweiter Kurzvideo-Slot (Sendeplan siehe SENDEPLAN, Inhaber 27.11.2026)
+        "weekdays": [0, 1, 2, 3, 4],  # nur Mo bis Fr (Sa und So hat ein Kurzvideo-Slot)
         "fallback": "wissen",  # ist keine Horror-Folge fertig, laeuft hier ein Wissens-Short (Vorrat)
         "min_s": 61, "max_s": 80, "wps": 2.3,  # >60 s: Voraussetzung TikTok Creator Rewards
         "voice_id": "18X2yBovneA0q06wd8E9",  # Vincent Crowe - Dark & Haunting Tales (de)
@@ -74,8 +75,8 @@ FORMATS = {
     "lang": {
         "label": "Gruselgeschichte (lang, YouTube)",
         "prefix": "L",
-        "slot": "18:00",
-        "weekdays": [6, 2, 4],  # 0=Mo ... 2=Mi, 4=Fr, 6=So: Anweisung des Inhabers 17.11.2026 (Langvideo So, Mi, Fr 18:00)
+        "slot": "16:00",
+        "weekdays": [2, 3, 4],  # 0=Mo ... 2=Mi, 3=Do, 4=Fr: Anweisung des Inhabers 27.11.2026 (Langvideo Mi, Do, Fr 16:00, YouTube-Spitze laut Metricool)
         "platforms": ["youtube"],
         "orientation": "landscape",
         "style": "horror",   # Optik, Badge-Farben, Musik wie die Horror-Serie
@@ -94,6 +95,31 @@ FORMATS = {
         "effects": "horror",
     },
 }
+
+# Sendeplan Kurzvideos (Anweisung des Inhabers 27.11.2026, Metricool-Bestzeiten 28.11. bis 4.12.): je Format und Plattform eine Uhrzeit.
+# "woche" = Mo bis Fr, "ende" = Sa und So. Fehlt der Eintrag fuer den Tag, laeuft das Format an dem Tag nicht.
+# TikTok-Spitzen 10:00 und 18:00, YouTube-Spitzen 16:00 und 10:00. Am Wochenende (Werte rund halb so hoch) ein Kurzvideo:
+# TikTok 10:00, YouTube 16:00. Die Zeiten sind fest (keine automatische Verschiebung); der Wochenreview gleicht sie ab.
+SENDEPLAN = {
+    "wissen": {"woche": {"tiktok": "10:00", "youtube": "10:00"}, "ende": {"tiktok": "10:00", "youtube": "16:00"}},
+    "waswaerewenn": {"woche": {"tiktok": "10:00", "youtube": "10:00"}, "ende": {"tiktok": "10:00", "youtube": "16:00"}},
+    "horror": {"woche": {"tiktok": "18:00", "youtube": "16:00"}, "ohne_langvideo": True},
+}
+# "ohne_langvideo": An Tagen mit einem Langvideo (16:00, Metricool) laeuft dieser zweite Kurzvideo-Slot nicht. Grund: Auf YouTube
+# traten die Fehler "daily posting limit" an Langvideo-Tagen auf (20. und 22.11.), der Fehler vom 24.11. war der dritte Upload in 24 h.
+
+
+def slot_times(fmt: str, day) -> dict:
+    """Uhrzeiten je Plattform fuer ein Format an einem Tag (datetime.date), leer = Format laeuft nicht."""
+    plan = SENDEPLAN.get(fmt)
+    if plan is None:
+        return {pf: FORMATS[fmt]["slot"] for pf in platforms(fmt)}
+    return dict(plan.get("ende" if day.weekday() >= 5 else "woche") or {})
+
+
+def skips_on_long_day(fmt: str) -> bool:
+    return bool((SENDEPLAN.get(fmt) or {}).get("ohne_langvideo"))
+
 
 # Formate, die sich einen Sendeplatz teilen und taeglich abwechseln (2 Shorts pro Tag statt 3).
 ROTATION = [["wissen", "waswaerewenn"]]
