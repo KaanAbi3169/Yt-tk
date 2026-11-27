@@ -2620,6 +2620,32 @@
         "https://www.heidelberg24.de/deutschland/baden-wuerttemberg/weisse-weihnachten-deutschland-polarwirbel-schnee-chancen-94598671.html",
         "https://www.zdfheute.de/panorama/weisse-weihnachten-selten-nieselregen-statt-schnee-100.html"
       ]
+    },
+    {
+      "id": "N017",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-27T07:25:26.633547+01:00",
+      "source": "kinetic",
+      "topic": "Switch 2: 26,35 Mio. ausgeliefert, Hardware im Halbjahr minus 37,4 Prozent (Nintendo, November 2026)",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 48.6,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N017.mp4",
+      "title_tiktok": "Switch 2: So viele sind schon verkauft 🎮",
+      "title_youtube": "Switch 2: 26,35 Millionen, aber die Hardware schwächelt #shorts",
+      "text_tiktok": "Kaufst du dir eine? Schreib es in die Kommentare 👇 #switch2 #nintendo #gaming #zahlen #fürdich",
+      "text_youtube": "Nintendo meldet für die Zeit bis 30. September 2026 insgesamt 26,35 Millionen ausgelieferte Switch-2-Konsolen. Im ersten Halbjahr des Geschäftsjahres sanken die Hardware-Verkäufe um 37,4 Prozent auf 6,49 Millionen, die Software stieg um 18,8 Prozent auf 24,49 Millionen Exemplare. Kaufst du dir eine? 👇\n\nQuellen: Nintendo (über Shacknews, VGC, Gamingbolt, Instant Gaming). Stimme und Grafiken mit KI erstellt.\n\n#shorts #switch2 #nintendo #gaming #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-gaming",
+      "sources": [
+        "https://shacknews.com/article/151284/nintendo-switch-2-sells-2-67-million-units-q2-fy27",
+        "https://www.videogameschronicle.com/news/nintendo-switch-2-sales-have-dropped-37-but-its-still-comfortably-beating-the-o",
+        "https://gamingbolt.com/?p=656406",
+        "https://news.instant-gaming.com/de/artikel/22877-die-switch-2-wurde-weltweit-26-35-millionen-mal-verkauft"
+      ]
     }
   ]
 }
