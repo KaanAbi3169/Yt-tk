@@ -2488,7 +2488,7 @@
     {
       "id": "N013",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-26T07:34:57.071246+01:00",
       "source": "kinetic",
       "topic": "Black Friday und Cyber Monday 2026: HDE-Prognose 6,2 Mrd. Euro",
@@ -2502,13 +2502,17 @@
       "text_tiktok": "Planst du dieses Jahr Einkäufe? Schreib es in die Kommentare 👇 #blackfriday #cybermonday #handel #zahlen #fürdich",
       "text_youtube": "Der Handelsverband Deutschland rechnet für Black Friday (27.11.) und Cyber Monday (30.11.) 2026 mit rund 6,2 Milliarden Euro Umsatz, davon etwa 1,9 Milliarden für Weihnachtseinkäufe. Das ist eine Prognose, kein Endergebnis. Im Vorjahr lag sie bei 5,8 Milliarden Euro. Planst du Einkäufe? 👇\n\nQuellen: Handelsverband Deutschland (über retail-news.de und Lebensmittelpraxis). Stimme und Grafiken mit KI erstellt.\n\n#shorts #blackfriday #cybermonday #handel #wusstestdu",
       "scenes": 8,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b091f0f658222306ce91e33",
+        "youtube": "6b091f0f049983dcfb925da4"
+      },
       "group": "kin-news",
       "sources": [
         "https://retail-news.de/black-friday-cyber-monday-hde-umsatzprognose-2026/",
         "https://lebensmittelpraxis.de/handel-aktuell/46645-aktionstage-handelsverband-rechnet-erstmals-mit-sinkenden-umsaetzen-an-black-friday-und-cyber-monday.html",
         "https://lebensmittelpraxis.de/handel-aktuell/zentrale-management/50248-handelsverband-deutschland-hde-rechnet-mit-einem-stabilen-weihnachtsgeschaeft.html"
-      ]
+      ],
+      "due": "2026-11-28T10:00:00+01:00"
     },
     {
       "id": "N012",
@@ -2565,7 +2569,7 @@
     {
       "id": "N014",
       "format": "wissen",
-      "status": "ready",
+      "status": "scheduled",
       "created": "2026-11-26T07:57:24.148273+01:00",
       "source": "kinetic",
       "topic": "Spotify Wrapped 2026: Termin unbestätigt, Zahlen",
@@ -2579,13 +2583,17 @@
       "text_tiktok": "Welchen Künstler erwartest du ganz oben? Schreib es in die Kommentare 👇 #spotify #wrapped #musik #zahlen #fürdich",
       "text_youtube": "Spotify hat den Termin für Wrapped 2026 noch nicht bestätigt. Official Charts vermutet Mittwoch, den 2. Dezember (Vermutung). Ende 2025 hatte Spotify 751 Millionen monatlich aktive Nutzer und 290 Millionen Abos. Welchen Künstler erwartest du ganz oben? 👇\n\nQuellen: Official Charts, Südostschweiz, Hypebeast. Stimme und Grafiken mit KI erstellt.\n\n#shorts #spotify #wrapped #musik #wusstestdu",
       "scenes": 10,
-      "buffer": {},
+      "buffer": {
+        "tiktok": "6b091f10e94385a8fd7bb72e",
+        "youtube": "6b091f101fd46e62e71a8d9d"
+      },
       "group": "kin-musik",
       "sources": [
         "https://www.officialcharts.com/chart-news/spotify-wrapped-2026-release-date/",
         "https://www.suedostschweiz.ch/panorama/wann-kommt-spotify-wrapped-2026-2235385",
         "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
-      ]
+      ],
+      "due": "2026-11-28T16:00:00+01:00"
     }
   ]
 }
