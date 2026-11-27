@@ -10,9 +10,17 @@
  "scenes": [
   {
    "type": "hook",
-   "text": "KEINE PREISERHÖHUNG BIS MAI 2027",
+   "text": "FERNVERKEHR: PREISE BLEIBEN",
    "emoji": "🚆",
    "hl": "KEINE"
+  },
+  {
+   "type": "hook",
+   "at": "^verzichtet$",
+   "fallback": 0.2,
+   "text": "KEIN AUFSCHLAG BIS MAI 2027",
+   "emoji": "📅",
+   "hl": "KEIN"
   },
   {
    "type": "karten",

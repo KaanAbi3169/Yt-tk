@@ -16,8 +16,8 @@
   },
   {
    "type": "zahl",
-   "at": "^k.ln$",
-   "fallback": 0.1,
+   "at": "^so$",
+   "fallback": 0.15,
    "value": 3.3,
    "decimals": 1,
    "static": true,
