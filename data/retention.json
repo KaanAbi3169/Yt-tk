@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "videos": [
     {
       "yt_id": "BibnA5CKqjE",
@@ -7,7 +7,7 @@
       "format": "wissen",
       "hook": "Mythos aufdecken",
       "title": "Bleibt verschluckter Kaugummi 7 Jahre im Magen? 🫧 #shorts",
-      "views": 1030,
+      "views": 1031,
       "avg_s": 16.0,
       "avg_pct": 49.9
     },
@@ -87,7 +87,7 @@
       "format": "wissen",
       "hook": "Staunen + Ergebnis",
       "title": "Dieses Metall schmilzt in deiner Hand: Gallium und das Periodensystem 🧪 #shorts",
-      "views": 138,
+      "views": 140,
       "avg_s": 18.0,
       "avg_pct": 46.3
     },
@@ -152,6 +152,16 @@
       "avg_pct": 38.7
     },
     {
+      "yt_id": "uX5CWBsnF20",
+      "id": "X003",
+      "format": "waswaerewenn",
+      "hook": "Alltags-Gedankenexperiment",
+      "title": "Was wäre, wenn Handys nur noch 1 Stunde am Tag funktionieren? 📱 #shorts",
+      "views": 40,
+      "avg_s": 15.0,
+      "avg_pct": 38.9
+    },
+    {
       "yt_id": "uUYAAWBfID0",
       "id": "–",
       "format": "–",
@@ -167,19 +177,9 @@
       "format": "wissen",
       "hook": "Überraschung",
       "title": "Der Schneeleopard kann nicht brüllen: 4 Fakten über die Bergkatze 🐆 #shorts",
-      "views": 24,
+      "views": 27,
       "avg_s": 13.0,
-      "avg_pct": 43.2
-    },
-    {
-      "yt_id": "uX5CWBsnF20",
-      "id": "X003",
-      "format": "waswaerewenn",
-      "hook": "Alltags-Gedankenexperiment",
-      "title": "Was wäre, wenn Handys nur noch 1 Stunde am Tag funktionieren? 📱 #shorts",
-      "views": 22,
-      "avg_s": 10.0,
-      "avg_pct": 25.1
+      "avg_pct": 41.2
     },
     {
       "yt_id": "sIG9byeJjCc",
@@ -190,6 +190,16 @@
       "views": 18,
       "avg_s": 175.0,
       "avg_pct": 28.2
+    },
+    {
+      "yt_id": "hPe3UuBCZ6Y",
+      "id": "D021",
+      "format": "wissen",
+      "hook": "drive-reserve",
+      "title": "Stoßlüften oder Fenster kippen? Was wirklich besser ist 🪟 #shorts",
+      "views": 14,
+      "avg_s": 57.0,
+      "avg_pct": 92.8
     },
     {
       "yt_id": "zKrJ1LMxy2E",
