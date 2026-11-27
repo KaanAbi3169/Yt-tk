@@ -2334,7 +2334,8 @@
         "https://destructoid.com/why-the-rumored-2-billion-gta-6-budget-is-quite-unlikely-to-be-real",
         "https://techspot.com/news/114517-playstation-5-officially-passes-100-million-sales-gta.html"
       ],
-      "due": "2026-11-27T18:00:00+01:00"
+      "due": "2026-11-27T18:00:00+01:00",
+      "public_url": "https://www.youtube.com/watch?v=vt7UasBfnQc"
     },
     {
       "id": "N009",
@@ -2463,7 +2464,7 @@
       "text_youtube": "Am 29. November 2026 ist der erste Advent. Dieses Video zeigt die Zahlen hinter Weihnachten in Deutschland: Weihnachtsbäume, Weihnachtsmärkte, Glühwein-Preise und Zucker, Geschenkbudgets und die Geschichte des Adventskranzes. Hochrechnungen und Schätzungen sind als solche gekennzeichnet.\n\nKAPITEL\n0:00 Einleitung\n0:21 Der Baum\n2:03 Der Markt\n4:30 Der Glühwein\n6:40 Die Geschenke\n9:31 Der Adventskranz\n\nQuellen: Bundesverband der Weihnachtsbaumerzeuger (über Payback und Bundesregierung), ZDFheute, Statista, Land NRW, Deutscher Schaustellerbund (Weihnachtsmarktstudie 2024), BWS (über Vinetur), Coupons.de und Antenne Bayern (über News.at und Infranken), Verbraucherzentrale Thüringen, Ökotest (über Utopia), VKI (über Aponet), Handelsverband Deutschland (über Lebensmittelpraxis und FashionUnited), Idealo (über Retail-News), evangelisch.de, Hamburg Tourismus.\n\nWelche Zahl hat dich am meisten überrascht? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#weihnachten #advent #glühwein #weihnachtsmarkt #wissen",
       "scenes": 105,
       "buffer": {
-        "youtube": "metricool:441350463"
+        "youtube": "metricool:444798121"
       },
       "group": "lang-kin",
       "sources": [
@@ -2483,7 +2484,7 @@
         "https://retail-news.de/black-friday-2026-idealo-preisstudie-rabatte/",
         "https://www.evangelisch.de/inhalte/178946/27-11-2020/neue-erkenntnisse-zum-adventskranz"
       ],
-      "due": "2026-11-29T18:00:00+01:00"
+      "due": "2026-11-29T16:00:00+01:00"
     },
     {
       "id": "N013",
@@ -2569,7 +2570,7 @@
     {
       "id": "N014",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "ready",
       "created": "2026-11-26T07:57:24.148273+01:00",
       "source": "kinetic",
       "topic": "Spotify Wrapped 2026: Termin unbestätigt, Zahlen",
@@ -2583,17 +2584,20 @@
       "text_tiktok": "Welchen Künstler erwartest du ganz oben? Schreib es in die Kommentare 👇 #spotify #wrapped #musik #zahlen #fürdich",
       "text_youtube": "Spotify hat den Termin für Wrapped 2026 noch nicht bestätigt. Official Charts vermutet Mittwoch, den 2. Dezember (Vermutung). Ende 2025 hatte Spotify 751 Millionen monatlich aktive Nutzer und 290 Millionen Abos. Welchen Künstler erwartest du ganz oben? 👇\n\nQuellen: Official Charts, Südostschweiz, Hypebeast. Stimme und Grafiken mit KI erstellt.\n\n#shorts #spotify #wrapped #musik #wusstestdu",
       "scenes": 10,
-      "buffer": {
-        "tiktok": "6b091f10e94385a8fd7bb72e",
-        "youtube": "6b091f101fd46e62e71a8d9d"
-      },
+      "buffer": {},
       "group": "kin-musik",
       "sources": [
         "https://www.officialcharts.com/chart-news/spotify-wrapped-2026-release-date/",
         "https://www.suedostschweiz.ch/panorama/wann-kommt-spotify-wrapped-2026-2235385",
         "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
       ],
-      "due": "2026-11-28T16:00:00+01:00"
+      "due": null,
+      "errors": [
+        {
+          "at": "2026-11-27T20:55:00+01:00",
+          "reason": "Sendeplan geaendert (Inhaber 27.11.): Buffer-Posts fuer Sa 28.11. 16:00 geloescht, neu einplanen"
+        }
+      ]
     },
     {
       "id": "N017",
@@ -2715,7 +2719,7 @@
       "text_youtube": "Wie viele Menschen nutzen KI-Chatbots wirklich? Dieses Video vergleicht die Zahlen zu ChatGPT, Gemini, Claude, Meta AI und Co. aus Anbieterangaben, Marktforschung (Sensor Tower, Similarweb, Counterpoint) und der Bitkom-Umfrage für Deutschland. Zu jeder Zahl steht, wer sie nennt und was gezählt wird. Schätzungen und Prognosen sind gekennzeichnet.\n\nKAPITEL\n0:00 Einleitung\n0:52 ChatGPT\n2:23 Gemini\n3:48 Marktanteile\n5:09 Web-Traffic\n6:33 Claude, Meta AI und Co.\n9:07 Deutschland\n10:15 So liest du die Zahlen\n\nQuellen: OpenAI und AP (über CTV News), TechCrunch, The Next Web, Alphabet (Q2 2026), 9to5Google, PPC Land, Sensor Tower (State of AI 2026), Similarweb (über PPC Land, The Decoder und The Next Web), Counterpoint Research, DataReportal, Bitkom.\n\nWelcher Chatbot ist für dich der wichtigste? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#ki #chatgpt #gemini #claude #zahlen",
       "scenes": 96,
       "buffer": {
-        "youtube": "metricool:443985135"
+        "youtube": "metricool:444798203"
       },
       "group": "lang-kin",
       "sources": [
@@ -2735,7 +2739,7 @@
         "https://www.bitkom.org/Presse/Presseinformation/Ein-Drittel-nutzt-KI-mindestens-einmal-pro-Woche",
         "https://thenextweb.com/news/claude-chatgpt-revenue-per-user-sensor-tower"
       ],
-      "due": "2026-12-02T18:00:00+01:00"
+      "due": "2026-12-02T16:00:00+01:00"
     }
   ]
 }
