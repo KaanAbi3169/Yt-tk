@@ -2594,6 +2594,32 @@
         "https://hypebeast.com/de/2026/2/spotify-wrapped-drives-record-751-million-monthly-users"
       ],
       "due": "2026-11-28T16:00:00+01:00"
+    },
+    {
+      "id": "N016",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-27T07:24:52.689271+01:00",
+      "source": "kinetic",
+      "topic": "Weiße Weihnachten: DWD-Wahrscheinlichkeiten nach Stadt",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 43.6,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N016.mp4",
+      "title_tiktok": "Weiße Weihnachten: Deine Chance? 🎄",
+      "title_youtube": "Weiße Weihnachten: So klein ist deine Chance je nach Stadt #shorts",
+      "text_tiktok": "Wie sieht es bei dir aus? Schreib es in die Kommentare 👇 #weihnachten #schnee #wetter #dwd #fürdich",
+      "text_youtube": "Nach DWD-Daten liegt die Chance auf weiße Weihnachten (Durchschnitt 1991 bis 2020) in Köln bei 3,3 Prozent, in Berlin und Hamburg bei 6,7 Prozent, in München bei 13,8 Prozent und auf der Zugspitze bei über 95 Prozent. Bundesweit ist sie seit 1961 bis 1990 um 52 Prozent gesunken. Wie sieht es bei dir aus? 👇\n\nQuellen: Deutscher Wetterdienst (über newstime, Wunderweib, Berliner Zeitung), Heidelberg24. Stimme und Grafiken mit KI erstellt.\n\n#shorts #weihnachten #schnee #wetter #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-saison",
+      "sources": [
+        "https://newstime.joyn.de/themen/wetter/weisse-weihnachten-wann-es-schneit-wie-haeufig-216078",
+        "https://www.berliner-zeitung.de/article/10472123",
+        "https://www.heidelberg24.de/deutschland/baden-wuerttemberg/weisse-weihnachten-deutschland-polarwirbel-schnee-chancen-94598671.html",
+        "https://www.zdfheute.de/panorama/weisse-weihnachten-selten-nieselregen-statt-schnee-100.html"
+      ]
     }
   ]
 }
