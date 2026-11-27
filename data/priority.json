@@ -1,12 +1,16 @@
 {
   "order": [
     "N013",
+    "N017",
     "N012",
     "N008",
+    "N018",
     "N006",
     "N007",
+    "N019",
     "N009",
     "N015",
+    "N016",
     "N010",
     "N011",
     "N004",
@@ -38,11 +42,15 @@
   "prime": [
     "N014",
     "N015",
-    "N012",
-    "N009",
+    "N016",
     "N006",
     "N007",
+    "N009",
+    "N018",
+    "N019",
     "N008",
+    "N012",
+    "N017",
     "N013",
     "N011",
     "N010",
@@ -76,5 +84,5 @@
     "D068",
     "D072"
   ],
-  "hinweis": "V-033: order = 10:00-Slot (Test-Gruppe physik-test, Winterthemen, dann alltag); prime = 16:00-Slot (beste Zeit YouTube: mythos, dann koerper). Archivierte (anleitung-geld) nie. 26.11.: Kinetic-Aktuelles vorn (N013 Cyber Monday 30.11., N014 Spotify Wrapped vor dem 2.12., N012 Artemis III, N015 Gemini/ChatGPT)."
+  "hinweis": "V-033: order = 10:00-Slot (Test-Gruppe physik-test, Winterthemen, dann alltag); prime = 16:00-Slot (beste Zeit YouTube: mythos, dann koerper). Archivierte (anleitung-geld) nie. 26.11.: Kinetic-Aktuelles vorn (N013 Cyber Monday 30.11., N014 Spotify Wrapped vor dem 2.12., N012 Artemis III, N015 Gemini/ChatGPT). 27.11.: N016 bis N019 eingeordnet (N017 Switch 2 frisch, N018 Nikolaus vor dem 6.12., N019 Fahrplanwechsel 13.12.)."
 }

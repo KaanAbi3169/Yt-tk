@@ -519,6 +519,56 @@
       "source": "analyse",
       "video": "T004",
       "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
+    },
+    {
+      "title": "Weiße Weihnachten: DWD-Chancen nach Stadt",
+      "signal": "Nachrichtenlage 27.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-27",
+      "status": "produced",
+      "video": "N016",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Switch 2: 26,35 Mio. ausgeliefert, Hardware im Halbjahr -37,4 %",
+      "signal": "Nachrichtenlage 27.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-27",
+      "status": "produced",
+      "video": "N017",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Nikolaus: Schokolade pro Kopf (Destatis)",
+      "signal": "Nachrichtenlage 27.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-27",
+      "status": "produced",
+      "video": "N018",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Bahn: Fahrplanwechsel 13.12., keine Preiserhöhung im Fernverkehr",
+      "signal": "Nachrichtenlage 27.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-27",
+      "status": "produced",
+      "video": "N019",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "KI-Chatbots in Zahlen (Langvideo)",
+      "signal": "Nachrichtenlage 27.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-27",
+      "status": "produced",
+      "video": "E004",
+      "source": "websuche",
+      "fit": "gut"
     }
   ]
 }
