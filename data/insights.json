@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T04:04:08.169255+01:00",
+  "updated": "2026-11-27T04:15:41.473230+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
@@ -37,13 +37,6 @@
       }
     ],
     [
-      "hook:Du machst einen Fehler",
-      {
-        "n": 2,
-        "avg": 870
-      }
-    ],
-    [
       "topic:Tomaten gehören nicht in den Kühlschrank (Aroma-Gene, Textur, Ethylen)",
       {
         "n": 2,
@@ -58,13 +51,6 @@
       }
     ],
     [
-      "slot:tiktok:Wed 16",
-      {
-        "n": 1,
-        "avg": 768
-      }
-    ],
-    [
       "slot:tiktok:Tue 18",
       {
         "n": 1,
@@ -75,14 +61,14 @@
       "slot:tiktok:Thu 16",
       {
         "n": 2,
-        "avg": 748
+        "avg": 750
       }
     ],
     [
-      "slot:tiktok:Wed 10",
+      "slot:tiktok:Wed 16",
       {
-        "n": 1,
-        "avg": 707
+        "n": 2,
+        "avg": 672
       }
     ],
     [
@@ -103,23 +89,37 @@
       "hook:Nachricht",
       {
         "n": 2,
-        "avg": 570
+        "avg": 578
+      }
+    ],
+    [
+      "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)",
+      {
+        "n": 2,
+        "avg": 578
+      }
+    ],
+    [
+      "slot:youtube:Sun 10",
+      {
+        "n": 2,
+        "avg": 524
       }
     ]
   ],
   "bottom": [
     [
-      "topic:Alle Handys funktionieren nur noch eine Stunde pro Tag",
-      {
-        "n": 2,
-        "avg": 144
-      }
-    ],
-    [
       "slot:youtube:Sat 16",
       {
         "n": 1,
         "avg": 120
+      }
+    ],
+    [
+      "slot:youtube:Wed 10",
+      {
+        "n": 2,
+        "avg": 112
       }
     ],
     [
@@ -132,8 +132,8 @@
     [
       "slot:youtube:Wed 16",
       {
-        "n": 1,
-        "avg": 46
+        "n": 2,
+        "avg": 40
       }
     ],
     [
@@ -201,12 +201,12 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 25,
-      "avg": 427
+      "n": 29,
+      "avg": 400
     },
     "hook:Du machst einen Fehler": {
-      "n": 2,
-      "avg": 870
+      "n": 4,
+      "avg": 504
     },
     "slot:tiktok:Sun 10": {
       "n": 2,
@@ -277,56 +277,56 @@
       "avg": 271
     },
     "slot:tiktok:Wed 16": {
-      "n": 1,
-      "avg": 768
+      "n": 2,
+      "avg": 672
     },
     "topic:Spotlight Effekt": {
       "n": 2,
       "avg": 407
     },
     "slot:youtube:Wed 16": {
-      "n": 1,
-      "avg": 46
+      "n": 2,
+      "avg": 40
     },
     "hook:Alltagsfrage Warum": {
       "n": 2,
       "avg": 462
     },
     "slot:tiktok:Wed 10": {
-      "n": 1,
-      "avg": 707
+      "n": 2,
+      "avg": 488
     },
     "topic:Warum Flugzeugfenster abgerundet sind (Druckkabine, Spannungsspitzen, Comet 1954)": {
       "n": 2,
       "avg": 462
     },
     "slot:youtube:Wed 10": {
-      "n": 1,
-      "avg": 218
+      "n": 2,
+      "avg": 112
     },
     "hook:Mythos-Frage": {
       "n": 2,
-      "avg": 480
+      "avg": 490
     },
     "slot:tiktok:Thu 16": {
       "n": 2,
-      "avg": 748
+      "avg": 750
     },
     "topic:Mythos: Wir nutzen nur 10 Prozent des Gehirns": {
       "n": 2,
-      "avg": 480
+      "avg": 490
     },
     "slot:youtube:Thu 16": {
       "n": 2,
-      "avg": 303
+      "avg": 318
     },
     "hook:Nachricht": {
       "n": 2,
-      "avg": 570
+      "avg": 578
     },
     "topic:GTA 6: Starttermin 19. November 2026 bestätigt (Konsolen, kein PC-Termin)": {
       "n": 2,
-      "avg": 570
+      "avg": 578
     },
     "slot:tiktok:Fri 16": {
       "n": 1,
@@ -423,6 +423,18 @@
     "slot:youtube:Tue 16": {
       "n": 1,
       "avg": 0
+    },
+    "topic:Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)": {
+      "n": 2,
+      "avg": 138
+    },
+    "hook:Staunen + Rekord": {
+      "n": 2,
+      "avg": 306
+    },
+    "topic:Artemis II: Distanzrekord um den Mond (6. April 2026)": {
+      "n": 2,
+      "avg": 306
     }
   }
 }

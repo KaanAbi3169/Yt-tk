@@ -2164,7 +2164,7 @@
     {
       "id": "N004",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-24T13:27:49.412399+01:00",
       "source": "kinetic",
       "topic": "Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)",
@@ -2223,7 +2223,7 @@
     {
       "id": "N005",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-24T13:28:01.476746+01:00",
       "source": "kinetic",
       "topic": "ChatGPT: über eine Milliarde Nutzer laut OpenAI",

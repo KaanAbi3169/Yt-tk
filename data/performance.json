@@ -346,6 +346,14 @@
         "shares": 1,
         "watch_ms": 6880,
         "at": "2026-11-21T02:43:10.005592+01:00"
+      },
+      "7d": {
+        "views": 694,
+        "likes": 11,
+        "comments": 0,
+        "shares": 1,
+        "watch_ms": 6880,
+        "at": "2026-11-27T04:15:41.459498+01:00"
       }
     },
     {
@@ -362,6 +370,12 @@
         "likes": 6,
         "comments": 0,
         "at": "2026-11-21T02:43:10.006475+01:00"
+      },
+      "7d": {
+        "views": 186,
+        "likes": 7,
+        "comments": 0,
+        "at": "2026-11-27T04:15:41.460966+01:00"
       }
     },
     {
@@ -378,6 +392,12 @@
         "likes": 10,
         "comments": 0,
         "at": "2026-11-21T02:43:10.008036+01:00"
+      },
+      "7d": {
+        "views": 366,
+        "likes": 10,
+        "comments": 0,
+        "at": "2026-11-27T04:15:41.462599+01:00"
       }
     },
     {
@@ -396,6 +416,14 @@
         "shares": 0,
         "watch_ms": 3170,
         "at": "2026-11-21T02:43:10.009579+01:00"
+      },
+      "7d": {
+        "views": 705,
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 3160,
+        "at": "2026-11-27T04:15:41.464472+01:00"
       }
     },
     {
@@ -652,6 +680,74 @@
         "likes": 0,
         "comments": 0,
         "at": "2026-11-26T04:04:08.168163+01:00"
+      }
+    },
+    {
+      "id": "N002",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-25T10:00:00+01:00",
+      "duration": 43.5,
+      "group": "kin-spar",
+      "24h": {
+        "views": 258,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 2330,
+        "at": "2026-11-27T04:15:41.466827+01:00"
+      }
+    },
+    {
+      "id": "N002",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Black Friday 2026: wie viel du wirklich sparst (Idealo-Auswertung)",
+      "hook_type": "Du machst einen Fehler",
+      "due": "2026-11-25T10:00:00+01:00",
+      "duration": 43.5,
+      "group": "kin-spar",
+      "24h": {
+        "views": 7,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-27T04:15:41.469233+01:00"
+      }
+    },
+    {
+      "id": "N003",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)",
+      "hook_type": "Staunen + Rekord",
+      "due": "2026-11-25T16:00:00+01:00",
+      "duration": 45.6,
+      "group": "kin-space",
+      "24h": {
+        "views": 486,
+        "likes": 10,
+        "comments": 2,
+        "shares": 0,
+        "watch_ms": 4530,
+        "at": "2026-11-27T04:15:41.470951+01:00"
+      }
+    },
+    {
+      "id": "N003",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Artemis II: Distanzrekord um den Mond (6. April 2026)",
+      "hook_type": "Staunen + Rekord",
+      "due": "2026-11-25T16:00:00+01:00",
+      "duration": 45.6,
+      "group": "kin-space",
+      "24h": {
+        "views": 35,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-27T04:15:41.472565+01:00"
       }
     }
   ]
