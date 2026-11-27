@@ -1,0 +1,690 @@
+{
+ "id": "E004",
+ "topic": "KI-Chatbots in Zahlen: Nutzer, Marktanteile und wie gezählt wird (Stand 27.11.2026)",
+ "hook_type": "Kinetic-Doku KI",
+ "group": "lang-kin",
+ "theme": "neon",
+ "music": "wissen",
+ "hl": "\\d|milliarde|millionen|prozent",
+ "title_youtube": "KI-Chatbots in Zahlen: Wer hat wirklich wie viele Nutzer? (ChatGPT, Gemini, Claude)",
+ "text_youtube": "Wie viele Menschen nutzen KI-Chatbots wirklich? Dieses Video vergleicht die Zahlen zu ChatGPT, Gemini, Claude, Meta AI und Co. aus Anbieterangaben, Marktforschung (Sensor Tower, Similarweb, Counterpoint) und der Bitkom-Umfrage für Deutschland. Zu jeder Zahl steht, wer sie nennt und was gezählt wird. Schätzungen und Prognosen sind gekennzeichnet.\n\n{KAPITEL}\n\nQuellen: OpenAI und AP (über CTV News), TechCrunch, The Next Web, Alphabet (Q2 2026), 9to5Google, PPC Land, Sensor Tower (State of AI 2026), Similarweb (über PPC Land, The Decoder und The Next Web), Counterpoint Research, DataReportal, Bitkom.\n\nWelcher Chatbot ist für dich der wichtigste? Schreib es in die Kommentare.\n\nStimme und Grafiken mit KI erstellt. Recherche und Skript: eigene Zusammenstellung aus den genannten Quellen.\n\n#ki #chatgpt #gemini #claude #zahlen",
+ "sources": [
+  "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
+  "https://thenextweb.com/news/chatgpt-1-billion-weekly-active-users-openai-target",
+  "https://www.ctvnews.ca/sci-tech/article/openai-says-has-more-than-1-billion-active-users/",
+  "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+  "https://9to5google.com/2026/08/11/gemini-app-1-billion/",
+  "https://ppc.land/gemini-app-gains-350m-users-in-a-year-to-pass-1bn-alphabet-says/",
+  "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+  "https://sensortower.com/press/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year",
+  "https://ppc.land/chatgpt-drops-to-52-7-as-claude-triples-its-ai-traffic-share",
+  "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/",
+  "https://thenextweb.com/news/similarweb-2026-generative-ai-landscape-ai-search-fragmentation",
+  "https://counterpointresearch.com/en/insights/Global-LLM-Adoption-and-Revenue-Snapshot",
+  "https://datareportal.com/reports/similarweb-2026-generative-ai-visibility-index",
+  "https://www.bitkom.org/Presse/Presseinformation/Ein-Drittel-nutzt-KI-mindestens-einmal-pro-Woche",
+  "https://thenextweb.com/news/claude-chatgpt-revenue-per-user-sensor-tower"
+ ],
+ "thumb": {
+  "title": "KI-Chatbots",
+  "sub": "wer hat wirklich wie viele Nutzer?",
+  "big": "1 Mrd"
+ },
+ "blocks": [
+  {
+   "text": "Wie viele Menschen nutzen eigentlich KI-Chatbots? Wenn du dazu Schlagzeilen liest, stehen dort Zahlen wie eine Milliarde, neunhundertfünfzig Millionen oder sechsundvierzig Prozent. Das Problem: Die Anbieter zählen nicht dasselbe. In diesem Video gehe ich die Zahlen von ChatGPT, Gemini, Claude und Co. durch, sage bei jeder Zahl, woher sie kommt, und zeige, warum du sie nicht einfach nebeneinanderlegen darfst.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "KI-CHATBOTS IN ZAHLEN",
+     "emoji": "🤖",
+     "hl": "ZAHLEN"
+    },
+    {
+     "type": "hook",
+     "text": "WER HAT WIRKLICH WIE VIELE NUTZER?",
+     "emoji": "❓",
+     "hl": "WIRKLICH"
+    }
+   ],
+   "part": 1,
+   "chapter": "Einleitung"
+  },
+  {
+   "text": "Zuerst eine Regel für das ganze Video. Es gibt drei Arten von Zahlen: Zahlen, die ein Unternehmen über sich selbst nennt, Schätzungen von Marktforschern wie Sensor Tower und Similarweb, und Umfragen wie die von Bitkom. Alle drei haben Stärken und Schwächen. Wo etwas eine Schätzung ist, sage ich es dazu.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "DREI ARTEN VON ZAHLEN",
+     "items": [
+      "Selbstauskunft der Anbieter",
+      "Schätzungen von Marktforschern",
+      "Umfragen (zum Beispiel Bitkom)"
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Fangen wir mit ChatGPT an. Im Februar zweitausendsechsundzwanzig meldete OpenAI neunhundert Millionen wöchentliche Nutzer, so berichtete TechCrunch. Ursprünglich wollte das Unternehmen schon Ende des Vorjahres eine Milliarde Nutzer pro Woche erreichen, wie The Next Web schreibt. Es kam also später als geplant.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "1",
+     "title": "ChatGPT"
+    },
+    {
+     "type": "zahl",
+     "value": 900,
+     "text": "900",
+     "unit": "MIO. PRO WOCHE",
+     "label": "ChatGPT, Februar 2026 (OpenAI, TechCrunch)",
+     "static": true
+    }
+   ],
+   "part": 1,
+   "chapter": "ChatGPT"
+  },
+  {
+   "text": "Am einunddreißigsten Juli zweitausendsechsundzwanzig sagte OpenAI, die Modelle des Unternehmens erreichten mehr als eine Milliarde aktive Nutzer und mehr als zwei Millionen Unternehmen. Die Nachrichtenagentur AP berichtete darüber. Wichtig ist die Formulierung: Gemeint sind die Modelle von OpenAI insgesamt, nach einem Bericht vor allem ChatGPT, aber auch Codex.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 1,
+     "text": "1 Mrd.+",
+     "unit": "AKTIVE NUTZER",
+     "label": "OpenAI, 31. Juli 2026 (AP)",
+     "static": true
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Andere Medien schreiben dazu, ChatGPT habe eine Milliarde wöchentliche Nutzer erreicht. Die Quellen sind sich also nicht ganz einig, was genau gezählt wurde. Solange OpenAI keine eigene Zahl nur für ChatGPT nennt, ist es sauberer zu sagen: mehr als eine Milliarde aktive Nutzer über alle Angebote.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "QUELLEN WIDERSPRECHEN SICH",
+     "emoji": "⚠",
+     "hl": "WIDERSPRECHEN"
+    },
+    {
+     "type": "zitat",
+     "text": "Mehr als eine Milliarde aktive Nutzer über alle Angebote, nicht nur ChatGPT.",
+     "hl": "Milliarde"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine andere Sicht liefert Sensor Tower, ein Marktforscher für App-Daten. Im Bericht State of AI zweitausendsechsundzwanzig vom sechzehnten Juni kommt ChatGPT auf mehr als eins Komma eins Milliarden monatliche Nutzer. Dort zählt die sogenannte wahre Zielgruppe, also einzelne Menschen über Apps und Web zusammen.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 1.1,
+     "text": "1,1",
+     "unit": "MRD. MONATLICH",
+     "label": "ChatGPT (Sensor Tower, Juni 2026)",
+     "static": true,
+     "decimals": 1
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Nun zu Gemini von Google. Im zweiten Quartal zweitausendsechsundzwanzig nannte Alphabet-Chef Sundar Pichai neunhundertfünfzig Millionen aktive Nutzer pro Monat für die Gemini-App. Die täglichen Nutzer haben sich laut Google im Jahresvergleich verdreifacht.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "2",
+     "title": "Gemini"
+    },
+    {
+     "type": "zahl",
+     "value": 950,
+     "text": "950",
+     "unit": "MIO. PRO MONAT",
+     "label": "Gemini-App, Q2 2026 (Alphabet)",
+     "static": true
+    }
+   ],
+   "part": 1,
+   "chapter": "Gemini"
+  },
+  {
+   "text": "Im August berichtete 9to5Google, dass mehr als eine Milliarde Menschen die Gemini-App jeden Monat nutzen. Laut PPC Land steht diese Zahl auch in den Unterlagen zum dritten Quartal, vor einem Jahr waren es sechshundertfünfzig Millionen. Eine Milliarde im Monat ist allerdings etwas anderes als eine Milliarde in der Woche.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "GEMINI-APP, MONATLICH",
+     "a": {
+      "name": "vor einem Jahr",
+      "value": 650,
+      "text": "650 Mio."
+     },
+     "b": {
+      "name": "Q3 2026",
+      "value": 1000,
+      "text": "über 1 Mrd."
+     },
+     "win": "b"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Auch Verwechslungen sind möglich. Google nennt außerdem den AI Mode in der Suche, und der hat laut den Berichten ebenfalls mehr als eine Milliarde monatliche Nutzer. Das ist ein anderes Produkt als die Gemini-App. Wer die beiden Zahlen mischt, kommt auf falsche Summen.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "NICHT VERWECHSELN",
+     "items": [
+      "Gemini-App: über 1 Mrd. pro Monat",
+      "AI Mode in der Suche: über 1 Mrd. pro Monat",
+      "Zwei Produkte, zwei Zahlen"
+     ]
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Eine Gegenrechnung zeigt, wie unterschiedlich gemessen wird: Sensor Tower nennt für Gemini in seinem Bericht sechshundertzweiundsechzig Millionen monatliche Nutzer. Das ist deutlich weniger als die eigene Zahl von Google. Die Zahlen unterscheiden sich, weil Methoden und Zeitpunkte verschieden sind. Wie viel davon auf welche Methode entfällt, geben die Quellen nicht im Detail an.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "GEMINI MONATLICH",
+     "a": {
+      "name": "Sensor Tower, Mai",
+      "value": 662,
+      "text": "662 Mio."
+     },
+     "b": {
+      "name": "Alphabet, Q3",
+      "value": 1000,
+      "text": "über 1 Mrd."
+     },
+     "win": "b"
+    }
+   ],
+   "part": 1
+  },
+  {
+   "text": "Spannender als die absolute Zahl ist oft der Anteil. Laut Sensor Tower lag der Anteil von ChatGPT unter den KI-Assistenten Ende Mai bei sechsundvierzig Komma vier Prozent. Am Jahresanfang waren es noch mehr als fünfzig Prozent. Zum ersten Mal fiel ChatGPT damit unter die Hälfte, das meldete TechCrunch im Juni.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "3",
+     "title": "Marktanteile"
+    },
+    {
+     "type": "zahl",
+     "value": 46.4,
+     "text": "46,4",
+     "unit": "% MARKTANTEIL CHATGPT",
+     "label": "Ende Mai 2026 (Sensor Tower)",
+     "static": true,
+     "decimals": 1
+    }
+   ],
+   "part": 2,
+   "chapter": "Marktanteile"
+  },
+  {
+   "text": "Gemini kommt in derselben Auswertung auf siebenundzwanzig Komma sieben Prozent, Claude auf zehn Komma drei Prozent. Die Dienste Meta AI, Grok, Perplexity und DeepSeek liegen laut Sensor Tower jeweils unter fünf Prozent.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "MARKTANTEIL KI-ASSISTENTEN (%, SENSOR TOWER, ENDE MAI 2026)",
+     "items": [
+      {
+       "name": "ChatGPT",
+       "value": 46.4,
+       "text": "46,4"
+      },
+      {
+       "name": "Gemini",
+       "value": 27.7,
+       "text": "27,7"
+      },
+      {
+       "name": "Claude",
+       "value": 10.3,
+       "text": "10,3"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Wichtig dabei: ChatGPT hat trotz des sinkenden Anteils weiter die meisten Nutzer. Der Markt wächst insgesamt, deshalb kann ein Anbieter Nutzer dazugewinnen und trotzdem Anteil verlieren. Sensor Tower rechnet für das erste Halbjahr mit rund zwei Komma drei Milliarden Downloads und mehr als vier Komma zwei Milliarden US-Dollar Ausgaben. Das sind Prognosen.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "ANTEIL SINKT, NUTZER NICHT",
+     "emoji": "📊",
+     "hl": "ANTEIL"
+    },
+    {
+     "type": "zahl",
+     "value": 2.3,
+     "text": "2,3",
+     "unit": "MRD. DOWNLOADS (PROGNOSE)",
+     "label": "1. Halbjahr 2026 (Sensor Tower)",
+     "static": true,
+     "decimals": 1
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Eine kleine Rechnung zeigt den Effekt. Wächst ein Markt von hundert auf zweihundert, und ein Anbieter von sechzig auf neunzig, dann hat er fünfzig Prozent mehr Nutzer, aber sein Anteil fällt von sechzig auf fünfundvierzig Prozent. Das ist ein Rechenbeispiel, keine echte Zahl.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "RECHENBEISPIEL (KEINE ECHTEN ZAHLEN)",
+     "items": [
+      "Markt: 100 → 200",
+      "Anbieter: 60 → 90 (+50 %)",
+      "Anteil: 60 % → 45 %"
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Der Datenanbieter Similarweb misst etwas anderes, nämlich Besuche auf Webseiten. Dort hatte ChatGPT vor einem Jahr nach Berichten rund sechsundsiebzig Prozent des Verkehrs mit KI-Chatbots. Ende Mai zweitausendsechsundzwanzig waren es etwa dreiundfünfzig Prozent.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "4",
+     "title": "Web-Traffic"
+    },
+    {
+     "type": "vs",
+     "title": "ANTEIL AM KI-WEB-TRAFFIC CHATGPT",
+     "a": {
+      "name": "vor einem Jahr",
+      "value": 76,
+      "text": "ca. 76 %"
+     },
+     "b": {
+      "name": "Ende Mai 2026",
+      "value": 53,
+      "text": "ca. 53 %"
+     },
+     "win": "a"
+    }
+   ],
+   "part": 2,
+   "chapter": "Web-Traffic"
+  },
+  {
+   "text": "Gemini stieg dort von etwa neun auf rund siebenundzwanzig bis achtundzwanzig Prozent, Claude von eins Komma sechs auf acht Komma neun Prozent. Eine spätere Auswertung meldete, dass ChatGPT wieder auf fünfundfünfzig Komma fünf Prozent kam. Solche Werte schwanken von Auswertung zu Auswertung.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "WEB-ANTEIL ENDE MAI 2026 (%, SIMILARWEB)",
+     "items": [
+      {
+       "name": "ChatGPT",
+       "value": 53,
+       "text": "ca. 53"
+      },
+      {
+       "name": "Gemini",
+       "value": 27.5,
+       "text": "27-28"
+      },
+      {
+       "name": "Claude",
+       "value": 8.9,
+       "text": "8,9"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Kleinere Anbieter lagen laut The Decoder in der späteren Auswertung bei DeepSeek drei Komma vier Prozent, Grok zwei Komma vier, Copilot eins Komma sechs und Perplexity null Komma neun Prozent. Bei den aktiven Nutzern in den USA wuchs Meta AI laut The Next Web um vierhundertfünfunddreißig Prozent, Claude um dreihundertneunundvierzig Prozent, während DeepSeek um dreiundzwanzig Prozent schrumpfte.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "KLEINERE ANBIETER (WEB-ANTEIL %, SIMILARWEB)",
+     "items": [
+      {
+       "name": "DeepSeek",
+       "value": 3.4,
+       "text": "3,4"
+      },
+      {
+       "name": "Grok",
+       "value": 2.4,
+       "text": "2,4"
+      },
+      {
+       "name": "Copilot",
+       "value": 1.6,
+       "text": "1,6"
+      },
+      {
+       "name": "Perplexity",
+       "value": 0.9,
+       "text": "0,9"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Der Haken: Similarweb misst nur Webseiten. Wer eine App oder eine Schnittstelle nutzt, taucht dort nicht auf. Ein Anbieter mit vielen App- oder Schnittstellen-Nutzern wirkt im Web-Anteil deshalb kleiner, als er ist.",
+   "scenes": [
+    {
+     "type": "zitat",
+     "text": "Web-Traffic zeigt nur einen Teil: Apps und Schnittstellen fehlen.",
+     "hl": "Teil"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Dann Claude von Anthropic. Sensor Tower nennt für Claude zweihundertfünfundvierzig Millionen monatliche Nutzer, das entspricht zehn Komma drei Prozent Anteil. Das Wachstum im Mai lag bei vierhundertzweiundfünfzig Prozent im Jahresvergleich.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "5",
+     "title": "Claude, Meta AI und Co."
+    },
+    {
+     "type": "zahl",
+     "value": 245,
+     "text": "245",
+     "unit": "MIO. MONATLICH",
+     "label": "Claude (Sensor Tower, Mai 2026)",
+     "static": true
+    }
+   ],
+   "part": 2,
+   "chapter": "Claude, Meta AI und Co."
+  },
+  {
+   "text": "In einer anderen Auswertung von Sensor Tower, die nur App-Nutzer zählt, sind die Zahlen viel kleiner: Claude rund sechsundfünfzig Millionen, Meta AI einundsechzig Millionen, Grok fünfzig Millionen und Microsoft Copilot einunddreißig Millionen. ChatGPT liegt dort bei rund einer Milliarde und Gemini bei vierhundertzweiundsiebzig Millionen.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "NUR APP-NUTZER (MIO. MONATLICH, SENSOR TOWER, JUNI 2026)",
+     "items": [
+      {
+       "name": "ChatGPT",
+       "value": 1000,
+       "text": "ca. 1000"
+      },
+      {
+       "name": "Gemini",
+       "value": 472,
+       "text": "472"
+      },
+      {
+       "name": "Meta AI",
+       "value": 61,
+       "text": "61"
+      },
+      {
+       "name": "Claude",
+       "value": 56,
+       "text": "56"
+      },
+      {
+       "name": "Grok",
+       "value": 50,
+       "text": "50"
+      }
+     ]
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Noch ein Hinweis zu Geld. Sensor Tower hat festgestellt, dass Claude pro Nutzer mehr Umsatz bringt als ChatGPT, so berichtet The Next Web. Eine konkrete Zahl dazu nenne ich nicht, weil ich in den Quellen keine belastbare gefunden habe. Mehr Nutzer heißt also nicht automatisch mehr Einnahmen.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "NUTZER SIND NICHT UMSATZ",
+     "emoji": "💶",
+     "hl": "UMSATZ"
+    }
+   ],
+   "part": 2
+  },
+  {
+   "text": "Dieselbe Firma, zwei Auswertungen kurz nacheinander: zweihundertfünfundvierzig Millionen für Claude in der einen, sechsundfünfzig Millionen in der anderen. Der Unterschied liegt in der Methode: einmal einzelne Menschen über Apps und Web zusammen, einmal nur die App. Das zeigt, wie wichtig die Fußnote unter einer Zahl ist.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "CLAUDE, ZWEI MESSUNGEN (MIO.)",
+     "a": {
+      "name": "App und Web",
+      "value": 245,
+      "text": "245 Mio."
+     },
+     "b": {
+      "name": "nur App",
+      "value": 56,
+      "text": "56 Mio."
+     },
+     "win": "a"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Für das dritte Quartal nennt eine weitere Auswertung von Sensor Tower ein Wachstum der monatlichen Claude-Nutzer von eintausendzweihundertsechzig Prozent im Jahresvergleich, bei einem Anteil von rund vier Prozent. Meta AI wuchs dort um sechshundertfünfundsiebzig Prozent. Hohe Wachstumsraten klingen groß, wenn die Ausgangszahl klein ist.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "+1260 % IN EINEM JAHR",
+     "emoji": "📈",
+     "hl": "1260"
+    },
+    {
+     "type": "zitat",
+     "text": "Hohe Wachstumsraten klingen groß, wenn die Ausgangszahl klein ist.",
+     "hl": "klein"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Meta AI taucht in vielen Zahlen anders auf, weil es in WhatsApp, Instagram und Facebook eingebaut ist. Counterpoint Research nennt für das erste Quartal zweitausendsechsundzwanzig eine Milliarde monatliche Nutzer für Meta und neunhundert Millionen für OpenAI. Dort zählen auch Assistenten, die in andere Apps eingebaut sind.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "MONATLICHE NUTZER, Q1 2026 (COUNTERPOINT)",
+     "a": {
+      "name": "OpenAI",
+      "value": 900,
+      "text": "900 Mio."
+     },
+     "b": {
+      "name": "Meta",
+      "value": 1000,
+      "text": "1 Mrd."
+     },
+     "win": "b"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "DataReportal kommt in seinem Bericht Digital zweitausendsechsundzwanzig auf mehr als eine Milliarde monatliche Nutzer eigenständiger KI-Werkzeuge. Eingebaute Assistenten wie Meta AI in WhatsApp sind dort ausdrücklich nicht dabei. Auch hier gilt: Die Definition entscheidet.",
+   "scenes": [
+    {
+     "type": "zahl",
+     "value": 1,
+     "text": "1 Mrd.+",
+     "unit": "NUTZER EIGENSTÄNDIGER KI-TOOLS",
+     "label": "DataReportal, Digital 2026",
+     "static": true
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Und in Deutschland? Der Branchenverband Bitkom hat im März und April zweitausendsechsundzwanzig tausendunddrei Personen ab sechzehn Jahren befragt. Vierunddreißig Prozent nutzen demnach mindestens einmal pro Woche KI, fünfzehn Prozent sogar täglich. Die Umfrage ist repräsentativ.",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "6",
+     "title": "Deutschland"
+    },
+    {
+     "type": "zahl",
+     "value": 34,
+     "text": "34",
+     "unit": "% NUTZEN KI MINDESTENS WÖCHENTLICH",
+     "label": "Bitkom, März/April 2026, 1.003 Befragte",
+     "static": true
+    }
+   ],
+   "part": 3,
+   "chapter": "Deutschland"
+  },
+  {
+   "text": "Unter denjenigen, die KI nutzen, setzen einundsiebzig Prozent ChatGPT ein, fünfzig Prozent Gemini, dreiundvierzig Prozent Microsoft Copilot und fünfunddreißig Prozent Meta AI. Danach kommen DeepSeek mit acht, Perplexity mit sieben, Grok mit sechs und Claude mit fünf Prozent. Die Summe ist größer als hundert Prozent, weil viele mehrere Dienste nutzen.",
+   "scenes": [
+    {
+     "type": "balken",
+     "title": "NUTZUNG UNTER KI-NUTZENDEN (%, BITKOM)",
+     "items": [
+      {
+       "name": "ChatGPT",
+       "value": 71,
+       "text": "71"
+      },
+      {
+       "name": "Gemini",
+       "value": 50,
+       "text": "50"
+      },
+      {
+       "name": "Copilot",
+       "value": 43,
+       "text": "43"
+      },
+      {
+       "name": "Meta AI",
+       "value": 35,
+       "text": "35"
+      }
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Das ist ein anderes Bild als bei den Weltzahlen. In Deutschland liegt Copilot weit vorn, und Claude ist laut Bitkom mit fünf Prozent noch selten. Die Zahl bezieht sich nur auf KI-Nutzende, nicht auf alle Befragten. Eine Hochrechnung auf die ganze Bevölkerung habe ich in den Quellen nicht gefunden.",
+   "scenes": [
+    {
+     "type": "hook",
+     "text": "NUR UNTER KI-NUTZENDEN",
+     "emoji": "☝",
+     "hl": "NUR"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Damit du künftig nicht auf Schlagzeilen hereinfällst, hier drei Fragen. Erstens: Wer sagt das, und hat er ein Interesse? Eine Firma, die über sich selbst berichtet, will gut dastehen. Zweitens: Was wird gezählt, wöchentliche oder monatliche Nutzer, Apps, Web oder alles zusammen? Drittens: Für welchen Zeitraum gilt die Zahl?",
+   "scenes": [
+    {
+     "type": "kapitel",
+     "nr": "7",
+     "title": "So liest du die Zahlen"
+    },
+    {
+     "type": "karten",
+     "title": "3 FRAGEN AN JEDE ZAHL",
+     "items": [
+      "Wer sagt das, mit welchem Interesse?",
+      "Was wird gezählt?",
+      "Für welchen Zeitraum gilt es?"
+     ]
+    }
+   ],
+   "part": 3,
+   "chapter": "So liest du die Zahlen"
+  },
+  {
+   "text": "Ein Beispiel: Eine Milliarde Nutzer pro Woche ist die strengere Zahl als eine Milliarde Nutzer pro Monat, weil in einer Woche weniger Menschen aktiv sind als in einem Monat. Und eine Zahl aus dem Mai kann im Dezember schon überholt sein. Die Anbieter wachsen schnell, deshalb habe ich bei jeder Zahl das Datum genannt.",
+   "scenes": [
+    {
+     "type": "vs",
+     "title": "1 MRD. IST NICHT 1 MRD.",
+     "a": {
+      "name": "pro Monat",
+      "value": 1,
+      "text": "1 Mrd."
+     },
+     "b": {
+      "name": "pro Woche",
+      "value": 1,
+      "text": "1 Mrd."
+     },
+     "win": "b"
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Fassen wir zusammen. ChatGPT: mehr als eine Milliarde aktive Nutzer laut OpenAI, wöchentlich nach mehreren Berichten. Gemini: mehr als eine Milliarde monatliche Nutzer laut Alphabet. Marktanteil nach Sensor Tower: ChatGPT sechsundvierzig Komma vier, Gemini siebenundzwanzig Komma sieben, Claude zehn Komma drei Prozent. In Deutschland nutzen einundsiebzig Prozent der KI-Nutzenden ChatGPT. Alles andere hängt davon ab, wie gezählt wird.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "KI-CHATBOTS IN ZAHLEN",
+     "items": [
+      "ChatGPT: über 1 Mrd. aktive Nutzer (OpenAI)",
+      "Gemini-App: über 1 Mrd. pro Monat",
+      "Anteil: ChatGPT 46,4 %, Gemini 27,7 %",
+      "Claude: 10,3 % Anteil (Sensor Tower)",
+      "Deutschland: 71 % der KI-Nutzenden ChatGPT"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Für dieses Video habe ich Angaben von OpenAI und Alphabet, von Sensor Tower, Similarweb, Counterpoint Research, DataReportal und Bitkom sowie die Berichterstattung von TechCrunch, The Next Web, AP, 9to5Google und The Decoder verglichen. Wo sich Quellen widersprechen, habe ich es gesagt. Alle Links stehen in der Beschreibung.",
+   "scenes": [
+    {
+     "type": "karten",
+     "title": "QUELLEN IM VIDEO",
+     "items": [
+      "Anbieter (OpenAI, Alphabet)",
+      "Marktforscher (Sensor Tower, Similarweb, Counterpoint)",
+      "Umfrage (Bitkom), Bericht (DataReportal)",
+      "Medien (TechCrunch, TNW, AP, The Decoder)"
+     ]
+    }
+   ],
+   "part": 3
+  },
+  {
+   "text": "Welcher Chatbot ist für dich der wichtigste? Schreib es in die Kommentare. Und sag mir: Welche Zahl hat dich am meisten überrascht? Wenn dir das Video gefallen hat, abonniere den Kanal für die nächsten aktuellen Themen.",
+   "scenes": [
+    {
+     "type": "frage",
+     "text": "WELCHE KI NUTZT DU AM MEISTEN?",
+     "options": [
+      "CHATGPT",
+      "GEMINI",
+      "CLAUDE",
+      "ANDERE"
+     ]
+    }
+   ],
+   "part": 3
+  }
+ ]
+}
