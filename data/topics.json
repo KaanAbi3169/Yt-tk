@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -14,7 +14,7 @@
     {
       "group": "gta-news",
       "n": 2,
-      "avg": 570
+      "avg": 578
     },
     {
       "group": "mythos",
@@ -24,7 +24,7 @@
     {
       "group": "3d-mythos",
       "n": 2,
-      "avg": 480
+      "avg": 490
     },
     {
       "group": "kin-gaming",
@@ -52,6 +52,11 @@
       "avg": 329
     },
     {
+      "group": "kin-space",
+      "n": 2,
+      "avg": 306
+    },
+    {
       "group": "was-waere-wenn-test",
       "n": 4,
       "avg": 295
@@ -65,9 +70,14 @@
       "group": "3d-wissen",
       "n": 6,
       "avg": 208
+    },
+    {
+      "group": "kin-spar",
+      "n": 2,
+      "avg": 138
     }
   ],
-  "open": 39,
+  "open": 43,
   "items": [
     {
       "title": "Blühende Kastanienbäume",
@@ -313,6 +323,42 @@
       "fit": "pruefen"
     },
     {
+      "title": "Kasachstan",
+      "signal": "Wikipedia-Aufrufe 5555 gestern, Faktor 5.3 gegen Schnitt 1054",
+      "kind": "steigend",
+      "added": "2026-11-27",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Azadi und Kulina",
+      "signal": "Wikipedia-Schnitt 5270 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-27",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Duran Duran",
+      "signal": "neu in den Top 1000 mit 21344 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-27",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Dianjunus rex",
+      "signal": "neu in den Top 1000 mit 11799 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-27",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
       "title": "James Bond",
       "signal": "Wikipedia-Aufrufe 29972 gestern, Faktor 5.2 gegen Schnitt 5744",
       "kind": "steigend",
@@ -481,46 +527,6 @@
       "fit": "gut"
     },
     {
-      "title": "Periodensystem",
-      "signal": "Wikipedia-Schnitt 4177 Aufrufe pro Tag (8 Tage)",
-      "kind": "dauerbrenner",
-      "added": "2026-11-19",
-      "status": "produced",
-      "source": "radar",
-      "video": "T002",
-      "angle": "Gallium schmilzt in der Hand, Mendelejews Vorhersage (1869, 1875)"
-    },
-    {
-      "title": "Voyager 1",
-      "signal": "Wikipedia-Aufrufe 17276 gestern, Faktor 7.9 gegen Schnitt 2199",
-      "kind": "steigend",
-      "added": "2026-11-19",
-      "status": "produced",
-      "source": "radar",
-      "video": "T003",
-      "angle": "Lichttag-Meilenstein am 18.11.2026"
-    },
-    {
-      "title": "Alicella gigantea",
-      "signal": "neu in den Top 1000 mit 14224 Aufrufen",
-      "kind": "neu",
-      "added": "2026-11-19",
-      "status": "produced",
-      "source": "radar",
-      "video": "T005",
-      "angle": "größter Flohkrebs, 34 cm, 3 Ozeane, 60 % der Weltmeere"
-    },
-    {
-      "title": "Schneeleopard",
-      "signal": "neu in den Top 1000 mit 7766 Aufrufen (Radar 18.11., unter der Listenschwelle)",
-      "kind": "neu",
-      "added": "2026-11-22",
-      "status": "produced",
-      "source": "analyse",
-      "video": "T004",
-      "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
-    },
-    {
       "title": "Weiße Weihnachten: DWD-Chancen nach Stadt",
       "signal": "Nachrichtenlage 27.11. (Websuche)",
       "kind": "aktuell",
@@ -569,6 +575,46 @@
       "video": "E004",
       "source": "websuche",
       "fit": "gut"
+    },
+    {
+      "title": "Periodensystem",
+      "signal": "Wikipedia-Schnitt 4177 Aufrufe pro Tag (8 Tage)",
+      "kind": "dauerbrenner",
+      "added": "2026-11-19",
+      "status": "produced",
+      "source": "radar",
+      "video": "T002",
+      "angle": "Gallium schmilzt in der Hand, Mendelejews Vorhersage (1869, 1875)"
+    },
+    {
+      "title": "Voyager 1",
+      "signal": "Wikipedia-Aufrufe 17276 gestern, Faktor 7.9 gegen Schnitt 2199",
+      "kind": "steigend",
+      "added": "2026-11-19",
+      "status": "produced",
+      "source": "radar",
+      "video": "T003",
+      "angle": "Lichttag-Meilenstein am 18.11.2026"
+    },
+    {
+      "title": "Alicella gigantea",
+      "signal": "neu in den Top 1000 mit 14224 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-19",
+      "status": "produced",
+      "source": "radar",
+      "video": "T005",
+      "angle": "größter Flohkrebs, 34 cm, 3 Ozeane, 60 % der Weltmeere"
+    },
+    {
+      "title": "Schneeleopard",
+      "signal": "neu in den Top 1000 mit 7766 Aufrufen (Radar 18.11., unter der Listenschwelle)",
+      "kind": "neu",
+      "added": "2026-11-22",
+      "status": "produced",
+      "source": "analyse",
+      "video": "T004",
+      "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
     }
   ]
 }
