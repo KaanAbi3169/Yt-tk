@@ -15,6 +15,14 @@
    "hl": "GEMINIDEN"
   },
   {
+   "type": "hook",
+   "at": "^geminiden$",
+   "fallback": 0.12,
+   "text": "MAXIMUM: NACHT AUF DEN 14.12.",
+   "emoji": "🌙",
+   "hl": "14"
+  },
+  {
    "type": "karten",
    "at": "^mond$",
    "fallback": 0.25,
