@@ -615,6 +615,36 @@
       "source": "analyse",
       "video": "T004",
       "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
+    },
+    {
+      "title": "Dezember 2026: fünf Termine",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N020",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Geminiden 13./14.12.2026",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N021",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "GTA 6: Verkaufszahlen nur geschätzt",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N022",
+      "source": "websuche",
+      "fit": "gut"
     }
   ]
 }
