@@ -2390,12 +2390,18 @@
         "https://www.infranken.de/deutschland/wie-viel-eine-tasse-gluehwein-kostet-art-6411146",
         "https://ms-aktuell.de/welt/gluehweinpreise-2026-15-11-2026/"
       ],
-      "due": "2026-11-27T10:00:00+01:00"
+      "due": "2026-11-27T10:00:00+01:00",
+      "errors": [
+        {
+          "at": "2026-11-28T03:56:46.463687+01:00",
+          "reason": "Buffer-Fehler, siehe Bericht"
+        }
+      ]
     },
     {
       "id": "N011",
       "format": "wissen",
-      "status": "scheduled",
+      "status": "posted",
       "created": "2026-11-25T07:25:02.986392+01:00",
       "source": "kinetic",
       "topic": "Glühwein: Zucker und Kalorien pro Tasse",

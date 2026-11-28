@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T04:15:41.473230+01:00",
+  "updated": "2026-11-28T03:56:46.482413+01:00",
   "top": [
     [
       "slot:youtube:Tue 18",
@@ -58,17 +58,17 @@
       }
     ],
     [
-      "slot:tiktok:Thu 16",
-      {
-        "n": 2,
-        "avg": 750
-      }
-    ],
-    [
       "slot:tiktok:Wed 16",
       {
         "n": 2,
         "avg": 672
+      }
+    ],
+    [
+      "slot:tiktok:Thu 16",
+      {
+        "n": 3,
+        "avg": 630
       }
     ],
     [
@@ -137,13 +137,6 @@
       }
     ],
     [
-      "slot:youtube:Fri 16",
-      {
-        "n": 1,
-        "avg": 32
-      }
-    ],
-    [
       "slot:youtube:Mon 10",
       {
         "n": 1,
@@ -155,6 +148,13 @@
       {
         "n": 1,
         "avg": 24
+      }
+    ],
+    [
+      "slot:youtube:Thu 10",
+      {
+        "n": 1,
+        "avg": 12
       }
     ],
     [
@@ -201,8 +201,8 @@
       "avg": 1
     },
     "format:wissen": {
-      "n": 29,
-      "avg": 400
+      "n": 33,
+      "avg": 388
     },
     "hook:Du machst einen Fehler": {
       "n": 4,
@@ -274,7 +274,7 @@
     },
     "hook:drive-reserve": {
       "n": 7,
-      "avg": 271
+      "avg": 290
     },
     "slot:tiktok:Wed 16": {
       "n": 2,
@@ -309,16 +309,16 @@
       "avg": 490
     },
     "slot:tiktok:Thu 16": {
-      "n": 2,
-      "avg": 750
+      "n": 3,
+      "avg": 630
     },
     "topic:Mythos: Wir nutzen nur 10 Prozent des Gehirns": {
       "n": 2,
       "avg": 490
     },
     "slot:youtube:Thu 16": {
-      "n": 2,
-      "avg": 318
+      "n": 3,
+      "avg": 314
     },
     "hook:Nachricht": {
       "n": 2,
@@ -330,15 +330,15 @@
     },
     "slot:tiktok:Fri 16": {
       "n": 1,
-      "avg": 272
+      "avg": 312
     },
     "topic:Toast Butterseite": {
       "n": 2,
-      "avg": 152
+      "avg": 216
     },
     "slot:youtube:Fri 16": {
       "n": 1,
-      "avg": 32
+      "avg": 120
     },
     "slot:tiktok:Fri 10": {
       "n": 1,
@@ -409,8 +409,8 @@
       "avg": 226
     },
     "hook:Zahl-Schock": {
-      "n": 2,
-      "avg": 456
+      "n": 6,
+      "avg": 328
     },
     "slot:tiktok:Tue 16": {
       "n": 1,
@@ -435,6 +435,22 @@
     "topic:Artemis II: Distanzrekord um den Mond (6. April 2026)": {
       "n": 2,
       "avg": 306
+    },
+    "slot:tiktok:Thu 10": {
+      "n": 1,
+      "avg": 344
+    },
+    "topic:Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)": {
+      "n": 2,
+      "avg": 178
+    },
+    "slot:youtube:Thu 10": {
+      "n": 1,
+      "avg": 12
+    },
+    "topic:ChatGPT: über eine Milliarde Nutzer laut OpenAI": {
+      "n": 2,
+      "avg": 348
     }
   }
 }

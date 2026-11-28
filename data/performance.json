@@ -442,6 +442,14 @@
         "shares": 0,
         "watch_ms": 3120,
         "at": "2026-11-22T01:39:51.832583+01:00"
+      },
+      "7d": {
+        "views": 272,
+        "likes": 8,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 3100,
+        "at": "2026-11-28T03:56:46.471786+01:00"
       }
     },
     {
@@ -458,6 +466,12 @@
         "likes": 0,
         "comments": 0,
         "at": "2026-11-22T01:39:51.834085+01:00"
+      },
+      "7d": {
+        "views": 120,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-28T03:56:46.473629+01:00"
       }
     },
     {
@@ -748,6 +762,74 @@
         "likes": 0,
         "comments": 0,
         "at": "2026-11-27T04:15:41.472565+01:00"
+      }
+    },
+    {
+      "id": "N004",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-26T10:00:00+01:00",
+      "duration": 39.5,
+      "group": "kin-saison",
+      "24h": {
+        "views": 284,
+        "likes": 4,
+        "comments": 2,
+        "shares": 0,
+        "watch_ms": 5290,
+        "at": "2026-11-28T03:56:46.475612+01:00"
+      }
+    },
+    {
+      "id": "N004",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "Weihnachtsbäume: 23 bis 25 Millionen pro Jahr in Deutschland (Advent 29.11.)",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-26T10:00:00+01:00",
+      "duration": 39.5,
+      "group": "kin-saison",
+      "24h": {
+        "views": 12,
+        "likes": 0,
+        "comments": 0,
+        "at": "2026-11-28T03:56:46.477580+01:00"
+      }
+    },
+    {
+      "id": "N005",
+      "platform": "tiktok",
+      "format": "wissen",
+      "topic": "ChatGPT: über eine Milliarde Nutzer laut OpenAI",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-26T16:00:00+01:00",
+      "duration": 40.5,
+      "group": "kin-tech",
+      "24h": {
+        "views": 382,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "watch_ms": 6690,
+        "at": "2026-11-28T03:56:46.479563+01:00"
+      }
+    },
+    {
+      "id": "N005",
+      "platform": "youtube",
+      "format": "wissen",
+      "topic": "ChatGPT: über eine Milliarde Nutzer laut OpenAI",
+      "hook_type": "Zahl-Schock",
+      "due": "2026-11-26T16:00:00+01:00",
+      "duration": 40.5,
+      "group": "kin-tech",
+      "24h": {
+        "views": 280,
+        "likes": 5,
+        "comments": 0,
+        "at": "2026-11-28T03:56:46.481521+01:00"
       }
     }
   ]
