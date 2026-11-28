@@ -1,0 +1,100 @@
+{
+ "id": "N022",
+ "topic": "GTA 6: Verkaufszahlen nur geschätzt (Sensor Tower 17 Mio., 1,65 Mrd. $), Take-Two ohne offizielle Zahlen",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-gaming",
+ "theme": "toxic",
+ "music": "wissen",
+ "hl": "millionen|milliarden|prozent|\\d",
+ "script": "GTA sechs: siebzehn Millionen verkauft? Nur geschätzt. Offiziell hat Take-Two noch keine Verkaufszahlen genannt. Sensor Tower schätzt rund siebzehn Millionen Exemplare und mehr als eins Komma sechs fünf Milliarden Dollar Umsatz. Take-Two soll laut Berichten allein in der Vorbestellphase rund eins Komma drei neun Milliarden Dollar umgesetzt haben. Etwa fünfundsiebzig Prozent der frühen Käufe entfallen laut einem Bericht auf PlayStation. Das sind Schätzungen und keine offiziellen Zahlen. Wie viel hältst du für realistisch? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "GTA 6: 17 MIO. VERKAUFT? NUR GESCHÄTZT",
+   "emoji": "🎮",
+   "hl": "17"
+  },
+  {
+   "type": "hook",
+   "text": "OFFIZIELL: KEINE ZAHLEN",
+   "emoji": "🚫",
+   "hl": "KEINE",
+   "at": "^offiziell$",
+   "fallback": 0.1
+  },
+  {
+   "type": "zahl",
+   "at": "^sensor$",
+   "fallback": 0.25,
+   "value": 17,
+   "decimals": 0,
+   "static": true,
+   "text": "17",
+   "unit": "MIO. EXEMPLARE (SCHÄTZUNG)",
+   "label": "Sensor Tower, 19.11.2026"
+  },
+  {
+   "type": "zahl",
+   "at": "^eins$",
+   "fallback": 0.42,
+   "value": 1.65,
+   "decimals": 2,
+   "static": true,
+   "text": "1,65",
+   "unit": "MRD. $ UMSATZ (SCHÄTZUNG)",
+   "label": "Sensor Tower, 19.11.2026"
+  },
+  {
+   "type": "zahl",
+   "at": "^vorbestellphase$",
+   "fallback": 0.6,
+   "value": 1.39,
+   "decimals": 2,
+   "static": true,
+   "text": "1,39",
+   "unit": "MRD. $ IN DER VORBESTELLPHASE",
+   "label": "laut Berichten (Take-Two)"
+  },
+  {
+   "type": "zahl",
+   "at": "^playstation$",
+   "fallback": 0.78,
+   "value": 75,
+   "decimals": 0,
+   "static": true,
+   "text": "75",
+   "unit": "% DER FRÜHEN KÄUFE: PLAYSTATION",
+   "label": "laut einem Bericht"
+  },
+  {
+   "type": "hook",
+   "text": "SCHÄTZUNGEN, KEINE OFFIZIELLEN ZAHLEN",
+   "emoji": "⚠",
+   "hl": "SCHÄTZUNGEN",
+   "at": "^sch.tzungen$",
+   "fallback": 0.88
+  },
+  {
+   "type": "frage",
+   "at": "^wie$",
+   "n": 2,
+   "fallback": 0.95,
+   "text": "WAS IST REALISTISCH?",
+   "options": [
+    "UNTER 17 MIO.",
+    "17 BIS 30 MIO.",
+    "ÜBER 30 MIO."
+   ]
+  }
+ ],
+ "title_tiktok": "GTA 6: So viele sind es wirklich (nur Schätzungen) 🎮",
+ "title_youtube": "GTA 6: 17 Millionen verkauft? Was geschätzt ist und was offiziell #shorts",
+ "text_tiktok": "Wie viel hältst du für realistisch? Schreib es in die Kommentare 👇 #gta6 #gaming #rockstar #zahlen #fürdich",
+ "text_youtube": "Take-Two hat noch keine offiziellen Verkaufszahlen zu GTA 6 genannt. Sensor Tower schätzt (19.11.2026) rund 17 Millionen Exemplare und über 1,65 Milliarden Dollar Umsatz. Laut Berichten setzte Take-Two in der Vorbestellphase rund 1,39 Milliarden Dollar um, etwa 75 Prozent der frühen Käufe entfallen laut einem Bericht auf PlayStation. Alles Schätzungen, keine offiziellen Zahlen. Wie viel hältst du für realistisch? 👇\n\nQuellen: Sensor Tower (über GGRecon und OneIndia), TechRadar, stock3. Kein Spielmaterial, keine Logos. Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #rockstar #wusstestdu",
+ "sources": [
+  "https://www.ggrecon.com/articles/gta-6-17-million-sales-sensor-tower/",
+  "https://www.oneindia.com/international/gta-6-sales-cross-1-6-billion-as-playstation-accounts-for-75-of-early-purchases-8264247.html",
+  "https://techradar.com/gaming/the-level-of-pre-orders-is-unprecedented-take-two-reportedly-made-usd1-39-billion-in-sales-during-gta-6s-pre-order-period",
+  "https://stock3.com/news/gelungener-gta-6-start-treibt-take-two-aktie-17404668"
+ ]
+}

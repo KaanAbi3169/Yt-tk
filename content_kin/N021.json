@@ -1,0 +1,80 @@
+{
+ "id": "N021",
+ "topic": "Geminiden 13./14.12.2026: Mond, Rate, Unsicherheit",
+ "hook_type": "Zahl-Schock",
+ "group": "kin-weltraum",
+ "theme": "weltraum",
+ "music": "wissen",
+ "hl": "dezember|prozent|\\d",
+ "script": "Am dreizehnten Dezember fallen die meisten Sternschnuppen des Jahres. Die Geminiden erreichen ihr Maximum in der Nacht vom dreizehnten auf den vierzehnten Dezember. Der Mond ist nur eine schmale Sichel mit etwa zwanzig Prozent Beleuchtung und geht gegen einundzwanzig Uhr unter. Danach ist der Himmel dunkel. Die Angaben zur Zahl der Sternschnuppen schwanken: Eine Quelle nennt bis zu hundertfünfzig pro Stunde, eine andere sechzig bis hundert unter dunklem Landhimmel. Das sind Schätzungen. Die genaue Uhrzeit des Maximums ist nach den Quellen nicht gesichert. Schaust du hin? Schreib es in die Kommentare.",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "13./14. DEZEMBER: GEMINIDEN",
+   "emoji": "🌠",
+   "hl": "GEMINIDEN"
+  },
+  {
+   "type": "karten",
+   "at": "^mond$",
+   "fallback": 0.25,
+   "title": "DER MOND",
+   "items": [
+    "Schmale Sichel, etwa 20 % beleuchtet",
+    "Untergang gegen 21 Uhr",
+    "Danach dunkler Himmel"
+   ]
+  },
+  {
+   "type": "zahl",
+   "at": "^hundertf.nfzig$",
+   "fallback": 0.55,
+   "value": 150,
+   "decimals": 0,
+   "static": true,
+   "text": "bis 150",
+   "unit": "PRO STUNDE (OBERGRENZE)",
+   "label": "Starwalk, Schätzung"
+  },
+  {
+   "type": "zahl",
+   "at": "^sechzig$",
+   "fallback": 0.68,
+   "value": 100,
+   "decimals": 0,
+   "static": true,
+   "text": "60-100",
+   "unit": "PRO STUNDE (LANDHIMMEL)",
+   "label": "Sterngucker, Schätzung"
+  },
+  {
+   "type": "hook",
+   "text": "UHRZEIT DES MAXIMUMS: UNSICHER",
+   "emoji": "⚠",
+   "hl": "UNSICHER",
+   "at": "^uhrzeit$",
+   "fallback": 0.82
+  },
+  {
+   "type": "frage",
+   "at": "^schaust$",
+   "fallback": 0.94,
+   "text": "SCHAUST DU HIN?",
+   "options": [
+    "JA",
+    "NEIN",
+    "VIELLEICHT"
+   ]
+  }
+ ],
+ "title_tiktok": "Geminiden: Die meisten Sternschnuppen des Jahres 🌠",
+ "title_youtube": "Geminiden 2026: Wann und wie viele Sternschnuppen? (13./14. Dezember) #shorts",
+ "text_tiktok": "Schaust du hin? Schreib es in die Kommentare 👇 #geminiden #sternschnuppen #weltraum #astronomie #fürdich",
+ "text_youtube": "Die Geminiden erreichen ihr Maximum in der Nacht vom 13. auf den 14. Dezember 2026. Der Mond ist eine schmale Sichel (etwa 20 Prozent) und geht gegen 21 Uhr unter. Die Raten schwanken je nach Quelle: bis zu 150 pro Stunde (Starwalk), 60 bis 100 unter dunklem Landhimmel (Sterngucker), alles Schätzungen. Die genaue Uhrzeit des Maximums ist nicht gesichert. Schaust du hin? 👇\n\nQuellen: Starwalk, Sterngucker, International Meteor Organization (über pixidia). Stimme und Grafiken mit KI erstellt.\n\n#shorts #geminiden #sternschnuppen #weltraum #wusstestdu",
+ "sources": [
+  "https://starwalk.space/de/news/geminid-meteor-shower",
+  "https://www.sterngucker.de/?p=3893",
+  "https://pixidia.com/?p=84514",
+  "https://www.rmg.co.uk/discover/explore/geminid-meteor-shower-when-and-where-see-it-uk"
+ ]
+}
