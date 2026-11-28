@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "test_share": 0.3,
   "slots_14d": {
     "proven": 20,
@@ -19,7 +19,7 @@
     {
       "group": "mythos",
       "n": 6,
-      "avg": 515
+      "avg": 536
     },
     {
       "group": "3d-mythos",
@@ -47,6 +47,11 @@
       "avg": 407
     },
     {
+      "group": "kin-tech",
+      "n": 2,
+      "avg": 348
+    },
+    {
       "group": "physik-test",
       "n": 1,
       "avg": 329
@@ -72,12 +77,17 @@
       "avg": 208
     },
     {
+      "group": "kin-saison",
+      "n": 2,
+      "avg": 178
+    },
+    {
       "group": "kin-spar",
       "n": 2,
       "avg": 138
     }
   ],
-  "open": 43,
+  "open": 46,
   "items": [
     {
       "title": "Blühende Kastanienbäume",
@@ -359,6 +369,33 @@
       "fit": "pruefen"
     },
     {
+      "title": "24 Türchen zu dir",
+      "signal": "neu in den Top 1000 mit 22727 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-28",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Frauenstraflager Flußbach",
+      "signal": "neu in den Top 1000 mit 13692 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-28",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
+      "title": "Atze Schröder",
+      "signal": "neu in den Top 1000 mit 13250 Aufrufen",
+      "kind": "neu",
+      "added": "2026-11-28",
+      "status": "candidate",
+      "source": "radar",
+      "fit": "pruefen"
+    },
+    {
       "title": "James Bond",
       "signal": "Wikipedia-Aufrufe 29972 gestern, Faktor 5.2 gegen Schnitt 5744",
       "kind": "steigend",
@@ -577,6 +614,36 @@
       "fit": "gut"
     },
     {
+      "title": "Dezember 2026: fünf Termine",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N020",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "Geminiden 13./14.12.2026",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N021",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
+      "title": "GTA 6: Verkaufszahlen nur geschätzt",
+      "signal": "Nachrichtenlage 28.11. (Websuche)",
+      "kind": "aktuell",
+      "added": "2026-11-28",
+      "status": "produced",
+      "video": "N022",
+      "source": "websuche",
+      "fit": "gut"
+    },
+    {
       "title": "Periodensystem",
       "signal": "Wikipedia-Schnitt 4177 Aufrufe pro Tag (8 Tage)",
       "kind": "dauerbrenner",
@@ -615,36 +682,6 @@
       "source": "analyse",
       "video": "T004",
       "angle": "kann nicht brüllen, Schwanz, Sprung; erstes echtes Bild"
-    },
-    {
-      "title": "Dezember 2026: fünf Termine",
-      "signal": "Nachrichtenlage 28.11. (Websuche)",
-      "kind": "aktuell",
-      "added": "2026-11-28",
-      "status": "produced",
-      "video": "N020",
-      "source": "websuche",
-      "fit": "gut"
-    },
-    {
-      "title": "Geminiden 13./14.12.2026",
-      "signal": "Nachrichtenlage 28.11. (Websuche)",
-      "kind": "aktuell",
-      "added": "2026-11-28",
-      "status": "produced",
-      "video": "N021",
-      "source": "websuche",
-      "fit": "gut"
-    },
-    {
-      "title": "GTA 6: Verkaufszahlen nur geschätzt",
-      "signal": "Nachrichtenlage 28.11. (Websuche)",
-      "kind": "aktuell",
-      "added": "2026-11-28",
-      "status": "produced",
-      "video": "N022",
-      "source": "websuche",
-      "fit": "gut"
     }
   ]
 }
