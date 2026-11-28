@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "videos": [
     {
       "yt_id": "BibnA5CKqjE",
@@ -162,12 +162,32 @@
       "avg_pct": 38.9
     },
     {
+      "yt_id": "AC7jOPwEsRg",
+      "id": "N003",
+      "format": "wissen",
+      "hook": "Staunen + Rekord",
+      "title": "Artemis II: Neuer Distanzrekord um den Mond (Apollo 13 übertroffen) #shorts",
+      "views": 35,
+      "avg_s": 20.0,
+      "avg_pct": 44.5
+    },
+    {
+      "yt_id": "hPe3UuBCZ6Y",
+      "id": "D021",
+      "format": "wissen",
+      "hook": "drive-reserve",
+      "title": "Stoßlüften oder Fenster kippen? Was wirklich besser ist 🪟 #shorts",
+      "views": 33,
+      "avg_s": 46.0,
+      "avg_pct": 75.0
+    },
+    {
       "yt_id": "uUYAAWBfID0",
       "id": "–",
       "format": "–",
       "hook": "–",
       "title": "IKEA Effekt erklärt #wissen #ikea #shorts #wissenswertes",
-      "views": 29,
+      "views": 30,
       "avg_s": 20.0,
       "avg_pct": 33.5
     },
@@ -177,7 +197,7 @@
       "format": "wissen",
       "hook": "Überraschung",
       "title": "Der Schneeleopard kann nicht brüllen: 4 Fakten über die Bergkatze 🐆 #shorts",
-      "views": 27,
+      "views": 28,
       "avg_s": 13.0,
       "avg_pct": 41.2
     },
@@ -192,16 +212,6 @@
       "avg_pct": 28.2
     },
     {
-      "yt_id": "hPe3UuBCZ6Y",
-      "id": "D021",
-      "format": "wissen",
-      "hook": "drive-reserve",
-      "title": "Stoßlüften oder Fenster kippen? Was wirklich besser ist 🪟 #shorts",
-      "views": 14,
-      "avg_s": 57.0,
-      "avg_pct": 92.8
-    },
-    {
       "yt_id": "zKrJ1LMxy2E",
       "id": "–",
       "format": "–",
@@ -212,6 +222,16 @@
       "avg_pct": 62.0
     },
     {
+      "yt_id": "rndZejCndSw",
+      "id": "–",
+      "format": "–",
+      "hook": "–",
+      "title": "Voyager 1: 49 Jahre unterwegs – die längste Reise der Menschheit",
+      "views": 10,
+      "avg_s": 337.0,
+      "avg_pct": 48.3
+    },
+    {
       "yt_id": "6vsrPS2q0z4",
       "id": "–",
       "format": "–",
@@ -220,6 +240,16 @@
       "views": 8,
       "avg_s": 14.0,
       "avg_pct": 23.1
+    },
+    {
+      "yt_id": "dxoQebLi_lM",
+      "id": "N002",
+      "format": "wissen",
+      "hook": "Du machst einen Fehler",
+      "title": "Black Friday 2026: Lohnt es sich wirklich? Das zeigen die Preisdaten #shorts",
+      "views": 7,
+      "avg_s": 26.0,
+      "avg_pct": 60.7
     },
     {
       "yt_id": "31KmU-6CMqs",
