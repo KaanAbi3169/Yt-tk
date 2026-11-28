@@ -2758,6 +2758,33 @@
         "https://thenextweb.com/news/claude-chatgpt-revenue-per-user-sensor-tower"
       ],
       "due": "2026-12-02T16:00:00+01:00"
+    },
+    {
+      "id": "N020",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-28T07:22:00.219140+01:00",
+      "source": "kinetic",
+      "topic": "Dezember 2026: fünf Termine (Wrapped-Vermutung, Nikolaus, Bahn-Fahrplan, Geminiden, Sonnenwende)",
+      "hook_type": "Du-Hook",
+      "series": null,
+      "episode": null,
+      "duration": 33.2,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N020.mp4",
+      "title_tiktok": "Dezember 2026: 5 Termine für dich 📅",
+      "title_youtube": "Dezember 2026: 5 Termine (Wrapped, Nikolaus, Bahn, Geminiden, Sonnenwende) #shorts",
+      "text_tiktok": "Welchen kennst du schon? Schreib es in die Kommentare 👇 #dezember #termine #advent #sternschnuppen #fürdich",
+      "text_youtube": "Fünf Termine im Dezember 2026: 2.12. Spotify Wrapped (Vermutung, nicht bestätigt), 6.12. Nikolaus, 13.12. neuer Bahn-Fahrplan, 13./14.12. Maximum der Geminiden, 21.12. um 21:50 Uhr MEZ Wintersonnenwende. Welchen kennst du schon? 👇\n\nQuellen: Official Charts, ZDFheute, Volksstimme, Starwalk, Sterngucker. Stimme und Grafiken mit KI erstellt.\n\n#shorts #dezember #termine #advent #wusstestdu",
+      "scenes": 7,
+      "buffer": {},
+      "group": "kin-saison",
+      "sources": [
+        "https://www.officialcharts.com/chart-news/spotify-wrapped-2026-release-date/",
+        "https://www.zdfheute.de/ratgeber/bahn-fahrplan-2027-aenderungen-100.html",
+        "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/fahrplan-2027-was-sich-fur-bahnreisende-andert-4337963",
+        "https://starwalk.space/de/news/geminid-meteor-shower",
+        "https://www.sterngucker.de/?p=25427"
+      ]
     }
   ]
 }
