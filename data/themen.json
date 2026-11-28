@@ -1,298 +1,294 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "rising": [
     {
-      "title": "Thanksgiving",
-      "views": 19831,
-      "avg_before": 2106,
-      "ratio": 9.4
+      "title": "Black Friday",
+      "views": 9322,
+      "avg_before": 3514,
+      "ratio": 2.7
     },
     {
-      "title": "Kasachstan",
-      "views": 5555,
-      "avg_before": 1054,
-      "ratio": 5.3
+      "title": "Thanksgiving",
+      "views": 11498,
+      "avg_before": 4776,
+      "ratio": 2.4
     }
   ],
   "new": [
     {
-      "title": "Duran Duran",
-      "views": 21344
+      "title": "24 Türchen zu dir",
+      "views": 22727
+    },
+    {
+      "title": "Frauenstraflager Flußbach",
+      "views": 13692
+    },
+    {
+      "title": "Atze Schröder",
+      "views": 13250
+    },
+    {
+      "title": "Der wunderbare Mandarin",
+      "views": 9392
+    },
+    {
+      "title": "Blanton Museum of Art",
+      "views": 5879
     },
     {
       "title": "Dianjunus rex",
-      "views": 11799
-    },
-    {
-      "title": "Sex Pistols",
-      "views": 10713
-    },
-    {
-      "title": "Chamäleon (2026)",
-      "views": 8003
-    },
-    {
-      "title": "TKKG",
-      "views": 6844
-    },
-    {
-      "title": "Niob",
-      "views": 6759
-    },
-    {
-      "title": "Wu-Tang Clan",
-      "views": 6389
+      "views": 5057
     }
   ],
   "evergreen": [
     {
       "title": "Riemannsche Vermutung",
-      "avg": 40198
+      "avg": 37423
     },
     {
       "title": "Berlin",
-      "avg": 25047
+      "avg": 24761
     },
     {
       "title": "Grand Theft Auto",
-      "avg": 13777
+      "avg": 9139
     },
     {
       "title": "ChatGPT",
-      "avg": 7804
-    },
-    {
-      "title": "Anthropic",
-      "avg": 7482
+      "avg": 7619
     },
     {
       "title": "Deutschland",
-      "avg": 7182
+      "avg": 7111
     },
     {
-      "title": "James Bond",
-      "avg": 5391
-    },
-    {
-      "title": "Generation Z",
-      "avg": 5287
+      "title": "Thanksgiving",
+      "avg": 5616
     },
     {
       "title": "Azadi und Kulina",
       "avg": 5270
     },
     {
-      "title": "Rockstar Games",
-      "avg": 4949
+      "title": "Generation Z",
+      "avg": 5050
     },
     {
-      "title": "Voyager 1",
-      "avg": 4608
+      "title": "James Bond",
+      "avg": 4854
     },
     {
       "title": "ZDF",
-      "avg": 4561
+      "avg": 4667
     },
     {
-      "title": "Thanksgiving",
-      "avg": 4322
-    },
-    {
-      "title": "Tokio Hotel",
-      "avg": 4087
-    },
-    {
-      "title": "Nvidia",
-      "avg": 3896
-    },
-    {
-      "title": "PlayStation 5",
-      "avg": 3675
-    },
-    {
-      "title": "Die Tribute von Panem",
-      "avg": 3489
+      "title": "Anthropic",
+      "avg": 4442
     },
     {
       "title": "Black Friday",
-      "avg": 3465
+      "avg": 4240
+    },
+    {
+      "title": "Nvidia",
+      "avg": 3798
+    },
+    {
+      "title": "Rockstar Games",
+      "avg": 3769
+    },
+    {
+      "title": "Die Tribute von Panem",
+      "avg": 3513
     },
     {
       "title": "Periodensystem",
-      "avg": 3463
+      "avg": 3268
+    },
+    {
+      "title": "Tokio Hotel",
+      "avg": 3164
+    },
+    {
+      "title": "PlayStation 5",
+      "avg": 3038
     },
     {
       "title": "Vereinigte Staaten",
-      "avg": 3020
-    },
-    {
-      "title": "Lean (Beweisassistent)",
-      "avg": 2863
-    },
-    {
-      "title": "Russland",
-      "avg": 2858
+      "avg": 2935
     },
     {
       "title": "ARD",
-      "avg": 2810
+      "avg": 2751
     },
     {
-      "title": "Millennium-Probleme",
-      "avg": 2744
+      "title": "Lean (Beweisassistent)",
+      "avg": 2704
     },
     {
       "title": "YouTube",
-      "avg": 2696
+      "avg": 2693
+    },
+    {
+      "title": "Figuren in Tolkiens Welt",
+      "avg": 2673
+    },
+    {
+      "title": "Russland",
+      "avg": 2668
+    },
+    {
+      "title": "Millennium-Probleme",
+      "avg": 2573
     }
   ],
-  "blocked": 14,
+  "blocked": 13,
   "days": 8,
-  "people_removed": 146,
+  "people_removed": 153,
   "youtube": [
     {
       "title": "Bujar Mustafa - Zinxhiri",
       "channel": "BM Official",
-      "views": 861096,
+      "views": 1036722,
       "category": "10"
     },
     {
       "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
       "channel": "Marvel Entertainment",
-      "views": 63661717,
+      "views": 69321626,
       "category": "24"
     },
     {
       "title": "GTA 6 ist einfach zu krass! - Test / Review ohne Story-Spoiler",
       "channel": "GameStar",
-      "views": 3786626,
+      "views": 3804728,
       "category": "20"
     },
     {
       "title": "Durim Malaj - SHEQERE (Official Music Video)",
       "channel": "Durim Malaj",
-      "views": 4123287,
+      "views": 4341690,
       "category": "10"
     },
     {
-      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027) Otto Waalkes",
-      "channel": "KinoCheck",
-      "views": 803778,
-      "category": "24"
-    },
-    {
-      "title": "Fifi x Fero - U Katritha",
-      "channel": "FIFI OFFICIAL",
-      "views": 3246004,
-      "category": "10"
-    },
-    {
-      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
-      "channel": "TGV Cinemas",
-      "views": 2888443,
-      "category": "22"
-    },
-    {
-      "title": "ICH HABE EINEN NEUEN SPIELMODUS ENTWICKELT (20 MINUTEN BATTLE)",
-      "channel": "BastiGHG",
-      "views": 721354,
-      "category": "20"
-    },
-    {
-      "title": "Džejla Ramović & Jakov Jozinović - Suze (Official video)",
-      "channel": "Jakov Jozinovic",
-      "views": 2861698,
-      "category": "10"
-    },
-    {
-      "title": "AVENGERS DOOMSDAY: FINALER TRAILER | Meine Gedanken",
-      "channel": "BelYves",
-      "views": 161870,
-      "category": "1"
-    },
-    {
-      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
-      "channel": "Sylvain Lyve",
-      "views": 2987368,
-      "category": "2"
-    },
-    {
-      "title": "KIDDA - AKUZA",
-      "channel": "KIDDA",
-      "views": 479858,
-      "category": "10"
-    },
-    {
-      "title": "Dune: Part Three - Exclusive Teaser Trailer (2026) Timothée Chalamet, Zendaya, Robert Pattinson",
-      "channel": "IGN",
-      "views": 2146929,
-      "category": "24"
-    },
-    {
-      "title": "10,000 Players Simulate WORLD WAR in Minecraft",
-      "channel": "Spoke",
-      "views": 8191749,
-      "category": "20"
-    },
-    {
-      "title": "Levant - Forever (Official Music Video)",
-      "channel": "Levant",
-      "views": 5193917,
-      "category": "10"
-    },
-    {
-      "title": "Avengers Doomsday Trailer: ALLE Details & Theorien!",
-      "channel": "Film Bastion",
-      "views": 121391,
-      "category": "1"
-    },
-    {
-      "title": "I Survived 100 Hours In GTA 6",
-      "channel": "MrBeast Gaming",
-      "views": 76405553,
+      "title": "Hollow Knight: Silksong - Sea of Sorrow - Launch Trailer",
+      "channel": "Team Cherry",
+      "views": 2088874,
       "category": "20"
     },
     {
       "title": "Lagui - ROULETTE RUSSE (Clip Officiel)",
       "channel": "Lagui",
-      "views": 421985,
+      "views": 1084899,
       "category": "10"
     },
     {
-      "title": "Honest Trailers | The Odyssey",
-      "channel": "Screen Junkies",
-      "views": 55841,
+      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027) Otto Waalkes",
+      "channel": "KinoCheck",
+      "views": 828155,
+      "category": "24"
+    },
+    {
+      "title": "ICH HABE EINEN NEUEN SPIELMODUS ENTWICKELT (20 MINUTEN BATTLE)",
+      "channel": "BastiGHG",
+      "views": 787841,
+      "category": "20"
+    },
+    {
+      "title": "Fifi x Fero - U Katritha",
+      "channel": "FIFI OFFICIAL",
+      "views": 3371959,
+      "category": "10"
+    },
+    {
+      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
+      "channel": "TGV Cinemas",
+      "views": 3052683,
       "category": "22"
     },
     {
-      "title": "Ich spiele zum ersten Mal GTA 6 & plötzlich ruft meine Frau an",
-      "channel": "Paluten",
-      "views": 1004304,
-      "category": "20"
+      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
+      "channel": "Sylvain Lyve",
+      "views": 3042090,
+      "category": "2"
     },
     {
-      "title": "BLERONA BYTYCI - Pasuria vjen e shkon #2027",
-      "channel": "𝗕𝗟𝗘𝗥𝗢𝗡𝗔 𝗕𝗬𝗧𝗬𝗖𝗜",
-      "views": 496583,
+      "title": "Džejla Ramović & Jakov Jozinović - Suze (Official video)",
+      "channel": "Jakov Jozinovic",
+      "views": 3181237,
       "category": "10"
     },
     {
-      "title": "AVENGERS: DOOMSDAY Finaler Trailer German Deutsch (2026)",
-      "channel": "Robert Hofmann",
-      "views": 91756,
-      "category": "24"
+      "title": "AVENGERS DOOMSDAY: FINALER TRAILER | Meine Gedanken",
+      "channel": "BelYves",
+      "views": 166388,
+      "category": "1"
     },
     {
-      "title": "GTA 6 WTF and Funny Moments! #3",
-      "channel": "Zynxize",
-      "views": 4199359,
+      "title": "10,000 Players Simulate WORLD WAR in Minecraft",
+      "channel": "Spoke",
+      "views": 8837402,
       "category": "20"
     },
     {
-      "title": "Aida Doci & Ermal Fejzullahu - Oj Shoqni (Official Music Video)",
-      "channel": "AINA Entertainment",
-      "views": 353536,
+      "title": "KIDDA - AKUZA",
+      "channel": "KIDDA",
+      "views": 506016,
+      "category": "10"
+    },
+    {
+      "title": "Dune: Part Three - Exclusive Teaser Trailer (2026) Timothée Chalamet, Zendaya, Robert Pattinson",
+      "channel": "IGN",
+      "views": 2217089,
       "category": "24"
+    },
+    {
+      "title": "💰😍1 Millionen Münzen Sammeln! - DAGOBERT Macs SCHLÄGT zu! | One Million Coins!",
+      "channel": "Trymacs",
+      "views": 533284,
+      "category": "20"
+    },
+    {
+      "title": "Levant - Forever (Official Music Video)",
+      "channel": "Levant",
+      "views": 5672773,
+      "category": "10"
+    },
+    {
+      "title": "Avengers: Doomsday | TV SPOT “REDEMPTION” CONCEPT | Marvel Studios",
+      "channel": "MovieTrailers Entertainment",
+      "views": 2426488,
+      "category": "24"
+    },
+    {
+      "title": "Ich habe eine MrBeast Challenge gewonnen",
+      "channel": "ein Holzkopf",
+      "views": 699720,
+      "category": "24"
+    },
+    {
+      "title": "CAPITAL BRA x SAMRA - FERRARI F8 [Official Video]",
+      "channel": "Capital Bra",
+      "views": 267559,
+      "category": "10"
+    },
+    {
+      "title": "Avengers Doomsday Trailer: ALLE Details & Theorien!",
+      "channel": "Film Bastion",
+      "views": 127236,
+      "category": "1"
+    },
+    {
+      "title": "I Survived 100 Hours In GTA 6",
+      "channel": "MrBeast Gaming",
+      "views": 78185653,
+      "category": "20"
+    },
+    {
+      "title": "Gold AG x Meda - Krenat e Shqipes #28Nëntor",
+      "channel": "Gold AG",
+      "views": 432052,
+      "category": "10"
     }
   ]
 }
