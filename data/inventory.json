@@ -2811,6 +2811,32 @@
         "https://pixidia.com/?p=84514",
         "https://www.rmg.co.uk/discover/explore/geminid-meteor-shower-when-and-where-see-it-uk"
       ]
+    },
+    {
+      "id": "N022",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-28T07:23:17.016465+01:00",
+      "source": "kinetic",
+      "topic": "GTA 6: Verkaufszahlen nur geschätzt (Sensor Tower 17 Mio., 1,65 Mrd. $), Take-Two ohne offizielle Zahlen",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 37.8,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N022.mp4",
+      "title_tiktok": "GTA 6: So viele sind es wirklich (nur Schätzungen) 🎮",
+      "title_youtube": "GTA 6: 17 Millionen verkauft? Was geschätzt ist und was offiziell #shorts",
+      "text_tiktok": "Wie viel hältst du für realistisch? Schreib es in die Kommentare 👇 #gta6 #gaming #rockstar #zahlen #fürdich",
+      "text_youtube": "Take-Two hat noch keine offiziellen Verkaufszahlen zu GTA 6 genannt. Sensor Tower schätzt (19.11.2026) rund 17 Millionen Exemplare und über 1,65 Milliarden Dollar Umsatz. Laut Berichten setzte Take-Two in der Vorbestellphase rund 1,39 Milliarden Dollar um, etwa 75 Prozent der frühen Käufe entfallen laut einem Bericht auf PlayStation. Alles Schätzungen, keine offiziellen Zahlen. Wie viel hältst du für realistisch? 👇\n\nQuellen: Sensor Tower (über GGRecon und OneIndia), TechRadar, stock3. Kein Spielmaterial, keine Logos. Stimme und Grafiken mit KI erstellt.\n\n#shorts #gta6 #gaming #rockstar #wusstestdu",
+      "scenes": 8,
+      "buffer": {},
+      "group": "kin-gaming",
+      "sources": [
+        "https://www.ggrecon.com/articles/gta-6-17-million-sales-sensor-tower/",
+        "https://www.oneindia.com/international/gta-6-sales-cross-1-6-billion-as-playstation-accounts-for-75-of-early-purchases-8264247.html",
+        "https://techradar.com/gaming/the-level-of-pre-orders-is-unprecedented-take-two-reportedly-made-usd1-39-billion-in-sales-during-gta-6s-pre-order-period",
+        "https://stock3.com/news/gelungener-gta-6-start-treibt-take-two-aktie-17404668"
+      ]
     }
   ]
 }
