@@ -2785,6 +2785,32 @@
         "https://starwalk.space/de/news/geminid-meteor-shower",
         "https://www.sterngucker.de/?p=25427"
       ]
+    },
+    {
+      "id": "N021",
+      "format": "wissen",
+      "status": "ready",
+      "created": "2026-11-28T07:22:34.940432+01:00",
+      "source": "kinetic",
+      "topic": "Geminiden 13./14.12.2026: Mond, Rate, Unsicherheit",
+      "hook_type": "Zahl-Schock",
+      "series": null,
+      "episode": null,
+      "duration": 37.1,
+      "video_url": "https://raw.githubusercontent.com/KaanAbi3169/Yt-tk/media/videos/N021.mp4",
+      "title_tiktok": "Geminiden: Die meisten Sternschnuppen des Jahres 🌠",
+      "title_youtube": "Geminiden 2026: Wann und wie viele Sternschnuppen? (13./14. Dezember) #shorts",
+      "text_tiktok": "Schaust du hin? Schreib es in die Kommentare 👇 #geminiden #sternschnuppen #weltraum #astronomie #fürdich",
+      "text_youtube": "Die Geminiden erreichen ihr Maximum in der Nacht vom 13. auf den 14. Dezember 2026. Der Mond ist eine schmale Sichel (etwa 20 Prozent) und geht gegen 21 Uhr unter. Die Raten schwanken je nach Quelle: bis zu 150 pro Stunde (Starwalk), 60 bis 100 unter dunklem Landhimmel (Sterngucker), alles Schätzungen. Die genaue Uhrzeit des Maximums ist nicht gesichert. Schaust du hin? 👇\n\nQuellen: Starwalk, Sterngucker, International Meteor Organization (über pixidia). Stimme und Grafiken mit KI erstellt.\n\n#shorts #geminiden #sternschnuppen #weltraum #wusstestdu",
+      "scenes": 6,
+      "buffer": {},
+      "group": "kin-weltraum",
+      "sources": [
+        "https://starwalk.space/de/news/geminid-meteor-shower",
+        "https://www.sterngucker.de/?p=3893",
+        "https://pixidia.com/?p=84514",
+        "https://www.rmg.co.uk/discover/explore/geminid-meteor-shower-when-and-where-see-it-uk"
+      ]
     }
   ]
 }
